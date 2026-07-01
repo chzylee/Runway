@@ -29,23 +29,11 @@ wrong call there costs one of those three).*
 | **CASE_STATUS = Certified** | The filing DOL approved — the only rows the engine keeps. |
 | **iGavel** | Proper noun worth knowing: the FY2025-Q4 top single-quarter design sponsor, hardcoded as the verification "golden anchor" (see D3). |
 
-**What it is.** A grounded new-grad **visa-sponsorship diagnostic** for one international
-**designer**. It parses raw U.S. DOL OFLC **LCA** disclosure spreadsheets, keeps *certified,
-entry-wage* (`PW_WAGE_LEVEL = I`) filings under three design SOC codes, and emits a shortlist of
-employers that **actually sponsor entry-wage designers** — ranked by *repeat*-sponsorship across
-quarters. A separate **human-reviewed** LLM gap-read turns that shortlist + her portfolio + a few
-hand-gathered live postings into 3 named-company portfolio projects, rendered into a **private**
-HTML one-pager. The differentiator is **data-grounding + advice**, not "a directory of who
-sponsors" (h1bgrader/MyVisaJobs already do that).
+**What it is.** A grounded **visa-sponsorship diagnostic** for **international new-grad designers who need US work sponsorship** — validated on one real designer (n=1) but built as a product for that whole class, not a one-off for her. It reads mandated U.S. Department of Labor filings (the **LCA** disclosure data) to find companies that *actually* sponsor designers at the **entry wage** (`PW_WAGE_LEVEL = I`, under three design SOC job-codes), ranked by how *repeatedly* they sponsor across quarters. A separate, human-reviewed AI step then turns that shortlist plus a designer's portfolio into three concrete portfolio-project ideas aimed at named companies. The edge is **grounding + advice**: the list comes straight off government filings and the advice points at real companies — not "a directory of who sponsors" (h1bgrader/MyVisaJobs already do that).
 
-**Current state (what you're returning to).** v0, n=1, by hand, no app. The deterministic engine
-+ verification + report are built and the committed full-year run (`output/sponsors_levelI.csv`)
-holds **480 distinct entry-wage design sponsors across FY2025, 9 of them repeat sponsors**
-(Amazon top: 3 quarters / 7 filings; Deloitte, Esri, Activision, TikTok, Microsoft all present) —
-so the kill-test verdict is **GO** (real companies, not staffing-dominated). The **gap-read is a
-pending manual step** (`output/private/gap_read_filled.md` not yet created → the report shows a
-placeholder). Raw DOL xlsx are gitignored (not in this clone). **In flight:** hand v0 to a friend
-to test; the one known open code task is D3 (gate the golden anchor to a fixture quarter).
+**Segment vs. tester — the line to hold.** The product is for the *class* (international new-grad designers needing sponsorship); the one real designer is only the v0 validation, not the product's identity. Watch where the build hardcodes one person — the single `output/private/` report, "her portfolio" in the gap-read prompt: bespoke coupling that's fine as n=1 scaffolding but is the first thing to generalize before this serves anyone else. *(With an LLM doing the advice step, over-targeting to one person is an easy trap — keep the frame on the segment.)*
+
+**Current state.** v0 — built by hand for one tester, no app yet. The committed full-year run (`output/sponsors_levelI.csv`) lists **480 distinct entry-wage design sponsors across FY2025, 9 of them appearing in 2+ quarters** (Amazon top: 3 quarters / 7 filings; Deloitte, Esri, Activision, TikTok, Microsoft all present) — so the go/no-go feasibility check (the ledger's "kill-test") passed: the filter returns real, varied employers, not staffing agencies. Still pending: the **portfolio gap-read** — the human-reviewed AI step that produces the 3 named-company project ideas (`output/private/gap_read_filled.md` not yet created, so the report shows a placeholder). Raw DOL files are gitignored (not in this clone). Next: hand v0 to a friend to test; the one known open code task is gating the verification "golden anchor" to a fixed quarter (D3).
 
 **Component map (5 parts; the arrow is one run).**
 
@@ -79,7 +67,7 @@ human-reviewed LLM step, outside the pipeline. `[B]` = the gate between engine a
 | D8 | Privacy split (private report vs public engine/CSV) | D report | cost-risk · UX | confirm | ☑ OWNED | `[doc]` |
 | D9 | AI confined to human-reviewed gap-read; data step deterministic | E gap-read | UX-trust | confirm | ☑ OWNED | `[doc]` |
 
-**Where to spend attention (top 3, ranked).**
+**Where to spend attention (top gaps, ranked).**
 1. **D1 xlsx-IO + the "streaming" memory reality** — most AI-defaulted call, the engine's
    foundation, and `engine/sponsors.py:159` materializes *every* row in memory before the
    DataFrame (streams the parse, not memory). Biggest re-derivation gap; matters most for the v2
@@ -89,6 +77,9 @@ human-reviewed LLM step, outside the pipeline. `[B]` = the gate between engine a
    a quarters-subset run can raise on correct data. Small, well-understood, the last brittle edge.
 3. **D2 entity-resolution landscape** — the conservative under-merge is defensible but its
    alternatives (fuzzy / record-linkage / EIN / alias-map) are unplaced on the axes.
+4. **Over-targeting to one user** `[product-framing / growth]` — the build is coupled to a single
+   person (the `output/private/` report, "her portfolio" framing). Generalize it before this
+   serves the class; validating on n=1 is fine, *building* bespoke is the trap.
 
 ---
 
