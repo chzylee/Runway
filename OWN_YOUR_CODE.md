@@ -14,6 +14,21 @@ wrong call there costs one of those three).*
 
 ## 1 · Orientation — the cockpit (read this screen; drill down only where you don't already own)
 
+**Domain primer** (the jargon is dense — get your bearings here before the paragraph below).
+
+| Term | What it is |
+|------|-----------|
+| **DOL** | U.S. Department of Labor. |
+| **OFLC** | Office of Foreign Labor Certification — the DOL office that publishes the disclosure data. |
+| **LCA** | *Labor Condition Application* — the filing an employer submits to sponsor an H-1B worker at a stated wage. A **certified** LCA = the employer is cleared and intends to sponsor. **This is the core signal.** |
+| **PERM** | The *green-card*-stage labor certification — a different, later step. Wrong layer for this product; the code guards against loading a PERM file by mistake. |
+| **PW_WAGE_LEVEL** | Prevailing Wage Level (I–IV). **Level I = entry wage** — the new-grad signal the whole product filters on. |
+| **SOC code** | Standard Occupational Classification — the federal job-category code. Design SOCs used: `15-1255` (Web & Digital Interface = UI/UX), `27-1024` (Graphic), `27-1021` (Commercial & Industrial). |
+| **H-1B** | The temporary skilled-worker visa the LCA underlies (the sponsorship-intent signal). |
+| **OPT / STEM-OPT** | Optional Practical Training — post-graduation work authorization for international students (STEM extends it). Design is likely *not* STEM-eligible → ~12-month runway. |
+| **CASE_STATUS = Certified** | The filing DOL approved — the only rows the engine keeps. |
+| **iGavel** | Proper noun worth knowing: the FY2025-Q4 top single-quarter design sponsor, hardcoded as the verification "golden anchor" (see D3). |
+
 **What it is.** A grounded new-grad **visa-sponsorship diagnostic** for one international
 **designer**. It parses raw U.S. DOL OFLC **LCA** disclosure spreadsheets, keeps *certified,
 entry-wage* (`PW_WAGE_LEVEL = I`) filings under three design SOC codes, and emits a shortlist of
