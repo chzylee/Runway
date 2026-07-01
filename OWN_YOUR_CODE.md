@@ -350,6 +350,15 @@ logic back down into the engine.
 named-company portfolio projects. It is a **prompt run outside the codebase**, in your own
 Claude/ChatGPT, with you as the reviewer before the output is shared.
 
+**This is the bridge — the judgment layer, and the most portable part of the system.** Abstractly it
+takes *(a signal about the user — the portfolio)* + *(patterns in target roles — the shortlist + real
+postings)* and outputs *the gap + what to build to close it*. Nothing in that shape is design- or
+visa-specific; the two ends are swappable adapters (portfolio ↔ resume ↔ GitHub; sponsor-roles ↔ any
+target-role set; a future adapter could be a TS PMO *Direction* or a work-pattern export). **Today it
+fuses three conceptual parts in one prompt** — extract target-role patterns · assess the portfolio ·
+bridge the gap; isolating the bridge is the main v1 design move. (Product architecture lives in the
+design doc; flagged here because it's what E *is*.)
+
 **How it works.** You fill four blocks (`[[PORTFOLIO]]`, `[[SHORTLIST]]` rows, `[[LIVE_POSTINGS]]`
 you gather by hand, `[[TARGET_ROLE]]`), run it, review, and save the approved output to
 `output/private/gap_read_filled.md`, which `build_report` slots in. It also carries the **OPT-now

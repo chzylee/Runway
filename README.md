@@ -1,32 +1,36 @@
-# Stay Here — new-grad sponsorship diagnostic (v0)
+# Stay Here — sponsorship diagnostic for new-grad designers (v0)
 
-For an international new-grad **designer** who needs US visa sponsorship: a
-grounded shortlist of companies that **actually sponsor entry-wage designers**,
-plus a portfolio gap-read that names what 3 projects would make her worth a visa
-to those companies.
+For **international new-grad designers who need US visa sponsorship**: a grounded shortlist of
+companies that **actually sponsor entry-wage designers**, plus a review that names the **3 projects**
+that would make a portfolio worth a visa to those companies. Validated so far with one real designer,
+but built for the whole group — not one person.
 
-Not a directory of "who sponsors anyone" (h1bgrader, MyVisaJobs, h1bdata already
-do that). The differentiator is **data-grounding + advice**: the shortlist is
-read straight off mandated DOL filings at the entry wage tier (`PW_WAGE_LEVEL = I`).
+Not a directory of "who sponsors anyone" (h1bgrader, MyVisaJobs, h1bdata already do that). The edge
+is **data-grounding + advice**, in three parts:
 
-> **v0 scope:** n=1, by hand, no app. One grounded signal (Layer B) + a reviewed
-> gap-read (Layer 3). The OPT-now postings pipeline (Layer A) is deliberately
-> **cut to v2** — see `docs/decision_log.md`.
+1. **Find** — which employers actually sponsor design roles at the entry wage (`PW_WAGE_LEVEL = I`),
+   read straight off mandated DOL filings.
+2. **Assess** — read the applicant's portfolio (a resume works too, with less signal).
+3. **Bridge** — the judgment step: given those companies' real postings + the portfolio, name the gap
+   and the 3 concrete things to build to close it. **This bridge is the core of the tool.**
+
+> **v0 scope:** by hand, no app. The grounded shortlist + a human-reviewed portfolio review. The
+> OPT-now postings pipeline is deliberately deferred to a later version — see `docs/decision_log.md`.
 
 ## What's here
 
 ```
 engine/
-  sponsors.py      # Layer 1 engine (NO LLM): ROLE_SOC + build_sponsor_table()
-  verify.py        # T2 verification: column/non-empty/collapse/golden checks
+  sponsors.py      # the engine (NO LLM): find + rank entry-wage design sponsors from DOL data
+  verify.py        # verification gate: column/non-empty/collapse/golden checks (stops a bad run)
 scripts/
-  convert_quarters.py  # raw DOL xlsx -> narrow parquet (run once)
-  build_shortlist.py   # thin caller: provenance + verify + write CSV
+  convert_quarters.py  # raw DOL xlsx -> narrow parquet (run once per quarter)
+  build_shortlist.py   # thin caller: provenance + verify + write the shortlist CSV
   build_report.py      # self-contained HTML one-pager
 prompts/
-  gap_read.md      # the reviewed LLM gap-read prompt (run in your own Claude/ChatGPT)
+  gap_read.md      # the portfolio review — the human-reviewed judgment step (run in your own Claude/ChatGPT)
 docs/
-  decision_log.md  # FDE proof: the forks and why
+  decision_log.md  # the forks and why (the design/judgment trail)
 data/raw/          # downloaded DOL files (gitignored, large)
 data/processed/    # derived parquet (gitignored, regenerable)
 output/            # sponsors_levelI.csv (public) + private/ report (gitignored)
@@ -45,8 +49,7 @@ python3 -m venv .venv
    `https://www.dol.gov/sites/dolgov/files/ETA/oflc/pdfs/LCA_Disclosure_Data_FY2025_Q4.xlsx`
    (Q1–Q4 available; the full year gives the strongest repeat-sponsor signal).
 
-2. **Convert + build the shortlist** (runs the verification cell — a failed check
-   stops the run):
+2. **Convert + build the shortlist** (runs the verification cell — a failed check stops the run):
    ```bash
    .venv/bin/python scripts/convert_quarters.py
    .venv/bin/python scripts/build_shortlist.py        # -> output/sponsors_levelI.csv
@@ -57,9 +60,9 @@ python3 -m venv .venv
    .venv/bin/python scripts/build_report.py           # -> output/private/stay_here_report.html
    ```
 
-4. **Gap-read (the LLM step):** fill the four blocks in `prompts/gap_read.md`,
-   run it in your own Claude/ChatGPT, review the output, save it to
-   `output/private/gap_read_filled.md`, and rerun step 3 to slot it in.
+4. **Portfolio review (the judgment step):** fill the four blocks in `prompts/gap_read.md`, run it in
+   your own Claude/ChatGPT, review the output, save it to `output/private/gap_read_filled.md`, and
+   rerun step 3 to slot it in.
 
 ## Adding another role later (v2 door, kept open)
 
@@ -67,12 +70,12 @@ One line in `engine/sponsors.py`:
 ```python
 ROLE_SOC["consultant"] = ["13-1111"]   # + add titles to SOC_TITLES
 ```
-Then `build_shortlist.py --role consultant`. (Per-role OPT/visa *judgment* is
-real work and stays v2 — the engine just stops blocking it.)
+Then `build_shortlist.py --role consultant`. (Per-role OPT/visa *judgment* is real work and stays
+v2 — the engine just stops blocking it.)
 
 ## Caveats (also stated in the report)
 
-- **An LCA is not a hire-now signal** — it's "this employer sponsors at entry
-  wage," not "they'll hire you this month." New grads start on OPT/STEM-OPT.
-- **Design is likely not STEM-OPT eligible** → ~12-month OPT runway.
+- **An LCA is not a hire-now signal** — it's "this employer sponsors at entry wage," not "they'll
+  hire you this month." New grads typically start on OPT/STEM-OPT.
+- **Design is likely not STEM-OPT eligible** → a shorter (~12-month) OPT runway.
 - Career/portfolio guidance, **not immigration legal advice**.
