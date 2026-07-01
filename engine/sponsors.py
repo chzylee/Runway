@@ -1,4 +1,4 @@
-"""Stay Here — Layer 1 engine (deterministic, NO LLM).
+"""Runway — Layer 1 engine (deterministic, NO LLM).
 
 Reads raw DOL OFLC LCA disclosure data and produces a grounded list of
 employers that have *certified* an entry-wage (PW_WAGE_LEVEL = I) filing for a

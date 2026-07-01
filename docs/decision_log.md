@@ -1,4 +1,4 @@
-# Stay Here — Decision Log (FDE proof / Judgment Ledger)
+# Runway — Decision Log (FDE proof / Judgment Ledger)
 
 The forks and why. This is the job-search proof, not the report. Each entry: the
 choice, the alternative rejected, and the reasoning. Doubles as the
@@ -51,4 +51,4 @@ build-in-public reasoning trail (public — contains no personal data).
 - Engine: `engine/sponsors.py` · Verification: `engine/verify.py`
 - Runners: `scripts/convert_quarters.py`, `scripts/build_shortlist.py`, `scripts/build_report.py`
 - Saved gap-read prompt: `prompts/gap_read.md`
-- Public shortlist: `output/sponsors_levelI.csv` · Her report (private): `output/private/stay_here_report.html`
+- Public shortlist: `output/sponsors_levelI.csv` · Her report (private): `output/private/runway_report.html`

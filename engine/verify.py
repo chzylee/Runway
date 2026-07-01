@@ -1,4 +1,4 @@
-"""Stay Here — Layer 1 verification (T2).
+"""Runway — Layer 1 verification (T2).
 
 The "verification cell": a failed check raises and stops the run, so a wrong
 file (e.g. PERM instead of LCA), an empty post-filter result, or a normalization

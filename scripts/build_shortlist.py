@@ -1,4 +1,4 @@
-"""Stay Here — thin caller that builds the grounded entry-wage sponsor shortlist.
+"""Runway — thin caller that builds the grounded entry-wage sponsor shortlist.
 
 This is the "notebook" reduced to a script: it prints full provenance (source
 files + quarters + row counts), calls the engine, runs the verification cell,

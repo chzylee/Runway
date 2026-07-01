@@ -1,4 +1,4 @@
-"""Stay Here — build the one-page HTML report (T4 data-grounded part).
+"""Runway — build the one-page HTML report (T4 data-grounded part).
 
 Reads output/sponsors_levelI.csv (the engine's artifact) and renders a
 self-contained, shareable HTML one-pager: the grounded entry-wage shortlist +
@@ -29,7 +29,7 @@ import pandas as pd  # noqa: E402
 
 CSV_PATH = Path("output/sponsors_levelI.csv")
 GAPREAD_PATH = Path("output/private/gap_read_filled.md")
-OUT_PATH = Path("output/private/stay_here_report.html")
+OUT_PATH = Path("output/private/runway_report.html")
 UX_SOC = "Web and Digital Interface Designers"  # 15-1255
 
 CSS = """
@@ -139,10 +139,10 @@ def main() -> None:
 
     body = f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Stay Here — entry-wage design sponsor shortlist</title>
+<title>Runway — entry-wage design sponsor shortlist</title>
 <style>{CSS}</style></head><body>
 
-<h1>Stay Here</h1>
+<h1>Runway</h1>
 <p class="sub">Grounded shortlist of companies that sponsor <strong>entry-wage</strong> designers, plus your portfolio gap-read.</p>
 
 <div class="lede">

@@ -1,4 +1,4 @@
-# Stay Here — sponsorship diagnostic for new-grad designers (v0)
+# Runway — sponsorship diagnostic for new-grad designers (v0)
 
 For **international new-grad designers who need US visa sponsorship**: a grounded shortlist of
 companies that **actually sponsor entry-wage designers**, plus a review that names the **3 projects**
@@ -57,7 +57,7 @@ python3 -m venv .venv
 
 3. **Build the report:**
    ```bash
-   .venv/bin/python scripts/build_report.py           # -> output/private/stay_here_report.html
+   .venv/bin/python scripts/build_report.py           # -> output/private/runway_report.html
    ```
 
 4. **Portfolio review (the judgment step):** fill the four blocks in `prompts/gap_read.md`, run it in

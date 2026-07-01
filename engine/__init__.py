@@ -1,4 +1,4 @@
-"""Stay Here engine package (Layer 1, deterministic)."""
+"""Runway engine package (Layer 1, deterministic)."""
 
 from .sponsors import (
     ROLE_SOC,
