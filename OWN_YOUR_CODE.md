@@ -109,6 +109,53 @@ its gate (no AI); `[C]`/`[D]` = thin caller scripts; `[E]` = the human-reviewed 
 
 ---
 
+## Data pipeline — first input to final output
+
+*Three data inputs converge: one automated + deterministic (the DOL grounding), two manual (the
+applicant's portfolio, a few live postings). The component map above is **control** flow; this is
+what the **data** actually is, where it comes from, and how each stage transforms it.*
+
+**Input 1 — DOL LCA data (grounding; automated).**
+
+| Stage | Data + form | Source | → becomes | By |
+|---|---|---|---|---|
+| Retrieve | one `.xlsx` per fiscal quarter, ~80–144 MB, ~98 cols, named `LCA_Disclosure_Data_FY2025_Q4.xlsx` | downloaded **by hand** from the DOL OFLC performance-data page (dol.gov); free, public, mandated → `data/raw/` (gitignored) | — | you |
+| Narrow | the 12 `REQUIRED_COLUMNS` (case status, visa class, SOC code/title, employer, worksite, wage rate/unit, `PW_WAGE_LEVEL`), typed | resolved **by name** off the file's header (column order isn't stable across quarters) | `data/processed/lca_<q>.parquet` (small typed cache) | `xlsx_to_parquet` (`convert_quarters.py`) |
+| Filter (= "find roles") | one row per **certified, entry-wage, design-role filing** | keep `CASE_STATUS==CERTIFIED` ∩ SOC ∈ {`15-1255`,`27-1024`,`27-1021`} ∩ `PW_WAGE_LEVEL` ∈ {`I`,`LEVEL I`,`1`}; drop blank employers; derive `EMP_NORM`/`SOC7`/`WAGE_ANNUAL` | in-memory `rows` | `load_certified_rows` |
+| Aggregate + rank | one row per **employer** — filing count, distinct-quarter count, roles/states/cities/wage rollups, **sorted by #quarters then #filings** | group the filings by normalized employer name | the sponsor shortlist | `build_sponsor_table` |
+| Gate + write | the verified shortlist | 6 raise-and-stop checks | `output/sponsors_levelI.csv` (employer-level, **public**) + `sponsors_levelI_rows.csv` (filing-level = the review's grounding) | `verify.run_all` + `build_shortlist.py` |
+
+**How are roles found?** There's no job-title matching — **the SOC code *is* the role.** Filtering
+the certified filings to the three design SOC codes at wage-level I *is* how sponsor-viable roles are
+found; the employer is whoever filed them.
+
+**Input 2 — the applicant's info (manual).** Format = **text + links pasted by hand** into the
+`[[PORTFOLIO]]` block of `prompts/gap_read.md` (case studies, roles, tools, years). A **resume** is
+the weaker fallback (less signal). The code never parses a portfolio file — it's a prompt input.
+
+**Input 3 — live postings (manual).** For ~5–8 shortlist companies you paste one real current
+entry-level design posting each into `[[LIVE_POSTINGS]]` — what makes the advice named-company-
+specific rather than generic.
+
+**The merge — what receives all three and evaluates them.** The **portfolio review**
+(`prompts/gap_read.md`, run in your own Claude/ChatGPT, human-reviewed) takes the portfolio (Input 2)
++ shortlist rows pasted from `sponsors_levelI.csv` (Input 1; prefer repeat-sponsors + role-matched) +
+the live postings (Input 3) + the target role, and **relates the portfolio to what the named
+companies' real postings ask for** → 3–5 gaps (each tied to a named company) → exactly 3 portfolio
+projects (each targeting 1–2 named companies, closing a named gap, 2–4 weeks, a specific artifact).
+Reviewed output → `output/private/gap_read_filled.md`.
+
+**Final output.** `build_report.py` reads `sponsors_levelI.csv` + `gap_read_filled.md` (if present) →
+one self-contained HTML page (stats · the shortlist table · the 3 projects or a placeholder ·
+caveats) → `output/private/runway_report.html` (**private**). That's what the applicant reads.
+
+**Two boundaries.** *Provenance:* every shortlist cell traces to a source file + quarter (the
+`build_shortlist` provenance block prints it). *Public/private:* the DOL data + method + employer
+shortlist are public record; the applicant's portfolio and the final report are private
+(`output/private/`, gitignored).
+
+---
+
 <details>
 <summary><b>2 · The system — components + how they connect</b> (assembled whole; mechanism only, the "why" is in §3)</summary>
 
