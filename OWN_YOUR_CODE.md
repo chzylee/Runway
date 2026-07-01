@@ -35,23 +35,32 @@ wrong call there costs one of those three).*
 
 **Current state.** v0 — built by hand for one tester, no app yet. The committed full-year run (`output/sponsors_levelI.csv`) lists **480 distinct entry-wage design sponsors across FY2025, 9 of them appearing in 2+ quarters** (Amazon top: 3 quarters / 7 filings; Deloitte, Esri, Activision, TikTok, Microsoft all present) — so the go/no-go feasibility check (the ledger's "kill-test") passed: the filter returns real, varied employers, not staffing agencies. Still pending: the **portfolio gap-read** — the human-reviewed AI step that produces the 3 named-company project ideas (`output/private/gap_read_filled.md` not yet created, so the report shows a placeholder). Raw DOL files are gitignored (not in this clone). Next: hand v0 to a friend to test; the one known open code task is gating the verification "golden anchor" to a fixed quarter (D3).
 
-**Component map (5 parts; the arrow is one run).**
+**Component map — two tracks that meet in one report.** *(Tags `[A]`–`[E]` anchor to §2/§3; read top to bottom.)*
 
 ```
-  [C] convert_quarters ──► data/processed/*.parquet (cache)
-                                 │
-                                 ▼
-  [A] engine: load_certified_rows ──► build_sponsor_table          [B] verify.run_all
-      (Certified ∩ design-SOC ∩ Level-I)   (groupby EMP_NORM,   ──►  (raise-and-stop gate)
-                                            rank by quarters_present)      │
-                                                                          ▼
-                                              output/sponsors_levelI.csv (+ _rows.csv)
-                                                                          │
-  [E] prompts/gap_read.md ──► gap_read_filled.md ─┐                       ▼
-      (human-reviewed LLM, run externally)        └──►  [D] build_report ──► output/private/*.html
+TRACK 1 · grounding — deterministic, NO AI — "which companies actually sponsor entry-wage designers?"
+   raw DOL LCA filings (xlsx)
+   → [C] convert_quarters — cache each quarter as parquet
+   → [A] engine — keep only CERTIFIED, entry-wage (Level I), design-role filings;
+                  group by employer; rank by how many quarters each one sponsored
+   → [B] verify — raise-and-stop gate (a bad result never ships)
+   → output/sponsors_levelI.csv   ·   the ranked sponsor shortlist
+
+TRACK 2 · advice — human-reviewed AI — "what do I build to be worth a visa to them?"
+   your portfolio (text + links)  +  a few real entry-level postings from shortlist companies
+   → [E] gap-read — run in your own Claude/ChatGPT; you review before anything reaches her
+        · names the gaps between your portfolio and those companies' actual postings   ← how you're judged
+        · proposes 3 projects, each aimed at named companies, scoped 2–4 weeks
+   → output/private/gap_read_filled.md
+
+THEY MEET
+   shortlist  +  gap-read  → [D] build_report → output/private/report.html  (private)
 ```
-`[A]` engine = **all logic, NO LLM, no report I/O**. `[C][D]` = thin caller scripts. `[E]` = the
-human-reviewed LLM step, outside the pipeline. `[B]` = the gate between engine and artifact.
+
+Maps to the orientation 1:1 — Track 1 = "find companies that actually sponsor," Track 2 = "turn the
+shortlist + your portfolio into 3 named-company projects," and the `← how you're judged` line is the
+gap-read's actual criterion. `[A]`/`[B]` = the deterministic engine + its gate (no AI); `[C]`/`[D]` =
+thin caller scripts; `[E]` = the human-reviewed AI step, outside the pipeline.
 
 **Decisions index** (full treatment lives under each component in §3).
 
