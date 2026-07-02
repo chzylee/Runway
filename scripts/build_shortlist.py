@@ -28,6 +28,8 @@ import pandas as pd  # noqa: E402
 
 from engine import verify  # noqa: E402
 from engine.sponsors import (  # noqa: E402
+    DOL_DATA_PAGE,
+    LATEST_QUARTER,
     ROLE_SOC,
     SOC_TITLES,
     build_sponsor_table,
@@ -38,12 +40,6 @@ from engine.sponsors import (  # noqa: E402
 
 WAGE_LEVEL = "I"
 OUT_DIR = Path("output")
-
-# Where to get the data + the newest quarter published, so a no-data run points
-# the user somewhere real instead of crashing. Update LATEST_QUARTER when DOL
-# publishes a new one (they release quarterly).
-DOL_DATA_PAGE = "https://www.dol.gov/agencies/eta/foreign-labor/performance"
-LATEST_QUARTER = "FY2026 Q2"
 
 
 def rule(title: str) -> None:
@@ -118,13 +114,46 @@ def main() -> None:
         print(missing_quarter_message(missing))
         sys.exit(1)
 
-    # Row-level grounding + aggregated employer table.
-    rows = load_certified_rows(soc_codes, WAGE_LEVEL, quarters)
-    table = build_sponsor_table(soc_codes, WAGE_LEVEL, quarters)
+    # Row-level grounding + aggregated employer table. A bad parquet (wrong or
+    # renamed columns — e.g. a PERM file that somehow got converted) is a clean
+    # stop with a plain-English message, not a traceback.
+    try:
+        rows = load_certified_rows(soc_codes, WAGE_LEVEL, quarters)
+        table = build_sponsor_table(soc_codes, WAGE_LEVEL, quarters)
+    except ValueError as e:
+        print("\nCouldn't use the converted data — it doesn't look like DOL LCA data.")
+        print(f"  Reason: {e}")
+        print("  Delete the file(s) in data/processed/, re-download the LCA Programs")
+        print(f"  (H-1B, H-1B1, E-3) quarter from {DOL_DATA_PAGE},")
+        print("  and run:  python scripts/run.py")
+        sys.exit(1)
 
+    # Empty after filtering is a real, honest answer (the door may simply be
+    # closed for this window) — report it plainly instead of crashing.
+    if rows.empty or table.empty:
+        print(f"\nNo certified entry-wage (Level {WAGE_LEVEL}) {role} filings found in "
+              f"{', '.join(quarters)}.")
+        print("Either entry-wage sponsorship really is this thin in this window, or this")
+        print("isn't the right data. Things worth checking:")
+        print("  - Is this the LCA Programs (H-1B, H-1B1, E-3) file, not PERM?")
+        print("  - Try a different (or additional) quarter — download from")
+        print(f"    {DOL_DATA_PAGE}")
+        print("No shortlist was written.")
+        sys.exit(1)
+
+    # A failed verification check means the shortlist can't be trusted; stop the
+    # run with the failing check spelled out, never a traceback.
     rule("VERIFICATION CELL")
-    for line in verify.run_all(rows, table):
-        print(" ", line)
+    try:
+        for line in verify.run_all(rows, table):
+            print(" ", line)
+    except verify.VerificationError as e:
+        print(f"\nFAILED — {e}")
+        print("\nA verification check failed, so this shortlist can't be trusted and")
+        print("nothing was written. This usually means the data isn't what it should be")
+        print("(wrong file, corrupted download, or a broken conversion). Re-download the")
+        print(f"quarter from {DOL_DATA_PAGE} and run:  python scripts/run.py")
+        sys.exit(1)
 
     rule("RESULT")
     print(f"selected certified Level-I {role} filings : {len(rows):,}")

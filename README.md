@@ -75,7 +75,14 @@ Activate the venv (see above) once per shell session. Then it's **two steps**: g
 
    If there's no data yet, it tells you exactly where to get it instead of erroring out.
 
-3. **Portfolio review (the judgment step):** fill the four blocks in `prompts/gap_read.md`, run it in
+3. **Hiring-now check (manual):** the first report build creates `output/private/hiring_now.csv`
+   with every shortlist employer and a blank `hiring_now` column. For the companies you actually
+   care about, eyeball their careers page and fill in **yes / no / unclear**, then run
+   `python scripts/run.py` again — the report's "Hiring now?" column shows your answers. (LCA data
+   can't answer "hiring now"; this manual check is the v0 stand-in for the postings pipeline that's
+   deliberately deferred — see `docs/decision_log.md`.)
+
+4. **Portfolio review (the judgment step):** fill the four blocks in `prompts/gap_read.md`, run it in
    your own Claude/ChatGPT, review the output, save it to `output/private/gap_read_filled.md`, and
    run `python scripts/run.py` again to slot it into the report.
 
@@ -94,7 +101,11 @@ v2 — the engine just stops blocking it.)
 
 ## Caveats (also stated in the report)
 
-- **An LCA is not a hire-now signal** — it's "this employer sponsors at entry wage," not "they'll
-  hire you this month." New grads typically start on OPT/STEM-OPT.
+- **An LCA certification is not a hire or an open role** — it's "this employer sponsors at entry
+  wage," not "they'll hire you this month."
+- **OPT is not sponsorship** — a new grad's first job is on OPT; sponsorship typically comes 1–3
+  years later.
 - **Design is likely not STEM-OPT eligible** → a shorter (~12-month) OPT runway.
+- **Employer names are conservatively normalized and may under-merge** — the same parent company
+  can appear under more than one legal spelling.
 - Career/portfolio guidance, **not immigration legal advice**.

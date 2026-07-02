@@ -53,6 +53,22 @@ write-up: `postmortem_2026-07-01_flow-break.md`. The corrections:
 log was never checked *against the code*. "Read each ledger entry against the
 build" is now an owner's pre-ship step (see postmortem checklist).
 
+---
+
+## Conformance pass (2026-07-02) — audit against the Design Doc / Build Prompt
+
+A section-by-section audit of the build against the spec. These are the new
+forks it introduced; the audit's full conforms/diverges/missing table lives in
+the audit report, not here.
+
+| # | Fork | Chose | Over | Why |
+|---|------|-------|------|-----|
+| B9 | **Where the manual hiring-now check lives** | `output/private/hiring_now.csv` — scaffolded blank (all shortlist employers) by the report build, hand-filled yes/no/unclear, shown as the report's "Hiring now?" column. Never overwritten once it exists. | A column the reviewer edits in the HTML, or a notes file that never reaches the report | The spec requires the report to carry a manually-filled hiring-now column. A CSV keyed by employer survives rebuilds, keeps the engine out of it (engine stays pure data), and lives in `private/` because it's reviewer working data tied to one applicant's targeting. |
+| B10 | Report table length | Show top **40** rows; state "top N of M" and link the full CSV | Render every employer | A one-pager stops being one page with hundreds of rows; the CSV is the complete artifact. 40 ≈ everything an applicant would realistically vet by hand. (This threshold existed unlogged; logging it is the fix.) |
+| B11 | Failure surface for verify/engine errors | `build_shortlist.py` catches `VerificationError`/`ValueError` and empty-after-filter, prints plain English, exits 1 | Letting the exception (and traceback) propagate | Design Doc DoD: *every* failure path is a plain-English message, and "too thin to build on" must be reported honestly. A verification stop is still a stop — it just speaks user, not traceback. |
+| B12 | Dependency + constant hygiene | Drop unused `requests` from requirements; single-source `DOL_DATA_PAGE`/`LATEST_QUARTER` in `engine/sponsors.py` | Leave as-was | `requests` implied auto-download, which B8 explicitly defers — an unused dep is a false signal of scope. The DOL page/latest-quarter constants were duplicated in two scripts (single-source-of-truth rule). |
+| B13 | Voice in product-facing files | "The applicant / you (the reviewer)" in report, prompt, and script docstrings | "Her / Noah" | The Build Prompt is explicit: built for a demographic, never addressing one named individual. History (this log, the postmortem) keeps its original wording — it's a record, not a product surface. |
+
 ## Forward decisions (v2 door)
 
 | # | Fork | Chose | Over | Why |

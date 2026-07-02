@@ -33,6 +33,12 @@ ROLE_SOC: dict[str, list[str]] = {
     "design": ["15-1255", "27-1024", "27-1021"],
 }
 
+# Where the raw data comes from — single source of truth for every script that
+# points a user at the download page. LATEST_QUARTER is the newest quarter DOL
+# has published (they release quarterly); update it when a new one appears.
+DOL_DATA_PAGE = "https://www.dol.gov/agencies/eta/foreign-labor/performance"
+LATEST_QUARTER = "FY2026 Q2"
+
 # Human-readable SOC titles, for report context (DOL's own titles vary in case).
 SOC_TITLES: dict[str, str] = {
     "15-1255": "Web and Digital Interface Designers",
@@ -246,16 +252,16 @@ def load_certified_rows(
 def build_sponsor_table(
     soc_codes: list[str],
     wage_level: str,
-    quarter: str | list[str],
+    quarters: str | list[str],
     processed_dir: str | Path = "data/processed",
 ) -> pd.DataFrame:
     """Grounded entry-wage sponsor table: one row per normalized employer.
 
     Filing count = certified rows grouped by normalized employer name.  Sorted
     by quarters_present (repeat-sponsor = strongest "actually sponsors" signal),
-    then filing_count.  `quarter` may be one label or a list (full-year roll-up).
+    then filing_count.  `quarters` may be one label or a list (full-year roll-up).
     """
-    rows = load_certified_rows(soc_codes, wage_level, quarter, processed_dir)
+    rows = load_certified_rows(soc_codes, wage_level, quarters, processed_dir)
     if rows.empty:
         return pd.DataFrame(
             columns=[

@@ -28,12 +28,10 @@ except Exception:
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from engine.sponsors import detect_quarters  # noqa: E402
+from engine.sponsors import DOL_DATA_PAGE, LATEST_QUARTER, detect_quarters  # noqa: E402
 
 RAW_DIR = ROOT / "data" / "raw"
 REPORT_PATH = ROOT / "output" / "private" / "runway_report.html"
-DOL_DATA_PAGE = "https://www.dol.gov/agencies/eta/foreign-labor/performance"
-LATEST_QUARTER = "FY2026 Q2"
 
 
 def step(title: str) -> None:
@@ -86,8 +84,9 @@ def main() -> None:
     print(f"Quarters used : {', '.join(detect_quarters())}")
     print("Shortlist CSV : output/sponsors_levelI.csv")
     print(f"Report        : {REPORT_PATH}")
-    print("\nOpen the report in a browser to read it. To add your portfolio gap-read,")
-    print("follow step 4 in the README (prompts/gap_read.md), then run this again.")
+    print("\nOpen the report in a browser to read it. Two manual steps complete it")
+    print("(README steps 3-4): fill the hiring-now column in output/private/hiring_now.csv,")
+    print("and add the portfolio gap-read (prompts/gap_read.md). Then run this again.")
 
 
 if __name__ == "__main__":

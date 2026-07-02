@@ -2,17 +2,23 @@
 
 Reads output/sponsors_levelI.csv (the engine's artifact) and renders a
 self-contained, shareable HTML one-pager: the grounded entry-wage shortlist +
-caveats. The gap-read section (her 3 named-company projects) is slotted in from
+caveats. The gap-read section (the 3 named-company projects) is slotted in from
 output/private/gap_read_filled.md if present; otherwise a clearly-marked
 placeholder is shown (that section comes from the reviewed LLM step, which needs
-her portfolio — see prompts/gap_read.md).
+the applicant's portfolio — see prompts/gap_read.md).
+
+The "Hiring now?" column is the manual stand-in for the deferred postings
+pipeline: this script scaffolds output/private/hiring_now.csv with every
+shortlist employer and a blank value; the reviewer hand-fills yes/no/unclear
+from a careers-page eyeball, and the report shows whatever is filled in. The
+engine never touches it, and a blank file is fine — the column just stays empty.
 
 Self-contained HTML (embedded CSS, no JS, no external assets) so it opens
 anywhere and is easy to share for early UX feedback. No pandoc dependency.
 
-Output is PRIVATE (output/private/) — it will hold her portfolio-derived
-gap-read. Never publish it. The public artifacts are the engine + method +
-decision log + the (public-record) shortlist CSV.
+Output is PRIVATE (output/private/) — it will hold the applicant's
+portfolio-derived gap-read. Never publish it. The public artifacts are the
+engine + method + decision log + the (public-record) shortlist CSV.
 
 Usage:
     python scripts/build_report.py
@@ -35,8 +41,14 @@ import pandas as pd  # noqa: E402
 
 CSV_PATH = Path("output/sponsors_levelI.csv")
 GAPREAD_PATH = Path("output/private/gap_read_filled.md")
+HIRING_PATH = Path("output/private/hiring_now.csv")
 OUT_PATH = Path("output/private/runway_report.html")
 UX_SOC = "Web and Digital Interface Designers"  # 15-1255
+
+# How many shortlist rows the one-pager shows. Keeps the report readable; the
+# complete list is always in output/sponsors_levelI.csv (linked under the
+# table). Threshold logged in docs/decision_log.md (B10).
+REPORT_ROW_LIMIT = 40
 
 CSS = """
 :root { --ink:#15181d; --muted:#5b6470; --line:#e5e8ec; --accent:#1f6feb; --warn:#9a3412; --warnbg:#fff7ed; }
@@ -73,7 +85,32 @@ def fmt_wage(v) -> str:
     return f"${int(v):,}"
 
 
-def shortlist_rows_html(df: pd.DataFrame, n_quarters: int, limit: int = 40) -> str:
+def load_hiring_now(df: pd.DataFrame) -> dict[str, str]:
+    """The manual hiring-now check: employer -> reviewer's answer (yes/no/unclear).
+
+    Scaffolds output/private/hiring_now.csv (all shortlist employers, blank
+    answers) if it doesn't exist yet, and never overwrites an existing file —
+    the reviewer's hand-filled answers survive rebuilds. Returns whatever has
+    been filled in; employers not (yet) answered simply aren't in the map.
+    """
+    if not HIRING_PATH.exists():
+        HIRING_PATH.parent.mkdir(parents=True, exist_ok=True)
+        scaffold = pd.DataFrame({"employer": df["employer"], "hiring_now": ""})
+        scaffold.to_csv(HIRING_PATH, index=False)
+        print(f"created {HIRING_PATH} — fill the hiring_now column (yes / no / unclear)")
+        print("from a manual careers-page check, then rebuild to show it in the report.")
+        return {}
+    filled = pd.read_csv(HIRING_PATH).fillna("")
+    return {
+        str(r["employer"]): str(r["hiring_now"]).strip()
+        for _, r in filled.iterrows()
+        if str(r["hiring_now"]).strip()
+    }
+
+
+def shortlist_rows_html(
+    df: pd.DataFrame, n_quarters: int, hiring: dict[str, str], limit: int = REPORT_ROW_LIMIT
+) -> str:
     out = []
     for _, r in df.head(limit).iterrows():
         is_ux = UX_SOC in str(r["soc_titles"])
@@ -84,9 +121,11 @@ def shortlist_rows_html(df: pd.DataFrame, n_quarters: int, limit: int = 40) -> s
         wage = fmt_wage(r["wage_annual_median"])
         states = html.escape(str(r["worksite_states"])[:60])
         titles = html.escape(str(r["soc_titles"]))
+        hiring_now = html.escape(hiring.get(str(r["employer"]), "")) or "—"
         out.append(
             f"<tr><td>{ux_badge}{emp}</td><td>{int(r['filing_count'])}</td>"
-            f"<td>{repeat}</td><td>{titles}</td><td>{states}</td><td>{wage}</td></tr>"
+            f"<td>{repeat}</td><td>{titles}</td><td>{states}</td><td>{wage}</td>"
+            f"<td>{hiring_now}</td></tr>"
         )
     return "\n".join(out)
 
@@ -123,8 +162,8 @@ def gapread_html() -> str:
     return (
         '<div class="placeholder">'
         "<strong>Gap-read pending.</strong> The 3 named-company portfolio projects "
-        "come from the reviewed LLM step, which needs her portfolio + a handful of "
-        "live postings from the shortlist below. Run <code>prompts/gap_read.md</code> "
+        "come from the reviewed LLM step, which needs the applicant's portfolio + a "
+        "handful of live postings from the shortlist below. Run <code>prompts/gap_read.md</code> "
         "in your own Claude/ChatGPT, review the output, save it to "
         "<code>output/private/gap_read_filled.md</code>, and rebuild this report."
         "</div>"
@@ -137,6 +176,7 @@ def main() -> None:
     args = ap.parse_args()
 
     df = pd.read_csv(args.csv)
+    hiring = load_hiring_now(df)
     n_emp = len(df)
     n_repeat = int((df["quarters_present"] >= 2).sum())
     n_filings = int(df["filing_count"].sum())
@@ -183,17 +223,22 @@ The list answers <em>who sponsors at the new-grad wage tier</em>. It does not pr
 <p class="sub">Sorted by repeat-sponsorship (the strongest signal), then filing count.
 <span class="badge ux">UX/UI</span> marks companies that filed under the Web &amp; Digital Interface Designers code (15-1255).</p>
 <table>
-<thead><tr><th>Company</th><th>Filings</th><th>Quarters</th><th>Design role(s) filed</th><th>Worksite state(s)</th><th>Median wage*</th></tr></thead>
+<thead><tr><th>Company</th><th>Filings</th><th>Quarters</th><th>Design role(s) filed</th><th>Worksite state(s)</th><th>Median wage*</th><th>Hiring now?</th></tr></thead>
 <tbody>
-{shortlist_rows_html(df, n_quarters)}
+{shortlist_rows_html(df, n_quarters, hiring)}
 </tbody>
 </table>
-<p class="sub">* Annualized from the certified filing's <code>WAGE_RATE_OF_PAY_FROM</code>; salary is a secondary signal here. Full list in <code>output/sponsors_levelI.csv</code>.</p>
+<p class="sub">* Annualized from the certified filing's <code>WAGE_RATE_OF_PAY_FROM</code>; salary is a secondary signal here.
+Showing the top {min(n_emp, REPORT_ROW_LIMIT)} of {n_emp} companies — full list in <code>output/sponsors_levelI.csv</code>.<br>
+"Hiring now?" is a <strong>manual</strong> check (LCA data cannot answer it): eyeball each company's careers page,
+fill yes / no / unclear in <code>output/private/hiring_now.csv</code>, and rebuild. "—" = not checked yet.</p>
 
 <h2>Read this before you act — caveats</h2>
 <ul class="caveats">
-<li><strong>An LCA is not a hire-now signal.</strong> A certified filing means the employer filed to be <em>able</em> to sponsor. New grads typically start on OPT/STEM-OPT. This list = "who sponsors at entry wage," not "who will hire you this month." Eyeball each company's live postings before counting on it.</li>
+<li><strong>An LCA certification is not a hire or an open role.</strong> A certified filing means the employer filed to be <em>able</em> to sponsor. This list = "who sponsors at entry wage," not "who will hire you this month." Check the hiring-now column (a manual check) before counting on anyone.</li>
+<li><strong>OPT is not sponsorship.</strong> A new grad's first job is on OPT; sponsorship typically comes 1–3 years later. Sponsorship intent matters for where you land, but OPT is what gets you in the door.</li>
 <li><strong>Design is likely not STEM-OPT eligible</strong> → roughly a <strong>12-month</strong> OPT runway, not 36. Plan your timeline around the shorter window.</li>
+<li><strong>Employer names are conservatively normalized and may under-merge</strong> — the same parent company can appear as more than one row under different legal spellings. Merging too little beats merging two different companies.</li>
 <li><strong>{window_title}, design SOCs only.</strong> A company's absence here does not mean it never sponsors — only that it didn't certify an entry-wage design filing in this window. {"A single quarter is a thin sample — download a full fiscal year for a stronger repeat-sponsor signal." if n_quarters <= 1 else ""}</li>
 <li><strong>This is career/portfolio guidance, not immigration legal advice.</strong></li>
 </ul>
@@ -205,7 +250,7 @@ employer counts grouped by normalized name. Engine: <code>engine/sponsors.py</co
 Where this data comes from (and how to pull it yourself): the free, mandated DOL disclosure files at
 <a href="https://www.dol.gov/agencies/eta/foreign-labor/performance">dol.gov/agencies/eta/foreign-labor/performance</a>
 → Disclosure Data → LCA Programs (H-1B, H-1B1, E-3).<br>
-<strong>Private.</strong> This report is for her only — do not publish.
+<strong>Private.</strong> This report is for the applicant only — do not publish.
 </p>
 </body></html>"""
 

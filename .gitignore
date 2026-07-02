@@ -22,11 +22,16 @@ __pycache__/
 *.local
 
 # ---- DOL data: raw is large (~80-140MB), processed is regenerable ----
-data/raw/
-data/processed/
+# (contents ignored; the empty dirs are kept in git via .gitkeep so the
+# documented quickstart — "save the xlsx into data/raw/" — works on a clean clone)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
 
-# ---- Private outputs (her personal report contains portfolio + job-search data) ----
-output/private/
+# ---- Private outputs (the applicant's report contains portfolio + job-search data) ----
+output/private/*
+!output/private/.gitkeep
 
 # ---- OS / editor cruft ----
 .DS_Store
