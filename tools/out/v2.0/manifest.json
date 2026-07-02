@@ -1,0 +1,10 @@
+{
+  "version": "v2.0",
+  "run_date": "2026-07-01",
+  "doc": "OWN_YOUR_CODE.md",
+  "doc_sha12": "c55f183d4409",
+  "backend": "harness",
+  "phase": "folded",
+  "backend_model": "Sonnet 5 (cross-model onboarding read)",
+  "loose_end_count": 7
+}

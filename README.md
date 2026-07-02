@@ -24,6 +24,7 @@ engine/
   sponsors.py      # the engine (NO LLM): find + rank entry-wage design sponsors from DOL data
   verify.py        # verification gate: column/non-empty/collapse/golden checks (stops a bad run)
 scripts/
+  run.py               # THE command: convert + shortlist + report, end to end
   convert_quarters.py  # raw DOL xlsx -> narrow parquet (run once per quarter)
   build_shortlist.py   # thin caller: provenance + verify + write the shortlist CSV
   build_report.py      # self-contained HTML one-pager
@@ -39,30 +40,48 @@ output/            # sponsors_levelI.csv (public) + private/ report (gitignored)
 ## Setup
 
 ```bash
-python3 -m venv .venv
-.venv/bin/pip install -r requirements.txt
+# macOS/Linux
+python3 -m venv .venv && source .venv/bin/activate
+
+# Windows (git bash)
+python -m venv .venv && source .venv/Scripts/activate
+
+# then identical on both, venv active:
+pip install -r requirements.txt
 ```
 
 ## Run
 
-1. **Download a DOL LCA quarter** into `data/raw/` (FY2025, 2021+). Files:
-   `https://www.dol.gov/sites/dolgov/files/ETA/oflc/pdfs/LCA_Disclosure_Data_FY2025_Q4.xlsx`
-   (Q1–Q4 available; the full year gives the strongest repeat-sponsor signal).
+Activate the venv (see above) once per shell session. Then it's **two steps**: get the data, run one command.
 
-2. **Convert + build the shortlist** (runs the verification cell — a failed check stops the run):
+1. **Download a DOL LCA quarter** into `data/raw/`.
+   - Browse and download from the DOL page:
+     **https://www.dol.gov/agencies/eta/foreign-labor/performance**
+     → under *Disclosure Data*, **LCA Programs (H-1B, H-1B1, E-3)**.
+   - As of writing, the newest published quarter is **FY2026 Q2**. Any FY2021+ quarter works; a full
+     year of quarters gives the strongest repeat-sponsor signal (with a single quarter, no employer
+     can show as a repeat sponsor).
+   - Keep DOL's original filename (e.g. `LCA_Disclosure_Data_FY2026_Q2.xlsx`). Drop as many quarters
+     as you like into `data/raw/` — the tool uses whatever is there.
+
+2. **Run the whole pipeline** — convert, build the shortlist, build the report, in one command:
    ```bash
-   .venv/bin/python scripts/convert_quarters.py
-   .venv/bin/python scripts/build_shortlist.py        # -> output/sponsors_levelI.csv
+   python scripts/run.py
    ```
+   It figures out which quarters still need converting, runs the verification gate (a failed check
+   stops the run), and writes:
+   - `output/sponsors_levelI.csv` — the public grounded shortlist
+   - `output/private/runway_report.html` — the shareable one-pager (open in a browser)
 
-3. **Build the report:**
-   ```bash
-   .venv/bin/python scripts/build_report.py           # -> output/private/runway_report.html
-   ```
+   If there's no data yet, it tells you exactly where to get it instead of erroring out.
 
-4. **Portfolio review (the judgment step):** fill the four blocks in `prompts/gap_read.md`, run it in
+3. **Portfolio review (the judgment step):** fill the four blocks in `prompts/gap_read.md`, run it in
    your own Claude/ChatGPT, review the output, save it to `output/private/gap_read_filled.md`, and
-   rerun step 3 to slot it in.
+   run `python scripts/run.py` again to slot it into the report.
+
+> The three underlying scripts (`convert_quarters.py`, `build_shortlist.py`, `build_report.py`) still
+> run individually if you want them — `run.py` just chains them. `build_shortlist.py --quarters
+> FY2025Q4` pins a specific set; with no flag it uses every quarter you've converted.
 
 ## Adding another role later (v2 door, kept open)
 

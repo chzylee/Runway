@@ -83,8 +83,19 @@ def verify_collapse(rows: pd.DataFrame, table: pd.DataFrame) -> str:
     )
 
 
-def verify_golden_killtest(table: pd.DataFrame, killtest_top: str = "IGAVEL") -> str:
-    """The kill-test's top single-quarter sponsor reappears in the full table."""
+def verify_golden_killtest(
+    rows: pd.DataFrame, table: pd.DataFrame, killtest_top: str = "IGAVEL", anchor_quarter: str = "FY2025Q4"
+) -> str:
+    """The kill-test's top single-quarter sponsor reappears in the full table.
+
+    This golden value (IGAVEL, 7 Level-I design filings) is specific to
+    FY2025 Q4. It only means anything when that quarter is in the run — on any
+    other data it would fire a false failure — so it is *skipped* (not failed)
+    when the anchor quarter isn't loaded.
+    """
+    quarters = set(rows["QUARTER"].unique()) if "QUARTER" in rows.columns else set()
+    if anchor_quarter not in quarters:
+        return f"SKIP — golden kill-test anchored to {anchor_quarter} (not in this run)"
     present = killtest_top in set(table["employer"])
     return _check(present, f"kill-test top sponsor {killtest_top!r} present in shortlist")
 
@@ -97,5 +108,5 @@ def run_all(rows: pd.DataFrame, table: pd.DataFrame, killtest_top: str = "IGAVEL
     results.append(verify_nonempty(table))
     results.append(verify_count_consistency(table, rows))
     results.append(verify_collapse(rows, table))
-    results.append(verify_golden_killtest(table, killtest_top))
+    results.append(verify_golden_killtest(rows, table, killtest_top))
     return results

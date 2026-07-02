@@ -23,6 +23,12 @@ import html
 import sys
 from pathlib import Path
 
+try:
+    sys.stdout.reconfigure(encoding="utf-8")
+    sys.stderr.reconfigure(encoding="utf-8")
+except Exception:
+    pass
+
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 import pandas as pd  # noqa: E402
@@ -67,14 +73,14 @@ def fmt_wage(v) -> str:
     return f"${int(v):,}"
 
 
-def shortlist_rows_html(df: pd.DataFrame, limit: int = 40) -> str:
+def shortlist_rows_html(df: pd.DataFrame, n_quarters: int, limit: int = 40) -> str:
     out = []
     for _, r in df.head(limit).iterrows():
         is_ux = UX_SOC in str(r["soc_titles"])
         emp = html.escape(str(r["employer"]).title())
         ux_badge = '<span class="badge ux">UX/UI</span> ' if is_ux else ""
         qp = int(r["quarters_present"])
-        repeat = f'<span class="repeat">{qp}/4</span>' if qp >= 2 else f"{qp}/4"
+        repeat = f'<span class="repeat">{qp}/{n_quarters}</span>' if qp >= 2 else f"{qp}/{n_quarters}"
         wage = fmt_wage(r["wage_annual_median"])
         states = html.escape(str(r["worksite_states"])[:60])
         titles = html.escape(str(r["soc_titles"]))
@@ -113,7 +119,7 @@ def md_to_basic_html(md: str) -> str:
 
 def gapread_html() -> str:
     if GAPREAD_PATH.exists():
-        return md_to_basic_html(GAPREAD_PATH.read_text())
+        return md_to_basic_html(GAPREAD_PATH.read_text(encoding="utf-8"))
     return (
         '<div class="placeholder">'
         "<strong>Gap-read pending.</strong> The 3 named-company portfolio projects "
@@ -135,7 +141,18 @@ def main() -> None:
     n_repeat = int((df["quarters_present"] >= 2).sum())
     n_filings = int(df["filing_count"].sum())
     n_ux = int(df["soc_titles"].str.contains(UX_SOC, na=False).sum())
-    quarters = sorted(set(", ".join(df["quarters"].astype(str)).replace(" ", "").split(",")))
+    quarters = sorted(q for q in set(", ".join(df["quarters"].astype(str)).replace(" ", "").split(",")) if q)
+    n_quarters = len(quarters)
+    # Human phrase for the data window, honest about how much data this actually is.
+    if n_quarters <= 1:
+        window = f"in {quarters[0]}" if quarters else "in the DOL filing data"
+        window_title = "One quarter"
+    elif n_quarters >= 4:
+        window = f"across {n_quarters} quarters ({quarters[0]}–{quarters[-1]})"
+        window_title = f"{n_quarters} quarters"
+    else:
+        window = f"across {n_quarters} quarters ({quarters[0]}–{quarters[-1]})"
+        window_title = f"{n_quarters} quarters only"
 
     body = f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -147,7 +164,7 @@ def main() -> None:
 
 <div class="lede">
 These are companies that <strong>actually certified an entry-wage (Level&nbsp;I) design visa filing</strong>
-in the last fiscal year — read straight off mandated DOL filings, not a directory of "who sponsors anyone."
+{window} — read straight off mandated DOL filings, not a directory of "who sponsors anyone."
 The list answers <em>who sponsors at the new-grad wage tier</em>. It does not promise they're hiring you this month
 (see caveats).
 </div>
@@ -168,7 +185,7 @@ The list answers <em>who sponsors at the new-grad wage tier</em>. It does not pr
 <table>
 <thead><tr><th>Company</th><th>Filings</th><th>Quarters</th><th>Design role(s) filed</th><th>Worksite state(s)</th><th>Median wage*</th></tr></thead>
 <tbody>
-{shortlist_rows_html(df)}
+{shortlist_rows_html(df, n_quarters)}
 </tbody>
 </table>
 <p class="sub">* Annualized from the certified filing's <code>WAGE_RATE_OF_PAY_FROM</code>; salary is a secondary signal here. Full list in <code>output/sponsors_levelI.csv</code>.</p>
@@ -177,7 +194,7 @@ The list answers <em>who sponsors at the new-grad wage tier</em>. It does not pr
 <ul class="caveats">
 <li><strong>An LCA is not a hire-now signal.</strong> A certified filing means the employer filed to be <em>able</em> to sponsor. New grads typically start on OPT/STEM-OPT. This list = "who sponsors at entry wage," not "who will hire you this month." Eyeball each company's live postings before counting on it.</li>
 <li><strong>Design is likely not STEM-OPT eligible</strong> → roughly a <strong>12-month</strong> OPT runway, not 36. Plan your timeline around the shorter window.</li>
-<li><strong>One fiscal year, design SOCs only.</strong> A company's absence here does not mean it never sponsors — only that it didn't certify an entry-wage design filing in this window.</li>
+<li><strong>{window_title}, design SOCs only.</strong> A company's absence here does not mean it never sponsors — only that it didn't certify an entry-wage design filing in this window. {"A single quarter is a thin sample — download a full fiscal year for a stronger repeat-sponsor signal." if n_quarters <= 1 else ""}</li>
 <li><strong>This is career/portfolio guidance, not immigration legal advice.</strong></li>
 </ul>
 
@@ -185,12 +202,15 @@ The list answers <em>who sponsors at the new-grad wage tier</em>. It does not pr
 Source: U.S. DOL OFLC LCA Programs disclosure data, {", ".join(quarters)} ·
 filter: <code>CASE_STATUS = Certified</code>, SOC ∈ {{15-1255, 27-1024, 27-1021}}, <code>PW_WAGE_LEVEL = I</code> ·
 employer counts grouped by normalized name. Engine: <code>engine/sponsors.py</code> · verification passes (<code>engine/verify.py</code>).<br>
+Where this data comes from (and how to pull it yourself): the free, mandated DOL disclosure files at
+<a href="https://www.dol.gov/agencies/eta/foreign-labor/performance">dol.gov/agencies/eta/foreign-labor/performance</a>
+→ Disclosure Data → LCA Programs (H-1B, H-1B1, E-3).<br>
 <strong>Private.</strong> This report is for her only — do not publish.
 </p>
 </body></html>"""
 
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    OUT_PATH.write_text(body)
+    OUT_PATH.write_text(body, encoding="utf-8")
     print(f"wrote {OUT_PATH}  ({n_emp} companies, {n_repeat} repeat sponsors)")
 
 

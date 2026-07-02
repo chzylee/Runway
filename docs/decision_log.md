@@ -26,12 +26,38 @@ build-in-public reasoning trail (public — contains no personal data).
 | # | Fork | Chose | Over | Why |
 |---|------|-------|------|-----|
 | B1 | **Kill-test first** | Ran `build_sponsor_table(design, "I", FY2025Q4)` before anything else | Build the repo, then check | The brief's go/no-go gate. One quarter → **52 distinct real companies, not staffing-dominated** (top employer 7 filings; Amazon/Deloitte/Activision/DraftKings/Esri present). Door is open → GO. |
-| B2 | Quarter coverage | **Full FY2025 (Q1–Q4)** for the shortlist | Single quarter (brief's literal scope) | "*Actually* sponsors entry-wage designers" is far stronger when a company appears across multiple quarters. The engine is parameterized for exactly this, so it's a one-call extension, not new scope. Single quarter remains the documented kill-test. |
+| B2 | Quarter coverage | **Full FY2025 (Q1–Q4)** for the shortlist | Single quarter (brief's literal scope) | "*Actually* sponsors entry-wage designers" is far stronger when a company appears across multiple quarters. The engine is parameterized for exactly this, so it's a one-call extension, not new scope. Single quarter remains the documented kill-test. **⚠ Corrected 2026-07-01 — see Corrections below: this was implemented against its own text.** |
 | B3 | Quarter vintage | **FY2025** (most recent complete fiscal year) | Older 2021+ quarter | Brief says "use a 2021+ quarter." Most recent = most relevant to her job search. Confirmed `PW_WAGE_LEVEL` is the bare-`"I"` spelling in this vintage (not "Level I"/1). |
 | B4 | Column access | Resolve by **name** from each file's header | Hardcoded column indices | Columns are reordered across quarters (FY2025 Q1 has `WORKSITE_COUNTY` where Q4 has `WORKSITE_CITY`). The verification assert *caught* the index bug mid-build — exactly its job. Name resolution is robust. |
 | B5 | "Notebook" form | **Module + thin runner script** (`scripts/build_shortlist.py`) | A Jupyter notebook | Same provenance + verification "cells," but diffable, reviewable, and a cleaner realization of the engine/altitude split. The success criterion "every cell traces to source + quarter" is met by the script's printed provenance. |
 | B6 | Privacy split | Her HTML report → `output/private/` (gitignored); engine + method + decision log + (public-record) shortlist CSV → public | Publish everything / publish nothing | Her portfolio + job-search data must never be published. LCA employer names are public record, so the shortlist itself is shareable. |
 | B7 | Report format | Self-contained HTML, embedded CSS, no JS/pandoc | pandoc/PDF pipeline | pandoc isn't installed; a single self-contained HTML opens anywhere and is trivially shareable for early UX feedback. PDF stays optional. |
+
+---
+
+## Corrections (2026-07-01) — build diverged from these decisions
+
+A manual first run failed immediately. Root cause was a decision implemented
+against its own text, plus a run-path that was never tested as the user. Full
+write-up: `postmortem_2026-07-01_flow-break.md`. The corrections:
+
+| # | Decision it violated | What the code actually did | Correction |
+|---|------|------|------|
+| C1 | **B2** ("single quarter remains the documented kill-test") | Hardcoded Q1–Q4 as **mandatory** and hard-crashed on any missing quarter — breaking the single-quarter path B2 itself required. README (download *one* quarter) and the brief agreed with B2; only the code disagreed. | Quarters are **auto-detected** from `data/processed/`; one is valid; a run never crashes on a quarter the user didn't ask for. `engine/sponsors.detect_quarters()`. |
+| C2 | North Star ("UX for non-technical users") | Missing data produced a raw traceback naming internal functions, advising a fix that couldn't work. | Plain-English no-data message with the DOL page, filename, and the one command. |
+| C3 | Constraint ("runs for *her*") | Never run on the target's Japanese-locale Windows console (cp932); Unicode output crashed it. | UTF-8 forced across all scripts + file I/O. |
+| C4 | B1/verification intent | Golden verify check hard-anchored to a single FY2025-Q4 employer would crash on *current* data. | Check skips (not fails) when its anchor quarter isn't loaded. |
+| — | — | Three scripts, manual ordering, no orchestration. | `scripts/run.py` — one command: convert → shortlist → report, with guard rails. |
+
+**Process lesson (harvest for the Ship Pipeline):** a decision recorded in this
+log was never checked *against the code*. "Read each ledger entry against the
+build" is now an owner's pre-ship step (see postmortem checklist).
+
+## Forward decisions (v2 door)
+
+| # | Fork | Chose | Over | Why |
+|---|------|-------|------|-----|
+| B8 | Data acquisition | **Manual download now**, auto-download deferred to the send-to-tester state | Auto-download in v1 | Not required for the builder's manual run. When added, provenance is a hard requirement, not a nicety: the report + tool must always state **which DOL sheet** the numbers come from and **how to find/download it yourself** — both for trust and for a curious reader. Auto-download must never hide the source. |
 
 ---
 
@@ -44,11 +70,15 @@ build-in-public reasoning trail (public — contains no personal data).
   punctuation). It will not merge genuinely different legal spellings of the same
   parent (e.g. distinct subsidiaries). Over-merging is the worse error, so we
   under-merge on purpose.
-- **One role (design), one fiscal year.** Multi-role and live refresh are v2.
+- **One role (design); whatever quarters you've downloaded.** The tool runs on
+  one quarter or a full year — a single quarter is a thinner sample (no employer
+  can show as a repeat sponsor). Multi-role and live refresh are v2.
 
 ## Artifacts
 
 - Engine: `engine/sponsors.py` · Verification: `engine/verify.py`
+- One command: `scripts/run.py` (convert → shortlist → report)
 - Runners: `scripts/convert_quarters.py`, `scripts/build_shortlist.py`, `scripts/build_report.py`
+- Post-mortem of the first-run failure: `postmortem_2026-07-01_flow-break.md`
 - Saved gap-read prompt: `prompts/gap_read.md`
 - Public shortlist: `output/sponsors_levelI.csv` · Her report (private): `output/private/runway_report.html`

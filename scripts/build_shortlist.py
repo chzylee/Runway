@@ -14,6 +14,14 @@ import argparse
 import sys
 from pathlib import Path
 
+# Force UTF-8 stdout so non-ASCII (em-dashes in the verify log) doesn't crash on
+# a legacy-codepage Windows console (e.g. cp932).
+try:
+    sys.stdout.reconfigure(encoding="utf-8")
+    sys.stderr.reconfigure(encoding="utf-8")
+except Exception:
+    pass
+
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 import pandas as pd  # noqa: E402
@@ -23,27 +31,74 @@ from engine.sponsors import (  # noqa: E402
     ROLE_SOC,
     SOC_TITLES,
     build_sponsor_table,
+    detect_quarters,
     load_certified_rows,
     quarter_parquet_path,
 )
 
-DEFAULT_QUARTERS = ["FY2025Q1", "FY2025Q2", "FY2025Q3", "FY2025Q4"]
 WAGE_LEVEL = "I"
 OUT_DIR = Path("output")
+
+# Where to get the data + the newest quarter published, so a no-data run points
+# the user somewhere real instead of crashing. Update LATEST_QUARTER when DOL
+# publishes a new one (they release quarterly).
+DOL_DATA_PAGE = "https://www.dol.gov/agencies/eta/foreign-labor/performance"
+LATEST_QUARTER = "FY2026 Q2"
 
 
 def rule(title: str) -> None:
     print(f"\n{'=' * 70}\n{title}\n{'=' * 70}")
 
 
+def no_data_message() -> str:
+    return (
+        "\nNo converted DOL data found in data/processed/.\n\n"
+        "To fix this, download at least one LCA quarter and convert it:\n"
+        f"  1. Open  {DOL_DATA_PAGE}\n"
+        "     (under 'Disclosure Data' -> LCA Programs (H-1B, H-1B1, E-3)).\n"
+        f"     The newest quarter available is {LATEST_QUARTER}. Any FY2021+ quarter works;\n"
+        "     a full year of quarters gives the strongest repeat-sponsor signal.\n"
+        "  2. Save the .xlsx file(s) into  data/raw/  (keep DOL's original filename).\n"
+        "  3. Run:  python scripts/run.py\n"
+        "     (that converts, builds the shortlist, and builds the report in one step).\n"
+    )
+
+
+def missing_quarter_message(missing: list[str]) -> str:
+    have = detect_quarters()
+    lines = [
+        f"\nRequested quarter(s) not converted yet: {', '.join(missing)}.",
+        "",
+        "To fix, either:",
+        "  - Drop those quarters' .xlsx into data/raw/ and run:  python scripts/run.py",
+        f"    (download them at {DOL_DATA_PAGE} -> Disclosure Data -> LCA Programs).",
+    ]
+    if have:
+        lines.append(f"  - Or omit --quarters to use what's already converted: {', '.join(have)}.")
+    else:
+        lines.append("  - No quarters are converted yet; run  python scripts/run.py  to set up.")
+    return "\n".join(lines) + "\n"
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--role", default="design", choices=sorted(ROLE_SOC))
-    ap.add_argument("--quarters", default=",".join(DEFAULT_QUARTERS))
+    ap.add_argument(
+        "--quarters",
+        default="",
+        help="comma-separated FY####Q# labels; default = every quarter converted "
+        "in data/processed/",
+    )
     args = ap.parse_args()
 
     role = args.role
-    quarters = [q.strip().upper() for q in args.quarters.split(",") if q.strip()]
+    if args.quarters.strip():
+        quarters = [q.strip().upper() for q in args.quarters.split(",") if q.strip()]
+    else:
+        quarters = detect_quarters()  # run on whatever is present — one quarter is fine
+    if not quarters:
+        print(no_data_message())
+        sys.exit(1)
     soc_codes = ROLE_SOC[role]
 
     rule("PROVENANCE")
@@ -54,8 +109,14 @@ def main() -> None:
     print("source      : DOL OFLC LCA Programs disclosure data (CASE_STATUS=Certified)")
     for q in quarters:
         p = quarter_parquet_path(q)
-        status = "OK" if p.exists() else "MISSING — run scripts/convert_quarters.py"
+        status = "OK" if p.exists() else "MISSING — download this quarter's xlsx, then run scripts/run.py"
         print(f"  {q}: {p}  [{status}]")
+
+    # A requested quarter with no converted parquet is a clean stop, not a traceback.
+    missing = [q for q in quarters if not quarter_parquet_path(q).exists()]
+    if missing:
+        print(missing_quarter_message(missing))
+        sys.exit(1)
 
     # Row-level grounding + aggregated employer table.
     rows = load_certified_rows(soc_codes, WAGE_LEVEL, quarters)

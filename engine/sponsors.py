@@ -131,6 +131,27 @@ def quarter_parquet_path(quarter: str, processed_dir: str | Path = "data/process
     return Path(processed_dir) / f"lca_{quarter.lower()}.parquet"
 
 
+_QUARTER_RE = re.compile(r"lca_(fy\d{4}q\d)\.parquet$", re.IGNORECASE)
+
+
+def detect_quarters(processed_dir: str | Path = "data/processed") -> list[str]:
+    """Every quarter that has actually been converted, e.g. ['FY2025Q4'].
+
+    The tool runs on whatever data is present — one quarter is a valid run.
+    Returned sorted (chronological, since the labels sort naturally), uppercased
+    to the FY####Q# form the rest of the engine uses. Empty list = no data yet.
+    """
+    d = Path(processed_dir)
+    if not d.exists():
+        return []
+    out = []
+    for p in d.glob("lca_*.parquet"):
+        m = _QUARTER_RE.search(p.name)
+        if m:
+            out.append(m.group(1).upper())
+    return sorted(out)
+
+
 def xlsx_to_parquet(xlsx_path: str | Path, parquet_path: str | Path) -> int:
     """Stream the 100+ MB raw xlsx -> narrow parquet, only REQUIRED_COLUMNS.
 

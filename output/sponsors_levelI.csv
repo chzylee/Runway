@@ -1,481 +1,53 @@
 employer,employer_name_raw,filing_count,quarters_present,quarters,soc_codes,soc_titles,worksite_states,worksite_cities,wage_annual_min,wage_annual_median,wage_annual_max
-AMAZON COM SERVICES,Amazon.com Services LLC,7,3,"FY2025Q1, FY2025Q3, FY2025Q4","15-1255, 27-1024","Web and Digital Interface Designers, Graphic Designers",CA | NJ | NY | WA,Bellevue | Jersey City | New York | Santa Clara | Seattle,100200.0,110300.0,111800.0
-DELOITTE CONSULTING,Deloitte Consulting LLP,8,2,"FY2025Q3, FY2025Q4",15-1255,Web and Digital Interface Designers,CA | PA | TX | WA,Austin | Mill Creek | Philadelphia | Richmond | San Francisco | Seattle,52416.0,83896.0,135700.0
-ENVIRONMENTAL SYSTEMS RESEARCH INSTITUTE,"Environmental Systems Research Institute, Inc.",5,2,"FY2025Q3, FY2025Q4",15-1255,Web and Digital Interface Designers,CA | VA | WA,Redlands | Seattle | Vienna,91354.0,104250.0,112362.0
-IVY ENTERPRISES,"IVY Enterprises, Inc.",5,2,"FY2025Q1, FY2025Q3","27-1021, 27-1024","Commercial and Industrial Designers, Graphic Designers",NY,Port Washington,51542.0,51542.0,61000.0
-SKYSCRAPER MUSEUM,The Skyscraper Museum,4,2,"FY2025Q3, FY2025Q4",27-1024,Graphic Designers,NY,New York,51542.0,52749.0,53955.0
-ZYMEBALANZ,Zymebalanz LLC,4,2,"FY2025Q1, FY2025Q3",27-1021,Commercial and Industrial Designers,CA,San Jose | Santa Clara,83699.0,83699.0,83699.0
-ACTIVISION PUBLISHING,ACTIVISION PUBLISHING INC,2,2,"FY2025Q3, FY2025Q4",15-1255,Web and Digital Interface Designers,CA,SANTA MONICA | WOOLDAND HILLS,80350.0,84916.0,89482.0
-DIGITAL ARC SYSTEMS,"Digital Arc Systems, Corp.",2,2,"FY2025Q3, FY2025Q4",15-1255,Web and Digital Interface Designers,PA,Pittsburgh,52000.0,52000.0,52000.0
-TURNER SERVICES,"Turner Services, Inc.",2,2,"FY2025Q1, FY2025Q4",15-1255,Web and Digital Interface Designers,NY,New York,72244.0,72813.0,73382.0
 IGAVEL,"iGavel, Inc.",7,1,FY2025Q4,27-1024,Graphic Designers,TX,New Braunfels,40250.0,40250.0,40250.0
-STARWARD GAME STUDIOS,STARWARD GAME STUDIOS LLC,6,1,FY2025Q3,"15-1255, 27-1024","Web and Digital Interface Designers, Graphic Designers",CA | PA,Albany | Montclair | Mountain View | Palo Alto | Philadelphia,52416.0,77147.0,114462.0
-TIKTOK,TikTok Inc.,5,1,FY2025Q3,"15-1255, 27-1021","Web and Digital Interface Designers, Commercial and Industrial Designers",CA,San Jose,99600.0,120000.0,150000.0
-MELTEK,Meltek Inc.,4,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,Sunnyvale | Union City,61000.0,61000.0,61000.0
-MICROSOFT,Microsoft Corporation,4,1,FY2025Q3,"15-1255, 27-1021","Web and Digital Interface Designers, Commercial and Industrial Designers",CA | WA,Mountain View | Redmond,132000.0,139720.0,145500.0
-PIPING TECHNOLOGY & PRODUCTS,"PIPING TECHNOLOGY & PRODUCTS, INC",4,1,FY2025Q3,27-1021,Commercial and Industrial Designers,TX,HOUSTON,54496.0,61360.0,66560.0
-AKRAYA,"Akraya, Inc.",3,1,FY2025Q3,"15-1255, 27-1024","Web and Digital Interface Designers, Graphic Designers",CA,Los Altos | Mountain View,75000.0,118872.0,118872.0
-GLADE TOOL,Glade Tool Inc,3,1,FY2025Q3,15-1255,Web and Digital Interface Designers,NY,Brooklyn,73382.0,78000.0,78000.0
 JAGADGURU KRIPALUJI YOG,Jagadguru Kripaluji Yog,3,1,FY2025Q4,15-1255,Web and Digital Interface Designers,TX,Allen,57034.0,57034.0,57034.0
-SCHELL GAMES,Schell Games LLC,3,1,FY2025Q3,15-1255,Web and Digital Interface Designers,PA,Pittsburgh,50710.0,51000.0,70000.0
-SOUTHERN TELECOM,Southern Telecom Inc.,3,1,FY2025Q3,"27-1021, 27-1024","Commercial and Industrial Designers, Graphic Designers",NY,Brooklyn,51542.0,60000.0,70000.0
 VLAB,VLAB LLC,3,1,FY2025Q4,15-1255,Web and Digital Interface Designers,MA,Cambridge City,73258.0,73258.0,73258.0
-WORLDWIDE OILFIELD MACHINE,Worldwide Oilfield Machine Inc,3,1,FY2025Q3,27-1021,Commercial and Industrial Designers,TX,Houston,54496.0,54496.0,70000.0
-AFAR MEDIA,Afar Media LLC,2,1,FY2025Q3,27-1024,Graphic Designers,CA,Fairfax | North Hollywood,75000.0,75000.0,75000.0
-AMERICAN REGIONAL CENTER FOR ENTREPRENEURS,"American Regional Center for Entrepreneurs, Inc.",2,1,FY2025Q3,27-1024,Graphic Designers,NY,Long Island City,52000.0,53500.0,55000.0
-AXON ENTERPRISE,"Axon Enterprise, Inc.",2,1,FY2025Q3,27-1021,Commercial and Industrial Designers,CA | WA,Santa Clara | Seattle,128204.0,141990.0,155775.0
-BOSCO TOOLS,Bosco Tools Inc.,2,1,FY2025Q3,15-1255,Web and Digital Interface Designers,NY | WA,New York | Seattle,73382.0,74641.0,75899.0
 BRIGHTECH,"Brightech, Inc.",2,1,FY2025Q4,27-1021,Commercial and Industrial Designers,CA,Beverly Hills,63107.0,63107.0,63107.0
-BUILDERTREND SOLUTIONS,"Buildertrend Solutions, Inc.",2,1,FY2025Q3,27-1021,Commercial and Industrial Designers,DC | VA,Richmond | Washington,59696.0,59696.0,59696.0
 CLOUD PRINTING,Cloud Printing Corp,2,1,FY2025Q4,27-1024,Graphic Designers,NY,New York,54080.0,54080.0,54080.0
-CROCS,"Crocs, Inc.",2,1,FY2025Q3,27-1021,Commercial and Industrial Designers,CO,Broomfield,70000.0,76000.0,82000.0
-ELECTRONIC ARTS,Electronic Arts Inc.,2,1,FY2025Q1,27-1024,Graphic Designers,CA | WI,Chatsworth | Madison,72768.0,72768.0,72768.0
+DELOITTE CONSULTING,Deloitte Consulting LLP,2,1,FY2025Q4,15-1255,Web and Digital Interface Designers,TX,Austin,61006.0,89753.0,118500.0
 EXOTEC NORTH AMERICA,Exotec North America Inc. ,2,1,FY2025Q4,27-1021,Commercial and Industrial Designers,GA,Atlanta,66144.0,66144.0,66144.0
-FUN-GI GAMES,FUN-GI GAMES LLC,2,1,FY2025Q3,27-1024,Graphic Designers,CA,EL SEGUNDO,46509.0,46509.0,46509.0
-GODADDY COM,"GoDaddy.com, LLC",2,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA | WA,Kirkland | Santa Clara,75899.0,95180.0,114462.0
-GOLDMAN SACHS BANK USA,GOLDMAN SACHS BANK USA,2,1,FY2025Q3,"15-1255, 27-1024","Web and Digital Interface Designers, Graphic Designers",NY,New York | New york,93600.0,93600.0,93600.0
-GRAND SUPERCENTER,"Grand Supercenter, Inc.",2,1,FY2025Q3,27-1021,Commercial and Industrial Designers,NJ,Lyndhurst,56826.0,60029.0,63232.0
-HAUSLANE,"Hauslane, Inc.",2,1,FY2025Q3,"27-1021, 27-1024","Commercial and Industrial Designers, Graphic Designers",CA,Brea | South San Francisco,64375.0,67188.0,70000.0
-HEBRON USA,"Hebron USA, Inc.",2,1,FY2025Q3,27-1024,Graphic Designers,CA,Los Angeles,46509.0,46509.0,46509.0
-HORIZON WORLD SALON,Horizon World Salon Incorporated,2,1,FY2025Q3,"15-1255, 27-1024","Web and Digital Interface Designers, Graphic Designers",MI | NY,Ann Arbor | New York,52000.0,52000.0,52000.0
-IL FANTUAN,IL FANTUAN LTD.,2,1,FY2025Q3,27-1024,Graphic Designers,CA,FREMONT,60798.0,60798.0,60798.0
-ILLINOIS STATE UNIVERSITY,Illinois State University,2,1,FY2025Q3,15-1255,Web and Digital Interface Designers,IL,Normal,68568.0,68568.0,68568.0
-INDICUM,Indicum LLC,2,1,FY2025Q3,27-1021,Commercial and Industrial Designers,OR,Hillsboro,65395.0,65395.0,65395.0
-JOOL PRODUCTS,JOOL PRODUCTS LLC,2,1,FY2025Q3,27-1021,Commercial and Industrial Designers,NJ,Lakewood,58000.0,58000.0,58000.0
-KATY SKELTON GA,Katy Skelton GA LLC,2,1,FY2025Q3,27-1021,Commercial and Industrial Designers,GA,Savannah,45157.0,45157.0,45157.0
-KOMPRISE,"Komprise, Inc.",2,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,Campbell | San Bruno,91894.0,103178.0,114462.0
-LAFLARE NY,LAFLARE NY INC,2,1,FY2025Q3,27-1024,Graphic Designers,NJ,PALISADES PARK,52000.0,52000.0,52000.0
-MAI REALITY,MAI Reality Inc,2,1,FY2025Q3,"15-1255, 27-1024","Web and Digital Interface Designers, Graphic Designers",CA,SAN FRANCISCO | San Francisco,56160.0,74880.0,93600.0
-META PLATFORMS,"Meta Platforms, Inc",2,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA | NY,Menlo Park | New York,132991.0,133446.0,133901.0
-NAEUN,Naeun LLC,2,1,FY2025Q3,27-1024,Graphic Designers,NY,New York,76650.0,76650.0,76650.0
-NYFIFTH,NYFIFTH INC.,2,1,FY2025Q1,27-1021,Commercial and Industrial Designers,CA,FREMONT,80000.0,80000.0,80000.0
-OPEN AVENUES FOUNDATION,Open Avenues Foundation,2,1,FY2025Q3,27-1024,Graphic Designers,SC,Fort Mill,37773.0,37773.0,37773.0
-OSHIN AUTOMATION & ROBOTICS,OSHIN AUTOMATION & ROBOTICS LLC,2,1,FY2025Q3,27-1021,Commercial and Industrial Designers,AL,Tuscaloosa,56600.0,56600.0,56600.0
-OZ STEEL,OZ STEEL INC,2,1,FY2025Q3,27-1021,Commercial and Industrial Designers,NY,BROOKLYN | STATEN ISLAND,57000.0,57000.0,57000.0
-PEBLLA,Peblla Inc.,2,1,FY2025Q3,15-1255,Web and Digital Interface Designers,MD,Rockville,52811.0,52811.0,52811.0
-PENTAGRAM DESIGN,"Pentagram Design, Inc.",2,1,FY2025Q3,27-1024,Graphic Designers,NY,New York,55000.0,63500.0,72000.0
-PININFARINA OF AMERICA,Pininfarina of America Corp.,2,1,FY2025Q3,27-1021,Commercial and Industrial Designers,FL,Miami,60000.0,65000.0,70000.0
-PROWORK PACIFIC,Prowork Pacific Inc.,2,1,FY2025Q3,"15-1255, 27-1024","Web and Digital Interface Designers, Graphic Designers",HI,Honolulu,42000.0,48000.0,54000.0
-RDC-S111,"RDC-S111, Inc.",2,1,FY2025Q3,27-1021,Commercial and Industrial Designers,CA,Long Beach,54891.0,57450.0,60010.0
-RMLL,RMLL CORP.,2,1,FY2025Q3,27-1024,Graphic Designers,NY,New York,51542.0,51542.0,51542.0
-ROCKSTAR NEW ENGLAND,"Rockstar New England, Inc.",2,1,FY2025Q3,15-1255,Web and Digital Interface Designers,MA,Andover,73445.0,74222.0,75000.0
-RONBOW,Ronbow Corporation,2,1,FY2025Q3,"27-1021, 27-1024","Commercial and Industrial Designers, Graphic Designers",CA,Livermore,56077.0,61755.0,67434.0
-SIMPLEHUMAN,"Simplehuman, LLC",2,1,FY2025Q3,27-1021,Commercial and Industrial Designers,CA,Torrance,65000.0,65000.0,65000.0
-SPRINKLR,Sprinklr Inc.,2,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA | NY,New York | San Jose,96096.0,107023.0,117950.0
-SUMMIT BEND US,SUMMIT BEND US CORPORATION,2,1,FY2025Q3,15-1255,Web and Digital Interface Designers,OH,Akron,55000.0,55000.0,55000.0
-UTILA LEGEND,"Utila Legend, LLC",2,1,FY2025Q3,27-1021,Commercial and Industrial Designers,MI,Troy,49109.0,49514.0,49920.0
-WINSUN TECHNOLOGY,Winsun Technology Inc.,2,1,FY2025Q3,27-1024,Graphic Designers,CA,Irvine | Santa Cruz,50000.0,50000.0,50000.0
-Y&L TRADING,Y&L TRADING LLC,2,1,FY2025Q3,15-1255,Web and Digital Interface Designers,WA,Bothell,76960.0,76960.0,76960.0
-YARBO INTERNATIONAL,Yarbo International Inc.,2,1,FY2025Q3,27-1021,Commercial and Industrial Designers,NY,Ronkonkoma,56826.0,56826.0,56826.0
-1661,"1661, Inc.",1,1,FY2025Q3,27-1024,Graphic Designers,CA,Los Angeles,69600.0,69600.0,69600.0
-1NTEGER,"1nteger, LLC",1,1,FY2025Q3,27-1024,Graphic Designers,NY,New York,95000.0,95000.0,95000.0
-52 LAUNCH,52 Launch Inc.,1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,MA,Framinghan,64293.0,64293.0,64293.0
-9920 MANAGEMENT,9920 MANAGEMENT LLC,1,1,FY2025Q3,27-1024,Graphic Designers,CA,WEST COVINA,58240.0,58240.0,58240.0
-A &A INDUSTRIAL,A &A Industrial LLC,1,1,FY2025Q3,27-1024,Graphic Designers,NY,Queens Village,51600.0,51600.0,51600.0
-A L DIAMOND HOME PRODUCTS,A L Diamond Home Products LLC,1,1,FY2025Q1,27-1021,Commercial and Industrial Designers,NY,New York,70000.0,70000.0,70000.0
-ABBIE HOME TRADING,Abbie Home Trading Inc,1,1,FY2025Q3,27-1024,Graphic Designers,CA,Baldwin Park,46509.0,46509.0,46509.0
-ABSOLUTE HOT NEW YORK,Absolute Hot New York Corp,1,1,FY2025Q3,27-1024,Graphic Designers,NY,Melville,61880.0,61880.0,61880.0
-ACADEMY,"Academy, LTD",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,TX,Katy,87500.0,87500.0,87500.0
-ACG GO,ACG GO LLC,1,1,FY2025Q3,27-1024,Graphic Designers,AZ,Tempe,41267.0,41267.0,41267.0
-ADMARKETPLACE,Admarketplace Inc,1,1,FY2025Q3,27-1024,Graphic Designers,NY,New York,78000.0,78000.0,78000.0
-AFTERNOONNYC,AFTERNOONNYC LLC,1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,NY,Brooklyn,57000.0,57000.0,57000.0
-AFURI NEW YORK,Afuri New York LLC,1,1,FY2025Q1,27-1024,Graphic Designers,NY,Great Neck,51600.0,51600.0,51600.0
-AGIL FX,"AGIL fx, Inc.",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,PA,Philadelphia,55000.0,55000.0,55000.0
-AGS,AGS LLC,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,GA,Atlanta,65000.0,65000.0,65000.0
-AIPHONE,AIPHONE CORPORATION,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,WA,Redmond,83000.0,83000.0,83000.0
+SKYSCRAPER MUSEUM,The Skyscraper Museum,2,1,FY2025Q4,27-1024,Graphic Designers,NY,New York,53955.0,53955.0,53955.0
+ACTIVISION PUBLISHING,ACTIVISION PUBLISHING INC,1,1,FY2025Q4,15-1255,Web and Digital Interface Designers,CA,SANTA MONICA,89482.0,89482.0,89482.0
 AIRMDR,"AirMDR, Inc.",1,1,FY2025Q4,15-1255,Web and Digital Interface Designers,CA,Santa Clara,135000.0,135000.0,135000.0
-AISERA,"Aisera, Inc.",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,Palo Alto,120000.0,120000.0,120000.0
-ALAPIENT,"Alapient, Inc.",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,VA,Leesburg,60000.0,60000.0,60000.0
-ALIBABA COM US E-COMMERCE,Alibaba.com US E-commerce Corporation,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,Sunnyvale,114462.0,114462.0,114462.0
-ALL ALPHA ARMORY,All Alpha Armory INC,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,TX,Hubbard,42100.0,42100.0,42100.0
-ALLIED SOLUTIONS,"Allied Solutions, LLC",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,IN,Carmel,80000.0,80000.0,80000.0
-ALLUXE,ALLUXE INC,1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,NY,Long Island City,56826.0,56826.0,56826.0
-ALTEN TECHNOLOGY USA,"Alten Technology USA, Inc.",1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,MI,Auburn Hills,60000.0,60000.0,60000.0
-AMERICA BEAUTY FORMS,America Beauty Forms Inc.,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,NJ,Hoboken,73382.0,73382.0,73382.0
-AMERICAN TECHNOLOGY CONSULTING,"American Technology Consulting, LLC",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,IA,West Des Moines,60000.0,60000.0,60000.0
-AMOREPACIFIC US,"AMOREPACIFIC US, INC.",1,1,FY2025Q3,27-1024,Graphic Designers,NY,NEW YORK,100000.0,100000.0,100000.0
-ANAGATA,ANAGATA INC,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,Milpitas,114462.0,114462.0,114462.0
-ANALOGFOLK,AnalogFolk LLC,1,1,FY2025Q3,27-1024,Graphic Designers,NY,Brooklyn,65000.0,65000.0,65000.0
-ANDA REAL ESTATE,Anda Real Estate LLC,1,1,FY2025Q3,27-1024,Graphic Designers,MA,Cambridge,50592.0,50592.0,50592.0
-ANDORYN DESIGN,Andoryn Design LLC,1,1,FY2025Q3,27-1024,Graphic Designers,GA,Savannah,32781.0,32781.0,32781.0
-ANSWER AI LAB,ANSWER AI LAB INC,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,NY,New York,96000.0,96000.0,96000.0
-ANTRA,"Antra, Inc.",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,VA,Sterling,60000.0,60000.0,60000.0
-ANYONE MEDIA NETWORK,"Anyone Media Network, Inc",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,TX,Plano,51438.0,51438.0,51438.0
-APEX ANALYTIX,"APEX Analytix, LLC",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,NC,Greensboro,54933.0,54933.0,54933.0
-APPLIED DYNAMIC SOLUTIONS,"Applied Dynamic Solutions, LLC",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,San Diego,86000.0,86000.0,86000.0
-APPLIED MEDICAL RESOURCES,Applied Medical Resources Corporation,1,1,FY2025Q1,27-1024,Graphic Designers,CA,Rancho Santa Margarita,100000.0,100000.0,100000.0
-APROJECT FACTORY,Aproject Factory LLC,1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,CA,Porter Ranch,62400.0,62400.0,62400.0
-ARENANET,"ArenaNet, LLC",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,WA,Bellevue,88768.0,88768.0,88768.0
-ARISTOCRAT TECHNOLOGIES,"Aristocrat Technologies, Inc.",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,NV,Reno,71250.0,71250.0,71250.0
-ARK BIOTECH,Ark Biotech Inc.,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,MA,Cambridge,83000.0,83000.0,83000.0
-ARKTURA,Arktura LLC,1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,CA,Carson,54891.0,54891.0,54891.0
-ARPELS INVESTMENT,ARPELS INVESTMENT LLC,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,IL,Chicago,66000.0,66000.0,66000.0
-ARTSPARK STUDIO,"ArtSpark Studio, LLC",1,1,FY2025Q1,27-1024,Graphic Designers,CA,Pleasanton,68640.0,68640.0,68640.0
-ASHTEL STUDIOS,Ashtel Studios Inc.,1,1,FY2025Q3,27-1024,Graphic Designers,CA,Ontario,48880.0,48880.0,48880.0
-ATLANTA CUSTOM GOLD,Atlanta Custom Gold LLC,1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,GA,Atlanta,82000.0,82000.0,82000.0
-ATLASSIAN US,"Atlassian US, Inc.",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,NY,New York,73382.0,73382.0,73382.0
-ATOMROCK,Atomrock LLC,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,WA,BELLEVUE,75899.0,75899.0,75899.0
-AUROLOGISTICS,AuroLogistics LLC,1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,NJ,East Windsor,58531.0,58531.0,58531.0
-AUTHILLO,"Authillo, Inc.",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,San Francisco,100000.0,100000.0,100000.0
+AMAZON COM SERVICES,Amazon.com Services LLC,1,1,FY2025Q4,27-1024,Graphic Designers,NJ,Jersey City,104500.0,104500.0,104500.0
 AVE MARIA UNIVERSITY,"Ave Maria University, Inc.",1,1,FY2025Q4,27-1024,Graphic Designers,FL,Ave Maria,60000.0,60000.0,60000.0
-B&R GLOBAL SERVICES,"B&R Global Services, LLC",1,1,FY2025Q3,27-1024,Graphic Designers,NV,Las Vegas,45000.0,45000.0,45000.0
-BAHWAN CYBERTEK,Bahwan Cybertek Inc.,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,AL,Birmingham,65000.0,65000.0,65000.0
-BANK OZK,BANK OZK,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,FL,Tampa,90000.0,90000.0,90000.0
-BARLOW DESIGNS,Barlow Designs Inc.,1,1,FY2025Q1,27-1024,Graphic Designers,RI,E Providence,47840.0,47840.0,47840.0
-BASE DESIGN,BASE DESIGN CORP,1,1,FY2025Q3,27-1024,Graphic Designers,NY,New York,65000.0,65000.0,65000.0
-BATCHWELL,Batchwell LLC,1,1,FY2025Q3,27-1024,Graphic Designers,NY,Brooklyn,51542.0,51542.0,51542.0
-BAYONE SOLUTIONS,BAYONE SOLUTIONS Inc.,1,1,FY2025Q3,27-1024,Graphic Designers,CA,Duarte,160000.0,160000.0,160000.0
-BAYTECH DIGITAL,BAYTECH DIGITAL INC.,1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,CA,SAN JOSE,83699.0,83699.0,83699.0
-BEACON HILL SOLUTIONS GROUP,Beacon Hill Solutions Group LLC,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,NY,New York,74880.0,74880.0,74880.0
-BEAM FINANCE,"Beam Finance, Inc.",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,San Francisco,140000.0,140000.0,140000.0
-BEAUDRY INTERACTIVE,"Beaudry Interactive, LLC",1,1,FY2025Q3,27-1024,Graphic Designers,CA,North Hollywood,64480.0,64480.0,64480.0
-BELLEVUE PARFUMS USA,Bellevue Parfums USA LLC.,1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,NJ,Fairfield,56888.0,56888.0,56888.0
-BIOLUMINA GROUP,BioLumina Group LLC,1,1,FY2025Q3,27-1024,Graphic Designers,NY,New York,64350.0,64350.0,64350.0
-BLIZZARD ENTERTAINMENT,"BLIZZARD ENTERTAINMENT, INC.",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,IRVINE,84448.0,84448.0,84448.0
-BLIZZARD REALTY,Blizzard Realty LLC,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,WA,Redmond,75899.0,75899.0,75899.0
-BLOCKCARBON,"BlockCarbon, Inc.",1,1,FY2025Q3,27-1024,Graphic Designers,MA,Cambridge,50586.0,50586.0,50586.0
-BLUE SKY CREATIVE STUDIO,Blue Sky Creative Studio Inc.,1,1,FY2025Q3,27-1024,Graphic Designers,NY,FLUSHING,52000.0,52000.0,52000.0
 BLUMINT,BluMint Inc.,1,1,FY2025Q4,15-1255,Web and Digital Interface Designers,NY,New York,70000.0,70000.0,70000.0
-BOARD OF REGENTS OF THE UNIVERSITY OF NEBRASKA,Board of Regents of the University of Nebraska,1,1,FY2025Q3,27-1024,Graphic Designers,NE,Lincoln,50128.0,50128.0,50128.0
-BODY PROGRESSION,Body Progression Inc.,1,1,FY2025Q1,27-1024,Graphic Designers,OK,Bristow,36240.0,36240.0,36240.0
-BONDEX LOGISTICS SEATTLE,BONDEX LOGISTICS SEATTLE CORP,1,1,FY2025Q3,27-1024,Graphic Designers,CA,EL MONTE,54000.0,54000.0,54000.0
-BOOMPOP,"BoomPop, Inc.",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,San Francisco,115000.0,115000.0,115000.0
-BOSTON COLLEGE,Boston College,1,1,FY2025Q1,15-1255,Web and Digital Interface Designers,MA,Chestnut Hill,78225.0,78225.0,78225.0
-BOT AUTO TX,BOT AUTO TX INC,1,1,FY2025Q1,27-1021,Commercial and Industrial Designers,TX,HOUSTON,62000.0,62000.0,62000.0
-BRIGHTON BEACH GROUP,Brighton Beach Group LLC,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,NY,Brooklyn,73382.0,73382.0,73382.0
-BROADPACK PACKAGING,"Broadpack Packaging Co., Ltd.",1,1,FY2025Q3,27-1024,Graphic Designers,CA,Irvine,46509.0,46509.0,46509.0
-BUBBLE TEA SUPPLY,Bubble Tea Supply LLC,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,GA,Oakwood,67000.0,67000.0,67000.0
-BUILDBLOCK TECH,Buildblock Tech Inc.,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,NY,Long Island City,75000.0,75000.0,75000.0
-BYGA,"Byga, Inc.",1,1,FY2025Q3,27-1024,Graphic Designers,NJ,Newark,76800.0,76800.0,76800.0
-C TEKK SOLUTIONS,C Tekk Solutions Inc,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,TX,Dallas,51438.0,51438.0,51438.0
-CA FAN TUAN,CA FAN TUAN INC.,1,1,FY2025Q3,27-1024,Graphic Designers,CA,FREMONT,60008.0,60008.0,60008.0
-CABAL SAUSAGE,Cabal Sausage Co. LLC,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,VA,Fredericksburg,52811.0,52811.0,52811.0
-CAC AUTO GROUP,CAC Auto Group LLC,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,San Jose,114462.0,114462.0,114462.0
-CALM AND COLLECTED,Calm and Collected LLC,1,1,FY2025Q3,27-1024,Graphic Designers,NY,New York,51542.0,51542.0,51542.0
-CANVAS INFOTECH,"CANVAS INFOTECH, INC.",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,Fremont,91894.0,91894.0,91894.0
-CARGO COLLECTIVE,Cargo Collective Inc,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,Los Angeles,75000.0,75000.0,75000.0
-CASCADES HOLDING US,Cascades Holding US Inc.,1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,NJ,Piscataway,56826.0,56826.0,56826.0
-CENTER FOR INDEPENDENT THOUGHT,CENTER FOR INDEPENDENT THOUGHT,1,1,FY2025Q3,27-1024,Graphic Designers,PA,BALA CYNWYD,86000.0,86000.0,86000.0
-CENTURY PLASTICS,"Century Plastics, LLC",1,1,FY2025Q3,27-1024,Graphic Designers,MI,Shelby Township,50000.0,50000.0,50000.0
-CHC FASHION GROUP,"CHC FASHION GROUP, LLC",1,1,FY2025Q3,27-1024,Graphic Designers,NY,New York,51542.0,51542.0,51542.0
-CHESNUFF,Chesnuff LLC,1,1,FY2025Q3,27-1024,Graphic Designers,GA,Atlanta,40602.0,40602.0,40602.0
-CHICO'S FAS,"Chico's FAS, Inc.",1,1,FY2025Q3,27-1024,Graphic Designers,CA,Santa Clara,60736.0,60736.0,60736.0
-CHRISTIAN SCHOOL ASSOCIATION OF ANN ARBOR,Christian School Association of Ann Arbor,1,1,FY2025Q3,27-1024,Graphic Designers,MI,Ann Arbor,41600.0,41600.0,41600.0
-CILANTROS,"CILANTROS, INC.",1,1,FY2025Q3,27-1024,Graphic Designers,AK,ANCHORAGE,45000.0,45000.0,45000.0
-CLEAN ENERGY TECHNOLOGIES,Clean Energy Technologies Inc,1,1,FY2025Q1,27-1024,Graphic Designers,MA,Cambridge,50586.0,50586.0,50586.0
-CLEAR LASER SKIN CLINIC,CLEAR LASER SKIN CLINIC LLC,1,1,FY2025Q3,27-1024,Graphic Designers,NJ,FORT LEE,51542.0,51542.0,51542.0
-CLOUDBERG TEC,Cloudberg Tec Limited Company,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,UT,Salt Lake City,62901.0,62901.0,62901.0
-CMYK WHITE,"CMYK WHITE, INC.",1,1,FY2025Q3,27-1024,Graphic Designers,NY,NEW YORK,51542.0,51542.0,51542.0
-COCHL,COCHL INC,1,1,FY2025Q3,27-1024,Graphic Designers,CA,SAN FRANCISCO,56077.0,56077.0,56077.0
-CODI TECHNOLOGIES,CODI Technologies LLC,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,MA,Boston,74880.0,74880.0,74880.0
-COLLOV,"Collov, Inc.",1,1,FY2025Q3,27-1024,Graphic Designers,CA,Redwood City,56160.0,56160.0,56160.0
-COMBAT WAFFLE STUDIOS,Combat Waffle Studios Inc ,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,FL,Nokomis,59000.0,59000.0,59000.0
-COMPUTER TELEPHONY INNOVATIONS,Computer Telephony Innovations Inc,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,ND,Fargo,65000.0,65000.0,65000.0
-CONDUENT STATE HEALTHCARE,"Conduent State Healthcare, LLC",1,1,FY2025Q1,15-1255,Web and Digital Interface Designers,GA,Alpharetta,71570.0,71570.0,71570.0
-CONNEXIONS DATA,Connexions Data Inc.,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,NJ,Paramus,73382.0,73382.0,73382.0
 COOPER SQUARE TECHNOLOGIES,Cooper Square Technologies Inc.,1,1,FY2025Q4,15-1255,Web and Digital Interface Designers,NY,New York,260000.0,260000.0,260000.0
-CORE TECH CONSTRUCTION,CORE TECH CONSTRUCTION CORPORATION,1,1,FY2025Q1,27-1024,Graphic Designers,GU,TAMUNING,25605.0,25605.0,25605.0
-CORGAN ASSOCIATES,"Corgan Associates, Inc.",1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,TX,Dallas,57000.0,57000.0,57000.0
-CRAZY EGG,Crazy Egg Inc.,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,NJ,Trenton,60000.0,60000.0,60000.0
 CREATIFY LAB,Creatify Lab Inc.,1,1,FY2025Q4,27-1024,Graphic Designers,CA,San Jose,90000.0,90000.0,90000.0
-CREATIVE CAPITAL ADVISORS,Creative Capital Advisors LLC,1,1,FY2025Q3,27-1024,Graphic Designers,NY,New York,51542.0,51542.0,51542.0
-CREATIVE LOGISTICS,Creative Logistics Inc.,1,1,FY2025Q3,27-1024,Graphic Designers,NY,Astoria,51542.0,51542.0,51542.0
-CROSSING A CHRISTIAN CHURCH,"The Crossing, A Christian Church",1,1,FY2025Q3,27-1024,Graphic Designers,NV,Las Vegas,50000.0,50000.0,50000.0
-CRUNCHLABS,CrunchLabs LLC,1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,CA,Mountain View,100000.0,100000.0,100000.0
-CRYSTAL PROJECT,"CRYSTAL PROJECT, INC.",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,OH,COLUMBUS,81250.0,81250.0,81250.0
-CS CABINET,"CS CABINET, LLC",1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,IL,CHICAGO,51542.0,51542.0,51542.0
-CUDDLE BARN,"Cuddle Barn, Inc.",1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,CA,Los Angeles,54891.0,54891.0,54891.0
-CVS SHARED SERVICES RESOURCES,CVS Shared Services Resources LLC,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,MA,Boston,85000.0,85000.0,85000.0
 CYBER GRILLS,Cyber Grills Inc.,1,1,FY2025Q4,27-1021,Commercial and Industrial Designers,NY,Staten Island,63606.0,63606.0,63606.0
-DATAFORMIX TECHNOLOGIES,"DATAFORMIX TECHNOLOGIES,INC",1,1,FY2025Q1,15-1255,Web and Digital Interface Designers,NJ,Englewood Cliffs,73382.0,73382.0,73382.0
-DAVE OPERATING,Dave Operating LLC,1,1,FY2025Q3,27-1024,Graphic Designers,CA,Sunnyvale,151493.0,151493.0,151493.0
-DAVID PEYSER SPORTSWEAR,David Peyser Sportswear Inc,1,1,FY2025Q3,27-1024,Graphic Designers,NY,New York,52000.0,52000.0,52000.0
 DCI MANUFACTURING,"DCI Manufacturing, Inc.",1,1,FY2025Q4,27-1021,Commercial and Industrial Designers,GA,Dalton,69500.0,69500.0,69500.0
-DECO,Deco Corp,1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,CA,San Francisco,72800.0,72800.0,72800.0
-DEE JING INC DBA KUU,DEE JING INC dba KUU,1,1,FY2025Q1,27-1024,Graphic Designers,NY,New York,56000.0,56000.0,56000.0
-DEEPCARE,DEEPCARE INC.,1,1,FY2025Q3,27-1024,Graphic Designers,CA,Los Angeles,46509.0,46509.0,46509.0
-DEMETER MILLWORK,DEMETER MILLWORK LLC,1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,IL,CHICAGO,51542.0,51542.0,51542.0
-DEPT MARKETING CREATIVE,"DEPT MARKETING CREATIVE, INC.",1,1,FY2025Q3,27-1024,Graphic Designers,NY,New York,60000.0,60000.0,60000.0
-DESIGN ARMY,DESIGN ARMY LLC,1,1,FY2025Q3,27-1024,Graphic Designers,MD,Baltimore,50000.0,50000.0,50000.0
-DEV SIMPLIFY,Dev Simplify LLC,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,NJ,Jersey City,82000.0,82000.0,82000.0
-DH AMERICA HANKOOK,DH AMERICA HANKOOK LLC,1,1,FY2025Q3,27-1024,Graphic Designers,GA,Suwanee,41600.0,41600.0,41600.0
-DIAMOND BEAUTY,Diamond Beauty LLC,1,1,FY2025Q3,27-1024,Graphic Designers,AL,Birmingham,45000.0,45000.0,45000.0
-DIGITAL MOBILE INNOVATIONS,Digital Mobile Innovations LLC,1,1,FY2025Q3,27-1024,Graphic Designers,VA,McLean,100000.0,100000.0,100000.0
-DIGITBRIDGE,"DigitBridge, Inc. ",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,Monrovia,60653.0,60653.0,60653.0
+DIGITAL ARC SYSTEMS,"Digital Arc Systems, Corp.",1,1,FY2025Q4,15-1255,Web and Digital Interface Designers,PA,Pittsburgh,52000.0,52000.0,52000.0
 DK CROWN HOLDINGS,DK Crown Holdings Inc.,1,1,FY2025Q4,27-1024,Graphic Designers,MA,Boston,64000.0,64000.0,64000.0
-DREAMCRAFT ENTERTAINMENT,"DreamCraft Entertainment, Inc.",1,1,FY2025Q3,27-1024,Graphic Designers,CA,Redwood City,60000.0,60000.0,60000.0
-EASTERN TV BROADCASTING,Eastern TV Broadcasting LLC,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,DC,WASHINGTON,52811.0,52811.0,52811.0
-EBIN NEW YORK,"EBIN New York, Inc.",1,1,FY2025Q3,27-1024,Graphic Designers,NJ,South Hackensack,51542.0,51542.0,51542.0
-EDYOU TECHNOLOGIES,EdYou Technologies Inc.,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,Los Angeles,85000.0,85000.0,85000.0
-EFE INTERNATIONAL,EFE INTERNATIONAL INC,1,1,FY2025Q3,27-1024,Graphic Designers,IL,Chicago,42203.0,42203.0,42203.0
-EKTELLO,"ektello, LLC",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,Mountain View,114462.0,114462.0,114462.0
-ELAKSHI,Elakshi LLC,1,1,FY2025Q3,27-1024,Graphic Designers,GA,Austell,40602.0,40602.0,40602.0
-ELITE LIGHTING,Elite Lighting Corp,1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,CA,Commerce,60000.0,60000.0,60000.0
-ELIVY YOUTH PERFORMING ARTS INSTITUTE,Elivy Youth Performing Arts Institute,1,1,FY2025Q3,27-1024,Graphic Designers,IL,Chicago,45760.0,45760.0,45760.0
-ELLIPSIS TRAVEL,Ellipsis Travel LLC,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,MO,Saint Louis,70000.0,70000.0,70000.0
-EMUSA NA,"Emusa NA, LLC",1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,FL,Bay Harbor Islands,46000.0,46000.0,46000.0
-ENTRIVIS TECHNOLOGIES,"Entrivis Technologies, Inc.",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,GA,Duluth,72000.0,72000.0,72000.0
+ENVIRONMENTAL SYSTEMS RESEARCH INSTITUTE,"Environmental Systems Research Institute, Inc.",1,1,FY2025Q4,15-1255,Web and Digital Interface Designers,CA,Redlands,107640.0,107640.0,107640.0
 EOS PRODUCTS,EOS Products LLC,1,1,FY2025Q4,27-1024,Graphic Designers,NY,New York,60000.0,60000.0,60000.0
-ESSEX MEDIA GROUP,"ESSEX MEDIA GROUP, INC. ",1,1,FY2025Q3,27-1024,Graphic Designers,MA,LYNN,50586.0,50586.0,50586.0
-EVENTS BY FAIZA,Events by Faiza ,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,TX,Garland,51438.0,51438.0,51438.0
-EVEREST COMPUTERS,EVEREST COMPUTERS INC,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,GA,Roswell,65000.0,65000.0,65000.0
-EVIDENCE IN MOTION,Evidence in Motion LLC,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,TX,San Antonio,50000.0,50000.0,50000.0
-FCA US,FCA US LLC,1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,MI,Auburn Hills,118200.0,118200.0,118200.0
-FEIYA AMERICA,Feiya America Inc.,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,FL,Medley,50336.0,50336.0,50336.0
-FETCH REWARDS,"Fetch Rewards, LLC",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,WI,Madison,120000.0,120000.0,120000.0
-FIDELITY TECHNOLOGY GROUP LLC D/B/A FIDELITY INVESTMENTS,"Fidelity Technology Group, LLC d/b/a Fidelity Investments",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,NC,Durham,69950.0,69950.0,69950.0
-FINFARE FINANCIAL,Finfare Financial Inc,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,Irvine,85000.0,85000.0,85000.0
-FIRST CHOICE HEALTH,First Choice Health Company,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,MD,Columbia,60000.0,60000.0,60000.0
-FIRST FUN,"First Fun, Inc.",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,San Jose,114462.0,114462.0,114462.0
 FLORIDA A&M UNIVERSITY,Florida A&M University,1,1,FY2025Q4,15-1255,Web and Digital Interface Designers,FL,Tallahassee,61983.0,61983.0,61983.0
-FLYHIGH TALENT,FlyHigh Talent LLC,1,1,FY2025Q1,15-1255,Web and Digital Interface Designers,CA,Oakland,93600.0,93600.0,93600.0
-FOCUSEE,Focusee Ltd,1,1,FY2025Q3,27-1024,Graphic Designers,CA,Culver City,46509.0,46509.0,46509.0
-FOCUSKPI,"FocusKPI, Inc.",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,NY,Huntington Station,75000.0,75000.0,75000.0
-FOOD TERMINAL SANDY SPRINGS,Food Terminal Sandy Springs Inc,1,1,FY2025Q3,27-1024,Graphic Designers,GA,Sandy Springs,50000.0,50000.0,50000.0
-FOODFX,Foodfx Inc.,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,San Jose,114462.0,114462.0,114462.0
-FREECHAT,Freechat Inc.,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,Irvine,72000.0,72000.0,72000.0
-FRISCO BUSINESS SOLUTIONS GROUP,"Frisco Business Solutions Group, Inc",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,TX,McKINNEY,51438.0,51438.0,51438.0
 FT CHANNEL,FT Channel Inc.,1,1,FY2025Q4,27-1024,Graphic Designers,IL,Wood Dale,48000.0,48000.0,48000.0
-FUTURE FINANCE FINDER MANAGEMENT CONSULTING SERVICE,"Future Finance Finder Management Consulting Service, Inc.",1,1,FY2025Q3,27-1024,Graphic Designers,NY,New York,54000.0,54000.0,54000.0
-FUYAO GLASS ILLINOIS,"Fuyao Glass Illinois, Inc.",1,1,FY2025Q3,27-1024,Graphic Designers,IL,Decatur,56228.0,56228.0,56228.0
 GABRIEL JEWELRY REFINING,Gabriel Jewelry Refining Corp,1,1,FY2025Q4,27-1024,Graphic Designers,NY,New York,65000.0,65000.0,65000.0
 GAMMA USA,Gamma USA Inc,1,1,FY2025Q4,27-1021,Commercial and Industrial Designers,NJ,Jersey City,78720.0,78720.0,78720.0
-GASTON WALSH LAW GROUP,"Gaston Walsh Law Group, LLC",1,1,FY2025Q3,27-1024,Graphic Designers,AZ,Glendale,60000.0,60000.0,60000.0
-GATORWRAPS,"Gatorwraps, Inc.",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,Ontario,50190.0,50190.0,50190.0
-GEARY PRINT SHOP,Geary Print Shop Inc.,1,1,FY2025Q3,27-1024,Graphic Designers,CA,San Francisco,56077.0,56077.0,56077.0
-GFT ECS,GFT ECS LLC,1,1,FY2025Q1,15-1255,Web and Digital Interface Designers,CA,Culver City,61000.0,61000.0,61000.0
-GIIR AMERICA,"GIIR AMERICA, INC.",1,1,FY2025Q3,27-1024,Graphic Designers,NJ,ENGLEWOOD CLIFFS,51542.0,51542.0,51542.0
-GLASS GROUP,GLASS GROUP LLC,1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,NJ,Secaucus,56826.0,56826.0,56826.0
-GLOBAL DENTAL SHOP,Global Dental Shop LLC,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,DC,Washington,65000.0,65000.0,65000.0
-GLOBAL OUTLIER GAMING,Global Outlier Gaming Inc,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,WA,Bellevue,80000.0,80000.0,80000.0
-GOGI1,GOGI1 INC,1,1,FY2025Q3,27-1024,Graphic Designers,NY,315 5TH AVE,51542.0,51542.0,51542.0
-GOJO LABS,GoJo Labs Inc.,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,NY,New York,75000.0,75000.0,75000.0
-GOLDENHOME INTERNATIONAL,Goldenhome International Inc.,1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,NJ,Cranbury,60000.0,60000.0,60000.0
-GORI,GORI COMPANY LLC,1,1,FY2025Q3,27-1024,Graphic Designers,CA,FULLERTON,62400.0,62400.0,62400.0
-GOSPEL HERALD,The Gospel Herald Inc,1,1,FY2025Q1,27-1024,Graphic Designers,DC,Washington,53456.0,53456.0,53456.0
-GRETEL,"GRETEL, INC. ",1,1,FY2025Q3,27-1024,Graphic Designers,NY,Brooklyn,51542.0,51542.0,51542.0
-HAIRUN INVESTMENT,HAIRUN INVESTMENT INC,1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,CA,SOUTH EL MONTE,55120.0,55120.0,55120.0
-HAN IT STAFFING,HAN IT STAFFING INC.,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,NJ,ISELIN,73382.0,73382.0,73382.0
-HANA MART NY,HANA MART NY CORP.,1,1,FY2025Q1,27-1024,Graphic Designers,NY,New York,51542.0,51542.0,51542.0
-HANOMI,HANOMI INC,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,SAN FRANCISCO,91894.0,91894.0,91894.0
 HEALTH CARE PARTNERS FOUNDATION,"Health Care Partners Foundation, Inc.",1,1,FY2025Q4,27-1024,Graphic Designers,NV,RENO,45698.0,45698.0,45698.0
-HEALTH DATA VISION,"Health Data Vision, Inc.",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,Glendale,103000.0,103000.0,103000.0
 HERO DIGITAL,"HERO DIGITAL, LLC",1,1,FY2025Q4,15-1255,Web and Digital Interface Designers,NY,BROOKLYN,72000.0,72000.0,72000.0
-HIC STONE US INCORPORATION,HIC STONE US INCORPORATION,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,Hayward,91894.0,91894.0,91894.0
-HIDDEN JEANS,"HIDDEN JEANS, INC.",1,1,FY2025Q3,27-1024,Graphic Designers,CA,COMMERCE,46509.0,46509.0,46509.0
-HIGH-STAR,High-Star Corporation Inc,1,1,FY2025Q3,27-1024,Graphic Designers,MI,Westland,41600.0,41600.0,41600.0
-HMC ENTERPRISES,HMC ENTERPRISES LLC,1,1,FY2025Q1,27-1021,Commercial and Industrial Designers,PA,Philadelphia,60000.0,60000.0,60000.0
 HOBBY LOBBY STORES,Hobby Lobby Stores Inc.,1,1,FY2025Q4,27-1024,Graphic Designers,OK,OKC,73320.0,73320.0,73320.0
-HONEYDEW DESIGN,Honeydew Design LLC,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,TX,Allen,52000.0,52000.0,52000.0
-I-BLASON,"i-Blason, LLC",1,1,FY2025Q3,27-1024,Graphic Designers,GA,Alpharetta,43680.0,43680.0,43680.0
-ICONS PRINTING AND SIGNS,Icons Printing and Signs Inc,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,IL,Chicago,60000.0,60000.0,60000.0
-IDEAL AUTO COLLISION,IDEAL AUTO COLLISION INC,1,1,FY2025Q3,27-1024,Graphic Designers,NY,Brooklyn,51542.0,51542.0,51542.0
-IDEOLOGY,"Ideology, LLC",1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,WA,Seattle,81411.0,81411.0,81411.0
-IHEALTH LABS,"iHealth Labs, Inc.",1,1,FY2025Q3,27-1024,Graphic Designers,CA,Sunnyvale,60736.0,60736.0,60736.0
-IIT SYSTEMS,IIT SYSTEMS LLC,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,Santa Clarita,114462.0,114462.0,114462.0
-IKON WINDOWS,Ikon Windows LLC,1,1,FY2025Q3,27-1024,Graphic Designers,NY,Brooklyn,65000.0,65000.0,65000.0
 INDETAIL,"Indetail, LLC",1,1,FY2025Q4,27-1024,Graphic Designers,NY,Maspeth,58240.0,58240.0,58240.0
-INDUSTRY CREATIVE,"Industry Creative, LLC",1,1,FY2025Q3,27-1024,Graphic Designers,OR,Portland,58240.0,58240.0,58240.0
-INDXX,"Indxx, Inc",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,FL,Miami,60000.0,60000.0,60000.0
 INFINITE MACHINE TECHNOLOGIES,"Infinite Machine Technologies, Inc.",1,1,FY2025Q4,27-1021,Commercial and Industrial Designers,NY,Long Island City,80000.0,80000.0,80000.0
-INFOBLOX,Infoblox Inc.,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,Santa Clara,115000.0,115000.0,115000.0
-INFRASTRUCTURE ASSOCIATES,Infrastructure Associates Inc.,1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,TX,Houston,54496.0,54496.0,54496.0
-INSIGHT GLOBAL,"Insight Global, LLC",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,WA,Redmond,75899.0,75899.0,75899.0
 INSTACO,Instaco LLC,1,1,FY2025Q4,15-1255,Web and Digital Interface Designers,CA,Compton,70000.0,70000.0,70000.0
-INTELLIPRO SERVICE,INTELLIPRO SERVICE INC. ,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,NY,Brooklyn,75000.0,75000.0,75000.0
-INTERNATIONAL FROZEN PRODUCTS USA,International Frozen Products USA LLC,1,1,FY2025Q3,27-1024,Graphic Designers,FL,MIAMI,40518.0,40518.0,40518.0
-ITALK GLOBAL COMMUNICATIONS,"iTalk Global Communications, Inc",1,1,FY2025Q3,27-1024,Graphic Designers,VA,McLean,53456.0,53456.0,53456.0
-IXL LEARNING,"IXL Learning, Inc. ",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,San Mateo,92000.0,92000.0,92000.0
-J ADORE OFFICIAL,J ADORE OFFICIAL CORP.,1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,CA,Emeryville,68640.0,68640.0,68640.0
-J ZHANG AND ASSOCIATES P C,"J. ZHANG AND ASSOCIATES, P.C.",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,NY,Flushing,73840.0,73840.0,73840.0
-JAM CITY,"JAM CITY, INC.",1,1,FY2025Q1,15-1255,Web and Digital Interface Designers,CA,Culver City,84510.0,84510.0,84510.0
-JANGMI JEWERLY,Jangmi Jewerly Corp,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,NY,New York,80000.0,80000.0,80000.0
 JC GOURMET MANAGEMENT,JC GOURMET MANAGEMENT INC,1,1,FY2025Q4,27-1024,Graphic Designers,CA,ALHAMBRA,58240.0,58240.0,58240.0
-JDX STUDIO,JDX Studio LLC,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,NY,New York,73382.0,73382.0,73382.0
-JIUZHENG ERGONOMICS US,JIUZHENG ERGONOMICS US INC,1,1,FY2025Q3,27-1024,Graphic Designers,CA,Pasadena,47840.0,47840.0,47840.0
 JOY CULTURE FOUNDATION,THE JOY CULTURE FOUNDATION,1,1,FY2025Q4,27-1024,Graphic Designers,CA,Menlo Park,67808.0,67808.0,67808.0
-JOYIN US,Joyin US Corp,1,1,FY2025Q1,27-1021,Commercial and Industrial Designers,AZ,Phoenix,72000.0,72000.0,72000.0
-JUBU,JUBU CORP.,1,1,FY2025Q3,27-1024,Graphic Designers,NY,New York,52000.0,52000.0,52000.0
-KAIZEN TECHNOLOGIES,KAIZEN TECHNOLOGIES INC.,1,1,FY2025Q3,27-1024,Graphic Designers,CA,SUNNYVALE,70000.0,70000.0,70000.0
-KAYAK SOFTWARE,KAYAK Software Corporation,1,1,FY2025Q3,27-1024,Graphic Designers,NY,New York,162099.0,162099.0,162099.0
-KAZAMA,KAZAMA INC,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,San Francisco,91894.0,91894.0,91894.0
-KISS NAIL PRODUCTS,"KISS NAIL PRODUCTS, INC.",1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,NY,Port Washington,69659.0,69659.0,69659.0
-KITCHEN & BATH DESIGN GROUP,"Kitchen & Bath Design Group, LLC",1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,GA,Winder,45906.0,45906.0,45906.0
-KMC LUCAS GROUP,KMC LUCAS Group Inc.,1,1,FY2025Q3,27-1024,Graphic Designers,CA,Menlo Park,56077.0,56077.0,56077.0
-KOHN PEDERSEN FOX ASSOCIATES,Kohn Pedersen Fox Associates PC,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,NY,New York,92000.0,92000.0,92000.0
-KONTOOR US,"Kontoor US, LLC",1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,NC,Greensboro,57000.0,57000.0,57000.0
-KORE AI,"Kore.ai, Inc. ",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,WA,Bellevue,79000.0,79000.0,79000.0
-KOTO STUDIO LA,Koto Studio LA Inc,1,1,FY2025Q1,27-1024,Graphic Designers,CA,Culver City,80000.0,80000.0,80000.0
-KWIK EQUIPMENT SALES,"KWIK EQUIPMENT SALES, LLC",1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,TX,Pearland,60000.0,60000.0,60000.0
-LEIBOWITZ COMMUNICATIONS,LEIBOWITZ COMMUNICATIONS INC.,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,NY,New York,73500.0,73500.0,73500.0
-LENME,Lenme Inc,1,1,FY2025Q3,27-1024,Graphic Designers,CA,Oakland,65000.0,65000.0,65000.0
-LEXISNEXIS RISK SOLUTIONS FL,"LexisNexis Risk Solutions FL, Inc.",1,1,FY2025Q3,27-1024,Graphic Designers,CA,Foster City,102000.0,102000.0,102000.0
-LIBERTY HOME GUARD,Liberty Home Guard,1,1,FY2025Q1,15-1255,Web and Digital Interface Designers,NY,Brooklyn,73382.0,73382.0,73382.0
-LIGHTHOUSE CATHOLIC MEDIA NFP,Lighthouse Catholic Media NFP,1,1,FY2025Q1,27-1024,Graphic Designers,IL,Sycamore,53000.0,53000.0,53000.0
-LIME VALLEY ADVERTISING,"Lime Valley Advertising, Inc.",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,MN,Mankato,54000.0,54000.0,54000.0
-LIMITLESS TRADING,Limitless Trading Co. LLC,1,1,FY2025Q3,27-1024,Graphic Designers,CA,Beverly Hills,48000.0,48000.0,48000.0
-LITTLE KIDS,"LITTLE KIDS, INC.",1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,MA,SEEKONK,56597.0,56597.0,56597.0
-LIU SHIMING ART FOUNDATION,Liu Shiming Art Foundation,1,1,FY2025Q3,27-1024,Graphic Designers,NY,New York,60000.0,60000.0,60000.0
-LOGGING-IN COM,"Logging-in.com, LLC",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,TX,Denton,60000.0,60000.0,60000.0
-LOOK EYE CARE,LOOK EYE CARE LLC,1,1,FY2025Q3,27-1024,Graphic Designers,PA,Pittsburgh,38000.0,38000.0,38000.0
-LUX BEAUTY,Lux Beauty LLC,1,1,FY2025Q3,27-1024,Graphic Designers,WA,Bellevue,52686.0,52686.0,52686.0
-LUXE KITCHEN AND BATH,Luxe Kitchen and Bath LLC,1,1,FY2025Q3,27-1024,Graphic Designers,WA,Seattle,52686.0,52686.0,52686.0
-LUXVIEW,LuxView LLC,1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,TN,Antioch,70000.0,70000.0,70000.0
-LX HAUSYS AMERICA,"LX Hausys America, Inc.",1,1,FY2025Q3,27-1024,Graphic Designers,GA,Alpharetta,49920.0,49920.0,49920.0
-LYRA DIGITAL,"Lyra Digital, Inc.",1,1,FY2025Q3,27-1024,Graphic Designers,CA,Menlo Park,60000.0,60000.0,60000.0
-M ARTHUR GENSLER JR & ASSOCIATES,"M. Arthur Gensler Jr. & Associates, Inc.",1,1,FY2025Q1,27-1021,Commercial and Industrial Designers,CA,San Jose,85000.0,85000.0,85000.0
-MADWELL,Madwell LLC,1,1,FY2025Q3,27-1024,Graphic Designers,NY,Brooklyn,62400.0,62400.0,62400.0
 MAINSQUARE,MAINSQUARE CO.,1,1,FY2025Q4,15-1255,Web and Digital Interface Designers,CA,San Jose,113630.0,113630.0,113630.0
-MARU SPORTS,MARU SPORTS INC,1,1,FY2025Q3,27-1024,Graphic Designers,NY,FLORAL PARK,51542.0,51542.0,51542.0
-MAXUS GROUP,Maxus Group LLC,1,1,FY2025Q3,27-1024,Graphic Designers,CA,Los Angeles,46509.0,46509.0,46509.0
-MDLAND INTERNATIONAL,MDLand International Corporation,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,NY,Great Neck,73382.0,73382.0,73382.0
-MEDIA BARN,Media Barn Inc.,1,1,FY2025Q3,27-1024,Graphic Designers,VA,Arlington,68000.0,68000.0,68000.0
-MG WEST,MG West Company,1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,CA,San Francisco,75000.0,75000.0,75000.0
 MINDEX TECHNOLOGIES,"Mindex Technologies, Inc.",1,1,FY2025Q4,15-1255,Web and Digital Interface Designers,NY,Rochester,97760.0,97760.0,97760.0
-MINDSPRINT,Mindsprint Inc.,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,NJ,Morristown,73382.0,73382.0,73382.0
-MISSOURI STAR QUILT,"Missouri Star Quilt Co., Inc.",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,Corte Madera,91894.0,91894.0,91894.0
-MISTOLD GAMES,Mistold Games Inc,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,Rosemead,78166.0,78166.0,78166.0
 MOLLY CRABAPPLE,Molly Crabapple Inc.,1,1,FY2025Q4,27-1024,Graphic Designers,NY,New York,110240.0,110240.0,110240.0
-MONOSPACE,Monospace Inc,1,1,FY2025Q1,15-1255,Web and Digital Interface Designers,NY,Brooklyn,100000.0,100000.0,100000.0
-MOON UNIT DESIGN,MOON UNIT DESIGN LLC,1,1,FY2025Q1,27-1024,Graphic Designers,GA,Duluth,40602.0,40602.0,40602.0
-MORALCOMPASS,"Moralcompass, Inc",1,1,FY2025Q3,27-1024,Graphic Designers,NY,New York,52000.0,52000.0,52000.0
-MORPHING PROGRAM,Morphing Program Co,1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,MA,Cambridge,65000.0,65000.0,65000.0
-MORTGAGE PAYMENT,Mortgage Payment Corporation,1,1,FY2025Q1,27-1024,Graphic Designers,TX,Houston,42000.0,42000.0,42000.0
-MSI COMPUTER,MSI Computer Corp.,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,City of Industry,60653.0,60653.0,60653.0
-MY MONTHLY,My Monthly LLC,1,1,FY2025Q3,27-1024,Graphic Designers,NY,Rego Park,51542.0,51542.0,51542.0
-NATVAN,"Natvan, Inc.",1,1,FY2025Q3,27-1024,Graphic Designers,CA,Los Angeles,46800.0,46800.0,46800.0
-NEN CREATIVE,NEN CREATIVE LLC,1,1,FY2025Q3,27-1024,Graphic Designers,CA,San Francisco,62000.0,62000.0,62000.0
-NEW NORTH CHINA RESTAURANT,New North China Restaurant LLC,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,Santa Maria,57158.0,57158.0,57158.0
-NEXTCAR MOTOR,Nextcar Motor LLC,1,1,FY2025Q3,27-1024,Graphic Designers,CA,Rosemead,47000.0,47000.0,47000.0
-NIFCO MECHANICAL SYSTEMS,NIFCO Mechanical Systems LLC,1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,NE,Lincoln,64480.0,64480.0,64480.0
-NO 1 BEAUTY & COSMETIC,"NO.1 Beauty & Cosmetic, Inc.",1,1,FY2025Q3,27-1024,Graphic Designers,CA,Los Angeles,46509.0,46509.0,46509.0
-NOVILAND TECHNOLOGIES,Noviland Technologies Inc.,1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,GA,Duluth,55000.0,55000.0,55000.0
-OHIO STATE UNIVERSITY,The Ohio State University,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,OH,Columbus,69400.0,69400.0,69400.0
-OKAI,Okai Inc,1,1,FY2025Q3,27-1024,Graphic Designers,CA,San Dimas,48693.0,48693.0,48693.0
-OLIVE CHILDREN FOUNDATION,Olive Children Foundation,1,1,FY2025Q3,27-1024,Graphic Designers,CA,Fremont,56100.0,56100.0,56100.0
-OLIVER WYMAN,"Oliver Wyman, LLC",1,1,FY2025Q3,27-1024,Graphic Designers,CA,San Francisco,82000.0,82000.0,82000.0
-OMNIMEGASUPERCORP,OmniMegaSuperCorp,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,North Hollywood,62400.0,62400.0,62400.0
-ONE53STUDIO,"One53studio, Inc",1,1,FY2025Q3,27-1024,Graphic Designers,CA,Los angeles,58240.0,58240.0,58240.0
-OPHY CARE,OPHY CARE INC.,1,1,FY2025Q3,27-1024,Graphic Designers,GA,DULUTH,40602.0,40602.0,40602.0
-PARAMOUNT TAX AND ACCTG CPAS,Paramount Tax and Acctg CPAs PC,1,1,FY2025Q1,27-1024,Graphic Designers,UT,Draper,41309.0,41309.0,41309.0
-PARIAH INTERACTIVE,Pariah Interactive Inc,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,NY,Brooklyn,74880.0,74880.0,74880.0
 PARLEY,Parley LLC,1,1,FY2025Q4,27-1021,Commercial and Industrial Designers,NY,New York,65000.0,65000.0,65000.0
-PCONLINE,PCOnline LLC,1,1,FY2025Q3,27-1024,Graphic Designers,DE,Newark,42099.0,42099.0,42099.0
-PEBBLE DESIGN,Pebble Design LLC,1,1,FY2025Q3,27-1024,Graphic Designers,WA,Bellevue,54080.0,54080.0,54080.0
-PEOPLE TECH GROUP,"People Tech Group, Inc",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,WA,Redmond,75899.0,75899.0,75899.0
 PERSPECTIVES HEALTH,"PERSPECTIVES HEALTH, INC.",1,1,FY2025Q4,15-1255,Web and Digital Interface Designers,CA,San Francisco,120000.0,120000.0,120000.0
-PETITE KEEPER,Petite Keeper LLC,1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,CA,San Francisco,68000.0,68000.0,68000.0
 PHOENIX SATELLITE TELEVISION US,"Phoenix Satellite Television US, Inc",1,1,FY2025Q4,27-1024,Graphic Designers,CA,Irwindale,48131.0,48131.0,48131.0
-PHOENIX TREE PUBLISHING,Phoenix Tree Publishing Inc.,1,1,FY2025Q3,27-1024,Graphic Designers,IL,Chicago,52000.0,52000.0,52000.0
-PIAZZA ITALIA,"Piazza Italia, LLC",1,1,FY2025Q3,27-1024,Graphic Designers,IL,Northbrook,44000.0,44000.0,44000.0
-PISCATELLO DESIGN CENTRE,"Piscatello Design Centre, Inc",1,1,FY2025Q3,27-1024,Graphic Designers,NY,East Northport,52000.0,52000.0,52000.0
-PIXELAND TECHNOLOGIES,"Pixeland Technologies, Inc.",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,San Francisco,125000.0,125000.0,125000.0
-POPULOUS GROUP,"Populous Group, LLC",1,1,FY2025Q3,27-1024,Graphic Designers,MO,Kansas City,62004.0,62004.0,62004.0
-PRICETRACE,PRICETRACE LLC,1,1,FY2025Q3,27-1024,Graphic Designers,TX,Richardson,39333.0,39333.0,39333.0
-PRIME FITNESS CLUB,Prime Fitness Club Inc,1,1,FY2025Q3,27-1024,Graphic Designers,NY,Douglaston,51542.0,51542.0,51542.0
-PRIME GLOBAL PRODUCTS,"Prime Global Products, INC.",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,GA,Ball Ground,65000.0,65000.0,65000.0
-PROJECTDOTFUS,PROJECTDOTFUS LLC,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,San Francisco,93850.0,93850.0,93850.0
 PROXIMA,Proxima Inc,1,1,FY2025Q4,27-1024,Graphic Designers,NY,MELVILLE,73320.0,73320.0,73320.0
-PVH ACQUISITIONS SUB,"PVH Acquisitions Sub, LLC",1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,CT,Fairfield,62000.0,62000.0,62000.0
-QUINSTREET,"QuinStreet, Inc.",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,Foster City,93296.0,93296.0,93296.0
-RAVENHILL,Ravenhill LLC,1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,CA,Los Angeles,62000.0,62000.0,62000.0
-RESEARCH FOUNDATION OF CUNY,Research Foundation of CUNY,1,1,FY2025Q3,27-1024,Graphic Designers,NY,Brooklyn,52000.0,52000.0,52000.0
-RESIDENTS MEDICAL GROUP,"Residents Medical Group, Inc",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,Los Angeles,85000.0,85000.0,85000.0
-RESURGENT CAPITAL SERVICES L P,"Resurgent Capital Services, L.P.",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,SC,Greenville,65881.0,65881.0,65881.0
-RHOMBUZ,Rhombuz LLC,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,WA,Bellevue,100000.0,100000.0,100000.0
-RICHARD ATTIAS AND ASSOCIATES,RICHARD ATTIAS AND ASSOCIATES LLC,1,1,FY2025Q3,27-1024,Graphic Designers,NY,NEW YORK,65000.0,65000.0,65000.0
 RICHARD LEWIS MEDIA GROUP,"Richard Lewis Media Group, Inc. ",1,1,FY2025Q4,27-1024,Graphic Designers,CA,San Jose,74500.0,74500.0,74500.0
-RIDICULOUS,"Ridiculous, LLC",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,Milpitas,114462.0,114462.0,114462.0
-RIOTHY,Riothy LLC,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,LOS ANGELES,62000.0,62000.0,62000.0
-ROADIE INC D/B/A ROADIE,"Roadie, Inc. d/b/a Roadie",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,TX,Austin,98800.0,98800.0,98800.0
-ROBOTICS TECHNOLOGIES,ROBOTICS TECHNOLOGIES LLC,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,TX,HURST,60000.0,60000.0,60000.0
-ROCKSTAR SAN DIEGO,"Rockstar San Diego, Inc.",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,Carlsbad,90000.0,90000.0,90000.0
-ROUNDBLOCK TECHNOLOGY,"Roundblock Technology, LLC",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,TX,Austin,66560.0,66560.0,66560.0
-RPI INDUSTRIES,"RPI Industries, Inc.",1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,NJ,Medford,54000.0,54000.0,54000.0
-S3 DESIGN GROUP,S3 Design Group LLC,1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,NY,New York,75000.0,75000.0,75000.0
-SAGE INTACCT,"Sage Intacct, Inc.",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,GA,Atlanta,72050.0,72050.0,72050.0
-SAND CREEK POST & BEAM,"Sand Creek Post & Beam, Inc.",1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,TX,Boerne,52000.0,52000.0,52000.0
-SAUDER WOOD WORKING,Sauder Wood Working Company,1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,OH,Archbold,57000.0,57000.0,57000.0
-SAUDER WOODWORKING,Sauder Woodworking Co.,1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,OH,Archbold,57000.0,57000.0,57000.0
-SEGAL COMPANY (WESTERN STATES),"The Segal Company (Western States), Inc.",1,1,FY2025Q3,27-1024,Graphic Designers,CA,Los Altos Hills,60736.0,60736.0,60736.0
-SELBERT PERKINS DESIGN,Selbert Perkins Design,1,1,FY2025Q3,27-1024,Graphic Designers,MA,Belmont,54995.0,54995.0,54995.0
-SHANGHAI SPRING INTERNATIONAL TRAVEL SERVICE USA,"Shanghai Spring International Travel Service USA, Inc.",1,1,FY2025Q3,27-1024,Graphic Designers,CA,Diamond Bar,46509.0,46509.0,46509.0
 SHARP IRON GROUP,Sharp Iron Group LLC,1,1,FY2025Q4,27-1021,Commercial and Industrial Designers,TX,Wichita Falls,52146.0,52146.0,52146.0
-SHEETA GLOBAL TECH,Sheeta Global Tech Corp,1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,CA,Covina,60000.0,60000.0,60000.0
-SIBEL HEALTH,Sibel Health Inc.,1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,IL,Chicago,57000.0,57000.0,57000.0
-SIEGFRIED'S BASEMENT,Siegfried's Basement LLC,1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,NJ,Secaucus,56826.0,56826.0,56826.0
-SIGMA GAMES,Sigma Games LLC,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,PA,Pittsburgh,55000.0,55000.0,55000.0
-SILVERLOGIC,"SilverLogic, LLC",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,FL,Boca Raton,50336.0,50336.0,50336.0
-SINEXCEL,Sinexcel Inc.,1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,CA,Irvine,54891.0,54891.0,54891.0
-SKY TO MOON,Sky to Moon Inc,1,1,FY2025Q3,27-1024,Graphic Designers,CA,Los Angeles,46509.0,46509.0,46509.0
-SLALOM,"Slalom, Inc.",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,MA,Boston,76975.0,76975.0,76975.0
-SMITHS INTERCONNECT AMERICAS,Smiths Interconnect Americas Inc.,1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,TX,Irving,55494.0,55494.0,55494.0
 SOKO GLAM,"Soko Glam, Inc.",1,1,FY2025Q4,27-1024,Graphic Designers,NY,Brooklyn,60000.0,60000.0,60000.0
-SONS OF SAWDUST,SONS OF SAWDUST LLC,1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,TN,NASHVILLE,48000.0,48000.0,48000.0
-SONY INTERACTIVE ENTERTAINMENT,SONY INTERACTIVE ENTERTAINMENT LLC,1,1,FY2025Q1,27-1021,Commercial and Industrial Designers,CA,San Francisco,98300.0,98300.0,98300.0
-SOSOLIMITED,Sosolimited,1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,MA,Boston,64480.0,64480.0,64480.0
-SPG USA,SPG USA Corp.,1,1,FY2025Q3,27-1024,Graphic Designers,NY,New York,60000.0,60000.0,60000.0
 SRI TECH SOLUTIONS,"SRI Tech Solutions, Inc.",1,1,FY2025Q4,15-1255,Web and Digital Interface Designers,WA,Bellevue,78000.0,78000.0,78000.0
-STRIKING DISTANCE STUDIOS,"Striking Distance Studios, Inc.",1,1,FY2025Q1,15-1255,Web and Digital Interface Designers,CA,San Ramon,125000.0,125000.0,125000.0
 SUPERPOWER HEALTH,"Superpower Health, Inc.",1,1,FY2025Q4,15-1255,Web and Digital Interface Designers,CA,San Francisco,112000.0,112000.0,112000.0
-SYNCHRONICITY LABS,SYNCHRONICITY LABS INC,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,San Francisco,104000.0,104000.0,104000.0
-TABAPAY,"TabaPay, Inc.",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,Palo Alto,114462.0,114462.0,114462.0
-TANERA TRANSPORT,Tanera Transport LLC,1,1,FY2025Q3,27-1024,Graphic Designers,CA,Diamond Bar,48693.0,48693.0,48693.0
-TD INDUSTRIAL COVERINGS INC D/B/A TDIC,"TD Industrial Coverings, Inc.d/b/a TDIC",1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,MI,Sterling Heights,49109.0,49109.0,49109.0
-TEAMSUCCESS LLC DBA HIED SUCCESS,TeamSuccess LLC dba HiEd Success,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,GA,Alpharetta,64875.0,64875.0,64875.0
-TECH-NET,"Tech-Net, Inc.",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,Folsom,63627.0,63627.0,63627.0
-TEGA DESIGN,Tega Design LLC,1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,NJ,Kearny,56826.0,56826.0,56826.0
-TEMKIN INTERNATIONAL,Temkin International Inc.,1,1,FY2025Q1,27-1024,Graphic Designers,UT,Payson,37440.0,37440.0,37440.0
-TENCENT AMERICA,Tencent America LLC,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,Irvine,83600.0,83600.0,83600.0
-TENNESSEE VALLEY PRESS,"Tennessee Valley Press, Inc",1,1,FY2025Q3,27-1024,Graphic Designers,AL,Decatur,33280.0,33280.0,33280.0
-TEXAS A&M UNIVERSITY,Texas A&M University,1,1,FY2025Q3,27-1024,Graphic Designers,TX,College Station,60000.0,60000.0,60000.0
-TEXTILES FROM EUROPE,"Textiles from Europe, Inc.",1,1,FY2025Q1,27-1021,Commercial and Industrial Designers,NJ,North Bergen,70000.0,70000.0,70000.0
 THOM BROWNE,"Thom Browne, Inc.",1,1,FY2025Q4,27-1024,Graphic Designers,NY,New York,103824.0,103824.0,103824.0
-THOMAS JEFFERSON UNIVERSITY,Thomas Jefferson University,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,PA,Philadelphia,92700.0,92700.0,92700.0
-TOTAL HOA SOLUTIONS,Total HOA Solutions,1,1,FY2025Q3,27-1024,Graphic Designers,TX,Austin,43680.0,43680.0,43680.0
 TOTOMONO,Totomono LLC,1,1,FY2025Q4,27-1024,Graphic Designers,NY,New York,53955.0,53955.0,53955.0
-TRAINI,Traini Inc.,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,Sacramento,60320.0,60320.0,60320.0
-TRANSOCEAN RESOURCES MANAGEMENT,TRANSOCEAN RESOURCES MANAGEMENT INC,1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,CA,BREA,56000.0,56000.0,56000.0
-TRIAL AND ERROR,"Trial and Error, Inc.",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,MA,East Boston,73445.0,73445.0,73445.0
-TRUSPER,Trusper Inc.,1,1,FY2025Q3,27-1024,Graphic Designers,CA,San Jose,60736.0,60736.0,60736.0
-TRUSTWAVE HOLDINGS,"Trustwave Holdings, Inc.",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,IL,Chicago,95000.0,95000.0,95000.0
-TRUU,"TruU, Inc.",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,Santa Clara,115000.0,115000.0,115000.0
-TWENTYSIX INTERACTIVE,Twentysix Interactive LLC,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,Los Angeles,83200.0,83200.0,83200.0
-TWP PARTNERS,TWP Partners LLC,1,1,FY2025Q1,27-1024,Graphic Designers,NY,New York,51575.0,51575.0,51575.0
-UNIVERSITY OF MARYLAND COLLEGE PARK,"University of Maryland, College Park",1,1,FY2025Q1,15-1255,Web and Digital Interface Designers,MD,College Park,67112.0,67112.0,67112.0
-UNIVERSITY OF MINNESOTA,University of Minnesota,1,1,FY2025Q1,15-1255,Web and Digital Interface Designers,MI,Farmington,62795.0,62795.0,62795.0
+TURNER SERVICES,"Turner Services, Inc.",1,1,FY2025Q4,15-1255,Web and Digital Interface Designers,NY,New York,72244.0,72244.0,72244.0
 UNIVERSITY OF MISSISSIPPI,University of Mississippi,1,1,FY2025Q4,27-1024,Graphic Designers,MS,University,54924.0,54924.0,54924.0
-UNIVERSITY OF PITTSBURGH,University of Pittsburgh,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,PA,Pittsburgh,63860.0,63860.0,63860.0
-UNIVERSITY OF ROCHESTER,University of Rochester,1,1,FY2025Q1,27-1024,Graphic Designers,NY,Rochester,48194.0,48194.0,48194.0
-UNPLUG DINING,"unPLUG Dining, Inc.",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,NY,New York City,73382.0,73382.0,73382.0
-VECTECH,"Vectech, Inc.",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,San Diego,68000.0,68000.0,68000.0
-VELVETY,VELVETY LLC,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,WA,Mill Creek,75899.0,75899.0,75899.0
 VELWYN STUDIO,"Velwyn Studio, Inc.",1,1,FY2025Q4,15-1255,Web and Digital Interface Designers,TX,Austin,70000.0,70000.0,70000.0
-VERSA AI,Versa AI Inc.,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,Apartment F,61000.0,61000.0,61000.0
-VIBRANT WELLNESS,Vibrant Wellness LLC,1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,CA,San Jose,83699.0,83699.0,83699.0
-VISUAL CONCEPTS ENTERTAINMENT,Visual Concepts Entertainment,1,1,FY2025Q1,15-1255,Web and Digital Interface Designers,WA,Shoreline,75899.0,75899.0,75899.0
-VIZARD,"Vizard, Corp",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,MA,Medford,73445.0,73445.0,73445.0
-VIZCO AGENCY,Vizco Agency Inc,1,1,FY2025Q3,27-1024,Graphic Designers,CA,Los Angeles,48000.0,48000.0,48000.0
-VNC,VNC LLC,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,MA,Boston,78000.0,78000.0,78000.0
-WALNUT AI,Walnut AI Inc.,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,Sunnyvale,114462.0,114462.0,114462.0
-WEILL CORNELL MEDICAL COLLEGE,Weill Cornell Medical College,1,1,FY2025Q1,15-1255,Web and Digital Interface Designers,NY,New York,70541.0,70541.0,70541.0
-WELCOME FUELS,"WELCOME FUELS, LLC",1,1,FY2025Q3,27-1024,Graphic Designers,GA,Suwanee,40602.0,40602.0,40602.0
-WELLDOC,Welldoc Inc.,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,San Francisco,91894.0,91894.0,91894.0
 WELLS GREEN,Wells Green Corporation,1,1,FY2025Q4,27-1024,Graphic Designers,CA,Los Angeles,48131.0,48131.0,48131.0
-WES AND WILLY,"Wes and Willy, LLC",1,1,FY2025Q1,27-1024,Graphic Designers,NE,Omaha,39229.0,39229.0,39229.0
-WESTGATE MFG,WESTGATE MFG INC.,1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,CA,Vernon,63440.0,63440.0,63440.0
-WILD ZEBRA,"Wild Zebra, Inc.",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,WA,Seattle,76000.0,76000.0,76000.0
 WILDCARD PROPERTIES,Wildcard Properties LLC,1,1,FY2025Q4,15-1255,Web and Digital Interface Designers,WA,Bellevue,100000.0,100000.0,100000.0
-WINDBORNE SYSTEMS,Windborne Systems Inc.,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,Palo Alto,114462.0,114462.0,114462.0
-WINDWALK GAMES,Windwalk Games Corp,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,TX,Austin,91894.0,91894.0,91894.0
-WINNING SOLUTIONS,"Winning Solutions, Inc.",1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,MA,Manchester-by-the-Sea,66416.0,66416.0,66416.0
-WODIFY TECHNOLOGIES,"Wodify Technologies, LLC",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,PA,Philadelphia,52416.0,52416.0,52416.0
-WOMBAT STUDIO,"Wombat Studio, Inc.",1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,CA,Mountain View,127000.0,127000.0,127000.0
-WORLD OF PIES,World of Pies LLC,1,1,FY2025Q3,27-1024,Graphic Designers,GA,Norcross,52800.0,52800.0,52800.0
-XATELIER,XATELIER,1,1,FY2025Q3,27-1024,Graphic Designers,CA,ROWLAND HEIGHTS,48000.0,48000.0,48000.0
-XEMELGO,Xemelgo Inc,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,WA,Bellevue,89999.0,89999.0,89999.0
-XUEJUAN DANCE ENSEMBLE,Xuejuan Dance Ensemble LLC,1,1,FY2025Q1,27-1024,Graphic Designers,NJ,Fort Lee,65000.0,65000.0,65000.0
-Z&Y GROUP,Z&Y Group Inc.,1,1,FY2025Q3,27-1024,Graphic Designers,CA,Los Angeles,46509.0,46509.0,46509.0
-ZENIMAX MEDIA,ZENIMAX MEDIA INC,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,TX,Dallas,51438.0,51438.0,51438.0
-ZITRO SERVICE,ZITRO SERVICE LLC,1,1,FY2025Q3,15-1255,Web and Digital Interface Designers,MD,Silver Spring,63000.0,63000.0,63000.0
-ZONEXUS,"ZoNexus, LLC",1,1,FY2025Q3,27-1021,Commercial and Industrial Designers,CA,Richmond,67434.0,67434.0,67434.0

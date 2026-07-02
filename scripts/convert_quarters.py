@@ -13,6 +13,12 @@ import sys
 import time
 from pathlib import Path
 
+try:
+    sys.stdout.reconfigure(encoding="utf-8")
+    sys.stderr.reconfigure(encoding="utf-8")
+except Exception:
+    pass
+
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from engine.sponsors import quarter_parquet_path, xlsx_to_parquet  # noqa: E402
@@ -40,7 +46,20 @@ def main() -> None:
             print(f"exists, skip: {out}")
             continue
         t0 = time.time()
-        n = xlsx_to_parquet(raw, out)
+        try:
+            n = xlsx_to_parquet(raw, out)
+        except ValueError as e:
+            print(f"\nCouldn't use {raw.name} — it doesn't look like a DOL LCA disclosure file.")
+            print(f"  Reason: {e}")
+            print("  Make sure it's the LCA Programs (H-1B, H-1B1, E-3) file — not PERM or")
+            print("  prevailing-wage — from")
+            print("  https://www.dol.gov/agencies/eta/foreign-labor/performance (Disclosure Data).")
+            sys.exit(1)
+        except Exception as e:
+            print(f"\nCouldn't read {raw.name}: {e}")
+            print("  The file may be corrupted or incomplete — re-download it from")
+            print("  https://www.dol.gov/agencies/eta/foreign-labor/performance and try again.")
+            sys.exit(1)
         print(f"converted {quarter}: {n:,} rows -> {out}  ({time.time() - t0:.0f}s)")
 
 
