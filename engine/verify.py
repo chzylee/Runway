@@ -1,112 +1,134 @@
-"""Runway — Layer 1 verification (T2).
+"""In-pipeline verification: every check passes, skips, or stops the run.
 
-The "verification cell": a failed check raises and stops the run, so a wrong
-file (e.g. PERM instead of LCA), an empty post-filter result, or a normalization
-regression can never silently produce a bogus shortlist.
-
-Golden checks are reanchored to the kill-test's *real* numbers (FY2025 Q4):
-  - top single-quarter sponsor iGavel (7 Level-I design filings) reappears,
-  - a suffixed/multi-spelling employer collapses to one normalized row.
+A failed check raises RunwayError so a bad run never quietly produces
+artifacts. Checks return CheckResult(status "PASS" or "SKIP") so the scripts
+can print what was verified.
 """
-
 from __future__ import annotations
 
-import pandas as pd
+from collections import namedtuple
 
-from .sponsors import REQUIRED_COLUMNS, normalize_employer
+from engine import RunwayError
+from engine.sponsors import (
+    REQUIRED_COLUMNS,
+    ROLE_SOC,
+    build_sponsor_table,
+    normalize_employer,
+)
 
+CheckResult = namedtuple("CheckResult", ["name", "status", "detail"])
 
-class VerificationError(AssertionError):
-    """A Layer 1 verification check failed; the shortlist is not trustworthy."""
-
-
-def _check(ok: bool, msg: str) -> str:
-    if not ok:
-        raise VerificationError(msg)
-    return f"PASS — {msg}"
-
-
-def verify_normalization_unit() -> list[str]:
-    """Data-independent: normalize_employer collapses spellings as intended."""
-    out = []
-    cases = {
-        "The Deloitte Consulting, LLP.": "DELOITTE CONSULTING",
-        "Deloitte Consulting LLP": "DELOITTE CONSULTING",
-        "Amazon.com Services LLC": "AMAZON COM SERVICES",
-        "AMAZON.COM SERVICES, INC.": "AMAZON COM SERVICES",
-    }
-    for raw, expected in cases.items():
-        got = normalize_employer(raw)
-        out.append(_check(got == expected, f"normalize({raw!r}) == {expected!r} (got {got!r})"))
-    return out
+# Anchor for the golden check, pinned from the verified manual run of
+# 2026-07-01 (see docs/decision_log.md): in FY2025Q4, the top Level-I design
+# sponsor by filing count is iGavel, Inc. (7 filings). The check SKIPS when
+# that quarter isn't loaded, so it never fires a false failure on other data.
+GOLDEN = {
+    "quarter": "FY2025Q4",
+    "role": "design",
+    "wage_level": "I",
+    "top_employer": "IGAVEL",
+}
 
 
-def verify_columns(rows: pd.DataFrame) -> str:
-    """Column-present assert — catches a wrong/PERM file before trusting output."""
-    missing = [c for c in REQUIRED_COLUMNS if c not in rows.columns]
-    return _check(not missing, f"all required columns present (missing: {missing})")
-
-
-def verify_nonempty(table: pd.DataFrame) -> str:
-    """Non-empty-after-filter assert — the door is not closed / filter not broken."""
-    return _check(len(table) > 0, f"sponsor table non-empty after filtering ({len(table)} employers)")
-
-
-def verify_count_consistency(table: pd.DataFrame, rows: pd.DataFrame) -> str:
-    """Sum of per-employer filing_count == number of selected certified rows."""
-    total = int(table["filing_count"].sum())
-    n_rows = len(rows)
-    return _check(total == n_rows, f"filing_count sums to selected rows ({total} == {n_rows})")
-
-
-def verify_collapse(rows: pd.DataFrame, table: pd.DataFrame) -> str:
-    """A normalized employer with >1 raw spelling collapses to a single row.
-
-    Confirms the group-by actually merged multi-entity / suffix variants rather
-    than leaving them as separate rows.
-    """
-    raw_per_norm = rows.groupby("EMP_NORM")["EMPLOYER_NAME"].nunique()
-    multi = raw_per_norm[raw_per_norm > 1]
-    if multi.empty:
-        # No multi-spelling employer this run; assert grouping still reduced rows.
-        return _check(
-            len(table) <= len(rows),
-            f"grouping reduced {len(rows)} rows to {len(table)} employers",
+def check_required_columns(columns, source: str) -> CheckResult:
+    """Catches a wrong file early - a PERM disclosure has different columns."""
+    present = set(columns)
+    missing = [c for c in REQUIRED_COLUMNS if c not in present]
+    if missing:
+        raise RunwayError(
+            f"{source} is missing required column(s): {', '.join(missing)}.\n"
+            "This looks like the wrong file - a PERM disclosure instead of an LCA one?\n"
+            "Download the LCA Programs file named LCA_Disclosure_Data_FY<YYYY>_Q<N>.xlsx\n"
+            "(not PERM_...) from the DOL disclosure-data page linked in README.md."
         )
-    emp = multi.index[0]
-    n_spellings = int(multi.iloc[0])
-    n_table_rows = int((table["employer"] == emp).sum())
-    return _check(
-        n_table_rows == 1,
-        f"multi-spelling employer {emp!r} ({n_spellings} raw spellings) "
-        f"collapsed to {n_table_rows} row",
+    return CheckResult(
+        "required-columns", "PASS",
+        f"all {len(REQUIRED_COLUMNS)} required columns present in {source}",
     )
 
 
-def verify_golden_killtest(
-    rows: pd.DataFrame, table: pd.DataFrame, killtest_top: str = "IGAVEL", anchor_quarter: str = "FY2025Q4"
-) -> str:
-    """The kill-test's top single-quarter sponsor reappears in the full table.
-
-    This golden value (IGAVEL, 7 Level-I design filings) is specific to
-    FY2025 Q4. It only means anything when that quarter is in the run — on any
-    other data it would fire a false failure — so it is *skipped* (not failed)
-    when the anchor quarter isn't loaded.
-    """
-    quarters = set(rows["QUARTER"].unique()) if "QUARTER" in rows.columns else set()
-    if anchor_quarter not in quarters:
-        return f"SKIP — golden kill-test anchored to {anchor_quarter} (not in this run)"
-    present = killtest_top in set(table["employer"])
-    return _check(present, f"kill-test top sponsor {killtest_top!r} present in shortlist")
+def check_nonempty(table, stats) -> CheckResult:
+    if stats["rows_selected"] == 0 or len(table) == 0:
+        raise RunwayError(
+            "The filters selected no rows, so there is nothing to report.\n"
+            f"Funnel: {stats['rows_total']} rows -> {stats['rows_certified']} certified "
+            f"-> {stats['rows_soc_matched']} in role SOC codes -> {stats['rows_selected']} at the wage level."
+        )
+    return CheckResult(
+        "non-empty-result", "PASS",
+        f"{stats['rows_selected']} selected filings across {stats['employer_groups']} employers",
+    )
 
 
-def run_all(rows: pd.DataFrame, table: pd.DataFrame, killtest_top: str = "IGAVEL") -> list[str]:
-    """Run every check; raise on the first failure, else return the PASS log."""
-    results: list[str] = []
-    results += verify_normalization_unit()
-    results.append(verify_columns(rows))
-    results.append(verify_nonempty(table))
-    results.append(verify_count_consistency(table, rows))
-    results.append(verify_collapse(rows, table))
-    results.append(verify_golden_killtest(rows, table, killtest_top))
-    return results
+def check_filing_count_sum(table, stats) -> CheckResult:
+    total = int(table["filing_count"].sum())
+    if total != stats["rows_selected"]:
+        raise RunwayError(
+            f"filing_count sums to {total} but {stats['rows_selected']} rows were selected -\n"
+            "the aggregation dropped or duplicated filings. Do not trust this run."
+        )
+    return CheckResult(
+        "filing-count-sum", "PASS",
+        f"filing_count sums to the {total} selected rows",
+    )
+
+
+def check_employer_collapse(table, stats) -> CheckResult:
+    """A multi-spelling employer must collapse to one row."""
+    spellings = ["Acme Design LLC", "ACME DESIGN, INC.", "Acme  Design"]
+    keys = {normalize_employer(s) for s in spellings}
+    if len(keys) != 1:
+        raise RunwayError(
+            f"Employer normalization is broken: {spellings} produced keys {sorted(keys)} "
+            "instead of one shared key."
+        )
+    raw = stats["distinct_raw_employers"]
+    grouped = stats["employer_groups"]
+    if grouped > raw:
+        raise RunwayError(
+            f"Grouping produced MORE employers ({grouped}) than raw spellings ({raw}) - "
+            "the group key is unstable. Do not trust this run."
+        )
+    if grouped < raw:
+        detail = f"{raw} raw spellings collapsed into {grouped} employers"
+    else:
+        detail = ("no multi-spelling employers in this data; "
+                  "normalization mechanism verified on synthetic names")
+    return CheckResult("employer-collapse", "PASS", detail)
+
+
+def check_golden_top_employer(quarters) -> CheckResult:
+    """Recompute the pinned quarter from its own rows and compare the top
+    employer against the known answer."""
+    if GOLDEN["quarter"] not in quarters:
+        return CheckResult(
+            "golden-top-employer", "SKIP",
+            f"{GOLDEN['quarter']} not loaded; nothing to compare against",
+        )
+    golden_table, _ = build_sponsor_table(
+        ROLE_SOC[GOLDEN["role"]],
+        GOLDEN["wage_level"],
+        {GOLDEN["quarter"]: quarters[GOLDEN["quarter"]]},
+    )
+    top = golden_table.iloc[0]
+    if top["employer"] != GOLDEN["top_employer"]:
+        raise RunwayError(
+            f"Golden check failed on {GOLDEN['quarter']}: expected top employer "
+            f"{GOLDEN['top_employer']}, got {top['employer']} ({int(top['filing_count'])} filings).\n"
+            "Filtering or normalization behavior changed - investigate before trusting this run."
+        )
+    return CheckResult(
+        "golden-top-employer", "PASS",
+        f"{GOLDEN['quarter']} top employer is {GOLDEN['top_employer']} "
+        f"({int(top['filing_count'])} filings), as pinned",
+    )
+
+
+def run_all(table, stats, quarters) -> list[CheckResult]:
+    """Run every table-level check; raises RunwayError on the first failure."""
+    return [
+        check_nonempty(table, stats),
+        check_filing_count_sum(table, stats),
+        check_employer_collapse(table, stats),
+        check_golden_top_employer(quarters),
+    ]

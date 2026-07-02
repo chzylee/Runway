@@ -1,84 +1,198 @@
-# Runway — Decision Log (FDE proof / Judgment Ledger)
+# Decision log
 
-The forks and why. This is the job-search proof, not the report. Each entry: the
-choice, the alternative rejected, and the reasoning. Doubles as the
-build-in-public reasoning trail (public — contains no personal data).
+Every fork in the road that had a real alternative, and why we took the branch
+we took. Newest entries at the bottom.
 
----
+## 1. Data source: DOL LCA disclosure data, not PERM, not third-party sites
 
-## Decisions inherited from the brief (carried, with the why)
+**Alternatives:** PERM disclosure data (green-card labor certs), USCIS H-1B
+Employer Data Hub, scraped aggregators (MyVisaJobs etc.).
 
-| # | Fork | Chose | Over | Why |
-|---|------|-------|------|-----|
-| 1 | What the product *is* | Advisory diagnostic — named-company gap-read | Another directory | h1bgrader/MyVisaJobs/h1bdata already list *who sponsors*. None tell a person what to *do*. The advice is the gap. |
-| 2 | New-grad signal | `PW_WAGE_LEVEL = I` (entry-wage filings) | Salary thresholds | Wage *level* is the mandated, comparable entry-tier marker; salary is noisy across metros/roles. Salary kept as a secondary display only. |
-| 3 | Data source | Raw DOL OFLC **LCA** disclosure file | A directory's pre-chewed view, or PERM/prevailing-wage | Grounding is the moat. Raw filings let us filter to entry-wage *design* ourselves. LCA (temporary, H-1B) is the sponsorship-intent signal; PERM is green-card stage, wrong layer. |
-| 4 | ICP | The new-grad **designer** (n=1, works on Rally) | The cousin's post-lottery need | One real user, finishable by hand. Cousin's tool is a separate, parked build (different legal surface). |
-| 5 | Where AI is allowed | Judgment step only (gap-read), human-reviewed | AI in the data step | The data step must be deterministic and traceable. AI on the deterministic parse would inject ungrounded error into the moat. |
-| 6 | Architecture | **Engine/altitude split** — `build_sponsor_table()` is a reusable, role-parameterized function; report is a thin caller | One monolithic notebook | The Level-I parse IS the engine the future self-serve UI calls. Keeping it separable is one of the two allowed forward-compat choices. |
-| 7 | Role generality | `ROLE_SOC` dict, seeded design-only | Hardcoded design SOCs | Adding "consultant" later = one dict entry. The second allowed forward-compat choice. Multi-role *judgment* (OPT caveats per role) stays v2. |
-| 8 | **Layer A (OPT-now postings pipeline)** | **Cut to v2** | Build it in v1 | The finishing-discipline call. Least grounded, most fragile (regex/LLM work-auth classification), least productizable — doesn't survive into a self-serve product. v1 replaces it with a manual "are they hiring now" eyeball + one caveat. Building it would be the finish-failure trap. |
+**Why LCA:** An LCA filing is the moment an employer commits money to a work
+visa for a specific role at a specific wage level — the closest public signal
+to "this company sponsors people like you." PERM measures green cards years
+into employment, which lags a new grad's question by half a decade. USCIS data
+lacks SOC/wage-level detail per filing. Third-party sites repackage the same
+DOL files with unknown transformations; going to the source keeps every number
+auditable. The files are public record, so the shortlist CSV can be public.
 
----
+## 2. Filter: CASE_STATUS = Certified, PW_WAGE_LEVEL = I
 
-## Decisions made *during* the build (mine; reviewed)
+**Alternatives:** all statuses; all wage levels; a wage-dollar cutoff instead
+of the level.
 
-| # | Fork | Chose | Over | Why |
-|---|------|-------|------|-----|
-| B1 | **Kill-test first** | Ran `build_sponsor_table(design, "I", FY2025Q4)` before anything else | Build the repo, then check | The brief's go/no-go gate. One quarter → **52 distinct real companies, not staffing-dominated** (top employer 7 filings; Amazon/Deloitte/Activision/DraftKings/Esri present). Door is open → GO. |
-| B2 | Quarter coverage | **Full FY2025 (Q1–Q4)** for the shortlist | Single quarter (brief's literal scope) | "*Actually* sponsors entry-wage designers" is far stronger when a company appears across multiple quarters. The engine is parameterized for exactly this, so it's a one-call extension, not new scope. Single quarter remains the documented kill-test. **⚠ Corrected 2026-07-01 — see Corrections below: this was implemented against its own text.** |
-| B3 | Quarter vintage | **FY2025** (most recent complete fiscal year) | Older 2021+ quarter | Brief says "use a 2021+ quarter." Most recent = most relevant to her job search. Confirmed `PW_WAGE_LEVEL` is the bare-`"I"` spelling in this vintage (not "Level I"/1). |
-| B4 | Column access | Resolve by **name** from each file's header | Hardcoded column indices | Columns are reordered across quarters (FY2025 Q1 has `WORKSITE_COUNTY` where Q4 has `WORKSITE_CITY`). The verification assert *caught* the index bug mid-build — exactly its job. Name resolution is robust. |
-| B5 | "Notebook" form | **Module + thin runner script** (`scripts/build_shortlist.py`) | A Jupyter notebook | Same provenance + verification "cells," but diffable, reviewable, and a cleaner realization of the engine/altitude split. The success criterion "every cell traces to source + quarter" is met by the script's printed provenance. |
-| B6 | Privacy split | Her HTML report → `output/private/` (gitignored); engine + method + decision log + (public-record) shortlist CSV → public | Publish everything / publish nothing | Her portfolio + job-search data must never be published. LCA employer names are public record, so the shortlist itself is shareable. |
-| B7 | Report format | Self-contained HTML, embedded CSS, no JS/pandoc | pandoc/PDF pipeline | pandoc isn't installed; a single self-contained HTML opens anywhere and is trivially shareable for early UX feedback. PDF stays optional. |
+**Why:** Certified-only counts filings the government actually accepted —
+denied/withdrawn filings prove intent, not capacity. Level I is DOL's own
+definition of "entry level" for the occupation and area, which is exactly a
+new grad's tier; a dollar cutoff would need per-metro calibration that Level I
+already encodes. "Certified - Withdrawn" is deliberately excluded (exact match
+on "Certified") because a withdrawn filing didn't result in an employed visa
+holder. The cost: Level I is a proxy — some new-grad hires are filed at Level
+II — so the shortlist under-counts rather than over-promises.
 
----
+## 3. Design SOC codes seeded as a role dict
 
-## Corrections (2026-07-01) — build diverged from these decisions
+**Alternatives:** hardcode the three codes in the filter; try to catch design
+jobs by JOB_TITLE keywords.
 
-A manual first run failed immediately. Root cause was a decision implemented
-against its own text, plus a run-path that was never tested as the user. Full
-write-up: `postmortem_2026-07-01_flow-break.md`. The corrections:
+**Why:** `ROLE_SOC = {"design": ["15-1255", "27-1024", "27-1021"]}` makes
+adding a role later a one-line change and keeps v0 scoped to design only.
+The three codes (web/digital interface designers, graphic designers,
+commercial/industrial designers) are treated equally — "primary" is
+descriptive only. Title-keyword matching was rejected: employer-written titles
+are noisy, SOC codes are what the wage level is certified against.
 
-| # | Decision it violated | What the code actually did | Correction |
-|---|------|------|------|
-| C1 | **B2** ("single quarter remains the documented kill-test") | Hardcoded Q1–Q4 as **mandatory** and hard-crashed on any missing quarter — breaking the single-quarter path B2 itself required. README (download *one* quarter) and the brief agreed with B2; only the code disagreed. | Quarters are **auto-detected** from `data/processed/`; one is valid; a run never crashes on a quarter the user didn't ask for. `engine/sponsors.detect_quarters()`. |
-| C2 | North Star ("UX for non-technical users") | Missing data produced a raw traceback naming internal functions, advising a fix that couldn't work. | Plain-English no-data message with the DOL page, filename, and the one command. |
-| C3 | Constraint ("runs for *her*") | Never run on the target's Japanese-locale Windows console (cp932); Unicode output crashed it. | UTF-8 forced across all scripts + file I/O. |
-| C4 | B1/verification intent | Golden verify check hard-anchored to a single FY2025-Q4 employer would crash on *current* data. | Check skips (not fails) when its anchor quarter isn't loaded. |
-| — | — | Three scripts, manual ordering, no orchestration. | `scripts/run.py` — one command: convert → shortlist → report, with guard rails. |
+## 4. The "hiring now?" signal is manual in v0
 
-**Process lesson (harvest for the Ship Pipeline):** a decision recorded in this
-log was never checked *against the code*. "Read each ledger entry against the
-build" is now an owner's pre-ship step (see postmortem checklist).
+**Alternatives:** scrape job boards / careers pages and classify postings
+automatically (the design doc's Layer 2 / Layer A).
 
-## Forward decisions (v2 door)
+**Why deferred to v2:** postings pipelines rot fast (markup changes,
+anti-scraping, classifier drift) and would dominate maintenance for a v0 whose
+edge is the LCA grounding. Instead the report has a "hiring now?" column the
+reviewer fills by hand in `output/private/hiring_now.csv`; the tool creates
+that file blank and never writes to it again (delete it to get a fresh
+template). Cheap-to-add was not a reason to add.
 
-| # | Fork | Chose | Over | Why |
-|---|------|-------|------|-----|
-| B8 | Data acquisition | **Manual download now**, auto-download deferred to the send-to-tester state | Auto-download in v1 | Not required for the builder's manual run. When added, provenance is a hard requirement, not a nicety: the report + tool must always state **which DOL sheet** the numbers come from and **how to find/download it yourself** — both for trust and for a curious reader. Auto-download must never hide the source. |
+## 5. Engine/report split
 
----
+**Alternatives:** one script that filters and renders HTML in one pass.
 
-## Known limits (named, not hidden)
+**Why:** `engine/` returns data tables and knows nothing about HTML (or LLMs,
+or printing); `scripts/` own I/O, console output, and rendering. This keeps the
+part that must be trustworthy (numbers) testable in isolation from the part
+that will churn (presentation), and it makes "the engine never calls an LLM" a
+structural property instead of a promise.
 
-- **LCA ≠ hire-now.** Certified filing = ability/intent to sponsor, not a current
-  req. v1 covers this with a manual hiring eyeball + an explicit report caveat.
-- **Design likely not STEM-OPT** → ~12-mo OPT runway. Stated in the report.
-- **Employer normalization is conservative** (uppercase, strip LLC/INC/CORP/LTD,
-  punctuation). It will not merge genuinely different legal spellings of the same
-  parent (e.g. distinct subsidiaries). Over-merging is the worse error, so we
-  under-merge on purpose.
-- **One role (design); whatever quarters you've downloaded.** The tool runs on
-  one quarter or a full year — a single quarter is a thinner sample (no employer
-  can show as a repeat sponsor). Multi-role and live refresh are v2.
+## 6. Conversion keeps all rows, filtering happens at query time
 
-## Artifacts
+**Alternatives:** filter to certified design Level-I rows during xlsx -> parquet
+conversion for smaller files.
 
-- Engine: `engine/sponsors.py` · Verification: `engine/verify.py`
-- One command: `scripts/run.py` (convert → shortlist → report)
-- Runners: `scripts/convert_quarters.py`, `scripts/build_shortlist.py`, `scripts/build_report.py`
-- Post-mortem of the first-run failure: `postmortem_2026-07-01_flow-break.md`
-- Saved gap-read prompt: `prompts/gap_read.md`
-- Public shortlist: `output/sponsors_levelI.csv` · Her report (private): `output/private/runway_report.html`
+**Why:** the parquet is a narrow (12-column) but complete copy of the quarter,
+so adding a role or changing a filter never requires re-streaming a 100 MB
+xlsx. The size cost is small because the columns are few.
+
+## 7. Conversion skips up-to-date parquet; `--force-convert` overrides
+
+**Alternatives:** reconvert every run (simple, slow); never reconvert (stale
+after a re-download).
+
+**Why:** streaming a DOL xlsx takes minutes, and `run.py` is meant to be run
+casually. A parquet is reused when it is newer than its xlsx (file mtime), so
+re-downloading a corrected quarter triggers reconversion automatically and
+`--force-convert` covers tool-version upgrades.
+
+## 8. Wage annualization: FROM rate x {YEAR: 1, HOUR: 2080, MONTH: 12, WEEK: 52}
+
+**Alternatives:** midpoint of FROM/TO; include DOL's "Bi-Weekly" unit; drop
+filings with unparseable wages.
+
+**Why:** the FROM rate is the guaranteed floor and is always present; TO is
+often blank, so a midpoint would mix two different quantities across rows. The
+four multipliers cover the spec'd units; a filing with any other unit (or an
+unparseable wage) **stays in every count** but contributes no wage statistics —
+dropping the filing would silently understate a sponsor's activity. The count
+of wage-excluded filings is reported in provenance and in the report footer,
+never silently.
+
+## 9. Employer normalization strips exactly LLC / INC / CORP / LTD
+
+**Alternatives:** aggressive canonicalization (strip LLP, PLLC, CO, GROUP,
+HOLDINGS...; fuzzy matching).
+
+**Why conservative:** merging two genuinely different employers is a worse
+error for an applicant than listing one employer twice — the caveat on every
+output says names "may under-merge," and that direction is deliberate.
+Uppercasing, collapsing punctuation, and stripping the four unambiguous
+suffixes catches the common "Acme LLC" / "ACME, Inc." split; everything beyond
+that (e.g. "Deloitte Consulting LLP" keeps its LLP) waits until a real merge
+failure justifies it.
+
+## 10. Repeat sponsor = present in >= 2 distinct quarters
+
+**Alternatives:** filing-count threshold; weighting recent quarters higher.
+
+**Why:** the question a repeat flag answers is "does this employer keep coming
+back," and distinct quarters measure exactly that, independent of how many
+positions one batch filing covered. With a single quarter loaded the flag is
+structurally "no" for everyone, so the report says the signal is unavailable
+rather than implying nobody repeats. Two is the smallest number that means
+"again" — any higher is arbitrary without more history.
+
+## 11. `--quarters` asserts expectations; the run always uses every quarter present
+
+**Alternatives:** `--quarters` as a hard selector that excludes other data.
+
+**Why:** the two failure modes the spec distinguishes are (a) an extra quarter
+present that wasn't requested — harmless, more signal, just use it — and (b) a
+requested quarter with no converted data — the user believes data is there and
+it isn't, which must stop the run with instructions naming the quarter. Making
+the flag an expectation check implements exactly that split; a selector would
+add an exclusion feature nobody asked for.
+
+## 12. Golden check pinned to FY2025Q4 / iGavel
+
+**Alternatives:** no golden check; recomputing against a stored full snapshot.
+
+**Why:** the 2026-07-01 manual run of this pipeline on the real
+`LCA_Disclosure_Data_FY2025_Q4.xlsx` established iGavel, Inc. (7 filings) as
+that quarter's top Level-I design sponsor, and that was human-verified against
+the raw file. `engine/verify.py` recomputes FY2025Q4 from its own rows on
+every run that includes it and fails loudly if the top employer changes —
+catching filter or normalization drift. When FY2025Q4 isn't loaded the check
+**skips** (it can't fire a false failure on other data). A full snapshot diff
+was rejected as a maintenance burden disproportionate to v0.
+
+## 13. The report shows the full table — no top-N cutoff
+
+**Alternatives:** show top 20/50 and point to the CSV for the rest.
+
+**Why:** Level-I design filings are inherently sparse (FY2025Q4: ~50
+employers), so a cutoff solves a problem the data doesn't have — and any N
+would be a magic number. If a future multi-year run makes the table unwieldy,
+that's the moment to add (and log) a threshold. The CSV remains the canonical
+artifact either way.
+
+## 14. UTF-8 is forced everywhere
+
+**Alternatives:** trust the platform defaults.
+
+**Why:** the target environments include a Japanese-locale Windows console
+(cp932), which crashes on employer names and typographic characters the moment
+anything prints or writes with locale defaults. Every entry point reconfigures
+stdout/stderr to UTF-8 and every file open passes `encoding="utf-8"`, so the
+locale never decides whether a run succeeds. (Learned the hard way in a
+previous build.)
+
+## 15. Errors are RunwayError with a plain-English message
+
+**Alternatives:** let exceptions propagate; error codes.
+
+**Why:** the person running this is not the person who wrote it. Every
+anticipated failure — no data, PERM file, missing requested quarter, failed
+verification — raises `RunwayError` whose message says what happened and what
+to do next; the CLI wrapper prints it and exits 1. Stack traces are reserved
+for genuine bugs.
+
+## 16. Fully empty xlsx rows are dropped at conversion
+
+**Alternatives:** keep them (the certified filter removes them anyway).
+
+**Why:** the real FY2025Q4 file declares 563,689 rows but only 118,580 hold
+data — the rest are empty padding from the sheet's declared dimensions.
+Keeping them wouldn't change the shortlist, but every "derived from N rows"
+statement in provenance and the report would be off by ~4x. Rows where all 12
+kept columns are empty are skipped during streaming and the skip count is
+printed, so nothing disappears silently.
+
+## 17. Gap-read markdown gets a ~40-line renderer instead of a dependency
+
+**Alternatives:** add `markdown`/`mistune` to requirements; require the
+reviewer to save HTML; embed the markdown in `<pre>`.
+
+**Why:** the reviewed gap read needs headings, lists, bold, and links — a
+bounded subset a small function renders safely (input is HTML-escaped first).
+Adding a dependency for that widens the install surface of a tool whose
+requirements are deliberately three lines; `<pre>` would make the flagship
+section of the report look broken.

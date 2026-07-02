@@ -1,29 +1,15 @@
-"""Runway engine package (Layer 1, deterministic)."""
+"""Runway engine: deterministic processing of DOL LCA disclosure data.
 
-from .sponsors import (
-    ROLE_SOC,
-    SOC_TITLES,
-    REQUIRED_COLUMNS,
-    LEVEL_I_VALUES,
-    build_sponsor_table,
-    detect_quarters,
-    load_certified_rows,
-    normalize_employer,
-    normalize_soc,
-    xlsx_to_parquet,
-    quarter_parquet_path,
-)
+This package is the data layer only. It never calls an LLM, never renders
+HTML, and never prints - it returns tables and raises RunwayError with a
+plain-English message when a run cannot continue.
+"""
 
-__all__ = [
-    "ROLE_SOC",
-    "SOC_TITLES",
-    "REQUIRED_COLUMNS",
-    "LEVEL_I_VALUES",
-    "build_sponsor_table",
-    "detect_quarters",
-    "load_certified_rows",
-    "normalize_employer",
-    "normalize_soc",
-    "xlsx_to_parquet",
-    "quarter_parquet_path",
-]
+
+class RunwayError(Exception):
+    """A known failure with a message written for the person running the tool.
+
+    Scripts catch this at the top level and print the message; the user must
+    never see a stack trace for an anticipated failure (no data, wrong file,
+    missing quarter, failed verification).
+    """

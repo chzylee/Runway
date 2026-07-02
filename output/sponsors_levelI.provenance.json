@@ -1,0 +1,54 @@
+{
+  "generated_at_utc": "2026-07-02 05:28 UTC",
+  "source": "US DOL OFLC LCA Programs disclosure data (public record)",
+  "filters": {
+    "case_status": "Certified",
+    "role": "design",
+    "soc_codes": [
+      "15-1255",
+      "27-1024",
+      "27-1021"
+    ],
+    "pw_wage_level": "I"
+  },
+  "quarters_used": [
+    "FY2025Q4"
+  ],
+  "rows_per_quarter": {
+    "FY2025Q4": 118580
+  },
+  "funnel": {
+    "rows_total": 118580,
+    "rows_certified": 106613,
+    "rows_soc_matched": 668,
+    "rows_selected": 67
+  },
+  "employer_groups": 52,
+  "distinct_raw_employer_spellings": 52,
+  "rows_wage_excluded_from_wage_stats": 0,
+  "case_statuses_seen": {
+    "CERTIFIED": 106613,
+    "CERTIFIED - WITHDRAWN": 9082,
+    "WITHDRAWN": 1844,
+    "DENIED": 1041
+  },
+  "wage_levels_seen": {
+    "II": 243,
+    "IV": 172,
+    "III": 163,
+    "I": 67,
+    "": 23
+  },
+  "wage_units_seen": {
+    "YEAR": 45,
+    "HOUR": 21,
+    "MONTH": 1
+  },
+  "caveats": [
+    "An LCA certification is not a hire or an open role.",
+    "OPT is not sponsorship — a new grad's first job is on OPT; sponsorship comes 1-3 years later.",
+    "Design roles are likely not STEM-OPT eligible -> roughly a 12-month OPT window, not 36.",
+    "Employer names are conservatively normalized and may under-merge.",
+    "Career/portfolio guidance, not immigration legal advice."
+  ]
+}

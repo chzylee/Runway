@@ -1,100 +1,131 @@
-# Runway — sponsorship diagnostic for new-grad designers (v0)
+# Runway
 
-For **international new-grad designers who need US visa sponsorship**: a grounded shortlist of
-companies that **actually sponsor entry-wage designers**, plus a review that names the **3 projects**
-that would make a portfolio worth a visa to those companies. Validated so far with one real designer,
-but built for the whole group — not one person.
+A sponsorship diagnostic for international new-grad designers. It answers two
+questions with data instead of folklore:
 
-Not a directory of "who sponsors anyone" (h1bgrader, MyVisaJobs, h1bdata already do that). The edge
-is **data-grounding + advice**, in three parts:
+1. **Who actually sponsors entry-level designers?** — a shortlist of companies
+   with *certified, entry-wage (Level I)* design visa filings, built from raw
+   US Department of Labor LCA disclosure data.
+2. **What should I build to be worth a visa to them?** — a human-reviewed
+   "gap read" naming the 3 portfolio projects aimed at specific companies from
+   that shortlist.
 
-1. **Find** — which employers actually sponsor design roles at the entry wage (`PW_WAGE_LEVEL = I`),
-   read straight off mandated DOL filings.
-2. **Assess** — read the applicant's portfolio (a resume works too, with less signal).
-3. **Bridge** — the judgment step: given those companies' real postings + the portfolio, name the gap
-   and the 3 concrete things to build to close it. **This bridge is the core of the tool.**
+The edge is data-grounding plus judgment, not a directory: every number in the
+output traces back to a public DOL filing, and the advice layer is written by
+a human reviewer, never by a script.
 
-> **v0 scope:** by hand, no app. The grounded shortlist + a human-reviewed portfolio review. The
-> OPT-now postings pipeline is deliberately deferred to a later version — see `docs/decision_log.md`.
+## How it works
 
-## What's here
+- **Layer 1 — deterministic engine (no LLM).** `engine/` filters DOL LCA data
+  to certified Level-I design filings and aggregates one row per employer.
+  In-pipeline checks (`engine/verify.py`) stop any run that looks wrong.
+- **Layer 2 — "hiring now?" signal.** Deferred to v2. The report has a manual
+  column instead (see below).
+- **Layer 3 — reviewed gap read.** A human runs `prompts/gap_read.md` in their
+  own Claude/ChatGPT, reviews the output, and saves it for the report to pick
+  up. No script in this repo calls an LLM.
+
+## Quickstart
+
+Requires Python 3.10+.
 
 ```
-engine/
-  sponsors.py      # the engine (NO LLM): find + rank entry-wage design sponsors from DOL data
-  verify.py        # verification gate: column/non-empty/collapse/golden checks (stops a bad run)
-scripts/
-  run.py               # THE command: convert + shortlist + report, end to end
-  convert_quarters.py  # raw DOL xlsx -> narrow parquet (run once per quarter)
-  build_shortlist.py   # thin caller: provenance + verify + write the shortlist CSV
-  build_report.py      # self-contained HTML one-pager
-prompts/
-  gap_read.md      # the portfolio review — the human-reviewed judgment step (run in your own Claude/ChatGPT)
-docs/
-  decision_log.md  # the forks and why (the design/judgment trail)
-data/raw/          # downloaded DOL files (gitignored, large)
-data/processed/    # derived parquet (gitignored, regenerable)
-output/            # sponsors_levelI.csv (public) + private/ report (gitignored)
+python -m venv .venv
 ```
 
-## Setup
+Activate it — the only OS-specific step:
 
-```bash
-# macOS/Linux
-python3 -m venv .venv && source .venv/bin/activate
+- macOS/Linux: `source .venv/bin/activate`
+- Windows: `.venv\Scripts\activate`
 
-# Windows (git bash)
-python -m venv .venv && source .venv/Scripts/activate
+Then everything below is the same on every platform:
 
-# then identical on both, venv active:
+```
 pip install -r requirements.txt
 ```
 
-## Run
+**Get the data.** Download one or more quarters of **LCA** disclosure data
+(not PERM) from the DOL performance-data page:
 
-Activate the venv (see above) once per shell session. Then it's **two steps**: get the data, run one command.
+> https://www.dol.gov/agencies/eta/foreign-labor/performance
+> → *Disclosure Data* → **LCA Programs (H-1B, H-1B1, E-3)** →
+> e.g. `LCA_Disclosure_Data_FY2025_Q4.xlsx` (~80–140 MB)
+>
+> The files resolve to direct links of the form
+> `https://www.dol.gov/sites/dolgov/files/ETA/oflc/pdfs/LCA_Disclosure_Data_FY<YYYY>_Q<N>.xlsx`
 
-1. **Download a DOL LCA quarter** into `data/raw/`.
-   - Browse and download from the DOL page:
-     **https://www.dol.gov/agencies/eta/foreign-labor/performance**
-     → under *Disclosure Data*, **LCA Programs (H-1B, H-1B1, E-3)**.
-   - As of writing, the newest published quarter is **FY2026 Q2**. Any FY2021+ quarter works; a full
-     year of quarters gives the strongest repeat-sponsor signal (with a single quarter, no employer
-     can show as a repeat sponsor).
-   - Keep DOL's original filename (e.g. `LCA_Disclosure_Data_FY2026_Q2.xlsx`). Drop as many quarters
-     as you like into `data/raw/` — the tool uses whatever is there.
+Drop the file(s) into `data/raw/` **keeping DOL's original filename** — the
+quarter label is derived from it.
 
-2. **Run the whole pipeline** — convert, build the shortlist, build the report, in one command:
-   ```bash
-   python scripts/run.py
-   ```
-   It figures out which quarters still need converting, runs the verification gate (a failed check
-   stops the run), and writes:
-   - `output/sponsors_levelI.csv` — the public grounded shortlist
-   - `output/private/runway_report.html` — the shareable one-pager (open in a browser)
+**Run everything:**
 
-   If there's no data yet, it tells you exactly where to get it instead of erroring out.
-
-3. **Portfolio review (the judgment step):** fill the four blocks in `prompts/gap_read.md`, run it in
-   your own Claude/ChatGPT, review the output, save it to `output/private/gap_read_filled.md`, and
-   run `python scripts/run.py` again to slot it into the report.
-
-> The three underlying scripts (`convert_quarters.py`, `build_shortlist.py`, `build_report.py`) still
-> run individually if you want them — `run.py` just chains them. `build_shortlist.py --quarters
-> FY2025Q4` pins a specific set; with no flag it uses every quarter you've converted.
-
-## Adding another role later (v2 door, kept open)
-
-One line in `engine/sponsors.py`:
-```python
-ROLE_SOC["consultant"] = ["13-1111"]   # + add titles to SOC_TITLES
 ```
-Then `build_shortlist.py --role consultant`. (Per-role OPT/visa *judgment* is real work and stays
-v2 — the engine just stops blocking it.)
+python scripts/run.py
+```
 
-## Caveats (also stated in the report)
+This converts the xlsx to parquet (minutes, streamed; skipped when already
+done), builds and verifies the shortlist, and renders the report. It produces:
 
-- **An LCA is not a hire-now signal** — it's "this employer sponsors at entry wage," not "they'll
-  hire you this month." New grads typically start on OPT/STEM-OPT.
-- **Design is likely not STEM-OPT eligible** → a shorter (~12-month) OPT runway.
-- Career/portfolio guidance, **not immigration legal advice**.
+| Artifact | What it is |
+| --- | --- |
+| `output/sponsors_levelI.csv` | Public shortlist: one row per employer with filing counts, quarters, SOC titles, worksite states/cities, annualized wage min/median/max. |
+| `output/sponsors_levelI.provenance.json` | Where every number came from: quarters used, filter funnel, values seen. |
+| `output/private/runway_report.html` | Private, self-contained one-pager: shortlist table + gap read + caveats. Gitignored — it may sit next to portfolio/job-search details. |
+
+Options: `--quarters FY2025Q4,FY2026Q1` asserts those quarters are loaded
+(fails with instructions if one isn't; extra quarters found on disk are always
+used). `--force-convert` re-converts xlsx even when the parquet looks current.
+
+## The two manual inputs
+
+**Hiring now? column.** The first report run creates a blank
+`output/private/hiring_now.csv`. Fill its `hiring_now` (and optionally
+`notes`) column by hand from real postings, then re-run
+`python scripts/run.py`. The tool never fills it — an LCA certification says
+nothing about current openings. Delete the file to get a fresh template after
+the shortlist changes.
+
+**Gap read.** Run `prompts/gap_read.md` in your own Claude/ChatGPT with the
+applicant's portfolio, relevant shortlist rows, and a few hand-gathered
+postings. Review the output, save the approved version to
+`output/private/gap_read_filled.md`, and re-run. Until then the report shows a
+visible "pending review" placeholder — and the run still succeeds.
+
+## When something goes wrong
+
+Every anticipated failure stops with a plain-English message, not a stack
+trace:
+
+- **"No converted LCA data found"** — nothing in `data/raw/`; follow *Get the
+  data* above.
+- **"...missing required column(s) ... PERM disclosure instead of an LCA
+  one?"** — you downloaded the wrong file type; get the **LCA Programs** file.
+- **"Requested quarter(s) not converted yet"** — you asked for a quarter via
+  `--quarters` that has no data; the message names it and how to add it.
+- **A `[verify]` check failed** — the run produced numbers that don't
+  self-check (or the FY2025Q4 golden anchor moved). Don't trust the artifacts;
+  investigate first.
+
+## Caveats — attached to every applicant-facing output
+
+- An LCA certification is not a hire or an open role.
+- OPT is not sponsorship — a new grad's first job is on OPT; sponsorship comes 1-3 years later.
+- Design roles are likely not STEM-OPT eligible -> roughly a 12-month OPT window, not 36.
+- Employer names are conservatively normalized and may under-merge.
+- Career/portfolio guidance, not immigration legal advice.
+
+## Repo map
+
+```
+engine/sponsors.py           deterministic engine: filter + aggregate (no LLM, no HTML)
+engine/verify.py             in-pipeline checks; a failed check stops the run
+scripts/convert_quarters.py  raw DOL xlsx -> narrow parquet (streamed)
+scripts/build_shortlist.py   engine -> output/sponsors_levelI.csv (+ provenance)
+scripts/build_report.py      csv -> output/private/runway_report.html
+scripts/run.py               THE command: convert -> shortlist -> report
+prompts/gap_read.md          reviewer prompt template (run by a human, elsewhere)
+docs/decision_log.md         every fork in the road, and why
+data/raw/                    you drop DOL xlsx here            (gitignored)
+data/processed/              derived parquet, regenerable      (gitignored)
+output/private/              report + manual inputs            (gitignored)
+```
