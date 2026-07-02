@@ -196,3 +196,17 @@ bounded subset a small function renders safely (input is HTML-escaped first).
 Adding a dependency for that widens the install surface of a tool whose
 requirements are deliberately three lines; `<pre>` would make the flagship
 section of the report look broken.
+
+## 18. Clean clones ship `data/raw/` via `.gitkeep`, not runtime `mkdir`
+
+**Alternatives:** create `data/raw/` at runtime in `run.py`; add a "create
+the folder" step to the README.
+
+**Why:** README step 1 tells the user to drop the DOL xlsx into `data/raw/`
+before any command runs, so the folder must exist the moment the clone does —
+runtime creation is too late for that step, and a manual-mkdir README step
+adds friction to the primary path. `.gitkeep` + a gitignore negation
+(`data/raw/*` / `!data/raw/.gitkeep`) keeps the drop point in the repo while
+still ignoring the large data files. (Adopted from the comparative build
+review's graft list, 2026-07-02; entry added after the delta re-review
+flagged the fork as unlogged.)
