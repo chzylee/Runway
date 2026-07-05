@@ -34,9 +34,39 @@ def _read_inputs():
             "The shortlist has not been built yet (output/sponsors_levelI.csv is missing).\n"
             "Run the whole pipeline with: python scripts/run.py"
         )
-    table = pd.read_csv(CSV_PATH, encoding="utf-8")
+    # Read every cell as text so a blank cell round-trips as "" (renders blank),
+    # never the float NaN that str()s to the literal "nan" (F5). The wage columns
+    # are then coerced back to numbers for _money(); errors="coerce" turns an
+    # all-excluded (blank) wage into NaN, which _money renders as an em dash.
+    table = pd.read_csv(CSV_PATH, encoding="utf-8", dtype=str).fillna("")
+    for col in ("wage_annual_min", "wage_annual_median", "wage_annual_max"):
+        table[col] = pd.to_numeric(table[col], errors="coerce")
     provenance = json.loads(PROVENANCE_PATH.read_text(encoding="utf-8"))
+    # Same-generation guard (F7): the provenance records the row count of the
+    # table it was written beside. If the CSV and provenance disagree they are
+    # from different runs - render a stale mix would misreport the funnel.
+    groups = provenance.get("employer_groups")
+    if groups != len(table):
+        raise RunwayError(
+            f"The shortlist CSV and its provenance are from different runs: the CSV has "
+            f"{len(table)} employer row(s) but the provenance records {groups}.\n"
+            "Rebuild both together with: python scripts/run.py"
+        )
     return table, provenance
+
+
+def _stop_if_not_utf8(path):
+    """A manual-input file saved with a non-UTF-8 locale default (cp932 on a
+    Japanese-locale Windows machine, dec. #14) decodes to a raw UnicodeDecodeError.
+    Turn it into a RunwayError that names the file and the fix (dec. #15) so the
+    reviewer sees plain English, not a traceback."""
+    return RunwayError(
+        f"{path.name} is not saved as UTF-8, so it can't be read.\n"
+        "A file saved with a non-UTF-8 locale default (e.g. cp932 on a "
+        "Japanese-locale Windows machine) does this.\n"
+        f"Re-save {path.name} as UTF-8 (in most editors: Save with Encoding -> UTF-8) "
+        "and re-run."
+    )
 
 
 def _load_or_create_hiring_now(table):
@@ -53,7 +83,10 @@ def _load_or_create_hiring_now(table):
             "the shortlist changes)"
         )
         return {}
-    edited = pd.read_csv(HIRING_NOW_PATH, encoding="utf-8", dtype=str).fillna("")
+    try:
+        edited = pd.read_csv(HIRING_NOW_PATH, encoding="utf-8", dtype=str).fillna("")
+    except UnicodeDecodeError:
+        raise _stop_if_not_utf8(HIRING_NOW_PATH)
     missing = [c for c in ("employer", "hiring_now") if c not in edited.columns]
     if missing:
         raise RunwayError(
@@ -96,7 +129,7 @@ def markdown_to_html(text):
             paragraph.clear()
 
     for raw_line in text.splitlines():
-        line = _inline_markdown(html.escape(raw_line.strip(), quote=False))
+        line = _inline_markdown(html.escape(raw_line.strip(), quote=True))
         if not line:
             close_paragraph()
             close_list()
@@ -127,8 +160,19 @@ def markdown_to_html(text):
 
 def _gap_read_section():
     if GAP_READ_PATH.exists():
-        body = markdown_to_html(GAP_READ_PATH.read_text(encoding="utf-8"))
-        return body, False
+        try:
+            raw = GAP_READ_PATH.read_text(encoding="utf-8")
+        except UnicodeDecodeError:
+            raise _stop_if_not_utf8(GAP_READ_PATH)
+        if raw.strip():
+            return markdown_to_html(raw), False
+        # Present but empty/whitespace: behave as absent (visible placeholder,
+        # never a silent blank flagship section), but say so - a user who saved
+        # a blank file should see that their file was ignored, not wonder why.
+        print(
+            f"[report] gap read: {GAP_READ_PATH.name} is present but empty/whitespace - "
+            "treating as pending review (did you mean to fill it?)"
+        )
     placeholder = (
         '<div class="pending"><strong>Gap read pending review.</strong>'
         "<p>To fill this section: run <code>prompts/gap_read.md</code> in your own "
@@ -204,8 +248,9 @@ def build_report():
 
     single_quarter_note = (
         "<p class='sourcenote'>Single-quarter run: the repeat-sponsor signal needs at "
-        "least two quarters. Convert another quarter to see which employers file "
-        "again and again.</p>"
+        "least two fiscal years. Convert a quarter from a different fiscal year to see "
+        "which employers file again and again. (Same-fiscal-year files are cumulative, "
+        "so adding one does not add repeat signal.)</p>"
         if len(quarters) == 1 else ""
     )
     wage_excluded = provenance["rows_wage_excluded_from_wage_stats"]

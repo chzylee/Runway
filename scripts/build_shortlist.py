@@ -27,6 +27,9 @@ def build(requested_quarters=None):
     print(f"[shortlist] quarters loaded: {', '.join(sorted(quarters))}")
 
     table, stats = build_sponsor_table(ROLE_SOC[ROLE], WAGE_LEVEL, quarters)
+    for dropped, kept in sorted(stats["quarters_superseded"].items()):
+        print(f"[shortlist] {dropped} superseded by cumulative {kept} (same fiscal year; "
+              "DOL files are FYTD) - using the latest to avoid double-counting")
     for check in run_all(table, stats, quarters):
         print(f"[verify] {check.status:4} {check.name} - {check.detail}")
 
@@ -42,6 +45,7 @@ def build(requested_quarters=None):
             "pw_wage_level": WAGE_LEVEL,
         },
         "quarters_used": stats["quarters"],
+        "quarters_superseded": stats["quarters_superseded"],
         "rows_per_quarter": stats["rows_per_quarter"],
         "funnel": {
             "rows_total": stats["rows_total"],

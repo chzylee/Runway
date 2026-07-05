@@ -76,6 +76,11 @@ Options: `--quarters FY2025Q4,FY2026Q1` asserts those quarters are loaded
 (fails with instructions if one isn't; extra quarters found on disk are always
 used). `--force-convert` re-converts xlsx even when the parquet looks current.
 
+Run one invocation at a time. `run.py` is a single-operator tool; two runs at
+once write the same files in `data/processed/` and `output/` and can corrupt
+each other. Everything it writes is regenerable, so if a run is interrupted
+just run it again (add `--force-convert` if a parquet was left half-written).
+
 ## The two manual inputs
 
 **Hiring now? column.** The first report run creates a blank
@@ -125,6 +130,7 @@ scripts/build_report.py      csv -> output/private/runway_report.html
 scripts/run.py               THE command: convert -> shortlist -> report
 prompts/gap_read.md          reviewer prompt template (run by a human, elsewhere)
 docs/decision_log.md         every fork in the road, and why
+docs/build_status.md         where Runway sits in the Ship Pipeline + what finishes v0
 data/raw/                    you drop DOL xlsx here            (gitignored)
 data/processed/              derived parquet, regenerable      (gitignored)
 output/private/              report + manual inputs            (gitignored)

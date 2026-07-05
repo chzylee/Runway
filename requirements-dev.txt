@@ -1,0 +1,6 @@
+# Dev-only dependencies for the Runway test suite.
+# The user-facing install surface (requirements.txt) stays three lines by design
+# (decision_log.md #17); these are needed only to RUN the tests, never to run the
+# tool. Install with:  pip install -r requirements.txt -r requirements-dev.txt
+pytest
+hypothesis

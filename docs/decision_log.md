@@ -42,6 +42,16 @@ commercial/industrial designers) are treated equally — "primary" is
 descriptive only. Title-keyword matching was rejected: employer-written titles
 are noisy, SOC codes are what the wage level is certified against.
 
+**Detail-suffix scope (amended 2026-07-04):** DOL SOC codes carry an O*NET detail suffix
+(`15-1255.00`, `15-1255.01`, ...). `normalize_soc` matches on the base code (`split(".")[0]`),
+so **every detail occupation under a base code is included**, not just the generic `.00`. This
+is deliberate — the wage level certifies against the base occupation — but it was an unstated
+consequence of the implementation until the Test Spec pinned it (TEST_SPEC F6). Consequence to
+own: `15-1255.01` = Video Game Designers, so those filings count as "design" — in FY2025Q4, 3 of
+67 selected filings (employers incl. Activision) enter the shortlist this way, traceable via the
+`soc_titles` column. Full SOC/O*NET vocabulary lives on the project wiki's Core Domain Knowledge
+page.
+
 ## 4. The "hiring now?" signal is manual in v0
 
 **Alternatives:** scrape job boards / careers pages and classify postings
@@ -120,6 +130,12 @@ structurally "no" for everyone, so the report says the signal is unavailable
 rather than implying nobody repeats. Two is the smallest number that means
 "again" — any higher is arbitrary without more history.
 
+**Amended (2026-07-04, dec. #21):** because DOL files are cumulative FYTD, same-FY
+quarters are collapsed to the latest before aggregation, so "distinct quarters"
+is now effectively "distinct **fiscal years**" — within-FY quarter repeat isn't
+measurable from cumulative files (no `DECISION_DATE` kept). The signal is
+unchanged in spirit ("keeps coming back"); the reliable unit is the fiscal year.
+
 ## 11. `--quarters` asserts expectations; the run always uses every quarter present
 
 **Alternatives:** `--quarters` as a hard selector that excludes other data.
@@ -130,6 +146,12 @@ requested quarter with no converted data — the user believes data is there and
 it isn't, which must stop the run with instructions naming the quarter. Making
 the flag an expectation check implements exactly that split; a selector would
 add an exclusion feature nobody asked for.
+
+**Amended (2026-07-04, dec. #21):** "an extra quarter present is harmless, just
+more signal" holds only *across* fiscal years. Two quarters of the *same* fiscal
+year are cumulative (FYTD), so the extra one is not more signal — it is overlap
+that would double-count. Same-FY quarters are now superseded to the latest file;
+extra *different-FY* quarters are still simply used, as this decision intends.
 
 ## 12. Golden check pinned to FY2025Q4 / iGavel
 
@@ -210,3 +232,87 @@ adds friction to the primary path. `.gitkeep` + a gitignore negation
 still ignoring the large data files. (Adopted from the comparative build
 review's graft list, 2026-07-02; entry added after the delta re-review
 flagged the fork as unlogged.)
+
+## 19. v0 Acceptance Gate passes on the human legs; the automated suite is the Test Build step
+
+**Alternatives:** hold the gate open until the automated suite (TEST_SPEC must-index) is built
+and green — one combined "gate PASS" that folds test-writing into the gate.
+
+**Why (option b):** TEST_SPEC §5 already scopes test-*writing* as a separate build step, so
+requiring a green suite *inside* the acceptance gate contradicts the spec's own boundary. The v0
+gate is recorded as passed on the two legs a person actually verified — Scenarios A/B green and
+the human pass (spot-trace of iGavel=7 and Deloitte=2 + real-user read), done from demonstrated
+ownership after the Acceptance-Gate recovery — with the automated suite carried forward as the
+Test Build deliverable that completes §7's third leg (its own acceptance = the §8 trust-check:
+V1–V4 must fire, ⚠ tests must fail first, fresh-context assertion review). Recording only the
+verified legs is the anti-"OK-clicking" discipline applied to the gate itself: no green light is
+claimed that isn't real. Ratified by the owner 2026-07-04.
+
+*(Surfaced two system-level standards, elevated to the Ship Pipeline / Reviews and Changes rather
+than kept here: (1) a real user in testing is required for any main-lane project — skippable only
+for sidequest-tier, black-box builds; (2) every Claude-Code-generated pipeline step ships a
+recorded prompt — here, a Test Build Prompt — for retracing and accountability.)*
+
+## 20. v0 build-complete requires the 9 deferred MUST behaviors built, not shipped-deferred
+
+**Alternatives:** ship v0 with the nine `xfail` behaviors logged as a v0.1 backlog and
+go straight to own-your-code — the automated suite is already green, so TEST_SPEC §2's
+"suite green" leg is technically met.
+
+**Why (build them first):** the nine deferred tests include MUST-tier failure modes, not
+cosmetics. Cumulative-quarter double-counting (F1/I8) fabricates the repeat-sponsor
+signal the product sells; a cp932-saved manual input (F2) crashes with a raw traceback
+on the exact JP-locale machine dec. #14 exists for; an unreadable parquet (F3)
+sticky-poisons runs; the M13 href breakout is a live injection. own-your-code (the next
+stage) confers the ability to *defend* the code — shipping v0 with known MUST failure
+modes unbuilt would write un-ownable behavior into the onboarding doc. TEST_SPEC marks
+all nine ⚠ "the build must catch up to," so deferral was always framed as temporary.
+This resolves the surface tension between §2 ("a green suite ... trusted to ship") and
+those ⚠ markers: the green suite is necessary, not sufficient; the ⚠ behaviors are owed
+before own-your-code. Position and per-item scope are tracked in `docs/build_status.md`.
+Ratified by the owner 2026-07-04.
+
+## 21. Cumulative same-FY quarters: supersede to the latest file, not dedupe or refuse
+
+**Context:** DOL quarterly disclosure files are cumulative fiscal-year-to-date —
+`FY2099Q2` contains all of `FY2099Q1`'s filings plus Q2's new ones. Loading both
+same-FY files counted every shared filing twice and fabricated the
+`repeat_sponsor` signal (a filing listed in two same-FY files looked like an
+employer "coming back"). This is the F1/I8 failure mode and MUST-tier (dec. #20):
+the repeat signal is the product's edge. dec. #11's "an extra quarter is harmless,
+just more signal" was true across fiscal years, false within one.
+
+**Alternatives:**
+- **(A) Refuse** — stop the run when two same-FY quarters are loaded.
+- **(C) Dedupe** — drop filings that are identical across same-FY quarter files,
+  keep the genuinely-new ones (occurrence-rank to preserve within-quarter
+  multiplicity, since no `CASE_NUMBER` is kept to key on).
+- **(B) Supersede** — within a fiscal year, keep only the latest quarter file
+  (the cumulative superset); different fiscal years are always kept.
+
+**Why supersede (B):** a deeper domain fact settled it — cumulative FYTD files make
+*within-fiscal-year* quarter repeat **fundamentally unmeasurable**: a cumulative
+`Q2` file says a filing happened "sometime in FY2099 to date," and without
+`DECISION_DATE` (not kept) you cannot place it in Q1 vs Q2. So the honest unit of
+"keeps coming back" is the **fiscal year**, and superseding to the latest same-FY
+file models the data as it actually is — no filing-identity guess, no multiplicity
+edge cases. Refuse (A) was rejected as user-hostile and contrary to dec. #11's
+"use every quarter present"; dedupe (C) was rejected because it preserves a
+same-FY quarter-repeat signal that the cumulative structure makes noise, and needs
+a full-row identity proxy (no `CASE_NUMBER`) with occurrence-rank machinery to
+avoid under-counting legitimately-identical filings.
+
+**Cost paid, in the open:** supersede changed the meaning of `repeat_sponsor` from
+"≥2 distinct quarters" (dec. #10) to "≥2 distinct fiscal years," which broke two
+existing MUST tests that built their repeat case from same-FY quarters — **M6**
+(`test_M6_per_employer_row_is_correct`) and **M14**
+(`test_M14_no_single_quarter_note_with_two_quarters`). Both fixtures encoded the
+very same-FY-additive misconception being corrected, so both were amended to use
+different fiscal years (FY2099Q1 + FY2100Q1) and logged here — a deliberate,
+ratified fixture correction, not a quiet edit-to-pass. Transparency: superseded
+quarters are announced on the console and recorded in provenance
+(`quarters_superseded`), so nothing disappears silently (dec. #16).
+
+Implemented as `engine.sponsors.supersede_cumulative_quarters`, called at the top
+of `build_sponsor_table`. Strikes the F1 design amendment owed in TEST_SPEC §5.1.
+Ratified by the owner 2026-07-04 (re-confirmed after the M6 blast-radius finding).

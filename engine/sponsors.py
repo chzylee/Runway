@@ -51,6 +51,7 @@ _NON_ALNUM = re.compile(r"[^A-Z0-9]+")
 _ARABIC_TO_ROMAN = {"1": "I", "2": "II", "3": "III", "4": "IV"}
 _ROMAN_LEVELS = set(_ARABIC_TO_ROMAN.values())
 _PARQUET_NAME = re.compile(r"^lca_fy(\d{4})q([1-4])\.parquet$", re.IGNORECASE)
+_QUARTER_LABEL = re.compile(r"^FY(\d{4})Q([1-4])$", re.IGNORECASE)
 
 
 def normalize_employer(name) -> str:
@@ -137,7 +138,21 @@ def load_quarters(processed_dir, requested=None) -> dict[str, pd.DataFrame]:
         )
     quarters = {}
     for label, path in found.items():
-        df = pd.read_parquet(path)
+        # Scope the try to the read alone: a truncated/corrupt parquet (an
+        # interrupted conversion leaves a half-written one) raises a raw pyarrow
+        # error here, which would leak as a traceback. The corrupt file is newer
+        # than its xlsx, so a plain re-run hits the mtime skip and reuses it -
+        # --force-convert is the only escape (dec. #7/#15). Nothing but the read
+        # lives in the try, so a bug in our own aggregation is never masked.
+        try:
+            df = pd.read_parquet(path)
+        except Exception:
+            raise RunwayError(
+                f"{path.name} could not be read - it is probably truncated or corrupted "
+                "(an interrupted conversion can leave a half-written parquet).\n"
+                "Rebuild it from the source xlsx with:\n"
+                "  python scripts/run.py --force-convert"
+            )
         missing_cols = [c for c in REQUIRED_COLUMNS if c not in df.columns]
         if missing_cols:
             raise RunwayError(
@@ -149,15 +164,47 @@ def load_quarters(processed_dir, requested=None) -> dict[str, pd.DataFrame]:
     return quarters
 
 
+def supersede_cumulative_quarters(quarters):
+    """DOL quarterly files are cumulative fiscal-year-to-date: within one fiscal
+    year the latest quarter file already contains every earlier same-FY filing.
+    Keep only that latest file per fiscal year - loading an earlier same-FY
+    quarter alongside it counts shared filings twice and fabricates the
+    repeat_sponsor signal (F1/I8; dec. #21). Different fiscal years are always
+    kept, so repeat = present in >= 2 distinct fiscal years.
+
+    Returns (kept, superseded): the {label: frame} to actually use, and a
+    {dropped_label: superseding_label} map so the caller can report exactly what
+    was collapsed - nothing disappears silently (dec. #16).
+    """
+    latest = {}  # fiscal year -> (quarter number, label)
+    for label in quarters:
+        m = _QUARTER_LABEL.match(label)
+        fy = m.group(1) if m else label          # unparseable labels stand alone
+        q = int(m.group(2)) if m else 0
+        if fy not in latest or q > latest[fy][0]:
+            latest[fy] = (q, label)
+    kept_labels = {label for _, label in latest.values()}
+    kept = {label: quarters[label] for label in kept_labels}
+    superseded = {
+        label: latest[_QUARTER_LABEL.match(label).group(1)][1]
+        for label in quarters
+        if label not in kept_labels
+    }
+    return kept, superseded
+
+
 def build_sponsor_table(soc_codes, wage_level, quarters):
     """Aggregate certified `wage_level` filings for `soc_codes` into one row
     per normalized employer.
 
-    quarters: {label: DataFrame} as returned by load_quarters().
+    quarters: {label: DataFrame} as returned by load_quarters(). Cumulative
+    same-FY quarters are collapsed to the latest file first (see
+    supersede_cumulative_quarters).
     Returns (table, stats): the sponsor table sorted by quarters_present then
     filing_count (both descending), and a stats dict used for verification
     and provenance.
     """
+    quarters, superseded = supersede_cumulative_quarters(quarters)
     frames = []
     for label in sorted(quarters):
         frame = quarters[label].copy()
@@ -167,6 +214,7 @@ def build_sponsor_table(soc_codes, wage_level, quarters):
 
     stats = {
         "quarters": sorted(quarters),
+        "quarters_superseded": superseded,
         "rows_per_quarter": {label: int(len(quarters[label])) for label in sorted(quarters)},
         "rows_total": int(len(rows)),
     }
