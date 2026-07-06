@@ -21,12 +21,6 @@ import pytest
 
 
 # ======================================================================== P14 ⚠
-@pytest.mark.xfail(
-    reason="dec.#28 (call E): the convert/commit gating still lives in "
-           ".github/workflows/data-pipeline.yml `if:` expressions; the testable "
-           "scripts/run_pipeline.py orchestrator is not built yet. Red-first.",
-    strict=True,
-)
 def test_P14_orchestrator_gates_convert_and_commit(monkeypatch):
     """P14/E (dec. #28): the gating decisions are unit-testable Python —
       * convert runs ONLY when fetch reported changed;
@@ -44,10 +38,11 @@ def test_P14_orchestrator_gates_convert_and_commit(monkeypatch):
 
 # ======================================================================== P19 ⚠
 @pytest.mark.xfail(
-    reason="dec.#22 (call K), folded into E's orchestrator: the `git push` step has no "
-           "rebase-or-retry recovery — a non-fast-forward would discard a run's "
-           "regenerated data. The push-retry contract lives in run_pipeline.py, not "
-           "built yet. Red-first (SHOULD).",
+    reason="P19/K — DEFERRED to v1.1 (dec. #32), marker kept. The `git push` step has no "
+           "rebase-or-retry recovery, so a non-fast-forward would discard a run's regenerated "
+           "data (push_with_retry + NonFastForward not built). Deferred: the concurrency group "
+           "serializes runs and the worst case is a ~week wait to the next run, no data loss. "
+           "The run_pipeline.py orchestrator seam (dec. #28) now exists for it to land into.",
     strict=True,
 )
 def test_P19_push_retry_rebases_on_non_fast_forward(monkeypatch):

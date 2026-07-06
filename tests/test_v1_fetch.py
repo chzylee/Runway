@@ -95,12 +95,6 @@ def test_P3_skips_quarters_already_in_have_changed_false(tmp_path, monkeypatch):
 
 
 # ======================================================================== P4 ⚠
-@pytest.mark.xfail(
-    reason="dec.#27 (call B): fetch prunes any committed quarter absent from this "
-           "run's upstream set (fetch_quarters.py:161), so a transient probe-miss on "
-           "one in-window FY deletes valid committed parquet. Red-first — drive to green.",
-    strict=True,
-)
 def test_P4_probe_miss_on_in_window_fy_never_prunes(tmp_path, monkeypatch):
     """P4/B (dec. #27; :161): committed {FY2099Q1, FY2100Q1}; a run where FY2100Q1
     resolves (200) but every FY2099 probe misses (a 503/timeout). FY2099 is still
@@ -114,12 +108,6 @@ def test_P4_probe_miss_on_in_window_fy_never_prunes(tmp_path, monkeypatch):
 
 
 # ======================================================================== Q3 ⚠
-@pytest.mark.xfail(
-    reason="dec.#27 (Q3/B): quarter_is_published collapses ANY non-200 (404/503/429/"
-           "timeout) to a probe-miss, and the broad prune then deletes committed "
-           "in-window parquet. Red-first.",
-    strict=True,
-)
 @pytest.mark.parametrize("transient", ["404-not-found", "503-service-unavailable", "429-rate-limited"])
 def test_Q3_prune_safety_across_transient_statuses(tmp_path, monkeypatch, transient):
     """Q3 (invariant, anchors P4/B): a committed in-window FY parquet is removed ONLY
@@ -231,10 +219,11 @@ def test_P18_download_truncation_guard_raises_and_leaves_no_file(tmp_path, monke
 
 # ======================================================================== P20 ⚠
 @pytest.mark.xfail(
-    reason="call J (fix over note): discover_quarters maps two case-only-different "
-           "filenames to one FY label and silently keeps just one (dict overwrite, "
-           "sponsors.py:101). A silent drop must become a deterministic tie-break or a "
-           "hard error. Red-first (this test asserts the hard-error resolution).",
+    reason="P20/J — DEFERRED to v1.1 (dec. #32), marker kept. discover_quarters maps two "
+           "case-only-different filenames to one FY label and silently keeps just one "
+           "(sponsors.py:101). Deferred: CI/Linux-only (Windows coalesces the names), it "
+           "carries an open design fork (tie-break vs hard error), and it edits a v0 engine "
+           "file so must clear P17. This test asserts the hard-error resolution.",
     strict=True,
 )
 def test_P20_discover_quarters_case_only_label_collision_no_silent_drop(tmp_path, monkeypatch):

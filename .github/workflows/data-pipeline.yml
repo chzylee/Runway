@@ -1,0 +1,61 @@
+name: DOL data pipeline
+
+# Keeps data/processed/ (committed parquet) in sync with the DOL LCA quarters
+# published upstream, and regenerates the public shortlist. Runs weekly because
+# the source data moves quarterly; the fetch step short-circuits to a no-op on
+# every run where nothing new is published, so 51 of 52 runs commit nothing.
+#
+# Why a schedule (not push): DOL can't notify us, and the job commits back to the
+# repo - a push trigger would risk a self-triggering commit loop. workflow_dispatch
+# gives a manual "Run workflow" button for the day a new quarter drops.
+#
+# Trigger design + the FYTD/latest-per-FY storage rule: docs/decision_log.md.
+
+on:
+  schedule:
+    # Mondays 06:17 UTC. Off the hour and off :00/:30 so we don't pile onto
+    # GitHub's most-congested scheduling slots (runs there get delayed most).
+    - cron: "17 6 * * 1"
+  workflow_dispatch: {}
+
+# Serialize runs so two never race on `git push` to data/processed/.
+concurrency:
+  group: dol-data-pipeline
+  cancel-in-progress: false
+
+permissions:
+  contents: write   # the job commits regenerated parquet + shortlist back
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Configure git identity
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      # All gating (convert-only-if-a-new-quarter-was-fetched, commit-if-either-changed)
+      # now lives in the testable orchestrator scripts/run_pipeline.py (dec. #28), so it
+      # is unit-tested instead of encoded in un-testable YAML `if:` expressions. The
+      # workflow shrinks to: run the pipeline (which fetches, converts, builds, and
+      # commits on change) and push.
+      - name: Run data pipeline
+        run: python scripts/run_pipeline.py
+
+      - name: Push refreshed data
+        # dec. #K (P19) rebase-or-retry on a non-fast-forward is deferred to v1.1; a
+        # plain push is safe today because the concurrency group serializes runs, and a
+        # no-op run leaves nothing to push. Push is kept in YAML per dec. #28.
+        run: git push

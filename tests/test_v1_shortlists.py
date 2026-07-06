@@ -135,13 +135,6 @@ def test_P10_manifest_consistent_and_frontend_readable(tmp_path, monkeypatch):
 
 
 # ======================================================================== P12 ⚠
-@pytest.mark.xfail(
-    reason="dec.#25 (call A): an empty-result title raises inside build_sponsor_table "
-           "and aborts the whole build; there is no per-title isolation yet. Red-first "
-           "on the empty-isolation half (the integrity-abort half is already correct — "
-           "see test_P12_integrity_check_failure_aborts_whole_run).",
-    strict=True,
-)
 def test_P12_empty_result_title_isolated_others_still_build(tmp_path, monkeypatch):
     """P12/A (dec. #25): a title whose SOC codes match zero certified Level-I filings
     is a normal outcome for a thin niche role — it must be isolated (marked `empty` in
@@ -177,12 +170,6 @@ def test_P12_integrity_check_failure_aborts_whole_run(tmp_path, monkeypatch):
 
 
 # ======================================================================== P13 ⚠
-@pytest.mark.xfail(
-    reason="dec.#26 (call C): up_to_date compares only the window (build_shortlists.py:103) "
-           "and ignores the stored soc_codes, so editing a title's SOC without a new "
-           "quarter is not detected and the title is not rebuilt. Red-first.",
-    strict=True,
-)
 def test_P13_soc_edit_without_new_quarter_rebuilds_title(tmp_path, monkeypatch):
     """P13/C (dec. #26): the saved-state key must be (title × definition × window).
     Editing ROLE_SOC['design'] with the same window must mark the title not-saved and
@@ -198,12 +185,6 @@ def test_P13_soc_edit_without_new_quarter_rebuilds_title(tmp_path, monkeypatch):
 
 
 # ======================================================================== P15 ⚠
-@pytest.mark.xfail(
-    reason="dec.#29 (call G): the stale-prune loop is set(prior) - set(built-this-run) "
-           "with 'built' scoped by --titles (build_shortlists.py:119), so a scoped run "
-           "deletes out-of-subset titles and drops their manifest entries. Red-first.",
-    strict=True,
-)
 def test_P15_titles_scopes_build_only_never_prunes_out_of_subset(tmp_path, monkeypatch):
     """P15/G (dec. #29): --titles restricts only which titles are BUILT; pruning always
     reconciles against the full ROLE_SOC. A scoped run must never delete a title outside
@@ -220,11 +201,6 @@ def test_P15_titles_scopes_build_only_never_prunes_out_of_subset(tmp_path, monke
 
 
 # ======================================================================== Q5 ⚠
-@pytest.mark.xfail(
-    reason="dec.#29 (Q5/G): a --titles subset run rewrites the manifest with only the "
-           "subset, shrinking the title set below ROLE_SOC ∩ prior-manifest. Red-first.",
-    strict=True,
-)
 def test_Q5_titles_subset_never_shrinks_manifest_title_set(tmp_path, monkeypatch):
     """Q5 (invariant, anchors P15/G): --titles never shrinks the manifest's title set
     relative to ROLE_SOC ∩ prior-manifest."""
@@ -240,13 +216,6 @@ def test_Q5_titles_subset_never_shrinks_manifest_title_set(tmp_path, monkeypatch
 
 
 # ======================================================================== P16 ⚠
-@pytest.mark.xfail(
-    reason="dec.#30 (call H): up_to_date checks only that the parquet EXISTS "
-           "(build_shortlists.py:102) and writes are non-atomic (:63), so a truncated/"
-           "corrupt shortlist parquet is trusted and served forever. Red-first — needs "
-           "a readability check (+ atomic .part write) so a retry self-heals.",
-    strict=True,
-)
 def test_P16_corrupt_shortlist_parquet_is_rebuilt_not_served(tmp_path, monkeypatch):
     """P16/H (dec. #30): mirror F3 on the output side. A parquet left truncated by a
     killed mid-write must be detected as unreadable and rebuilt on the next run, not
@@ -263,10 +232,11 @@ def test_P16_corrupt_shortlist_parquet_is_rebuilt_not_served(tmp_path, monkeypat
 
 # ======================================================================== P21 ⚠
 @pytest.mark.xfail(
-    reason="dec.#16 (call I): build_all discards the real superseded map "
-           "(kept, _ = supersede_...(quarters) at build_shortlists.py:88) and _build_one "
-           "re-superseds already-collapsed data, so manifest quarters_superseded is "
-           "always empty. Red-first — capture the map, don't discard it.",
+    reason="P21/I — DEFERRED to v1.1 (dec. #32), marker kept. build_all discards the real "
+           "superseded map (kept, _ = supersede_...(quarters) at build_shortlists.py:88), so "
+           "manifest quarters_superseded is always empty. Deferred: surfaces provenance ONLY "
+           "— the double-count/repeat-sponsor invariant is already enforced by supersede_"
+           "cumulative_quarters inside build_sponsor_table; only the artifact field is empty.",
     strict=True,
 )
 def test_P21_manifest_reports_real_same_fy_supersession(tmp_path, monkeypatch):

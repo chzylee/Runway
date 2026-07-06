@@ -1,10 +1,62 @@
-# Build status — Runway v0
+# Build status — Runway
 
 Where this project sits in the Ship Pipeline, and what finishes the build. One
 page so anyone — not just the author — can pick up Runway cold and know the next
 move. The generic pipeline definition lives in the Ship Pipeline wiki; this file
 is Runway's *position* in it, kept current in the repo where a stranger can read
 it without Notion access.
+
+## v1 — current position
+
+v0 is shipped and owned (history below). **v1 (the UX + value-clarity pass) is
+in the Design stage:** scope was ratified 2026-07-05 (`RATIFICATION_LOG_v1.md`,
+this repo) and engineered into a Design Doc + Build Prompt. Both deliverables —
+along with the `v1 Build` pipeline index — live in **Notion**, not this repo:
+[v1 Build](https://app.notion.com/p/39476356d6fe81568c4dea6bf8a01e05)
+(→ [Design Doc](https://app.notion.com/p/39476356d6fe81cda2d9fdf7f78c0dc2),
+[Build Prompt](https://app.notion.com/p/39476356d6fe8101a594ed82d20f6f5f)).
+Scope authority: [v1 — Direction & Scope](https://app.notion.com/p/39476356d6fe81719a01c5eefd0e1277).
+Next stage: Pre-Test Build (reconcile code against the Design Doc) — not started.
+
+### v1 data-pipeline slice — Test Build + finish-build complete
+
+The automated data pipeline (`scripts/fetch_quarters.py`, `scripts/build_shortlists.py`,
+`scripts/run_pipeline.py`, the `data-pipeline.yml` CI, and the engine seams they reuse) has run
+its own spec→build→finish loop, additive to the v0 private path:
+
+| Stage | Produces | Status |
+|---|---|---|
+| Test Spec (slice) | `TEST_SPEC.md` §"v1 — Data-pipeline slice" | ✅ ratified 2026-07-06 (`RATIFICATION_LOG_v1.md`, Sitting 2) |
+| Test Build | `tests/test_v1_*.py` + `tests/v1_support.py` | ✅ 13 ⚠ committed red-first (xfail-strict, 0 xpassed) |
+| finish-build | the 6 MUST behaviors (dec. #25–#30) | ✅ driven to green 2026-07-06 (Sitting 3) |
+
+**Verify:**
+
+```
+pip install -r requirements.txt -r requirements-dev.txt
+pytest            # expect: 124 passed, 3 xfailed
+```
+
+The **3 xfailed** are SHOULD items deliberately deferred to v1.1 (dec. #32), markers kept, not
+dropped: **P20** (case-only label collision — CI-only, open tie-break-vs-hard-error fork, touches
+v0 engine), **P21** (`quarters_superseded` surfacing — provenance only, invariant already guarded),
+**P19** (push rebase-or-retry — concurrency-serialized, no data loss). v0's suite (95) is untouched
+(P17). **Out of slice, owed to the v1 sweep:** the GitHub Pages frontend, the v0-report absorption
+(dec. #24), and the Notion Design Doc §5/§6 cumulative-FYTD update. Scenario C (the first real
+scheduled/dispatched CI run against live DOL) is the reserved real-data acceptance leg.
+
+**Repo vs. Notion, for this project:** the repo holds code, the live position
+(this file), the decision ledger (`docs/decision_log.md`), and ownership
+records (`RATIFICATION_LOG*.md`) — things a stranger with repo access but no
+Notion access still needs. Every pipeline-stage deliverable (Design Doc, Build
+Prompt, Test Spec, Own-Your-Code, …) lives in the Notion project wiki
+(`docs/notion.json` → `wiki_url`), per the Recording Standard. If a doc feels
+like "what was decided and why for the code" it's repo; if it's "a pipeline
+stage's deliverable artifact" it's Notion.
+
+---
+
+## v0 history
 
 ## Pipeline
 
@@ -16,11 +68,23 @@ it without Notion access.
 | 4 | Acceptance Gate | human-verified ship gate | ✅ passed 2026-07-04 (dec. #19) |
 | 5 | Test Build | automated suite (`tests/`) | ✅ complete 2026-07-04 |
 | 6 | WARN code-fix | the 9 ratified-but-deferred behaviors | ✅ complete 2026-07-04 (dec. #21) |
-| 7 | **own-your-code** | `OWN_YOUR_CODE` onboarding | ⬅️ **current** |
+| 7 | own-your-code | own-your-code onboarding (Notion) | ✅ generated 2026-07-04 (cross-model cold-read passed) |
 
 ## Where we are
 
-**Stage 7 (own-your-code) is next.** The Acceptance Gate (stage 4) passed on its
+**Stage 7 (own-your-code) is generated.** The engineering onboarding that confers ownership of the
+build (cockpit + component map + each key decision on maint/UX/cost + data pipeline + drift + active
+pass) lives on the **Notion v0 Build page as deliverable #6** —
+`Own-Your-Code — Runway v0` (https://app.notion.com/p/39476356d6fe81e48972fbabb133aad4), alongside
+the other ship-pipeline deliverables. It passed a different-lineage cross-model cold read (§8).
+Disposable: regenerate it (re-run own-your-code, re-publish to Notion) after any code change. The
+build is owned and ready.
+
+---
+
+### History
+
+**Stage 7 (own-your-code) was reached from:** The Acceptance Gate (stage 4) passed on its
 human legs — Scenario A (golden run), Scenario B (failure face), and the human
 pass (spot-trace + real-user read), per dec. #19. The Test Build (stage 5)
 produced the automated suite (86 passed, 9 xfailed), and **stage 6 (finish-build)

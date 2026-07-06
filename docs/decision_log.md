@@ -618,3 +618,39 @@ behavior**, not build-new. The ⚠ tag on the P18 row was the inconsistency.
 plain **green** pin — not xfail. **Checkable:** the guard is `fetch_quarters.py:115`; the test
 asserts `RunwayError` + `not dest.exists()` + no `.part` residue and passes against today's code
 (so it can never xpass). This leaves the red-first set at exactly 13 ⚠ tests (0 xpassed).
+
+## 32. v1 finish-build: MUST set driven to green; three SHOULD ⚠ deferred to v1.1 (kept xfail)
+
+*Ratified 2026-07-06 (v1 finish-build; ownership record in `RATIFICATION_LOG_v1.md`, Sitting 3).*
+
+The v1 Test Build committed 13 design-anchored ⚠ tests red-first (xfail-strict). This pass drove
+the **MUST** set — P4/Q3 (#27), P12 (#25), P13 (#26), P14 (#28), P15/Q5 (#29), P16 (#30) — to
+green, removing each marker as its behavior landed. The three **SHOULD** items below are
+**deferred to v1.1** with their xfail-strict markers **kept** — a deferral is logged, never a
+silent skip or a deleted/flipped test, so v1.1 inherits an executable to-do. None guards a
+correctness invariant, which is why deferring is safe:
+
+- **P20 / call J — `discover_quarters` case-only label collision** (`engine/sponsors.py:101`).
+  *Pins:* two parquet whose names differ only in case map to one FY label and one is silently
+  dropped. *Deferred because:* (a) it is CI/Linux-only — a case-insensitive filesystem (the
+  owner's Windows target) cannot even create the collision; (b) call J left a real **design fork**
+  open (deterministic tie-break *vs.* hard error) that deserves a full `/ratify`, not a rushed
+  pick; (c) it is the only item that edits a **v0 engine** file, so it must clear P17 deliberately.
+  The test asserts the hard-error branch (xfail).
+
+- **P21 / call I — `quarters_superseded` manifest field always `{}`** (`build_shortlists.py:88,73`).
+  *Pins:* build_all discards the real superseded map, so the manifest never reports a same-FY
+  collapse. *Deferred because:* it **surfaces provenance only** — it does NOT guard the
+  cumulative-FYTD double-count / repeat-sponsor invariant, which is enforced upstream by
+  `supersede_cumulative_quarters` inside `build_sponsor_table` (the shortlist is already correct;
+  only the artifact's transparency field is empty). Triage low/low/low.
+
+- **P19 / call K — `git push` non-fast-forward has no rebase-or-retry** (`scripts/run_pipeline.py`).
+  *Pins:* a rejected push should rebase and retry (`push_with_retry(push, rebase)` + a
+  `NonFastForward` exception), never silently discard a run's regenerated data. *Deferred because:*
+  the `concurrency` group already serializes runs (a race is unlikely) and the worst case is one
+  run's data waiting ~a week for the next scheduled run — no data loss, every output is
+  regenerable. The orchestrator seam (`run_pipeline.py`, dec. #28) now exists for it to land into.
+
+**Invariant kept:** `python -m pytest` is green with exactly these 3 xfail-strict markers (0
+xpassed); v0's suite (95) is untouched (P17). v1.1 drives these 3 to green and removes their markers.
