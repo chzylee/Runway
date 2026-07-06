@@ -22,11 +22,16 @@ __pycache__/
 .env.*
 *.local
 
-# ---- DOL data: raw is large (~80-140MB), processed is regenerable ----
+# ---- DOL data ----
+# raw is large (~80-140MB) and never committed; the pipeline downloads it fresh.
 # data/raw/ itself is kept (via .gitkeep) so a clean clone has the drop point the README names
 data/raw/*
 !data/raw/.gitkeep
-data/processed/
+# processed parquet IS committed (v1: preprocessed once in CI, served to the
+# GitHub Pages frontend; narrow/columns-subset, a few MB per quarter). Any other
+# derived file under data/processed/ stays ignored.
+data/processed/*
+!data/processed/*.parquet
 
 # ---- Private outputs (the applicant's personal report contains portfolio + job-search data) ----
 output/private/
