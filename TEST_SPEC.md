@@ -1,10 +1,14 @@
-# Runway v0 — Test Spec
+# Runway — Test Spec
 
-`test-spec v0.1.1 · 2026-07-02, amended 2026-07-04` — **ratified 2026-07-02** through
-item-by-item dialogue; **amended 2026-07-04** to reconcile the §8.3 fresh-context assertion
-review after the automated suite was built (see §8.3).
+`test-spec v0.2.0 · 2026-07-02, amended 2026-07-04, 2026-07-06` — **v0 ratified 2026-07-02**
+through item-by-item dialogue; **amended 2026-07-04** to reconcile the §8.3 fresh-context
+assertion review after the automated suite was built (see §8.3); **v1 data-pipeline slice
+appended + ratified 2026-07-06** (see §"v1 — Data-pipeline slice"; ownership record in
+`RATIFICATION_LOG_v1.md`, Sitting 2).
 Living document: amend as the design evolves; do not clobber. The diff history is the record
-of what changed about what-must-be-true.
+of what changed about what-must-be-true. Sections §1–§8 below are the **v0** spec (full
+pipeline); the **v1 slice** at the end covers the data-pipeline rebuild and reuses v0's
+engine coverage at the seams rather than duplicating it.
 
 ---
 
@@ -274,3 +278,218 @@ J2 negative tests + assertion review; J5 MUST incl. breakout; J4 test-as-designe
 J7 no-crash-counted-as-is; skips S1/S2/S4/S5 accepted, S3→P1, S6→D1; ship gate as written;
 sweep F1–F4 MUST, F5 SHOULD, F6 ratified base-match, F7 note. All decisions by the owner,
 2026-07-02.*
+
+---
+---
+
+# v1 — Data-pipeline slice
+
+`test-spec slice · ratified 2026-07-06` — ownership record: `RATIFICATION_LOG_v1.md`, Sitting 2.
+
+## v1.1 Orientation
+
+**Under test (the slice):** the v1 automated data pipeline that replaces v0's manual
+"download-and-drop" — [`scripts/fetch_quarters.py`](scripts/fetch_quarters.py) (discover +
+download + prune DOL quarters), [`scripts/build_shortlists.py`](scripts/build_shortlists.py)
+(per-title incremental shortlist build + manifest), the
+[`data-pipeline.yml`](.github/workflows/data-pipeline.yml) CI workflow's gating, and the
+**engine seams** they reuse (`discover_quarters`, `load_quarters`,
+`supersede_cumulative_quarters`, `build_sponsor_table`, the `verify` layer).
+
+**Design authority:** `docs/decision_log.md` **dec. #22** (scheduled fetch + HEAD-probe
+discovery), **#23** (commit processed parquet), **#24** (per-title incremental shortlists),
+grounded on **#21** (cumulative-FYTD supersession). There is no local v1 design doc; the
+Notion Design Doc is the upstream copy. Items decided during *this* slice's dialogue carry
+their ratify-call letter (A–K) and are marked **[ratified-in-test-spec]**; the design
+amendments they owe are listed in §v1.6.
+
+**Slice boundary (declared):** this slice covers the fetch/build scripts, the CI gating, and
+the engine seams. **Out of slice, owed to the v1 sweep:** the GitHub Pages frontend that
+reads `index.json`; the deferred absorption of the v0 private report into the site path
+(dec. #24); the manifest's `generated_at_utc` churn (benign — only committed when something
+else changed; documented, not tested). v0 engine internals are already covered by §1–§8 M1–M16
+/ F1–F8 / I1–I8 — **re-affirmed at the seams, never duplicated.**
+
+**Acceptance statement:** the v1 pipeline is trusted when Scenario D (synthetic incremental
+proof) is green in the suite, the v0 suite (§P17) stays green, the extracted CI orchestrator's
+gating unit-tests are green, **and** the first real scheduled/dispatched CI run (Scenario C)
+downloads + converts + builds against live DOL and is a clean no-op on an already-current repo.
+
+**Where the risk concentrates (ratified):**
+1. **Committed-data destruction from a partial signal.** A single flaky HEAD probe (B) or a
+   scoping flag (G) or a killed mid-write (H) can *delete or corrupt* parquet the frontend
+   serves — and the pipeline commits the damage. This is the slice's dominant blast class.
+2. **The repeat-sponsor signal's ≥2-fiscal-year floor.** The lookback window is exactly 2 FYs
+   (dec. #22); anything that silently drops an FY collapses the product's core edge to false.
+3. **Incrementality correctness.** "Already saved" must mean "matches current definition AND
+   window" (C) or a config edit silently no-ops; and the build must be genuinely idempotent (P9)
+   or CI commits churn.
+4. **The multi-title loop vs. the verify trust contract (A).** One title must not take down the
+   others (empty case) — but an integrity failure must still stop everything (engine-bug case).
+
+### v1 must-test index
+
+⚠ = **design-anchored and expected to fail against today's code** — author blind to the
+implementation, commit red-first (dec. #20 xfail-strict pattern), drive to green.
+
+| # | Behavior (one line) | Traces to | Anchor class | Method | Tier |
+|---|---|---|---|---|---|
+| P1 | `current_fiscal_year`: Sep 30 → FY N; Oct 1 → FY N+1 (Q1); total fn of injected date | dec.#22; `fetch_quarters.py:53` | design | unit | MUST |
+| P2 | `discover_upstream`: per FY, newest-first probe → highest **published** quarter; records its URL | dec.#22; `:79` | design | unit (mock) | MUST |
+| P3 | fetch reconcile: published-not-in-`have` → download; in-`have` → skip; `changed` iff disk changed | dec.#22; `:124` | design | integ (mock) | MUST |
+| P4 | **Conservative prune:** prune ONLY for supersession (newer same-FY seen) or out-of-window; never on a probe-miss incl. 404/5xx/429 while another FY resolves | dec.#22; **B [ratified-in-test-spec]**; `:161` | design | integ (mock) | MUST ⚠ |
+| P5 | Total blackout (no FY published) → `RunwayError` naming the README URL template; **prunes nothing** | dec.#22/#23; `:138` | design | unit | MUST |
+| P6 | Network `URLError` → `RunwayError`, plain English, names the URL/README (self-diagnosing) | dec.#15; `:71,112` | design | unit | MUST |
+| P7 | fetch & build emit `changed` to `$GITHUB_OUTPUT` = true iff disk changed | dec.#22/#24; `:172` | design | unit | MUST |
+| P8 | build triggers: no-op when current · new quarter → all rebuild · new title → only it · removed title (from **full** ROLE_SOC) → pruned | dec.#24; `:78` | design | integ | MUST |
+| P9 | build **idempotence**: 2nd run on unchanged inputs writes no parquet, `changed=False` | dec.#24; `:103` | design | property/integ | MUST |
+| P10 | manifest consistent + frontend-readable: `window`, per-title `soc_codes`/counts/parquet name = what was built | dec.#24; `:126` | design | integ | MUST |
+| P11 | fetch/engine agree: post-fetch `data/processed` = one parquet per in-window FY → `supersede` map empty | dec.#22 ↔ #21 | design | integ | MUST |
+| P12 | Empty-result title → isolated, marked `empty` in manifest, others still build; **integrity-check** `RunwayError` → aborts whole run | dec.#24 fork; **A [ratified-in-test-spec]**; `verify.py`; `sponsors.py:227` | design | integ | MUST ⚠ |
+| P13 | Saved-state key includes `soc_codes`+`wage_level`: editing a title's SOC (no new quarter) rebuilds it | dec.#24 amended; **C [ratified-in-test-spec]**; `:103` | design | integ | MUST ⚠ |
+| P14 | CI gating decisions (convert-if-fetch-changed · commit-if-either · push retry) live in a testable `scripts/run_pipeline.py` orchestrator | dec.#22/#24; **E [ratified-in-test-spec]** | design | unit (orchestrator) | MUST ⚠ |
+| P15 | `--titles` scopes the **build only**; prune always considers full ROLE_SOC; a scoped run never deletes an out-of-subset title | dec.#24; **G [ratified-in-test-spec]**; `:92,119` | design | integ | MUST ⚠ |
+| P16 | Shortlist parquet written atomically (`.part`→replace); `up_to_date` verifies **readability**; retry-after-crash self-heals | F3 precedent; **H [ratified-in-test-spec]**; `:62,103` | design | integ | MUST ⚠ |
+| P17 | v0 regression: the existing suite stays green (v0 private path untouched, dec.#24 additive) | dec.#24; v0 §1–§8 | code (pin) | suite | MUST |
+| P18 | Download truncation guard: `Content-Length` mismatch → `RunwayError` + **no file at `dest`** | dec.#7; **D [ratified-in-test-spec]**; `:115` | design | unit (mock) | SHOULD (green — guard already built; see §v1.7 amendment + dec. #31) |
+| P19 | `git push` non-fast-forward → rebase-or-retry contract; a run's regenerated data is not silently discarded | dec.#22; **K [ratified-in-test-spec]**; `yml:66` | design | orchestrator unit + review | SHOULD |
+| P20 | `discover_quarters`: two files with a case-only difference mapping to one FY label → deterministic tie-break or hard error, never a silent drop | **J [ratified-in-test-spec]**; `sponsors.py:101` | code (pin) | unit | SHOULD |
+| P21 | `quarters_superseded` manifest field reports a **real** same-FY collapse (capture the map, don't discard it) | dec.#16; **I [ratified-in-test-spec]**; `:88,73` | design | integ | SHOULD |
+
+## v1.2 What "correct" means — the load-bearing rows
+
+- **P4 (B)** The prune loop must never treat "this in-window FY didn't answer my probe this run"
+  as "delete it." DOL serves stable permanent links and never un-publishes a quarter, so a
+  missing probe is *always* a transient failure or a template change. Concretely: given committed
+  `{FY2025Q4, FY2026Q1}` and a run where the FY2025Q4 HEAD returns 503/429/404 while FY2026Q1
+  returns 200, FY2025Q4's parquet **survives**. `check_nonempty`… — the test matrix must include a
+  5xx/429, not just a 404, and the case where *another* FY resolves (so the total-blackout guard
+  P5 does not fire). Blast: the ≥2-FY repeat-sponsor floor collapses; the site self-heals only on
+  a later successful probe.
+- **P12 (A)** Two failure kinds diverge. An **empty-result** title (`No certified rows matched…`)
+  is a normal outcome for a thin niche role → skip it, record `status: empty` in its manifest
+  entry, keep building every other title. An **integrity-check** failure
+  (`check_filing_count_sum`, `check_employer_collapse`) means the engine is miscounting — which
+  corrupts *every* title in the run — so it still raises and aborts the whole build; nothing ships.
+  Isolating an integrity failure would ship corrupted siblings while the check that says "do not
+  trust this run" is filed as "one title skipped." *Today the code raises on both and aborts on
+  both — P12 is red on the empty-isolation half.*
+- **P13 (C)** `up_to_date` today compares only the window. The manifest already stores `soc_codes`;
+  the key must become (title × definition × window) so that editing `ROLE_SOC["design"]` without a
+  new quarter marks the title not-saved and rebuilds it. *Red today.*
+- **P15 (G)** `build_all(only_titles=…)` currently restricts `titles`, then the stale-prune loop
+  (`set(prior) − set(titles)`) deletes every title *not in the subset* and the manifest is
+  rewritten with only the subset — so `--titles design` silently deletes `engineering`'s parquet
+  and manifest entry. A scoping flag must never remove. *Red today.*
+- **P16 (H)** `to_parquet` writes directly (no `.part`), and `up_to_date` checks only that the file
+  *exists*. A process killed mid-write leaves a truncated parquet; because the prior manifest entry
+  still matches the window, the next run skips the rebuild and **serves the corrupt file forever**.
+  Mirror F3: atomic `.part`→replace on write, and `up_to_date` must confirm the parquet actually
+  reads. This also makes retry-after-crash self-healing. *Red today.*
+
+## v1.3 Invariants — property-test candidates
+
+| # | Property (falsifiable statement) | Anchors |
+|---|---|---|
+| Q1 | `current_fiscal_year` is total and monotone across the Oct 1 boundary; same date → same FY | P1 |
+| Q2 | `build_all` is idempotent: a second run on unchanged inputs writes no parquet and reports `changed=False` | P9 |
+| Q3 | **Prune safety:** a committed in-window FY parquet is removed ONLY if a newer same-FY quarter was positively observed, OR the FY is out of the lookback window | P4/B |
+| Q4 | fetch/engine agreement: after a completed fetch, `supersede_cumulative_quarters(discover_quarters(processed))` returns an empty superseded map | P11 |
+| Q5 | `--titles` never shrinks the manifest's title set relative to `ROLE_SOC ∩ prior-manifest` | P15/G |
+
+## v1.4 Failure modes & edge cases — triaged
+
+| Case | L / B / C | Tier | Where |
+|---|---|---|---|
+| Transient single-FY probe failure (404/5xx/429) prunes committed data | **med** / **high** (kills repeat-sponsor) / low | MUST ⚠ | P4/B |
+| `--titles <subset>` deletes out-of-subset titles | med (any scoped local run) / high / low | MUST ⚠ | P15/G |
+| Killed mid-write → truncated shortlist served forever (no self-heal) | med (CI OOM/timeout) / high / low | MUST ⚠ | P16/H |
+| Empty-result title aborts the whole multi-title build | high once title #2 lands / med / low | MUST ⚠ | P12/A |
+| SOC edit without a new quarter silently no-ops | med / med / low | MUST ⚠ | P13/C |
+| Total upstream blackout wipes all parquet | low / high / low | MUST | P5 (guard exists) |
+| `git push` non-fast-forward discards a run | low-med / med (a week to next run) / low | SHOULD | P19/K |
+| `discover_quarters` case-only label collision drops a file | low / med / low | SHOULD | P20/J |
+| `quarters_superseded` can't report a real collapse | low / low / low | SHOULD | P21/I |
+
+### The SKIP list (ratified — considered and deliberately not tested, because…)
+
+| Skip | Reason |
+|---|---|
+| SK-v1-1 Live DOL network I/O in the suite | **F:** suite mocks the network; the real fetch is proven by the first scheduled CI run (Scenario C). DOL changes ~4×/yr and a break gives ample response time; the control is **diagnosability** (P5/P6 name the URL template), not a suite test. VCR/live-smoke rejected (staleness / re-introduced flakiness). |
+| SK-v1-2 Real 80–140 MB stream perf/memory | Inherits v0 S1; observed incidentally in Scenario C. |
+| SK-v1-3 kill-mid-stream **download** atomicity (vs the Content-Length guard) | Trusted to the atomic-rename idiom + F3 downstream + P18; only the mockable truncation guard is asserted. |
+| SK-v1-4 `concurrency`-group internals + `[skip ci]` loop-avoidance | GH-Actions primitives, review-only per **E**; the dangerous consequence (push race) is promoted to P19/K. |
+
+## v1.5 Verification plan — method per item
+
+| Method | Items | Automated? |
+|---|---|---|
+| **unit** (pytest) | P1, P5, P6, P7, P14, P18, P20, Q1 | yes |
+| **integration** (mocked network; fake `data/processed`/manifest in tmp dir) | P3, P4, P8, P9, P10, P11, P12, P13, P15, P16, P21, P19 (orchestrator contract) | yes |
+| **property** (hypothesis, dev-only) | Q1–Q5 | yes |
+| **suite-regression** | P17 (the v0 suite, unchanged) | yes |
+| **manual / review** | P14 YAML residue + P19 push (code review); **Scenario C** = the real-fetch acceptance leg | no |
+
+**Authorship contract (carried downstream).** The design-anchored ⚠ items — **P4, P12, P13,
+P14, P15, P16** — must be authored by a test-writer **blind to the implementation**: a fresh
+session given `docs/decision_log.md` dec. #22/#23/#24 + this v1 slice section only, never the
+scripts or the diff. Commit them **red-first** (xfail-strict, dec. #20 pattern) and drive to
+green in the build step. **P17** (v0 suite) and **P20** (label-collision pin) are regression pins
+that may read the code. Network is mocked throughout (SK-v1-1).
+
+## v1.6 Acceptance scenarios — the slice ship gate
+
+- **Scenario C — real fetch (the reserved real-data leg).** The first scheduled or
+  `workflow_dispatch` CI run against live DOL: the URL template resolves, the current-FY quarter
+  downloads + converts, per-title shortlists build, and — on an already-current repo — the run is
+  a clean **no-op** (fetch `changed=false` → convert skipped → commit skipped). Observed once,
+  logged. This is the v1 analogue of v0 Scenario A.
+- **Scenario D — incremental proof (synthetic, in-suite).** Seed a tmp `data/processed` with
+  FY(n−1)+FY(n) parquet, then: run `build_shortlists` twice → first builds, second is a no-op
+  (`changed=False`, no parquet rewritten); add a title → only it builds; advance the window
+  (drop-in a new-FY parquet) → all titles rebuild; remove a title from `ROLE_SOC` → its parquet is
+  pruned. Plus the prune-safety and `--titles` scoping cases (P4, P15) driven with a fake prober.
+
+**Gate:** Scenario D green in the suite **and** P17 (v0 suite) green **and** the P14 orchestrator
+unit-tests green **and** Scenario C observed once = the slice is trusted. A green suite alone is
+not the gate — Scenario C proves the live source, which the suite deliberately never touches.
+
+## v1.7 Trust check — is the green light real
+
+- **The ⚠ items are the slice's own proof.** P4, P12, P13, P14, P15, P16 must each fail
+  against today's code before their fix lands (xfail-strict, 0 xpassed) — a ⚠ that passes untouched
+  means the test is wrong. Because they're authored blind to the implementation, the builder's
+  blind spot and the test author's blind spot are not the same blind spot.
+- **Fresh-context assertion review (one-time), after the suite is built:** a different
+  model/session reads the v1 tests against this section and hunts tautologies — a mocked prober
+  that never exercises the prune branch, an `up_to_date` test that asserts the mock, a manifest
+  oracle copied from the code rather than independently stated. Findings return here as amendments,
+  as in v0 §8.3.
+
+**Spec amendment (2026-07-06, Test-Build reconciliation — mirrors v0 §8.3).** P18 was marked ⚠
+but is **already green**: the Content-Length truncation guard exists at `scripts/fetch_quarters.py:115`
+(stream to `.part` → compare bytes vs `Content-Length` → unlink + `RunwayError`, so `dest` is never
+created), ratification call D reads "test existing behavior," and the ratified red-first set is
+{A,B,C,E,G,H} = {P12,P4,P13,P14,P15,P16} — which never included D/P18. P18's ⚠ marker is struck in
+§v1.1/§v1.5/§v1.7; its test stays a plain green pin (never xfail). Logged as `docs/decision_log.md` dec. #31.
+
+## v1.8 Design amendments owed (recorded so silence ≠ oversight)
+
+Route to `docs/decision_log.md` (the *why*, in-repo) and the Notion v1 Design Doc §5/§6
+(pipeline shape). **This skill wrote only this spec + `RATIFICATION_LOG_v1.md`.**
+
+1. **dec. #24 open fork CLOSED (A):** zero-result title → isolate + mark `empty`; integrity-check
+   failure aborts the whole run.
+2. **dec. #24 saved-state key (C):** (title × window) → (title × **definition** × window).
+3. **dec. #22 prune rule (B):** explicit — supersession or out-of-window only; never on a
+   probe-miss (incl. 5xx/429 while another FY resolves).
+4. **CI architecture (E):** gating consolidates into a testable `scripts/run_pipeline.py`;
+   YAML shrinks to checkout → orchestrator → push.
+5. **`--titles` semantics (G):** scope-only; never prunes out-of-subset titles.
+6. **Shortlist output write (H):** atomic + readability-checked, at F3 parity.
+
+*Ratification record (v1 slice): calls A–K all ratified by the owner 2026-07-06 via
+prediction-before-reveal; 10/11 predicted · 1 surprised (A) · 0 no-opinion; two owner-overrides
+(E extraction, F diagnosability) and two owner-expansions (I, J fixed over noted). MUST ⚠ set =
+P4/P12/P13/P14/P15/P16 (design-anchored, red-first); SHOULD = P18/P19/P20/P21; SKIPs
+SK-v1-1..4 accepted. Full per-call record: `RATIFICATION_LOG_v1.md`, Sitting 2.*
