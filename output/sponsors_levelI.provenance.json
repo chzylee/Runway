@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-05 01:52 UTC",
+  "generated_at_utc": "2026-07-06 06:23 UTC",
   "source": "US DOL OFLC LCA Programs disclosure data (public record)",
   "filters": {
     "case_status": "Certified",
@@ -12,36 +12,39 @@
     "pw_wage_level": "I"
   },
   "quarters_used": [
-    "FY2025Q4"
+    "FY2025Q4",
+    "FY2026Q1"
   ],
+  "quarters_superseded": {},
   "rows_per_quarter": {
-    "FY2025Q4": 118580
+    "FY2025Q4": 118580,
+    "FY2026Q1": 83120
   },
   "funnel": {
-    "rows_total": 118580,
-    "rows_certified": 106613,
-    "rows_soc_matched": 668,
-    "rows_selected": 67
+    "rows_total": 201700,
+    "rows_certified": 181277,
+    "rows_soc_matched": 1116,
+    "rows_selected": 95
   },
-  "employer_groups": 52,
-  "distinct_raw_employer_spellings": 52,
+  "employer_groups": 76,
+  "distinct_raw_employer_spellings": 76,
   "rows_wage_excluded_from_wage_stats": 0,
   "case_statuses_seen": {
-    "CERTIFIED": 106613,
-    "CERTIFIED - WITHDRAWN": 9082,
-    "WITHDRAWN": 1844,
-    "DENIED": 1041
+    "CERTIFIED": 181277,
+    "CERTIFIED - WITHDRAWN": 15748,
+    "WITHDRAWN": 3242,
+    "DENIED": 1433
   },
   "wage_levels_seen": {
-    "II": 243,
-    "IV": 172,
-    "III": 163,
-    "I": 67,
-    "": 23
+    "II": 428,
+    "IV": 293,
+    "III": 270,
+    "I": 95,
+    "": 30
   },
   "wage_units_seen": {
-    "YEAR": 45,
-    "HOUR": 21,
+    "YEAR": 63,
+    "HOUR": 31,
     "MONTH": 1
   },
   "caveats": [

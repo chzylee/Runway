@@ -1,4 +1,5 @@
 employer,employer_display,filing_count,quarters_present,quarters,repeat_sponsor,soc_codes,soc_titles,worksite_states,worksite_cities,wage_annual_min,wage_annual_median,wage_annual_max
+THE JOY CULTURE FOUNDATION,THE JOY CULTURE FOUNDATION,2,2,FY2025Q4; FY2026Q1,yes,27-1024,Graphic Designers,CA,Menlo Park,58240,63024,67808
 IGAVEL,"iGavel, Inc.",7,1,FY2025Q4,no,27-1024,Graphic Designers,TX,New Braunfels,40250,40250,40250
 JAGADGURU KRIPALUJI YOG,Jagadguru Kripaluji Yog,3,1,FY2025Q4,no,15-1255,Web and Digital Interface Designers,TX,Allen,57034,57034,57034
 VLAB,VLAB LLC,3,1,FY2025Q4,no,15-1255,Web and Digital Interface Designers,MA,Cambridge City,73258,73258,73258
@@ -6,35 +7,54 @@ BRIGHTECH,"Brightech, Inc.",2,1,FY2025Q4,no,27-1021,Commercial and Industrial De
 CLOUD PRINTING,Cloud Printing Corp,2,1,FY2025Q4,no,27-1024,Graphic Designers,NY,New York,54080,54080,54080
 DELOITTE CONSULTING LLP,Deloitte Consulting LLP,2,1,FY2025Q4,no,15-1255,Web and Digital Interface Designers,TX,Austin,61006,89753,118500
 EXOTEC NORTH AMERICA,Exotec North America Inc.,2,1,FY2025Q4,no,27-1021,Commercial and Industrial Designers,GA,Atlanta,66144,66144,66144
+SYNOPSYS,"Synopsys, Inc.",2,1,FY2026Q1,no,27-1021,Commercial and Industrial Designers,PA,Canonsburg,79040,79040,79040
+TEXTILES FROM EUROPE,"Textiles from Europe, Inc.",2,1,FY2026Q1,no,27-1021,Commercial and Industrial Designers,NJ,North Bergen,115000,115000,115000
 THE SKYSCRAPER MUSEUM,The Skyscraper Museum,2,1,FY2025Q4,no,27-1024,Graphic Designers,NY,New York,53955,53955,53955
+UNIVERSITY OF MICHIGAN,University of Michigan,2,1,FY2026Q1,no,15-1255,Web and Digital Interface Designers,MI,Ann Arbor; Dearborn,62511,68174,73838
 ACTIVISION PUBLISHING,ACTIVISION PUBLISHING INC,1,1,FY2025Q4,no,15-1255,VIDEO GAME DESIGNERS,CA,SANTA MONICA,89482,89482,89482
 AIRMDR,"AirMDR, Inc.",1,1,FY2025Q4,no,15-1255,Web and Digital Interface Designers,CA,Santa Clara,135000,135000,135000
 AMAZON COM SERVICES,Amazon.com Services LLC,1,1,FY2025Q4,no,27-1024,Graphic Designers,NJ,Jersey City,104500,104500,104500
+ATLASNOVA,Atlasnova Inc.,1,1,FY2026Q1,no,15-1255,Web and Digital Interface Designers,CA,San Jose,134139,134139,134139
 AVE MARIA UNIVERSITY,"Ave Maria University, Inc.",1,1,FY2025Q4,no,27-1024,Graphic Designers,FL,Ave Maria,60000,60000,60000
 BLUMINT,BluMint Inc.,1,1,FY2025Q4,no,15-1255,Web and Digital Interface Designers,NY,New York,70000,70000,70000
+BYSONIX,"BYSONIX, INC.",1,1,FY2026Q1,no,27-1024,Graphic Designers,CA,Torrance,56326,56326,56326
+CA FAN TUAN,CA FAN TUAN INC.,1,1,FY2026Q1,no,27-1021,Commercial and Industrial Designers,CA,DAVIS,54662,54662,54662
+CALIFORNIA GREEN BUILDING COUNCIL,CALIFORNIA GREEN BUILDING COUNCIL,1,1,FY2026Q1,no,15-1255,Web and Digital Interface Designers,CA,LOS ANGELES,68000,68000,68000
+CODE AND THEORY,Code and Theory LLC,1,1,FY2026Q1,no,27-1024,Graphic Designers,NY,New York,70000,70000,70000
 COOPER SQUARE TECHNOLOGIES,Cooper Square Technologies Inc.,1,1,FY2025Q4,no,15-1255,Web and Digital Interface Designers,NY,New York,260000,260000,260000
 CREATIFY LAB,Creatify Lab Inc.,1,1,FY2025Q4,no,27-1024,Graphic Designers,CA,San Jose,90000,90000,90000
 CYBER GRILLS,Cyber Grills Inc.,1,1,FY2025Q4,no,27-1021,Commercial and Industrial Designers,NY,Staten Island,63606,63606,63606
 DCI MANUFACTURING,"DCI Manufacturing, Inc.",1,1,FY2025Q4,no,27-1021,Commercial and Industrial Designers,GA,Dalton,69500,69500,69500
 DIGITAL ARC SYSTEMS,"Digital Arc Systems, Corp.",1,1,FY2025Q4,no,15-1255,Video Game Designers,PA,Pittsburgh,52000,52000,52000
 DK CROWN HOLDINGS,DK Crown Holdings Inc.,1,1,FY2025Q4,no,27-1024,Graphic Designers,MA,Boston,64000,64000,64000
+DREAMLAB US,DreamLab US LLC,1,1,FY2026Q1,no,27-1024,Graphic Designers,WY,Cheyenne,68994,68994,68994
+E T ELECTRIC,E&T Electric LLC,1,1,FY2026Q1,no,27-1021,Commercial and Industrial Designers,CO,Greeley,62379,62379,62379
 ENVIRONMENTAL SYSTEMS RESEARCH INSTITUTE,"Environmental Systems Research Institute, Inc.",1,1,FY2025Q4,no,15-1255,Web and Digital Interface Designers,CA,Redlands,107640,107640,107640
 EOS PRODUCTS,EOS Products LLC,1,1,FY2025Q4,no,27-1024,Graphic Designers,NY,New York,60000,60000,60000
+FANTASIA ACCESSORIES,FANTASIA ACCESSORIES LTD,1,1,FY2026Q1,no,27-1024,Graphic Designers,NY,NEW YORK,58000,58000,58000
 FLORIDA A M UNIVERSITY,Florida A&M University,1,1,FY2025Q4,no,15-1255,Web and Digital Interface Designers,FL,Tallahassee,61983,61983,61983
+FORT HAYS STATE UNIVERSITY,Fort Hays State University,1,1,FY2026Q1,no,15-1255,Web and Digital Interface Designers,KS,Hays,54288,54288,54288
+FRESH INTERNATIONAL RALEIGH,"Fresh International Raleigh, LLC",1,1,FY2026Q1,no,27-1024,Graphic Designers,NC,Raleigh,47882,47882,47882
 FT CHANNEL,FT Channel Inc.,1,1,FY2025Q4,no,27-1024,Graphic Designers,IL,Wood Dale,48000,48000,48000
 GABRIEL JEWELRY REFINING,Gabriel Jewelry Refining Corp,1,1,FY2025Q4,no,27-1024,Graphic Designers,NY,New York,65000,65000,65000
 GAMMA USA,Gamma USA Inc,1,1,FY2025Q4,no,27-1021,Commercial and Industrial Designers,NJ,Jersey City,78720,78720,78720
+GENERAL MOTORS,General Motors,1,1,FY2026Q1,no,27-1021,Commercial and Industrial Designers,MI,Warren,92000,92000,92000
 HEALTH CARE PARTNERS FOUNDATION,"Health Care Partners Foundation, Inc.",1,1,FY2025Q4,no,27-1024,Graphic Designers,NV,RENO,45698,45698,45698
 HERO DIGITAL,"HERO DIGITAL, LLC",1,1,FY2025Q4,no,15-1255,Web and Digital Interface Designers,NY,BROOKLYN,72000,72000,72000
 HOBBY LOBBY STORES,Hobby Lobby Stores Inc.,1,1,FY2025Q4,no,27-1024,Graphic Designers,OK,OKC,73320,73320,73320
 INDETAIL,"Indetail, LLC",1,1,FY2025Q4,no,27-1024,Graphic Designers,NY,Maspeth,58240,58240,58240
+INDIANA UNIVERSITY,Indiana University,1,1,FY2026Q1,no,15-1255,Web and Digital Interface Designers,MD,Takoma Park,71150,71150,71150
 INFINITE MACHINE TECHNOLOGIES,"Infinite Machine Technologies, Inc.",1,1,FY2025Q4,no,27-1021,Commercial and Industrial Designers,NY,Long Island City,80000,80000,80000
 INSTACO,Instaco LLC,1,1,FY2025Q4,no,15-1255,Web and Digital Interface Designers,CA,Compton,70000,70000,70000
 JC GOURMET MANAGEMENT,JC GOURMET MANAGEMENT INC,1,1,FY2025Q4,no,27-1024,Graphic Designers,CA,ALHAMBRA,58240,58240,58240
+LOGOWISE,"Logowise, LLC",1,1,FY2026Q1,no,27-1024,Graphic Designers,NY,New York,53955,53955,53955
 MAINSQUARE CO,MAINSQUARE CO.,1,1,FY2025Q4,no,15-1255,Web and Digital Interface Designers,CA,San Jose,113630,113630,113630
+MICROSOFT CORPORATION,Microsoft Corporation,1,1,FY2026Q1,no,27-1021,Commercial and Industrial Designers,WA,Redmond,126700,126700,126700
 MINDEX TECHNOLOGIES,"Mindex Technologies, Inc.",1,1,FY2025Q4,no,15-1255,Web and Digital Interface Designers,NY,Rochester,97760,97760,97760
+MOCAP NYC,"MOCAP NYC, LLC",1,1,FY2026Q1,no,27-1024,Graphic Designers,NJ,Union City,60320,60320,60320
 MOLLY CRABAPPLE,Molly Crabapple Inc.,1,1,FY2025Q4,no,27-1024,Graphic Designers,NY,New York,110240,110240,110240
 PARLEY,Parley LLC,1,1,FY2025Q4,no,27-1021,Commercial and Industrial Designers,NY,New York,65000,65000,65000
+PERLE,"Perle, Inc.",1,1,FY2026Q1,no,15-1255,Web and Digital Interface Designers,CA,San Francisco,120000,120000,120000
 PERSPECTIVES HEALTH,"PERSPECTIVES HEALTH, INC.",1,1,FY2025Q4,no,15-1255,Web and Digital Interface Designers,CA,San Francisco,120000,120000,120000
 PHOENIX SATELLITE TELEVISION US,"Phoenix Satellite Television US, Inc",1,1,FY2025Q4,no,27-1024,Graphic Designers,CA,Irwindale,48131,48131,48131
 PROXIMA,Proxima Inc,1,1,FY2025Q4,no,27-1024,Graphic Designers,NY,MELVILLE,73320,73320,73320
@@ -43,11 +63,15 @@ SHARP IRON GROUP,Sharp Iron Group LLC,1,1,FY2025Q4,no,27-1021,Commercial and Ind
 SOKO GLAM,"Soko Glam, Inc.",1,1,FY2025Q4,no,27-1024,Graphic Designers,NY,Brooklyn,60000,60000,60000
 SRI TECH SOLUTIONS,"SRI Tech Solutions, Inc.",1,1,FY2025Q4,no,15-1255,Web and Digital Interface Designers,WA,Bellevue,78000,78000,78000
 SUPERPOWER HEALTH,"Superpower Health, Inc.",1,1,FY2025Q4,no,15-1255,Web and Digital Interface Designers,CA,San Francisco,112000,112000,112000
-THE JOY CULTURE FOUNDATION,THE JOY CULTURE FOUNDATION,1,1,FY2025Q4,no,27-1024,Graphic Designers,CA,Menlo Park,67808,67808,67808
+SUSHI COUNTER LIMITED,Sushi Counter Limited,1,1,FY2026Q1,no,27-1024,Graphic Designers,NY,New York,62400,62400,62400
+T Y LIN INTERNATIONAL,T.Y. Lin International,1,1,FY2026Q1,no,27-1021,Commercial and Industrial Designers,MA,Somerville,75733,75733,75733
 THOM BROWNE,"Thom Browne, Inc.",1,1,FY2025Q4,no,27-1024,Graphic Designers,NY,New York,103824,103824,103824
+TIKTOK,TikTok Inc.,1,1,FY2026Q1,no,15-1255,Web and Digital Interface Designers,CA,San Jose,155000,155000,155000
 TOTOMONO,Totomono LLC,1,1,FY2025Q4,no,27-1024,Graphic Designers,NY,New York,53955,53955,53955
 TURNER SERVICES,"Turner Services, Inc.",1,1,FY2025Q4,no,15-1255,Web and Digital Interface Designers,NY,New York,72244,72244,72244
 UNIVERSITY OF MISSISSIPPI,University of Mississippi,1,1,FY2025Q4,no,27-1024,Graphic Designers,MS,University,54924,54924,54924
+UNLTD,UNLTD Inc.,1,1,FY2026Q1,no,15-1255,Web and Digital Interface Designers,CA,San Francisco,170000,170000,170000
+VAST OCEAN CORPORATION,Vast Ocean Corporation,1,1,FY2026Q1,no,27-1024,Graphic Designers,CA,Chino,48131,48131,48131
 VELWYN STUDIO,"Velwyn Studio, Inc.",1,1,FY2025Q4,no,15-1255,Web and Digital Interface Designers,TX,Austin,70000,70000,70000
 WELLS GREEN CORPORATION,Wells Green Corporation,1,1,FY2025Q4,no,27-1024,Graphic Designers,CA,Los Angeles,48131,48131,48131
 WILDCARD PROPERTIES,Wildcard Properties LLC,1,1,FY2025Q4,no,15-1255,Video Game Designers,WA,Bellevue,100000,100000,100000
