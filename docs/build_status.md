@@ -10,22 +10,29 @@ it without Notion access.
 
 ### ▶ Resume here (2026-07-06, end of session)
 
-**State: the v1 data pipeline is DONE — the deterministic part is built, tested, and
-owner-verified.** Increment 1 (data emit) landed; the next move is the site UI.
+**State: the data + prompt plane are DONE — built, tested, owner-verified. Next move is the
+site UI (Increment 3).** Increments **1 (data emit)** and **2 (recommendations prompt +
+caveats parity)** are both landed; both of the site's inputs now exist.
 
-- **What works now:** `python scripts/run.py` → `web/data/{design.json, design.provenance.json,
-  design.csv}` (§4.2 closed schema + §4.3 same-generation guard). `design.json` (76 employers /
-  95 filings over FY2025Q4+FY2026Q1, iGavel golden-verified) is **committed — it is the UI's input.**
+- **The site's two inputs are ready + committed:**
+  `web/data/design.json` (76 employers / 95 filings over FY2025Q4+FY2026Q1, §4.2 closed schema,
+  iGavel golden-verified) — the shortlist the UI fetches; and `prompts/recommendations.md` (§6.1:
+  overarching rec + exactly-3 projects + skills-to-develop, the 3 `{{TOKENS}}`, JSON output
+  contract) — the template the UI fetches + fills. `scripts/check_caveats_parity.py` passes.
 - **Verified (owner ownership check, 2026-07-06):** numbers trace (iGavel = 7 by hand from raw;
   funnel 201,700 → 181,277 → 1,116 → 95 independently recomputed); §4.2/§4.3/D3/D9 all PASS;
-  suite **75 green** (63 engine/pipeline + 12 emit). No open reds.
-- **▶ NEXT ACTION — Increment 2** (small, non-UI): create `prompts/recommendations.md` (rename +
-  grow `gap_read.md`; overarching rec + 3 projects + skills-to-develop, each its own section + the
-  JSON output contract) and a **caveats-parity check** (template caveats == `engine/_util.CAVEATS`).
-  Then **Increments 3 → 4** (the static site: fetch `design.json` → shortlist → select companies →
-  generate prompt → paste + escape-render), then 5 (CI `data.yml`) + 6 (docs).
-- **To run the app locally:** `python scripts/run.py` regenerates `web/data/`; once the site exists,
-  serve it with `python -m http.server` rooted at `web/` (browsers block `fetch()` under `file://`).
+  suite **75 green** (63 engine/pipeline + 12 emit); caveats-parity OK. No open reds.
+- **▶ NEXT ACTION — Increment 3** (the UI spine): `web/index.html` + `app.js` + `styles.css` —
+  states Load → Shortlist → PromptReady; pick Design → fetch `data/design.json` → render the
+  shortlist table (employer hyperlink [D8], caveats verbatim from the JSON, funnel line, median
+  wage — when null) → portfolio-link + optional pasted resume (in-memory only) → select companies →
+  fetch `prompts/recommendations.md`, interpolate `{{SELECTED_ROWS}}/{{PORTFOLIO}}/{{RESUME_OR_NONE}}`
+  → copyable filled prompt. Then **Increment 4** (paste + escape-render, the M13-successor security
+  surface), **5** (CI `data.yml`, workflow_dispatch), **6** (docs). Do NOT write JS tests yet
+  (their stage is later, per the Build Plan).
+- **To run/serve locally:** `python scripts/run.py` regenerates `web/data/` (needs a quarter's xlsx
+  in `data/raw/` or its parquet in `data/processed/` — both gitignored now, dec.#33); serve the site
+  with `python -m http.server` rooted at `web/` (browsers block `fetch()` under `file://`, §13.3).
 - **Authority:** Notion [Build Plan](https://app.notion.com/p/39576356d6fe8110bc1ac9232074760a)
   (6 increments) + [Design Doc](https://app.notion.com/p/39476356d6fe81cda2d9fdf7f78c0dc2); the
   pivot off the earlier scheduled-fetch/parquet slice is `docs/decision_log.md` **dec. #33**.
@@ -57,8 +64,8 @@ superseded.
 |---|---|---|
 | 1 | Data emit + same-generation guard (`build_shortlist.py` → `web/data/{design.json, provenance.json, csv}`; `run.py` reshape; `build_report.py` deleted; `_util`→`web/data`) | ✅ built + verified 2026-07-06 |
 | — | tests for Increment 1's emit (`tests/test_emit_unit.py`) | ✅ 12 green 2026-07-06 — closed §4.2 schema, null-wage→JSON null (F5), same-gen guard fires (F7); no reds |
-| 2 | Recommendations prompt template + caveats parity | ◻ not started |
-| 3 | Site spine: fetch → shortlist → select → prompt-gen | ◻ not started |
+| 2 | Recommendations prompt template + caveats parity (`prompts/recommendations.md`, `scripts/check_caveats_parity.py`) | ✅ built (`0e2fbe9`); parity passes |
+| 3 | Site spine: fetch → shortlist → select → prompt-gen | ◻ **next** |
 | 4 | Results render (escape-render, security-critical) | ◻ not started |
 | 5 | CI + deploy (`data.yml`, workflow_dispatch) | ◻ not started |
 | 6 | Docs closeout + owed bookkeeping | ◻ not started |
