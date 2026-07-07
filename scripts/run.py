@@ -1,25 +1,25 @@
-"""THE command: convert -> shortlist -> report, end to end.
+"""THE local command: convert -> shortlist -> emit web/data/, end to end.
 
     python scripts/run.py
 
 Converts any DOL xlsx dropped in data/raw/, builds and verifies the sponsor
-shortlist from every converted quarter, and renders the private report. Never
-calls an LLM - the gap read in the report comes from a human-reviewed file
-(see prompts/gap_read.md) or renders as a visible placeholder.
+shortlist from every converted quarter, and emits the three public web/data/
+artifacts the static site consumes (design.json, design.provenance.json,
+design.csv). v1 has no HTML report - the site is the single presentation
+surface (Design Doc D3), served with `python -m http.server` rooted at web/.
+Runway never calls an LLM and, in v1, never reads a user's file.
 """
 import argparse
 
-import _util
 from _util import run_cli
 
-import build_report
 import build_shortlist
 import convert_quarters
 
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Runway v0: DOL xlsx -> sponsor shortlist -> private report."
+        description="Runway v1: DOL xlsx -> sponsor shortlist -> web/data/ artifacts."
     )
     parser.add_argument(
         "--quarters",
@@ -31,13 +31,12 @@ def main():
     args = parser.parse_args()
     requested = [q for q in (args.quarters or "").split(",") if q.strip()] or None
 
-    print("[run] Runway v0: convert -> shortlist -> report")
+    print("[run] Runway v1: convert -> shortlist -> emit web/data/")
     convert_quarters.convert_all(force=args.force_convert)
     build_shortlist.build(requested_quarters=requested)
-    build_report.build_report()
     print("[run] done:")
-    print("[run]   output/sponsors_levelI.csv          public shortlist (+ .provenance.json)")
-    print("[run]   output/private/runway_report.html   private one-pager")
+    print("[run]   web/data/design.json             site data (+ .provenance.json, .csv)")
+    print("[run]   serve locally: python -m http.server  (rooted at web/)")
 
 
 if __name__ == "__main__":

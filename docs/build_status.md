@@ -18,32 +18,36 @@ along with the `v1 Build` pipeline index — live in **Notion**, not this repo:
 Scope authority: [v1 — Direction & Scope](https://app.notion.com/p/39476356d6fe81719a01c5eefd0e1277).
 Next stage: Pre-Test Build (reconcile code against the Design Doc) — not started.
 
-### v1 data-pipeline slice — Test Build + finish-build complete
+### v1 build — following the converged Build Plan (spine-first)
 
-The automated data pipeline (`scripts/fetch_quarters.py`, `scripts/build_shortlists.py`,
-`scripts/run_pipeline.py`, the `data-pipeline.yml` CI, and the engine seams they reuse) has run
-its own spec→build→finish loop, additive to the v0 private path:
+The v1 build follows the Notion [Build Plan](https://app.notion.com/p/39576356d6fe8110bc1ac9232074760a)
+(6 increments, from the v1 Design Doc). An earlier scheduled-fetch / per-title-parquet-manifest
+attempt was **superseded and deleted** — see `docs/decision_log.md` **dec. #33** (JSON output not
+parquet, `workflow_dispatch` not cron; dec. #23 reverted). `TEST_SPEC.md` §"v1 slice" is marked
+superseded.
 
-| Stage | Produces | Status |
+| # | Increment | Status |
 |---|---|---|
-| Test Spec (slice) | `TEST_SPEC.md` §"v1 — Data-pipeline slice" | ✅ ratified 2026-07-06 (`RATIFICATION_LOG_v1.md`, Sitting 2) |
-| Test Build | `tests/test_v1_*.py` + `tests/v1_support.py` | ✅ 13 ⚠ committed red-first (xfail-strict, 0 xpassed) |
-| finish-build | the 6 MUST behaviors (dec. #25–#30) | ✅ driven to green 2026-07-06 (Sitting 3) |
+| 1 | Data emit + same-generation guard (`build_shortlist.py` → `web/data/{design.json, provenance.json, csv}`; `run.py` reshape; `build_report.py` deleted; `_util`→`web/data`) | ✅ built + verified 2026-07-06 |
+| — | *tests for Increment 1's emit (test-spec → red-first → ratify → green)* | ⏭ next (owner's cadence: test the data emit before UI) |
+| 2 | Recommendations prompt template + caveats parity | ◻ not started |
+| 3 | Site spine: fetch → shortlist → select → prompt-gen | ◻ not started |
+| 4 | Results render (escape-render, security-critical) | ◻ not started |
+| 5 | CI + deploy (`data.yml`, workflow_dispatch) | ◻ not started |
+| 6 | Docs closeout + owed bookkeeping | ◻ not started |
 
-**Verify:**
+**Increment 1 verify (local):**
 
 ```
-pip install -r requirements.txt -r requirements-dev.txt
-pytest            # expect: 124 passed, 3 xfailed
+python scripts/run.py            # with a quarter's parquet in data/processed/
+# → writes web/data/design.json (+ .provenance.json, .csv); golden anchor fires;
+#   observed: 76 employers / 95 filings over FY2025Q4+FY2026Q1, iGavel=7 pinned.
+pytest                           # kept engine/pipeline suite green (63)
 ```
 
-The **3 xfailed** are SHOULD items deliberately deferred to v1.1 (dec. #32), markers kept, not
-dropped: **P20** (case-only label collision — CI-only, open tie-break-vs-hard-error fork, touches
-v0 engine), **P21** (`quarters_superseded` surfacing — provenance only, invariant already guarded),
-**P19** (push rebase-or-retry — concurrency-serialized, no data loss). v0's suite (95) is untouched
-(P17). **Out of slice, owed to the v1 sweep:** the GitHub Pages frontend, the v0-report absorption
-(dec. #24), and the Notion Design Doc §5/§6 cumulative-FYTD update. Scenario C (the first real
-scheduled/dispatched CI run against live DOL) is the reserved real-data acceptance leg.
+The Python engine (`engine/`) and `convert_quarters.py` are **unchanged** from v0. The report path
+and the deleted slice's tests are retired; the pipeline/emit test suite is authored fresh in the
+next test-spec pass (JS trio + `/qa` leg defer to their stage per the Build Plan).
 
 **Repo vs. Notion, for this project:** the repo holds code, the live position
 (this file), the decision ledger (`docs/decision_log.md`), and ownership

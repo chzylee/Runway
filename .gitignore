@@ -27,14 +27,15 @@ __pycache__/
 # data/raw/ itself is kept (via .gitkeep) so a clean clone has the drop point the README names
 data/raw/*
 !data/raw/.gitkeep
-# processed parquet IS committed (v1: preprocessed once in CI, served to the
-# GitHub Pages frontend; narrow/columns-subset, a few MB per quarter). Any other
-# derived file under data/processed/ stays ignored.
-data/processed/*
-!data/processed/*.parquet
+# processed parquet is a TRANSIENT intermediate, gitignored + CI-ephemeral
+# (dec. #33 reverts the interim commit-parquet rule): the committed, site-served
+# artifact is web/data/, not the parquet. data/processed/ is created at runtime.
+data/processed/
 
-# ---- Private outputs (the applicant's personal report contains portfolio + job-search data) ----
-output/private/
+# ---- Retired v0 output tree (dec. #33 / D9) ----
+# The v0 output/ + output/private/ report tree is retired; web/ is the only
+# presentation surface and web/data/ holds the committed public artifacts (tracked).
+output/
 
 # ---- OS / editor cruft ----
 .DS_Store

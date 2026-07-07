@@ -284,6 +284,14 @@ sweep F1–F4 MUST, F5 SHOULD, F6 ratified base-match, F7 note. All decisions by
 
 # v1 — Data-pipeline slice
 
+> ⚠️ **SUPERSEDED 2026-07-06 (dec. #33).** This slice specified tests for the scheduled-fetch /
+> per-title-parquet-manifest architecture (`fetch_quarters.py`, `build_shortlists.py`,
+> `run_pipeline.py`, `data-pipeline.yml`), which the converged v1 Build Plan replaced and which has
+> been deleted. The section is kept as history — **do not build from it.** The v1 data path is now
+> `run.py` → `web/data/{design.json, design.provenance.json, design.csv}` (Design Doc §4.2/§4.3,
+> D3/D9); its test spec is authored fresh in the next test-spec pass. P1–P21/Q1–Q5 below no longer
+> map to code.
+
 `test-spec slice · ratified 2026-07-06` — ownership record: `RATIFICATION_LOG_v1.md`, Sitting 2.
 
 ## v1.1 Orientation

@@ -10,8 +10,9 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[1]
 DATA_RAW = REPO_ROOT / "data" / "raw"
 DATA_PROCESSED = REPO_ROOT / "data" / "processed"
-OUTPUT_DIR = REPO_ROOT / "output"
-OUTPUT_PRIVATE = OUTPUT_DIR / "private"
+# v1 (D9): public artifacts consolidate under web/data/ (committed, the site fetches
+# them); the v0 output/ + output/private/ tree is retired.
+WEB_DATA = REPO_ROOT / "web" / "data"
 
 sys.path.insert(0, str(REPO_ROOT))
 
@@ -35,7 +36,7 @@ def force_utf8():
 
 
 def ensure_dirs():
-    for directory in (DATA_RAW, DATA_PROCESSED, OUTPUT_DIR, OUTPUT_PRIVATE):
+    for directory in (DATA_RAW, DATA_PROCESSED, WEB_DATA):
         directory.mkdir(parents=True, exist_ok=True)
 
 

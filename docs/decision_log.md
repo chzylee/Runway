@@ -654,3 +654,40 @@ correctness invariant, which is why deferring is safe:
 
 **Invariant kept:** `python -m pytest` is green with exactly these 3 xfail-strict markers (0
 xpassed); v0's suite (95) is untouched (P17). v1.1 drives these 3 to green and removes their markers.
+
+## 33. v1 data path: the converged Build Plan supersedes the scheduled-fetch/parquet slice
+
+*Ratified 2026-07-06. Supersedes dec. #22–#32 (the abandoned slice) as the v1 data path; the
+authority is now the Notion v1 Design Doc (D3/D9/§4.2) + Build Plan.*
+
+**What happened.** The v1 data work was first built as a **scheduled automated pipeline slice** —
+`fetch_quarters.py` (weekly-cron HEAD-probe discovery + prune), `build_shortlists.py` (per-title
+**parquet** + `index.json` manifest, incremental), `run_pipeline.py`, `data-pipeline.yml`, with its
+own `TEST_SPEC.md` §"v1 slice" and dec. #22–#32. That slice was built ahead of a compiled Build
+Plan; when the Build Plan was generated from the v1 Design Doc it **converged on a simpler, different
+architecture**, and the slice diverged from that authority as production code.
+
+**The pivot (this decision).** Adopt the converged plan; delete the slice. Concretely:
+- **Output is JSON, not parquet.** The static GitHub Pages site `fetch()`es `web/data/design.json`
+  directly; a shortlist parquet would need an in-browser WASM reader for no benefit. Parquet stays
+  **only** as the transient xlsx→quarter intermediate (`data/processed/`, dec. #6 — cheap
+  re-derivation of a new title), never as the shortlist output.
+- **Trigger is `workflow_dispatch`, not cron.** DOL data changes ~4×/yr; the Design Doc (§4.1)
+  chose manual dispatch + push-on-code-change. The HEAD-probe discovery / lookback-window / prune /
+  per-title-manifest machinery is heavier than v1 needs and is dropped.
+- **`build_shortlist.py` (singular) reshaped** to emit `web/data/{design.json (§4.2 closed schema),
+  design.provenance.json, design.csv}` in one job with the §4.3 same-generation guard;
+  `build_report.py` **deleted** (D3, HTML report retired); `_util.py` repointed to `web/data/`, the
+  `output/` tree retired (D9).
+- **dec. #23 REVERTED.** Processed parquet is no longer committed — it is gitignored, CI-ephemeral
+  (Design Doc §8); the committed/served artifact is `web/data/` (small, diffable JSON/CSV).
+
+**What the slice bought (not wasted):** it affirmed the deterministic path end-to-end — convert +
+engine (filter/aggregate/supersede/verify) + orchestrated commit all run — which is exactly the "the
+part that doesn't change much works" checkpoint the owner wanted before the UI. dec. #22–#32 remain
+as history (why we pivoted); they are not the v1 data path.
+
+**Checkable:** `python scripts/run.py` writes `web/data/design.json` matching §4.2 (verified:
+76 employers / 95 filings, golden anchor fires iGavel=7 on FY2025Q4); `scripts/fetch_quarters.py`,
+`scripts/build_shortlists.py`, `scripts/run_pipeline.py`, `.github/workflows/data-pipeline.yml`
+no longer exist; `build_shortlist.py` has the JSON emit + same-gen guard at its `build()`.
