@@ -8,6 +8,33 @@ it without Notion access.
 
 ## v1 — current position
 
+### ▶ Resume here (2026-07-06, end of session)
+
+**State: the v1 data pipeline is DONE — the deterministic part is built, tested, and
+owner-verified.** Increment 1 (data emit) landed; the next move is the site UI.
+
+- **What works now:** `python scripts/run.py` → `web/data/{design.json, design.provenance.json,
+  design.csv}` (§4.2 closed schema + §4.3 same-generation guard). `design.json` (76 employers /
+  95 filings over FY2025Q4+FY2026Q1, iGavel golden-verified) is **committed — it is the UI's input.**
+- **Verified (owner ownership check, 2026-07-06):** numbers trace (iGavel = 7 by hand from raw;
+  funnel 201,700 → 181,277 → 1,116 → 95 independently recomputed); §4.2/§4.3/D3/D9 all PASS;
+  suite **75 green** (63 engine/pipeline + 12 emit). No open reds.
+- **▶ NEXT ACTION — Increment 2** (small, non-UI): create `prompts/recommendations.md` (rename +
+  grow `gap_read.md`; overarching rec + 3 projects + skills-to-develop, each its own section + the
+  JSON output contract) and a **caveats-parity check** (template caveats == `engine/_util.CAVEATS`).
+  Then **Increments 3 → 4** (the static site: fetch `design.json` → shortlist → select companies →
+  generate prompt → paste + escape-render), then 5 (CI `data.yml`) + 6 (docs).
+- **To run the app locally:** `python scripts/run.py` regenerates `web/data/`; once the site exists,
+  serve it with `python -m http.server` rooted at `web/` (browsers block `fetch()` under `file://`).
+- **Authority:** Notion [Build Plan](https://app.notion.com/p/39576356d6fe8110bc1ac9232074760a)
+  (6 increments) + [Design Doc](https://app.notion.com/p/39476356d6fe81cda2d9fdf7f78c0dc2); the
+  pivot off the earlier scheduled-fetch/parquet slice is `docs/decision_log.md` **dec. #33**.
+- **Watch-outs when you resume:** engine (`engine/`) + `convert_quarters.py` are UNCHANGED v0 — don't
+  touch them; Runway never calls an LLM and never reads a user file (the resume is client-side prompt
+  text only); the JS trio + `/qa` behavioral leg are the site's test stage, deferred per the Build Plan.
+
+---
+
 v0 is shipped and owned (history below). **v1 (the UX + value-clarity pass) is
 in the Design stage:** scope was ratified 2026-07-05 (`RATIFICATION_LOG_v1.md`,
 this repo) and engineered into a Design Doc + Build Prompt. Both deliverables —
