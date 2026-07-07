@@ -29,7 +29,7 @@ superseded.
 | # | Increment | Status |
 |---|---|---|
 | 1 | Data emit + same-generation guard (`build_shortlist.py` → `web/data/{design.json, provenance.json, csv}`; `run.py` reshape; `build_report.py` deleted; `_util`→`web/data`) | ✅ built + verified 2026-07-06 |
-| — | *tests for Increment 1's emit (test-spec → red-first → ratify → green)* | ⏭ next (owner's cadence: test the data emit before UI) |
+| — | tests for Increment 1's emit (`tests/test_emit_unit.py`) | ✅ 12 green 2026-07-06 — closed §4.2 schema, null-wage→JSON null (F5), same-gen guard fires (F7); no reds |
 | 2 | Recommendations prompt template + caveats parity | ◻ not started |
 | 3 | Site spine: fetch → shortlist → select → prompt-gen | ◻ not started |
 | 4 | Results render (escape-render, security-critical) | ◻ not started |
@@ -42,7 +42,7 @@ superseded.
 python scripts/run.py            # with a quarter's parquet in data/processed/
 # → writes web/data/design.json (+ .provenance.json, .csv); golden anchor fires;
 #   observed: 76 employers / 95 filings over FY2025Q4+FY2026Q1, iGavel=7 pinned.
-pytest                           # kept engine/pipeline suite green (63)
+pytest                           # engine/pipeline + emit suite green (75)
 ```
 
 The Python engine (`engine/`) and `convert_quarters.py` are **unchanged** from v0. The report path

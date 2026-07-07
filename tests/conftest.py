@@ -1,23 +1,23 @@
-"""Shared test plumbing.
+"""Shared test plumbing (v1).
 
-Two worlds live here:
+Two worlds:
 
-* Unit/property tests import the engine (and, for report-side units, the
-  scripts) in-process. `sys.path` is set so `import engine...`, `import
-  build_report`, `import _util` resolve exactly as they do when a script runs.
+* Unit/property tests import the engine in-process. `sys.path` is set so
+  `import engine...`, `import build_shortlist`, `import _util` resolve exactly as
+  they do when a script runs.
 
-* Fixture-integration tests exercise the REAL pipeline as a subprocess against
-  a throwaway mini-repo (`pipeline_env`): a tmp dir holding copies of engine/
-  and scripts/ so `_util.REPO_ROOT` resolves inside the tmp dir and every read
-  and write is isolated from the developer's real data/ and output/.
+* Emit-integration tests exercise the REAL data path (convert -> shortlist ->
+  emit web/data/) against the committed synthetic fixture in a throwaway tmp dir,
+  via the `emit_env` fixture, so every read and write is isolated from the
+  developer's real data/ and web/ trees.
 """
 from __future__ import annotations
 
 import os
 import shutil
-import subprocess
 import sys
 from pathlib import Path
+from types import SimpleNamespace
 
 os.environ.setdefault("PYTHONUTF8", "1")
 
@@ -65,59 +65,46 @@ def frame():
     return make_frame
 
 
-class PipelineEnv:
-    """A throwaway mini-repo that runs the real scripts as a subprocess."""
-
-    def __init__(self, root: Path):
-        self.root = root
-        self.raw = root / "data" / "raw"
-        self.processed = root / "data" / "processed"
-        self.output = root / "output"
-        self.private = root / "output" / "private"
-        for d in (self.raw, self.processed, self.private):
-            d.mkdir(parents=True, exist_ok=True)
-        # Copy the code under test so REPO_ROOT resolves inside this tmp dir.
-        shutil.copytree(REPO_ROOT / "engine", root / "engine")
-        shutil.copytree(SCRIPTS_DIR, root / "scripts")
-        self.csv = self.output / "sponsors_levelI.csv"
-        self.provenance = self.output / "sponsors_levelI.provenance.json"
-        self.hiring_now = self.private / "hiring_now.csv"
-        self.gap_read = self.private / "gap_read_filled.md"
-        self.report = self.private / "runway_report.html"
-
-    def place_fixture(self, src: Path, name: str | None = None):
-        dest = self.raw / (name or src.name)
-        shutil.copy(src, dest)
-        return dest
-
-    def run(self, script="run.py", *args, env=None, expect_ok=None):
-        """Invoke `python <root>/scripts/<script>` and capture the result.
-        Runs with UTF-8 forced off at the parent so force_utf8() is what makes
-        the run survive a non-UTF-8 console (M15)."""
-        full_env = dict(os.environ)
-        full_env.pop("PYTHONUTF8", None)  # let the tool force it, not the parent
-        if env:
-            full_env.update(env)
-        proc = subprocess.run(
-            [sys.executable, str(self.root / "scripts" / script), *args],
-            capture_output=True, text=True, encoding="utf-8", errors="replace",
-            cwd=self.root, env=full_env,
-        )
-        if expect_ok is True:
-            assert proc.returncode == 0, f"expected exit 0, got {proc.returncode}\n{proc.stderr}"
-        if expect_ok is False:
-            assert proc.returncode == 1, f"expected exit 1, got {proc.returncode}\n{proc.stdout}\n{proc.stderr}"
-        return proc
-
-
 @pytest.fixture
-def pipeline_env(tmp_path):
-    return PipelineEnv(tmp_path)
+def emit_env(tmp_path, monkeypatch):
+    """Run the REAL convert -> shortlist -> emit path against a tmp mini-repo.
 
+    Redirects convert_quarters' and build_shortlist's path constants (and
+    _util.REPO_ROOT for its relative_to prints) into tmp, so a test can drop the
+    committed fixture xlsx, run the pipeline in-process, and read the three
+    web/data/ artifacts the emit writes."""
+    import convert_quarters
+    import build_shortlist
+    import _util
 
-def assert_no_traceback(proc):
-    """The RunwayError contract (dec. #15): anticipated failures print a plain
-    message and exit 1 with no Python stack trace."""
-    assert "Traceback (most recent call last)" not in proc.stderr, (
-        f"a stack trace leaked to stderr:\n{proc.stderr}"
+    raw = tmp_path / "data" / "raw"
+    processed = tmp_path / "data" / "processed"
+    webdata = tmp_path / "web" / "data"
+    for directory in (raw, processed, webdata):
+        directory.mkdir(parents=True, exist_ok=True)
+
+    monkeypatch.setattr(convert_quarters, "DATA_RAW", raw)
+    monkeypatch.setattr(convert_quarters, "DATA_PROCESSED", processed)
+    monkeypatch.setattr(convert_quarters, "ensure_dirs", lambda: None)
+    monkeypatch.setattr(build_shortlist, "DATA_PROCESSED", processed)
+    monkeypatch.setattr(build_shortlist, "JSON_PATH", webdata / "design.json")
+    monkeypatch.setattr(build_shortlist, "PROVENANCE_PATH", webdata / "design.provenance.json")
+    monkeypatch.setattr(build_shortlist, "CSV_PATH", webdata / "design.csv")
+    monkeypatch.setattr(build_shortlist, "ensure_dirs", lambda: None)
+    monkeypatch.setattr(_util, "REPO_ROOT", tmp_path)
+
+    def place_fixture(src: Path):
+        shutil.copy(src, raw / src.name)
+
+    def run(requested_quarters=None):
+        """convert every xlsx in raw, then emit; returns (table, stats)."""
+        convert_quarters.convert_all()
+        return build_shortlist.build(requested_quarters=requested_quarters)
+
+    return SimpleNamespace(
+        raw=raw, processed=processed, webdata=webdata,
+        json=webdata / "design.json",
+        provenance=webdata / "design.provenance.json",
+        csv=webdata / "design.csv",
+        place_fixture=place_fixture, run=run,
     )
