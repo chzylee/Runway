@@ -691,3 +691,120 @@ as history (why we pivoted); they are not the v1 data path.
 76 employers / 95 filings, golden anchor fires iGavel=7 on FY2025Q4); `scripts/fetch_quarters.py`,
 `scripts/build_shortlists.py`, `scripts/run_pipeline.py`, `.github/workflows/data-pipeline.yml`
 no longer exist; `build_shortlist.py` has the JSON emit + same-gen guard at its `build()`.
+
+## 34. The caveats-parity build check runs inside `scripts/run.py` (the local build command)
+
+*Ratified 2026-07-08 (v1 Increment 2 close-out). Names the script that runs the check the
+Increment-2 spec required to be decision-logged.*
+
+Increment 2 grew the prompt template `prompts/recommendations.md` (dec. #33 / Design Doc D5) —
+a repo file the static site fetches and interpolates, so its embedded five caveats reach an
+applicant **without ever passing through the engine**. That makes it the one tolerated second
+copy of `_util.CAVEATS` (the single source, Design Doc §7). `scripts/check_caveats_parity.py`
+asserts the two are byte-for-byte identical (same strings, same order) and raises a plain-English
+`RunwayError` naming the first divergence on drift. The open question this decision closes is
+*which script actually runs that check* so it guards something instead of sitting idle.
+
+**Alternatives:** (A) wire it into `scripts/run.py`, the one end-to-end local build command;
+(B) leave it standalone and call it only from the Increment-5 CI workflow (which doesn't exist
+yet); (C) enforce it only through the test suite.
+
+**Why run.py (A), plus a suite pin:** `run.py` is "THE local command" (its own docstring) — the
+single thing a maintainer runs to regenerate the site's data input. Making it also assert the
+prompt template's caveats keeps *both* of the site's inputs — the data (`web/data/design.json`)
+and the template (`recommendations.md`) — consistent with the engine from one command, so drift
+can't ship silently between a data regen and a template edit. The check is placed **first**, before
+the multi-minute xlsx convert, because it has no data dependency and should fail fast rather than
+after expensive work. CI-only (B) was rejected because the workflow isn't built and local runs would
+be unguarded until it is; test-only (C) is kept as a complement, not the sole path — a build check
+belongs in the build. So the check runs in **two** places that can't disagree: `run.py` at build
+time, and `tests/test_caveats_parity.py` in the green suite (a positive pin that the real repo
+files match, plus a negative test that an injected drift raises `RunwayError`).
+
+**Checkable:** `scripts/run.py` imports `check_caveats_parity` and calls it before `convert_all`;
+`python scripts/check_caveats_parity.py` prints `[caveats-parity] OK - 5 caveats match`;
+`tests/test_caveats_parity.py` passes (positive + negative). Closes Increment 2 alongside the
+deletion of the superseded `prompts/gap_read.md`.
+
+## 35. The prompt template is build-mirrored into `web/prompts/` so the site can fetch it from the `web/` serve root
+
+*Increment 3 (2026-07-17). Resolves a contradiction discovered in the Design Doc, not a scope
+addition — flip it if the owner prefers a different reconciliation.*
+
+**The contradiction.** Design Doc §5.4 has the site fetch `prompts/recommendations.md`, and
+§13.3 (OI-2, explicitly resolved) serves the site with `python -m http.server` **rooted at
+`web/`** — from which the repo-root `prompts/` directory is unreachable (an HTTP server never
+serves above its root, and `../` normalizes away in URLs). As written, the local end-to-end leg
+of the Definition of Done could never reach the template. The same hole would hit the Pages
+deploy if the published artifact is `web/` (Increment 5's likely shape).
+
+**Resolution.** `scripts/run.py` copies `prompts/recommendations.md` byte-for-byte to
+`web/prompts/recommendations.md` (`mirror_prompt_template()`, placed immediately after the
+caveats-parity check so the mirror is always a parity-verified template, and before the convert
+step because it is data-independent). The mirror is a **committed build artifact** exactly like
+`web/data/*`: the single source of truth stays the repo-root file (D5 intact), the mirror is
+regenerated on every build and never hand-edited, and `app.js` fetches the literal path
+`prompts/recommendations.md` — which now resolves *inside* the serve root, satisfying §5.4's
+fetch path and §13.3's serve command simultaneously.
+
+**Alternatives rejected:** serving from the repo root (contradicts the explicitly-ratified
+OI-2, and would force the Pages artifact to be the whole repo); a hand-committed duplicate
+(drift risk with no build guarantee — the caveats-parity lesson); moving the template into
+`web/` outright (breaks the §8 repo layout and D5's stated path).
+
+**Checkable:** `git diff --no-index prompts/recommendations.md web/prompts/recommendations.md`
+is empty; deleting the mirror and running `scripts/run.py` recreates it; with
+`python -m http.server` rooted at `web/`, `GET /prompts/recommendations.md` returns 200.
+
+## 36. `{{SELECTED_ROWS}}` renders as CSV: design.csv's exact columns and order, RFC 4180-quoted, null wage → empty cell
+
+*Increment 3 (2026-07-17). The rendering choice the increment spec requires to be logged.*
+
+The selected shortlist rows are interpolated into the prompt as **CSV**: one header line plus
+one line per selected employer, using **exactly the 13 `design.csv` columns in `design.csv`
+order** (`CSV_COLUMNS` in `web/app.js`). Why CSV over prose or JSON: the LLM receives the same
+representation a human can cross-check against the public `web/data/design.csv` download —
+line-for-line — so "which facts were sent" is auditable by diffing, and the template's §6.1
+framing ("filing counts, wage levels, SOC titles, worksite states are facts") points at flat
+tabular fields, not a nested object.
+
+Field rules (`csvField` in `app.js`): RFC 4180 — a field containing a comma, quote, or newline
+is double-quoted with inner quotes doubled (so `iGavel, Inc.` round-trips); a `null` wage
+becomes an **empty cell**, matching the emitter's convention for `design.csv` (v0 F5: blank,
+never `"nan"`, and never a fake zero). Interpolation uses `split()/join()`, not
+`String.replace()`, because a pasted résumé may legitimately contain `$&`-style sequences that
+`replace()` would treat as substitution patterns.
+
+**Checkable:** select iGavel in the served site → the generated prompt contains the line
+`IGAVEL,"iGavel, Inc.",7,1,FY2025Q4,no,27-1024,Graphic Designers,TX,New Braunfels,40250,40250,40250`,
+identical to that employer's `web/data/design.csv` line.
+
+## 37. A null median wage renders as an em dash (—) in the shortlist table
+
+*Increment 3 (2026-07-17). The null-rendering choice the increment spec requires to be logged.*
+
+A wage excluded from wage stats arrives in `design.json` as JSON `null` (§4.2, the v0 F5
+lesson). In the shortlist table it renders as an **em dash "—"** — visibly *absent*, never `$0`
+(a lie), an empty cell (reads as a rendering bug), or the string "null"/"nan". The em dash is
+produced in `renderRow` in `web/app.js` (`wage_annual_median == null ? "—" : …`); the same
+employer's `{{SELECTED_ROWS}}` CSV line keeps the empty-cell convention instead (dec. #36) —
+display shows absence to a human, data stays machine-parseable.
+
+**Checkable:** in `web/app.js` `renderRow`, the median-wage branch; live, no current row is
+null-waged, so: `renderRow({wage_annual_median: null, …}).cells[7].textContent === "—"` in the
+browser console (verified in the Increment-3 build pass).
+
+## 38. Portfolio "validated as a URL" = the URL constructor + an http(s) scheme, with no silent rewriting
+
+*Increment 3 (2026-07-17). Names the concrete meaning of §5.2's "validated as a URL".*
+
+A portfolio link counts as present when `new URL(value)` parses it **and** its protocol is
+`https:` or `http:` (`portfolioUrl()` in `web/app.js`). Anything else — including a bare
+`myname.com` — shows the inline hint "Enter a full link starting with https:// (or http://)"
+and keeps Generate disabled. Deliberately **no auto-prefixing**: what the user typed is exactly
+what enters the prompt (`{{PORTFOLIO}}`), so Runway never fabricates even a scheme on the
+user's behalf — the same honesty rule the data side follows. Non-http schemes (`javascript:`,
+`file:`) are rejected rather than forwarded into a prompt the user will paste elsewhere.
+
+**Checkable:** in the served site, `myname.com` in the portfolio field keeps Generate disabled
+and shows the hint; `https://myname.com` enables it once ≥1 company is checked.

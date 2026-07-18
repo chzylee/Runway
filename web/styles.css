@@ -1,0 +1,164 @@
+/* Runway v1 — the Design Doc §5 "DESIGN" bar, whole and nothing more:
+ * readable type, real h2/h3 section headers, a legible table, a visible
+ * caveats callout. Polish belongs to a later /design-review, not this file. */
+
+:root {
+  --ink: #1c2127;
+  --muted: #5b6570;
+  --line: #d8dde3;
+  --accent: #0b57d0;
+  --callout-bg: #fff7e0;
+  --callout-edge: #d97706;
+  --error: #b3261e;
+  --error-bg: #fdeceb;
+  --row-selected: #eef4ff;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0 auto;
+  max-width: 68rem;
+  padding: 2.25rem 1.25rem 4rem;
+  font: 16px/1.55 system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: var(--ink);
+  background: #ffffff;
+}
+
+h1 { font-size: 1.9rem; margin: 0 0 0.4rem; }
+h2 {
+  font-size: 1.3rem;
+  margin: 0 0 1rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--line);
+}
+h3 { font-size: 1.02rem; margin: 0 0 0.4rem; }
+
+.tagline { color: var(--muted); max-width: 46rem; margin: 0; }
+
+main section { margin-top: 2.5rem; }
+
+a { color: var(--accent); }
+
+code {
+  font: 0.88em/1.4 ui-monospace, Consolas, "Courier New", monospace;
+  background: #f2f4f6;
+  padding: 0.08em 0.3em;
+  border-radius: 4px;
+}
+
+/* ---- form fields ---- */
+
+.field { margin: 1.1rem 0; }
+
+label { display: block; font-weight: 600; margin-bottom: 0.3rem; }
+.req { font-weight: 400; color: var(--muted); }
+.opt { font-weight: 400; color: var(--muted); }
+
+select,
+input[type="url"],
+textarea {
+  font: inherit;
+  color: inherit;
+  padding: 0.5rem 0.6rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fff;
+}
+
+select { min-width: 14rem; }
+input[type="url"] { width: 100%; max-width: 34rem; }
+textarea { width: 100%; resize: vertical; }
+
+.hint { font-size: 0.88rem; color: var(--muted); margin: 0.4rem 0 0; }
+.muted { color: var(--muted); }
+.error { color: var(--error); }
+
+/* ---- callouts ---- */
+
+.callout {
+  border-left: 4px solid var(--callout-edge);
+  background: var(--callout-bg);
+  border-radius: 0 6px 6px 0;
+  padding: 0.8rem 1.1rem;
+  margin: 1rem 0 1.25rem;
+}
+
+.callout ul { margin: 0; padding-left: 1.2rem; }
+.callout li { margin: 0.3rem 0; }
+
+.error-callout {
+  border-left-color: var(--error);
+  background: var(--error-bg);
+}
+.error-callout p:first-child { margin-top: 0; font-weight: 600; }
+
+/* ---- shortlist table ---- */
+
+.table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+
+table { border-collapse: collapse; width: 100%; font-size: 0.94rem; }
+
+th, td {
+  padding: 0.5rem 0.7rem;
+  text-align: left;
+  border-top: 1px solid var(--line);
+  vertical-align: top;
+}
+
+thead th {
+  border-top: 0;
+  background: #f4f6f8;
+  white-space: nowrap;
+}
+
+th.num, td.num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+th.center, td.center { text-align: center; }
+
+tbody tr:hover { background: #f8fafc; }
+tbody tr.selected { background: var(--row-selected); }
+
+td input[type="checkbox"] { width: 1.05rem; height: 1.05rem; }
+
+.funnel { font-size: 0.92rem; margin: 0.9rem 0 0.2rem; }
+
+/* ---- prompt section ---- */
+
+button {
+  font: inherit;
+  font-weight: 600;
+  color: #fff;
+  background: var(--accent);
+  border: 0;
+  border-radius: 6px;
+  padding: 0.55rem 1.1rem;
+  cursor: pointer;
+}
+button:hover:not(:disabled) { filter: brightness(1.08); }
+button:disabled { opacity: 0.45; cursor: not-allowed; }
+
+#load-error button, #copy-btn { margin-top: 0.6rem; }
+
+#prompt-box { margin-top: 1.1rem; }
+
+#prompt-output {
+  min-height: 18rem;
+  font: 0.84rem/1.45 ui-monospace, Consolas, "Courier New", monospace;
+}
+
+/* ---- footer ---- */
+
+footer {
+  margin-top: 3.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.88rem;
+  color: var(--muted);
+}

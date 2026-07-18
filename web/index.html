@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Runway — what to build to be worth a visa filing</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Runway</h1>
+    <p class="tagline">
+      For international new-grad designers deciding what to build to be worth a
+      work-visa filing. Every number below traces to a public US DOL LCA filing;
+      the advice layer is authored by <em>your own</em> LLM run — Runway never
+      calls a model and has no server.
+    </p>
+  </header>
+
+  <main>
+    <!-- Section 1 — title select (Design Doc §5.1). v1 has one real entry;
+         a second role is a sibling data file, not a refactor (D2). -->
+    <section id="section-title">
+      <h2>1 · Pick a role</h2>
+      <label for="title-select">Role</label>
+      <select id="title-select">
+        <option value="">— pick a role —</option>
+        <option value="design">Design</option>
+      </select>
+      <p id="load-status" class="hint" hidden></p>
+      <div id="load-error" class="callout error-callout" hidden>
+        <p id="load-error-message"></p>
+        <button id="retry-btn" type="button">Retry</button>
+        <p class="hint">
+          If you opened <code>index.html</code> straight from disk, browsers block
+          data loading — serve the folder instead:
+          <code>python -m http.server</code> run inside <code>web/</code>, then open
+          <code>http://localhost:8000</code>.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 2 — inputs (Design Doc §5.2). The resume is PASTED text held in
+         memory only: no file upload, no FileReader — Runway reads no user file. -->
+    <section id="section-inputs" hidden>
+      <h2>2 · Your inputs</h2>
+      <div class="field">
+        <label for="portfolio-input">Portfolio link <span class="req">(required)</span></label>
+        <input id="portfolio-input" type="url" placeholder="https://your-portfolio.example"
+               autocomplete="url" spellcheck="false">
+        <p id="portfolio-hint" class="hint error" hidden>
+          Enter a full link starting with https:// (or http://).
+        </p>
+      </div>
+      <div class="field">
+        <label for="resume-input">Résumé <span class="opt">(optional — paste the text, there is no upload)</span></label>
+        <textarea id="resume-input" rows="8"
+                  placeholder="Paste your résumé text here (optional)"></textarea>
+        <p class="hint">
+          Note: your resume text stays in this browser. It is only filled into the
+          prompt you copy below — Runway has no server and never reads a file.
+        </p>
+        <p id="resume-state" class="hint muted">No résumé attached.</p>
+      </div>
+    </section>
+
+    <!-- Section 3 — shortlist + select (Design Doc §5.3). Caveats render VERBATIM
+         from the fetched JSON — never hardcoded here or in app.js (§7). -->
+    <section id="section-shortlist" hidden>
+      <h2>3 · Shortlist — pick your target companies</h2>
+      <div id="caveats" class="callout caveats">
+        <h3>Read this first — what an LCA filing is not</h3>
+        <ul id="caveats-list"></ul>
+      </div>
+      <p id="single-quarter-note" class="hint" hidden></p>
+      <div class="table-wrap">
+        <table id="shortlist-table">
+          <thead>
+            <tr>
+              <th scope="col" class="center">Target?</th>
+              <th scope="col">Company</th>
+              <th scope="col" class="num">Filings</th>
+              <th scope="col">Quarters</th>
+              <th scope="col" class="center" title="filed in more than one fiscal year">Repeat</th>
+              <th scope="col">SOC titles</th>
+              <th scope="col">States</th>
+              <th scope="col" class="num">Median wage</th>
+            </tr>
+          </thead>
+          <tbody id="shortlist-body"></tbody>
+        </table>
+      </div>
+      <p id="funnel-line" class="funnel"></p>
+      <p id="provenance-line" class="hint muted"></p>
+    </section>
+
+    <!-- Section 4 — generate prompt (Design Doc §5.4). The site fills the repo
+         prompt template; the user runs it in THEIR OWN LLM (never Runway). -->
+    <section id="section-prompt" hidden>
+      <h2>4 · Generate your prompt</h2>
+      <p>
+        Runway fills a reviewer prompt with the companies you selected, your
+        portfolio link, and your pasted résumé. You copy it and run it in your own
+        LLM (Claude, ChatGPT, …) — you see every fact that gets sent, and nothing
+        is sent anywhere by this page.
+      </p>
+      <p id="prompt-gate-hint" class="hint"></p>
+      <button id="generate-btn" type="button" disabled>Generate prompt</button>
+      <p id="prompt-status" class="hint" hidden></p>
+      <div id="prompt-box" hidden>
+        <label for="prompt-output">Your filled prompt</label>
+        <textarea id="prompt-output" readonly spellcheck="false"></textarea>
+        <button id="copy-btn" type="button">Copy prompt</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      Runway is career/portfolio guidance, not immigration legal advice. Data:
+      public US DOL LCA disclosure files — see the provenance link above once a
+      role is loaded.
+    </p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

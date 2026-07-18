@@ -8,31 +8,37 @@ it without Notion access.
 
 ## v1 — current position
 
-### ▶ Resume here (2026-07-06, end of session)
+### ▶ Resume here (2026-07-17, end of session)
 
-**State: the data + prompt plane are DONE — built, tested, owner-verified. Next move is the
-site UI (Increment 3).** Increments **1 (data emit)** and **2 (recommendations prompt +
-caveats parity)** are both landed; both of the site's inputs now exist.
+**State: the site spine (Increment 3) is BUILT and behaviorally verified. Next move is
+Increment 4 (paste + escape-render, the M13-successor security surface).** Increments 1–3 are
+landed: the data plane, the prompt template, and now the UI that connects them.
 
-- **The site's two inputs are ready + committed:**
-  `web/data/design.json` (76 employers / 95 filings over FY2025Q4+FY2026Q1, §4.2 closed schema,
-  iGavel golden-verified) — the shortlist the UI fetches; and `prompts/recommendations.md` (§6.1:
-  overarching rec + exactly-3 projects + skills-to-develop, the 3 `{{TOKENS}}`, JSON output
-  contract) — the template the UI fetches + fills. `scripts/check_caveats_parity.py` passes.
-- **Verified (owner ownership check, 2026-07-06):** numbers trace (iGavel = 7 by hand from raw;
-  funnel 201,700 → 181,277 → 1,116 → 95 independently recomputed); §4.2/§4.3/D3/D9 all PASS;
-  suite **75 green** (63 engine/pipeline + 12 emit); caveats-parity OK. No open reds.
-- **▶ NEXT ACTION — Increment 3** (the UI spine): `web/index.html` + `app.js` + `styles.css` —
-  states Load → Shortlist → PromptReady; pick Design → fetch `data/design.json` → render the
-  shortlist table (employer hyperlink [D8], caveats verbatim from the JSON, funnel line, median
-  wage — when null) → portfolio-link + optional pasted resume (in-memory only) → select companies →
-  fetch `prompts/recommendations.md`, interpolate `{{SELECTED_ROWS}}/{{PORTFOLIO}}/{{RESUME_OR_NONE}}`
-  → copyable filled prompt. Then **Increment 4** (paste + escape-render, the M13-successor security
-  surface), **5** (CI `data.yml`, workflow_dispatch), **6** (docs). Do NOT write JS tests yet
-  (their stage is later, per the Build Plan).
-- **To run/serve locally:** `python scripts/run.py` regenerates `web/data/` (needs a quarter's xlsx
-  in `data/raw/` or its parquet in `data/processed/` — both gitignored now, dec.#33); serve the site
-  with `python -m http.server` rooted at `web/` (browsers block `fetch()` under `file://`, §13.3).
+- **Increment 3 shipped:** `web/index.html` + `web/app.js` + `web/styles.css` — states
+  Load → Shortlist → PromptReady with DataError+retry; pick Design → fetch `data/design.json` →
+  caveats verbatim from the JSON + shortlist table (employer hyperlink [D8], repeat ✓, median
+  wage — when null, dec. #37) + funnel line + provenance/CSV links → portfolio URL (validated,
+  dec. #38) + optional pasted resume (in-memory only, visible stays-in-browser note) → checkbox
+  select → fetch template, interpolate the 3 `{{TOKENS}}` (`{{SELECTED_ROWS}}` = design.csv-shaped
+  CSV, dec. #36) → copy-box with Copy button (disabled/ready/copied; stale prompts auto-hide).
+  All DOM writes are `textContent` — no `innerHTML` anywhere.
+- **Build-discovered fork (dec. #35):** the Design Doc's serve root (`web/`, §13.3) couldn't reach
+  its own template fetch path (`prompts/recommendations.md`, §5.4) — resolved by `run.py` mirroring
+  the template to `web/prompts/recommendations.md` (committed build artifact, byte-identical,
+  never hand-edited; D5 single source unchanged). **Owner should confirm-or-flip dec. #35.**
+- **Verified (2026-07-17, headless-browser pass):** clean load → pick Design → 5 caveats verbatim,
+  76 rows, honest funnel line, D8 links encoded; select 2 + portfolio → generated prompt has all
+  tokens filled, iGavel CSV line identical to design.csv (RFC 4180 quoting); copy → "Copied ✓";
+  input edits hide the stale prompt; simulated fetch failure → plain-English DataError, retry
+  recovers. No console errors. JS tests + `/qa` leg stay deferred per the Build Plan.
+- **▶ NEXT ACTION — Increment 4:** the paste-JSON → validate → escape-render step (§5.5, §6.2) —
+  forgiving parse (strip ```json fences), tolerate missing fields with a soft note, ParseError
+  state, and the non-negotiable T-JS-3 property: a hostile field value renders as inert text.
+  Then **5** (CI `data.yml`, workflow_dispatch), **6** (docs closeout + owed bookkeeping).
+- **To run/serve locally:** `python scripts/run.py` regenerates `web/data/` + the template mirror
+  (needs a quarter's xlsx in `data/raw/` or its parquet in `data/processed/` — both gitignored,
+  dec.#33); serve the site with `python -m http.server` rooted at `web/` (browsers block `fetch()`
+  under `file://`, §13.3).
 - **Authority:** Notion [Build Plan](https://app.notion.com/p/39576356d6fe8110bc1ac9232074760a)
   (6 increments) + [Design Doc](https://app.notion.com/p/39476356d6fe81cda2d9fdf7f78c0dc2); the
   pivot off the earlier scheduled-fetch/parquet slice is `docs/decision_log.md` **dec. #33**.
@@ -65,8 +71,8 @@ superseded.
 | 1 | Data emit + same-generation guard (`build_shortlist.py` → `web/data/{design.json, provenance.json, csv}`; `run.py` reshape; `build_report.py` deleted; `_util`→`web/data`) | ✅ built + verified 2026-07-06 |
 | — | tests for Increment 1's emit (`tests/test_emit_unit.py`) | ✅ 12 green 2026-07-06 — closed §4.2 schema, null-wage→JSON null (F5), same-gen guard fires (F7); no reds |
 | 2 | Recommendations prompt template + caveats parity (`prompts/recommendations.md`, `scripts/check_caveats_parity.py`) | ✅ built (`0e2fbe9`); parity passes |
-| 3 | Site spine: fetch → shortlist → select → prompt-gen | ◻ **next** |
-| 4 | Results render (escape-render, security-critical) | ◻ not started |
+| 3 | Site spine: fetch → shortlist → select → prompt-gen (`web/{index.html,app.js,styles.css}`; `run.py` template mirror) | ✅ built + browser-verified 2026-07-17 |
+| 4 | Results render (escape-render, security-critical) | ◻ **next** |
 | 5 | CI + deploy (`data.yml`, workflow_dispatch) | ◻ not started |
 | 6 | Docs closeout + owed bookkeeping | ◻ not started |
 
