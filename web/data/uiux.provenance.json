@@ -3,11 +3,9 @@
   "source": "US DOL OFLC LCA Programs disclosure data (public record)",
   "filters": {
     "case_status": "Certified",
-    "role": "design",
+    "role": "uiux",
     "soc_codes": [
-      "15-1255",
-      "27-1024",
-      "27-1021"
+      "15-1255"
     ],
     "pw_wage_level": "I"
   },
@@ -23,11 +21,11 @@
   "funnel": {
     "rows_total": 201700,
     "rows_certified": 181277,
-    "rows_soc_matched": 1116,
-    "rows_selected": 95
+    "rows_soc_matched": 501,
+    "rows_selected": 34
   },
-  "employer_groups": 76,
-  "distinct_raw_employer_spellings": 76,
+  "employer_groups": 28,
+  "distinct_raw_employer_spellings": 28,
   "rows_wage_excluded_from_wage_stats": 0,
   "case_statuses_seen": {
     "CERTIFIED": 181277,
@@ -36,16 +34,15 @@
     "DENIED": 1433
   },
   "wage_levels_seen": {
-    "II": 428,
-    "IV": 293,
-    "III": 270,
-    "I": 95,
-    "": 30
+    "II": 227,
+    "III": 120,
+    "IV": 94,
+    "I": 34,
+    "": 26
   },
   "wage_units_seen": {
-    "YEAR": 63,
-    "HOUR": 31,
-    "MONTH": 1
+    "YEAR": 24,
+    "HOUR": 10
   },
   "caveats": [
     "An LCA certification is not a hire or an open role.",

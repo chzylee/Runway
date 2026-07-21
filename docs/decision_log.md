@@ -808,3 +808,144 @@ user's behalf — the same honesty rule the data side follows. Non-http schemes 
 
 **Checkable:** in the served site, `myname.com` in the portfolio field keeps Generate disabled
 and shows the hint; `https://myname.com` enables it once ≥1 company is checked.
+
+## 39. "UI/UX Design" is a second, narrower registered role — a subset view of "design", not a rename
+
+*2026-07-20, off-plan (owner: "my plan supersedes the Build Plan").*
+
+**Alternatives:** (a) just relabel the existing "design" dropdown entry to "UI/UX Design"; (b)
+narrow `ROLE_SOC["design"]` itself to only `15-1255` and rename it; (c) register a second,
+independent role.
+
+**Why (c):** the "design" role's 3 SOC codes (`15-1255` Web and Digital Interface Designers,
+`27-1024` Graphic Designers, `27-1021` Commercial/Industrial Designers, dec. #3) are broader
+than "UI/UX" — relabeling in place (a) would misdescribe graphic/industrial-design filings as
+UI/UX. Narrowing "design" itself (b) would silently shrink an existing shortlist. Instead
+"design" is untouched and a second role, `"uiux": ["15-1255"]`, is registered alongside it in
+`engine.ROLE_SOC` — two distinct dropdown entries, two distinct `web/data/*.json` shortlists,
+no company appears under a role it doesn't belong to.
+
+No SOC/O*NET code is scoped to "UI/UX" specifically — `15-1255` (Web and Digital Interface
+Designers) is the closest official match and what "UI/UX" colloquially means, so `uiux` reuses
+it verbatim rather than inventing a code. Per dec. #3's amendment, matching is by base code, so
+`uiux` also pulls in `15-1255`'s detail-suffix family (in practice: Video Game Designers,
+`15-1255.01`) — the same consequence "design" already has for that code, now owned explicitly
+for the narrower role too.
+
+This required generalizing the previously design-only `scripts/build_shortlist.py` (single
+`ROLE`/`JSON_PATH`/`PROVENANCE_PATH`/`CSV_PATH` constants) to a `build(role, ...)` that computes
+`web/data/<role>.{json,provenance.json,csv}` per role, plus `build_all()` which builds every
+key in `ROLE_SOC` — so a third role later is a registry entry, not another script rewrite.
+`scripts/run.py` now calls `build_all()`. The frontend SOC-titles column additionally annotates
+`Web and Digital Interface Designers` rows with "(UI/UX)" (`web/app.js` `renderRow`) so the
+official SOC title is legible against the colloquial term, in both roles' shortlists — display
+only, the underlying `soc_titles` data stays the DOL title verbatim.
+
+**Checkable:** `engine.sponsors.ROLE_SOC["uiux"] == ["15-1255"]`; after `python scripts/run.py`,
+`web/data/uiux.json` exists with `"role": "uiux"` and every employer's `soc_codes` contains only
+`15-1255`; `web/data/design.json` is unchanged (same `employer_groups` count as before this
+decision, since `ROLE_SOC["design"]` wasn't touched).
+
+## 40. The résumé input is a file path string, not pasted résumé text
+
+*2026-07-20, off-plan (owner: "resume should be a filepath").*
+
+**Alternatives:** (a) keep the pasted-text textarea (the original Increment-3 shape — Runway
+"reads no user file", so the applicant pastes the content themselves); (b) add real file upload
+(`<input type="file">` + `FileReader`) so the browser reads the résumé and its text is what
+fills the prompt.
+
+**Why neither:** (a) required the applicant to copy their résumé's text out of whatever authored
+it (Word, a PDF export, Google Docs) and into a browser textarea before every run — friction for
+no benefit once the target audience is "an applicant who may run this prompt through an agent
+with file access," not only a plain chat window. (b) would make Runway read a user's file for the
+first time, reversing the site's one deliberate boundary ("Runway never reads a user's file",
+README, `index.html` §5.2 comment) to save the applicant a few keystrokes — not worth it.
+
+**Resolved:** `#resume-input` is a plain text field for a file path (e.g.
+`/Users/you/Documents/resume.pdf`); `{{RESUME_OR_NONE}}` is filled with that path string
+verbatim, or `"none provided"`. Runway's own code never opens, reads, or validates the path —
+identical posture to the portfolio link (dec. #38): what the user typed is exactly what enters
+the prompt, no existence check, no silent rewriting. What happens with the path is up to whatever
+runs the prompt: an agent with file access can read it; a plain chat LLM just sees a string and is
+told (via `prompts/recommendations.md` §2) to proceed on the portfolio and shortlist alone if it
+can't resolve it.
+
+**Checkable:** in the served site, typing `/tmp/resume.pdf` into the résumé field and generating a
+prompt puts the literal text `/tmp/resume.pdf` in the `{{RESUME_OR_NONE}}` slot; leaving it blank
+puts `none provided`. `web/app.js` has no `FileReader`, no `<input type="file">`, no `fetch` of
+the path.
+
+## 41. PromptReady requires a portfolio link OR a résumé path, not portfolio specifically
+
+*2026-07-20, off-plan (owner: "doesnt need to mandate portfolio... resume or portfolio is
+required... to care for future titles").*
+
+**Alternatives:** (a) keep portfolio mandatory (Increment 3's original shape, dec. #38) now that
+a résumé path (dec. #40) is a second, comparably substantive input; (b) require both.
+
+**Why neither:** (a) makes no sense once the résumé field went from "reference only" (pasted
+text used solely to enrich the prompt) to a real second input path — an applicant with a strong
+résumé but no public portfolio (a real case for a future non-Design role, e.g. one where a
+portfolio link isn't the norm) had no way to reach Generate. (b) is stricter than the actual
+requirement: the prompt is useful with just one input, and a hard AND would block the same
+future-role case for the opposite reason.
+
+**Resolved:** PromptReady is now `>= 1 company selected AND (a valid portfolio URL OR a non-empty
+résumé path)`. Neither input is individually required; a portfolio value that's present but
+fails URL validation (dec. #38) still blocks Generate and shows the inline hint — that's a typo
+to fix, not a missing-input case, so it's kept strict. `web/index.html` §2 carries one explanatory
+note above both fields ("add at least one... both gives more to work with") rather than
+repeating the rule on each label. `{{PORTFOLIO}}` now has a fallback fill
+(`"no portfolio link provided"`) mirroring `{{RESUME_OR_NONE}}`'s `"none provided"`, and
+`prompts/recommendations.md` §"Inputs" tells the reviewer to work from whichever of the two is
+present rather than assuming both.
+
+**Checkable:** in the served site, leaving portfolio blank and only filling résumé path + selecting
+a company enables Generate; the resulting prompt's portfolio slot reads
+"no portfolio link provided". Typing a non-URL string (e.g. `not a url`) into portfolio with an
+empty résumé keeps Generate disabled and shows the inline "Enter a full link..." hint — it does
+NOT fall through to treating that as "portfolio absent."
+
+## 42. `web/app.js` gets a narrow, deliberately incomplete automated test suite
+
+*2026-07-20, owner call after "what do you think needs to be tested?"*
+
+**Alternatives:** (a) no automated JS tests at all — keep relying on a manual `/browse` pass
+after each change (what every prior UI increment did); (b) full coverage — sort, CSV
+serialization, DOM rendering, load/error states; (c) the narrow slice actually chosen.
+
+**Why (c):** Runway's web UI is static, single-user, no backend, no auth, no persistence — the
+worst failure mode of a UI bug is "the copied prompt is wrong or empty," not data loss or a
+breach. That ruled out (b): sort order, CSV formatting, and rendering details are cheap to get
+wrong but cheap for the user to notice and fix by re-copying, so testing them is a maintenance
+tax without a matching risk. It also ruled out (a) for exactly three spots that don't fit that
+"low stakes, user notices" profile:
+
+- **Escaping** (the v0 M13 lesson, carried into every DOL-sourced field in `renderRow`): a
+  regression here is a real client-side injection risk, not a cosmetic one, and the fix (swap
+  `textContent` for `innerHTML` "to allow some formatting") is exactly the kind of change that
+  looks harmless in review.
+- **Portfolio URL scheme validation** (`isValidPortfolioUrl`, dec. #38): blocks `javascript:`/
+  `data:` values from ever reaching the field — also security-relevant, also a one-line
+  regression risk.
+- **The `computePromptGate` branch logic** (dec. #41): ~6-8 states across two optional-but-
+  not-both-optional inputs, added the same day this decision was made — exactly the shape of
+  logic that silently breaks on a future one-line "fix" to a single branch.
+
+**Resolved:** added `vitest` + `jsdom` as dev-only dependencies (`package.json`), a
+`vitest.config.js` (jsdom environment, `web/**/*.test.js`), and `web/app.test.js` (17 cases).
+Required extracting two pure functions out of DOM-coupled ones so they're testable without a
+full page: `isValidPortfolioUrl(raw)` out of `portfolioUrl()`, and `computePromptGate({...})` out
+of `updatePromptGate()` — same behavior, DOM reads/writes now wrap the pure call instead of
+containing the branch logic. `renderRow` was already DOM-fragment-only (`document.createElement`,
+no full-page dependency), so it's tested directly. `web/app.js` is now an ES module (`export` on
+`state`/`isValidPortfolioUrl`/`computePromptGate`/`renderRow`; `index.html`'s `<script>` tag
+gained `type="module"`) and its bottom event-wiring block is guarded on `$("title-select")`
+existing, so importing the module in a test (no full DOM loaded) doesn't throw. Both changes are
+behavior-preserving on the served page — confirmed via `/browse` (role load, sort, prompt
+generation all unchanged, no console errors).
+
+**Checkable:** `npm test` runs `vitest run`; `npm run dev` still serves and behaves identically.
+`web/app.test.js`'s "does not fall through to the OR message when portfolio text is present but
+invalid" case is the regression pin for dec. #41's most subtle branch.

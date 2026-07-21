@@ -3,9 +3,12 @@
   "private": true,
   "description": "Dev-only tooling for web/ — the Python engine has its own toolchain (requirements.txt).",
   "scripts": {
-    "dev": "vite web --port 8000"
+    "dev": "vite web --port 8000",
+    "test": "vitest run"
   },
   "devDependencies": {
-    "vite": "^8.1.5"
+    "jsdom": "^29.1.1",
+    "vite": "^8.1.5",
+    "vitest": "^4.1.10"
   }
 }

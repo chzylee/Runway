@@ -35,6 +35,12 @@ REQUIRED_COLUMNS = [
 # treated equally; listing order carries no meaning.
 ROLE_SOC = {
     "design": ["15-1255", "27-1024", "27-1021"],
+    # Narrower subset view of "design" (dec. #39): no SOC/O*NET code is scoped to
+    # "UI/UX" specifically, so this reuses 15-1255 (Web and Digital Interface
+    # Designers) alone — the closest official match, and what "UI/UX" colloquially
+    # means. Same detail-suffix consequence as "design" (dec. #3 amendment):
+    # Video Game Designers (15-1255.01) is included too.
+    "uiux": ["15-1255"],
 }
 
 # Annualization multipliers for WAGE_UNIT_OF_PAY. A unit outside this map

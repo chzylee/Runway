@@ -3,11 +3,12 @@
     python scripts/run.py
 
 Converts any DOL xlsx dropped in data/raw/, builds and verifies the sponsor
-shortlist from every converted quarter, and emits the three public web/data/
-artifacts the static site consumes (design.json, design.provenance.json,
-design.csv). v1 has no HTML report - the site is the single presentation
-surface (Design Doc D3), served with `python -m http.server` rooted at web/.
-Runway never calls an LLM and, in v1, never reads a user's file.
+shortlist from every converted quarter, and emits three public web/data/
+artifacts per registered role (engine.ROLE_SOC) the static site consumes:
+<role>.json, <role>.provenance.json, <role>.csv. v1 has no HTML report - the
+site is the single presentation surface (Design Doc D3), served locally with
+`npm run dev` (see README) - Runway never calls an LLM and, in v1, never
+reads a user's file.
 """
 import argparse
 
@@ -60,9 +61,11 @@ def main():
     # so it lands even if the convert step later stops the run.
     mirror_prompt_template()
     convert_quarters.convert_all(force=args.force_convert)
-    build_shortlist.build(requested_quarters=requested)
+    built = build_shortlist.build_all(requested_quarters=requested)
     print("[run] done:")
-    print("[run]   web/data/design.json             site data (+ .provenance.json, .csv)")
+    for role in built:
+        print(f"[run]   web/data/{role}.json" + " " * max(1, 22 - len(role))
+              + "site data (+ .provenance.json, .csv)")
     print("[run]   web/prompts/recommendations.md   prompt-template mirror (do not edit)")
     print("[run]   serve locally: python -m http.server  (rooted at web/)")
 

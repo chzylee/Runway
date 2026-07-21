@@ -57,6 +57,7 @@ label { display: block; font-weight: 600; margin-bottom: 0.3rem; }
 
 select,
 input[type="url"],
+input[type="text"],
 textarea {
   font: inherit;
   color: inherit;
@@ -67,7 +68,8 @@ textarea {
 }
 
 select { min-width: 14rem; }
-input[type="url"] { width: 100%; max-width: 34rem; }
+input[type="url"],
+input[type="text"] { width: 100%; max-width: 34rem; }
 textarea { width: 100%; resize: vertical; }
 
 .hint { font-size: 0.88rem; color: var(--muted); margin: 0.4rem 0 0; }
@@ -97,6 +99,10 @@ textarea { width: 100%; resize: vertical; }
 
 .table-wrap {
   overflow-x: auto;
+  overflow-y: auto;
+  /* Capped so a long shortlist never pushes "Generate prompt" far down the
+   * page — the table scrolls internally instead of the whole page. */
+  max-height: 26rem;
   border: 1px solid var(--line);
   border-radius: 6px;
 }
@@ -114,7 +120,17 @@ thead th {
   border-top: 0;
   background: #f4f6f8;
   white-space: nowrap;
+  /* Stays visible while the body scrolls inside the capped-height wrapper. */
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
+
+thead th[data-sort-key] { cursor: pointer; user-select: none; }
+thead th[data-sort-key]:hover { background: #e9edf2; }
+thead th[data-sort-key]::after { content: " ↕"; opacity: 0.35; font-size: 0.85em; }
+thead th[data-sort-key].sorted-asc::after { content: " ▲"; opacity: 1; }
+thead th[data-sort-key].sorted-desc::after { content: " ▼"; opacity: 1; }
 
 th.num, td.num {
   text-align: right;

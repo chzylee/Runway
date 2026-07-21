@@ -34,10 +34,10 @@ shortlist traces back to a public DOL filing, and the advice step runs in
 
 ## Run it locally
 
-The site's data (`web/data/design.{json,csv}` and the prompt mirror in
-`web/prompts/`) is committed to the repo, so a fresh clone already has
-everything the UI needs — no Python setup, no DOL download, required just to
-work on the site.
+The site's data (`web/data/<role>.{json,csv}` per registered role, and the
+prompt mirror in `web/prompts/`) is committed to the repo, so a fresh clone
+already has everything the UI needs — no Python setup, no DOL download,
+required just to work on the site.
 
 Requires [Node.js](https://nodejs.org/).
 
@@ -50,20 +50,32 @@ This starts a [Vite](https://vite.dev) dev server rooted at `web/` on
 `http://localhost:8000` with hot reload — editing `index.html`, `app.js`, or
 `styles.css` refreshes the browser automatically, no manual reload.
 
+`npm test` runs the JS test suite (`vitest` + `jsdom`) — a deliberately narrow
+set of checks on `web/app.js`: DOM escaping, portfolio URL scheme validation,
+and the PromptReady gate's branch logic. It does not cover sort order, CSV
+formatting, or rendering details on purpose — see `docs/decision_log.md`
+dec. #42 for why.
+
 (The Python engine that produces `web/data/` from raw DOL filings is a
 separate, occasional job — see `docs/build_status.md` — not part of the
 day-to-day UI workflow.)
 
 ## Using the site
 
-1. **Pick a role.** v1 has one role wired (Design); picking it fetches
-   `data/design.json` and shows the shortlist.
+1. **Pick a role.** Two are wired: **Design** (web/digital interface, graphic,
+   and commercial/industrial design filings) and **UI/UX Design** (a narrower
+   role scoped to just web/digital-interface-designer filings — no distinct
+   SOC/O*NET code exists for "UI/UX" specifically, so this is the closest
+   official match). Picking one fetches its own `data/<role>.json` and shows
+   that role's shortlist; the two shortlists are independent, not a filter of
+   one another. In the shortlist table, a row whose SOC title is "Web and
+   Digital Interface Designers" is annotated "(UI/UX)" for legibility.
 2. **Add your inputs.** A portfolio link (required, validated as a URL) and,
    optionally, pasted résumé text. The résumé stays in the browser's memory —
    there is no upload and nothing is sent to a server.
 3. **Select target companies** from the shortlist table (checkboxes). The
    caveats above the table and the funnel line are rendered verbatim from
-   `design.json` — nothing about what a filing means is hardcoded in the UI.
+   `<role>.json` — nothing about what a filing means is hardcoded in the UI.
 4. **Generate the prompt.** Once ≥1 company is selected and the portfolio URL
    is valid, "Generate prompt" fills `prompts/recommendations.md` with your
    selections and shows it in a copy box. Any input change invalidates an
@@ -74,10 +86,10 @@ day-to-day UI workflow.)
 
 ## When something goes wrong
 
-- **"Couldn't load the shortlist"** in the browser — usually means
-  `web/data/design.json` is missing or malformed. On a normal clone this
-  shouldn't happen (the file is committed); if you've been editing the data
-  pipeline, re-check `scripts/run.py`'s output.
+- **"Couldn't load the shortlist"** in the browser — usually means the
+  selected role's `web/data/<role>.json` is missing or malformed. On a normal
+  clone this shouldn't happen (the files are committed); if you've been
+  editing the data pipeline, re-check `scripts/run.py`'s output.
 - Anything from the Python engine (`engine/`, `scripts/`) — see
   `docs/build_status.md`; it's a separate, occasional job from the UI
   workflow above.
@@ -91,7 +103,7 @@ day-to-day UI workflow.)
 - Career/portfolio guidance, not immigration legal advice.
 
 These live in exactly one place — `engine/_util.py`'s `CAVEATS` — and are
-emitted verbatim into `design.json` and mirrored into
+emitted verbatim into every role's `<role>.json` and mirrored into
 `prompts/recommendations.md` (`scripts/check_caveats_parity.py` enforces the
 two never drift apart).
 
@@ -99,18 +111,20 @@ two never drift apart).
 
 ```
 web/                         the static site: index.html + app.js + styles.css
-web/data/                    committed, site-served shortlist artifacts (design.json/csv/provenance)
+web/app.test.js              narrow vitest suite: escaping, URL validation, PromptReady gate (dec. #42)
+web/data/                    committed, site-served shortlist artifacts, per role (design.*, uiux.*)
 web/prompts/                 build-written mirror of prompts/recommendations.md (do not hand-edit)
-package.json                 dev-only Node tooling (Vite) for `npm run dev` — web/ only
+package.json                 dev-only Node tooling (Vite + vitest) for `npm run dev` / `npm test` — web/ only
+vitest.config.js             jsdom test environment, scoped to web/**/*.test.js
 
 prompts/recommendations.md   reviewer prompt template (single source; filled client-side, run by you)
 
-engine/sponsors.py           deterministic engine: filter + aggregate (no LLM, no HTML)
+engine/sponsors.py           deterministic engine: filter + aggregate (no LLM, no HTML); ROLE_SOC is the role registry
 engine/verify.py             in-pipeline checks; a failed check stops the run
 scripts/convert_quarters.py  raw DOL xlsx -> narrow parquet (streamed)
-scripts/build_shortlist.py   engine -> web/data/design.{json,csv} (+ provenance)
+scripts/build_shortlist.py   engine -> web/data/<role>.{json,csv} (+ provenance), one role at a time or build_all()
 scripts/check_caveats_parity.py  asserts prompts/recommendations.md's caveats match engine/_util.CAVEATS
-scripts/run.py               regenerates web/data/ + the prompt mirror from raw DOL filings (occasional, not part of UI dev)
+scripts/run.py               regenerates web/data/ (every role) + the prompt mirror from raw DOL filings (occasional, not part of UI dev)
 data/raw/                    you drop DOL xlsx here            (gitignored)
 data/processed/               derived parquet, regenerable      (gitignored)
 

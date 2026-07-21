@@ -20,11 +20,22 @@ advice.
 
 ## Inputs
 
-### 1. The applicant's portfolio
+At least one of the portfolio link and the résumé path below is present (dec. #41)
+— Runway requires one or the other, never neither. If one reads `no portfolio link
+provided` / `none provided`, work from whichever of the two you do have, plus the
+shortlist rows; don't invent facts to fill the gap.
+
+### 1. The applicant's portfolio (may be absent — see above)
 
 {{PORTFOLIO}}
 
-### 2. The applicant's résumé (optional)
+### 2. The applicant's résumé (optional — see above)
+
+This is a **file path**, not résumé content — Runway's site never reads the file
+itself (dec. #40). If you have file access and the path below resolves, read it
+and use it. If you don't have file access, or it's `none provided`, proceed
+using whatever of the portfolio and shortlist rows is available — don't guess at
+résumé content.
 
 {{RESUME_OR_NONE}}
 

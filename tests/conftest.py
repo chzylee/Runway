@@ -87,9 +87,7 @@ def emit_env(tmp_path, monkeypatch):
     monkeypatch.setattr(convert_quarters, "DATA_PROCESSED", processed)
     monkeypatch.setattr(convert_quarters, "ensure_dirs", lambda: None)
     monkeypatch.setattr(build_shortlist, "DATA_PROCESSED", processed)
-    monkeypatch.setattr(build_shortlist, "JSON_PATH", webdata / "design.json")
-    monkeypatch.setattr(build_shortlist, "PROVENANCE_PATH", webdata / "design.provenance.json")
-    monkeypatch.setattr(build_shortlist, "CSV_PATH", webdata / "design.csv")
+    monkeypatch.setattr(build_shortlist, "WEB_DATA", webdata)
     monkeypatch.setattr(build_shortlist, "ensure_dirs", lambda: None)
     monkeypatch.setattr(_util, "REPO_ROOT", tmp_path)
 

@@ -1,16 +1,19 @@
-"""Build the public web/data/ artifacts for the design role from converted quarters.
+"""Build the public web/data/ artifacts for each registered role (engine.ROLE_SOC)
+from converted quarters.
 
 Runs the engine over every quarter found in data/processed/, verifies the result
-(a failed check stops the run), and emits the three committed site artifacts the
-GitHub Pages frontend consumes (Design Doc §4.2, §7, D9):
+(a failed check stops the run), and emits, per role, the three committed site
+artifacts the frontend consumes (Design Doc §4.2, §7, D9; dec. #39 for the
+per-role generalization):
 
-  web/data/design.json             the closed §4.2 schema the site fetch()es
-  web/data/design.provenance.json  the full audit/provenance object
-  web/data/design.csv              the public shortlist download (v0 CSV columns)
+  web/data/<role>.json             the closed §4.2 schema the site fetch()es
+  web/data/<role>.provenance.json  the full audit/provenance object
+  web/data/<role>.csv              the public shortlist download (v0 CSV columns)
 
-All three are written in ONE job (#10 — the build identity is the CSV<->provenance
-binding), guarded by a same-generation assertion (§4.3). The emit only SERIALIZES
-what the engine already returned; it never recomputes the shortlist.
+All three (per role) are written in ONE job (#10 — the build identity is the
+CSV<->provenance binding), guarded by a same-generation assertion (§4.3). The
+emit only SERIALIZES what the engine already returned; it never recomputes the
+shortlist.
 """
 import argparse
 import json
@@ -25,12 +28,13 @@ from engine import RunwayError
 from engine.sponsors import ROLE_SOC, build_sponsor_table, load_quarters
 from engine.verify import run_all
 
-JSON_PATH = WEB_DATA / "design.json"
-PROVENANCE_PATH = WEB_DATA / "design.provenance.json"
-CSV_PATH = WEB_DATA / "design.csv"
-
-ROLE = "design"
+ROLE = "design"        # default role for a plain build() call — kept for callers/tests
+                        # that only care about the one role they name.
 WAGE_LEVEL = "I"
+
+
+def _role_paths(role):
+    return (WEB_DATA / f"{role}.json", WEB_DATA / f"{role}.provenance.json", WEB_DATA / f"{role}.csv")
 
 # The employer row columns, in order — exactly the v0 CSV columns (Design Doc §4.2
 # employers[] = "exactly the v0 CSV columns"). Kept explicit so the closed schema is
@@ -63,17 +67,18 @@ def _employer_records(table):
     return records
 
 
-def build(requested_quarters=None):
+def build(role=ROLE, requested_quarters=None):
     ensure_dirs()
+    json_path, provenance_path, csv_path = _role_paths(role)
     quarters = load_quarters(DATA_PROCESSED, requested_quarters)
-    print(f"[shortlist] quarters loaded: {', '.join(sorted(quarters))}")
+    print(f"[shortlist:{role}] quarters loaded: {', '.join(sorted(quarters))}")
 
-    table, stats = build_sponsor_table(ROLE_SOC[ROLE], WAGE_LEVEL, quarters)
+    table, stats = build_sponsor_table(ROLE_SOC[role], WAGE_LEVEL, quarters)
     for dropped, kept in sorted(stats["quarters_superseded"].items()):
-        print(f"[shortlist] {dropped} superseded by cumulative {kept} (same fiscal year; "
+        print(f"[shortlist:{role}] {dropped} superseded by cumulative {kept} (same fiscal year; "
               "DOL files are FYTD) - using the latest to avoid double-counting")
     for check in run_all(table, stats, quarters):
-        print(f"[verify] {check.status:4} {check.name} - {check.detail}")
+        print(f"[verify:{role}] {check.status:4} {check.name} - {check.detail}")
 
     generated_at = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     source = "US DOL OFLC LCA Programs disclosure data (public record)"
@@ -85,8 +90,8 @@ def build(requested_quarters=None):
         "source": source,
         "filters": {
             "case_status": "Certified",
-            "role": ROLE,
-            "soc_codes": ROLE_SOC[ROLE],
+            "role": role,
+            "soc_codes": ROLE_SOC[role],
             "pw_wage_level": WAGE_LEVEL,
         },
         "quarters_used": stats["quarters"],
@@ -119,12 +124,12 @@ def build(requested_quarters=None):
         )
 
     site_data = {
-        "role": ROLE,
+        "role": role,
         "generated_at_utc": generated_at,
         "source": source,
         "filters": {
             "case_status": "Certified",
-            "soc_codes": ROLE_SOC[ROLE],
+            "soc_codes": ROLE_SOC[role],
             "pw_wage_level": WAGE_LEVEL,
         },
         "quarters_used": stats["quarters"],
@@ -142,22 +147,28 @@ def build(requested_quarters=None):
     }
 
     # All three written in one job (#10): the CSV is the v0 public download, provenance
-    # the audit token, design.json the site's single fetch.
-    table.to_csv(CSV_PATH, index=False, encoding="utf-8", lineterminator="\n")
-    PROVENANCE_PATH.write_text(json.dumps(provenance, indent=2, ensure_ascii=False) + "\n",
+    # the audit token, <role>.json the site's single fetch.
+    table.to_csv(csv_path, index=False, encoding="utf-8", lineterminator="\n")
+    provenance_path.write_text(json.dumps(provenance, indent=2, ensure_ascii=False) + "\n",
                                encoding="utf-8")
-    JSON_PATH.write_text(json.dumps(site_data, indent=2, ensure_ascii=False) + "\n",
+    json_path.write_text(json.dumps(site_data, indent=2, ensure_ascii=False) + "\n",
                          encoding="utf-8")
 
     print(
-        f"[shortlist] {stats['employer_groups']} employers / {stats['rows_selected']} filings "
-        f"-> {JSON_PATH.relative_to(_util.REPO_ROOT)} (+ .provenance.json, .csv)"
+        f"[shortlist:{role}] {stats['employer_groups']} employers / {stats['rows_selected']} filings "
+        f"-> {json_path.relative_to(_util.REPO_ROOT)} (+ .provenance.json, .csv)"
     )
     return table, stats
 
 
+def build_all(requested_quarters=None):
+    """Build every registered role's site artifacts (engine.ROLE_SOC is the registry —
+    adding a role there is enough for it to show up here, dec. #3/#39)."""
+    return {role: build(role=role, requested_quarters=requested_quarters) for role in ROLE_SOC}
+
+
 def main():
-    parser = argparse.ArgumentParser(description="Build the Level-I design sponsor shortlist.")
+    parser = argparse.ArgumentParser(description="Build the Level-I sponsor shortlists for every registered role.")
     parser.add_argument(
         "--quarters",
         help="comma-separated quarters you expect, e.g. FY2025Q4,FY2026Q1; the run stops with "
@@ -165,7 +176,7 @@ def main():
     )
     args = parser.parse_args()
     requested = [q for q in (args.quarters or "").split(",") if q.strip()] or None
-    build(requested_quarters=requested)
+    build_all(requested_quarters=requested)
 
 
 if __name__ == "__main__":

@@ -3,19 +3,29 @@
 /* Runway v1 site spine (Increment 3): fetch -> shortlist -> select -> prompt-gen.
  *
  * Static only. No backend, no database, no Runway-side LLM call, no user-file
- * read: the résumé is textarea text held in this page's memory and filled into
- * the prompt the user copies — there is no server for it to go to.
+ * read: the résumé input is a FILE PATH STRING (dec. #40), never file content —
+ * Runway doesn't open it, doesn't read it, there is no upload and no server for
+ * it to go to.
  *
  * Every data-derived value reaches the DOM via textContent / value, never
  * innerHTML — the v0 M13 escaping lesson, carried forward before Increment 4
  * extends it to the pasted LLM result.
  */
 
-const DATA_URL = "data/design.json";
+// Each registered role (dec. #39) is a sibling data file: data/<role>.json.
+// Keep in sync with the <option value="..."> list in index.html.
+const ROLE_LABELS = { design: "Design", uiux: "UI/UX Design" };
+const KNOWN_ROLES = new Set(Object.keys(ROLE_LABELS));
+const dataUrlFor = (role) => `data/${role}.json`;
 // Build-written mirror of the repo's prompts/recommendations.md (single source,
 // D5): the server root is web/, so the repo-root original is unreachable from
 // here. scripts/run.py rewrites the mirror on every build (dec. #35).
 const TEMPLATE_URL = "prompts/recommendations.md";
+
+// The official SOC title for what's colloquially called "UI/UX" (dec. #39) —
+// annotated in the shortlist table so the DOL wording and the recognizable term
+// both read clearly. Display only; the underlying soc_titles data is untouched.
+const UIUX_SOC_TITLE = "Web and Digital Interface Designers";
 
 // {{SELECTED_ROWS}} uses exactly the design.csv columns, in design.csv order,
 // so the prompt's rows match the public download byte-for-word (dec. #36).
@@ -28,12 +38,44 @@ const CSV_COLUMNS = [
 
 const TOKENS = ["{{SELECTED_ROWS}}", "{{PORTFOLIO}}", "{{RESUME_OR_NONE}}"];
 
-const state = {
-  data: null,          // parsed design.json (null until a role is loaded)
-  template: null,      // fetched prompt template, cached after first success
-  selected: new Set(), // `employer` keys — the aggregation key, unique per row
-  resumeText: "",
+export const state = {
+  role: null,           // the loaded role's value, e.g. "design" | "uiux"
+  data: null,           // parsed <role>.json (null until a role is loaded)
+  template: null,       // fetched prompt template, cached after first success
+  selected: new Set(),  // `employer` keys — the aggregation key, unique per row
+  resumePath: "",       // a file path string, never file content (dec. #40)
+  sort: { key: null, dir: 1 }, // shortlist table sort: null key = DOL/engine order
 };
+
+// Column -> comparable value, for the sortable shortlist table. `filing_count`
+// and `wage_annual_median` sort numerically; the rest sort as case-folded text.
+// wage_annual_median may be null (excluded from stats, dec. #37) — sortedEmployers
+// always pushes null to the end, in either direction, rather than treating it as 0.
+const SORT_ACCESSORS = {
+  employer_display: (e) => e.employer_display.toLowerCase(),
+  filing_count: (e) => e.filing_count,
+  quarters: (e) => e.quarters,
+  repeat_sponsor: (e) => (e.repeat_sponsor === "yes" ? 1 : 0),
+  soc_titles: (e) => e.soc_titles.toLowerCase(),
+  worksite_states: (e) => e.worksite_states,
+  wage_annual_median: (e) => e.wage_annual_median,
+};
+
+function sortedEmployers(employers) {
+  const { key, dir } = state.sort;
+  if (!key) return employers;
+  const accessor = SORT_ACCESSORS[key];
+  return [...employers].sort((a, b) => {
+    const av = accessor(a);
+    const bv = accessor(b);
+    if (av == null && bv == null) return 0;
+    if (av == null) return 1;
+    if (bv == null) return -1;
+    if (av < bv) return -dir;
+    if (av > bv) return dir;
+    return 0;
+  });
+}
 
 const $ = (id) => document.getElementById(id);
 const fmt = (n) => Number(n).toLocaleString("en-US");
@@ -48,17 +90,21 @@ function setLoadState(mode, message) {
   if (mode === "error") $("load-error-message").textContent = message;
 }
 
-async function loadShortlist() {
+async function loadShortlist(role) {
+  state.role = role;
+  const dataUrl = dataUrlFor(role);
   setLoadState("loading");
   try {
-    const res = await fetch(DATA_URL, { cache: "no-cache" });
-    if (!res.ok) throw new Error(`HTTP ${res.status} for ${DATA_URL}`);
+    const res = await fetch(dataUrl, { cache: "no-cache" });
+    if (!res.ok) throw new Error(`HTTP ${res.status} for ${dataUrl}`);
     const data = await res.json();
     if (!Array.isArray(data.employers) || !Array.isArray(data.caveats)) {
-      throw new Error(`${DATA_URL} is missing employers[]/caveats[]`);
+      throw new Error(`${dataUrl} is missing employers[]/caveats[]`);
     }
     state.data = data;
     state.selected.clear();
+    state.sort = { key: null, dir: 1 };
+    updateSortIndicators();
     renderShortlist(data);
     setLoadState("idle");
     for (const id of ["section-inputs", "section-shortlist", "section-prompt"]) {
@@ -68,7 +114,7 @@ async function loadShortlist() {
   } catch (err) {
     // Plain-English failure, never a stack trace or a blank page.
     console.error(err);
-    setLoadState("error", "Couldn't load the shortlist. Retry, or check that web/data/design.json exists.");
+    setLoadState("error", `Couldn't load the shortlist. Retry, or check that web/${dataUrl} exists.`);
   }
 }
 
@@ -96,31 +142,40 @@ function renderShortlist(data) {
       "The Repeat column needs filings in at least two fiscal years, so it stays empty until more data lands.";
   }
 
-  const body = $("shortlist-body");
-  body.replaceChildren();
-  for (const employer of data.employers) body.appendChild(renderRow(employer));
-
+  renderTableBody(data.employers);
   renderFunnelLine(data);
 
   const prov = $("provenance-line");
   prov.replaceChildren();
   prov.append(`Source: ${data.source} · generated ${data.generated_at_utc} · `);
   const provLink = document.createElement("a");
-  provLink.href = "data/design.provenance.json";
+  provLink.href = `data/${state.role}.provenance.json`;
   provLink.textContent = "provenance";
   const csvLink = document.createElement("a");
-  csvLink.href = "data/design.csv";
+  csvLink.href = `data/${state.role}.csv`;
   csvLink.textContent = "download the shortlist (CSV)";
   prov.append(provLink, " · ", csvLink);
 }
 
-function renderRow(employer) {
+function renderTableBody(employers) {
+  // Re-run on every sort click (state.data.employers itself is never reordered)
+  // as well as on a fresh load — either way, selection is keyed by `employer`
+  // (renderRow reads state.selected), so re-sorting never drops a checked row.
+  const body = $("shortlist-body");
+  body.replaceChildren();
+  for (const employer of sortedEmployers(employers)) body.appendChild(renderRow(employer));
+}
+
+export function renderRow(employer) {
   const tr = document.createElement("tr");
+  const isSelected = state.selected.has(employer.employer);
+  tr.classList.toggle("selected", isSelected);
 
   const tdSelect = document.createElement("td");
   tdSelect.className = "center";
   const checkbox = document.createElement("input");
   checkbox.type = "checkbox";
+  checkbox.checked = isSelected;
   checkbox.setAttribute("aria-label", `target ${employer.employer_display}`);
   checkbox.addEventListener("change", () => {
     if (checkbox.checked) state.selected.add(employer.employer);
@@ -153,8 +208,12 @@ function renderRow(employer) {
   tdRepeat.className = "center";
   tdRepeat.textContent = employer.repeat_sponsor === "yes" ? "✓" : "";
 
+  // Annotate the recognizable "UI/UX" term next to its official SOC title
+  // (dec. #39) — display only, employer.soc_titles itself stays DOL-verbatim.
   const tdSoc = document.createElement("td");
-  tdSoc.textContent = employer.soc_titles;
+  tdSoc.textContent = employer.soc_titles.includes(UIUX_SOC_TITLE)
+    ? `${employer.soc_titles} (UI/UX)`
+    : employer.soc_titles;
 
   const tdStates = document.createElement("td");
   tdStates.textContent = employer.worksite_states;
@@ -179,46 +238,90 @@ function renderFunnelLine(data) {
   $("funnel-line").textContent =
     `${(data.quarters_used || []).join(" + ")}: ${fmt(f.rows_total)} filings in the raw data` +
     ` → ${fmt(f.rows_certified)} certified` +
-    ` → ${fmt(f.rows_soc_matched)} in the design SOC codes` +
+    ` → ${fmt(f.rows_soc_matched)} in the ${ROLE_LABELS[data.role] || data.role} SOC codes` +
     ` → ${fmt(f.rows_selected)} at entry wage (Level ${wageLevel})` +
     ` → ${fmt(data.employers.length)} employers after grouping.`;
 }
 
-/* ------------------------------------------------------------- inputs */
+function setSort(key) {
+  if (!state.data) return;
+  state.sort = state.sort.key === key
+    ? { key, dir: -state.sort.dir }
+    : { key, dir: 1 };
+  updateSortIndicators();
+  renderTableBody(state.data.employers);
+}
 
-function portfolioUrl() {
-  // "Validated as a URL": the URL constructor must accept it and the scheme
-  // must be http(s) — nothing else belongs in a portfolio link (dec. #38).
-  // No silent rewriting: what the user typed is what enters the prompt.
-  const raw = $("portfolio-input").value.trim();
-  if (!raw) return null;
-  try {
-    const url = new URL(raw);
-    return url.protocol === "https:" || url.protocol === "http:" ? raw : null;
-  } catch {
-    return null;
+function updateSortIndicators() {
+  for (const th of document.querySelectorAll("#shortlist-table th[data-sort-key]")) {
+    const active = th.dataset.sortKey === state.sort.key;
+    th.classList.toggle("sorted-asc", active && state.sort.dir === 1);
+    th.classList.toggle("sorted-desc", active && state.sort.dir === -1);
   }
 }
 
+/* ------------------------------------------------------------- inputs */
+
+// "Validated as a URL": the URL constructor must accept it and the scheme must
+// be http(s) — nothing else belongs in a portfolio link (dec. #38). Rejects
+// javascript:/data:/bare-domain-no-scheme values; a security-relevant check
+// (dec. #42), not just a format nicety, since this value ends up in an <a>-free
+// context (plain text in the copied prompt) but is exactly the kind of input
+// validation worth pinning against regression.
+export function isValidPortfolioUrl(raw) {
+  if (!raw) return false;
+  try {
+    const url = new URL(raw);
+    return url.protocol === "https:" || url.protocol === "http:";
+  } catch {
+    return false;
+  }
+}
+
+function portfolioUrl() {
+  // No silent rewriting: what the user typed is what enters the prompt.
+  const raw = $("portfolio-input").value.trim();
+  return isValidPortfolioUrl(raw) ? raw : null;
+}
+
 function updateResumeState() {
-  state.resumeText = $("resume-input").value;
-  const trimmed = state.resumeText.trim();
+  state.resumePath = $("resume-input").value;
+  const trimmed = state.resumePath.trim();
   $("resume-state").textContent = trimmed
-    ? `Résumé attached — ${fmt(trimmed.length)} characters, held only in this browser.`
-    : "No résumé attached.";
+    ? `Résumé path noted: ${trimmed}`
+    : "No résumé path provided.";
 }
 
 /* --------------------------------------------------------- prompt-gen */
 
-function updatePromptGate() {
-  // PromptReady = >=1 company selected AND a valid portfolio URL present.
-  const portfolio = portfolioUrl();
-  const raw = $("portfolio-input").value.trim();
-  $("portfolio-hint").hidden = !raw || portfolio !== null;
-
+// Pure branch logic for the PromptReady gate (dec. #41), decoupled from the DOM
+// so it's directly unit-testable — >= 1 company selected AND (a valid portfolio
+// URL OR a résumé path). Neither input is required alone, but at least one
+// must be present; a non-empty, invalid portfolio value still blocks (that's a
+// typo to fix, not a missing-input case) rather than silently falling through
+// to "use the résumé instead."
+export function computePromptGate({ portfolioRaw, portfolioValid, resumePath, selectedCount }) {
+  const portfolioInvalid = portfolioRaw !== "" && !portfolioValid;
   const missing = [];
-  if (state.selected.size === 0) missing.push("select at least one company in the table");
-  if (portfolio === null) missing.push("add your portfolio link (https://…)");
+  if (selectedCount === 0) missing.push("select at least one company in the table");
+  if (portfolioInvalid) {
+    missing.push("fix your portfolio link (https://…)");
+  } else if (!portfolioValid && !resumePath) {
+    missing.push("add a portfolio link or a résumé path — at least one");
+  }
+  return { missing, portfolioInvalid };
+}
+
+function updatePromptGate() {
+  const portfolioRaw = $("portfolio-input").value.trim();
+  const resumePath = $("resume-input").value.trim();
+  const { missing, portfolioInvalid } = computePromptGate({
+    portfolioRaw,
+    portfolioValid: isValidPortfolioUrl(portfolioRaw),
+    resumePath,
+    selectedCount: state.selected.size,
+  });
+  $("portfolio-hint").hidden = !portfolioInvalid;
 
   $("generate-btn").disabled = missing.length > 0;
   $("prompt-gate-hint").textContent = missing.length
@@ -263,8 +366,8 @@ async function generatePrompt() {
   // made while the fetch was in flight.
   const portfolio = portfolioUrl();
   const selectedRowsCsv = buildSelectedRowsCsv();
-  const resume = state.resumeText.trim();
-  if (portfolio === null || state.selected.size === 0) return;
+  const resumePath = state.resumePath.trim();
+  if ((portfolio === null && !resumePath) || state.selected.size === 0) return;
 
   showPromptStatus("Fetching the prompt template…", false);
   try {
@@ -279,12 +382,13 @@ async function generatePrompt() {
       state.template = template;
     }
 
-    // split/join, not replace(): the résumé may legitimately contain `$&`-style
-    // sequences that String.replace would treat as substitution patterns.
+    // split/join, not replace(): a path or the CSV rows could legitimately
+    // contain `$&`-style sequences that String.replace would treat as
+    // substitution patterns.
     const filled = state.template
       .split("{{SELECTED_ROWS}}").join(selectedRowsCsv)
-      .split("{{PORTFOLIO}}").join(portfolio)
-      .split("{{RESUME_OR_NONE}}").join(resume || "none provided");
+      .split("{{PORTFOLIO}}").join(portfolio || "no portfolio link provided")
+      .split("{{RESUME_OR_NONE}}").join(resumePath || "none provided");
 
     $("prompt-output").value = filled;
     $("prompt-box").hidden = false;
@@ -326,14 +430,44 @@ async function copyPrompt() {
 
 /* --------------------------------------------------------------- wire */
 
-$("title-select").addEventListener("change", (event) => {
-  if (event.target.value === "design") loadShortlist();
-});
-$("retry-btn").addEventListener("click", loadShortlist);
-$("portfolio-input").addEventListener("input", updatePromptGate);
-$("resume-input").addEventListener("input", () => {
-  updateResumeState();
-  updatePromptGate();
-});
-$("generate-btn").addEventListener("click", generatePrompt);
-$("copy-btn").addEventListener("click", copyPrompt);
+// Guarded so this module can be imported in a test environment that doesn't
+// load the full index.html DOM (the vitest suite imports pure/DOM-fragment
+// functions like renderRow/computePromptGate directly, not the whole page).
+// On the real served page #title-select always exists, so this is always true.
+if ($("title-select")) {
+  $("title-select").addEventListener("change", (event) => {
+    const role = event.target.value;
+    $("find-btn").disabled = !KNOWN_ROLES.has(role);
+    // The dropdown moved off the role the visible sections were built for —
+    // hide them again rather than leave a shortlist on screen that no longer
+    // matches the selector; "Find sponsoring companies" is what shows it again.
+    if (state.role !== null && role !== state.role) {
+      for (const id of ["section-inputs", "section-shortlist", "section-prompt"]) {
+        $(id).hidden = true;
+      }
+      setLoadState("idle");
+    }
+  });
+  $("find-btn").addEventListener("click", () => {
+    const role = $("title-select").value;
+    if (KNOWN_ROLES.has(role)) loadShortlist(role);
+  });
+  $("retry-btn").addEventListener("click", () => loadShortlist(state.role));
+  $("portfolio-input").addEventListener("input", updatePromptGate);
+  $("resume-input").addEventListener("input", () => {
+    updateResumeState();
+    updatePromptGate();
+  });
+  $("generate-btn").addEventListener("click", generatePrompt);
+  $("copy-btn").addEventListener("click", copyPrompt);
+
+  for (const th of document.querySelectorAll("#shortlist-table th[data-sort-key]")) {
+    th.addEventListener("click", () => setSort(th.dataset.sortKey));
+    th.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        setSort(th.dataset.sortKey);
+      }
+    });
+  }
+}

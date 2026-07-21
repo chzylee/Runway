@@ -18,15 +18,18 @@
   </header>
 
   <main>
-    <!-- Section 1 — title select (Design Doc §5.1). v1 has one real entry;
-         a second role is a sibling data file, not a refactor (D2). -->
+    <!-- Section 1 — title select (Design Doc §5.1). A role is a sibling data file
+         (D2) — "uiux" is dec. #39's second registered role, a narrower, distinct
+         shortlist alongside "design", not a rename of it. -->
     <section id="section-title">
       <h2>1 · Pick a role</h2>
       <label for="title-select">Role</label>
       <select id="title-select">
         <option value="">— pick a role —</option>
         <option value="design">Design</option>
+        <option value="uiux">UI/UX Design</option>
       </select>
+      <button id="find-btn" type="button" disabled>Find sponsoring companies</button>
       <p id="load-status" class="hint" hidden></p>
       <div id="load-error" class="callout error-callout" hidden>
         <p id="load-error-message"></p>
@@ -40,12 +43,19 @@
       </div>
     </section>
 
-    <!-- Section 2 — inputs (Design Doc §5.2). The resume is PASTED text held in
-         memory only: no file upload, no FileReader — Runway reads no user file. -->
+    <!-- Section 2 — inputs (Design Doc §5.2). The resume input is a FILE PATH
+         string, not file content: no file upload, no FileReader — Runway reads
+         no user file, and neither does this page (dec. #40). -->
     <section id="section-inputs" hidden>
       <h2>2 · Your inputs</h2>
+      <p class="hint">
+        Add your portfolio site link and/or filepath to your resume. Runway outputs an LLM prompt that
+        uses this to give recommendations. <br />
+        Results will be stronger if you provide both, but only one
+        is required.
+      </p>
       <div class="field">
-        <label for="portfolio-input">Portfolio link <span class="req">(required)</span></label>
+        <label for="portfolio-input">Portfolio link</label>
         <input id="portfolio-input" type="url" placeholder="https://your-portfolio.example"
                autocomplete="url" spellcheck="false">
         <p id="portfolio-hint" class="hint error" hidden>
@@ -53,14 +63,14 @@
         </p>
       </div>
       <div class="field">
-        <label for="resume-input">Résumé <span class="opt">(optional — paste the text, there is no upload)</span></label>
-        <textarea id="resume-input" rows="8"
-                  placeholder="Paste your résumé text here (optional)"></textarea>
+        <label for="resume-input">Résumé <span class="opt">(filepath to your resume)</span></label>
+        <input id="resume-input" type="text" placeholder="/path/to/resume.pdf (optional)"
+               autocomplete="off" spellcheck="false">
         <p class="hint">
-          Note: your resume text stays in this browser. It is only filled into the
-          prompt you copy below — Runway has no server and never reads a file.
+          Filepath will be used in the LLM prompt Runway outputs for you to use. Runway never opens
+          or reads the file. If you give the prompt to an agent with file access, it can read the file
+          when it runs the prompt. 
         </p>
-        <p id="resume-state" class="hint muted">No résumé attached.</p>
       </div>
     </section>
 
@@ -78,13 +88,14 @@
           <thead>
             <tr>
               <th scope="col" class="center">Target?</th>
-              <th scope="col">Company</th>
-              <th scope="col" class="num">Filings</th>
-              <th scope="col">Quarters</th>
-              <th scope="col" class="center" title="filed in more than one fiscal year">Repeat</th>
-              <th scope="col">SOC titles</th>
-              <th scope="col">States</th>
-              <th scope="col" class="num">Median wage</th>
+              <th scope="col" data-sort-key="employer_display" tabindex="0" role="button">Company</th>
+              <th scope="col" class="num" data-sort-key="filing_count" tabindex="0" role="button">Filings</th>
+              <th scope="col" data-sort-key="quarters" tabindex="0" role="button">Quarters</th>
+              <th scope="col" class="center" title="filed in more than one fiscal year"
+                  data-sort-key="repeat_sponsor" tabindex="0" role="button">Repeat</th>
+              <th scope="col" data-sort-key="soc_titles" tabindex="0" role="button">SOC titles</th>
+              <th scope="col" data-sort-key="worksite_states" tabindex="0" role="button">States</th>
+              <th scope="col" class="num" data-sort-key="wage_annual_median" tabindex="0" role="button">Median wage</th>
             </tr>
           </thead>
           <tbody id="shortlist-body"></tbody>
@@ -100,8 +111,8 @@
       <h2>4 · Generate your prompt</h2>
       <p>
         Runway fills a reviewer prompt with the companies you selected, your
-        portfolio link, and your pasted résumé. You copy it and run it in your own
-        LLM (Claude, ChatGPT, …) — you see every fact that gets sent, and nothing
+        portfolio link, and your résumé's file path. You copy it and run it in your own
+        LLM or agent (Claude, ChatGPT, …) — you see every fact that gets sent, and nothing
         is sent anywhere by this page.
       </p>
       <p id="prompt-gate-hint" class="hint"></p>
@@ -123,6 +134,6 @@
     </p>
   </footer>
 
-  <script src="app.js"></script>
+  <script type="module" src="app.js"></script>
 </body>
 </html>
