@@ -1,0 +1,11 @@
+{
+  "name": "runway-web-dev",
+  "private": true,
+  "description": "Dev-only tooling for web/ — the Python engine has its own toolchain (requirements.txt).",
+  "scripts": {
+    "dev": "vite web --port 8000"
+  },
+  "devDependencies": {
+    "vite": "^8.1.5"
+  }
+}

@@ -11,6 +11,9 @@ __pycache__/
 .ruff_cache/
 .mypy_cache/
 
+# ---- Node (web/ dev server only — vite, see package.json) ----
+node_modules/
+
 # ---- Local agent / tooling config (keep local only) ----
 .claude/
 .gstack/

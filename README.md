@@ -6,110 +6,81 @@ questions with data instead of folklore:
 1. **Who actually sponsors entry-level designers?** — a shortlist of companies
    with *certified, entry-wage (Level I)* design visa filings, built from raw
    US Department of Labor LCA disclosure data.
-2. **What should I build to be worth a visa to them?** — a human-reviewed
-   "gap read" naming the 3 portfolio projects aimed at specific companies from
-   that shortlist.
+2. **What should I build to be worth a visa to them?** — a prompt, filled with
+   your portfolio, résumé, and the companies you pick from that shortlist, that
+   you run in your own LLM to get a plan naming concrete projects to build.
 
 The edge is data-grounding plus judgment, not a directory: every number in the
-output traces back to a public DOL filing, and the advice layer is written by
-a human reviewer, never by a script.
+shortlist traces back to a public DOL filing, and the advice step runs in
+**your own** LLM chat — Runway itself never calls a model.
 
 ## How it works
 
 - **Layer 1 — deterministic engine (no LLM).** `engine/` filters DOL LCA data
   to certified Level-I design filings and aggregates one row per employer.
   In-pipeline checks (`engine/verify.py`) stop any run that looks wrong.
-- **Layer 2 — "hiring now?" signal.** Deferred to v2. The report has a manual
-  column instead (see below).
-- **Layer 3 — reviewed gap read.** A human runs `prompts/gap_read.md` in their
-  own Claude/ChatGPT, reviews the output, and saves it for the report to pick
-  up. No script in this repo calls an LLM.
+  `scripts/run.py` runs this and emits the result as static JSON/CSV into
+  `web/data/`.
+- **Layer 2 — "hiring now?" signal.** Not modeled yet — deferred to a future
+  version. An LCA certification is not an open role; treat the shortlist as
+  "sponsors, historically," not "hiring today."
+- **Layer 3 — the prompt.** The static site in `web/` is the only presentation
+  surface. You pick a role, select target companies from the shortlist, add
+  your portfolio link (and optionally paste your résumé), and the site fills
+  `prompts/recommendations.md` with those inputs and hands you a finished
+  prompt to copy. You run it in your own Claude/ChatGPT chat and read the
+  result critically — no script in this repo calls an LLM, and nothing you
+  enter is sent anywhere by the page itself.
 
-## Quickstart
+## Run it locally
 
-Requires Python 3.10+.
+The site's data (`web/data/design.{json,csv}` and the prompt mirror in
+`web/prompts/`) is committed to the repo, so a fresh clone already has
+everything the UI needs — no Python setup, no DOL download, required just to
+work on the site.
 
-```
-python -m venv .venv
-```
-
-Activate it — the only OS-specific step:
-
-- macOS/Linux: `source .venv/bin/activate`
-- Windows: `.venv\Scripts\activate`
-
-Then everything below is the same on every platform:
-
-```
-pip install -r requirements.txt
-```
-
-**Get the data.** Download one or more quarters of **LCA** disclosure data
-(not PERM) from the DOL performance-data page:
-
-> https://www.dol.gov/agencies/eta/foreign-labor/performance
-> → *Disclosure Data* → **LCA Programs (H-1B, H-1B1, E-3)** →
-> e.g. `LCA_Disclosure_Data_FY2025_Q4.xlsx` (~80–140 MB)
->
-> The files resolve to direct links of the form
-> `https://www.dol.gov/sites/dolgov/files/ETA/oflc/pdfs/LCA_Disclosure_Data_FY<YYYY>_Q<N>.xlsx`
-
-Drop the file(s) into `data/raw/` **keeping DOL's original filename** — the
-quarter label is derived from it.
-
-**Run everything:**
+Requires [Node.js](https://nodejs.org/).
 
 ```
-python scripts/run.py
+npm install
+npm run dev
 ```
 
-This converts the xlsx to parquet (minutes, streamed; skipped when already
-done), builds and verifies the shortlist, and renders the report. It produces:
+This starts a [Vite](https://vite.dev) dev server rooted at `web/` on
+`http://localhost:8000` with hot reload — editing `index.html`, `app.js`, or
+`styles.css` refreshes the browser automatically, no manual reload.
 
-| Artifact | What it is |
-| --- | --- |
-| `output/sponsors_levelI.csv` | Public shortlist: one row per employer with filing counts, quarters, SOC titles, worksite states/cities, annualized wage min/median/max. |
-| `output/sponsors_levelI.provenance.json` | Where every number came from: quarters used, filter funnel, values seen. |
-| `output/private/runway_report.html` | Private, self-contained one-pager: shortlist table + gap read + caveats. Gitignored — it may sit next to portfolio/job-search details. |
+(The Python engine that produces `web/data/` from raw DOL filings is a
+separate, occasional job — see `docs/build_status.md` — not part of the
+day-to-day UI workflow.)
 
-Options: `--quarters FY2025Q4,FY2026Q1` asserts those quarters are loaded
-(fails with instructions if one isn't; extra quarters found on disk are always
-used). `--force-convert` re-converts xlsx even when the parquet looks current.
+## Using the site
 
-Run one invocation at a time. `run.py` is a single-operator tool; two runs at
-once write the same files in `data/processed/` and `output/` and can corrupt
-each other. Everything it writes is regenerable, so if a run is interrupted
-just run it again (add `--force-convert` if a parquet was left half-written).
-
-## The two manual inputs
-
-**Hiring now? column.** The first report run creates a blank
-`output/private/hiring_now.csv`. Fill its `hiring_now` (and optionally
-`notes`) column by hand from real postings, then re-run
-`python scripts/run.py`. The tool never fills it — an LCA certification says
-nothing about current openings. Delete the file to get a fresh template after
-the shortlist changes.
-
-**Gap read.** Run `prompts/gap_read.md` in your own Claude/ChatGPT with the
-applicant's portfolio, relevant shortlist rows, and a few hand-gathered
-postings. Review the output, save the approved version to
-`output/private/gap_read_filled.md`, and re-run. Until then the report shows a
-visible "pending review" placeholder — and the run still succeeds.
+1. **Pick a role.** v1 has one role wired (Design); picking it fetches
+   `data/design.json` and shows the shortlist.
+2. **Add your inputs.** A portfolio link (required, validated as a URL) and,
+   optionally, pasted résumé text. The résumé stays in the browser's memory —
+   there is no upload and nothing is sent to a server.
+3. **Select target companies** from the shortlist table (checkboxes). The
+   caveats above the table and the funnel line are rendered verbatim from
+   `design.json` — nothing about what a filing means is hardcoded in the UI.
+4. **Generate the prompt.** Once ≥1 company is selected and the portfolio URL
+   is valid, "Generate prompt" fills `prompts/recommendations.md` with your
+   selections and shows it in a copy box. Any input change invalidates an
+   already-shown prompt.
+5. **Run it yourself.** Copy the prompt into your own Claude/ChatGPT chat and
+   review what comes back. There is currently no way to paste that result back
+   into the site for a rendered view — that step isn't built yet.
 
 ## When something goes wrong
 
-Every anticipated failure stops with a plain-English message, not a stack
-trace:
-
-- **"No converted LCA data found"** — nothing in `data/raw/`; follow *Get the
-  data* above.
-- **"...missing required column(s) ... PERM disclosure instead of an LCA
-  one?"** — you downloaded the wrong file type; get the **LCA Programs** file.
-- **"Requested quarter(s) not converted yet"** — you asked for a quarter via
-  `--quarters` that has no data; the message names it and how to add it.
-- **A `[verify]` check failed** — the run produced numbers that don't
-  self-check (or the FY2025Q4 golden anchor moved). Don't trust the artifacts;
-  investigate first.
+- **"Couldn't load the shortlist"** in the browser — usually means
+  `web/data/design.json` is missing or malformed. On a normal clone this
+  shouldn't happen (the file is committed); if you've been editing the data
+  pipeline, re-check `scripts/run.py`'s output.
+- Anything from the Python engine (`engine/`, `scripts/`) — see
+  `docs/build_status.md`; it's a separate, occasional job from the UI
+  workflow above.
 
 ## Caveats — attached to every applicant-facing output
 
@@ -119,19 +90,33 @@ trace:
 - Employer names are conservatively normalized and may under-merge.
 - Career/portfolio guidance, not immigration legal advice.
 
+These live in exactly one place — `engine/_util.py`'s `CAVEATS` — and are
+emitted verbatim into `design.json` and mirrored into
+`prompts/recommendations.md` (`scripts/check_caveats_parity.py` enforces the
+two never drift apart).
+
 ## Repo map
 
 ```
+web/                         the static site: index.html + app.js + styles.css
+web/data/                    committed, site-served shortlist artifacts (design.json/csv/provenance)
+web/prompts/                 build-written mirror of prompts/recommendations.md (do not hand-edit)
+package.json                 dev-only Node tooling (Vite) for `npm run dev` — web/ only
+
+prompts/recommendations.md   reviewer prompt template (single source; filled client-side, run by you)
+
 engine/sponsors.py           deterministic engine: filter + aggregate (no LLM, no HTML)
 engine/verify.py             in-pipeline checks; a failed check stops the run
 scripts/convert_quarters.py  raw DOL xlsx -> narrow parquet (streamed)
-scripts/build_shortlist.py   engine -> output/sponsors_levelI.csv (+ provenance)
-scripts/build_report.py      csv -> output/private/runway_report.html
-scripts/run.py               THE command: convert -> shortlist -> report
-prompts/gap_read.md          reviewer prompt template (run by a human, elsewhere)
-docs/decision_log.md         every fork in the road, and why
-docs/build_status.md         where Runway sits in the Ship Pipeline + what finishes v0
+scripts/build_shortlist.py   engine -> web/data/design.{json,csv} (+ provenance)
+scripts/check_caveats_parity.py  asserts prompts/recommendations.md's caveats match engine/_util.CAVEATS
+scripts/run.py               regenerates web/data/ + the prompt mirror from raw DOL filings (occasional, not part of UI dev)
 data/raw/                    you drop DOL xlsx here            (gitignored)
-data/processed/              derived parquet, regenerable      (gitignored)
-output/private/              report + manual inputs            (gitignored)
+data/processed/               derived parquet, regenerable      (gitignored)
+
+docs/decision_log.md         every fork in the road, and why
+docs/build_status.md         where Runway sits in the Ship Pipeline + what finishes the current build
 ```
+
+For the current build's position (what's shipped, what's next) see
+[`docs/build_status.md`](docs/build_status.md).
