@@ -8,11 +8,26 @@ it without Notion access.
 
 ## v1 — current position
 
-### ▶ Resume here (2026-07-17, end of session)
+### ▶ Resume here (2026-07-21, end of session)
 
-**State: the site spine (Increment 3) is BUILT and behaviorally verified. Next move is
-Increment 4 (paste + escape-render, the M13-successor security surface).** Increments 1–3 are
-landed: the data plane, the prompt template, and now the UI that connects them.
+**State: Increment 5 (automated fetch + CI) is BUILT and verified, pulled ahead of Increment 4 at
+the owner's call (dec. #43). The data pipeline now discovers and downloads new DOL quarters on its
+own. Next move is Increment 4 (paste + escape-render, the M13-successor security surface), then 6.**
+Increments 1–3 + 5 are landed; only Increment 4 and the docs closeout (6) remain.
+
+- **Increment 5 shipped (dec. #43):** `scripts/fetch_quarters.py` restored (HEAD-probe discovery of
+  DOL's stable direct-link template, `.part`-temp truncation guard, conservative prune per dec. #27)
+  + wired into `run.py` (fetch → convert → build; `--no-fetch` escape hatch) + `.github/workflows/
+  data-pipeline.yml` (weekly `schedule:` + `workflow_dispatch`, fetch gated on `changed`, commits
+  `web/data/` only on a new quarter, caches `data/processed/`). Partially reverses dec. #33 (re-adds
+  cron + auto-discovery); the JSON-output / gitignored-parquet / untouched-engine parts of dec. #33
+  all stand. Restored from git (`7198e0b^`), not rewritten; P20 case dropped (deferred v1.1, edits v0
+  engine). **Verified 2026-07-21:** URL template resolves (FY2025Q3/Q4 + FY2026Q1 = 200, FY2026Q2 =
+  404); real `discover_upstream` HEAD-probe vs live DOL returns `{FY2025Q4, FY2026Q1}` (golden window);
+  suite 96 passed (14 fetch cases green). The real download + e2e run stays out of the suite (SK-v1-1).
+
+**State (prior, 2026-07-17): the site spine (Increment 3) is BUILT and behaviorally verified.**
+Increments 1–3 are landed: the data plane, the prompt template, and now the UI that connects them.
 
 - **Increment 3 shipped:** `web/index.html` + `web/app.js` + `web/styles.css` — states
   Load → Shortlist → PromptReady with DataError+retry; pick Design → fetch `data/design.json` →
@@ -34,7 +49,7 @@ landed: the data plane, the prompt template, and now the UI that connects them.
 - **▶ NEXT ACTION — Increment 4:** the paste-JSON → validate → escape-render step (§5.5, §6.2) —
   forgiving parse (strip ```json fences), tolerate missing fields with a soft note, ParseError
   state, and the non-negotiable T-JS-3 property: a hostile field value renders as inert text.
-  Then **5** (CI `data.yml`, workflow_dispatch), **6** (docs closeout + owed bookkeeping).
+  Then **6** (docs closeout + owed bookkeeping). **5** (CI + automated fetch) is done — dec. #43.
 - **To run/serve locally:** `python scripts/run.py` regenerates `web/data/` + the template mirror
   (needs a quarter's xlsx in `data/raw/` or its parquet in `data/processed/` — both gitignored,
   dec.#33); serve the site with `python -m http.server` rooted at `web/` (browsers block `fetch()`
@@ -73,7 +88,7 @@ superseded.
 | 2 | Recommendations prompt template + caveats parity (`prompts/recommendations.md`, `scripts/check_caveats_parity.py`) | ✅ built (`0e2fbe9`); parity passes |
 | 3 | Site spine: fetch → shortlist → select → prompt-gen (`web/{index.html,app.js,styles.css}`; `run.py` template mirror) | ✅ built + browser-verified 2026-07-17 |
 | 4 | Results render (escape-render, security-critical) | ◻ **next** |
-| 5 | CI + deploy (`data.yml`, workflow_dispatch) | ◻ not started |
+| 5 | CI + deploy (`data-pipeline.yml`, schedule + workflow_dispatch; `fetch_quarters.py` restored) | ✅ built + verified 2026-07-21 (dec. #43; pulled ahead of #4) |
 | 6 | Docs closeout + owed bookkeeping | ◻ not started |
 
 **Increment 1 verify (local):**

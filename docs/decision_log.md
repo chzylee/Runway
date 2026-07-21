@@ -949,3 +949,49 @@ generation all unchanged, no console errors).
 **Checkable:** `npm test` runs `vitest run`; `npm run dev` still serves and behaves identically.
 `web/app.test.js`'s "does not fall through to the OR message when portfolio text is present but
 invalid" case is the regression pin for dec. #41's most subtle branch.
+
+## 43. Automated fetch is restored — the pipeline discovers + downloads new DOL quarters on its own (partially reverses dec. #33)
+
+*2026-07-21, owner call: "the data pipeline should be checking for a new quarter and downloading
+if there is one." Pulls Increment 5 (CI + deploy) ahead of Increment 4 (results render); the
+owner ratified both the reversal and the reordering (AskUserQuestion, this session).*
+
+**What changed.** dec. #33 deleted the scheduled-fetch slice (`fetch_quarters.py` +
+`data-pipeline.yml`) and chose a **manual `workflow_dispatch`** trigger, judging the HEAD-probe
+discovery machinery "heavier than v1 needs." The owner now wants the pipeline to check for new
+quarters *without a human pushing a button*. This restores automated fetch and re-adds the weekly
+`schedule:` — the one part of dec. #33 that is reversed. Everything else dec. #33 settled stands:
+output is still JSON in `web/data/` (not parquet), processed parquet is still gitignored/ephemeral
+(dec. #23 stays reverted), and the engine + `convert_quarters.py` are untouched.
+
+**What was restored, not rewritten.** `scripts/fetch_quarters.py` and its tests
+(`tests/test_v1_fetch.py`, `tests/v1_support.py`) are recovered from git (`7198e0b^`, the commit
+that deleted them) — the same HEAD-probe discovery, `.part`-temp truncation guard, and
+conservative prune (dec. #27: prune only on supersession or out-of-window, never a probe-miss),
+which still tie cleanly to today's `engine.sponsors.discover_quarters`. The deleted slice's
+`build_shortlists.py`/`run_pipeline.py`/`index.json` machinery is **not** restored — dec. #33
+retired it. The recovered P20 case (a `discover_quarters` case-collision guard) is **dropped**: it
+was deferred to v1.1 and edits a v0 engine file, out of scope for this restore.
+
+**How it wires in.**
+- `scripts/run.py` gains a fetch step (before convert) and a `--no-fetch` escape hatch for offline
+  work / a manually-dropped xlsx. A bare `python scripts/run.py` now checks DOL first.
+- `.github/workflows/data-pipeline.yml`: weekly `schedule:` (`17 6 * * 1`) + `workflow_dispatch`,
+  serialized by a concurrency group, `contents: write`. It runs **fetch as its own gated step**
+  (`id: fetch` → `changed`), then runs `run.py --no-fetch` and commits `web/data/` **only when
+  `changed == 'true'`**. The gate matters because `build_shortlist` stamps `generated_at_utc` every
+  run — an ungated rebuild would commit a timestamp-only diff every week; gating keeps the ~51/52
+  no-quarter runs genuinely no-op (a few HEAD probes, nothing committed).
+- The workflow **caches `data/processed/`** (gitignored, ephemeral) so fetch's "do I already have
+  this quarter?" check has state across runs — on a no-new-quarter run it HEAD-probes and downloads
+  nothing, courteous to DOL's endpoint. Pure optimization: a cache miss just re-downloads (a
+  possible one-off timestamp-only commit before it self-heals), never a correctness issue.
+
+**Verified (2026-07-21):** the URL template still resolves — HEAD probes return 200 for FY2025 Q3/Q4
+and FY2026 Q1, 404 for FY2026 Q2 (not published). The real discovery path (`discover_upstream`, HEAD
+only, no download) run against live DOL returns exactly `{FY2025Q4, FY2026Q1}` — the golden-anchor
+window. Suite: 96 passed (14 restored fetch cases green, no prior test regressed). The real *download*
++ end-to-end run stays out of the suite (ratified SK-v1-1: Scenario C, the first scheduled CI run).
+
+**Deferred (unchanged from the original slice):** rebase-or-retry on a non-fast-forward push
+(old P19) — safe to skip because the concurrency group serializes runs; a v1.1 hardening.

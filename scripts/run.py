@@ -1,14 +1,19 @@
-"""THE local command: convert -> shortlist -> emit web/data/, end to end.
+"""THE local command: fetch -> convert -> shortlist -> emit web/data/, end to end.
 
     python scripts/run.py
 
-Converts any DOL xlsx dropped in data/raw/, builds and verifies the sponsor
-shortlist from every converted quarter, and emits three public web/data/
-artifacts per registered role (engine.ROLE_SOC) the static site consumes:
-<role>.json, <role>.provenance.json, <role>.csv. v1 has no HTML report - the
-site is the single presentation surface (Design Doc D3), served locally with
-`npm run dev` (see README) - Runway never calls an LLM and, in v1, never
-reads a user's file.
+Checks DOL for any new LCA quarter and downloads it (fetch_quarters.py), converts
+every DOL xlsx in data/raw/, builds and verifies the sponsor shortlist from every
+converted quarter, and emits three public web/data/ artifacts per registered role
+(engine.ROLE_SOC) the static site consumes: <role>.json, <role>.provenance.json,
+<role>.csv. v1 has no HTML report - the site is the single presentation surface
+(Design Doc D3), served locally with `npm run dev` (see README) - Runway never
+calls an LLM and, in v1, never reads a user's file.
+
+`--no-fetch` skips the DOL check (offline work, or a manually-dropped xlsx). CI
+runs the fetch as its own gated step and then calls this with `--no-fetch`, so
+the expensive convert+build+commit only happens on a run where a new quarter
+actually landed - see .github/workflows/data-pipeline.yml.
 """
 import argparse
 
@@ -17,6 +22,7 @@ from _util import REPO_ROOT, run_cli
 import build_shortlist
 import check_caveats_parity
 import convert_quarters
+import fetch_quarters
 
 PROMPT_TEMPLATE = REPO_ROOT / "prompts" / "recommendations.md"
 PROMPT_MIRROR = REPO_ROOT / "web" / "prompts" / "recommendations.md"
@@ -47,10 +53,13 @@ def main():
     )
     parser.add_argument("--force-convert", action="store_true",
                         help="re-convert xlsx files even when their parquet is up to date")
+    parser.add_argument("--no-fetch", action="store_true",
+                        help="skip the DOL new-quarter check/download (offline, or a "
+                             "manually-dropped xlsx); convert whatever is already in data/raw/")
     args = parser.parse_args()
     requested = [q for q in (args.quarters or "").split(",") if q.strip()] or None
 
-    print("[run] Runway v1: convert -> shortlist -> emit web/data/")
+    print("[run] Runway v1: fetch -> convert -> shortlist -> emit web/data/")
     # Build check (dec. #34): the prompt template the site fetches (D5) carries the
     # one tolerated second copy of the five caveats; assert it hasn't drifted from the
     # engine's single source before doing any expensive data work. Data-independent,
@@ -60,6 +69,12 @@ def main():
     # caveats were just verified against the engine, and it is data-independent,
     # so it lands even if the convert step later stops the run.
     mirror_prompt_template()
+    # Check DOL for a new quarter and download it before converting (dec. #43).
+    # Skipped with --no-fetch for offline work or when CI has already run the fetch
+    # as its own gated step. A network/endpoint failure stops the run with a
+    # plain-English RunwayError naming README's URL template.
+    if not args.no_fetch:
+        fetch_quarters.fetch()
     convert_quarters.convert_all(force=args.force_convert)
     built = build_shortlist.build_all(requested_quarters=requested)
     print("[run] done:")

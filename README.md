@@ -121,11 +121,13 @@ prompts/recommendations.md   reviewer prompt template (single source; filled cli
 
 engine/sponsors.py           deterministic engine: filter + aggregate (no LLM, no HTML); ROLE_SOC is the role registry
 engine/verify.py             in-pipeline checks; a failed check stops the run
+scripts/fetch_quarters.py    checks DOL for new quarters + downloads them (HEAD-probe discovery, dec. #43)
 scripts/convert_quarters.py  raw DOL xlsx -> narrow parquet (streamed)
 scripts/build_shortlist.py   engine -> web/data/<role>.{json,csv} (+ provenance), one role at a time or build_all()
 scripts/check_caveats_parity.py  asserts prompts/recommendations.md's caveats match engine/_util.CAVEATS
-scripts/run.py               regenerates web/data/ (every role) + the prompt mirror from raw DOL filings (occasional, not part of UI dev)
-data/raw/                    you drop DOL xlsx here            (gitignored)
+scripts/run.py               fetch -> convert -> build: regenerates web/data/ (every role) + prompt mirror (occasional, not part of UI dev; --no-fetch to skip the DOL check)
+.github/workflows/data-pipeline.yml  weekly + on-demand CI: fetch new quarter -> rebuild -> commit web/data/
+data/raw/                    DOL xlsx lands here, auto-downloaded (or drop by hand)  (gitignored)
 data/processed/               derived parquet, regenerable      (gitignored)
 
 docs/decision_log.md         every fork in the road, and why

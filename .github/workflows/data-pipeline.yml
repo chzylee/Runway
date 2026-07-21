@@ -1,0 +1,90 @@
+name: DOL data pipeline
+
+# Keeps the committed, site-served shortlist (web/data/) in sync with the DOL LCA
+# quarters published upstream. Runs weekly because the source data moves quarterly;
+# the fetch step short-circuits to a no-op on every run where DOL published nothing
+# new, so ~51 of 52 runs do a handful of HEAD probes and commit nothing.
+#
+# Why a schedule (not push): DOL can't notify us, and the job commits back to the
+# repo - a push trigger would risk a self-triggering commit loop. workflow_dispatch
+# adds a manual "Run workflow" button for the day a new quarter drops. This restores
+# automated fetch (dec. #43), reversing dec. #33's interim "workflow_dispatch, not
+# cron" - the owner asked for the pipeline to check for new quarters on its own.
+#
+# Trigger design + the FYTD/latest-per-FY storage rule: docs/decision_log.md #22/#43.
+
+on:
+  schedule:
+    # Mondays 06:17 UTC. Off the hour and off :00/:30 so we don't pile onto
+    # GitHub's most-congested scheduling slots (runs there get delayed most).
+    - cron: "17 6 * * 1"
+  workflow_dispatch: {}
+
+# Serialize runs so two never race on `git push` to web/data/.
+concurrency:
+  group: dol-data-pipeline
+  cancel-in-progress: false
+
+permissions:
+  contents: write   # the job commits regenerated web/data/ back
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # data/processed/ is gitignored + ephemeral (dec. #33), but fetch's "do I
+      # already have this quarter?" check reads it. Restoring the converted parquet
+      # (a few MB) across runs keeps fetch incremental and courteous to DOL: on a
+      # no-new-quarter run it HEAD-probes and downloads nothing, instead of pulling
+      # ~150 MB of xlsx every week. Pure optimization - a cache miss just re-downloads.
+      - name: Restore converted-quarter cache
+        uses: actions/cache@v4
+        with:
+          path: data/processed
+          key: dol-processed-v1-${{ github.run_id }}
+          restore-keys: |
+            dol-processed-v1-
+
+      - name: Configure git identity
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      # Fetch is its own step so the expensive convert+build+commit can be gated on
+      # whether a new quarter actually landed. build_shortlist stamps generated_at_utc
+      # on every run, so an ungated rebuild would commit a timestamp-only diff weekly;
+      # gating on fetch.changed keeps the ~51/52 no-op runs genuinely no-op.
+      - name: Check DOL for new quarters
+        id: fetch
+        run: python scripts/fetch_quarters.py
+
+      # Only when fetch downloaded/pruned something: convert the new xlsx, rebuild the
+      # shortlist, re-emit web/data/. --no-fetch because the fetch already ran above.
+      - name: Rebuild shortlist
+        if: steps.fetch.outputs.changed == 'true'
+        run: python scripts/run.py --no-fetch
+
+      - name: Commit and push refreshed data
+        if: steps.fetch.outputs.changed == 'true'
+        run: |
+          git add web/data/
+          if git diff --cached --quiet; then
+            echo "web/data/ unchanged after rebuild - nothing to commit"
+          else
+            git commit -m "chore(data): refresh web/data/ from new DOL quarter [skip ci]"
+            # A plain push is safe: the concurrency group serializes runs, so there is
+            # no concurrent writer to race. Rebase-or-retry on a non-fast-forward is a
+            # deferred v1.1 hardening (old dec. #K / P19), not needed at this cadence.
+            git push
+          fi
