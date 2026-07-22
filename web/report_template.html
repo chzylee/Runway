@@ -38,7 +38,7 @@
     --bg: #fbfaf8; --surface: #ffffff; --ink: #191919; --ink-soft: #4a4a4a;
     --muted: #6b6b6b; --line: #e6e3de; --line-soft: #f0eeea;
     --accent: #1f5c8b; --shadow: 0 1px 2px rgba(40,36,30,.05), 0 6px 16px -8px rgba(40,36,30,.10);
-    --warn-bg: #fdf9ee; --warn-line: #e8dcbc;
+    --warn-bg: #fdf9ee; --warn-line: #e8dcbc; --inset: #f6f5f2;
     --shown-bg: #edf5ee; --shown-line: #bcd6bf; --shown-ink: #2c5c33;
     --partial-bg: #eef3f9; --partial-line: #bed0e3; --partial-ink: #275a86;
     --gap-bg: #fdf2e6; --gap-line: #e6c9a3; --gap-ink: #8a5214;
@@ -48,7 +48,7 @@
       --bg: #16171a; --surface: #1d1f23; --ink: #e9e7e4; --ink-soft: #c3c0bb;
       --muted: #9a9793; --line: #303338; --line-soft: #26292d;
       --accent: #7fb3d9; --shadow: none;
-      --warn-bg: #241f14; --warn-line: #4a4028;
+      --warn-bg: #241f14; --warn-line: #4a4028; --inset: #24262b;
       --shown-bg: #1b2a1d; --shown-line: #35543a; --shown-ink: #9fcaa5;
       --partial-bg: #182430; --partial-line: #2f4e69; --partial-ink: #9cc4e6;
       --gap-bg: #2b2113; --gap-line: #58432a; --gap-ink: #e0ab6d;
@@ -65,10 +65,12 @@
   /* Reading measure: prose caps near 68 characters regardless of container width. */
   p, li, .record { max-width: 68ch; }
 
+  h1, h2, h3 { text-wrap: balance; }
+  p, li, .lede, .grounding, .sub { text-wrap: pretty; }
   h1 { font-size: 1.6rem; line-height: 1.25; letter-spacing: -.015em; margin: 0 0 .3rem; }
   h2 {
     font-size: .78rem; text-transform: uppercase; letter-spacing: .09em; font-weight: 600;
-    color: var(--muted); margin: 3.25rem 0 1rem; padding-bottom: .45rem;
+    color: var(--ink-soft); margin: 3.25rem 0 1rem; padding-bottom: .45rem;
     border-bottom: 1px solid var(--line);
   }
   h3 { font-size: 1.02rem; line-height: 1.4; margin: 0 0 .15rem; letter-spacing: -.005em; }
@@ -110,7 +112,8 @@
   }
 
   .record { font-size: .93rem; border-collapse: collapse; }
-  .record td { padding: .35rem 1.25rem .35rem 0; border-bottom: 1px solid var(--line-soft); }
+  .record th { font-weight: 400; text-align: left; }
+  .record th, .record td { padding: .35rem 1.25rem .35rem 0; border-bottom: 1px solid var(--line-soft); }
   .record tr:last-child td { border-bottom: 0; }
   .yes { color: var(--shown-ink); font-weight: 600; }
   .no { color: var(--gap-ink); font-weight: 600; }
@@ -127,15 +130,21 @@
     summary.why-summary:hover { text-decoration: underline; }
   }
   .why-body {
-    margin-top: .5rem; padding: .1rem 0 .1rem .8rem;
-    border-left: 2px solid var(--line);
+    margin-top: .55rem; padding: .65rem .85rem; border-radius: 8px;
+    background: var(--inset);
   }
+  .why-body > p:first-child { margin-top: 0; }
+  .why-body > p:last-child { margin-bottom: 0; }
 
   /* Keyboard users must always see where they are. */
   :where(a, button, summary, textarea):focus-visible {
     outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px;
   }
 
+  .visually-hidden {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+  }
   #paste-view { display: none; }
   textarea {
     width: 100%; min-height: 14rem; padding: .7rem;
@@ -172,15 +181,18 @@
 </head>
 <body>
 
+<main>
 <div id="paste-view">
   <h1>Your Runway report</h1>
   <p class="sub">Paste the JSON your LLM returned. Nothing leaves this page — it renders in your browser.</p>
+  <label for="paste-input" class="visually-hidden">Paste the JSON your LLM returned</label>
   <textarea id="paste-input" spellcheck="false" placeholder='Paste the whole reply. A ```json fence or a note after it is fine.'></textarea>
   <p><button id="paste-btn" type="button">Show my report</button></p>
-  <p id="paste-error" class="error"></p>
+  <p id="paste-error" class="error" role="alert"></p>
 </div>
 
 <div id="report-view"></div>
+</main>
 
 <script type="application/json" id="report-data">__REPORT_JSON__</script>
 <script>
@@ -232,6 +244,7 @@
       // Only http(s) becomes a live link; anything else stays inert text.
       if (/^https?:\/\//i.test(String(u))) {
         a.href = u; a.target = "_blank"; a.rel = "noopener noreferrer";
+        a.appendChild(el("span", "visually-hidden", " (opens in a new tab)"));
         li.appendChild(a);
       } else {
         li.appendChild(el("span", null, u));
@@ -276,7 +289,13 @@
         var card = el("div", "card");
         var h = el("h3", null, s.skill);
         var tag = SKILL_TAG[s.relative_to_you];
-        if (tag) h.appendChild(el("span", tag[0], tag[1]));
+        if (tag) {
+          h.appendChild(document.createTextNode(" "));
+          var pill = el("span", tag[0]);
+          pill.appendChild(el("span", "visually-hidden", "status: "));
+          pill.appendChild(document.createTextNode(tag[1]));
+          h.appendChild(pill);
+        }
         card.appendChild(h);
 
         // The rating is a judgment, so it has to be inspectable rather than
@@ -396,6 +415,7 @@
     if (rec) {
       section(root, "How this report was made");
       var t = el("table", "record");
+      t.appendChild(el("caption", "visually-hidden", "What this report run was able to read"));
       [
         ["Read your portfolio", rec.portfolio_read],
         ["Read your résumé", rec.resume_read],
@@ -403,7 +423,9 @@
         ["Researched the companies", rec.research_performed]
       ].forEach(function (row) {
         var tr = el("tr");
-        tr.appendChild(el("td", null, row[0]));
+        var rowHead = el("th", null, row[0]);
+        rowHead.setAttribute("scope", "row");
+        tr.appendChild(rowHead);
         tr.appendChild(el("td", row[1] ? "yes" : "no", row[1] ? "yes" : "no"));
         t.appendChild(tr);
       });
