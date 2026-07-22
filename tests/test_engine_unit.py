@@ -12,9 +12,11 @@ from engine import RunwayError
 from engine.sponsors import (
     ROLE_SOC,
     build_sponsor_table,
+    canonical_onet,
     load_quarters,
     normalize_employer,
     normalize_wage_level,
+    title_tokens,
 )
 
 DESIGN = ROLE_SOC["design"]
@@ -278,3 +280,114 @@ def test_M10_missing_requested_quarter_stops(tmp_path, frame):
     _write_quarter(tmp_path, "FY2099Q1", frame)
     with pytest.raises(RunwayError, match="FY2099Q3"):
         load_quarters(tmp_path, requested=["FY2099Q3"])
+
+
+# =============================== dec. #44: title-shortlist patterns ============
+def patterns(table_stats):
+    return table_stats[1]["patterns"]
+
+
+# -- the tokenizer (knob 3: strip only non-discriminating words; keep seniority) --
+def test_patterns_tokenizer_strips_role_words_keeps_seniority():
+    """knob 3: the role-family words (design/designer) are stripped as
+    zero-signal-by-construction; seniority and domain words survive."""
+    toks = title_tokens("Senior Product Designer, Growth")
+    assert "senior" in toks and "product" in toks and "growth" in toks
+    assert "designer" not in toks and "design" not in toks
+
+
+@pytest.mark.parametrize("title,absent", [
+    ("UX Designer II", "ii"),            # roman level marker dropped
+    ("Web Designer 2", "2"),             # bare numeral dropped
+    ("Lead Designer of Web and Digital", "of"),   # article/conjunction dropped
+])
+def test_patterns_tokenizer_drops_numerals_and_articles(title, absent):
+    assert absent not in title_tokens(title)
+
+
+def test_patterns_tokenizer_keeps_short_domain_tokens():
+    """'ux'/'ui' are two-char domain signal and must survive the length filter."""
+    assert "ux" in title_tokens("UX Designer")
+    assert "ui" in title_tokens("UI Designer")
+
+
+# -- O*NET canonicalization (knob 4: suffix preserved for reporting) --
+@pytest.mark.parametrize("raw,canon", [
+    ("15-1255", "15-1255.00"),      # bare base == the .00 base occupation
+    ("15-1255.00", "15-1255.00"),
+    ("15-1255.0", "15-1255.00"),    # numeric round-trip artifact
+    ("15-1255.01", "15-1255.01"),   # distinct detail occupation, preserved
+    ("", ""),
+])
+def test_patterns_canonical_onet(raw, canon):
+    assert canonical_onet(raw) == canon
+
+
+# -- denominator is employers, not filings (knob 1) --
+def test_patterns_denominator_is_employers_not_filings(frame):
+    """knob 1: one prolific filer cannot manufacture a pattern — 5 filings from a
+    single employer do not clear the 3-EMPLOYER floor."""
+    f = frame([{"EMPLOYER_NAME": "Solo Studio", "JOB_TITLE": "Growth Designer"}] * 5)
+    pats = patterns(build(f))
+    assert pats["basis"]["employers"] == 1
+    assert pats["job_titles"]["recurring_tokens"] == []      # nothing clears the floor
+
+
+def test_patterns_floor_gates_and_admits(frame):
+    """knob 2: a token backed by >= 3 distinct employers is admitted; one backed by
+    fewer is dropped entirely (no hedge)."""
+    f = frame([
+        {"EMPLOYER_NAME": "Alpha", "JOB_TITLE": "Growth Designer"},
+        {"EMPLOYER_NAME": "Bravo", "JOB_TITLE": "Growth Designer"},
+        {"EMPLOYER_NAME": "Charlie", "JOB_TITLE": "Growth Designer"},
+        {"EMPLOYER_NAME": "Delta", "JOB_TITLE": "Motion Designer"},   # 1 employer -> dropped
+    ])
+    tokens = {t["token"]: t for t in patterns(build(f))["job_titles"]["recurring_tokens"]}
+    assert tokens["growth"]["employers"] == 3
+    assert "motion" not in tokens
+
+
+def test_patterns_distinct_titles_are_verbatim_and_unfloored(frame):
+    """knob 3 refinement: distinct_titles is verbatim evidence — a 1-employer title
+    survives (no floor) and no stopword is applied to the stored string."""
+    f = frame([
+        {"EMPLOYER_NAME": "Alpha", "JOB_TITLE": "Founding Product Designer"},
+        {"EMPLOYER_NAME": "Bravo", "JOB_TITLE": "Founding Product Designer"},
+    ])
+    titles = {t["title"]: t for t in patterns(build(f))["job_titles"]["distinct_titles"]}
+    assert titles["Founding Product Designer"]["employers"] == 2
+
+
+def test_patterns_onet_split_keeps_detail_occupation_distinct(frame):
+    """knob 4: the .01 detail occupation is a SEPARATE line in the O*NET split even
+    though it matched into the shortlist under the base code (dec. #39 unchanged)."""
+    f = frame([
+        {"EMPLOYER_NAME": "WebCo", "SOC_CODE": "15-1255.00"},
+        {"EMPLOYER_NAME": "GameCo", "SOC_CODE": "15-1255.01"},
+    ])
+    codes = {o["soc_code"] for o in patterns(build(f))["onet_occupations"]}
+    assert codes == {"15-1255.00", "15-1255.01"}
+
+
+def test_patterns_placement_and_industry_partition(frame):
+    """dec. #44: placement filings partition in-house vs third-party, and NAICS
+    sector is taken from the 2-digit prefix."""
+    f = frame([
+        {"EMPLOYER_NAME": "Agency", "SECONDARY_ENTITY": "Yes", "NAICS_CODE": "561320"},
+        {"EMPLOYER_NAME": "InHouseCo", "SECONDARY_ENTITY": "No", "NAICS_CODE": "541430"},
+    ])
+    pats = patterns(build(f))
+    assert pats["placement_model"]["third_party_site"]["filings"] == 1
+    assert pats["placement_model"]["in_house"]["filings"] == 1
+    sectors = {i["code"] for i in pats["industry_naics2"]}   # floor not met here -> empty
+    assert sectors == set()      # 1 employer each, below the 3-employer floor
+
+
+def test_patterns_basis_equals_employer_groups(frame):
+    """dec. #44: the pattern basis employer count is the same denominator the
+    shortlist reports (the emit's same-generation guard depends on this)."""
+    f = frame([
+        {"EMPLOYER_NAME": "Alpha"}, {"EMPLOYER_NAME": "Bravo"}, {"EMPLOYER_NAME": "Alpha"},
+    ])
+    table, stats = build(f)
+    assert stats["patterns"]["basis"]["employers"] == stats["employer_groups"]

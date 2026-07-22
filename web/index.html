@@ -69,7 +69,18 @@
         <p class="hint">
           Filepath will be used in the LLM prompt Runway outputs for you to use. Runway never opens
           or reads the file. If you give the prompt to an agent with file access, it can read the file
-          when it runs the prompt. 
+          when it runs the prompt.
+        </p>
+      </div>
+      <div class="field">
+        <label for="current-work-input">What you're working on <span class="opt">(optional)</span></label>
+        <textarea id="current-work-input" rows="3"
+                  placeholder="A project, a skill, a direction you're already building. Leave blank if you're between things."
+                  spellcheck="false"></textarea>
+        <p class="hint">
+          If you share this, the prompt asks your LLM to build on what you already have —
+          to deepen or reframe it — instead of only proposing something new. Optional; it
+          never changes which companies you can pick.
         </p>
       </div>
     </section>

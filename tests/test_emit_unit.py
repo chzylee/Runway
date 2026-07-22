@@ -27,7 +27,7 @@ EXPECTED = dol_xlsx.EXPECTED
 DESIGN_JSON_KEYS = {
     "role", "generated_at_utc", "source", "filters", "quarters_used",
     "quarters_superseded", "funnel", "employer_groups",
-    "rows_wage_excluded_from_wage_stats", "caveats", "employers",
+    "rows_wage_excluded_from_wage_stats", "patterns", "caveats", "employers",
 }
 EMPLOYER_COLUMNS = [
     "employer", "employer_display", "filing_count", "quarters_present", "quarters",
@@ -110,6 +110,28 @@ def test_numbers_are_json_numbers(emitted):
             assert e[column] is None or isinstance(e[column], int)
 
 
+def test_patterns_block_matches_expected(emitted):
+    """dec. #44: design.json.patterns equals the hand-derived oracle exactly —
+    basis, floor-gated recurring tokens, verbatim distinct titles, the O*NET split
+    (suffix preserved), placement model, and floor-gated industry sectors."""
+    _, design = emitted
+    assert design["patterns"] == EXPECTED["patterns"]
+
+
+def test_patterns_floor_and_denominator_hold(emitted):
+    """dec. #44: no recurring token or industry sector is emitted below the employer
+    support floor, and the pattern basis employer count equals employer_groups."""
+    _, design = emitted
+    patterns = design["patterns"]
+    floor = patterns["basis"]["min_support_employers"]
+    assert patterns["basis"]["employers"] == design["employer_groups"]
+    for entry in patterns["job_titles"]["recurring_tokens"] + patterns["industry_naics2"]:
+        assert entry["employers"] >= floor
+        assert entry["employers"] <= patterns["basis"]["employers"]
+    # distinct_titles is verbatim evidence: NOT floor-gated, so a 1-employer title survives.
+    assert any(t["employers"] < floor for t in patterns["job_titles"]["distinct_titles"])
+
+
 def test_funnel_and_counts_match_expected(emitted):
     """The emitted funnel + per-employer wage stats equal the hand-derived oracle."""
     _, design = emitted
@@ -147,7 +169,7 @@ def test_provenance_is_full_v0_object(emitted):
     for key in ("generated_at_utc", "source", "filters", "quarters_used",
                 "quarters_superseded", "rows_per_quarter", "funnel", "employer_groups",
                 "distinct_raw_employer_spellings", "rows_wage_excluded_from_wage_stats",
-                "case_statuses_seen", "wage_levels_seen", "wage_units_seen", "caveats"):
+                "case_statuses_seen", "wage_levels_seen", "wage_units_seen", "patterns", "caveats"):
         assert key in prov, f"provenance missing {key}"
 
 
@@ -162,6 +184,12 @@ def test_same_generation_guard_fires(emit_env, monkeypatch):
         table, stats = real(soc_codes, wage_level, quarters)
         stats = dict(stats)
         stats["employer_groups"] = stats["employer_groups"] - 1   # provenance disagrees w/ rows
+        # Keep the pattern basis consistent with the corrupted count so the engine-level
+        # check_patterns_consistent passes and the disagreement reaches the EMIT guard
+        # (which this test pins): the table rows (uncorrupted) will then out-vote it.
+        stats["patterns"] = {**stats["patterns"],
+                             "basis": {**stats["patterns"]["basis"],
+                                       "employers": stats["employer_groups"]}}
         return table, stats
 
     monkeypatch.setattr(build_shortlist, "build_sponsor_table", corrupt)

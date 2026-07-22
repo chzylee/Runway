@@ -52,9 +52,13 @@ jobs:
         uses: actions/cache@v4
         with:
           path: data/processed
-          key: dol-processed-v1-${{ github.run_id }}
+          # v2: parquet schema gained NAICS_CODE + SECONDARY_ENTITY (dec. #44). The key
+          # bump forces a cache miss so CI re-fetches and re-converts to the 14-column
+          # schema; restoring a v1 (12-column) parquet would trip the engine's
+          # missing-column guard on build. Bump this whenever REQUIRED_COLUMNS changes.
+          key: dol-processed-v2-${{ github.run_id }}
           restore-keys: |
-            dol-processed-v1-
+            dol-processed-v2-
 
       - name: Configure git identity
         run: |

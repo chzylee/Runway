@@ -38,6 +38,8 @@ HEADER = [
     "SOC_CODE",
     "CASE_NUMBER",
     "JOB_TITLE",
+    "NAICS_CODE",
+    "SECONDARY_ENTITY",
     "WAGE_UNIT_OF_PAY",
     "WORKSITE_CITY",
     "PW_WAGE_LEVEL",
@@ -56,6 +58,8 @@ _GOOD = {
     "SOC_CODE": "15-1255.00",
     "CASE_NUMBER": "I-200-99001-000001",
     "JOB_TITLE": "Designer",
+    "NAICS_CODE": "541430",           # Graphic Design Services (sector 54)
+    "SECONDARY_ENTITY": "No",         # in-house worksite by default
     "WAGE_UNIT_OF_PAY": "Year",
     "WORKSITE_CITY": "Austin",
     "PW_WAGE_LEVEL": "I",
@@ -71,34 +75,52 @@ def row(**overrides):
 # conversion). They are interspersed so they are not merely trailing rows.
 FIXTURE_ROWS = [
     # --- 10 selected filings across 4 employers ---
-    row(EMPLOYER_NAME="Northwind Design LLC", SOC_CODE="15-1255.00", WAGE_RATE_OF_PAY_FROM="85000"),
-    # .01 O*NET detail suffix must still count as design (F6 / M2):
-    row(EMPLOYER_NAME="Northwind Design LLC", SOC_CODE="15-1255.01", WAGE_RATE_OF_PAY_FROM="90000"),
+    # JOB_TITLE / NAICS_CODE / SECONDARY_ENTITY are set here to drive the dec.#44
+    # pattern oracle (EXPECTED["patterns"]); employer, SOC, and wage values are left
+    # exactly as they were so the funnel/wage oracle above is unchanged.
+    #   "product" recurs across 3 employers -> the one token above the 3-employer floor;
+    #   "graphic" spans 2 employers -> below floor, dropped (proves the floor gates);
+    #   Café is entirely third-party (agency); Blank Fields sits in NAICS sector 51,
+    #   the others in sector 54 -> only 54 clears the floor.
+    row(EMPLOYER_NAME="Northwind Design LLC", SOC_CODE="15-1255.00", WAGE_RATE_OF_PAY_FROM="85000",
+        JOB_TITLE="Product Designer"),
+    # .01 O*NET detail suffix must still count as design (F6 / M2) and stay a DISTINCT
+    # occupation in the O*NET split (dec. #44), titled Video Game Designers:
+    row(EMPLOYER_NAME="Northwind Design LLC", SOC_CODE="15-1255.01", WAGE_RATE_OF_PAY_FROM="90000",
+        SOC_TITLE="Video Game Designers", JOB_TITLE="Product Designer"),
     # second spelling of the same employer -> collapses to one group (employer-collapse):
     row(EMPLOYER_NAME="NORTHWIND DESIGN, INC.", SOC_CODE="27-1024",
-        SOC_TITLE="Graphic Designers", WORKSITE_CITY="Dallas", WAGE_RATE_OF_PAY_FROM="88000"),
-    # unicode employer name (M15) + HOUR annualization 45*2080=93600 (M4):
+        SOC_TITLE="Graphic Designers", WORKSITE_CITY="Dallas", WAGE_RATE_OF_PAY_FROM="88000",
+        JOB_TITLE="Graphic Designer"),
+    # unicode employer name (M15) + HOUR annualization 45*2080=93600 (M4); third-party site:
     row(EMPLOYER_NAME="Café Studio LLC", SOC_CODE="27-1021",
         SOC_TITLE="Commercial and Industrial Designers", WORKSITE_STATE="CA",
-        WORKSITE_CITY="San Diego", WAGE_UNIT_OF_PAY="Hour", WAGE_RATE_OF_PAY_FROM="45.00"),
+        WORKSITE_CITY="San Diego", WAGE_UNIT_OF_PAY="Hour", WAGE_RATE_OF_PAY_FROM="45.00",
+        JOB_TITLE="Product Designer", SECONDARY_ENTITY="Yes"),
     row(EMPLOYER_NAME="Café Studio LLC", SOC_CODE="27-1021",
         SOC_TITLE="Commercial and Industrial Designers", WORKSITE_STATE="CA",
-        WORKSITE_CITY="San Diego", WAGE_RATE_OF_PAY_FROM="70000"),
+        WORKSITE_CITY="San Diego", WAGE_RATE_OF_PAY_FROM="70000",
+        JOB_TITLE="Industrial Designer", SECONDARY_ENTITY="Yes"),
     None,  # padding
     # blank text cells (F5: soc_titles/city must render blank, never "nan") AND
-    # an all-excluded wage (Bi-Weekly) so its median renders as an em dash (M14):
+    # an all-excluded wage (Bi-Weekly) so its median renders as an em dash (M14).
+    # NAICS 519130 -> sector 51 (Information), the below-floor industry:
     row(EMPLOYER_NAME="Blank Fields Co", SOC_CODE="15-1255.00", SOC_TITLE="",
         WORKSITE_STATE="NY", WORKSITE_CITY="", WAGE_UNIT_OF_PAY="Bi-Weekly",
-        WAGE_RATE_OF_PAY_FROM="2400"),
+        WAGE_RATE_OF_PAY_FROM="2400", JOB_TITLE="Product Designer", NAICS_CODE="519130"),
     # Wage Variety: exercises YEAR, MONTH annualization, plus two wage-excluded rows (M4/M14):
     row(EMPLOYER_NAME="Wage Variety LLC", SOC_CODE="27-1024", SOC_TITLE="Graphic Designers",
-        WORKSITE_STATE="WA", WORKSITE_CITY="Seattle", WAGE_RATE_OF_PAY_FROM="65000"),
+        WORKSITE_STATE="WA", WORKSITE_CITY="Seattle", WAGE_RATE_OF_PAY_FROM="65000",
+        JOB_TITLE="Graphic Designer"),
     row(EMPLOYER_NAME="Wage Variety LLC", SOC_CODE="27-1024", SOC_TITLE="Graphic Designers",
-        WORKSITE_STATE="WA", WORKSITE_CITY="Seattle", WAGE_UNIT_OF_PAY="Month", WAGE_RATE_OF_PAY_FROM="6000"),
+        WORKSITE_STATE="WA", WORKSITE_CITY="Seattle", WAGE_UNIT_OF_PAY="Month", WAGE_RATE_OF_PAY_FROM="6000",
+        JOB_TITLE="Graphic Designer"),
     row(EMPLOYER_NAME="Wage Variety LLC", SOC_CODE="27-1024", SOC_TITLE="Graphic Designers",
-        WORKSITE_STATE="WA", WORKSITE_CITY="Seattle", WAGE_UNIT_OF_PAY="Bi-Weekly", WAGE_RATE_OF_PAY_FROM="2500"),
+        WORKSITE_STATE="WA", WORKSITE_CITY="Seattle", WAGE_UNIT_OF_PAY="Bi-Weekly", WAGE_RATE_OF_PAY_FROM="2500",
+        JOB_TITLE="Graphic Designer"),
     row(EMPLOYER_NAME="Wage Variety LLC", SOC_CODE="27-1024", SOC_TITLE="Graphic Designers",
-        WORKSITE_STATE="WA", WORKSITE_CITY="Seattle", WAGE_RATE_OF_PAY_FROM=""),
+        WORKSITE_STATE="WA", WORKSITE_CITY="Seattle", WAGE_RATE_OF_PAY_FROM="",
+        JOB_TITLE="Web Designer"),
     None,  # padding
     # --- 5 rows that must NOT be selected (fill out the funnel) ---
     # "Certified - Withdrawn" is deliberately excluded (dec. #2 / M1):
@@ -130,6 +152,46 @@ EXPECTED = {
         "Northwind Design LLC": (3, 85000, 88000, 90000),
         "Café Studio LLC": (2, 70000, 81800, 93600),
         "Blank Fields Co": (1, None, None, None),
+    },
+    # dec. #44 title-shortlist patterns, hand-derived from the 10 selected rows and
+    # mirroring the emitted object exactly (design.json.patterns == this).
+    "patterns": {
+        "basis": {"filings": 10, "employers": 4, "measured_by": "employers",
+                  "min_support_employers": 3},
+        "job_titles": {
+            # "product": Northwind + Café + Blank Fields = 3 employers (>= floor).
+            # "graphic" (2 employers), "industrial"/"web" (1) fall below and are dropped.
+            "recurring_tokens": [
+                {"token": "product", "employers": 3, "filings": 4},
+            ],
+            # verbatim, no stopword, no floor; employers-desc then filings-desc then title.
+            "distinct_titles": [
+                {"title": "Product Designer", "employers": 3, "filings": 4},
+                {"title": "Graphic Designer", "employers": 2, "filings": 4},
+                {"title": "Industrial Designer", "employers": 1, "filings": 1},
+                {"title": "Web Designer", "employers": 1, "filings": 1},
+            ],
+        },
+        # suffix preserved + bare base canonicalizes to .00; filings-desc. 27-1024.00
+        # has 5 filings: Wage Variety's 4 rows (incl. the "Web Designer" title) + Northwind.
+        "onet_occupations": [
+            {"soc_code": "27-1024.00", "title": "Graphic Designers", "employers": 2, "filings": 5},
+            {"soc_code": "15-1255.00", "title": "Web and Digital Interface Designers",
+             "employers": 2, "filings": 2},
+            {"soc_code": "27-1021.00", "title": "Commercial and Industrial Designers",
+             "employers": 1, "filings": 2},
+            {"soc_code": "15-1255.01", "title": "Video Game Designers", "employers": 1, "filings": 1},
+        ],
+        # Café's 2 filings are third-party; the other 8 are in-house.
+        "placement_model": {
+            "in_house": {"employers": 3, "filings": 8},
+            "third_party_site": {"employers": 1, "filings": 2},
+        },
+        # sector 54 has 3 employers (>= floor); sector 51 (Blank Fields alone) is dropped.
+        "industry_naics2": [
+            {"code": "54", "label": "Professional, Scientific, and Technical Services",
+             "employers": 3, "filings": 9},
+        ],
     },
 }
 

@@ -109,17 +109,22 @@ def build(role=ROLE, requested_quarters=None):
         "case_statuses_seen": stats["case_statuses_seen"],
         "wage_levels_seen": stats["wage_levels_seen"],
         "wage_units_seen": stats["wage_units_seen"],
+        "patterns": stats["patterns"],
         "caveats": CAVEATS,
     }
 
-    # Same-generation guard (§4.3, the v0 F7 successor moved into the emit): the three
-    # independently-sourced employer counts - the serialized rows, the engine stat, and
-    # the provenance object - must agree, or we would ship a stale JSON/provenance mix.
-    if not (len(employers) == stats["employer_groups"] == provenance["employer_groups"]):
+    # Same-generation guard (§4.3, the v0 F7 successor moved into the emit): the four
+    # independently-sourced employer counts - the serialized rows, the engine stat, the
+    # provenance object, and the pattern basis (dec. #44) - must agree, or we would ship
+    # a stale JSON/provenance mix or patterns computed off a different generation.
+    patterns_basis = stats["patterns"]["basis"]["employers"]
+    if not (len(employers) == stats["employer_groups"]
+            == provenance["employer_groups"] == patterns_basis):
         raise RunwayError(
             "Same-generation guard failed: employers rows="
             f"{len(employers)}, stats.employer_groups={stats['employer_groups']}, "
-            f"provenance.employer_groups={provenance['employer_groups']} disagree. "
+            f"provenance.employer_groups={provenance['employer_groups']}, "
+            f"patterns.basis.employers={patterns_basis} disagree. "
             "Refusing to write a stale JSON/provenance mix."
         )
 
@@ -142,6 +147,7 @@ def build(role=ROLE, requested_quarters=None):
         },
         "employer_groups": stats["employer_groups"],
         "rows_wage_excluded_from_wage_stats": stats["rows_wage_excluded"],
+        "patterns": stats["patterns"],
         "caveats": CAVEATS,
         "employers": employers,
     }

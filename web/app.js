@@ -285,11 +285,11 @@ function portfolioUrl() {
 }
 
 function updateResumeState() {
+  // Just capture the raw path — the gate and the prompt fill both re-read and
+  // trim it themselves. (No status echo: the earlier version wrote to a
+  // #resume-state element that never existed in index.html, so every keystroke
+  // threw and swallowed the follow-up updatePromptGate call.)
   state.resumePath = $("resume-input").value;
-  const trimmed = state.resumePath.trim();
-  $("resume-state").textContent = trimmed
-    ? `Résumé path noted: ${trimmed}`
-    : "No résumé path provided.";
 }
 
 /* --------------------------------------------------------- prompt-gen */
@@ -367,6 +367,7 @@ async function generatePrompt() {
   const portfolio = portfolioUrl();
   const selectedRowsCsv = buildSelectedRowsCsv();
   const resumePath = state.resumePath.trim();
+  const currentWork = $("current-work-input").value.trim();
   if ((portfolio === null && !resumePath) || state.selected.size === 0) return;
 
   showPromptStatus("Fetching the prompt template…", false);
@@ -385,10 +386,16 @@ async function generatePrompt() {
     // split/join, not replace(): a path or the CSV rows could legitimately
     // contain `$&`-style sequences that String.replace would treat as
     // substitution patterns.
+    // {{CURRENT_WORK_OR_NONE}} is filled here but deliberately NOT yet in the
+    // TOKENS presence-check above: the prompt template gains that token when the
+    // reviewer prompt is finalized. Until then this split/join is a harmless
+    // no-op (no match -> string returned unchanged). Add it to TOKENS once the
+    // template ships it, so a future template regression is caught.
     const filled = state.template
       .split("{{SELECTED_ROWS}}").join(selectedRowsCsv)
       .split("{{PORTFOLIO}}").join(portfolio || "no portfolio link provided")
-      .split("{{RESUME_OR_NONE}}").join(resumePath || "none provided");
+      .split("{{RESUME_OR_NONE}}").join(resumePath || "none provided")
+      .split("{{CURRENT_WORK_OR_NONE}}").join(currentWork || "none provided");
 
     $("prompt-output").value = filled;
     $("prompt-box").hidden = false;
@@ -458,6 +465,9 @@ if ($("title-select")) {
     updateResumeState();
     updatePromptGate();
   });
+  // Optional input; never affects the gate, but a change must still stale an
+  // already-generated prompt (updatePromptGate hides it), same as the others.
+  $("current-work-input").addEventListener("input", updatePromptGate);
   $("generate-btn").addEventListener("click", generatePrompt);
   $("copy-btn").addEventListener("click", copyPrompt);
 

@@ -132,3 +132,33 @@ def test_I8_no_filing_counted_twice_across_cumulative_quarters(employer, wage):
                                    {"FY2030Q1": q_earlier, "FY2030Q2": q_later})
     assert int(table.iloc[0]["filing_count"]) == 1
     assert table.iloc[0]["repeat_sponsor"] == "no"
+
+
+# --------------------------------------------------------------------------- I9
+@settings(max_examples=60, deadline=None)
+@given(_selectable_frame())
+def test_I9_pattern_invariants(f):
+    """I9 (dec. #44): on any selectable frame the title-shortlist patterns are
+    self-consistent — basis == the shortlist denominators, no floored entry below
+    the floor or above the basis, every bucket count within the basis, and the
+    placement model partitions the selected filings exactly."""
+    _, stats = build_sponsor_table(DESIGN, "I", {"FY2099Q1": f})
+    p = stats["patterns"]
+    basis_e, basis_f = p["basis"]["employers"], p["basis"]["filings"]
+    floor = p["basis"]["min_support_employers"]
+
+    assert basis_e == stats["employer_groups"]
+    assert basis_f == stats["rows_selected"]
+
+    for entry in p["job_titles"]["recurring_tokens"] + p["industry_naics2"]:
+        assert floor <= entry["employers"] <= basis_e     # floor gates, basis caps
+        assert entry["filings"] <= basis_f
+    for title in p["job_titles"]["distinct_titles"]:       # verbatim: unfloored
+        assert 1 <= title["employers"] <= basis_e
+        assert title["filings"] <= basis_f
+    for occ in p["onet_occupations"]:
+        assert 1 <= occ["employers"] <= basis_e
+        assert occ["filings"] <= basis_f
+
+    pm = p["placement_model"]
+    assert pm["in_house"]["filings"] + pm["third_party_site"]["filings"] == basis_f

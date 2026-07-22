@@ -97,6 +97,46 @@ def check_employer_collapse(table, stats) -> CheckResult:
     return CheckResult("employer-collapse", "PASS", detail)
 
 
+def check_patterns_consistent(table, stats) -> CheckResult:
+    """The title-shortlist patterns (dec. #44) are internally consistent with the
+    shortlist they summarize: the pattern basis employer count equals the number
+    of employer groups, no bucket claims more employers than the basis, and every
+    floor-gated entry actually clears the support floor. A pattern that overstated
+    its support would corrupt the very confidence the block exists to give."""
+    patterns = stats.get("patterns")
+    if not patterns:
+        raise RunwayError(
+            "Stats carry no patterns block, but the emit expects one (dec. #44).\n"
+            "compute_patterns() did not run - do not trust this run."
+        )
+    basis = patterns["basis"]
+    if basis["employers"] != stats["employer_groups"]:
+        raise RunwayError(
+            f"Pattern basis employers ({basis['employers']}) != employer_groups "
+            f"({stats['employer_groups']}). Patterns and shortlist disagree on the "
+            "denominator - do not trust this run."
+        )
+    floor = basis["min_support_employers"]
+    floored = list(patterns["job_titles"]["recurring_tokens"]) + list(patterns["industry_naics2"])
+    for entry in floored:
+        if entry["employers"] < floor:
+            raise RunwayError(
+                f"A floor-gated pattern entry ({entry}) is below the support floor "
+                f"({floor} employers) - the gate leaked. Do not trust this run."
+            )
+        if entry["employers"] > basis["employers"]:
+            raise RunwayError(
+                f"A pattern entry ({entry}) claims more employers than the basis "
+                f"({basis['employers']}) - counting is broken. Do not trust this run."
+            )
+    return CheckResult(
+        "patterns-consistent", "PASS",
+        f"{len(patterns['job_titles']['recurring_tokens'])} recurring token(s), "
+        f"{len(patterns['industry_naics2'])} industry sector(s) above the "
+        f"{floor}-employer floor; basis {basis['employers']} employers",
+    )
+
+
 def check_golden_top_employer(quarters) -> CheckResult:
     """Recompute the pinned quarter from its own rows and compare the top
     employer against the known answer."""
@@ -130,5 +170,6 @@ def run_all(table, stats, quarters) -> list[CheckResult]:
         check_nonempty(table, stats),
         check_filing_count_sum(table, stats),
         check_employer_collapse(table, stats),
+        check_patterns_consistent(table, stats),
         check_golden_top_employer(quarters),
     ]

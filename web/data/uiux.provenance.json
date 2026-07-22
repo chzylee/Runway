@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-21 02:42 UTC",
+  "generated_at_utc": "2026-07-22 00:37 UTC",
   "source": "US DOL OFLC LCA Programs disclosure data (public record)",
   "filters": {
     "case_status": "Certified",
@@ -43,6 +43,189 @@
   "wage_units_seen": {
     "YEAR": 24,
     "HOUR": 10
+  },
+  "patterns": {
+    "basis": {
+      "filings": 34,
+      "employers": 28,
+      "measured_by": "employers",
+      "min_support_employers": 3
+    },
+    "job_titles": {
+      "recurring_tokens": [
+        {
+          "token": "product",
+          "employers": 10,
+          "filings": 12
+        },
+        {
+          "token": "web",
+          "employers": 6,
+          "filings": 8
+        },
+        {
+          "token": "digital",
+          "employers": 4,
+          "filings": 6
+        },
+        {
+          "token": "ux",
+          "employers": 3,
+          "filings": 3
+        }
+      ],
+      "distinct_titles": [
+        {
+          "title": "Product Designer",
+          "employers": 7,
+          "filings": 7
+        },
+        {
+          "title": "Founding Product Designer",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "UX Designer",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Digital Design Architect",
+          "employers": 1,
+          "filings": 3
+        },
+        {
+          "title": "Mobile & Web Product Development Engineer/Lead",
+          "employers": 1,
+          "filings": 3
+        },
+        {
+          "title": "Studio Staff",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Coordinator, Computer Applications (Content Manage",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "DIGITAL MARKETING & SYSTEMS COORDINATOR",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Lead Designer, Web & Digital Interfaces",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Presentation Designer II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "SENIOR VISUAL DESIGNER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Web Designer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "TECHNICAL DESIGNER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "UX Developer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "User Experience Designer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "User Interface Design Engineer Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Video Game Designer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Video Game Special Effects Animator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Web Content Developer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Web Designer Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Web and Digital Interface (UI) Designer",
+          "employers": 1,
+          "filings": 1
+        }
+      ]
+    },
+    "onet_occupations": [
+      {
+        "soc_code": "15-1255.00",
+        "title": "Web and Digital Interface Designers",
+        "employers": 25,
+        "filings": 31
+      },
+      {
+        "soc_code": "15-1255.01",
+        "title": "Video Game Designers",
+        "employers": 3,
+        "filings": 3
+      }
+    ],
+    "placement_model": {
+      "in_house": {
+        "employers": 27,
+        "filings": 33
+      },
+      "third_party_site": {
+        "employers": 1,
+        "filings": 1
+      }
+    },
+    "industry_naics2": [
+      {
+        "code": "54",
+        "label": "Professional, Scientific, and Technical Services",
+        "employers": 12,
+        "filings": 15
+      },
+      {
+        "code": "51",
+        "label": "Information",
+        "employers": 10,
+        "filings": 10
+      },
+      {
+        "code": "61",
+        "label": "Educational Services",
+        "employers": 4,
+        "filings": 5
+      }
+    ]
   },
   "caveats": [
     "An LCA certification is not a hire or an open role.",

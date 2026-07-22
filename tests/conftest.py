@@ -48,6 +48,8 @@ _GOOD_ROW = {
     "WAGE_RATE_OF_PAY_TO": "95000",
     "WAGE_UNIT_OF_PAY": "Year",
     "PW_WAGE_LEVEL": "I",
+    "NAICS_CODE": "541430",          # Graphic Design Services (sector 54)
+    "SECONDARY_ENTITY": "No",        # in-house worksite by default
 }
 
 

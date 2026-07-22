@@ -995,3 +995,66 @@ window. Suite: 96 passed (14 restored fetch cases green, no prior test regressed
 
 **Deferred (unchanged from the original slice):** rebase-or-retry on a non-fast-forward push
 (old P19) — safe to skip because the concurrency group serializes runs; a v1.1 hardening.
+
+## 44. Title-shortlist patterns are pre-computed deterministically in the engine, not left to the user's LLM
+
+*2026-07-21, owner call ("the pre-processed patterns are viable as an immediate extension to the
+data pipeline per title"); the four design knobs below were each ratified in-conversation before
+the build.*
+
+**The problem.** The recommendations prompt asks the user's own LLM to surface, for a job title,
+"patterns in the roles and skills that sponsors hire for" and one project to build toward them. An
+LLM asked to *count* over the shortlist rows (36 filings / ~29 employers for `uiux` across two
+quarters) miscounts subtly — fatal to the product's trust claim — and would burn user tokens doing
+arithmetic badly. So the counting moves into the deterministic engine; the user's LLM keeps only
+the *interpretation* (which project, how to frame it), which is where flexibility and the teaching
+value actually live.
+
+**Alternatives considered.** (a) Leave all pattern-finding to the user's pasted prompt — rejected:
+the miscount risk above, and no denominator discipline. (b) Call an LLM at build time to write
+pattern *prose* into the JSON — rejected: breaks the architecture's load-bearing line ("Runway
+never calls an LLM") and hides the very reasoning the prompt exists to teach. (c) Pre-compute the
+*counts* only, in the engine, and hand them to the user's LLM as stated facts — **taken.** The
+arithmetic has one correct answer and no flexibility to lose; the interpretation stays with the
+user.
+
+**What was built.** `engine.sponsors.compute_patterns(selected)` runs over the already-selected
+title-shortlist rows (certified ∩ Level I ∩ role SOCs ∩ quarters on disk) and returns a
+`patterns` object now carried in both `web/data/<role>.json` and its provenance. Blocks:
+`job_titles.recurring_tokens` (floor-gated), `job_titles.distinct_titles` (verbatim evidence),
+`onet_occupations`, `placement_model`, `industry_naics2`. Two columns were added to
+`REQUIRED_COLUMNS` — `NAICS_CODE` and `SECONDARY_ENTITY` — read *only* as pattern inputs; neither
+touches the certified/SOC/wage filter or the employer aggregation. Adding them makes every
+pre-#44 parquet stale, which the engine's existing missing-column guard catches loudly
+(`--force-convert` to rebuild); the CI cache key was bumped `dol-processed-v1-`→`-v2-` so the
+scheduled run re-fetches to the 14-column schema instead of tripping that guard.
+
+**The four ratified knobs (the judgment calls):**
+1. **Denominator is employers, not filings.** Every count carries both, but the support floor and
+   all "which pattern is real" logic count *distinct employers* — so one prolific filer cannot
+   manufacture a pattern.
+2. **Support floor = 3 employers.** A recurring token or industry sector below it is **dropped
+   entirely, not hedged** (~10% at real Level-I design volume). Revisit only if a real pull looks
+   too sparse. (This also gives a clean rule for admitting new title patterns automatically.)
+3. **Tokenizer strips only non-discriminating words** — the role-family words (`design`/`designer`,
+   true of ~100% of rows *by construction* so zero-signal here) plus articles and bare
+   numerals/roman markers. Seniority (`senior`/`lead`/`founding`) and domain words
+   (`product`/`web`/`ux`) are kept — they are the signal. Because bag-of-words alone destroys title
+   legibility, `distinct_titles` ships the **verbatim** titles alongside (employer-counted, no
+   floor, no stopword): the tokens are the finding, the raw titles are the evidence.
+4. **The O*NET split is presentation-only.** `canonical_onet()` preserves the decimal suffix that
+   `normalize_soc()` strips for matching, so `15-1255.01` (Video Game Designers) shows as a distinct
+   line instead of silently inflating the base occupation. Matching and dec. #39 are unchanged.
+
+**Naming.** The pre-selection row set is called the **title-shortlist** (or "matched filings"),
+never "cohort" — it is a convenience sample of *filings*, not a representative sample of an
+industry, and the flatter name keeps that honest. Patterns computed on it; the user's *selection*
+of specific companies only shades the resulting project, never generates it.
+
+**Checkable.** `web/data/design.json` and `uiux.json` carry a top-level `patterns` object;
+`engine.verify.check_patterns_consistent` fails the build if a floor-gated entry leaks below the
+floor, any bucket exceeds the basis, or `basis.employers != employer_groups`; the emit's
+same-generation guard now also pins `patterns.basis.employers`. Suite: 115 passed (+19 over dec.
+#43's 96 — engine unit tests for the tokenizer/O*NET/floor/denominator knobs, an emit oracle for
+the whole `patterns` object, and property I9). The prompt-template rewrite that *consumes* this
+block (the §1–§5 output structure) is the next slice, not this one.

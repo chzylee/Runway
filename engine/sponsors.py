@@ -7,7 +7,7 @@ normalized employer. Pure data in, data out - no LLM, no HTML, no printing.
 from __future__ import annotations
 
 import re
-from collections import Counter
+from collections import Counter, defaultdict
 from pathlib import Path
 
 import pandas as pd
@@ -29,6 +29,12 @@ REQUIRED_COLUMNS = [
     "WAGE_RATE_OF_PAY_TO",
     "WAGE_UNIT_OF_PAY",
     "PW_WAGE_LEVEL",
+    # Added dec. #44 for the title-shortlist pattern block: NAICS_CODE (employer's
+    # self-reported industry) and SECONDARY_ENTITY (worker at a third-party site ->
+    # agency/staffing vs in-house). Both are read-only pattern inputs; neither
+    # touches the certified/SOC/wage-level filter or the employer aggregation.
+    "NAICS_CODE",
+    "SECONDARY_ENTITY",
 ]
 
 # Adding a role later = one new entry here. All SOC codes within a role are
@@ -199,6 +205,211 @@ def supersede_cumulative_quarters(quarters):
     return kept, superseded
 
 
+# --------------------------------------------------------------------------- #
+# Title-shortlist patterns (dec. #44)
+#
+# Deterministic, employer-denominated aggregates over the SELECTED rows (the
+# certified Level-I filings for a role) — the "title-shortlist." Counts only, no
+# interpretation: the reasoning happens later in the user's own LLM, off these
+# facts. Every count carries BOTH denominators (employers and filings); a token
+# or industry below the employer support floor is omitted entirely, never hedged.
+# The employer denominator (not filings) is deliberate: one prolific filer must
+# not be able to manufacture a pattern.
+# --------------------------------------------------------------------------- #
+
+# No pattern (a recurring token or an industry) is stated unless at least this
+# many DISTINCT employers back it. At real Level-I design volumes (~30 employers)
+# this is ~10%. Widen/narrow if a real pull looks too sparse or too noisy.
+PATTERN_MIN_SUPPORT = 3
+
+# Title tokens stripped before counting recurrences (dec. #44, ratified knob 3).
+# We strip ONLY words that cannot discriminate *within* the title-shortlist:
+#   - the role-family filter words (design/designer(s)) — true of ~100% of rows
+#     by construction, since every selected row matched a design SOC code, so
+#     they carry zero signal here (not an arbitrary blocklist); and
+#   - lexically empty words (articles/conjunctions/prepositions) and bare
+#     numerals / roman level markers.
+# Everything else survives — crucially seniority (senior/junior/lead/founding/
+# associate) and domain/function words (product/web/graphic/ux/research), which
+# are the actual signal. Adding a NON-design role family later revisits the
+# role-word set (the clean "add a title" path noted alongside knob 2).
+_TITLE_ROLE_STOPWORDS = {"design", "designer", "designers"}
+_TITLE_GENERIC_STOPWORDS = {
+    "a", "an", "the", "of", "and", "for", "to", "in", "on", "with", "at", "by", "or",
+}
+_TITLE_ROMAN_TOKENS = {"i", "ii", "iii", "iv", "v", "vi", "vii", "viii", "ix", "x"}
+_ALL_DIGITS = re.compile(r"^\d+$")
+
+# Official Census NAICS 2-digit sector titles (a fixed government list, not a
+# judgment). Sectors that span a range share a label (Manufacturing 31-33, Retail
+# 44-45, Transportation 48-49), so each prefix maps to the same sector name.
+NAICS2_SECTORS = {
+    "11": "Agriculture, Forestry, Fishing and Hunting",
+    "21": "Mining, Quarrying, and Oil and Gas Extraction",
+    "22": "Utilities",
+    "23": "Construction",
+    "31": "Manufacturing", "32": "Manufacturing", "33": "Manufacturing",
+    "42": "Wholesale Trade",
+    "44": "Retail Trade", "45": "Retail Trade",
+    "48": "Transportation and Warehousing", "49": "Transportation and Warehousing",
+    "51": "Information",
+    "52": "Finance and Insurance",
+    "53": "Real Estate and Rental and Leasing",
+    "54": "Professional, Scientific, and Technical Services",
+    "55": "Management of Companies and Enterprises",
+    "56": "Administrative and Support and Waste Management and Remediation Services",
+    "61": "Educational Services",
+    "62": "Health Care and Social Assistance",
+    "71": "Arts, Entertainment, and Recreation",
+    "72": "Accommodation and Food Services",
+    "81": "Other Services (except Public Administration)",
+    "92": "Public Administration",
+}
+
+
+def title_tokens(title: str) -> set[str]:
+    """The discriminating word tokens in one job title (see stopword rationale
+    above). Returns a SET so a token counts once per filing, never inflated by a
+    title that repeats a word."""
+    tokens = set()
+    for word in re.split(r"[^a-z0-9]+", str(title).lower()):
+        if len(word) < 2:                       # drop "" and stray single chars
+            continue
+        if word in _TITLE_ROLE_STOPWORDS or word in _TITLE_GENERIC_STOPWORDS:
+            continue
+        if word in _TITLE_ROMAN_TOKENS or _ALL_DIGITS.match(word):
+            continue
+        tokens.add(word)
+    return tokens
+
+
+def canonical_onet(raw) -> str:
+    """Canonical O*NET detail code, PRESERVING the decimal suffix that
+    normalize_soc() strips for matching. Bare base "15-1255" is the ".00" base
+    occupation; "15-1255.01" (Video Game Designers) stays distinct. This only
+    REPORTS composition — it never changes what the SOC filter matches (dec. #39)."""
+    s = str(raw).strip()
+    if not s:
+        return ""
+    base, dot, detail = s.partition(".")
+    if not dot or detail == "" or detail == "0":
+        detail = "00"
+    return f"{base}.{detail}"
+
+
+def _bucket_counts(keys_by_bucket, filings_by_bucket):
+    """{bucket: set_of_employer_keys} + {bucket: filing_count} -> sorted records
+    of {..., employers, filings}, employers-desc then filings-desc."""
+    records = []
+    for bucket, emps in keys_by_bucket.items():
+        records.append((bucket, len(emps), int(filings_by_bucket[bucket])))
+    return records
+
+
+def compute_patterns(selected, min_support_employers=PATTERN_MIN_SUPPORT):
+    """Employer-denominated pattern aggregates over the selected title-shortlist
+    rows. `selected` must already carry the `_employer_key` column that
+    build_sponsor_table assigns. Pure counting; returns the JSON-ready patterns
+    object (dec. #44)."""
+    keys = list(selected["_employer_key"])
+    n_employers = len(set(keys))
+    n_filings = len(selected)
+
+    # --- job-title tokens (floor-gated pattern) ---
+    titles = list(_clean(selected["JOB_TITLE"]))
+    token_employers = defaultdict(set)
+    token_filings = Counter()
+    for title, key in zip(titles, keys):
+        for tok in title_tokens(title):
+            token_employers[tok].add(key)
+            token_filings[tok] += 1
+    recurring_tokens = [
+        {"token": tok, "employers": len(emps), "filings": int(token_filings[tok])}
+        for tok, emps in token_employers.items()
+        if len(emps) >= min_support_employers
+    ]
+    recurring_tokens.sort(key=lambda d: (-d["employers"], -d["filings"], d["token"]))
+
+    # --- distinct titles (verbatim evidence: no stopword, no floor) ---
+    title_employers = defaultdict(set)
+    title_filings = Counter()
+    for title, key in zip(titles, keys):
+        label = title if title else "(blank)"
+        title_employers[label].add(key)
+        title_filings[label] += 1
+    distinct_titles = [
+        {"title": label, "employers": len(emps), "filings": int(title_filings[label])}
+        for label, emps in title_employers.items()
+    ]
+    distinct_titles.sort(key=lambda d: (-d["employers"], -d["filings"], d["title"]))
+
+    # --- O*NET occupation split (reporting only; suffix preserved) ---
+    codes = [canonical_onet(c) for c in _clean(selected["SOC_CODE"])]
+    soc_titles = list(_clean(selected["SOC_TITLE"]))
+    onet_employers = defaultdict(set)
+    onet_filings = Counter()
+    onet_title_votes = defaultdict(Counter)
+    for code, soc_title, key in zip(codes, soc_titles, keys):
+        onet_employers[code].add(key)
+        onet_filings[code] += 1
+        if soc_title:
+            onet_title_votes[code][soc_title] += 1
+    onet_occupations = []
+    for code, emps in onet_employers.items():
+        votes = onet_title_votes[code]
+        title = votes.most_common(1)[0][0] if votes else ""
+        onet_occupations.append({
+            "soc_code": code, "title": title,
+            "employers": len(emps), "filings": int(onet_filings[code]),
+        })
+    onet_occupations.sort(key=lambda d: (-d["filings"], -d["employers"], d["soc_code"]))
+
+    # --- placement model: in-house vs third-party worksite (SECONDARY_ENTITY) ---
+    # Filings partition cleanly; an employer with filings of BOTH kinds is counted
+    # in both employer buckets (the buckets are not employer-exclusive).
+    secondary = _clean(selected["SECONDARY_ENTITY"]).str.upper()
+    third_party = [s == "YES" for s in secondary]
+    tp_keys = {k for k, is_tp in zip(keys, third_party) if is_tp}
+    ih_keys = {k for k, is_tp in zip(keys, third_party) if not is_tp}
+    placement_model = {
+        "in_house": {"employers": len(ih_keys), "filings": sum(1 for x in third_party if not x)},
+        "third_party_site": {"employers": len(tp_keys), "filings": sum(1 for x in third_party if x)},
+    }
+
+    # --- industry (NAICS 2-digit sector, floor-gated) ---
+    naics2 = [c[:2] for c in _clean(selected["NAICS_CODE"])]
+    naics_employers = defaultdict(set)
+    naics_filings = Counter()
+    for code, key in zip(naics2, keys):
+        if not code:
+            continue
+        naics_employers[code].add(key)
+        naics_filings[code] += 1
+    industry_naics2 = [
+        {"code": code, "label": NAICS2_SECTORS.get(code, "Other / Unclassified"),
+         "employers": len(emps), "filings": int(naics_filings[code])}
+        for code, emps in naics_employers.items()
+        if len(emps) >= min_support_employers
+    ]
+    industry_naics2.sort(key=lambda d: (-d["employers"], -d["filings"], d["code"]))
+
+    return {
+        "basis": {
+            "filings": int(n_filings),
+            "employers": int(n_employers),
+            "measured_by": "employers",
+            "min_support_employers": int(min_support_employers),
+        },
+        "job_titles": {
+            "recurring_tokens": recurring_tokens,
+            "distinct_titles": distinct_titles,
+        },
+        "onet_occupations": onet_occupations,
+        "placement_model": placement_model,
+        "industry_naics2": industry_naics2,
+    }
+
+
 def build_sponsor_table(soc_codes, wage_level, quarters):
     """Aggregate certified `wage_level` filings for `soc_codes` into one row
     per normalized employer.
@@ -300,4 +511,9 @@ def build_sponsor_table(soc_codes, wage_level, quarters):
         .reset_index(drop=True)
     )
     stats["employer_groups"] = int(len(table))
+
+    # Title-shortlist patterns over the same selected rows (dec. #44). Computed
+    # here so the emit only serializes; basis.employers is the same denominator
+    # as employer_groups (the emit's same-generation guard pins that).
+    stats["patterns"] = compute_patterns(selected)
     return table, stats
