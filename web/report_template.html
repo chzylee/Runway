@@ -62,6 +62,10 @@
   .tag-partial { border-color: #7a9ec9; color: #2b5c8a; background: #eef4fa; }
   .tag-shown { border-color: #7db07d; color: #2f6b2f; background: #eef7ee; }
   .grounding { font-size: .88rem; color: var(--muted); margin: .3rem 0 0; }
+  details { margin-top: .6rem; }
+  summary.why-summary { cursor: pointer; font-size: .85rem; color: var(--accent); list-style: revert; }
+  summary.why-summary:hover { text-decoration: underline; }
+  .why-body { padding: .5rem 0 .1rem .25rem; border-left: 2px solid var(--line); padding-left: .75rem; margin-top: .4rem; }
   .label { font-weight: 600; }
   ul { margin: .4rem 0; padding-left: 1.2rem; }
   li { margin: .25rem 0; }
@@ -188,7 +192,33 @@
         var tag = SKILL_TAG[s.relative_to_you];
         if (tag) h.appendChild(el("span", tag[0], tag[1]));
         card.appendChild(h);
-        if (s.grounding) card.appendChild(el("p", "grounding", "Why this shows up: " + s.grounding));
+
+        // The rating is a judgment, so it has to be inspectable rather than
+        // asserted: one click shows what the market signal was AND what in the
+        // person's own work earned the rating. A rating whose personal evidence
+        // is null says so out loud — that is the case most likely to be wrong.
+        var why = document.createElement("details");
+        why.appendChild(el("summary", "why-summary", "Why this rating?"));
+        var inner = el("div", "why-body");
+
+        var mine = el("p", "grounding");
+        mine.appendChild(el("span", "label", "In your work: "));
+        if (s.evidence_in_your_work) {
+          mine.appendChild(el("span", null, s.evidence_in_your_work));
+        } else {
+          mine.appendChild(el("span", "none",
+            "nothing specific was pointed to — this rating is inferred, so treat it with suspicion and check it yourself."));
+        }
+        inner.appendChild(mine);
+
+        if (s.grounding) {
+          var mkt = el("p", "grounding");
+          mkt.appendChild(el("span", "label", "Why the market wants it: "));
+          mkt.appendChild(el("span", null, s.grounding));
+          inner.appendChild(mkt);
+        }
+        why.appendChild(inner);
+        card.appendChild(why);
         root.appendChild(card);
       });
     }

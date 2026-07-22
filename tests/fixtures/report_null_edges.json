@@ -8,19 +8,22 @@
       "skill": "End-to-end brand systems",
       "grounding": "graphic (22 employers) is the largest recurring title token",
       "relative_to_you": "partial",
-      "priority": 1
+      "priority": 1,
+      "evidence_in_your_work": null
     },
     {
       "skill": "Product surface design",
       "grounding": "web-and-digital-interface occupations, 25 employers",
       "relative_to_you": "already_shown",
-      "priority": 2
+      "priority": 2,
+      "evidence_in_your_work": null
     },
     {
       "skill": "Working solo inside a small team",
       "grounding": "75 of 76 employers use the in-house placement model",
       "relative_to_you": "gap",
-      "priority": 3
+      "priority": 3,
+      "evidence_in_your_work": null
     }
   ],
   "one_thing_to_work_on": {
