@@ -124,6 +124,27 @@ at its contents.
 
 ### 1. Portfolio (may be absent)
 
+Handle this the same way you handle the résumé, and **never settle for not reading it**:
+
+- **Absent** (`no portfolio link provided`) — proceed on the résumé and the rows.
+- **Present but you cannot read it** — a 403, a timeout, a login wall, a
+  JavaScript-only page. Do **not** proceed on a substitute. Work this ladder in
+  order and stop at the first step that gives you a real read:
+  1. Retry the fetch once — transient blocks and timeouts are common.
+  2. Try another automatic route: a cached or archived copy, or the site's own
+     project/case-study subpages rather than the root.
+  3. If none of that reaches the actual work, **stop and ask.** Say exactly what
+     failed, and ask them to paste the case-study text, attach screenshots, or
+     point you at a readable mirror.
+
+**A secondhand account of the portfolio is not a read.** Their LinkedIn posts, press
+coverage, or a résumé bullet describing a project tell you a project exists; they do
+not show you the work, and you cannot judge what a portfolio *proves to a skeptic*
+from someone's description of it. Never silently reconstruct the portfolio from those
+and continue. If, after you have asked, they tell you to proceed on a secondhand
+source anyway, you may — but say so plainly in the report and record it in
+`run_record`.
+
 {{PORTFOLIO}}
 
 ### 2. Résumé — a FILE PATH, not content (read it only if you have file access)

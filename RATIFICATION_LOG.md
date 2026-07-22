@@ -255,8 +255,13 @@ grounded in the README — the loudest "what is this" artifact — not in
 `decision_log.md:411`. This is the Handshake Protocol's own named failure
 (Runway's first run: a write-only decision log, correct in the ledger while the
 code contradicted it) **recurring one layer up, in the prose**. See the Ship
-Pipeline write-up: *Experiments and Review -> When a scope decision hardens into
-an identity*.
+Pipeline write-up: *Experiments and Review -> Design-doc drift in Runway v1*.
+
+*Diagnosis refined after the sitting (per Noah, same day): the general pattern is
+not "a scope decision hardened into an identity" (that describes only the audience
+binding) but **implementation-time decisions not propagating back to the design
+doc**. All eight drifts were recorded in the decision log or this file; capture
+worked, propagation did not. The write-up above carries the corrected framing.*
 
 Corrective, applied this sitting: caveat dropped at its single source
 (`scripts/_util.py`), `{{ROLE_LABEL}}` token added, wrapper states the role is

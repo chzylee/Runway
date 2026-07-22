@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Runway — your report</title>
+<!--
+  SELF-CONTAINED BY REQUIREMENT. This file is opened from disk (file://) after an
+  agent injects a report into it, so it can never fetch anything: no external CSS,
+  no external JS, no web fonts. Everything it needs is inline.
+
+  THE HANDOFF MECHANISM
+  An agent that ran the recommendations prompt does exactly one thing to this file:
+  replace the placeholder token in the report-data script block below with the
+  report JSON, then open the result. It does NOT generate markup — this page
+  renders itself. That is what makes the handoff reliable on a small model: a
+  string replace is deterministic, whereas a model retyping an HTML file is not.
+
+  The token appears EXACTLY ONCE in this file, on purpose. Do not write it again
+  anywhere (not even in a comment) — a second occurrence makes "replace the first
+  match" ambiguous and can corrupt the wrong line.
+
+  Escape `<` as < while substituting. A literal </script> inside the JSON
+  would otherwise close the tag early.
+
+  Opened WITHOUT substitution, the token is still present and this page falls back
+  to a paste box — so the same file serves the agent handoff and the manual path,
+  and there is only one render surface to maintain.
+
+  SECURITY: every value from the report reaches the DOM via textContent, never
+  innerHTML. The report is model output and must be treated as untrusted.
+-->
+<style>
+  :root {
+    --ink: #1b1b1b; --muted: #666; --line: #e0e0e0; --bg: #fdfdfc;
+    --accent: #2b5c8a; --warn-bg: #fff8e6; --warn-line: #e6d28a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto; padding: 2rem 1.25rem 4rem; max-width: 46rem;
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    color: var(--ink); background: var(--bg);
+  }
+  h1 { font-size: 1.5rem; margin: 0 0 .25rem; }
+  h2 {
+    font-size: 1.05rem; text-transform: uppercase; letter-spacing: .06em;
+    color: var(--muted); margin: 2.5rem 0 .75rem;
+    border-bottom: 1px solid var(--line); padding-bottom: .4rem;
+  }
+  h3 { font-size: 1rem; margin: 1.25rem 0 .25rem; }
+  p { margin: .5rem 0; }
+  .sub { color: var(--muted); margin: 0 0 2rem; font-size: .92rem; }
+  .lede { font-size: 1.15rem; line-height: 1.5; margin: 0 0 .5rem; }
+  .why { color: var(--muted); }
+  .card { border: 1px solid var(--line); border-radius: 6px; padding: 1rem 1.1rem; margin: .75rem 0; background: #fff; }
+  .tag {
+    display: inline-block; font-size: .72rem; text-transform: uppercase;
+    letter-spacing: .05em; padding: .15rem .5rem; border-radius: 999px;
+    border: 1px solid var(--line); color: var(--muted); margin-left: .5rem; vertical-align: middle;
+  }
+  .tag-gap { border-color: #c98a2b; color: #8a5a12; background: #fdf3e3; }
+  .tag-partial { border-color: #7a9ec9; color: #2b5c8a; background: #eef4fa; }
+  .tag-shown { border-color: #7db07d; color: #2f6b2f; background: #eef7ee; }
+  .grounding { font-size: .88rem; color: var(--muted); margin: .3rem 0 0; }
+  .label { font-weight: 600; }
+  ul { margin: .4rem 0; padding-left: 1.2rem; }
+  li { margin: .25rem 0; }
+  a { color: var(--accent); }
+  .sources { font-size: .85rem; margin-top: .5rem; }
+  .sources li { word-break: break-all; }
+  .none { color: var(--muted); font-style: italic; }
+  .callout { background: var(--warn-bg); border: 1px solid var(--warn-line); border-radius: 6px; padding: .9rem 1.1rem; margin: 1rem 0; }
+  .record { font-size: .9rem; }
+  .record td { padding: .2rem .75rem .2rem 0; }
+  .yes { color: #2f6b2f; } .no { color: #a33; }
+  #paste-view { display: none; }
+  textarea { width: 100%; min-height: 14rem; font-family: ui-monospace, Menlo, Consolas, monospace; font-size: .85rem; padding: .6rem; border: 1px solid var(--line); border-radius: 6px; }
+  button { font: inherit; padding: .5rem 1rem; border: 1px solid var(--line); border-radius: 6px; background: #fff; cursor: pointer; }
+  button:hover { background: #f2f2f2; }
+  .error { color: #a33; }
+</style>
+</head>
+<body>
+
+<div id="paste-view">
+  <h1>Your Runway report</h1>
+  <p class="sub">Paste the JSON your LLM returned. Nothing leaves this page — it renders in your browser.</p>
+  <textarea id="paste-input" spellcheck="false" placeholder='Paste the whole reply. A ```json fence or a note after it is fine.'></textarea>
+  <p><button id="paste-btn" type="button">Show my report</button></p>
+  <p id="paste-error" class="error"></p>
+</div>
+
+<div id="report-view"></div>
+
+<script type="application/json" id="report-data">__REPORT_JSON__</script>
+<script>
+(function () {
+  "use strict";
+
+  var PLACEHOLDER = "__REPORT_" + "JSON__";   // split so substitution can't hit this line
+
+  /* ---------------------------------------------------------------- parse */
+
+  // Tolerates a ```json fence AND prose before/after the object: a real run
+  // appended a plain-English note after the closing brace, so assuming the whole
+  // string is JSON is not safe. Take the outermost {...} instead.
+  function parseReport(text) {
+    if (typeof text !== "string" || !text.trim()) throw new Error("empty");
+    var start = text.indexOf("{");
+    var end = text.lastIndexOf("}");
+    if (start < 0 || end <= start) throw new Error("no JSON object found");
+    var data = JSON.parse(text.slice(start, end + 1));
+    if (!data || typeof data !== "object") throw new Error("not an object");
+    // distinctive_edge is legitimately null, so it can never be required.
+    if (!data.headline && !data.one_thing_to_work_on) {
+      throw new Error("this does not look like a Runway report");
+    }
+    return data;
+  }
+
+  /* --------------------------------------------------------------- render */
+
+  function el(tag, cls, text) {
+    var n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text !== undefined && text !== null && text !== "") n.textContent = String(text);
+    return n;
+  }
+
+  function section(root, title) {
+    root.appendChild(el("h2", null, title));
+  }
+
+  function sourceList(urls) {
+    if (!Array.isArray(urls) || !urls.length) return null;
+    var wrap = el("div", "sources");
+    wrap.appendChild(el("span", "label", "Sources: "));
+    var ul = el("ul");
+    urls.forEach(function (u) {
+      var li = el("li");
+      var a = el("a", null, u);
+      // Only http(s) becomes a live link; anything else stays inert text.
+      if (/^https?:\/\//i.test(String(u))) {
+        a.href = u; a.target = "_blank"; a.rel = "noopener noreferrer";
+        li.appendChild(a);
+      } else {
+        li.appendChild(el("span", null, u));
+      }
+      ul.appendChild(li);
+    });
+    wrap.appendChild(ul);
+    return wrap;
+  }
+
+  var SKILL_TAG = {
+    already_shown: ["tag tag-shown", "already shown"],
+    partial: ["tag tag-partial", "partially shown"],
+    gap: ["tag tag-gap", "gap"]
+  };
+
+  var MODE_LABEL = {
+    new_project: "Start something new",
+    deepen_existing: "Deepen what you're building",
+    reframe_existing: "Reframe what you're building"
+  };
+
+  function renderReport(data, root) {
+    root.replaceChildren();
+
+    root.appendChild(el("h1", null, "Your Runway report"));
+    root.appendChild(el("p", "sub", "Career and portfolio guidance from your own LLM run — not immigration legal advice."));
+
+    // --- headline
+    if (data.headline) {
+      section(root, "The one direction");
+      root.appendChild(el("p", "lede", data.headline.angle));
+      if (data.headline.why) root.appendChild(el("p", "why", data.headline.why));
+    }
+
+    // --- skills, ordered by priority (1 = highest)
+    var skills = Array.isArray(data.skills_to_demonstrate) ? data.skills_to_demonstrate.slice() : [];
+    if (skills.length) {
+      skills.sort(function (a, b) { return (a.priority || 99) - (b.priority || 99); });
+      section(root, "Skills to demonstrate");
+      skills.forEach(function (s) {
+        var card = el("div", "card");
+        var h = el("h3", null, s.skill);
+        var tag = SKILL_TAG[s.relative_to_you];
+        if (tag) h.appendChild(el("span", tag[0], tag[1]));
+        card.appendChild(h);
+        if (s.grounding) card.appendChild(el("p", "grounding", "Why this shows up: " + s.grounding));
+        root.appendChild(card);
+      });
+    }
+
+    // --- the one thing
+    var one = data.one_thing_to_work_on;
+    if (one) {
+      section(root, "The one thing to work on");
+      var card = el("div", "card");
+      if (MODE_LABEL[one.mode]) card.appendChild(el("h3", null, MODE_LABEL[one.mode]));
+      if (one.recommendation) card.appendChild(el("p", "lede", one.recommendation));
+      if (one.why) card.appendChild(el("p", null, one.why));
+      if (one.how_it_signals) {
+        var p = el("p", "why");
+        p.appendChild(el("span", "label", "How it reads: "));
+        p.appendChild(el("span", null, one.how_it_signals));
+        card.appendChild(p);
+      }
+      if (one.current_work_note) {
+        var n = el("p", "why");
+        n.appendChild(el("span", "label", "On what you're already building: "));
+        n.appendChild(el("span", null, one.current_work_note));
+        card.appendChild(n);
+      }
+      root.appendChild(card);
+    }
+
+    // --- distinctive edge (null is the normal case — render nothing at all)
+    var edge = data.distinctive_edge;
+    if (edge && edge.trait) {
+      section(root, "Something distinctive about you");
+      var c = el("div", "card");
+      c.appendChild(el("h3", null, edge.trait));
+      if (edge.why_it_could_matter) c.appendChild(el("p", null, edge.why_it_could_matter));
+      var scope = edge.evidence_scope;
+      var scopeText =
+        scope === "target" ? "Backed by the sponsor data for this role." :
+        scope === "adjacent" ? "Not seen in this role's data — corroborated in adjacent markets, so treat it as a lead, not a proven pattern." :
+        "The data is silent on this. It is a possibility worth testing, not a verdict.";
+      c.appendChild(el("p", "grounding", scopeText));
+      if (edge.evidence) c.appendChild(el("p", "grounding", edge.evidence));
+      var src = sourceList(edge.sources);
+      if (src) c.appendChild(src);
+      root.appendChild(c);
+    }
+
+    // --- companies
+    var notes = Array.isArray(data.company_notes) ? data.company_notes : [];
+    if (notes.length) {
+      section(root, "Your target companies");
+      notes.forEach(function (n) {
+        var c = el("div", "card");
+        c.appendChild(el("h3", null, n.company));
+        if (n.signal_in_filings) {
+          var p = el("p");
+          p.appendChild(el("span", "label", "What their filings show: "));
+          p.appendChild(el("span", null, n.signal_in_filings));
+          c.appendChild(p);
+        }
+        if (n.researched_context) {
+          var r = el("p");
+          r.appendChild(el("span", "label", "What research found: "));
+          r.appendChild(el("span", null, n.researched_context));
+          c.appendChild(r);
+        } else {
+          c.appendChild(el("p", "none", "No research was done on this company — only the filing facts above are known."));
+        }
+        var src = sourceList(n.sources);
+        if (src) c.appendChild(src);
+        root.appendChild(c);
+      });
+    }
+
+    // --- what to know
+    var know = Array.isArray(data.what_to_know) ? data.what_to_know : [];
+    if (know.length) {
+      section(root, "What to know");
+      know.forEach(function (k) {
+        var c = el("div", "callout");
+        c.appendChild(el("p", "label", k.point));
+        if (k.detail) c.appendChild(el("p", null, k.detail));
+        root.appendChild(c);
+      });
+    }
+
+    // --- run record: the transparency surface. Always shown, never buried —
+    // the point is that the reader can see what the run could and could not do.
+    var rec = data.run_record;
+    if (rec) {
+      section(root, "How this report was made");
+      var t = el("table", "record");
+      [
+        ["Read your portfolio", rec.portfolio_read],
+        ["Read your résumé", rec.resume_read],
+        ["You described current work", rec.current_work_provided],
+        ["Researched the companies", rec.research_performed]
+      ].forEach(function (row) {
+        var tr = el("tr");
+        tr.appendChild(el("td", null, row[0]));
+        tr.appendChild(el("td", row[1] ? "yes" : "no", row[1] ? "yes" : "no"));
+        t.appendChild(tr);
+      });
+      root.appendChild(t);
+      if (rec.research_tool) root.appendChild(el("p", "grounding", "Research tool: " + rec.research_tool));
+      if (rec.portfolio_read === false && rec.resume_read === false) {
+        root.appendChild(el("p", "none",
+          "Neither your portfolio nor your résumé was actually read, so anything about you in this report is inferred rather than observed. Worth re-running with readable materials."));
+      }
+    }
+  }
+
+  /* ----------------------------------------------------------------- boot */
+
+  var reportView = document.getElementById("report-view");
+  var pasteView = document.getElementById("paste-view");
+
+  function showPaste(message) {
+    pasteView.style.display = "block";
+    if (message) document.getElementById("paste-error").textContent = message;
+  }
+
+  document.getElementById("paste-btn").addEventListener("click", function () {
+    document.getElementById("paste-error").textContent = "";
+    try {
+      var data = parseReport(document.getElementById("paste-input").value);
+      pasteView.style.display = "none";
+      renderReport(data, reportView);
+      window.scrollTo(0, 0);
+    } catch (err) {
+      document.getElementById("paste-error").textContent =
+        "That didn't look like a Runway report (" + err.message + "). Paste the whole reply and try again.";
+    }
+  });
+
+  var raw = document.getElementById("report-data").textContent.trim();
+  if (!raw || raw === PLACEHOLDER) {
+    showPaste("");                       // no report injected — manual path
+  } else {
+    try {
+      renderReport(parseReport(raw), reportView);
+    } catch (err) {
+      showPaste("The injected report couldn't be read (" + err.message + "). Paste it below instead.");
+    }
+  }
+})();
+</script>
+</body>
+</html>

@@ -36,6 +36,12 @@ const CSV_COLUMNS = [
   "wage_annual_min", "wage_annual_median", "wage_annual_max",
 ];
 
+// The report carries at most three company notes, so the shortlist selection is
+// hard-capped at 3 (ratified 2026-07-22). Past the cap, unchecked boxes go
+// disabled rather than silently ignoring the click — the constraint has to be
+// visible at the checkbox, not discovered at generate time.
+export const SELECTION_CAP = 3;
+
 const TOKENS = [
   "{{SELECTED_ROWS}}", "{{PORTFOLIO}}", "{{RESUME_OR_NONE}}",
   "{{CURRENT_WORK_OR_NONE}}", "{{ROLE_PATTERNS}}", "{{ROLE_LABEL}}",
@@ -167,6 +173,18 @@ function renderTableBody(employers) {
   const body = $("shortlist-body");
   body.replaceChildren();
   for (const employer of sortedEmployers(employers)) body.appendChild(renderRow(employer));
+  applySelectionCap();
+}
+
+// Grey out every unchecked box once the cap is reached (already-checked ones stay
+// live so a selection can always be swapped). The limit is stated in the page at
+// all times, not revealed on contact — a constraint you discover by being blocked
+// is a surprise, and surprises cost clarity.
+function applySelectionCap() {
+  const capped = state.selected.size >= SELECTION_CAP;
+  for (const box of document.querySelectorAll("#shortlist-body input[type=checkbox]")) {
+    box.disabled = capped && !box.checked;
+  }
 }
 
 export function renderRow(employer) {
@@ -179,11 +197,14 @@ export function renderRow(employer) {
   const checkbox = document.createElement("input");
   checkbox.type = "checkbox";
   checkbox.checked = isSelected;
+  // Re-render (a sort click) must not resurrect a selectable box past the cap.
+  checkbox.disabled = !isSelected && state.selected.size >= SELECTION_CAP;
   checkbox.setAttribute("aria-label", `target ${employer.employer_display}`);
   checkbox.addEventListener("change", () => {
     if (checkbox.checked) state.selected.add(employer.employer);
     else state.selected.delete(employer.employer);
     tr.classList.toggle("selected", checkbox.checked);
+    applySelectionCap();
     updatePromptGate();
   });
   tdSelect.appendChild(checkbox);

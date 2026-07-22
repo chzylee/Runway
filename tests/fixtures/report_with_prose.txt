@@ -1,0 +1,81 @@
+Here is the report.
+
+```json
+{
+  "headline": {
+    "angle": "Be the generalist who owns a whole brand system, not a specialist in one surface.",
+    "why": "Most sponsors in this role are small in-house teams hiring one person to cover everything."
+  },
+  "skills_to_demonstrate": [
+    {
+      "skill": "End-to-end brand systems",
+      "grounding": "graphic (22 employers) is the largest recurring title token",
+      "relative_to_you": "partial",
+      "priority": 1
+    },
+    {
+      "skill": "Product surface design",
+      "grounding": "web-and-digital-interface occupations, 25 employers",
+      "relative_to_you": "already_shown",
+      "priority": 2
+    },
+    {
+      "skill": "Working solo inside a small team",
+      "grounding": "75 of 76 employers use the in-house placement model",
+      "relative_to_you": "gap",
+      "priority": 3
+    }
+  ],
+  "one_thing_to_work_on": {
+    "mode": "deepen_existing",
+    "recommendation": "Extend the in-progress project into a full brand system rather than starting something new.",
+    "why": "It already proves the harder half; the missing half is what this market pays for.",
+    "how_it_signals": "A skimming reviewer sees one coherent system, and it advances headline.angle.",
+    "current_work_note": "The evidenced skills can be emphasised through the current project, so it stays the vehicle."
+  },
+  "distinctive_edge": {
+    "trait": "Writing clearly about design decisions",
+    "evidence_scope": "adjacent",
+    "evidence": "Adjacent markets reward written articulation of design rationale.",
+    "sources": [
+      "https://example.org/adjacent-market-note"
+    ],
+    "why_it_could_matter": "It separates a portfolio from visually similar ones a reviewer sees the same day."
+  },
+  "company_notes": [
+    {
+      "company": "EXAMPLE STUDIO",
+      "signal_in_filings": "2 filings across 2 quarters, SOC 27-1024, median wage $60,000, worksite NY.",
+      "researched_context": "Small in-house team covering brand and marketing surfaces.",
+      "sources": [
+        "https://example.org/company-a"
+      ]
+    },
+    {
+      "company": "SECOND EXAMPLE CO",
+      "signal_in_filings": "1 filing, FY2026Q1, SOC 27-1024, single wage point $62,400.",
+      "researched_context": null,
+      "sources": []
+    }
+  ],
+  "what_to_know": [
+    {
+      "point": "An LCA certification is not a hire or an open role.",
+      "detail": "Each row is a certified filing, not a job posting."
+    },
+    {
+      "point": "This pool skews toward one occupation.",
+      "detail": "42 of 95 filings sit in the largest SOC bucket."
+    }
+  ],
+  "run_record": {
+    "portfolio_read": true,
+    "resume_read": false,
+    "current_work_provided": true,
+    "research_performed": true,
+    "research_tool": "exa"
+  }
+}
+```
+
+One flag before you paste this in: the portfolio fetch failed, so portfolio_read is false.
