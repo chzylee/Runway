@@ -45,6 +45,7 @@ export const SELECTION_CAP = 3;
 const TOKENS = [
   "{{SELECTED_ROWS}}", "{{PORTFOLIO}}", "{{RESUME_OR_NONE}}",
   "{{CURRENT_WORK_OR_NONE}}", "{{ROLE_PATTERNS}}", "{{ROLE_LABEL}}",
+  "{{TEMPLATE_URL}}",
 ];
 
 export const state = {
@@ -418,6 +419,11 @@ async function generatePrompt() {
     // The role is DATA, not a premise (the prompt says so explicitly): Runway is
     // title-agnostic, so the template never hardcodes a field name.
     const roleLabel = ROLE_LABELS[state.role] || state.role;
+    // The site tells the agent where its own report template lives, rather than the
+    // prompt hardcoding a URL: this resolves correctly on localhost and on Pages
+    // with no configuration, and it can never point at a different deployment than
+    // the one that generated the prompt.
+    const templateUrl = new URL("report_template.html", window.location.href).href;
 
     const filled = state.template
       .split("{{SELECTED_ROWS}}").join(selectedRowsCsv)
@@ -425,7 +431,8 @@ async function generatePrompt() {
       .split("{{RESUME_OR_NONE}}").join(resumePath || "none provided")
       .split("{{CURRENT_WORK_OR_NONE}}").join(currentWork || "none provided")
       .split("{{ROLE_PATTERNS}}").join(rolePatterns)
-      .split("{{ROLE_LABEL}}").join(roleLabel);
+      .split("{{ROLE_LABEL}}").join(roleLabel)
+      .split("{{TEMPLATE_URL}}").join(templateUrl);
 
     $("prompt-output").value = filled;
     $("prompt-box").hidden = false;

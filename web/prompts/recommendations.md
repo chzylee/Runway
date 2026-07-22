@@ -3,8 +3,10 @@
 **No script in this repo ever calls an LLM.** Runway fills the inputs below —
 portfolio, résumé path, what you're working on, the shortlist rows you selected,
 and the role-wide sponsor patterns — into this template, then hands you the finished
-prompt to copy. You paste it into your own Claude/ChatGPT chat, read the result
-critically, and paste the returned JSON back into Runway to see it rendered.
+prompt to copy. You paste it into your own Claude/ChatGPT chat and read the result
+critically. An agent that can write files will save the report and open it for you;
+a plain chat will hand you JSON to paste into the report page. Either way the
+analysis happens in *your* LLM, never here.
 
 The `{{TOKENS}}` are replaced by the site before you copy. If you are reading this
 file with the tokens still in it, that is expected — it is the template, not a
@@ -130,12 +132,24 @@ Handle this the same way you handle the résumé, and **never settle for not rea
 - **Present but you cannot read it** — a 403, a timeout, a login wall, a
   JavaScript-only page. Do **not** proceed on a substitute. Work this ladder in
   order and stop at the first step that gives you a real read:
-  1. Retry the fetch once — transient blocks and timeouts are common.
-  2. Try another automatic route: a cached or archived copy, or the site's own
-     project/case-study subpages rather than the root.
-  3. If none of that reaches the actual work, **stop and ask.** Say exactly what
-     failed, and ask them to paste the case-study text, attach screenshots, or
-     point you at a readable mirror.
+  1. **A 403 or an obvious bot-block: go straight to step 2.** Retrying an
+     identical blocked request does not help. Retry once only for a timeout or a
+     transient network error.
+  2. **Open it in a real (headed) browser** if you have one. Most blocks are
+     bot detection, which a real browser does not trigger, and most portfolios are
+     JavaScript-rendered, so a plain fetch can "succeed" and still hand you an
+     empty shell. This step fixes both.
+  3. Still nothing? Try the site's own project or case-study subpages rather than
+     the root, in case only the landing page is the problem.
+  4. **Stop and ask.** Say exactly what failed, and ask them to paste the
+     case-study text, attach screenshots, or point you at a readable mirror.
+
+**Do not read an archived or cached snapshot in place of the live site.** An old
+capture is a different artifact from their portfolio: you would be judging work
+they may have replaced, removed, or reorganised, and it would look like a
+successful read. If the live site is genuinely unreachable, that is itself worth
+telling them — someone job-hunting with a broken portfolio link needs to know
+that more than they need a stale render of it.
 
 **A secondhand account of the portfolio is not a read.** Their LinkedIn posts, press
 coverage, or a résumé bullet describing a project tell you a project exists; they do
@@ -238,12 +252,11 @@ contract below. In short:
 - Career/portfolio guidance, not immigration legal advice.
 <!-- CAVEATS:END -->
 
-## Output contract — return JSON in EXACTLY this shape
+## Output contract — the report is a JSON object in EXACTLY this shape
 
-Return **only** a single JSON object (the site strips a leading/trailing ` ```json `
-fence if present, but add no prose around it). `skills_to_demonstrate` has at least
-one item; every `company_notes[].company` must be one of the selected rows;
-`distinctive_edge` is an object **or** `null`.
+`skills_to_demonstrate` has at least one item; every `company_notes[].company` must
+be one of the selected rows; `distinctive_edge` is an object **or** `null`. How you
+*deliver* this object is the next section — it depends on what your runtime can do.
 
 ```json
 {
@@ -296,3 +309,34 @@ one item; every `company_notes[].company` must be one of the selected rows;
   }
 }
 ```
+
+## How to deliver it
+
+Two paths. Choose by what your runtime can **actually** do — do not guess, and do
+not attempt the first path without file access.
+
+### If you can write files and open a browser
+
+1. Save the report JSON to **`runway-report-<today's date>.json`** (e.g.
+   `runway-report-2026-07-22.json`). **Do not paste the JSON into the chat** — it is
+   long, it buries everything else, and the file is what is actually useful.
+2. Fetch the report template: {{TEMPLATE_URL}}
+3. In the JSON text, replace every `</` with `<\/`. This is the **only** escaping
+   needed: it stops a literal `</script>` inside the report from closing the page's
+   script block early, and `\/` is a valid JSON escape for `/`, so the value decodes
+   unchanged.
+4. Replace the single placeholder token `__REPORT_JSON__` in the template with that
+   escaped JSON. The token appears **exactly once**. Replace it and change nothing
+   else — do **not** regenerate, reformat, or retype the template. You are doing a
+   string substitution, not authoring a page.
+5. Write the result to **`runway-report-<today's date>.html`** and open it in a
+   browser. That page renders itself; there is nothing further to do.
+6. In the chat, report only: the two filenames, that you opened the report, and
+   anything the person genuinely needs to know — above all, any input you could not
+   read. Keep it short.
+
+### If you cannot write files or open a browser
+
+Return **only** the single JSON object, with no prose around it, so the applicant can
+copy it. They will paste it into the report page, which has a paste box for exactly
+this. A leading/trailing ` ```json ` fence is tolerated.
