@@ -20,7 +20,6 @@ sys.path.insert(0, str(REPO_ROOT))
 CAVEATS = [
     "An LCA certification is not a hire or an open role.",
     "OPT is not sponsorship — a new grad's first job is on OPT; sponsorship comes 1-3 years later.",
-    "Design roles are likely not STEM-OPT eligible -> roughly a 12-month OPT window, not 36.",
     "Employer names are conservatively normalized and may under-merge.",
     "Career/portfolio guidance, not immigration legal advice.",
 ]

@@ -1,10 +1,14 @@
 # Runway
 
-A sponsorship diagnostic for international new-grad designers. It answers two
-questions with data instead of folklore:
+A sponsorship diagnostic for international new grads who will need work-visa
+sponsorship. It is **title-agnostic by design** — the engine takes SOC codes, not a
+role name (dec. #3, and the title-agnostic engine note in the decision log), so any
+role can be registered. `design` and `uiux` are simply the roles seeded so far, a
+scope choice, not the product's audience. It answers two questions with data instead
+of folklore:
 
-1. **Who actually sponsors entry-level designers?** — a shortlist of companies
-   with *certified, entry-wage (Level I)* design visa filings, built from raw
+1. **Who actually sponsors entry-level hires in my role?** — a shortlist of companies
+   with *certified, entry-wage (Level I)* visa filings for that role, built from raw
    US Department of Labor LCA disclosure data.
 2. **What should I build to be worth a visa to them?** — a prompt, filled with
    your portfolio, résumé, and the companies you pick from that shortlist, that
@@ -17,7 +21,8 @@ shortlist traces back to a public DOL filing, and the advice step runs in
 ## How it works
 
 - **Layer 1 — deterministic engine (no LLM).** `engine/` filters DOL LCA data
-  to certified Level-I design filings and aggregates one row per employer.
+  to certified Level-I filings for a registered role and aggregates one row per
+  employer.
   In-pipeline checks (`engine/verify.py`) stop any run that looks wrong.
   `scripts/run.py` runs this and emits the result as static JSON/CSV into
   `web/data/`.
@@ -31,6 +36,13 @@ shortlist traces back to a public DOL filing, and the advice step runs in
   prompt to copy. You run it in your own Claude/ChatGPT chat and read the
   result critically — no script in this repo calls an LLM, and nothing you
   enter is sent anywhere by the page itself.
+
+  The prompt asks for a **single JSON object** back, which you paste into the
+  site to see rendered. That shape is the contract between the prompt and
+  anything that displays the report, and its **single source of truth** is the
+  *Output contract* section of [`prompts/recommendations.md`](prompts/recommendations.md)
+  — deliberately not restated here, so the two can never drift apart. Read it
+  there before building or changing anything that consumes the report.
 
 ## Run it locally
 

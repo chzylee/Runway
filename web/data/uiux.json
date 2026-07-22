@@ -1,6 +1,6 @@
 {
   "role": "uiux",
-  "generated_at_utc": "2026-07-22 00:37 UTC",
+  "generated_at_utc": "2026-07-22 15:59 UTC",
   "source": "US DOL OFLC LCA Programs disclosure data (public record)",
   "filters": {
     "case_status": "Certified",
@@ -208,7 +208,6 @@
   "caveats": [
     "An LCA certification is not a hire or an open role.",
     "OPT is not sponsorship — a new grad's first job is on OPT; sponsorship comes 1-3 years later.",
-    "Design roles are likely not STEM-OPT eligible -> roughly a 12-month OPT window, not 36.",
     "Employer names are conservatively normalized and may under-merge.",
     "Career/portfolio guidance, not immigration legal advice."
   ],

@@ -79,7 +79,11 @@ def test_caveats_verbatim_from_engine(emitted):
     """§7: design.json.caveats are engine/_util.CAVEATS verbatim (single source of truth)."""
     _, design = emitted
     assert design["caveats"] == CAVEATS
-    assert len(design["caveats"]) == 5
+    # Count pinned on purpose: caveats are user-protection disclosures, so adding or
+    # removing one must be a deliberate, reviewed act that trips this test rather than
+    # a silent change. Was 5; the design-specific STEM-OPT caveat was dropped when the
+    # product was de-bound from design (ratified 2026-07-22).
+    assert len(design["caveats"]) == 4
 
 
 # ------------------------------------------------------------ gotcha: null wages

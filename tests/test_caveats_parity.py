@@ -41,7 +41,10 @@ def _point_at(monkeypatch, tmp_path, text):
 def test_real_repo_files_are_in_parity():
     """The committed prompts/recommendations.md matches engine _util.CAVEATS —
     the positive pin that fails the suite the moment either side drifts."""
-    assert check_caveats_parity.check_caveats_parity() == len(CAVEATS) == 5
+    # See test_emit_unit.test_caveats_verbatim_from_engine: the count is pinned so a
+    # disclosure can't be added or dropped silently. 5 -> 4 when the design-specific
+    # STEM-OPT caveat was removed in the de-binding from design (ratified 2026-07-22).
+    assert check_caveats_parity.check_caveats_parity() == len(CAVEATS) == 4
 
 
 def test_drifted_caveat_raises(monkeypatch, tmp_path):

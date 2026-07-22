@@ -36,7 +36,10 @@ const CSV_COLUMNS = [
   "wage_annual_min", "wage_annual_median", "wage_annual_max",
 ];
 
-const TOKENS = ["{{SELECTED_ROWS}}", "{{PORTFOLIO}}", "{{RESUME_OR_NONE}}"];
+const TOKENS = [
+  "{{SELECTED_ROWS}}", "{{PORTFOLIO}}", "{{RESUME_OR_NONE}}",
+  "{{CURRENT_WORK_OR_NONE}}", "{{ROLE_PATTERNS}}", "{{ROLE_LABEL}}",
+];
 
 export const state = {
   role: null,           // the loaded role's value, e.g. "design" | "uiux"
@@ -386,16 +389,22 @@ async function generatePrompt() {
     // split/join, not replace(): a path or the CSV rows could legitimately
     // contain `$&`-style sequences that String.replace would treat as
     // substitution patterns.
-    // {{CURRENT_WORK_OR_NONE}} is filled here but deliberately NOT yet in the
-    // TOKENS presence-check above: the prompt template gains that token when the
-    // reviewer prompt is finalized. Until then this split/join is a harmless
-    // no-op (no match -> string returned unchanged). Add it to TOKENS once the
-    // template ships it, so a future template regression is caught.
+    // The role-wide patterns go in as raw JSON: the prompt's broad market evidence
+    // (dec. #44's compute_patterns output). Pretty-printed so a human reading the
+    // copied prompt can actually audit what was sent — the whole point of the
+    // no-server design is that you see every fact before you paste it.
+    const rolePatterns = JSON.stringify(state.data.patterns ?? null, null, 2);
+    // The role is DATA, not a premise (the prompt says so explicitly): Runway is
+    // title-agnostic, so the template never hardcodes a field name.
+    const roleLabel = ROLE_LABELS[state.role] || state.role;
+
     const filled = state.template
       .split("{{SELECTED_ROWS}}").join(selectedRowsCsv)
       .split("{{PORTFOLIO}}").join(portfolio || "no portfolio link provided")
       .split("{{RESUME_OR_NONE}}").join(resumePath || "none provided")
-      .split("{{CURRENT_WORK_OR_NONE}}").join(currentWork || "none provided");
+      .split("{{CURRENT_WORK_OR_NONE}}").join(currentWork || "none provided")
+      .split("{{ROLE_PATTERNS}}").join(rolePatterns)
+      .split("{{ROLE_LABEL}}").join(roleLabel);
 
     $("prompt-output").value = filled;
     $("prompt-box").hidden = false;

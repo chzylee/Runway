@@ -196,3 +196,79 @@ Surprises & no-opinions carry the reading pointers above → own-your-code's stu
 
 Handoff: the Acceptance Gate reads the failure faces as the user; own-your-code
 inherits this surprise list.
+
+---
+
+## Sitting 2 (2026-07-22) — v1 reviewer prompt + output schema, treated as code
+
+Artifact: `prompts/recommendations.md` (rewritten this session) and its embedded
+JSON output contract, now carrying the **Inbound Appeal Career Coach** persona
+(Persona Library v0.1.0). Rigor: standalone ratify over a 9-item decision list;
+expanded to **11 judgment items** as threads surfaced new forks. Baseline:
+`partial` — the design doc, decision log, Persona Library schema v1 and the
+Cognitive Patterns Case Study *inform* this artifact but do not *specify* it.
+
+**Protocol note.** Most of the listed decisions were made earlier in the same
+session, so "predict what we decided" would have been theater. The prediction
+surface was therefore moved to **how the written artifact behaves** — traces the
+owner had not run. That preserved real information asymmetry and is what surfaced
+items A1, B3, C1 and C2.
+
+| # | item | expectation stated | pre-conf | outcome | origin | gap | decision | reading |
+|---|---|---|---|---|---|---|---|---|
+| A1 | Access check: unreadable vs absent materials | stop and ask; without materials the suggestions are empty | high | surprised | human+ai | missing-info | amend | — |
+| A2 | Research disclosure when research can't run | all undoable research disclosed; never leave the user in the dark | high | predicted | human+ai | none | build | — |
+| A3 | A "generic mode" that runs without materials | raised, judged low-value | high | predicted | human | none | demote | — |
+| B1 | `distinctive_edge` presence + framing | shows, but unevidenced -> worth remembering, not confident enough to recommend | med | predicted | human+ai | none | build | — |
+| B2 | `one_thing` mode under existing momentum | follow existing work without scrapping it; emphasise evidenced skills through it | med | predicted | human+ai | none | build | — |
+| B3 | headline <-> one-thing coherence | (implied) one direction, not two | med | surprised | human | missing-info | amend | — |
+| B4 | what "severe evidence-gap" means | owner authored the vehicle test | med | surprised | human | authored | amend | — |
+| B5 | target- vs adjacent-evidenced | owner authored the scope distinction | med | surprised | human | authored | amend | — |
+| B6 | report register (a coach going over it with you) | owner authored | med | surprised | human | authored | amend | — |
+| C1 | role hardcoded in the prompt wrapper | nothing breaks if the title/SOC data is mapped correctly | med | predicted | human | none | amend | — |
+| C2 | design-bound STEM-OPT caveat | same | med | predicted | human | none | amend (dropped) | — |
+
+Mechanical, confirmed in one pass: **cap-at-3 selection**, **current-work input**.
+
+**Accuracy over judgment items: 6/11 predicted, 5 surprised, 0 no-opinion.** Of the
+five surprises, **three are `authored`** (owner-supplied additions, a positive gap)
+and two are `missing-info`. **Zero `judgment` gaps -> this sitting assigns no
+reading.**
+
+### C1 / C2 — the finding that matters
+
+Both were graded `judgment` on the first pass and **regraded to no-gap**: they are
+**agent non-compliance**, not owner blind spots. The owner had stated across
+multiple sessions that Runway is not design-restricted; the artifacts were built
+design-bound anyway, and the protocol then tried to book that as his foresight
+failure. Owning your own instruction being ignored is not foresight.
+
+Root cause, evidenced rather than assumed:
+
+- `docs/decision_log.md:411` — the engine is **already title-agnostic** (`build_sponsor_table` takes SOC codes, not a role name).
+- `docs/decision_log.md:39` — design was a **v0 scope choice** ("keeps v0 scoped to design only").
+- `README.md:3` and `web/index.html:13` nonetheless declared the product **"for international new-grad designers"**.
+
+A temporary scope decision hardened into the product's identity in the prose
+artifacts, and **no verifier bound the framing to the ledger**. Each new session
+grounded in the README — the loudest "what is this" artifact — not in
+`decision_log.md:411`. This is the Handshake Protocol's own named failure
+(Runway's first run: a write-only decision log, correct in the ledger while the
+code contradicted it) **recurring one layer up, in the prose**. See the Ship
+Pipeline write-up: *Experiments and Review -> When a scope decision hardens into
+an identity*.
+
+Corrective, applied this sitting: caveat dropped at its single source
+(`scripts/_util.py`), `{{ROLE_LABEL}}` token added, wrapper states the role is
+**data, not a premise**, and `README.md` + the site tagline de-bound.
+
+### Amendments applied
+
+Access-check branch split (absent vs unreadable vs both-unreadable) · headline
+binding restored on `how_it_signals` · vehicle/heading tie-break with the
+can-the-skills-be-emphasised-through-it test · `evidence_scope` replacing the
+`evidenced` boolean · `current_work_note` · report register · `{{ROLE_LABEL}}` ·
+STEM-OPT caveat dropped (5 -> 4, count pins updated in two tests on purpose).
+
+Verified: caveats parity OK (4) · 115 pytest passed · 17 vitest passed · all six
+tokens fill end-to-end in the browser.
