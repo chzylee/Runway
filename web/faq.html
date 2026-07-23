@@ -20,18 +20,14 @@
 
   <main id="section-faq">
 <h2>How this works</h2>
-    <p class="hint">
-      The short version: Runway finds the companies, your own LLM writes the advice,
-      and you can see every fact that passes between them.
-    </p>
-
     <details>
       <summary>Where does the company list come from?</summary>
       <p>
-        US Department of Labor LCA disclosure data - the filings an employer must
-        make public to sponsor a work visa. Runway keeps only <em>certified</em>
-        filings at the <em>entry wage</em> (Prevailing Wage Level I) whose
-        occupation codes match the role you picked, then groups them by employer.
+        The company list comes from US Department of Labor LCA disclosure
+        data: the filings an employer must make public to sponsor a work
+        visa. Runway keeps only <em>certified</em> filings at the
+        <em>entry wage</em> (Prevailing Wage Level I) whose occupation codes
+        match the role you picked, then groups them by employer.
       </p>
       <p>
         The funnel line under the table shows every number that survived each step,
@@ -43,10 +39,10 @@
     <details>
       <summary>Why do I run the prompt myself instead of Runway doing it?</summary>
       <p>
-        Three reasons, in order of how much they matter. You see every fact that
-        gets sent, because you are the one pasting it. Your portfolio and résumé
-        never reach a server, because there is no server. And you pick the model,
-        rather than inheriting whichever one we could afford.
+        Three reasons, in order of how much they matter. You see every fact
+        you send, because you paste it yourself. Your portfolio and résumé
+        never reach a server, because there is no server. And you pick the
+        model, rather than inheriting whichever one we could afford.
       </p>
       <p>
         The trade is real: it is one extra step. We think seeing the inputs is worth
@@ -99,9 +95,10 @@
     <details>
       <summary>What is a "standout path"?</summary>
       <p>
-        The capability the standouts in your role tend to have and most people never
-        build - usually the one that stops you depending on someone else to make
-        your work real. It is deliberately harder than the main recommendation.
+        The standouts in your role tend to have one capability that most
+        people never build: usually the one that lets you stop depending on
+        someone else to make your work real. It is deliberately harder than
+        the main recommendation.
       </p>
       <p>
         These are curated by hand, not generated. A path only ships if we can point
@@ -115,9 +112,9 @@
     <details>
       <summary>Why does the report sometimes say it could not read something?</summary>
       <p>
-        Because it could not, and you should know. Every report ends with a record
-        of whether your portfolio and résumé were actually read and whether the
-        companies were researched.
+        Because it could not, and you should know. Every report ends with a
+        record of whether Runway actually read your portfolio and résumé, and
+        whether it researched the companies.
       </p>
       <p>
         A report built without your portfolio is inference, not observation. Saying
@@ -141,8 +138,8 @@
     <details>
       <summary>What happens to my portfolio and résumé?</summary>
       <p>
-        Nothing leaves this page. There is no upload, no account, no database, and
-        no server to send anything to - the site is static files.
+        Nothing leaves this page: no upload, no account, no database, no
+        server to send anything to. The site is static files.
       </p>
       <p>
         Your résumé is a <em>file path</em>, not the file: Runway never opens it.
@@ -154,15 +151,17 @@
     <details>
       <summary>When would this be wrong?</summary>
       <p>
-        Several ways worth knowing. Some roles have thin data - a narrow role in one
-        quarter may rest on a few dozen filings, and small samples mislead. Employer
-        names are normalised conservatively, so one company can appear twice.
+        Several ways worth knowing. Some roles have thin data: a narrow role
+        in one quarter may rest on a few dozen filings, and small samples
+        mislead. Runway normalises employer names conservatively, so one
+        company can appear twice.
       </p>
       <p>
-        And the advice layer is a language model reading your work: it can misjudge
-        what a case study proves, especially the difference between a polished
-        concept and something real people used. That is why every claim about you is
-        supposed to point at what it was read from. If one does not, distrust it.
+        The advice layer is a language model reading your work: it can
+        misjudge what a case study proves, especially the difference between
+        a polished concept and something real people used. That is why every
+        claim about you must trace back to something Runway actually read.
+        If it does not, distrust it.
       </p>
     </details>
   </main>

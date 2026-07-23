@@ -10,11 +10,10 @@
   <header>
     <h1>Runway</h1>
     <p class="tagline">
-      For international students who need sponsorship and have to clear a higher
-      bar in an already competitive job market. Runway helps you find direction to stand out!
-      Every number below traces to a public US DOL LCA filing;
-      the advice layer is authored by <em>your own</em> LLM run — Runway never
-      calls a model and has no server.
+      For international students competing for sponsorship in a crowded job
+      market, Runway points to one direction worth building. Every number
+      below traces to a public US DOL LCA filing. <em>Your own</em> LLM run
+      authors the advice: Runway never calls a model and has no server.
     </p>
     <p class="topnav"><a href="faq.html">How this works &rarr;</a></p>
   </header>
@@ -56,10 +55,9 @@
     <section id="section-inputs" hidden>
       <h2>2 · Your inputs</h2>
       <p class="hint">
-        Add your portfolio site link and/or filepath to your resume. Runway outputs an LLM prompt that
-        uses this to give recommendations. <br />
-        Results will be stronger if you provide both, but only one
-        is required.
+        Add your portfolio link and/or your résumé's filepath. Runway fills an
+        LLM prompt with this. <br />
+        Provide both for stronger results. Only one is required.
       </p>
       <div class="field">
         <label for="portfolio-input">Portfolio link</label>
@@ -74,9 +72,10 @@
         <input id="resume-input" type="text" placeholder="/path/to/resume.pdf (optional)"
                autocomplete="off" spellcheck="false">
         <p class="hint">
-          Filepath will be used in the LLM prompt Runway outputs for you to use. Runway never opens
-          or reads the file. If you give the prompt to an agent with file access, it can read the file
-          when it runs the prompt.
+          Runway uses this filepath in the prompt it outputs. Runway never
+          opens or reads the file itself. If you give the prompt to an agent
+          with file access, that agent can read the file when it runs the
+          prompt.
         </p>
       </div>
       <div class="field">
@@ -85,9 +84,10 @@
                   placeholder="A project, a skill, a direction you're already building. Leave blank if you're between things."
                   spellcheck="false"></textarea>
         <p class="hint">
-          If you share this, the prompt asks your LLM to build on what you already have —
-          to deepen or reframe it — instead of only proposing something new. Optional; it
-          never changes which companies you can pick.
+          If you share this, the prompt asks your LLM to build on what you
+          already have (deepen it, reframe it) instead of proposing something
+          new outright. It is optional and never changes which companies you
+          can pick.
         </p>
       </div>
     </section>
@@ -102,8 +102,8 @@
       </div>
       <p id="single-quarter-note" class="hint" hidden></p>
       <p id="selection-cap-note" class="hint">
-        Target up to 3 companies — the report covers three. Optional: skip this and
-        you'll get role-wide guidance without the company-specific notes.
+        Target up to 3 companies; the report covers three. Skip this step for
+        role-wide guidance without company-specific notes.
       </p>
       <div class="table-wrap">
         <table id="shortlist-table">
@@ -133,9 +133,9 @@
       <h2>4 · Generate your prompt</h2>
       <p>
         Runway fills a reviewer prompt with any companies you selected, your
-        portfolio link, and your résumé's file path. You copy it and run it in your own
-        LLM or agent (Claude, ChatGPT, …) — you see every fact that gets sent, and nothing
-        is sent anywhere by this page.
+        portfolio link, and your résumé's file path. You copy it and run it in
+        your own LLM or agent (Claude, ChatGPT, …); you see every fact you
+        send, and this page sends nothing anywhere on its own.
       </p>
       <p id="prompt-gate-hint" class="hint"></p>
       <button id="generate-btn" type="button" disabled>Generate prompt</button>
@@ -151,9 +151,9 @@
 
   <footer>
     <p>
-      Runway is career/portfolio guidance, not immigration legal advice. Data:
-      public US DOL LCA disclosure files — see the provenance link above once a
-      role is loaded.
+      Runway is career/portfolio guidance, not immigration legal advice. Data
+      comes from public US DOL LCA disclosure files. See the provenance link
+      above once a role is loaded.
     </p>
   </footer>
 
