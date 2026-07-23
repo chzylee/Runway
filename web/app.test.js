@@ -80,42 +80,32 @@ describe("computePromptGate branch states (dec. #41)", () => {
   const cases = [
     {
       name: "nothing at all",
-      input: { portfolioRaw: "", portfolioValid: false, resumePath: "", selectedCount: 0 },
-      expectMissingCount: 2,
-    },
-    {
-      name: "no selection, valid portfolio",
-      input: { portfolioRaw: "https://x.com", portfolioValid: true, resumePath: "", selectedCount: 0 },
+      input: { portfolioRaw: "", portfolioValid: false, resumePath: "" },
       expectMissingCount: 1,
     },
     {
-      name: "selection + valid portfolio only",
-      input: { portfolioRaw: "https://x.com", portfolioValid: true, resumePath: "", selectedCount: 1 },
+      name: "valid portfolio only",
+      input: { portfolioRaw: "https://x.com", portfolioValid: true, resumePath: "" },
       expectMissingCount: 0,
     },
     {
-      name: "selection + résumé path only, empty portfolio",
-      input: { portfolioRaw: "", portfolioValid: false, resumePath: "/tmp/r.pdf", selectedCount: 1 },
+      name: "résumé path only, empty portfolio",
+      input: { portfolioRaw: "", portfolioValid: false, resumePath: "/tmp/r.pdf" },
       expectMissingCount: 0,
     },
     {
-      name: "selection + both present",
-      input: { portfolioRaw: "https://x.com", portfolioValid: true, resumePath: "/tmp/r.pdf", selectedCount: 2 },
+      name: "both present",
+      input: { portfolioRaw: "https://x.com", portfolioValid: true, resumePath: "/tmp/r.pdf" },
       expectMissingCount: 0,
     },
     {
-      name: "selection + neither present",
-      input: { portfolioRaw: "", portfolioValid: false, resumePath: "", selectedCount: 1 },
+      name: "invalid portfolio text, no résumé",
+      input: { portfolioRaw: "not a url", portfolioValid: false, resumePath: "" },
       expectMissingCount: 1,
     },
     {
-      name: "selection + invalid portfolio text, no résumé",
-      input: { portfolioRaw: "not a url", portfolioValid: false, resumePath: "", selectedCount: 1 },
-      expectMissingCount: 1,
-    },
-    {
-      name: "selection + invalid portfolio text, résumé present too",
-      input: { portfolioRaw: "not a url", portfolioValid: false, resumePath: "/tmp/r.pdf", selectedCount: 1 },
+      name: "invalid portfolio text, résumé present too",
+      input: { portfolioRaw: "not a url", portfolioValid: false, resumePath: "/tmp/r.pdf" },
       expectMissingCount: 1, // portfolio typo still blocks even though résumé alone would satisfy the OR
     },
   ];
@@ -127,18 +117,29 @@ describe("computePromptGate branch states (dec. #41)", () => {
     });
   }
 
+  // Targeting is optional: the gate must never mention company selection, at any
+  // selection count. This is the regression pin for "generate with no targets."
+  it("never blocks on company selection", () => {
+    for (const selectedCount of [0, 1, 3]) {
+      const { missing } = computePromptGate({
+        portfolioRaw: "https://x.com", portfolioValid: true, resumePath: "", selectedCount,
+      });
+      expect(missing).toEqual([]);
+    }
+  });
+
   it("flags portfolioInvalid only when non-empty text fails validation", () => {
     expect(computePromptGate({
-      portfolioRaw: "not a url", portfolioValid: false, resumePath: "", selectedCount: 1,
+      portfolioRaw: "not a url", portfolioValid: false, resumePath: "",
     }).portfolioInvalid).toBe(true);
     expect(computePromptGate({
-      portfolioRaw: "", portfolioValid: false, resumePath: "", selectedCount: 1,
+      portfolioRaw: "", portfolioValid: false, resumePath: "",
     }).portfolioInvalid).toBe(false);
   });
 
   it("does not fall through to the OR message when portfolio text is present but invalid", () => {
     const { missing } = computePromptGate({
-      portfolioRaw: "not a url", portfolioValid: false, resumePath: "", selectedCount: 1,
+      portfolioRaw: "not a url", portfolioValid: false, resumePath: "",
     });
     expect(missing).toContain("fix your portfolio link (https://…)");
     expect(missing).not.toContain("add a portfolio link or a résumé path — at least one");

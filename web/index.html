@@ -93,14 +93,15 @@
     <!-- Section 3 — shortlist + select (Design Doc §5.3). Caveats render VERBATIM
          from the fetched JSON — never hardcoded here or in app.js (§7). -->
     <section id="section-shortlist" hidden>
-      <h2>3 · Shortlist — pick your target companies</h2>
+      <h2>3 · Shortlist — pick your target companies (optional)</h2>
       <div id="caveats" class="callout caveats">
         <h3>Read this first — what an LCA filing is not</h3>
         <ul id="caveats-list"></ul>
       </div>
       <p id="single-quarter-note" class="hint" hidden></p>
       <p id="selection-cap-note" class="hint">
-        Target up to 3 companies — the report covers three.
+        Target up to 3 companies — the report covers three. Optional: skip this and
+        you'll get role-wide guidance without the company-specific notes.
       </p>
       <div class="table-wrap">
         <table id="shortlist-table">
@@ -129,7 +130,7 @@
     <section id="section-prompt" hidden>
       <h2>4 · Generate your prompt</h2>
       <p>
-        Runway fills a reviewer prompt with the companies you selected, your
+        Runway fills a reviewer prompt with any companies you selected, your
         portfolio link, and your résumé's file path. You copy it and run it in your own
         LLM or agent (Claude, ChatGPT, …) — you see every fact that gets sent, and nothing
         is sent anywhere by this page.

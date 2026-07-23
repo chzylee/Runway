@@ -190,12 +190,20 @@ something readable to get a useful answer.
 
 {{CURRENT_WORK_OR_NONE}}
 
-### 4. Shortlist rows they selected — 1–3 employers, the targeting set
+### 4. Shortlist rows they selected — 0–3 employers, the targeting set (may be absent)
 
 These come from the sponsor data. Filing counts, wage levels, SOC titles, and
 worksite states are **facts**; everything else about these companies is **unknown**
 unless your own research or the person's notes establish it. Use only companies in
 this list for company-specific notes.
+
+**Targeting is optional.** If this reads `none provided`, they chose not to target
+specific employers — that is a valid, complete request, not a missing input. Do not
+ask them to pick companies, and do not substitute your own. Omit `company_notes`
+from your output entirely and run the whole report off the role-wide patterns in
+§5, which are the broad market evidence the headline, skills, and direction come
+from anyway. Everything else in the report is unchanged and must still be delivered
+in full.
 
 {{SELECTED_ROWS}}
 
@@ -323,13 +331,16 @@ contract below. In short:
   whole object if nothing genuine stands out — do not manufacture one.
 - **company_notes** — for each selected row: the deterministic `signal_in_filings`,
   plus `researched_context` **only if you actually researched it**, with `sources`.
+  **Omit the field entirely when no rows were selected** (§4) — an absent targeting
+  set is honest; an invented one breaks the only integrity rule the data has.
 - **what_to_know** — patterns / funnel / caveats distilled for clarity and honest
   framing.
 - **run_record** — an honest record of what you could actually see and do.
 
 ## Guardrails
 
-- Companies in `company_notes` come **only** from the selected rows above.
+- Companies in `company_notes` come **only** from the selected rows above — and when
+  no rows were selected, there are no company notes at all.
 - Do not invent facts about any company, market, or role — cite, research, or abstain
   (your **No inference** directive and Do-not lines).
 - **No immigration legal advice** — timelines, eligibility, and filing strategy belong
@@ -346,8 +357,9 @@ contract below. In short:
 ## Output contract — the report is a JSON object in EXACTLY this shape
 
 `skills_to_demonstrate` has at least one item; every `company_notes[].company` must
-be one of the selected rows; `distinctive_edge` is an object **or** `null`. How you
-*deliver* this object is the next section — it depends on what your runtime can do.
+be one of the selected rows, and `company_notes` is **omitted entirely when no rows
+were selected**; `distinctive_edge` is an object **or** `null`. How you *deliver*
+this object is the next section — it depends on what your runtime can do.
 
 ```json
 {

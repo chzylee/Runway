@@ -339,15 +339,20 @@ function updateResumeState() {
 /* --------------------------------------------------------- prompt-gen */
 
 // Pure branch logic for the PromptReady gate (dec. #41), decoupled from the DOM
-// so it's directly unit-testable — >= 1 company selected AND (a valid portfolio
-// URL OR a résumé path). Neither input is required alone, but at least one
-// must be present; a non-empty, invalid portfolio value still blocks (that's a
-// typo to fix, not a missing-input case) rather than silently falling through
-// to "use the résumé instead."
-export function computePromptGate({ portfolioRaw, portfolioValid, resumePath, selectedCount }) {
+// so it's directly unit-testable — a valid portfolio URL OR a résumé path.
+// Neither input is required alone, but at least one must be present; a
+// non-empty, invalid portfolio value still blocks (that's a typo to fix, not a
+// missing-input case) rather than silently falling through to "use the résumé
+// instead."
+//
+// Company selection is deliberately NOT gated: targeting is optional. With no
+// rows checked the report simply drops its company-specific section and runs on
+// the role-wide patterns, which are the broad market evidence anyway. Requiring
+// a target forced users to pick companies they had no opinion on just to get a
+// prompt — noise in, noise out.
+export function computePromptGate({ portfolioRaw, portfolioValid, resumePath }) {
   const portfolioInvalid = portfolioRaw !== "" && !portfolioValid;
   const missing = [];
-  if (selectedCount === 0) missing.push("select at least one company in the table");
   if (portfolioInvalid) {
     missing.push("fix your portfolio link (https://…)");
   } else if (!portfolioValid && !resumePath) {
@@ -363,14 +368,16 @@ function updatePromptGate() {
     portfolioRaw,
     portfolioValid: isValidPortfolioUrl(portfolioRaw),
     resumePath,
-    selectedCount: state.selected.size,
   });
   $("portfolio-hint").hidden = !portfolioInvalid;
 
+  const n = state.selected.size;
   $("generate-btn").disabled = missing.length > 0;
   $("prompt-gate-hint").textContent = missing.length
     ? `To generate: ${missing.join(" · ")}.`
-    : `Ready — ${state.selected.size} ${state.selected.size === 1 ? "company" : "companies"} selected.`;
+    : n === 0
+      ? "Ready — no companies selected, so you'll get role-wide guidance without company notes. Pick up to 3 to target specific sponsors."
+      : `Ready — ${n} ${n === 1 ? "company" : "companies"} selected.`;
 
   // Any change makes an already-shown prompt stale: hide it rather than let a
   // prompt that no longer matches the inputs get copied.
@@ -395,8 +402,14 @@ function csvField(value) {
   return /[",\n\r]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s;
 }
 
+// Targeting is optional. With nothing checked we emit the same `none provided`
+// sentinel the other absent inputs use, rather than a bare header row: a CSV
+// header with no data reads as "here is a table" and invites the model to fill
+// it, whereas the sentinel is the phrasing the template already treats as
+// "omit that section."
 function buildSelectedRowsCsv() {
   const rows = state.data.employers.filter((e) => state.selected.has(e.employer));
+  if (rows.length === 0) return "none provided";
   const lines = [CSV_COLUMNS.join(",")];
   for (const row of rows) {
     lines.push(CSV_COLUMNS.map((col) => csvField(row[col])).join(","));
@@ -412,7 +425,7 @@ async function generatePrompt() {
   const selectedRowsCsv = buildSelectedRowsCsv();
   const resumePath = state.resumePath.trim();
   const currentWork = $("current-work-input").value.trim();
-  if ((portfolio === null && !resumePath) || state.selected.size === 0) return;
+  if (portfolio === null && !resumePath) return;
 
   showPromptStatus("Fetching the prompt template…", false);
   try {
