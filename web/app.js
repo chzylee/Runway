@@ -114,24 +114,35 @@ const fmt = (n) => Number(n).toLocaleString("en-US");
 // non-descriptive junk. The aggregate signal already lives in recurring_tokens, so
 // the prompt gets the top titles by employer count and is told what was trimmed.
 const PROMPT_TITLE_CAP = 40;
+const PROMPT_TOKEN_CAP = 25;
+const PROMPT_NAICS_CAP = 10;
+
+// Keep the top N of a ranked pattern list and say what was dropped, so a trimmed
+// list never reads as a complete one.
+function topBy(list, cap, label) {
+  if (!Array.isArray(list) || list.length <= cap) return [list, null];
+  const kept = [...list].sort((a, b) => (b.employers || 0) - (a.employers || 0)).slice(0, cap);
+  return [kept, `showing the ${cap} most common of ${list.length} ${label}, ranked by employer count`];
+}
 
 export function trimPatternsForPrompt(patterns) {
   if (!patterns || typeof patterns !== "object") return patterns ?? null;
-  const titles = patterns.job_titles && patterns.job_titles.distinct_titles;
-  if (!Array.isArray(titles) || titles.length <= PROMPT_TITLE_CAP) return patterns;
-  const kept = [...titles]
-    .sort((a, b) => (b.employers || 0) - (a.employers || 0))
-    .slice(0, PROMPT_TITLE_CAP);
-  return {
-    ...patterns,
-    job_titles: {
-      ...patterns.job_titles,
-      distinct_titles: kept,
-      distinct_titles_note:
-        `showing the ${PROMPT_TITLE_CAP} most common of ${titles.length} distinct titles, ` +
-        `ranked by employer count; the remainder are long-tail one-offs`,
-    },
-  };
+  const jt = patterns.job_titles || {};
+  const [titles, titleNote] = topBy(jt.distinct_titles, PROMPT_TITLE_CAP, "distinct titles");
+  // recurring_tokens is the real weight on a big role: ~165 entries for
+  // software_engineer and ~190 for consultant_tech, against 12 for design. The
+  // top slice carries the pattern; the tail is one-employer noise.
+  const [tokens, tokenNote] = topBy(jt.recurring_tokens, PROMPT_TOKEN_CAP, "recurring tokens");
+  const [naics, naicsNote] = topBy(patterns.industry_naics2, PROMPT_NAICS_CAP, "industry sectors");
+  if (!titleNote && !tokenNote && !naicsNote) return patterns;
+  const out = { ...patterns, job_titles: { ...jt } };
+  if (titles) out.job_titles.distinct_titles = titles;
+  if (tokens) out.job_titles.recurring_tokens = tokens;
+  if (titleNote) out.job_titles.distinct_titles_note = titleNote;
+  if (tokenNote) out.job_titles.recurring_tokens_note = tokenNote;
+  if (naics) out.industry_naics2 = naics;
+  if (naicsNote) out.industry_naics2_note = naicsNote;
+  return out;
 }
 
 /* ---------------------------------------------------------------- load */

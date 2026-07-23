@@ -162,6 +162,25 @@ describe("trimPatternsForPrompt (prompt-size guard)", () => {
     expect(trimPatternsForPrompt(p)).toBe(p);
   });
 
+  it("caps recurring tokens, the real weight on a large role", () => {
+    const p = patterns(10);
+    p.job_titles.recurring_tokens = Array.from({ length: 190 }, (_, i) => ({
+      token: `t${i}`, employers: i,
+    }));
+    const out = trimPatternsForPrompt(p);
+    expect(out.job_titles.recurring_tokens.length).toBe(25);
+    expect(out.job_titles.recurring_tokens[0].employers).toBe(189);
+    expect(out.job_titles.recurring_tokens_note).toContain("190");
+  });
+
+  it("caps industry sectors", () => {
+    const p = patterns(10);
+    p.industry_naics2 = Array.from({ length: 23 }, (_, i) => ({ code: `${i}`, employers: i }));
+    const out = trimPatternsForPrompt(p);
+    expect(out.industry_naics2.length).toBe(10);
+    expect(out.industry_naics2_note).toContain("23");
+  });
+
   it("caps a large role and keeps the most common titles", () => {
     const out = trimPatternsForPrompt(patterns(1500));
     const kept = out.job_titles.distinct_titles;
