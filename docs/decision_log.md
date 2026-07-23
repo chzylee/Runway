@@ -1058,3 +1058,146 @@ same-generation guard now also pins `patterns.basis.employers`. Suite: 115 passe
 #43's 96 — engine unit tests for the tokenizer/O*NET/floor/denominator knobs, an emit oracle for
 the whole `patterns` object, and property I9). The prompt-template rewrite that *consumes* this
 block (the §1–§5 output structure) is the next slice, not this one.
+
+## 45. `scripts/discover_role.py` — SOC codes for a new role are read from the real
+filing data, not memory, and "software_engineer" is the first role added this way
+
+*2026-07-22, off-plan (owner call: "at least a couple more job titles before v1 launch").*
+
+**The problem.** Every registered role so far (`design`, `uiux`) had its SOC codes chosen by
+eyeballing the O*NET taxonomy for the closest official match. That works when the title *is* the
+occupation ("UI/UX" → Web and Digital Interface Designers), but doesn't scale, and gives no way to
+check a guess against what employers actually filed under a given `JOB_TITLE`.
+
+**What was built.** `scripts/discover_role.py "<title pattern>" [--level I] [--min-employers N]`
+loads every converted quarter, filters to certified filings whose `JOB_TITLE` matches the pattern
+(optionally at one `PW_WAGE_LEVEL`), and prints SOC codes ranked by **distinct employer count** —
+the same denominator `compute_patterns` uses (dec. #44), so one prolific filer can't dominate the
+read. It only prints; it registers nothing in `ROLE_SOC` and writes no decision log entry itself —
+picking the codes and justifying the pick stays a human call, same as dec. #3's rejection of
+title-keyword matching as a *filter*. This is the documented, repeatable first step for adding any
+future role (see README's repo map entry for the script).
+
+**software_engineer: ["15-1252"].** `discover_role.py "software engineer" --level I` shows
+`15-1252` (Software Developers) covering 780 of 917 distinct employers (85%) among certified
+Level-I filings with "software engineer" in the title — an unambiguous single-code match, same
+shape as `uiux`. The long tail (Computer Programmers, Systems Engineers/Architects, Software QA,
+...) is each under 30 employers and is genuinely a different occupation filed under a loosely
+related title, not the same job — left out for the same reason dec. #39 didn't fold Video Game
+Designers' cousins into `uiux`.
+
+**Checkable.** `engine.sponsors.ROLE_SOC["software_engineer"] == ["15-1252"]`; after
+`python scripts/run.py --no-fetch`, `web/data/software_engineer.json` exists with
+`"role": "software_engineer"` and every employer's `soc_codes` contains only `15-1252`.
+
+## 46. "Consultant" is two roles, not one — `consultant_management` and
+`consultant_tech`, not a single omnibus "consultant" bucket
+
+*2026-07-22, off-plan (same session as dec. #45).*
+
+**The problem.** Unlike "software engineer", `discover_role.py "consultant" --level I` shows no
+dominant SOC code — certified Level-I "Consultant"-titled filings span Software Developers (73
+employers), Computer Systems Analysts (20), Data Scientists (16), Management Analysts (13),
+Computer Systems Engineers/Architects (10), Operations Research Analysts (8), down through a long
+tail of 3-employer occupations (Lawyers, Statisticians, Industrial Engineers) that only share the
+word "Consultant" and nothing else. "Consultant" is a job-title convention worn by many distinct
+occupations, not one occupation with a colloquial name (contrast `uiux`, dec. #39).
+
+**Alternatives.** (a) One `"consultant"` role bundling every SOC code above the 3-employer floor —
+rejected: this is exactly the title-keyword-matching failure mode dec. #3 already rejected for the
+shortlist filter itself, just moved into `ROLE_SOC` instead of the filter; a job seeker calling
+themselves a "consultant" doesn't mean they're comparable to a lawyer or a statistician who also
+happened to be filed under that word. (b) Pick the single most common code (`15-1252`, Software
+Developers) and call it "Consultant" — rejected: that's not what most people mean by "Consultant"
+generically (that's `software_engineer` again under a different label), and silently drops the
+real, recognizable management-consulting population. (c, **taken**) Two roles, each a coherent,
+well-supported occupation cluster a person would actually self-identify into.
+
+**consultant_management: ["13-1111"].** Management Analysts is the single dominant match for
+plain "Consultant" and "Management Consultant" titles specifically (11 of 13 "Management
+Consultant"-titled employers, and the top code for bare "Consultant") — the classic
+generalist/strategy-consulting title (McKinsey/Deloitte-style). One code, same shape as `uiux`.
+
+**consultant_tech: ["15-1252", "15-1299", "15-1211"].** The three best-supported computer
+occupations among "Consultant"-titled filings — Software Developers, Computer Systems
+Engineers/Architects, Computer Systems Analysts — mirroring `design`'s three-code bundle (dec. #3)
+rather than inventing a fourth single-code role. Deliberately excludes Data Scientists and
+Operations Research Analysts (dec. #44's data/analytics family, arguably a third consulting
+flavor) and the sub-3-employer tail — narrower coverage, kept for the same reason (b) above was
+rejected: a role's SOC list should read as "this is what that title means," not "everything that
+title has ever been filed as." A data/analytics consulting role is a clean future addition via the
+same `discover_role.py` process, not scope for this one.
+
+**Checkable.** `engine.sponsors.ROLE_SOC["consultant_management"] == ["13-1111"]` and
+`ROLE_SOC["consultant_tech"] == ["15-1252", "15-1299", "15-1211"]`; after
+`python scripts/run.py --no-fetch`, `web/data/consultant_management.json` and
+`web/data/consultant_tech.json` both exist with the matching `role` and `filters.soc_codes`.
+
+## 47. v1.5+ role-scaling framework: publish-then-audit, not gate-then-publish — a
+forward-looking architecture decision, not yet implemented
+
+*2026-07-22, off-plan (owner call, same session as dec. #45/#46).*
+
+**The problem.** Dec. #45/#46 hand-registered 3 roles in one session with a human (owner)
+reading every `discover_role.py` table and deciding every split. That doesn't scale to "add
+dozens of titles" — but gating every addition on a human decision doesn't either. The question:
+once an agent can run the dec. #45/#46 process unattended, should a judgment call (how to
+cluster an ambiguous title's SOC codes into role(s)) block publishing until a human confirms it,
+or publish immediately and get audited after?
+
+**Why "after" is safe here, specifically.** Runway's failure mode for a wrong role definition is
+bounded: the shortlist is public DOL data with caveats attached (dec. #44's caveats, rendered
+verbatim), and the advice step is the *user's own* LLM reasoning over that evidence (README "How
+it works", Layer 3) — Runway asserts nothing about a company itself. A wrong `ROLE_SOC` entry
+degrades to "a noisier shortlist for one role," not a false claim acted on directly. And a role
+is pure declarative config rebuilt from data (`ROLE_SOC` entry → `scripts/run.py`) — fixing one
+costs a re-run, not a migration or a rollback of committed state. Both properties are what make
+"publish, then audit" viable here; they would not hold for a system whose output is asserted as
+fact or whose state is expensive to unwind.
+
+**The framework (two layers, not one gate):**
+1. **Mechanical checks — always pre-publish, never audited-after.** SOC code validity, minimum
+   data volume, `engine/verify.py`'s existing suite (non-empty-result, filing-count-sum,
+   employer-collapse, patterns-consistent, golden-top-employer). Cheap, instant, and catch real
+   bugs — no reason to defer these.
+2. **Judgment calls (title → role clustering) — auto-published, audited after, never blocked.**
+   Every title gets a role definition immediately, tagged with a confidence tier from the
+   dominant-SOC-share metric dec. #45/#46 already used by hand:
+   - **High** (≥~80% single-code dominance, like `software_engineer`) → auto-published,
+     audit-queue entry is low-priority.
+   - **Medium** (clean multi-cluster split, each cluster internally dominant, like
+     `consultant_management`/`consultant_tech`) → auto-published as multiple roles,
+     audit-queue entry flagged "review cluster boundaries."
+   - **Low** (fragmented, no clean clusters) → **also auto-published**, best-effort split,
+     flagged top-priority in the queue. Ratified explicitly (owner call, 2026-07-22): even the
+     messiest tier goes live immediately rather than waiting on review, on the reasoning above —
+     the interim cost of a live-but-imperfect role is bounded and self-correcting (a user or the
+     next audit pass notices an incoherent shortlist), and blocking here would recreate the
+     one-human-in-the-loop-per-title bottleneck this framework exists to remove.
+
+**The audit queue** is a review workflow, not a document — proposed as a Notion database
+(status: pending/confirmed/revised/merged) rather than a repo file, one row per registered role:
+title searched, SOC breakdown, confidence tier, proposed role(s). A confirmed row is promoted to
+a real dated decision log entry here, same shape as #45/#46, just agent-drafted first instead of
+owner-drafted first.
+
+**Failure modes the audit pass must actually catch** (not exhaustive, named so the queue design
+doesn't skip them): a role whose SOC codes are wrong because the title-match was too loose
+(coincidental keyword overlap, not a real occupation signal); near-duplicate roles cluttering the
+dropdown as titles accumulate; a low-confidence split that's mechanically valid but reads as
+incoherent to a real applicant.
+
+**Status: not implemented, and deliberately deferred (owner call, 2026-07-23).** v1 launch is
+the priority over this automation build. `scripts/discover_role.py` (dec. #45, the lookup step)
+exists and is what's actually used; `scripts/expand_roles.py` (the batch driver, the confidence
+scoring, and the audit queue) does not, and isn't scheduled ahead of v1. The near-term goal is
+getting the *mentality* — discover from data, mechanical checks are a hard gate, clustering
+judgment is auditable-after because Runway's blast radius is bounded — locked in and documented
+before any of it gets automated, not rushing the build. This entry records the shape of the
+decision for whoever builds it later, so the "gate vs. audit" call doesn't get re-litigated from
+scratch — see also the Notion page **Adding a Role (Job Title) — Process & Scaling to
+Automation** (§1 Principles) for the human-facing, load-bearing version of this framework.
+
+**Checkable (once built):** every `ROLE_SOC` entry added by `expand_roles.py` has a corresponding
+audit-queue row before or at the moment `scripts/run.py` would serve it publicly; no title-tier
+distinction gates the `ROLE_SOC` write itself, only the audit-queue priority ordering.

@@ -38,7 +38,9 @@ REQUIRED_COLUMNS = [
 ]
 
 # Adding a role later = one new entry here. All SOC codes within a role are
-# treated equally; listing order carries no meaning.
+# treated equally; listing order carries no meaning. Each entry's SOC list
+# should be chosen with scripts/discover_role.py against the real filing data,
+# not from memory — see dec. #45+ for the worked examples below.
 ROLE_SOC = {
     "design": ["15-1255", "27-1024", "27-1021"],
     # Narrower subset view of "design" (dec. #39): no SOC/O*NET code is scoped to
@@ -47,6 +49,19 @@ ROLE_SOC = {
     # means. Same detail-suffix consequence as "design" (dec. #3 amendment):
     # Video Game Designers (15-1255.01) is included too.
     "uiux": ["15-1255"],
+    # dec. #45: 15-1252 (Software Developers) is the dominant match for
+    # "software engineer" titles — 85% of certified Level-I filings containing
+    # that phrase (discover_role.py "software engineer" --level I).
+    "software_engineer": ["15-1252"],
+    # dec. #46: "Consultant" titles split into two real, differently-SOC-coded
+    # populations rather than one — see discover_role.py "consultant" --level I.
+    # Management/strategy consulting: 13-1111 Management Analysts is the single
+    # dominant match for plain "Consultant" and "Management Consultant" titles.
+    "consultant_management": ["13-1111"],
+    # Technology/IT consulting: the three best-supported SOC codes among
+    # "Consultant" titles that are actually computer occupations, mirroring
+    # "design"'s multi-code bundle rather than one omnibus "consultant" role.
+    "consultant_tech": ["15-1252", "15-1299", "15-1211"],
 }
 
 # Annualization multipliers for WAGE_UNIT_OF_PAY. A unit outside this map
