@@ -144,6 +144,160 @@
         <button id="copy-btn" type="button">Copy prompt</button>
       </div>
     </section>
+    <!-- FAQ (Design Doc: the rationale layer). Collapsed by default: it must be
+         available to anyone deciding whether to trust the output, without taxing
+         the reader who just wants to generate a prompt. Every answer here states
+         a limit as well as a capability - the product's credibility rests on
+         saying what it cannot do, not only what it can. -->
+    <section id="section-faq">
+      <h2>How this works</h2>
+      <p class="hint">
+        The short version: Runway finds the companies, your own LLM writes the advice,
+        and you can see every fact that passes between them.
+      </p>
+
+      <details>
+        <summary>Where does the company list come from?</summary>
+        <p>
+          US Department of Labor LCA disclosure data - the filings an employer must
+          make public to sponsor a work visa. Runway keeps only <em>certified</em>
+          filings at the <em>entry wage</em> (Prevailing Wage Level I) whose
+          occupation codes match the role you picked, then groups them by employer.
+        </p>
+        <p>
+          The funnel line under the table shows every number that survived each step,
+          and the provenance link next to it gives you the raw source. Nothing in the
+          shortlist is estimated or inferred.
+        </p>
+      </details>
+
+      <details>
+        <summary>Why do I run the prompt myself instead of Runway doing it?</summary>
+        <p>
+          Three reasons, in order of how much they matter. You see every fact that
+          gets sent, because you are the one pasting it. Your portfolio and résumé
+          never reach a server, because there is no server. And you pick the model,
+          rather than inheriting whichever one we could afford.
+        </p>
+        <p>
+          The trade is real: it is one extra step. We think seeing the inputs is worth
+          more than saving the paste, for advice you are meant to act on.
+        </p>
+      </details>
+
+      <details>
+        <summary>What does Runway decide, and what does the LLM decide?</summary>
+        <p>
+          Runway decides <strong>who sponsors</strong>. That half is deterministic:
+          the same data produces the same shortlist every time, and every number
+          traces to a filing.
+        </p>
+        <p>
+          Your LLM decides <strong>what to build</strong>. That half is judgment, and
+          it is only as good as the model you run it in and the materials you give it.
+          Read it critically. It is a well-briefed opinion, not an answer.
+        </p>
+      </details>
+
+      <details>
+        <summary>How does it decide what to recommend?</summary>
+        <p>
+          The prompt hands your LLM two things: aggregate patterns across every
+          sponsor in your role - which job titles recur, which occupations dominate,
+          whether they hire in-house - and your own materials.
+        </p>
+        <p>
+          The patterns decide <em>which skills matter</em>. Your materials decide
+          <em>which of those you already show</em>. That is why each skill in the
+          report carries both a market reason and a line pointing at something in
+          your own work: a rating you cannot trace is one you should not trust.
+        </p>
+      </details>
+
+      <details>
+        <summary>Why does it only tell me one thing to work on?</summary>
+        <p>
+          Because you are not short of options. Job hunting generates more advice than
+          anyone can act on, and a report that hands you five more directions has
+          added to the problem it claims to solve.
+        </p>
+        <p>
+          The report commits to one direction and says why. If you disagree with the
+          reasoning, that is useful too - it is written to be argued with.
+        </p>
+      </details>
+
+      <details>
+        <summary>What is a "standout path"?</summary>
+        <p>
+          The capability the standouts in your role tend to have and most people never
+          build - usually the one that stops you depending on someone else to make
+          your work real. It is deliberately harder than the main recommendation.
+        </p>
+        <p>
+          These are curated by hand, not generated. A path only ships if we can point
+          at companies hiring for it or a job title that demonstrably exists. Advice
+          that only appears in "skills you need in 2026" listicles does not qualify.
+          The report recommends the highest-ranked one you do not already have, and
+          shows the rest so you can check the choice.
+        </p>
+      </details>
+
+      <details>
+        <summary>Why does the report sometimes say it could not read something?</summary>
+        <p>
+          Because it could not, and you should know. Every report ends with a record
+          of whether your portfolio and résumé were actually read and whether the
+          companies were researched.
+        </p>
+        <p>
+          A report built without your portfolio is inference, not observation. Saying
+          so is the difference between advice you can weigh and advice you have to
+          take on faith.
+        </p>
+      </details>
+
+      <details>
+        <summary>Does a filing mean the company is hiring right now?</summary>
+        <p>
+          No. A certified LCA means an employer sponsored this occupation at this wage
+          level at some point - not that a role is open today, and not that they will
+          sponsor you. Treat the shortlist as "has sponsored before," which is still
+          far better evidence than a list of companies that merely sound
+          international.
+        </p>
+        <p>The caveats above the table say this in full, and they travel with the report.</p>
+      </details>
+
+      <details>
+        <summary>What happens to my portfolio and résumé?</summary>
+        <p>
+          Nothing leaves this page. There is no upload, no account, no database, and
+          no server to send anything to - the site is static files.
+        </p>
+        <p>
+          Your résumé is a <em>file path</em>, not the file: Runway never opens it.
+          The path travels into the prompt text so that an LLM with file access can
+          read it when <em>you</em> run it.
+        </p>
+      </details>
+
+      <details>
+        <summary>When would this be wrong?</summary>
+        <p>
+          Several ways worth knowing. Some roles have thin data - a narrow role in one
+          quarter may rest on a few dozen filings, and small samples mislead. Employer
+          names are normalised conservatively, so one company can appear twice.
+        </p>
+        <p>
+          And the advice layer is a language model reading your work: it can misjudge
+          what a case study proves, especially the difference between a polished
+          concept and something real people used. That is why every claim about you is
+          supposed to point at what it was read from. If one does not, distrust it.
+        </p>
+      </details>
+    </section>
+
   </main>
 
   <footer>
