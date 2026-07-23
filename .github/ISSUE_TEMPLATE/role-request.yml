@@ -1,0 +1,57 @@
+name: Role request
+description: Ask for a new role (job title) to be added to the shortlist
+title: "[Role] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Roles are added by issue rather than by pull request. Every file in
+        `web/data/` is the output of a specific pipeline run, so the maintainer
+        generates it — see [CONTRIBUTING.md](../blob/main/CONTRIBUTING.md#adding-a-role-open-an-issue-first)
+        for why.
+
+        The part that takes real work is finding the SOC codes from actual
+        filings, which is what this form asks for.
+
+  - type: input
+    id: role-name
+    attributes:
+      label: Role name
+      description: What the option should say in the site's role dropdown.
+      placeholder: Data Analyst
+    validations:
+      required: true
+
+  - type: textarea
+    id: discover-output
+    attributes:
+      label: Output of discover_role.py
+      description: |
+        Run this and paste the whole output — it reads the SOC codes from real
+        certified Level-I filings rather than from memory.
+      placeholder: python scripts/discover_role.py "data analyst" --level I --min-employers 3
+      render: text
+    validations:
+      required: true
+
+  - type: textarea
+    id: reading
+    attributes:
+      label: How do you read that output?
+      description: |
+        One dominant SOC code, or a title that splits across unrelated
+        occupations? If it splits, should this be two narrower roles instead of
+        one? The README's "Adding a role" section works through both shapes.
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why this role
+      description: |
+        Who is looking for it, and is there reason to think entry-level
+        sponsorship actually happens in it?
+    validations:
+      required: false

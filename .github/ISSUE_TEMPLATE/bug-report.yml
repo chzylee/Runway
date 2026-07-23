@@ -1,0 +1,48 @@
+name: Bug report
+description: The site or the engine did something it should not
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected instead
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Pick the Design role
+        2. ...
+    validations:
+      required: true
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and OS
+      description: Skip if this is about the Python engine rather than the site.
+      placeholder: Firefox 141, Windows 11
+    validations:
+      required: false
+
+  - type: textarea
+    id: console
+    attributes:
+      label: Console output
+      description: |
+        Anything red in the browser console (F12 → Console), or the traceback if
+        a script failed. This is usually the fastest route to a fix.
+      render: text
+    validations:
+      required: false

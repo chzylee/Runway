@@ -1,0 +1,54 @@
+name: Data problem
+description: A company or number in the shortlist looks wrong
+title: "[Data] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Runway's whole claim is that every number traces back to a public DOL
+        filing. If something looks wrong, that is worth reporting even if you
+        are not sure.
+
+  - type: dropdown
+    id: role
+    attributes:
+      label: Which role
+      options:
+        - Design
+        - UI/UX Design
+        - Software Engineer
+        - Consultant (Management)
+        - Consultant (Technology)
+    validations:
+      required: true
+
+  - type: input
+    id: company
+    attributes:
+      label: Company, exactly as the table shows it
+      description: Copy the text from the Company column, including any odd spacing or casing.
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What looks wrong
+      description: |
+        For example: a duplicate row for one employer under two spellings, a
+        filing count that does not match what you see at the source, a SOC title
+        that does not belong in this role, a wage that looks impossible.
+    validations:
+      required: true
+
+  - type: textarea
+    id: source
+    attributes:
+      label: What the DOL data says
+      description: |
+        If you checked the source, what did you find? The provenance link under
+        the shortlist table points at the exact files a role was built from.
+        Leave blank if you did not check — the report is still useful.
+    validations:
+      required: false

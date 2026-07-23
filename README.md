@@ -1,5 +1,7 @@
 # Runway
 
+**Live site: <https://chzylee.github.io/Runway/>**
+
 A sponsorship diagnostic for international new grads who will need work-visa
 sponsorship. It is **title-agnostic by design** — the engine takes SOC codes, not a
 role name (dec. #3, and the title-agnostic engine note in the decision log), so any
@@ -135,7 +137,7 @@ A role is a name plus a list of SOC codes — nothing else. To register one:
 
 Every applicant-facing surface carries a short list of caveats about what an LCA
 filing does and does not mean. They are **not reproduced here on purpose.** They
-live in exactly one place — `engine/_util.py`'s `CAVEATS` — and are emitted
+live in exactly one place — `scripts/_util.py`'s `CAVEATS` — and are emitted
 verbatim into every role's `<role>.json`, rendered by the site from that JSON, and
 mirrored into `prompts/recommendations.md`, where
 `scripts/check_caveats_parity.py` enforces byte-equality as a build gate.
@@ -161,7 +163,7 @@ scripts/discover_role.py     SOC codes for a title, read from real filings — t
 scripts/fetch_quarters.py    checks DOL for new quarters + downloads them (HEAD-probe discovery, dec. #43)
 scripts/convert_quarters.py  raw DOL xlsx -> narrow parquet (streamed)
 scripts/build_shortlist.py   engine -> web/data/<role>.{json,csv} (+ provenance), one role at a time or build_all()
-scripts/check_caveats_parity.py  asserts prompts/recommendations.md's caveats match engine/_util.CAVEATS
+scripts/check_caveats_parity.py  asserts prompts/recommendations.md's caveats match scripts/_util.CAVEATS
 scripts/run.py               fetch -> convert -> build: regenerates web/data/ (every role) + prompt mirror (occasional, not part of UI dev; --no-fetch to skip the DOL check)
 .github/workflows/data-pipeline.yml  weekly + on-demand CI: fetch new quarter -> rebuild -> commit web/data/
 data/raw/                    DOL xlsx lands here, auto-downloaded (or drop by hand)  (gitignored)
@@ -169,7 +171,37 @@ data/processed/               derived parquet, regenerable      (gitignored)
 
 docs/decision_log.md         every fork in the road, and why
 docs/build_status.md         where Runway sits in the Ship Pipeline + what finishes the current build
+
+CONTRIBUTING.md              how to help, what will not be merged, why roles go through issues
+LICENSE                      MIT
+NOTICE-DATA.md               licensing of the DOL data and the derived artifacts in web/data/
+.github/ISSUE_TEMPLATE/      issue forms: role request, data problem, bug, idea
+.github/workflows/ci.yml     pytest + vitest on every pull request
 ```
 
 For the current build's position (what's shipped, what's next) see
 [`docs/build_status.md`](docs/build_status.md).
+
+## Contributing
+
+Contributions are welcome, especially corrections — if a company or a number in
+the shortlist looks wrong to you, that is worth an issue. See
+[`CONTRIBUTING.md`](CONTRIBUTING.md) for setup and what will not be merged.
+
+One rule worth stating here: **a new role goes through an issue, not a pull
+request.** Everything in `web/data/` is a build output of a specific pipeline
+run, so the maintainer generates it. Bring the SOC codes from
+`scripts/discover_role.py` and the rest is quick.
+
+The test suites (`npm test`, `pytest`) run on every pull request and need no DOL
+data — both are hermetic.
+
+## License
+
+MIT — see [`LICENSE`](LICENSE).
+
+The underlying DOL LCA data is a work of the US federal government and is not
+subject to domestic copyright; the derived artifacts in `web/data/` are MIT like
+the code that generates them. [`NOTICE-DATA.md`](NOTICE-DATA.md) spells this out.
+
+Runway is career and portfolio guidance, not immigration legal advice.

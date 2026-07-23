@@ -1,0 +1,65 @@
+name: CI
+
+# Runs the test suites on pull requests. This exists because neither other
+# workflow ever sees one: pages.yml fires on push to main, data-pipeline.yml on
+# a weekly cron. Before this file, a contributor's PR ran nothing at all, so the
+# only verification a change got was whatever the author happened to run locally.
+#
+# Deliberately hermetic: no DOL fetch, no pipeline run, no secrets. The Python
+# suite runs entirely on synthetic fixtures (see pytest.ini) and the JS suite is
+# a narrow vitest run over web/app.js (dec. #42), so this works unchanged on a
+# PR from a fork, which has no access to repository secrets.
+#
+# Two jobs rather than one so a Python failure never hides a JS failure - on a
+# red PR you want both verdicts in the same run, not the first one to break.
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+# A PR that gets three pushes in a minute should test the last one, not all
+# three. Safe to cancel here (unlike the deploy and data workflows) because
+# nothing is published and nothing is committed.
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  python:
+    name: pytest
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          # Matches data-pipeline.yml. Bump both together.
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt -r requirements-dev.txt
+
+      - name: Run tests
+        run: pytest
+
+  web:
+    name: vitest
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run tests
+        run: npm test

@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: How Runway works
+    url: https://chzylee.github.io/Runway/faq.html
+    about: Where the company list comes from, what the LLM decides, and when the advice would be wrong. Worth a look before filing.
+  - name: Contributing guide
+    url: https://github.com/chzylee/Runway/blob/main/CONTRIBUTING.md
+    about: Setup, how roles get added, and what will not be merged.

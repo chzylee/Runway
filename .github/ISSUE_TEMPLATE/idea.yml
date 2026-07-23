@@ -1,0 +1,27 @@
+name: Idea or suggestion
+description: How you would improve Runway
+title: "[Idea] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Runway asks people to customize the prompt and take the recommendations
+        further. If that led somewhere, this is where to say so.
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: The idea
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does it solve
+      description: |
+        What were you trying to do when you wanted this? The underlying problem
+        is often more useful than the proposed solution.
+    validations:
+      required: false
