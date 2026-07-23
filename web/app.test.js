@@ -4,7 +4,7 @@
 // Sort order, CSV formatting, and DOM/visual details are NOT covered here on
 // purpose; see docs/decision_log.md dec. #42 for why.
 import { describe, expect, it, beforeEach } from "vitest";
-import { state, isValidPortfolioUrl, computePromptGate, renderRow } from "./app.js";
+import { state, isValidPortfolioUrl, computePromptGate, renderRow, trimPatternsForPrompt } from "./app.js";
 
 const baseEmployer = {
   employer: "ACME",
@@ -143,5 +143,47 @@ describe("computePromptGate branch states (dec. #41)", () => {
     });
     expect(missing).toContain("fix your portfolio link (https://…)");
     expect(missing).not.toContain("add a portfolio link or a résumé path — at least one");
+  });
+});
+
+describe("trimPatternsForPrompt (prompt-size guard)", () => {
+  const patterns = (n) => ({
+    basis: { employers: n },
+    job_titles: {
+      recurring_tokens: [{ token: "engineer", employers: n }],
+      distinct_titles: Array.from({ length: n }, (_, i) => ({
+        title: `Title ${i}`, employers: i, filings: i,
+      })),
+    },
+  });
+
+  it("leaves a small role untouched", () => {
+    const p = patterns(10);
+    expect(trimPatternsForPrompt(p)).toBe(p);
+  });
+
+  it("caps a large role and keeps the most common titles", () => {
+    const out = trimPatternsForPrompt(patterns(1500));
+    const kept = out.job_titles.distinct_titles;
+    expect(kept.length).toBe(40);
+    // sorted by employer count, highest first
+    expect(kept[0].employers).toBe(1499);
+    expect(kept[0].employers).toBeGreaterThan(kept[39].employers);
+  });
+
+  it("says what it trimmed instead of silently dropping data", () => {
+    const out = trimPatternsForPrompt(patterns(1500));
+    expect(out.job_titles.distinct_titles_note).toContain("1500");
+  });
+
+  it("does not mutate the source object (the site still shows everything)", () => {
+    const p = patterns(1500);
+    trimPatternsForPrompt(p);
+    expect(p.job_titles.distinct_titles.length).toBe(1500);
+  });
+
+  it("survives a role with no patterns at all", () => {
+    expect(trimPatternsForPrompt(null)).toBe(null);
+    expect(trimPatternsForPrompt(undefined)).toBe(null);
   });
 });

@@ -102,6 +102,38 @@ function sortedEmployers(employers) {
 const $ = (id) => document.getElementById(id);
 const fmt = (n) => Number(n).toLocaleString("en-US");
 
+
+// The emitted patterns object carries EVERY distinct job title for a role. That is
+// right for the data file, but a big role has thousands of them (software_engineer
+// ~1,200, consultant_tech ~1,500), which pushed the generated prompt past 200 KB -
+// unpastable in most chat UIs, and dangerous rather than merely large: the output
+// contract sits at the END of the prompt, so silent truncation costs the model the
+// schema and reads as "it ignored the format".
+//
+// The long tail is also the noisy half: one-off titles with encoding artifacts and
+// non-descriptive junk. The aggregate signal already lives in recurring_tokens, so
+// the prompt gets the top titles by employer count and is told what was trimmed.
+const PROMPT_TITLE_CAP = 40;
+
+export function trimPatternsForPrompt(patterns) {
+  if (!patterns || typeof patterns !== "object") return patterns ?? null;
+  const titles = patterns.job_titles && patterns.job_titles.distinct_titles;
+  if (!Array.isArray(titles) || titles.length <= PROMPT_TITLE_CAP) return patterns;
+  const kept = [...titles]
+    .sort((a, b) => (b.employers || 0) - (a.employers || 0))
+    .slice(0, PROMPT_TITLE_CAP);
+  return {
+    ...patterns,
+    job_titles: {
+      ...patterns.job_titles,
+      distinct_titles: kept,
+      distinct_titles_note:
+        `showing the ${PROMPT_TITLE_CAP} most common of ${titles.length} distinct titles, ` +
+        `ranked by employer count; the remainder are long-tail one-offs`,
+    },
+  };
+}
+
 /* ---------------------------------------------------------------- load */
 
 function setLoadState(mode, message) {
@@ -447,7 +479,7 @@ async function generatePrompt() {
     // (dec. #44's compute_patterns output). Pretty-printed so a human reading the
     // copied prompt can actually audit what was sent — the whole point of the
     // no-server design is that you see every fact before you paste it.
-    const rolePatterns = JSON.stringify(state.data.patterns ?? null, null, 2);
+    const rolePatterns = JSON.stringify(trimPatternsForPrompt(state.data.patterns), null, 2);
     // The role is DATA, not a premise (the prompt says so explicitly): Runway is
     // title-agnostic, so the template never hardcodes a field name.
     const roleLabel = ROLE_LABELS[state.role] || state.role;
