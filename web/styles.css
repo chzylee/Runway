@@ -183,6 +183,10 @@ footer {
 /* FAQ (the rationale layer). Collapsed by default so it is available to a reader
    deciding whether to trust the output without taxing one who just wants a prompt.
    Hover is gated so touch devices do not fire it on tap. */
+.topnav { margin: .6rem 0 0; font-size: .95rem; }
+.topnav a { text-decoration: none; font-weight: 600; }
+@media (hover: hover) and (pointer: fine) { .topnav a:hover { text-decoration: underline; } }
+
 #section-faq details {
   border-top: 1px solid var(--line, #e0e0e0);
   padding: .55rem 0;

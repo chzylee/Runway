@@ -53,6 +53,7 @@ jobs:
           test -f web/index.html          || { echo "::error::web/index.html missing"; exit 1; }
           test -f web/app.js              || { echo "::error::web/app.js missing"; exit 1; }
           test -f web/report_template.html|| { echo "::error::web/report_template.html missing"; exit 1; }
+          test -f web/faq.html            || { echo "::error::web/faq.html missing"; exit 1; }
           test -f web/prompts/recommendations.md \
             || { echo "::error::web/prompts/recommendations.md missing - run scripts/run.py"; exit 1; }
           for role in design uiux software_engineer consultant_management consultant_tech; do
