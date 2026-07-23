@@ -1,0 +1,71 @@
+name: Deploy site to GitHub Pages
+
+# Publishes web/ to GitHub Pages. That directory is the whole site: static HTML,
+# one JS module, one stylesheet, the committed per-role data, and the prompt
+# mirror. There is no build step because there is nothing to build - the site
+# fetches its own JSON at runtime and calls no API.
+#
+# Why this exists as its own workflow rather than a job on data-pipeline.yml:
+# the two have different triggers and different failure meanings. The data
+# pipeline runs weekly and commits regenerated data; a deploy should follow ANY
+# change to the site, including a prompt or template edit that touches no data.
+# Keeping them separate also means a DOL fetch failure never blocks a deploy of
+# unrelated frontend work.
+#
+# The push trigger below fires on the data pipeline's own commits too, so new
+# quarterly data reaches the live site without a second manual step.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "web/**"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Never let two deploys race. Do not cancel a run in progress: a half-applied
+# deploy is worse than a slightly stale one.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      # Fail loudly here rather than shipping a site whose prompt template is
+      # missing: web/prompts/recommendations.md is written by scripts/run.py, and
+      # a stale or absent mirror breaks prompt generation in the browser with a
+      # fetch error the user cannot act on.
+      - name: Check the site has what it needs
+        run: |
+          set -e
+          test -f web/index.html          || { echo "::error::web/index.html missing"; exit 1; }
+          test -f web/app.js              || { echo "::error::web/app.js missing"; exit 1; }
+          test -f web/report_template.html|| { echo "::error::web/report_template.html missing"; exit 1; }
+          test -f web/prompts/recommendations.md \
+            || { echo "::error::web/prompts/recommendations.md missing - run scripts/run.py"; exit 1; }
+          for role in design uiux software_engineer consultant_management consultant_tech; do
+            test -f "web/data/$role.json" \
+              || { echo "::error::web/data/$role.json missing"; exit 1; }
+          done
+          echo "site payload OK"
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: web
+
+      - id: deployment
+        uses: actions/deploy-pages@v4
