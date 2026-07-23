@@ -3,8 +3,8 @@
 A sponsorship diagnostic for international new grads who will need work-visa
 sponsorship. It is **title-agnostic by design** — the engine takes SOC codes, not a
 role name (dec. #3, and the title-agnostic engine note in the decision log), so any
-role can be registered. `design` and `uiux` are simply the roles seeded so far, a
-scope choice, not the product's audience. It answers two questions with data instead
+role can be registered. The roles registered so far are a
+scope choice, not the product's audience — see "Using the site" for the current list. It answers two questions with data instead
 of folklore:
 
 1. **Who actually sponsors entry-level hires in my role?** — a shortlist of companies
@@ -74,17 +74,22 @@ day-to-day UI workflow.)
 
 ## Using the site
 
-1. **Pick a role.** Two are wired: **Design** (web/digital interface, graphic,
-   and commercial/industrial design filings) and **UI/UX Design** (a narrower
+1. **Pick a role.** Five are wired: **Design** (web/digital interface, graphic,
+   and commercial/industrial design filings), **UI/UX Design** (a narrower
    role scoped to just web/digital-interface-designer filings — no distinct
    SOC/O*NET code exists for "UI/UX" specifically, so this is the closest
-   official match). Picking one fetches its own `data/<role>.json` and shows
-   that role's shortlist; the two shortlists are independent, not a filter of
-   one another. In the shortlist table, a row whose SOC title is "Web and
-   Digital Interface Designers" is annotated "(UI/UX)" for legibility.
+   official match), **Software Engineer**, **Consultant (Management)**, and
+   **Consultant (Technology)** — see `docs/decision_log.md` dec. #45/#46 for
+   why "Consultant" is two roles, not one. Picking one fetches its own
+   `data/<role>.json` and shows that role's shortlist; every role's shortlist
+   is independent, not a filter of another's. In the shortlist table, a row
+   whose SOC title is "Web and Digital Interface Designers" is annotated
+   "(UI/UX)" for legibility.
 2. **Add your inputs.** A portfolio link (required, validated as a URL) and,
-   optionally, pasted résumé text. The résumé stays in the browser's memory —
-   there is no upload and nothing is sent to a server.
+   optionally, a **file path** to your résumé (dec. #40) plus a note on what
+   you're working on. Runway never opens the file; the path travels into the
+   prompt so an agent with file access can read it. There is no upload and
+   nothing is sent to a server.
 3. **Select target companies** from the shortlist table (checkboxes). The
    caveats above the table and the funnel line are rendered verbatim from
    `<role>.json` — nothing about what a filing means is hardcoded in the UI.
@@ -93,8 +98,28 @@ day-to-day UI workflow.)
    selections and shows it in a copy box. Any input change invalidates an
    already-shown prompt.
 5. **Run it yourself.** Copy the prompt into your own Claude/ChatGPT chat and
-   review what comes back. There is currently no way to paste that result back
-   into the site for a rendered view — that step isn't built yet.
+   review what comes back. An agent that can write files will render the report
+   and open it for you; otherwise paste the returned JSON into the report page
+   (`web/report_template.html`), which has a paste box for exactly that.
+
+## Adding a role
+
+A role is a name plus a list of SOC codes — nothing else. To register one:
+
+1. **Find the SOC codes from real filings, not memory:**
+   `python scripts/discover_role.py "<title pattern>" --level I --min-employers 3`
+   prints every SOC code certified Level-I filings under that title actually use, ranked by
+   distinct employer count. A clean, dominant single code (like `software_engineer`) is a
+   one-code role; a title that splits across unrelated occupations (like "Consultant") is
+   better registered as two or more narrower roles than one noisy bundle — see
+   `docs/decision_log.md` dec. #45/#46 for both shapes worked through.
+2. **Add one entry to `engine.sponsors.ROLE_SOC`** — everything downstream
+   (`scripts/build_shortlist.py`'s `build_all()`, the verify checks) is already generic per
+   role.
+3. **Add the role to the frontend:** one `<option>` in `web/index.html`'s role `<select>`, one
+   entry in `web/app.js`'s `ROLE_LABELS`.
+4. **Write a decision log entry** naming the alternatives and why this SOC list, then run
+   `python scripts/run.py --no-fetch` to emit `web/data/<role>.{json,provenance.json,csv}`.
 
 ## When something goes wrong
 
@@ -108,23 +133,22 @@ day-to-day UI workflow.)
 
 ## Caveats — attached to every applicant-facing output
 
-- An LCA certification is not a hire or an open role.
-- OPT is not sponsorship — a new grad's first job is on OPT; sponsorship comes 1-3 years later.
-- Design roles are likely not STEM-OPT eligible -> roughly a 12-month OPT window, not 36.
-- Employer names are conservatively normalized and may under-merge.
-- Career/portfolio guidance, not immigration legal advice.
+Every applicant-facing surface carries a short list of caveats about what an LCA
+filing does and does not mean. They are **not reproduced here on purpose.** They
+live in exactly one place — `engine/_util.py`'s `CAVEATS` — and are emitted
+verbatim into every role's `<role>.json`, rendered by the site from that JSON, and
+mirrored into `prompts/recommendations.md`, where
+`scripts/check_caveats_parity.py` enforces byte-equality as a build gate.
 
-These live in exactly one place — `engine/_util.py`'s `CAVEATS` — and are
-emitted verbatim into every role's `<role>.json` and mirrored into
-`prompts/recommendations.md` (`scripts/check_caveats_parity.py` enforces the
-two never drift apart).
+Read them there. A second copy in this file is how a caveat that was deliberately
+removed from the engine survived here anyway.
 
 ## Repo map
 
 ```
 web/                         the static site: index.html + app.js + styles.css
 web/app.test.js              narrow vitest suite: escaping, URL validation, PromptReady gate (dec. #42)
-web/data/                    committed, site-served shortlist artifacts, per role (design.*, uiux.*)
+web/data/                    committed, site-served shortlist artifacts, per role (design.*, uiux.*, software_engineer.*, consultant_management.*, consultant_tech.*)
 web/prompts/                 build-written mirror of prompts/recommendations.md (do not hand-edit)
 package.json                 dev-only Node tooling (Vite + vitest) for `npm run dev` / `npm test` — web/ only
 vitest.config.js             jsdom test environment, scoped to web/**/*.test.js
@@ -133,6 +157,7 @@ prompts/recommendations.md   reviewer prompt template (single source; filled cli
 
 engine/sponsors.py           deterministic engine: filter + aggregate (no LLM, no HTML); ROLE_SOC is the role registry
 engine/verify.py             in-pipeline checks; a failed check stops the run
+scripts/discover_role.py     SOC codes for a title, read from real filings — the first step of "Adding a role" (dec. #45)
 scripts/fetch_quarters.py    checks DOL for new quarters + downloads them (HEAD-probe discovery, dec. #43)
 scripts/convert_quarters.py  raw DOL xlsx -> narrow parquet (streamed)
 scripts/build_shortlist.py   engine -> web/data/<role>.{json,csv} (+ provenance), one role at a time or build_all()
