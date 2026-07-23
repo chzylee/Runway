@@ -352,8 +352,11 @@ not attempt the first path without file access.
 ### If you can write files and open a browser
 
 1. Save the report JSON to **`runway-report-<today's date>.json`** (e.g.
-   `runway-report-2026-07-22.json`). **Do not paste the JSON into the chat** — it is
-   long, it buries everything else, and the file is what is actually useful.
+   `runway-report-2026-07-22.json`), in a folder the person can **find again** —
+   their working directory, Desktop, or Downloads. Do **not** write it to a temp,
+   cache, or scratch directory: this is a document they keep, and those get cleaned
+   up. **Do not paste the JSON into the chat** — it is long, it buries everything
+   else, and the file is what is actually useful.
 2. Fetch the report template: {{TEMPLATE_URL}}
 3. In the JSON text, replace every `</` with `<\/`. This is the **only** escaping
    needed: it stops a literal `</script>` inside the report from closing the page's
@@ -363,10 +366,16 @@ not attempt the first path without file access.
    escaped JSON. The token appears **exactly once**. Replace it and change nothing
    else — do **not** regenerate, reformat, or retype the template. You are doing a
    string substitution, not authoring a page.
-5. Write the result to **`runway-report-<today's date>.html`** and open it in a
-   browser. That page renders itself; there is nothing further to do.
-6. In the chat, report only: the two filenames, that you opened the report, and
-   anything the person genuinely needs to know — above all, any input you could not
+5. Write the result to **`runway-report-<today's date>.html`**, beside the JSON,
+   and open it in **the person's own default browser** via the operating system's
+   file handler: `start` on Windows, `open` on macOS, `xdg-open` on Linux. Do **not**
+   open it in a headless, automated, or agent-controlled browser — those windows
+   close the moment your tool call ends, so the person never sees the report. If you
+   have no way to invoke the OS handler, do not pretend you opened it; go straight
+   to step 6 and hand them the path. The page renders itself once opened.
+6. In the chat, report: the **absolute path of the HTML file** — always, even when
+   it opened cleanly, so they can reopen or share it later — the JSON path, and
+   anything the person genuinely needs to know, above all any input you could not
    read. Keep it short.
 
 ### If you cannot write files or open a browser
