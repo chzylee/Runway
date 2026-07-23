@@ -1,0 +1,29 @@
+{
+  "role": "consultant_tech",
+  "curated_at_utc": "2026-07-23",
+  "kind": "curated-editorial",
+  "framework": "A path qualifies only if you can point at companies hiring for it or a role title that demonstrably exists - not a blog asserting it matters. Ranked by strength of that evidence, not by how often the skill is praised. Curated by hand; this file is editorial, which is why it is NOT inside <role>.json (that bundle is DOL-derived only).",
+  "paths": [
+    {
+      "rank": 1,
+      "path": "Ship a working thing, not only a recommendation",
+      "what_it_is": "Build and deploy something the client actually runs, rather than delivering the deck that describes it.",
+      "why_it_signals": "BCG X, a 3,000+ person unit, exists on this distinction: it builds and deploys production-ready software rather than stopping at analytical models.",
+      "source": "https://agent.nexus/blog/mckinsey-vs-bcg-ai"
+    },
+    {
+      "rank": 2,
+      "path": "Do the quantitative work yourself",
+      "what_it_is": "Run the analysis and build the model, rather than briefing someone else to do it.",
+      "why_it_signals": "McKinsey QuantumBlack (~1,700 people, 40+ offices) and Bain's Advanced Analytics Group are dedicated, separately-recruited units for precisely this.",
+      "source": "https://www.hackingthecaseinterview.com/pages/mckinsey-quantumblack-interview"
+    },
+    {
+      "rank": 3,
+      "path": "Own something in production after the engagement ends",
+      "what_it_is": "Be able to run and maintain what you delivered, not just hand it over.",
+      "why_it_signals": "Across engineering hiring, having only built rather than operated a system is the most-cited disqualifier; it transfers directly to technology consulting.",
+      "source": "https://devsdata.com/distributed-systems-engineer/"
+    }
+  ]
+}

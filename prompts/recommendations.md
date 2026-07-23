@@ -199,6 +199,17 @@ this list for company-specific notes.
 
 {{SELECTED_ROWS}}
 
+### 5a. Standout paths for this role (may be absent)
+
+A short, curated, ranked list of the capabilities you would expect the standouts in
+this role to have — each with a source. **This is supplied data, not something you
+generate.** If it reads `none provided`, this role has no curated list yet: omit
+`standout_path` from your output entirely. Do not research or invent replacements;
+an absent section is honest, an invented one is the exact listicle noise this
+report exists to cut through.
+
+{{STANDOUT_PATHS}}
+
 ### 5. Role-wide sponsor patterns — the market evidence, aggregated
 
 Deterministic, employer-denominated patterns across the sponsors in this role —
@@ -216,6 +227,25 @@ Every string value below is something you are saying **to this person**.
 
 That is register, not affect: it does **not** license invented personal history,
 claimed lived experience, or manufactured warmth — your Do-not lines still hold.
+
+**Then cut it.** This person is anxious and job-hunting; every extra sentence
+competes with the sentence that matters, and a wall of prose gets skimmed rather
+than read. Apply these before you return anything:
+
+- **Omit needless words.** Every sentence should survive the question "what does
+  this add?" Delete restatements — if the headline already says it, the later
+  section does not repeat it.
+- **Be concrete.** "A 2-week concept redesign" beats "not proof of
+  production-level visual output at volume." Name the thing.
+- **Active voice, subject first.** "A sponsor wants proof" beats "proof is what is
+  looked for by a sponsor."
+- **Lead each field with its point.** Put the claim in the first sentence and the
+  support after it, never the reverse.
+- **One idea per field.** If a value has three ideas chained by dashes, it is three
+  sentences pretending to be one.
+
+A field that is half as long and says the same thing is strictly better. Length is
+not thoroughness; it is the tax the reader pays for your first draft.
 
 ## What to produce
 
@@ -256,6 +286,34 @@ contract below. In short:
   **Commit-to-one-direction** tie-break and whether they gave current work:
   `deepen_existing` / `reframe_existing` when they have momentum, `new_project`
   otherwise.
+
+  **`how` is the field that makes this useful, and it is the one you will do
+  worst.** `why` justifies the direction; `how` is the actual move. The failure
+  looks like this: you tell someone their project needs real users, they read it,
+  and their only takeaway is "I should build faster." That is not a
+  recommendation, it is a restatement of the problem. Name the **specific play** —
+  the channel, the audience, the partner, the cut in scope, the thing to ship
+  first — that a person could act on this week. It must clear two bars: they
+  **have not already thought of it** (if it is the obvious move they are already
+  failing to do, it is worthless), and you can **say why it works for them
+  specifically**, from their materials. Guessing at a generic play is worse than
+  admitting the direction is clear and the route is not.
+- **standout_path** — pick the **highest-ranked path in the supplied list that
+  this person does not already have**, and recommend that one. Judge "already have
+  it" from their materials, not charitably: partial exposure is not having it.
+  `why_them` must name what it unlocks *for them specifically* — the dependency it
+  removes, the ceiling it lifts — traced to something in their materials, never a
+  general case for the skill.
+
+  The other paths go in `others`, each one line with its source, marked whether
+  they already have it. **They are not a second and third recommendation.** They
+  are the reason the first one is credible: seeing that you already have one and
+  that another is a gap rather than an edge is what makes the pick checkable
+  instead of asserted. Keep them short — a point and a link, not a pitch.
+
+  This is a **move they could make**, which is why it is not `distinctive_edge`
+  (a trait they already have). Do not merge them. Omit the whole field when no
+  paths were supplied.
 - **distinctive_edge** — only if a real, distinctive strength stands out (your
   **Unevidenced distinctive strength** directive + **Evidence-gap** pattern). Set
   `evidence_scope` only after a confirming search, and distinguish where the support
@@ -310,6 +368,7 @@ be one of the selected rows; `distinctive_edge` is an object **or** `null`. How 
     "mode": "new_project | deepen_existing | reframe_existing",
     "recommendation": "the one concrete thing to build or do next",
     "why": "why this over everything else",
+    "how": "the specific move that actually realizes it - the play they have not already thought of",
     "how_it_signals": "how it reads to a skimming skeptic, and how it advances headline.angle",
     "current_work_note": "when they gave current work: whether the evidenced skills can be emphasized through it — and if not, why you are pointing elsewhere. null when none was given"
   },
@@ -319,6 +378,16 @@ be one of the selected rows; `distinctive_edge` is an object **or** `null`. How 
     "evidence": "the pattern handle if target; the cited finding if adjacent; null if none",
     "sources": ["https://…"],
     "why_it_could_matter": "the inbound angle; if scope is none, a labeled possibility, not a verdict"
+  },
+  "standout_path": {
+    "recommended": {
+      "path": "the one you are recommending, copied from the supplied list",
+      "why_them": "why THIS person, from their materials - name the dependency or ceiling it removes",
+      "source": "https://…"
+    },
+    "others": [
+      { "path": "…", "already_have_it": true, "note": "one short line", "source": "https://…" }
+    ]
   },
   "company_notes": [
     {

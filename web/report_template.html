@@ -102,6 +102,9 @@
   ul { margin: .4rem 0; padding-left: 1.15rem; }
   li { margin: .25rem 0; }
   a { color: var(--accent); text-underline-offset: 2px; }
+  ul.others { list-style: none; padding-left: 0; margin: .5rem 0 0; }
+  ul.others li { margin: .5rem 0; }
+  ul.others .tag { font-size: .62rem; margin-left: .4rem; }
   .sources { font-size: .86rem; margin-top: .6rem; }
   .sources li { word-break: break-word; }
   .none { color: var(--muted); font-style: italic; }
@@ -336,6 +339,12 @@
       if (MODE_LABEL[one.mode]) card.appendChild(el("h3", null, MODE_LABEL[one.mode]));
       if (one.recommendation) card.appendChild(el("p", "lede", one.recommendation));
       if (one.why) card.appendChild(el("p", null, one.why));
+      if (one.how) {
+        var howP = el("p");
+        howP.appendChild(el("span", "label", "How to actually do it: "));
+        howP.appendChild(el("span", null, one.how));
+        card.appendChild(howP);
+      }
       if (one.how_it_signals) {
         var p = el("p", "why");
         p.appendChild(el("span", "label", "How it reads: "));
@@ -367,6 +376,48 @@
       if (edge.evidence) c.appendChild(el("p", "grounding", edge.evidence));
       var src = sourceList(edge.sources);
       if (src) c.appendChild(src);
+      root.appendChild(c);
+    }
+
+
+    // --- standout path: ONE recommendation, with the ranked field behind it as
+    // the reason it is credible. The others are deliberately quiet -- a point and
+    // a link, never a second and third recommendation competing for attention.
+    var sp = data.standout_path;
+    if (sp && sp.recommended && sp.recommended.path) {
+      section(root, "The harder path worth taking");
+      var c = el("div", "card");
+      c.appendChild(el("h3", null, sp.recommended.path));
+      if (sp.recommended.why_them) c.appendChild(el("p", null, sp.recommended.why_them));
+      var recSrc = sourceList(sp.recommended.source ? [sp.recommended.source] : []);
+      if (recSrc) c.appendChild(recSrc);
+
+      var others = Array.isArray(sp.others) ? sp.others.filter(function (o) { return o && o.path; }) : [];
+      if (others.length) {
+        var why = document.createElement("details");
+        why.appendChild(el("summary", "why-summary", "Why this one and not the others?"));
+        var body = el("div", "why-body");
+        body.appendChild(el("p", "grounding",
+          "These are the capabilities the standouts in this role tend to have. This is the ranked set the recommendation above was picked from."));
+        var ul = el("ul", "others");
+        others.forEach(function (o) {
+          var li = el("li", "grounding");
+          li.appendChild(el("span", "label", o.path));
+          if (o.already_have_it) li.appendChild(el("span", "tag tag-shown", "you have this"));
+          if (o.note) li.appendChild(el("span", null, " — " + o.note));
+          if (o.source && /^https?:\/\//i.test(String(o.source))) {
+            li.appendChild(document.createTextNode(" "));
+            var a = el("a", null, "source");
+            a.href = o.source; a.target = "_blank"; a.rel = "noopener noreferrer";
+            a.appendChild(el("span", "visually-hidden", " (opens in a new tab)"));
+            li.appendChild(a);
+          }
+          ul.appendChild(li);
+        });
+        body.appendChild(ul);
+        why.appendChild(body);
+        c.appendChild(why);
+      }
       root.appendChild(c);
     }
 

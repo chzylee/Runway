@@ -12,11 +12,22 @@
  * extends it to the pasted LLM result.
  */
 
-// Each registered role (dec. #39) is a sibling data file: data/<role>.json.
+// Each registered role (dec. #39, #45, #46) is a sibling data file: data/<role>.json.
 // Keep in sync with the <option value="..."> list in index.html.
-const ROLE_LABELS = { design: "Design", uiux: "UI/UX Design" };
+const ROLE_LABELS = {
+  design: "Design",
+  uiux: "UI/UX Design",
+  software_engineer: "Software Engineer",
+  consultant_management: "Consultant (Management)",
+  consultant_tech: "Consultant (Technology)",
+};
 const KNOWN_ROLES = new Set(Object.keys(ROLE_LABELS));
 const dataUrlFor = (role) => `data/${role}.json`;
+// Curated, hand-written editorial content — deliberately a SIBLING file, never
+// folded into <role>.json, because that bundle promises every value traces to a
+// public DOL filing and these do not. A role without one is normal: the prompt
+// then omits the section rather than inventing paths.
+const standoutUrlFor = (role) => `data/${role}.standout_paths.json`;
 // Build-written mirror of the repo's prompts/recommendations.md (single source,
 // D5): the server root is web/, so the repo-root original is unreachable from
 // here. scripts/run.py rewrites the mirror on every build (dec. #35).
@@ -45,7 +56,7 @@ export const SELECTION_CAP = 3;
 const TOKENS = [
   "{{SELECTED_ROWS}}", "{{PORTFOLIO}}", "{{RESUME_OR_NONE}}",
   "{{CURRENT_WORK_OR_NONE}}", "{{ROLE_PATTERNS}}", "{{ROLE_LABEL}}",
-  "{{TEMPLATE_URL}}",
+  "{{TEMPLATE_URL}}", "{{STANDOUT_PATHS}}",
 ];
 
 export const state = {
@@ -53,6 +64,7 @@ export const state = {
   data: null,           // parsed <role>.json (null until a role is loaded)
   template: null,       // fetched prompt template, cached after first success
   selected: new Set(),  // `employer` keys — the aggregation key, unique per row
+  standoutPaths: null,  // curated <role>.standout_paths.json, or null if none exists
   resumePath: "",       // a file path string, never file content (dec. #40)
   sort: { key: null, dir: 1 }, // shortlist table sort: null key = DOL/engine order
 };
@@ -112,6 +124,13 @@ async function loadShortlist(role) {
       throw new Error(`${dataUrl} is missing employers[]/caveats[]`);
     }
     state.data = data;
+    // Optional by design: a missing file is a role we have not curated yet, which
+    // is a normal state and must not fail the load or block the shortlist.
+    state.standoutPaths = null;
+    try {
+      const sres = await fetch(standoutUrlFor(role), { cache: "no-cache" });
+      if (sres.ok) state.standoutPaths = await sres.json();
+    } catch { /* absent or unparseable: the prompt omits the section */ }
     state.selected.clear();
     state.sort = { key: null, dir: 1 };
     updateSortIndicators();
@@ -424,6 +443,11 @@ async function generatePrompt() {
     // with no configuration, and it can never point at a different deployment than
     // the one that generated the prompt.
     const templateUrl = new URL("report_template.html", window.location.href).href;
+    // "none provided" is load-bearing: the prompt reads it as "omit the section",
+    // which is the honest outcome for an uncurated role.
+    const standoutPaths = state.standoutPaths
+      ? JSON.stringify(state.standoutPaths, null, 2)
+      : "none provided";
 
     const filled = state.template
       .split("{{SELECTED_ROWS}}").join(selectedRowsCsv)
@@ -432,7 +456,8 @@ async function generatePrompt() {
       .split("{{CURRENT_WORK_OR_NONE}}").join(currentWork || "none provided")
       .split("{{ROLE_PATTERNS}}").join(rolePatterns)
       .split("{{ROLE_LABEL}}").join(roleLabel)
-      .split("{{TEMPLATE_URL}}").join(templateUrl);
+      .split("{{TEMPLATE_URL}}").join(templateUrl)
+      .split("{{STANDOUT_PATHS}}").join(standoutPaths);
 
     $("prompt-output").value = filled;
     $("prompt-box").hidden = false;

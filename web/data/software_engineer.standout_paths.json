@@ -1,0 +1,29 @@
+{
+  "role": "software_engineer",
+  "curated_at_utc": "2026-07-23",
+  "kind": "curated-editorial",
+  "framework": "A path qualifies only if you can point at companies hiring for it or a role title that demonstrably exists - not a blog asserting it matters. Ranked by strength of that evidence, not by how often the skill is praised. Curated by hand; this file is editorial, which is why it is NOT inside <role>.json (that bundle is DOL-derived only).",
+  "paths": [
+    {
+      "rank": 1,
+      "path": "Own something in production, not just build it",
+      "what_it_is": "Run what you wrote: on-call, incidents, real users, and the boring maintenance after launch.",
+      "why_it_signals": "Top employers explicitly screen out engineers who have only built prototypes or MVPs without owning production systems. It is the single most-cited gap.",
+      "source": "https://devsdata.com/distributed-systems-engineer/"
+    },
+    {
+      "rank": 2,
+      "path": "Design systems that survive failure",
+      "what_it_is": "Reason about partitions, consistency tradeoffs and failure modes, not just features.",
+      "why_it_signals": "Distributed Systems Engineer is a posted title with its own salary band, and system-design interviews on distributed failure are a standard filter.",
+      "source": "https://www.ziprecruiter.com/Jobs/Distributed-Systems-Engineer"
+    },
+    {
+      "rank": 3,
+      "path": "Work across the stack, not one technology",
+      "what_it_is": "Move through the backend platform rather than staying inside a single framework or service.",
+      "why_it_signals": "Companies report avoiding candidates who specialise in one technology area and will not work across the broader platform.",
+      "source": "https://devsdata.com/distributed-systems-engineer/"
+    }
+  ]
+}

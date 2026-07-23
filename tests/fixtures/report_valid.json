@@ -31,7 +31,8 @@
     "recommendation": "Extend the in-progress project into a full brand system rather than starting something new.",
     "why": "It already proves the harder half; the missing half is what this market pays for.",
     "how_it_signals": "A skimming reviewer sees one coherent system, and it advances headline.angle.",
-    "current_work_note": "The evidenced skills can be emphasised through the current project, so it stays the vehicle."
+    "current_work_note": "The evidenced skills can be emphasised through the current project, so it stays the vehicle.",
+    "how": "Put it in front of ten people who fit the audience this week - post it in the two communities where they already are, and change one thing based on what breaks."
   },
   "distinctive_edge": {
     "trait": "Writing clearly about design decisions",
@@ -74,5 +75,26 @@
     "current_work_provided": true,
     "research_performed": true,
     "research_tool": "exa"
+  },
+  "standout_path": {
+    "recommended": {
+      "path": "Ship your own interface in production code",
+      "why_them": "You are building the mobile app with an engineering partner, so the dependency is already named in your own materials.",
+      "source": "https://brainy.ink/paper/design-engineering-role"
+    },
+    "others": [
+      {
+        "path": "Own a real design system",
+        "already_have_it": false,
+        "note": "closer to your current gap than to an edge",
+        "source": "https://uxcel.com/blog/top-40-product-designer-skills-for-2026-and-how-to-build-them"
+      },
+      {
+        "path": "Tie design decisions to business outcomes",
+        "already_have_it": true,
+        "note": "your case studies already argue from outcomes",
+        "source": "https://uxcel.com/blog/top-40-product-designer-skills-for-2026-and-how-to-build-them"
+      }
+    ]
   }
 }
