@@ -20,6 +20,21 @@
 
   <main id="section-faq">
 <h2>How this works</h2>
+    <p>
+      Runway is built on the idea that AI is helpful as a logical perspective. It generates
+      a prompt for an LLM to be transparent about the evidence behind recommendations. Manual
+      research is cumbersome, so Runway is here to help.
+    </p>
+    <p>
+      One of Runway's goals is teaching stronger AI usage and motivating project ideas. Customize
+      your generated prompt, share how you would improve Runway, take its recommendations even
+      further.
+    </p>
+    <p>
+      Built this while on the job market myself. Feel free to
+      <a href="https://www.linkedin.com/in/noah-lee-dev/">connect on LinkedIn</a>
+      and <a href="faq.html#section-about">share ideas</a>.
+    </p>
     <details>
       <summary>Where does the company list come from?</summary>
       <p>
@@ -38,24 +53,31 @@
 
     <details>
       <summary>Why do I run the prompt myself instead of Runway doing it?</summary>
+      <ul>
+        <li>
+          You can inspect how it works and see what the AI sees.
+        </li>
+        <li>
+          Your portfolio and résumé never reach a server, because there is no server.
+        </li>
+        <li>
+          You pick the model and use your existing environment.
+        </li>
+      </ul>
       <p>
-        Three reasons, in order of how much they matter. You see every fact
-        you send, because you paste it yourself. Your portfolio and résumé
-        never reach a server, because there is no server. And you pick the
-        model, rather than inheriting whichever one we could afford.
-      </p>
-      <p>
-        The trade is real: it is one extra step. We think seeing the inputs is worth
-        more than saving the paste, for advice you are meant to act on.
+        You can use ChatGPT, DeepSeek, decide between Claude Sonnet or Fable, whichever
+        you prefer. Search through the prompt, customize it, paste it, what you use is yours.
       </p>
     </details>
 
     <details>
       <summary>What does Runway decide, and what does the LLM decide?</summary>
       <p>
-        Runway decides <strong>who sponsors</strong>. That half is deterministic:
-        the same data produces the same shortlist every time, and every number
-        traces to a filing.
+        Runway decides <strong>specific titles</strong> under what you select. For example,
+        "Design" includes UI/UX, Graphic, Design, and Industrial Design. Sponsorship data
+        <a href="https://www.dol.gov/agencies/eta/foreign-labor/performance">is public</a>
+        and Runway makes it presentable. The same data produces the same shortlist every time,
+        and every number traces to a filing.
       </p>
       <p>
         Your LLM decides <strong>what to build</strong>. That half is judgment, and
@@ -82,13 +104,14 @@
     <details>
       <summary>Why does it only tell me one thing to work on?</summary>
       <p>
-        Because you are not short of options. Job hunting generates more advice than
-        anyone can act on, and a report that hands you five more directions has
-        added to the problem it claims to solve.
+        There are so many possible things to work on. One of the hardest
+        parts of job searching is figuring out what will actually help. Job hunting
+        generates more advice than anyone can act on.
       </p>
       <p>
         The report commits to one direction and says why. If you disagree with the
-        reasoning, that is useful too - it is written to be argued with.
+        reasoning, that is useful too. Hopefully it helps you find something to
+        start on.
       </p>
     </details>
 
@@ -112,7 +135,7 @@
     <details>
       <summary>Why does the report sometimes say it could not read something?</summary>
       <p>
-        Because it could not, and you should know. Every report ends with a
+        Because AI should show where it sources its info. Every report ends with a
         record of whether Runway actually read your portfolio and résumé, and
         whether it researched the companies.
       </p>
@@ -132,7 +155,7 @@
         far better evidence than a list of companies that merely sound
         international.
       </p>
-      <p>The caveats above the table say this in full, and they travel with the report.</p>
+      <p>The caveats are in the report as a reminder.</p>
     </details>
 
     <details>
@@ -151,20 +174,54 @@
     <details>
       <summary>When would this be wrong?</summary>
       <p>
-        Several ways worth knowing. Some roles have thin data: a narrow role
+        The advice layer is a language model reading your work: it can
+        misjudge what a case study proves, especially the difference between
+        a polished concept and something real people used. Advice is meant to
+        be a logical perspective based on data the model finds. Logical people
+        can be wrong too, and right/wrong is what you make of it.
+      </p>
+      <p>
+        Several things weaken accuracy. Some roles have thin data: a narrow role
         in one quarter may rest on a few dozen filings, and small samples
         mislead. Runway normalises employer names conservatively, so one
         company can appear twice.
       </p>
-      <p>
-        The advice layer is a language model reading your work: it can
-        misjudge what a case study proves, especially the difference between
-        a polished concept and something real people used. That is why every
-        claim about you must trace back to something Runway actually read.
-        If it does not, distrust it.
-      </p>
     </details>
   </main>
+
+  <section id="section-about">
+    <details>
+      <summary>Who made this?</summary>
+      <p>
+        My name is Noah and I'm a software engineer building to help people get the most
+        out of AI. I believe teaching someone how to fish is often the best thing you can
+        do for them, and AI tools are world-class fishing gear we can all use.
+      </p>
+      <p>
+        I'm experiencing the chaos of job search myself, and I've been building AI systems
+        and tools to develop myself as I grow. I have friends and family who have increased
+        difficulty in their own searches due to need for visa sponsorship. Runway is my way
+        of sharing what I'm learning with a tool you can learn from and make your own.
+      </p>
+      <p>
+        I'm experiencing the chaos of job search myself, and I've been building AI systems
+        and tools to develop myself as I grow. I have friends and family who have increased
+        difficulty in their own searches due to need for visa sponsorship. Runway is my way
+        of sharing what I'm learning with a tool you can learn from and make your own.
+      </p>
+      <p>
+        Join me on a journey of learning and sharing. Feel free to share suggestions or
+        contribute directly to Runway. Would love to see what people make from what Runway
+        offers.
+      </p>
+    </details>
+    <ul class="connect">
+      <li><a href="https://www.linkedin.com/in/noah-lee-dev/">Connect on LinkedIn</a></li>
+      <li><a href="https://github.com/chzylee/Runway/issues">Send a suggestion or report a problem</a></li>
+      <li><a href="https://github.com/chzylee/Runway">See the source on GitHub</a></li>
+      <li><a href="https://substack.com/@endotlee">Read what I'm writing on Substack</a></li>
+    </ul>
+  </section>
 
   <footer>
     <p>

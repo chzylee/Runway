@@ -209,3 +209,17 @@ footer {
   margin: .5rem 0;
   max-width: 68ch;
 }
+
+/* About / connect — sits below the FAQ so a reader who got all the way through
+   the reasoning has somewhere to reply to it. */
+#section-about { margin-top: 2.5rem; }
+#section-about p { max-width: 68ch; }
+
+.connect {
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+}
+.connect li { margin: .4rem 0; }
+.connect a { font-weight: 600; text-decoration: none; }
+@media (hover: hover) and (pointer: fine) { .connect a:hover { text-decoration: underline; } }
