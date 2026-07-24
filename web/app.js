@@ -54,6 +54,49 @@ const ROLE_LABELS = {
   microbiologist: "Microbiologist",
 };
 const KNOWN_ROLES = new Set(Object.keys(ROLE_LABELS));
+
+// Extra search terms for the role typeahead, matched as substrings alongside the
+// label. A term may appear on more than one role: "economics" is meant to surface
+// both economist and financial_analyst.
+const ROLE_ALIASES = {
+  software_engineer: ["software engineering", "swe", "developer", "programmer", "backend", "full stack", "computer science", "cs"],
+  qa_engineer: ["qa", "quality assurance", "test engineer", "sdet", "software testing"],
+  network_administrator: ["sysadmin", "systems administrator", "network engineer", "devops", "it administrator"],
+  information_security_analyst: ["cybersecurity", "security", "infosec", "security analyst", "soc analyst"],
+  computer_network_architect: ["network architect", "network design"],
+  web_developer: ["web development", "frontend developer", "web dev"],
+  applied_scientist: ["research scientist", "machine learning scientist", "ml scientist", "ai researcher"],
+  data: ["data science", "data scientist", "data analyst", "data engineer", "machine learning", "ml", "analytics", "business intelligence", "statistics"],
+  mechanical_engineer: ["mechanical engineering", "mech e", "meche"],
+  civil_engineer: ["civil engineering", "structural engineer"],
+  industrial_engineer: ["industrial engineering", "manufacturing engineer", "process engineer"],
+  electrical_engineer: ["electrical engineering", "ee"],
+  mechatronics_robotics_engineer: ["robotics", "mechatronics", "controls engineer", "automation engineer"],
+  electronics_engineer: ["electronics", "hardware engineer", "circuit design"],
+  chemical_engineer: ["chemical engineering", "cheme", "process engineer"],
+  environmental_engineer: ["environmental engineering"],
+  materials_engineer: ["materials science", "materials engineering"],
+  aerospace_engineer: ["aerospace engineering", "aeronautical", "aero"],
+  architect: ["architecture", "architectural designer", "building design"],
+  uiux: ["ui", "ux", "front end", "product design", "interaction design", "user experience"],
+  design: ["designer", "graphic design", "industrial design", "visual design", "product design"],
+  consultant_management: ["management consulting", "strategy consulting", "consultant", "mbb"],
+  consultant_tech: ["technology consulting", "it consulting", "tech consultant", "solutions consultant"],
+  accountant: ["accounting", "audit", "auditor", "cpa", "tax"],
+  financial_analyst: ["finance", "financial analysis", "investment analyst", "equity research", "economics"],
+  financial_quantitative_analyst: ["quant", "quantitative finance", "quantitative analyst", "quantitative researcher"],
+  budget_analyst: ["budget", "fp&a", "financial planning", "financial planning and analysis"],
+  marketing_specialist: ["marketing", "market research", "growth", "digital marketing"],
+  project_management_specialist: ["project management", "program management", "pm", "project manager", "scrum"],
+  logistics: ["supply chain", "operations research", "procurement"],
+  business_operations_specialist: ["business operations", "biz ops", "operations", "revops"],
+  human_resources_specialist: ["hr", "human resources", "people ops", "recruiting", "talent"],
+  actuary: ["actuarial", "actuarial science"],
+  chemist: ["chemistry"],
+  physicist: ["physics"],
+  economist: ["economics", "econ"],
+  microbiologist: ["microbiology", "biology", "biologist", "life sciences"],
+};
 const dataUrlFor = (role) => `data/${role}/${role}.json`;
 // Curated, hand-written editorial content — deliberately a SIBLING file, never
 // folded into <role>.json, because that bundle promises every value traces to a
@@ -591,7 +634,84 @@ async function copyPrompt() {
 // load the full index.html DOM (the vitest suite imports pure/DOM-fragment
 // functions like renderRow/computePromptGate directly, not the whole page).
 // On the real served page #title-select always exists, so this is always true.
+// Turn the native <select> into a filterable typeahead. It never replaces the
+// select's role — it drives it: on pick it sets select.value and fires "change",
+// so find-btn gating and section-reset (below) stay the single source of truth.
+function enhanceRoleCombobox() {
+  const select = $("title-select");
+  const input = $("role-input");
+  const listbox = $("role-listbox");
+  if (!select || !input || !listbox) return;
+  select.hidden = true;
+
+  const entries = Object.entries(ROLE_LABELS).map(([role, label]) => ({
+    role, label, terms: [label.toLowerCase(), ...(ROLE_ALIASES[role] || [])],
+  }));
+  let matches = [];
+  let active = -1;
+
+  const close = () => {
+    listbox.hidden = true;
+    input.setAttribute("aria-expanded", "false");
+    input.removeAttribute("aria-activedescendant");
+    active = -1;
+  };
+  const commit = (entry) => {
+    input.value = entry.label;
+    select.value = entry.role;
+    select.dispatchEvent(new Event("change"));
+    close();
+  };
+  const setActive = (i) => {
+    const items = listbox.querySelectorAll("li[role='option']");
+    if (!items.length) return;
+    active = (i + items.length) % items.length;
+    items.forEach((li, idx) => li.setAttribute("aria-selected", idx === active ? "true" : "false"));
+    input.setAttribute("aria-activedescendant", items[active].id);
+    items[active].scrollIntoView({ block: "nearest" });
+  };
+  const render = () => {
+    const q = input.value.trim().toLowerCase();
+    matches = (q === "" ? entries : entries.filter((e) => e.terms.some((t) => t.includes(q)))).slice(0, 8);
+    listbox.innerHTML = "";
+    if (!matches.length) {
+      const li = document.createElement("li");
+      li.className = "ro-empty";
+      li.textContent = "No matching role";
+      listbox.appendChild(li);
+    } else {
+      matches.forEach((e, i) => {
+        const li = document.createElement("li");
+        li.id = "role-opt-" + i;
+        li.setAttribute("role", "option");
+        li.setAttribute("aria-selected", "false");
+        li.textContent = e.label;
+        li.addEventListener("mousedown", (ev) => { ev.preventDefault(); commit(e); });
+        listbox.appendChild(li);
+      });
+    }
+    active = -1;
+    listbox.hidden = false;
+    input.setAttribute("aria-expanded", "true");
+  };
+
+  input.addEventListener("input", () => {
+    if (select.value) { select.value = ""; select.dispatchEvent(new Event("change")); }
+    render();
+  });
+  input.addEventListener("focus", () => { if (listbox.hidden) render(); });
+  input.addEventListener("keydown", (ev) => {
+    if (ev.key === "ArrowDown") { ev.preventDefault(); if (listbox.hidden) render(); setActive(active + 1); }
+    else if (ev.key === "ArrowUp") { ev.preventDefault(); setActive(active - 1); }
+    else if (ev.key === "Enter") {
+      if (!listbox.hidden && matches.length) { ev.preventDefault(); commit(matches[active >= 0 ? active : 0]); }
+    } else if (ev.key === "Escape") { close(); }
+  });
+  input.addEventListener("blur", () => setTimeout(close, 120));
+}
+
 if ($("title-select")) {
+  enhanceRoleCombobox();
   $("title-select").addEventListener("change", (event) => {
     const role = event.target.value;
     $("find-btn").disabled = !KNOWN_ROLES.has(role);

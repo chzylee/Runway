@@ -26,7 +26,19 @@
          v1-launch additions, same pattern. -->
     <section id="section-title">
       <h2>1 · Pick a role</h2>
-      <label for="title-select">Role</label>
+      <label for="role-input">Role</label>
+      <!-- Typeahead combobox (v2): with ~37 roles a plain dropdown is unwieldy.
+           app.js enhances this, hides the native <select>, and drives it on pick,
+           so every downstream handler stays unchanged. The <select> remains in the
+           DOM as the no-JS fallback and the role registry that tests + screen
+           readers read. -->
+      <div class="combobox" id="role-combobox">
+        <input id="role-input" type="text" role="combobox" aria-autocomplete="list"
+               aria-expanded="false" aria-controls="role-listbox" aria-label="Role"
+               autocomplete="off" spellcheck="false"
+               placeholder="Type a role, major, or field…">
+        <ul id="role-listbox" role="listbox" hidden></ul>
+      </div>
       <select id="title-select">
         <option value="">— pick a role —</option>
         <option value="design">Design</option>
