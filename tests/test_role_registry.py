@@ -65,15 +65,15 @@ def test_role_has_a_display_label(role: str) -> None:
 @pytest.mark.parametrize("role", ROLES)
 @pytest.mark.parametrize("suffix", [".json", ".provenance.json", ".csv"])
 def test_role_ships_its_data(role: str, suffix: str) -> None:
-    assert (DATA / f"{role}{suffix}").exists(), (
-        f"web/data/{role}{suffix} is missing - run: python scripts/run.py --no-fetch"
+    assert (DATA / role / f"{role}{suffix}").exists(), (
+        f"web/data/{role}/{role}{suffix} is missing - run: python scripts/run.py --no-fetch"
     )
 
 
 @pytest.mark.parametrize("role", ROLES)
 def test_role_bundle_is_usable(role: str) -> None:
     """The two fields app.js refuses to load without, plus a non-empty shortlist."""
-    d = json.loads(_read(DATA / f"{role}.json"))
+    d = json.loads(_read(DATA / role / f"{role}.json"))
     assert isinstance(d.get("employers"), list) and d["employers"], (
         f"{role}.json has no employers - the shortlist would render empty"
     )
@@ -102,7 +102,7 @@ def test_standout_paths_are_curated_and_well_formed(role: str) -> None:
     but is broken is not - it would reach the model as garbage it was told to
     select from.
     """
-    f = DATA / f"{role}.standout_paths.json"
+    f = DATA / role / f"{role}.standout_paths.json"
     if not f.exists():
         pytest.skip(f"{role} has no curated standout paths yet (supported: section is omitted)")
     d = json.loads(_read(f))
@@ -136,7 +136,7 @@ def test_prompt_payload_stays_pasteable(role: str) -> None:
     web/app.js. If those change, this number should be re-checked rather than
     merely raised.
     """
-    patterns = json.loads(_read(DATA / f"{role}.json")).get("patterns")
+    patterns = json.loads(_read(DATA / role / f"{role}.json")).get("patterns")
     if not patterns:
         pytest.skip(f"{role} emits no patterns")
     jt = dict(patterns.get("job_titles") or {})

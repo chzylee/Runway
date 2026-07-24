@@ -1,0 +1,1157 @@
+{
+  "role": "business_operations_specialist",
+  "generated_at_utc": "2026-07-24 06:20 UTC",
+  "source": "US DOL OFLC LCA Programs disclosure data (public record)",
+  "filters": {
+    "case_status": "Certified",
+    "soc_codes": [
+      "13-1199"
+    ],
+    "pw_wage_level": "I"
+  },
+  "quarters_used": [
+    "FY2025Q4",
+    "FY2026Q1"
+  ],
+  "quarters_superseded": {},
+  "funnel": {
+    "rows_total": 201700,
+    "rows_certified": 181277,
+    "rows_soc_matched": 215,
+    "rows_selected": 54
+  },
+  "employer_groups": 51,
+  "rows_wage_excluded_from_wage_stats": 0,
+  "patterns": {
+    "basis": {
+      "filings": 54,
+      "employers": 51,
+      "measured_by": "employers",
+      "min_support_employers": 3
+    },
+    "job_titles": {
+      "recurring_tokens": [
+        {
+          "token": "specialist",
+          "employers": 18,
+          "filings": 21
+        },
+        {
+          "token": "operations",
+          "employers": 18,
+          "filings": 20
+        },
+        {
+          "token": "business",
+          "employers": 17,
+          "filings": 18
+        },
+        {
+          "token": "analyst",
+          "employers": 5,
+          "filings": 5
+        },
+        {
+          "token": "associate",
+          "employers": 5,
+          "filings": 5
+        },
+        {
+          "token": "coordinator",
+          "employers": 5,
+          "filings": 5
+        },
+        {
+          "token": "manager",
+          "employers": 5,
+          "filings": 5
+        },
+        {
+          "token": "development",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "administrator",
+          "employers": 3,
+          "filings": 3
+        }
+      ],
+      "distinct_titles": [
+        {
+          "title": "Business Operations Specialist",
+          "employers": 6,
+          "filings": 7
+        },
+        {
+          "title": "Associate",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Business Manager",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Operations Associate",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Station Operations Specialist",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Account Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "BUSINESS ADMINISTRATOR",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "BUSINESS CONSULTANT (OPERATIONS, EDUCATION & MARKETING)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Continuity Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Data Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Development Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Development Officer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Development Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Operations Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Operations Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Catalog Operations Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Commercial Operation Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Culinary Operations Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Customer Service Team Lead (US)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Director",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Dispatcher Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Energy Analyst & Project Coordinator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Energy Modeling Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "External Affairs & Strategic Outreach Coordinator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Growth Generalist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Human Resources Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Inside Sales Team Lead",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "International Operations Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Managing Director of Rules & Competitions",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Motion Graphics Coordinator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Online marketing specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Operation Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Operations Design Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Operations Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Operations and Systems Coordinator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Management Specialists",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Projects Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Quality Control Administrator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Services Administrator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Resource Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sales Development Representative",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Consultant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sustainability Coordinator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sustainability Designer",
+          "employers": 1,
+          "filings": 1
+        }
+      ]
+    },
+    "onet_occupations": [
+      {
+        "soc_code": "13-1199.00",
+        "title": "Business Operations Specialists, All Other",
+        "employers": 41,
+        "filings": 44
+      },
+      {
+        "soc_code": "13-1199.05",
+        "title": "Sustainability Specialists",
+        "employers": 6,
+        "filings": 6
+      },
+      {
+        "soc_code": "13-1199.04",
+        "title": "Business Continuity Planners",
+        "employers": 4,
+        "filings": 4
+      }
+    ],
+    "placement_model": {
+      "in_house": {
+        "employers": 50,
+        "filings": 53
+      },
+      "third_party_site": {
+        "employers": 1,
+        "filings": 1
+      }
+    },
+    "industry_naics2": [
+      {
+        "code": "54",
+        "label": "Professional, Scientific, and Technical Services",
+        "employers": 15,
+        "filings": 17
+      },
+      {
+        "code": "42",
+        "label": "Wholesale Trade",
+        "employers": 5,
+        "filings": 5
+      },
+      {
+        "code": "61",
+        "label": "Educational Services",
+        "employers": 4,
+        "filings": 4
+      },
+      {
+        "code": "81",
+        "label": "Other Services (except Public Administration)",
+        "employers": 4,
+        "filings": 4
+      },
+      {
+        "code": "23",
+        "label": "Construction",
+        "employers": 3,
+        "filings": 3
+      },
+      {
+        "code": "51",
+        "label": "Information",
+        "employers": 3,
+        "filings": 3
+      },
+      {
+        "code": "56",
+        "label": "Administrative and Support and Waste Management and Remediation Services",
+        "employers": 3,
+        "filings": 3
+      },
+      {
+        "code": "62",
+        "label": "Health Care and Social Assistance",
+        "employers": 3,
+        "filings": 3
+      }
+    ]
+  },
+  "caveats": [
+    "An LCA certification is not a hire or an open role.",
+    "OPT is not sponsorship — a new grad's first job is on OPT; sponsorship comes 1-3 years later.",
+    "Employer names are conservatively normalized and may under-merge.",
+    "Career/portfolio guidance, not immigration legal advice."
+  ],
+  "employers": [
+    {
+      "employer": "GOFO",
+      "employer_display": "GOFO, Inc.",
+      "filing_count": 3,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "13-1199",
+      "soc_titles": "Business Operations Specialists, All Other",
+      "worksite_states": "IN; NC; NJ",
+      "worksite_cities": "Carteret; Charlotte; Indianapolis",
+      "wage_annual_min": 49920,
+      "wage_annual_median": 51854,
+      "wage_annual_max": 58302
+    },
+    {
+      "employer": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA USA N A",
+      "employer_display": "Industrial and Commercial Bank of China (USA) N.A.",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1199",
+      "soc_titles": "Business Operations Specialists, All Other",
+      "worksite_states": "NY",
+      "worksite_cities": "New York",
+      "wage_annual_min": 76000,
+      "wage_annual_median": 76000,
+      "wage_annual_max": 76000
+    },
+    {
+      "employer": "AXON US",
+      "employer_display": "Axon US Corp",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1199",
+      "soc_titles": "Business Operations Specialists, All Other",
+      "worksite_states": "NY",
+      "worksite_cities": "New York",
+      "wage_annual_min": 58302,
+      "wage_annual_median": 58302,
+      "wage_annual_max": 58302
+    },
+    {
+      "employer": "BLUESKY ENERGY",
+      "employer_display": "Bluesky Energy LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1199",
+      "soc_titles": "Business Operations Specialists, All Other",
+      "worksite_states": "CA",
+      "worksite_cities": "Signal hill",
+      "wage_annual_min": 55000,
+      "wage_annual_median": 55000,
+      "wage_annual_max": 55000
+    },
+    {
+      "employer": "BODUO INTERNATIONAL TRADE",
+      "employer_display": "BODUO INTERNATIONAL TRADE LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1199",
+      "soc_titles": "Business Operations Specialists, All Other",
+      "worksite_states": "NY",
+      "worksite_cities": "FARMINGDALE",
+      "wage_annual_min": 58302,
+      "wage_annual_median": 58302,
+      "wage_annual_max": 58302
+    },
+    {
+      "employer": "BREVARD TRADING GROUP",
+      "employer_display": "Brevard Trading Group Inc",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1199",
+      "soc_titles": "Business Operations Specialists, All Other",
+      "worksite_states": "FL",
+      "worksite_cities": "Melbourne",
+      "wage_annual_min": 660000,
+      "wage_annual_median": 660000,
+      "wage_annual_max": 660000
+    },
+    {
+      "employer": "CENTER FOR THE STUDY OF SERVICES",
+      "employer_display": "Center for the Study of Services",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1199",
+      "soc_titles": "Business Operations Specialists, All Other",
+      "worksite_states": "DC",
+      "worksite_cities": "Washington",
+      "wage_annual_min": 67167,
+      "wage_annual_median": 67167,
+      "wage_annual_max": 67167
+    },
+    {
+      "employer": "CLOSE THE LOOP",
+      "employer_display": "Close the Loop, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1199",
+      "soc_titles": "Sustainability Specialists",
+      "worksite_states": "KY",
+      "worksite_cities": "Hebron",
+      "wage_annual_min": 47757,
+      "wage_annual_median": 47757,
+      "wage_annual_max": 47757
+    },
+    {
+      "employer": "COLORADO GOLF ASSOCIATION",
+      "employer_display": "Colorado Golf Association",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1199",
+      "soc_titles": "Business Operations Specialists, All Other",
+      "worksite_states": "CO",
+      "worksite_cities": "Greenwood Village",
+      "wage_annual_min": 71750,
+      "wage_annual_median": 71750,
+      "wage_annual_max": 71750
+    },
+    {
+      "employer": "DABBLE SPORTS",
+      "employer_display": "Dabble Sports, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1199",
+      "soc_titles": "Business Operations Specialists, All Other",
+      "worksite_states": "CO",
+      "worksite_cities": "Denver",
+      "wage_annual_min": 75620,
+      "wage_annual_median": 75620,
+      "wage_annual_max": 75620
+    },
+    {
+      "employer": "ENERGY MANAGEMENT CONSULTING CONSTRUCTION",
+      "employer_display": "Energy Management Consulting & Construction LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1199",
+      "soc_titles": "Sustainability Specialists",
+      "worksite_states": "HI",
+      "worksite_cities": "Honolulu",
+      "wage_annual_min": 58469,
+      "wage_annual_median": 58469,
+      "wage_annual_max": 58469
+    },
+    {
+      "employer": "EVERGREEN AMUSEMENT",
+      "employer_display": "EVERGREEN AMUSEMENT LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1199",
+      "soc_titles": "Business Operations Specialists, All Other",
+      "worksite_states": "GA",
+      "worksite_cities": "NORCROSS",
+      "wage_annual_min": 47000,
+      "wage_annual_median": 47000,
+      "wage_annual_max": 47000
+    },
+    {
+      "employer": "FIND SOLACE",
+      "employer_display": "Find Solace, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1199",
+      "soc_titles": "Business Operations Specialists, All Other",
+      "worksite_states": "CA",
+      "worksite_cities": "Redwood City",
+      "wage_annual_min": 80000,
+      "wage_annual_median": 80000,
+      "wage_annual_max": 80000
+    },
+    {
+      "employer": "FINEQUITY",
+      "employer_display": "finEquity inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1199",
+      "soc_titles": "Business Operations Specialists, All Other",
+      "worksite_states": "NY",
+      "worksite_cities": "brooklyn",
+      "wage_annual_min": 62000,
+      "wage_annual_median": 62000,
+      "wage_annual_max": 62000
+    },
+    {
+      "employer": "FYNRO DESIGN STUDIO",
+      "employer_display": "Fynro Design Studio Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1199",
+      "soc_titles": "Sustainability Specialists",
+      "worksite_states": "CA",
+      "worksite_cities": "Long Beach",
+      "wage_annual_min": 50128,
+      "wage_annual_median": 50128,
+      "wage_annual_max": 50128
+    },
+    {
+      "employer": "GRIZZLY NEW MARKETING",
+      "employer_display": "Grizzly New Marketing Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1199",
+      "soc_titles": "Business Operations Specialists, All Other",
+      "worksite_states": "NY",
+      "worksite_cities": "New York",
+      "wage_annual_min": 65000,
+      "wage_annual_median": 65000,
+      "wage_annual_max": 65000
+    },
+    {
+      "employer": "HOBBS STRAUS DEAN WALKER LLP",
+      "employer_display": "HOBBS STRAUS DEAN & WALKER, LLP",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1199",
+      "soc_titles": "Business Operations Specialists, All Other",
+      "worksite_states": "CA",
+      "worksite_cities": "Sacramento",
+      "wage_annual_min": 72000,
+      "wage_annual_median": 72000,
+      "wage_annual_max": 72000
+    },
+    {
+      "employer": "ICF RESOURCES",
+      "employer_display": "ICF Resources, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1199",
+      "soc_titles": "Sustainability Specialists",
+      "worksite_states": "TX",
+      "worksite_cities": "Dallas",
+      "wage_annual_min": 80000,
+      "wage_annual_median": 80000,
+      "wage_annual_max": 80000
+    },
+    {
+      "employer": "INNOVERA",
+      "employer_display": "INNOVERA",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1199",
+      "soc_titles": "Business Operations Specialists, All Other",
+      "worksite_states": "CO",
+      "worksite_cities": "Denver",
+      "wage_annual_min": 62067,
+      "wage_annual_median": 62067,
+      "wage_annual_max": 62067
+    },
+    {
+      "employer": "ISRAEL CANCER RESEARCH FUND",
+      "employer_display": "Israel Cancer Research Fund, Inc",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1199",
+      "soc_titles": "Business Operations Specialists, All Other",
+      "worksite_states": "NY",
+      "worksite_cities": "New York",
+      "wage_annual_min": 74000,
+      "wage_annual_median": 74000,
+      "wage_annual_max": 74000
+    },
+    {
+      "employer": "ITACON CONTRIVE CONSTRUCTION",
+      "employer_display": "ITACON CONTRIVE CONSTRUCTION LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1199",
+      "soc_titles": "Business Continuity Planners",
+      "worksite_states": "FL",
+      "worksite_cities": "KISSIMMEE",
+      "wage_annual_min": 60000,
+      "wage_annual_median": 60000,
+      "wage_annual_max": 60000
+    },
+    {
+      "employer": "KOVE WILLIAMSBURG",
+      "employer_display": "KOVE WILLIAMSBURG, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1199",
+      "soc_titles": "Business Operations Specialists, All Other",
+      "worksite_states": "NY",
+      "worksite_cities": "Brooklyn",
+      "wage_annual_min": 70000,
+      "wage_annual_median": 70000,
+      "wage_annual_max": 70000
+    },
+    {
+      "employer": "KRL INTERNATIONAL",
+      "employer_display": "KRL International LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1199",
+      "soc_titles": "Business Operations Specialists, All Other",
+      "worksite_states": "DC",
+      "worksite_cities": "Washington",
+      "wage_annual_min": 77012,
+      "wage_annual_median": 77012,
+      "wage_annual_max": 77012
+    },
+    {
+      "employer": "LAB INFORMATION TECHNOLOGY INCORPORATED",
+      "employer_display": "LAB Information Technology Incorporated",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1199",
+      "soc_titles": "Business Operations Specialists, All Other",
+      "worksite_states": "TX",
+      "worksite_cities": "Pearland",
+      "wage_annual_min": 51000,
+      "wage_annual_median": 51000,
+      "wage_annual_max": 51000
+    },
+    {
+      "employer": "LAUNCHLINK COMMUNICATIONS",
+      "employer_display": "LaunchLink Communications",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1199",
+      "soc_titles": "Business Operations Specialists, All Other",
+      "worksite_states": "CA",
+      "worksite_cities": "San Francisco",
+      "wage_annual_min": 60778,
+      "wage_annual_median": 60778,
+      "wage_annual_max": 60778
+    },
+    {
+      "employer": "MA LABORATORIES",
+      "employer_display": "MA LABORATORIES, INC.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1199",
+      "soc_titles": "Business Operations Specialists, All Other",
+      "worksite_states": "CA",
+      "worksite_cities": "San Jose",
+      "wage_annual_min": 65250,
+      "wage_annual_median": 65250,
+      "wage_annual_max": 65250
+    },
+    {
+      "employer": "MALAMALAMA FARM AND CENTER",
+      "employer_display": "MALAMALAMA FARM AND CENTER",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1199",
+      "soc_titles": "Business Operations Specialists, All Other",
+      "worksite_states": "HI",
+      "worksite_cities": "MAUI",
+      "wage_annual_min": 52000,
+      "wage_annual_median": 52000,
+      "wage_annual_max": 52000
+    },
+    {
+      "employer": "MAPLE AI",
+      "employer_display": "Maple AI, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1199",
+      "soc_titles": "Business Operations Specialists, All Other",
+      "worksite_states": "NY",
+      "worksite_cities": "New York",
+      "wage_annual_min": 60000,
+      "wage_annual_median": 60000,
+      "wage_annual_max": 60000
+    },
+    {
+      "employer": "MAPLEBEAR",
+      "employer_display": "Maplebear Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1199",
+      "soc_titles": "Business Operations Specialists, All Other",
+      "worksite_states": "NY",
+      "worksite_cities": "New York",
+      "wage_annual_min": 59280,
+      "wage_annual_median": 59280,
+      "wage_annual_max": 59280
+    },
+    {
+      "employer": "MAYA AGARSEN GLOBAL",
+      "employer_display": "Maya Agarsen Global LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1199",
+      "soc_titles": "Business Operations Specialists, All Other",
+      "worksite_states": "TX",
+      "worksite_cities": "Houston",
+      "wage_annual_min": 52000,
+      "wage_annual_median": 52000,
+      "wage_annual_max": 52000
+    },
+    {
+      "employer": "MULTISER VERSAILLES",
+      "employer_display": "MULTISER VERSAILLES, INC.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1199",
+      "soc_titles": "Business Continuity Planners",
+      "worksite_states": "FL",
+      "worksite_cities": "Miami",
+      "wage_annual_min": 50000,
+      "wage_annual_median": 50000,
+      "wage_annual_max": 50000
+    },
+    {
+      "employer": "MY MOVEMENT PHYSICAL THERAPY P C",
+      "employer_display": "My Movement Physical Therapy P.C.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1199",
+      "soc_titles": "Business Operations Specialists, All Other",
+      "worksite_states": "NY",
+      "worksite_cities": "Brooklyn",
+      "wage_annual_min": 58302,
+      "wage_annual_median": 58302,
+      "wage_annual_max": 58302
+    },
+    {
+      "employer": "NAN",
+      "employer_display": "Nan Inc",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1199",
+      "soc_titles": "Business Operations Specialists, All Other",
+      "worksite_states": "GU",
+      "worksite_cities": "Barrigada",
+      "wage_annual_min": 55000,
+      "wage_annual_median": 55000,
+      "wage_annual_max": 55000
+    },
+    {
+      "employer": "NEGOTIATUS",
+      "employer_display": "Negotiatus Corp",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1199",
+      "soc_titles": "Business Operations Specialists, All Other",
+      "worksite_states": "NY",
+      "worksite_cities": "New York",
+      "wage_annual_min": 65000,
+      "wage_annual_median": 65000,
+      "wage_annual_max": 65000
+    },
+    {
+      "employer": "OREGON CONFERENCE OF SEVENTH DAY ADVENTISTS",
+      "employer_display": "Oregon Conference of Seventh-day Adventists",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1199",
+      "soc_titles": "Business Operations Specialists, All Other",
+      "worksite_states": "OR",
+      "worksite_cities": "Gresham",
+      "wage_annual_min": 54960,
+      "wage_annual_median": 54960,
+      "wage_annual_max": 54960
+    },
+    {
+      "employer": "PACIFIC TRELLIS FRUIT",
+      "employer_display": "Pacific Trellis Fruit LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1199",
+      "soc_titles": "Business Operations Specialists, All Other",
+      "worksite_states": "NJ",
+      "worksite_cities": "Glassboro",
+      "wage_annual_min": 65000,
+      "wage_annual_median": 65000,
+      "wage_annual_max": 65000
+    },
+    {
+      "employer": "PERMASTEELISA NORTH AMERICA",
+      "employer_display": "PERMASTEELISA NORTH AMERICA CORP.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1199",
+      "soc_titles": "Business Operations Specialists, All Other",
+      "worksite_states": "CA",
+      "worksite_cities": "Modesto",
+      "wage_annual_min": 64026,
+      "wage_annual_median": 64026,
+      "wage_annual_max": 64026
+    },
+    {
+      "employer": "PROBIO",
+      "employer_display": "ProBio Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1199",
+      "soc_titles": "Business Operations Specialists, All Other",
+      "worksite_states": "MD",
+      "worksite_cities": "ROCKVILLE",
+      "wage_annual_min": 75000,
+      "wage_annual_median": 75000,
+      "wage_annual_max": 75000
+    },
+    {
+      "employer": "QUINCE CO",
+      "employer_display": "Quince & Co, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1199",
+      "soc_titles": "Business Operations Specialists, All Other",
+      "worksite_states": "CA",
+      "worksite_cities": "San Francisco",
+      "wage_annual_min": 68640,
+      "wage_annual_median": 68640,
+      "wage_annual_max": 68640
+    },
+    {
+      "employer": "ROCKY MOUNTAIN INSTITUTE",
+      "employer_display": "ROCKY MOUNTAIN INSTITUTE, INC.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1199",
+      "soc_titles": "Sustainability Specialists",
+      "worksite_states": "NY",
+      "worksite_cities": "New York",
+      "wage_annual_min": 70939,
+      "wage_annual_median": 70939,
+      "wage_annual_max": 70939
+    },
+    {
+      "employer": "SEOUL TONIC",
+      "employer_display": "Seoul Tonic",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1199",
+      "soc_titles": "Business Operations Specialists, All Other",
+      "worksite_states": "NY",
+      "worksite_cities": "New York",
+      "wage_annual_min": 59000,
+      "wage_annual_median": 59000,
+      "wage_annual_max": 59000
+    },
+    {
+      "employer": "STORYVILLE COFFEE COMPANY",
+      "employer_display": "STORYVILLE COFFEE COMPANY LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1199",
+      "soc_titles": "Business Continuity Planners",
+      "worksite_states": "TX",
+      "worksite_cities": "Jersey Village",
+      "wage_annual_min": 60000,
+      "wage_annual_median": 60000,
+      "wage_annual_max": 60000
+    },
+    {
+      "employer": "SUPERPOWER HEALTH",
+      "employer_display": "Superpower Health, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1199",
+      "soc_titles": "Business Operations Specialists, All Other",
+      "worksite_states": "CA",
+      "worksite_cities": "San Francisco",
+      "wage_annual_min": 75000,
+      "wage_annual_median": 75000,
+      "wage_annual_max": 75000
+    },
+    {
+      "employer": "TAHOR HEALTH",
+      "employer_display": "Tahor Health LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1199",
+      "soc_titles": "Business Continuity Planners",
+      "worksite_states": "MD",
+      "worksite_cities": "Hyattsville",
+      "wage_annual_min": 65000,
+      "wage_annual_median": 65000,
+      "wage_annual_max": 65000
+    },
+    {
+      "employer": "TOP MANAGEMENT NEAR ME",
+      "employer_display": "Top Management Near Me LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1199",
+      "soc_titles": "Business Operations Specialists, All Other",
+      "worksite_states": "NY",
+      "worksite_cities": "Elmhurst",
+      "wage_annual_min": 60320,
+      "wage_annual_median": 60320,
+      "wage_annual_max": 60320
+    },
+    {
+      "employer": "TRAILER PARK GROUP",
+      "employer_display": "Trailer Park Group",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1199",
+      "soc_titles": "Business Operations Specialists, All Other",
+      "worksite_states": "CA",
+      "worksite_cities": "Los Angeles",
+      "wage_annual_min": 50128,
+      "wage_annual_median": 50128,
+      "wage_annual_max": 50128
+    },
+    {
+      "employer": "TRIPLE P AMERICA",
+      "employer_display": "TRIPLE P AMERICA INC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1199",
+      "soc_titles": "Business Operations Specialists, All Other",
+      "worksite_states": "CA",
+      "worksite_cities": "San Francisco",
+      "wage_annual_min": 75155,
+      "wage_annual_median": 75155,
+      "wage_annual_max": 75155
+    },
+    {
+      "employer": "UNIVERSITY OF MARY WASHINGTON",
+      "employer_display": "University of Mary Washington",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1199",
+      "soc_titles": "Sustainability Specialists",
+      "worksite_states": "VA",
+      "worksite_cities": "Fredericksburg",
+      "wage_annual_min": 64667,
+      "wage_annual_median": 64667,
+      "wage_annual_max": 64667
+    },
+    {
+      "employer": "UNIVERSITY OF SOUTH FLORIDA",
+      "employer_display": "University of South Florida",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1199",
+      "soc_titles": "Business Operations Specialists, All Other",
+      "worksite_states": "FL",
+      "worksite_cities": "Tampa",
+      "wage_annual_min": 55080,
+      "wage_annual_median": 55080,
+      "wage_annual_max": 55080
+    },
+    {
+      "employer": "UNIVERSITY OF WYOMING",
+      "employer_display": "University of Wyoming",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1199",
+      "soc_titles": "Business Operations Specialists, All Other",
+      "worksite_states": "WY",
+      "worksite_cities": "Laramie",
+      "wage_annual_min": 56000,
+      "wage_annual_median": 56000,
+      "wage_annual_max": 56000
+    },
+    {
+      "employer": "WENHAM CARTER CONSULTING",
+      "employer_display": "Wenham Carter Consulting Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1199",
+      "soc_titles": "Business Operations Specialists, All Other",
+      "worksite_states": "NY",
+      "worksite_cities": "Brooklyn",
+      "wage_annual_min": 70000,
+      "wage_annual_median": 70000,
+      "wage_annual_max": 70000
+    }
+  ]
+}

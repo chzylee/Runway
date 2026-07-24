@@ -1,0 +1,46 @@
+{
+  "role": "web_developer",
+  "curated_at_utc": "2026-07-24",
+  "kind": "curated-editorial",
+  "framework": "A path qualifies only when >=3 prominent, proven people in the field visibly share the capability, each with a resolving link — the pattern across standouts is the evidence, not market demand. Ranked by strength of that pattern. Curated editorial, not DOL-derived.",
+  "paths": [
+    {
+      "rank": 1,
+      "path": "Open-source a tool other developers depend on",
+      "what_it_is": "Build and publicly maintain a library, framework, or CLI tool that solves a real problem well enough that other developers adopt it into their own projects.",
+      "why_it_signals": "The most prominent web developers working today built their reputations this exact way — Evan You (Vue.js, Vite), Rich Harris (Svelte), Guillermo Rauch (Socket.io, then Next.js/Vercel), and Sindre Sorhus (hundreds of widely-used npm packages) each turned a self-initiated open-source project into career-defining proof of craft.",
+      "people": [
+        {"name": "Evan You", "link": "https://evanyou.me"},
+        {"name": "Rich Harris", "link": "https://svelte.dev/blog/svelte-3-rethinking-reactivity"},
+        {"name": "Guillermo Rauch", "link": "https://rauchg.com"},
+        {"name": "Sindre Sorhus", "link": "https://sindresorhus.com"}
+      ],
+      "source": "https://evanyou.me"
+    },
+    {
+      "rank": 2,
+      "path": "Teach what you're learning, in public, in writing",
+      "what_it_is": "Publish clear, technically rigorous explanations of web development concepts on a personal blog or newsletter — not just working code, but the reasoning behind it, written for other developers to learn from.",
+      "why_it_signals": "Dan Abramov (overreacted.io), Kent C. Dodds, Josh W. Comeau, and Wes Bos each built outsized standing in web development primarily through consistent public technical writing and teaching rather than any single employer's badge — the writing itself became the credential.",
+      "people": [
+        {"name": "Dan Abramov", "link": "https://overreacted.io"},
+        {"name": "Kent C. Dodds", "link": "https://kentcdodds.com"},
+        {"name": "Josh W. Comeau", "link": "https://www.joshwcomeau.com"},
+        {"name": "Wes Bos", "link": "https://wesbos.com"}
+      ],
+      "source": "https://overreacted.io"
+    },
+    {
+      "rank": 3,
+      "path": "Ship small web products fast and repeatedly, in public",
+      "what_it_is": "Build and launch small, real, revenue-generating web products on a tight solo timeline (days to weeks, not quarters), sharing the build and the numbers publicly as you go.",
+      "why_it_signals": "Pieter Levels, Marc Lou, and Tony Dinh each built visible track records not from one big launch but from a rapid, repeated cadence of shipping — the pattern of speed and public iteration, more than any one product, is what other developers and employers point to as proof of craft.",
+      "people": [
+        {"name": "Pieter Levels", "link": "https://levels.io"},
+        {"name": "Marc Lou", "link": "https://marclou.com"},
+        {"name": "Tony Dinh", "link": "https://tonydinh.com"}
+      ],
+      "source": "https://levels.io"
+    }
+  ]
+}

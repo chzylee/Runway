@@ -1,0 +1,480 @@
+{
+  "role": "aerospace_engineer",
+  "generated_at_utc": "2026-07-24 06:20 UTC",
+  "source": "US DOL OFLC LCA Programs disclosure data (public record)",
+  "filters": {
+    "case_status": "Certified",
+    "soc_codes": [
+      "17-2011"
+    ],
+    "pw_wage_level": "I"
+  },
+  "quarters_used": [
+    "FY2025Q4",
+    "FY2026Q1"
+  ],
+  "quarters_superseded": {},
+  "funnel": {
+    "rows_total": 201700,
+    "rows_certified": 181277,
+    "rows_soc_matched": 107,
+    "rows_selected": 24
+  },
+  "employer_groups": 19,
+  "rows_wage_excluded_from_wage_stats": 0,
+  "patterns": {
+    "basis": {
+      "filings": 24,
+      "employers": 19,
+      "measured_by": "employers",
+      "min_support_employers": 3
+    },
+    "job_titles": {
+      "recurring_tokens": [
+        {
+          "token": "engineer",
+          "employers": 8,
+          "filings": 12
+        },
+        {
+          "token": "research",
+          "employers": 5,
+          "filings": 8
+        },
+        {
+          "token": "postdoctoral",
+          "employers": 5,
+          "filings": 5
+        },
+        {
+          "token": "associate",
+          "employers": 3,
+          "filings": 3
+        }
+      ],
+      "distinct_titles": [
+        {
+          "title": "Postdoctoral Research Associate",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Stress Engineer",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "NIAR Research Engineer",
+          "employers": 1,
+          "filings": 4
+        },
+        {
+          "title": "LICENSED AIRCRAFT ENGINEER",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Aerospace Engineer-Flight Sciences",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Aircraft Maintenance Analyst - Manager Trainee",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Aviation Program Manager II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Chief Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Extended Reality Lead, ML",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Flight Test Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Associate, Aerospace Engineering",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Fellow",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Research Affiliate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Professional Research Assistant, Aerospace Engineering",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Quality & Compliance Auditor",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Technical Safety Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Technical Specialist I",
+          "employers": 1,
+          "filings": 1
+        }
+      ]
+    },
+    "onet_occupations": [
+      {
+        "soc_code": "17-2011.00",
+        "title": "Aerospace Engineers",
+        "employers": 19,
+        "filings": 24
+      }
+    ],
+    "placement_model": {
+      "in_house": {
+        "employers": 16,
+        "filings": 21
+      },
+      "third_party_site": {
+        "employers": 3,
+        "filings": 3
+      }
+    },
+    "industry_naics2": [
+      {
+        "code": "61",
+        "label": "Educational Services",
+        "employers": 6,
+        "filings": 10
+      },
+      {
+        "code": "54",
+        "label": "Professional, Scientific, and Technical Services",
+        "employers": 6,
+        "filings": 6
+      },
+      {
+        "code": "33",
+        "label": "Manufacturing",
+        "employers": 3,
+        "filings": 3
+      }
+    ]
+  },
+  "caveats": [
+    "An LCA certification is not a hire or an open role.",
+    "OPT is not sponsorship — a new grad's first job is on OPT; sponsorship comes 1-3 years later.",
+    "Employer names are conservatively normalized and may under-merge.",
+    "Career/portfolio guidance, not immigration legal advice."
+  ],
+  "employers": [
+    {
+      "employer": "WICHITA STATE UNIVERSITY",
+      "employer_display": "WICHITA STATE UNIVERSITY",
+      "filing_count": 4,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "17-2011",
+      "soc_titles": "Aerospace Engineers",
+      "worksite_states": "KS",
+      "worksite_cities": "Wichita",
+      "wage_annual_min": 76523,
+      "wage_annual_median": 87745,
+      "wage_annual_max": 94890
+    },
+    {
+      "employer": "UNIVERSITY OF COLORADO",
+      "employer_display": "University of Colorado",
+      "filing_count": 2,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "17-2011",
+      "soc_titles": "Aerospace Engineers",
+      "worksite_states": "CO",
+      "worksite_cities": "Boulder",
+      "wage_annual_min": 74500,
+      "wage_annual_median": 76250,
+      "wage_annual_max": 78000
+    },
+    {
+      "employer": "SIA ENGINERING USA",
+      "employer_display": "SIA ENGINERING (USA) INC",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2011",
+      "soc_titles": "Aerospace Engineers",
+      "worksite_states": "CA",
+      "worksite_cities": "SAN FRANCISCO",
+      "wage_annual_min": 119000,
+      "wage_annual_median": 119500,
+      "wage_annual_max": 120000
+    },
+    {
+      "employer": "AEROMECH INCORPORATED",
+      "employer_display": "AEROMECH INCORPORATED",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2011",
+      "soc_titles": "Aerospace Engineers",
+      "worksite_states": "WA",
+      "worksite_cities": "Mukilteo",
+      "wage_annual_min": 130000,
+      "wage_annual_median": 130000,
+      "wage_annual_max": 130000
+    },
+    {
+      "employer": "AEROSPACE TESTING ENGINEERING AND CERTIFICATION",
+      "employer_display": "Aerospace Testing, Engineering and Certification, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2011",
+      "soc_titles": "Aerospace Engineers",
+      "worksite_states": "WA",
+      "worksite_cities": "Seattle",
+      "wage_annual_min": 124965,
+      "wage_annual_median": 124965,
+      "wage_annual_max": 124965
+    },
+    {
+      "employer": "CORGAN ASSOCIATES",
+      "employer_display": "Corgan Associates, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2011",
+      "soc_titles": "Aerospace Engineers",
+      "worksite_states": "TX",
+      "worksite_cities": "Dallas",
+      "wage_annual_min": 92498,
+      "wage_annual_median": 92498,
+      "wage_annual_max": 92498
+    },
+    {
+      "employer": "FLIGHT CHECK COMMERCIAL AVIATION SERVICES",
+      "employer_display": "Flight Check Commercial Aviation Services, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2011",
+      "soc_titles": "Aerospace Engineers",
+      "worksite_states": "IL",
+      "worksite_cities": "Chicago",
+      "wage_annual_min": 91520,
+      "wage_annual_median": 91520,
+      "wage_annual_max": 91520
+    },
+    {
+      "employer": "GULFSTREAM AEROSPACE CORPORATION",
+      "employer_display": "Gulfstream Aerospace Corporation",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2011",
+      "soc_titles": "Aerospace Engineers",
+      "worksite_states": "GA",
+      "worksite_cities": "Savannah",
+      "wage_annual_min": 115732,
+      "wage_annual_median": 115732,
+      "wage_annual_max": 115732
+    },
+    {
+      "employer": "INVISION GLOBAL TECH",
+      "employer_display": "Invision Global Tech. Inc",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2011",
+      "soc_titles": "Aerospace Engineers",
+      "worksite_states": "TX",
+      "worksite_cities": "Richardson",
+      "wage_annual_min": 97000,
+      "wage_annual_median": 97000,
+      "wage_annual_max": 97000
+    },
+    {
+      "employer": "JOBY AERO",
+      "employer_display": "Joby Aero, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2011",
+      "soc_titles": "Aerospace Engineers",
+      "worksite_states": "CA",
+      "worksite_cities": "San Carlos",
+      "wage_annual_min": 117146,
+      "wage_annual_median": 117146,
+      "wage_annual_max": 117146
+    },
+    {
+      "employer": "MISSISSIPPI STATE UNIVERSITY",
+      "employer_display": "Mississippi State University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2011",
+      "soc_titles": "Aerospace Engineers",
+      "worksite_states": "MS",
+      "worksite_cities": "Starkville",
+      "wage_annual_min": 82500,
+      "wage_annual_median": 82500,
+      "wage_annual_max": 82500
+    },
+    {
+      "employer": "QUICK TURN ENGINE CENTER",
+      "employer_display": "Quick Turn Engine Center, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2011",
+      "soc_titles": "Aerospace Engineers",
+      "worksite_states": "FL",
+      "worksite_cities": "Miami",
+      "wage_annual_min": 87069,
+      "wage_annual_median": 87069,
+      "wage_annual_max": 87069
+    },
+    {
+      "employer": "SKYDIO",
+      "employer_display": "Skydio, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2011",
+      "soc_titles": "Aerospace Engineers",
+      "worksite_states": "CA",
+      "worksite_cities": "San Mateo",
+      "wage_annual_min": 128000,
+      "wage_annual_median": 128000,
+      "wage_annual_max": 128000
+    },
+    {
+      "employer": "SURVIVAL PRODUCTS",
+      "employer_display": "Survival Products LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2011",
+      "soc_titles": "Aerospace Engineers",
+      "worksite_states": "FL",
+      "worksite_cities": "Sunrise",
+      "wage_annual_min": 110000,
+      "wage_annual_median": 110000,
+      "wage_annual_max": 110000
+    },
+    {
+      "employer": "THE LELAND STANFORD JR UNIVERSITY",
+      "employer_display": "The Leland Stanford, Jr University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2011",
+      "soc_titles": "Aerospace Engineers",
+      "worksite_states": "CA",
+      "worksite_cities": "Stanford",
+      "wage_annual_min": 80000,
+      "wage_annual_median": 80000,
+      "wage_annual_max": 80000
+    },
+    {
+      "employer": "THE UNIVERSITY OF TEXAS AT AUSTIN",
+      "employer_display": "The University of Texas at Austin",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2011",
+      "soc_titles": "Aerospace Engineers",
+      "worksite_states": "TX",
+      "worksite_cities": "Austin",
+      "wage_annual_min": 76000,
+      "wage_annual_median": 76000,
+      "wage_annual_max": 76000
+    },
+    {
+      "employer": "TRIAD NATIONAL SECURITY",
+      "employer_display": "Triad National Security, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2011",
+      "soc_titles": "Aerospace Engineers",
+      "worksite_states": "MI",
+      "worksite_cities": "Ann Arbor",
+      "wage_annual_min": 101404,
+      "wage_annual_median": 101404,
+      "wage_annual_max": 101404
+    },
+    {
+      "employer": "TUCANA ENGINEERING",
+      "employer_display": "Tucana Engineering, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2011",
+      "soc_titles": "Aerospace Engineers",
+      "worksite_states": "TX",
+      "worksite_cities": "Fort Worth",
+      "wage_annual_min": 100000,
+      "wage_annual_median": 100000,
+      "wage_annual_max": 100000
+    },
+    {
+      "employer": "UNIVERSITY OF ILLINOIS",
+      "employer_display": "University of Illinois",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2011",
+      "soc_titles": "Aerospace Engineers",
+      "worksite_states": "MA",
+      "worksite_cities": "Cambridge",
+      "wage_annual_min": 70600,
+      "wage_annual_median": 70600,
+      "wage_annual_max": 70600
+    }
+  ]
+}

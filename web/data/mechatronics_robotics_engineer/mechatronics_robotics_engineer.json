@@ -1,0 +1,1954 @@
+{
+  "role": "mechatronics_robotics_engineer",
+  "generated_at_utc": "2026-07-24 06:19 UTC",
+  "source": "US DOL OFLC LCA Programs disclosure data (public record)",
+  "filters": {
+    "case_status": "Certified",
+    "soc_codes": [
+      "17-2199"
+    ],
+    "pw_wage_level": "I"
+  },
+  "quarters_used": [
+    "FY2025Q4",
+    "FY2026Q1"
+  ],
+  "quarters_superseded": {},
+  "funnel": {
+    "rows_total": 201700,
+    "rows_certified": 181277,
+    "rows_soc_matched": 687,
+    "rows_selected": 106
+  },
+  "employer_groups": 88,
+  "rows_wage_excluded_from_wage_stats": 0,
+  "patterns": {
+    "basis": {
+      "filings": 106,
+      "employers": 88,
+      "measured_by": "employers",
+      "min_support_employers": 3
+    },
+    "job_titles": {
+      "recurring_tokens": [
+        {
+          "token": "engineer",
+          "employers": 64,
+          "filings": 73
+        },
+        {
+          "token": "research",
+          "employers": 11,
+          "filings": 14
+        },
+        {
+          "token": "automation",
+          "employers": 9,
+          "filings": 9
+        },
+        {
+          "token": "postdoctoral",
+          "employers": 8,
+          "filings": 10
+        },
+        {
+          "token": "robotics",
+          "employers": 8,
+          "filings": 10
+        },
+        {
+          "token": "senior",
+          "employers": 7,
+          "filings": 8
+        },
+        {
+          "token": "project",
+          "employers": 7,
+          "filings": 7
+        },
+        {
+          "token": "associate",
+          "employers": 6,
+          "filings": 7
+        },
+        {
+          "token": "specialist",
+          "employers": 6,
+          "filings": 6
+        },
+        {
+          "token": "controls",
+          "employers": 5,
+          "filings": 6
+        },
+        {
+          "token": "software",
+          "employers": 5,
+          "filings": 6
+        },
+        {
+          "token": "field",
+          "employers": 5,
+          "filings": 5
+        },
+        {
+          "token": "mechatronics",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "systems",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "analyst",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "scientist",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "service",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "validation",
+          "employers": 3,
+          "filings": 3
+        }
+      ],
+      "distinct_titles": [
+        {
+          "title": "Automation Engineer",
+          "employers": 6,
+          "filings": 6
+        },
+        {
+          "title": "Robotics Engineer",
+          "employers": 5,
+          "filings": 5
+        },
+        {
+          "title": "Project Engineer",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "title": "Mechatronics Engineer",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "Postdoctoral Research Associate",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "Controls Engineer",
+          "employers": 2,
+          "filings": 3
+        },
+        {
+          "title": "Field Service Engineer",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Research Scientist",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Senior Robotics Engineer",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Embedded Software Engineer",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Postdoctoral Associate (Photonics Engineers)",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Postdoctoral Researcher",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Research Staff 2",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "3D Printing Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Aircraft Technologies Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Automation Engineer II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Automation Software Engineer II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Automation Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Automotive Body Systems Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Autonomy Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Compliance Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Control Systems Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Controls Software Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Controls System Lead",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "DPM Field Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "DRE “ BIW Upper Body",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Design Engineer II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Electrical Design Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Energy Consultant [00088281]",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Energy Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Equipment Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Evaluation Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "FIELD SERVICE SYSTEMS APPLICATIONS ENGINEER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Field Application Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "GEIR”Mechatronics Engineering Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Industrial Robotics Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Integration Engineer (E&C)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Junior Project Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Lead Sustainability Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Long Haul Fiber Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Manufacturing Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Manufacturing Quality Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Mechanical Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Micro/Nanofabrication Research Specialist - Engineering",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Microfabrication - Semiconductor Process Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Multi-Skilled Sr. Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Optical Systems R&D Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "PV Design Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Post Doctoral Research Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Research Affiliate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Research Fellow",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Scholar",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Process Engineer II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Product Development Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Product Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Engineer II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "R&D Prototype and Test Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "RESEARCH ENGINEER AND INSTRUMENTATION SPECIALIST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "RF Validation Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Assistant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Robotics Engineer II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "SOLAR ENGINEER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Scientist II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Analyst Solutions Architecture",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Electronics Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Machine Learning Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Project Technician",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Robotics Engineer I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Software Controls Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Software Developer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Solar Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sr. Decarbonization Analyst [00088282]",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Technical Consultant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Technician",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Validation Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Vehicle Validation Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Visual Design and Construction Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Wireless Network Engineer",
+          "employers": 1,
+          "filings": 1
+        }
+      ]
+    },
+    "onet_occupations": [
+      {
+        "soc_code": "17-2199.05",
+        "title": "Mechatronics Engineers",
+        "employers": 27,
+        "filings": 33
+      },
+      {
+        "soc_code": "17-2199.08",
+        "title": "Robotics Engineers",
+        "employers": 18,
+        "filings": 23
+      },
+      {
+        "soc_code": "17-2199.00",
+        "title": "Engineers, All Other",
+        "employers": 16,
+        "filings": 17
+      },
+      {
+        "soc_code": "17-2199.03",
+        "title": "Energy Engineers, Except Wind and Solar",
+        "employers": 9,
+        "filings": 10
+      },
+      {
+        "soc_code": "17-2199.09",
+        "title": "Nanosystems Engineers",
+        "employers": 8,
+        "filings": 8
+      },
+      {
+        "soc_code": "17-2199.11",
+        "title": "Solar Energy Systems Engineers",
+        "employers": 5,
+        "filings": 5
+      },
+      {
+        "soc_code": "17-2199.07",
+        "title": "Photonics Engineers",
+        "employers": 4,
+        "filings": 5
+      },
+      {
+        "soc_code": "17-2199.06",
+        "title": "Microsystems Engineers",
+        "employers": 3,
+        "filings": 5
+      }
+    ],
+    "placement_model": {
+      "in_house": {
+        "employers": 82,
+        "filings": 95
+      },
+      "third_party_site": {
+        "employers": 7,
+        "filings": 11
+      }
+    },
+    "industry_naics2": [
+      {
+        "code": "54",
+        "label": "Professional, Scientific, and Technical Services",
+        "employers": 36,
+        "filings": 46
+      },
+      {
+        "code": "33",
+        "label": "Manufacturing",
+        "employers": 21,
+        "filings": 24
+      },
+      {
+        "code": "61",
+        "label": "Educational Services",
+        "employers": 12,
+        "filings": 15
+      },
+      {
+        "code": "42",
+        "label": "Wholesale Trade",
+        "employers": 4,
+        "filings": 5
+      },
+      {
+        "code": "23",
+        "label": "Construction",
+        "employers": 4,
+        "filings": 4
+      }
+    ]
+  },
+  "caveats": [
+    "An LCA certification is not a hire or an open role.",
+    "OPT is not sponsorship — a new grad's first job is on OPT; sponsorship comes 1-3 years later.",
+    "Employer names are conservatively normalized and may under-merge.",
+    "Career/portfolio guidance, not immigration legal advice."
+  ],
+  "employers": [
+    {
+      "employer": "CARNEGIE MELLON UNIVERSITY",
+      "employer_display": "Carnegie Mellon University",
+      "filing_count": 3,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "17-2199",
+      "soc_titles": "Robotics Engineers",
+      "worksite_states": "PA",
+      "worksite_cities": "Pittsburgh",
+      "wage_annual_min": 97081,
+      "wage_annual_median": 97850,
+      "wage_annual_max": 129000
+    },
+    {
+      "employer": "CBRE",
+      "employer_display": "CBRE, INC.",
+      "filing_count": 2,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "17-2199",
+      "soc_titles": "Microsystems Engineers",
+      "worksite_states": "GA; NJ",
+      "worksite_cities": "Logan; Union City",
+      "wage_annual_min": 96616,
+      "wage_annual_median": 100308,
+      "wage_annual_max": 104000
+    },
+    {
+      "employer": "QUICKTRON AUTOMATION USA",
+      "employer_display": "QUICKTRON AUTOMATION USA INC",
+      "filing_count": 2,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "17-2199",
+      "soc_titles": "Robotics Engineers",
+      "worksite_states": "TX",
+      "worksite_cities": "GRAPEVINE; Grapevine",
+      "wage_annual_min": 70000,
+      "wage_annual_median": 72500,
+      "wage_annual_max": 75000
+    },
+    {
+      "employer": "UNIVERSITY OF COLORADO",
+      "employer_display": "University of Colorado",
+      "filing_count": 2,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "17-2199",
+      "soc_titles": "Photonics Engineers",
+      "worksite_states": "CO",
+      "worksite_cities": "Boulder",
+      "wage_annual_min": 71365,
+      "wage_annual_median": 71365,
+      "wage_annual_max": 71365
+    },
+    {
+      "employer": "WIPRO PARI",
+      "employer_display": "Wipro Pari Inc.",
+      "filing_count": 2,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "17-2199",
+      "soc_titles": "Mechatronics Engineers",
+      "worksite_states": "MI",
+      "worksite_cities": "Auburn Hills",
+      "wage_annual_min": 73841,
+      "wage_annual_median": 79431,
+      "wage_annual_max": 85020
+    },
+    {
+      "employer": "SEGULA TECHNOLOGIES USA",
+      "employer_display": "SEGULA TECHNOLOGIES USA, INC.",
+      "filing_count": 4,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Mechatronics Engineers",
+      "worksite_states": "MI",
+      "worksite_cities": "Auburn Hills",
+      "wage_annual_min": 73840,
+      "wage_annual_median": 75920,
+      "wage_annual_max": 90002
+    },
+    {
+      "employer": "THE RESEARCH FOUNDATION AT SUNY BINGHAMTON",
+      "employer_display": "The Research Foundation at SUNY Binghamton",
+      "filing_count": 3,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Mechatronics Engineers; Microsystems Engineers",
+      "worksite_states": "NY",
+      "worksite_cities": "Vestal",
+      "wage_annual_min": 75358,
+      "wage_annual_median": 75358,
+      "wage_annual_max": 75358
+    },
+    {
+      "employer": "BROOKHAVEN NATIONAL LABORATORY",
+      "employer_display": "Brookhaven National Laboratory",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Robotics Engineers",
+      "worksite_states": "NY",
+      "worksite_cities": "Upton",
+      "wage_annual_min": 84989,
+      "wage_annual_median": 84994,
+      "wage_annual_max": 85000
+    },
+    {
+      "employer": "KLA CORPORATION",
+      "employer_display": "KLA Corporation",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Mechatronics Engineers; Nanosystems Engineers",
+      "worksite_states": "CA",
+      "worksite_cities": "Milpitas",
+      "wage_annual_min": 124000,
+      "wage_annual_median": 137000,
+      "wage_annual_max": 150000
+    },
+    {
+      "employer": "R E AUTOMATED SYSTEMS",
+      "employer_display": "R&E Automated Systems LLC",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Mechatronics Engineers",
+      "worksite_states": "LA",
+      "worksite_cities": "Shreveport",
+      "wage_annual_min": 74880,
+      "wage_annual_median": 74880,
+      "wage_annual_max": 74880
+    },
+    {
+      "employer": "TEK LABS",
+      "employer_display": "Tek Labs, Inc.",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Mechatronics Engineers",
+      "worksite_states": "FL",
+      "worksite_cities": "Melbourne",
+      "wage_annual_min": 84926,
+      "wage_annual_median": 84926,
+      "wage_annual_max": 84926
+    },
+    {
+      "employer": "TEXAS A M ENGINEERING EXPERIMENT STATION",
+      "employer_display": "Texas A&M Engineering Experiment Station",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Engineers, All Other",
+      "worksite_states": "TX",
+      "worksite_cities": "College Station",
+      "wage_annual_min": 57699,
+      "wage_annual_median": 61850,
+      "wage_annual_max": 66000
+    },
+    {
+      "employer": "TUV SUD AMERICA",
+      "employer_display": "TUV SUD America, Inc.",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Energy Engineers, Except Wind and Solar",
+      "worksite_states": "CA; PA",
+      "worksite_cities": "Exton; Santa Clara",
+      "wage_annual_min": 71573,
+      "wage_annual_median": 85946,
+      "wage_annual_max": 100318
+    },
+    {
+      "employer": "VALENCIA MERGER SUB II",
+      "employer_display": "Valencia Merger Sub II LLC",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Robotics Engineers",
+      "worksite_states": "CA",
+      "worksite_cities": "Redwood City",
+      "wage_annual_min": 180000,
+      "wage_annual_median": 180000,
+      "wage_annual_max": 180000
+    },
+    {
+      "employer": "AIM INTELLIGENT MACHINES",
+      "employer_display": "AIM Intelligent Machines, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Robotics Engineers",
+      "worksite_states": "WA",
+      "worksite_cities": "Redmond",
+      "wage_annual_min": 78187,
+      "wage_annual_median": 78187,
+      "wage_annual_max": 78187
+    },
+    {
+      "employer": "ALFA LAVAL",
+      "employer_display": "Alfa Laval Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Mechatronics Engineers",
+      "worksite_states": "PA",
+      "worksite_cities": "Warrington",
+      "wage_annual_min": 80000,
+      "wage_annual_median": 80000,
+      "wage_annual_max": 80000
+    },
+    {
+      "employer": "AMERICAN AXLE MANUFACTURING",
+      "employer_display": "American Axle & Manufacturing, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Mechatronics Engineers",
+      "worksite_states": "MI",
+      "worksite_cities": "Detroit",
+      "wage_annual_min": 90514,
+      "wage_annual_median": 90514,
+      "wage_annual_max": 90514
+    },
+    {
+      "employer": "AMOUNT",
+      "employer_display": "Amount, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Mechatronics Engineers",
+      "worksite_states": "IL",
+      "worksite_cities": "Chicago",
+      "wage_annual_min": 110000,
+      "wage_annual_median": 110000,
+      "wage_annual_max": 110000
+    },
+    {
+      "employer": "APCO",
+      "employer_display": "APCO, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Mechatronics Engineers",
+      "worksite_states": "UT",
+      "worksite_cities": "North Salt Lake",
+      "wage_annual_min": 79000,
+      "wage_annual_median": 79000,
+      "wage_annual_max": 79000
+    },
+    {
+      "employer": "ATOCO",
+      "employer_display": "Atoco, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Mechatronics Engineers",
+      "worksite_states": "CA",
+      "worksite_cities": "Irvine",
+      "wage_annual_min": 76586,
+      "wage_annual_median": 76586,
+      "wage_annual_max": 76586
+    },
+    {
+      "employer": "AUTOMOTIVE ROBOTICS INCORPORATED",
+      "employer_display": "Automotive Robotics Incorporated",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Engineers, All Other",
+      "worksite_states": "IL",
+      "worksite_cities": "EAST PEORIA",
+      "wage_annual_min": 73382,
+      "wage_annual_median": 73382,
+      "wage_annual_max": 73382
+    },
+    {
+      "employer": "AUTONOMOUS THERAPEUTICS",
+      "employer_display": "Autonomous Therapeutics, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Robotics Engineers",
+      "worksite_states": "MD",
+      "worksite_cities": "Rockville",
+      "wage_annual_min": 100000,
+      "wage_annual_median": 100000,
+      "wage_annual_max": 100000
+    },
+    {
+      "employer": "B L TESTING AND BALANCING",
+      "employer_display": "B&L Testing and Balancing, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Energy Engineers, Except Wind and Solar",
+      "worksite_states": "NY",
+      "worksite_cities": "East Rockaway",
+      "wage_annual_min": 91350,
+      "wage_annual_median": 91350,
+      "wage_annual_max": 91350
+    },
+    {
+      "employer": "BAE INDUSTRIES",
+      "employer_display": "BAE Industries, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Mechatronics Engineers",
+      "worksite_states": "MI",
+      "worksite_cities": "Auburn Hills",
+      "wage_annual_min": 73798,
+      "wage_annual_median": 73798,
+      "wage_annual_max": 73798
+    },
+    {
+      "employer": "BASTIAN SOLUTIONS",
+      "employer_display": "Bastian Solutions LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Mechatronics Engineers",
+      "worksite_states": "TX",
+      "worksite_cities": "Coppell",
+      "wage_annual_min": 102995,
+      "wage_annual_median": 102995,
+      "wage_annual_max": 102995
+    },
+    {
+      "employer": "BLINK CHARGING",
+      "employer_display": "Blink Charging Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Engineers, All Other",
+      "worksite_states": "MD",
+      "worksite_cities": "Bowie",
+      "wage_annual_min": 99216,
+      "wage_annual_median": 99216,
+      "wage_annual_max": 99216
+    },
+    {
+      "employer": "BOOST ROBOTICS",
+      "employer_display": "Boost Robotics, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Robotics Engineers",
+      "worksite_states": "MA",
+      "worksite_cities": "Cambridge",
+      "wage_annual_min": 89419,
+      "wage_annual_median": 89419,
+      "wage_annual_max": 89419
+    },
+    {
+      "employer": "BRUKER NANO",
+      "employer_display": "BRUKER NANO, INC.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Nanosystems Engineers",
+      "worksite_states": "MN",
+      "worksite_cities": "BLAINE",
+      "wage_annual_min": 88856,
+      "wage_annual_median": 88856,
+      "wage_annual_max": 88856
+    },
+    {
+      "employer": "CCL LABEL",
+      "employer_display": "CCL Label, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Engineers, All Other",
+      "worksite_states": "MI",
+      "worksite_cities": "Grand Rapids",
+      "wage_annual_min": 70782,
+      "wage_annual_median": 70782,
+      "wage_annual_max": 70782
+    },
+    {
+      "employer": "CLEARWAY ENERGY GROUP",
+      "employer_display": "Clearway Energy Group LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Solar Energy Systems Engineers",
+      "worksite_states": "CA",
+      "worksite_cities": "San Pablo",
+      "wage_annual_min": 125000,
+      "wage_annual_median": 125000,
+      "wage_annual_max": 125000
+    },
+    {
+      "employer": "CUSTOM CALIBRATION SOLUTIONS",
+      "employer_display": "Custom Calibration Solutions, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Mechatronics Engineers",
+      "worksite_states": "NJ",
+      "worksite_cities": "Robbinsville",
+      "wage_annual_min": 82992,
+      "wage_annual_median": 82992,
+      "wage_annual_max": 82992
+    },
+    {
+      "employer": "DDC TECHNOLOGIES",
+      "employer_display": "DDC Technologies, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Photonics Engineers",
+      "worksite_states": "NY",
+      "worksite_cities": "Oceanside",
+      "wage_annual_min": 85000,
+      "wage_annual_median": 85000,
+      "wage_annual_max": 85000
+    },
+    {
+      "employer": "DIVERSE AIRCRAFT SERVICES",
+      "employer_display": "Diverse Aircraft Services Corp",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Engineers, All Other",
+      "worksite_states": "FL",
+      "worksite_cities": "Miami",
+      "wage_annual_min": 59342,
+      "wage_annual_median": 59342,
+      "wage_annual_max": 59342
+    },
+    {
+      "employer": "DNV ENERGY INSIGHTS USA",
+      "employer_display": "DNV Energy Insights USA, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Energy Engineers, Except Wind and Solar",
+      "worksite_states": "PA",
+      "worksite_cities": "Chalfont",
+      "wage_annual_min": 94219,
+      "wage_annual_median": 94219,
+      "wage_annual_max": 94219
+    },
+    {
+      "employer": "ERMCO",
+      "employer_display": "ERMCO, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Engineers, All Other",
+      "worksite_states": "IN",
+      "worksite_cities": "Greenwood",
+      "wage_annual_min": 77450,
+      "wage_annual_median": 77450,
+      "wage_annual_max": 77450
+    },
+    {
+      "employer": "ETEZAZI INDUSTRIES",
+      "employer_display": "Etezazi Industries Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Engineers, All Other",
+      "worksite_states": "KS",
+      "worksite_cities": "Wichita",
+      "wage_annual_min": 48901,
+      "wage_annual_median": 48901,
+      "wage_annual_max": 48901
+    },
+    {
+      "employer": "FRAUNHOFER USA",
+      "employer_display": "Fraunhofer USA, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Nanosystems Engineers",
+      "worksite_states": "MI",
+      "worksite_cities": "East Lansing",
+      "wage_annual_min": 67861,
+      "wage_annual_median": 67861,
+      "wage_annual_max": 67861
+    },
+    {
+      "employer": "GLOBAL DB SOLUTIONS",
+      "employer_display": "Global DB Solutions Inc",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Robotics Engineers",
+      "worksite_states": "NY",
+      "worksite_cities": "Troy",
+      "wage_annual_min": 85000,
+      "wage_annual_median": 85000,
+      "wage_annual_max": 85000
+    },
+    {
+      "employer": "GLOBAL PROCESS CONSULTANTS",
+      "employer_display": "GLOBAL PROCESS CONSULTANTS LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Mechatronics Engineers",
+      "worksite_states": "FL",
+      "worksite_cities": "Plantation",
+      "wage_annual_min": 64000,
+      "wage_annual_median": 64000,
+      "wage_annual_max": 64000
+    },
+    {
+      "employer": "HARVARD UNIVERSITY",
+      "employer_display": "Harvard University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Robotics Engineers",
+      "worksite_states": "MA",
+      "worksite_cities": "Allston",
+      "wage_annual_min": 87980,
+      "wage_annual_median": 87980,
+      "wage_annual_max": 87980
+    },
+    {
+      "employer": "HM PALETTAS USA",
+      "employer_display": "HM Palettas USA LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Mechatronics Engineers",
+      "worksite_states": "FL",
+      "worksite_cities": "Miami",
+      "wage_annual_min": 60000,
+      "wage_annual_median": 60000,
+      "wage_annual_max": 60000
+    },
+    {
+      "employer": "HURRICANE HILL DEVELOPMENT COMPANY PLLC",
+      "employer_display": "Hurricane Hill Development Company PLLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Solar Energy Systems Engineers",
+      "worksite_states": "NH",
+      "worksite_cities": "Amherst",
+      "wage_annual_min": 107158,
+      "wage_annual_median": 107158,
+      "wage_annual_max": 107158
+    },
+    {
+      "employer": "IHRONE",
+      "employer_display": "iHROne Inc",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Engineers, All Other",
+      "worksite_states": "MI",
+      "worksite_cities": "Detroit",
+      "wage_annual_min": 73800,
+      "wage_annual_median": 73800,
+      "wage_annual_max": 73800
+    },
+    {
+      "employer": "ILLUMINA",
+      "employer_display": "Illumina, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Nanosystems Engineers",
+      "worksite_states": "CA",
+      "worksite_cities": "San Diego",
+      "wage_annual_min": 90000,
+      "wage_annual_median": 90000,
+      "wage_annual_max": 90000
+    },
+    {
+      "employer": "INNERSCENE",
+      "employer_display": "Innerscene Corp.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Photonics Engineers",
+      "worksite_states": "CO",
+      "worksite_cities": "Boulder",
+      "wage_annual_min": 104000,
+      "wage_annual_median": 104000,
+      "wage_annual_max": 104000
+    },
+    {
+      "employer": "INNOVATEPGH PARTNERSHIP",
+      "employer_display": "InnovatePGH Partnership",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Mechatronics Engineers",
+      "worksite_states": "PA",
+      "worksite_cities": "Pittsburgh",
+      "wage_annual_min": 62400,
+      "wage_annual_median": 62400,
+      "wage_annual_max": 62400
+    },
+    {
+      "employer": "INTRALOX",
+      "employer_display": "Intralox, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Mechatronics Engineers",
+      "worksite_states": "MD",
+      "worksite_cities": "Hanover",
+      "wage_annual_min": 99216,
+      "wage_annual_median": 99216,
+      "wage_annual_max": 99216
+    },
+    {
+      "employer": "JINKO SOLAR U S INDUSTRIES",
+      "employer_display": "Jinko Solar (U.S.) Industries, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Engineers, All Other",
+      "worksite_states": "FL",
+      "worksite_cities": "Jacksonville",
+      "wage_annual_min": 75000,
+      "wage_annual_median": 75000,
+      "wage_annual_max": 75000
+    },
+    {
+      "employer": "KARTECH SOLUTIONS",
+      "employer_display": "Kartech Solutions, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Mechatronics Engineers",
+      "worksite_states": "TX",
+      "worksite_cities": "Austin",
+      "wage_annual_min": 85000,
+      "wage_annual_median": 85000,
+      "wage_annual_max": 85000
+    },
+    {
+      "employer": "KRONES",
+      "employer_display": "Krones, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Mechatronics Engineers",
+      "worksite_states": "TN",
+      "worksite_cities": "Chattanooga",
+      "wage_annual_min": 79498,
+      "wage_annual_median": 79498,
+      "wage_annual_max": 79498
+    },
+    {
+      "employer": "MASTEC SERVICES COMPANY",
+      "employer_display": "MASTEC  SERVICES COMPANY, INC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Engineers, All Other",
+      "worksite_states": "CA",
+      "worksite_cities": "San Jose",
+      "wage_annual_min": 100318,
+      "wage_annual_median": 100318,
+      "wage_annual_max": 100318
+    },
+    {
+      "employer": "MESCADA",
+      "employer_display": "Mescada LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Mechatronics Engineers",
+      "worksite_states": "IL",
+      "worksite_cities": "Kankakee",
+      "wage_annual_min": 85000,
+      "wage_annual_median": 85000,
+      "wage_annual_max": 85000
+    },
+    {
+      "employer": "MUJIN",
+      "employer_display": "Mujin Corp.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Robotics Engineers",
+      "worksite_states": "GA",
+      "worksite_cities": "Suwanee",
+      "wage_annual_min": 130000,
+      "wage_annual_median": 130000,
+      "wage_annual_max": 130000
+    },
+    {
+      "employer": "NEOMATRIX",
+      "employer_display": "NeoMatrix, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Engineers, All Other",
+      "worksite_states": "MA",
+      "worksite_cities": "Andover",
+      "wage_annual_min": 112000,
+      "wage_annual_median": 112000,
+      "wage_annual_max": 112000
+    },
+    {
+      "employer": "NEWSTON AUTOMATED SOLUTION USA",
+      "employer_display": "Newston Automated Solution USA Corp.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Mechatronics Engineers",
+      "worksite_states": "MI",
+      "worksite_cities": "Novi",
+      "wage_annual_min": 80210,
+      "wage_annual_median": 80210,
+      "wage_annual_max": 80210
+    },
+    {
+      "employer": "NORTHWESTERN UNIVERSITY",
+      "employer_display": "Northwestern University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Photonics Engineers",
+      "worksite_states": "IL",
+      "worksite_cities": "Evanston",
+      "wage_annual_min": 71656,
+      "wage_annual_median": 71656,
+      "wage_annual_max": 71656
+    },
+    {
+      "employer": "OPTIMAL ENERGY",
+      "employer_display": "Optimal Energy, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Energy Engineers, Except Wind and Solar",
+      "worksite_states": "TX",
+      "worksite_cities": "Houston",
+      "wage_annual_min": 90422,
+      "wage_annual_median": 90422,
+      "wage_annual_max": 90422
+    },
+    {
+      "employer": "PENTANGLE TECH SERVICES",
+      "employer_display": "Pentangle Tech Services LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Engineers, All Other",
+      "worksite_states": "MI",
+      "worksite_cities": "Farmington Hills",
+      "wage_annual_min": 73798,
+      "wage_annual_median": 73798,
+      "wage_annual_max": 73798
+    },
+    {
+      "employer": "PIEZOS TECHNOLOGY SOLUTIONS",
+      "employer_display": "Piezos Technology Solutions Inc",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Robotics Engineers",
+      "worksite_states": "FL",
+      "worksite_cities": "SANFORD",
+      "wage_annual_min": 80662,
+      "wage_annual_median": 80662,
+      "wage_annual_max": 80662
+    },
+    {
+      "employer": "PLASTIC OMNIUM LIGHTING SYSTEMS",
+      "employer_display": "Plastic Omnium Lighting Systems, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Mechatronics Engineers",
+      "worksite_states": "TN",
+      "worksite_cities": "Hendersonville",
+      "wage_annual_min": 91406,
+      "wage_annual_median": 91406,
+      "wage_annual_max": 91406
+    },
+    {
+      "employer": "PURDUE UNIVERSITY",
+      "employer_display": "Purdue University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Microsystems Engineers",
+      "worksite_states": "IN",
+      "worksite_cities": "West Lafayette",
+      "wage_annual_min": 49026,
+      "wage_annual_median": 49026,
+      "wage_annual_max": 49026
+    },
+    {
+      "employer": "QPHARMA",
+      "employer_display": "QPharma, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Engineers, All Other",
+      "worksite_states": "NJ",
+      "worksite_cities": "Cedar Knolls",
+      "wage_annual_min": 103626,
+      "wage_annual_median": 103626,
+      "wage_annual_max": 103626
+    },
+    {
+      "employer": "RAMI TECHNOLOGY USA",
+      "employer_display": "Rami Technology USA, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Engineers, All Other",
+      "worksite_states": "WI",
+      "worksite_cities": "Oak Creek",
+      "wage_annual_min": 79498,
+      "wage_annual_median": 79498,
+      "wage_annual_max": 79498
+    },
+    {
+      "employer": "RAPYUTA ROBOTICS",
+      "employer_display": "Rapyuta Robotics, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Mechatronics Engineers",
+      "worksite_states": "IL",
+      "worksite_cities": "Schaumburg",
+      "wage_annual_min": 83000,
+      "wage_annual_median": 83000,
+      "wage_annual_max": 83000
+    },
+    {
+      "employer": "RESEARCH ROBOTICS",
+      "employer_display": "Research & Robotics Inc",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Robotics Engineers",
+      "worksite_states": "MA",
+      "worksite_cities": "New Bedford",
+      "wage_annual_min": 90000,
+      "wage_annual_median": 90000,
+      "wage_annual_max": 90000
+    },
+    {
+      "employer": "ROBERT ETTINGER P E P C",
+      "employer_display": "Robert Ettinger, P.E., P.C.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Energy Engineers, Except Wind and Solar",
+      "worksite_states": "NJ",
+      "worksite_cities": "Edison",
+      "wage_annual_min": 83346,
+      "wage_annual_median": 83346,
+      "wage_annual_max": 83346
+    },
+    {
+      "employer": "ROBOTICS TECHNOLOGIES",
+      "employer_display": "ROBOTICS TECHNOLOGIES LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Solar Energy Systems Engineers",
+      "worksite_states": "CA",
+      "worksite_cities": "EL DORADO HILLS",
+      "wage_annual_min": 63419,
+      "wage_annual_median": 63419,
+      "wage_annual_max": 63419
+    },
+    {
+      "employer": "ROCKWELL TECHNOLOGY",
+      "employer_display": "Rockwell Technology, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Engineers, All Other",
+      "worksite_states": "TX",
+      "worksite_cities": "Fort Worth",
+      "wage_annual_min": 73944,
+      "wage_annual_median": 73944,
+      "wage_annual_max": 73944
+    },
+    {
+      "employer": "SCHLUMBERGER TECHNOLOGY CORPORATION",
+      "employer_display": "Schlumberger Technology Corporation",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Energy Engineers, Except Wind and Solar",
+      "worksite_states": "LA",
+      "worksite_cities": "New Iberia",
+      "wage_annual_min": 91150,
+      "wage_annual_median": 91150,
+      "wage_annual_max": 91150
+    },
+    {
+      "employer": "SERVE OPERATING CO",
+      "employer_display": "SERVE OPERATING CO.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Robotics Engineers",
+      "worksite_states": "CA",
+      "worksite_cities": "Redwood City",
+      "wage_annual_min": 180000,
+      "wage_annual_median": 180000,
+      "wage_annual_max": 180000
+    },
+    {
+      "employer": "SHIRE HUMAN GENETIC THERAPIES",
+      "employer_display": "Shire Human Genetic Therapies Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Mechatronics Engineers",
+      "worksite_states": "MA",
+      "worksite_cities": "Lexington",
+      "wage_annual_min": 93000,
+      "wage_annual_median": 93000,
+      "wage_annual_max": 93000
+    },
+    {
+      "employer": "SOUTH DAKOTA SCHOOL OF MINES AND TECHNOLOGY",
+      "employer_display": "South Dakota School of Mines and Technology",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Nanosystems Engineers",
+      "worksite_states": "SD",
+      "worksite_cities": "RAPID CITY",
+      "wage_annual_min": 72164,
+      "wage_annual_median": 72164,
+      "wage_annual_max": 72164
+    },
+    {
+      "employer": "SSM CARDINAL GLENNON CHILDREN S HOSPITAL",
+      "employer_display": "SSM Cardinal Glennon Children's Hospital",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Engineers, All Other",
+      "worksite_states": "MO",
+      "worksite_cities": "St. Louis",
+      "wage_annual_min": 76406,
+      "wage_annual_median": 76406,
+      "wage_annual_max": 76406
+    },
+    {
+      "employer": "SUNGROW USA CORPORATION",
+      "employer_display": "Sungrow USA Corporation",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Solar Energy Systems Engineers",
+      "worksite_states": "MA",
+      "worksite_cities": "Malden",
+      "wage_annual_min": 89440,
+      "wage_annual_median": 89440,
+      "wage_annual_max": 89440
+    },
+    {
+      "employer": "THE LELAND STANFORD JR UNIVERSITY",
+      "employer_display": "The Leland Stanford, Jr University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Nanosystems Engineers",
+      "worksite_states": "CA",
+      "worksite_cities": "Stanford",
+      "wage_annual_min": 85000,
+      "wage_annual_median": 85000,
+      "wage_annual_max": 85000
+    },
+    {
+      "employer": "THE TRUSTEES OF PRINCETON UNIVERSITY",
+      "employer_display": "The Trustees of Princeton University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Robotics Engineers",
+      "worksite_states": "NJ",
+      "worksite_cities": "Princeton",
+      "wage_annual_min": 73116,
+      "wage_annual_median": 73116,
+      "wage_annual_max": 73116
+    },
+    {
+      "employer": "THOMAS GLOBAL SYSTEMS",
+      "employer_display": "Thomas Global Systems LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Mechatronics Engineers",
+      "worksite_states": "CA",
+      "worksite_cities": "Irvine",
+      "wage_annual_min": 76586,
+      "wage_annual_median": 76586,
+      "wage_annual_max": 76586
+    },
+    {
+      "employer": "TOYOTA MATERIAL HANDLING",
+      "employer_display": "Toyota Material Handling Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Mechatronics Engineers",
+      "worksite_states": "NY",
+      "worksite_cities": "East Syracuse",
+      "wage_annual_min": 94020,
+      "wage_annual_median": 94020,
+      "wage_annual_max": 94020
+    },
+    {
+      "employer": "TRUSTEES OF DARTMOUTH COLLEGE",
+      "employer_display": "Trustees of Dartmouth College",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Energy Engineers, Except Wind and Solar",
+      "worksite_states": "NH",
+      "worksite_cities": "Hanover",
+      "wage_annual_min": 75000,
+      "wage_annual_median": 75000,
+      "wage_annual_max": 75000
+    },
+    {
+      "employer": "UBIROS",
+      "employer_display": "Ubiros Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Robotics Engineers",
+      "worksite_states": "MA",
+      "worksite_cities": "Framingham",
+      "wage_annual_min": 89419,
+      "wage_annual_median": 89419,
+      "wage_annual_max": 89419
+    },
+    {
+      "employer": "UNIVERSITY OF ILLINOIS",
+      "employer_display": "University of Illinois",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Robotics Engineers",
+      "worksite_states": "IL",
+      "worksite_cities": "Urbana",
+      "wage_annual_min": 90230,
+      "wage_annual_median": 90230,
+      "wage_annual_max": 90230
+    },
+    {
+      "employer": "VEROGY HOLDINGS",
+      "employer_display": "Verogy Holdings, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Solar Energy Systems Engineers",
+      "worksite_states": "CT",
+      "worksite_cities": "Willimantic",
+      "wage_annual_min": 87859,
+      "wage_annual_median": 87859,
+      "wage_annual_max": 87859
+    },
+    {
+      "employer": "VESUVIUS USA CORPORATION",
+      "employer_display": "Vesuvius USA Corporation",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Robotics Engineers",
+      "worksite_states": "IL",
+      "worksite_cities": "Champaign",
+      "wage_annual_min": 80000,
+      "wage_annual_median": 80000,
+      "wage_annual_max": 80000
+    },
+    {
+      "employer": "VIRGINIA POLYTECHNIC INSTITUTE STATE UNIVERSITY",
+      "employer_display": "Virginia Polytechnic Institute & State University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Nanosystems Engineers",
+      "worksite_states": "VA",
+      "worksite_cities": "Norfolk",
+      "wage_annual_min": 89821,
+      "wage_annual_median": 89821,
+      "wage_annual_max": 89821
+    },
+    {
+      "employer": "WASHINGTON UNIVERSITY",
+      "employer_display": "Washington University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Nanosystems Engineers",
+      "worksite_states": "MO",
+      "worksite_cities": "St. Louis",
+      "wage_annual_min": 75000,
+      "wage_annual_median": 75000,
+      "wage_annual_max": 75000
+    },
+    {
+      "employer": "WILLDAN ENERGY SOLUTIONS",
+      "employer_display": "Willdan Energy Solutions",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Energy Engineers, Except Wind and Solar",
+      "worksite_states": "MN",
+      "worksite_cities": "Minnetonka",
+      "wage_annual_min": 78562,
+      "wage_annual_median": 78562,
+      "wage_annual_max": 78562
+    },
+    {
+      "employer": "WILLDAN LIGHTING AND ELECTRIC",
+      "employer_display": "Willdan Lighting and Electric, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Energy Engineers, Except Wind and Solar",
+      "worksite_states": "NY",
+      "worksite_cities": "Maspeth",
+      "wage_annual_min": 83346,
+      "wage_annual_median": 83346,
+      "wage_annual_max": 83346
+    },
+    {
+      "employer": "ZIPLINE INTERNATIONAL",
+      "employer_display": "Zipline International Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2199",
+      "soc_titles": "Robotics Engineers",
+      "worksite_states": "CA",
+      "worksite_cities": "South San Francisco",
+      "wage_annual_min": 100194,
+      "wage_annual_median": 100194,
+      "wage_annual_max": 100194
+    }
+  ]
+}

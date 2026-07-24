@@ -1,0 +1,44 @@
+{
+  "role": "applied_scientist",
+  "curated_at_utc": "2026-07-24",
+  "kind": "curated-editorial",
+  "framework": "A path qualifies only when >=3 prominent, proven people in the field visibly share the capability, each with a resolving link — the pattern across standouts is the evidence, not market demand. Ranked by strength of that pattern. Curated editorial, not DOL-derived.",
+  "paths": [
+    {
+      "rank": 1,
+      "path": "Reimplement landmark papers as clean, working open-source code",
+      "what_it_is": "Take a published paper and rebuild it from scratch as a small, readable, runnable codebase that others can learn from and build on, rather than only reading about it.",
+      "why_it_signals": "Karpathy, Wang, and Rush each built their reputations on exactly this craft — turning dense papers into approachable, working implementations — showing employers a rare combination of deep comprehension and production-grade engineering discipline.",
+      "people": [
+        {"name": "Andrej Karpathy", "link": "https://github.com/karpathy/nanoGPT"},
+        {"name": "Phil Wang (lucidrains)", "link": "https://github.com/lucidrains"},
+        {"name": "Sasha Rush", "link": "https://rush-nlp.com/"}
+      ],
+      "source": "https://github.com/karpathy/nanoGPT"
+    },
+    {
+      "rank": 2,
+      "path": "Publicly distill research into clear, widely-read technical writing",
+      "what_it_is": "Maintain a personal blog or long-form technical writeup practice that translates dense research (papers, model internals, new techniques) into explanations a broad technical audience can actually follow.",
+      "why_it_signals": "Weng, Alammar, and Olah each built long-running public writing practices that became must-read references in the field, demonstrating the rare ability to compress and clarify research — a skill labs value because it scales a scientist's impact far beyond their own team.",
+      "people": [
+        {"name": "Lilian Weng", "link": "https://lilianweng.github.io/"},
+        {"name": "Jay Alammar", "link": "https://jalammar.github.io/"},
+        {"name": "Chris Olah", "link": "https://colah.github.io/about.html"}
+      ],
+      "source": "https://lilianweng.github.io/"
+    },
+    {
+      "rank": 3,
+      "path": "Win competitive ML benchmarks and convert that track record into applied research",
+      "what_it_is": "Compete seriously on platforms like Kaggle — building and iterating rapidly on real predictive-modeling problems against a global field — and use the resulting track record and skills as evidence of applied research ability.",
+      "why_it_signals": "Deotte, Titericz, and Babakhin all reached senior applied/research scientist roles at NVIDIA specifically on the strength of Kaggle Grandmaster track records, showing a repeatable pattern where competitive-ML performance is read directly as applied-research signal by hiring teams.",
+      "people": [
+        {"name": "Chris Deotte", "link": "https://github.com/cdeotte"},
+        {"name": "Gilberto Titericz", "link": "https://br.linkedin.com/in/giba1"},
+        {"name": "Yauhen Babakhin", "link": "https://cz.linkedin.com/in/yauhenbabakhin"}
+      ],
+      "source": "https://github.com/cdeotte"
+    }
+  ]
+}

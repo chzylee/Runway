@@ -1,0 +1,232 @@
+{
+  "generated_at_utc": "2026-07-24 06:20 UTC",
+  "source": "US DOL OFLC LCA Programs disclosure data (public record)",
+  "filters": {
+    "case_status": "Certified",
+    "role": "budget_analyst",
+    "soc_codes": [
+      "13-2031"
+    ],
+    "pw_wage_level": "I"
+  },
+  "quarters_used": [
+    "FY2025Q4",
+    "FY2026Q1"
+  ],
+  "quarters_superseded": {},
+  "rows_per_quarter": {
+    "FY2025Q4": 118580,
+    "FY2026Q1": 83120
+  },
+  "funnel": {
+    "rows_total": 201700,
+    "rows_certified": 181277,
+    "rows_soc_matched": 84,
+    "rows_selected": 42
+  },
+  "employer_groups": 36,
+  "distinct_raw_employer_spellings": 36,
+  "rows_wage_excluded_from_wage_stats": 0,
+  "case_statuses_seen": {
+    "CERTIFIED": 181277,
+    "CERTIFIED - WITHDRAWN": 15748,
+    "WITHDRAWN": 3242,
+    "DENIED": 1433
+  },
+  "wage_levels_seen": {
+    "I": 42,
+    "II": 20,
+    "III": 11,
+    "IV": 8,
+    "": 3
+  },
+  "wage_units_seen": {
+    "YEAR": 34,
+    "HOUR": 8
+  },
+  "patterns": {
+    "basis": {
+      "filings": 42,
+      "employers": 36,
+      "measured_by": "employers",
+      "min_support_employers": 3
+    },
+    "job_titles": {
+      "recurring_tokens": [
+        {
+          "token": "analyst",
+          "employers": 27,
+          "filings": 30
+        },
+        {
+          "token": "budget",
+          "employers": 21,
+          "filings": 25
+        },
+        {
+          "token": "financial",
+          "employers": 6,
+          "filings": 6
+        },
+        {
+          "token": "specialist",
+          "employers": 3,
+          "filings": 3
+        }
+      ],
+      "distinct_titles": [
+        {
+          "title": "Budget Analyst",
+          "employers": 13,
+          "filings": 15
+        },
+        {
+          "title": "BUDGET ANALYST",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "Financial Analyst",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "Accounts Coordinator",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Cost Analyst",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "BUDGET AND FISCAL ANALYST",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Budget Analysts",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Business Development",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Associate Research Administrator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Development Supervisor",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Capital Budget Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Finance and Grants Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Financial Analyst (Accountant)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Financial Planning and Analysis Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Junior Budget Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Operations Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Finance and Operations Systems Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Specialist, Budget-University Libraries",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sr. Financial Analyst",
+          "employers": 1,
+          "filings": 1
+        }
+      ]
+    },
+    "onet_occupations": [
+      {
+        "soc_code": "13-2031.00",
+        "title": "Budget Analysts",
+        "employers": 36,
+        "filings": 42
+      }
+    ],
+    "placement_model": {
+      "in_house": {
+        "employers": 36,
+        "filings": 42
+      },
+      "third_party_site": {
+        "employers": 0,
+        "filings": 0
+      }
+    },
+    "industry_naics2": [
+      {
+        "code": "61",
+        "label": "Educational Services",
+        "employers": 8,
+        "filings": 10
+      },
+      {
+        "code": "42",
+        "label": "Wholesale Trade",
+        "employers": 4,
+        "filings": 4
+      },
+      {
+        "code": "62",
+        "label": "Health Care and Social Assistance",
+        "employers": 3,
+        "filings": 4
+      },
+      {
+        "code": "54",
+        "label": "Professional, Scientific, and Technical Services",
+        "employers": 3,
+        "filings": 3
+      },
+      {
+        "code": "72",
+        "label": "Accommodation and Food Services",
+        "employers": 3,
+        "filings": 3
+      }
+    ]
+  },
+  "caveats": [
+    "An LCA certification is not a hire or an open role.",
+    "OPT is not sponsorship — a new grad's first job is on OPT; sponsorship comes 1-3 years later.",
+    "Employer names are conservatively normalized and may under-merge.",
+    "Career/portfolio guidance, not immigration legal advice."
+  ]
+}

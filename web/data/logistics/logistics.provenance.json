@@ -1,0 +1,530 @@
+{
+  "generated_at_utc": "2026-07-24 06:20 UTC",
+  "source": "US DOL OFLC LCA Programs disclosure data (public record)",
+  "filters": {
+    "case_status": "Certified",
+    "role": "logistics",
+    "soc_codes": [
+      "13-1081"
+    ],
+    "pw_wage_level": "I"
+  },
+  "quarters_used": [
+    "FY2025Q4",
+    "FY2026Q1"
+  ],
+  "quarters_superseded": {},
+  "rows_per_quarter": {
+    "FY2025Q4": 118580,
+    "FY2026Q1": 83120
+  },
+  "funnel": {
+    "rows_total": 201700,
+    "rows_certified": 181277,
+    "rows_soc_matched": 687,
+    "rows_selected": 85
+  },
+  "employer_groups": 68,
+  "distinct_raw_employer_spellings": 69,
+  "rows_wage_excluded_from_wage_stats": 2,
+  "case_statuses_seen": {
+    "CERTIFIED": 181277,
+    "CERTIFIED - WITHDRAWN": 15748,
+    "WITHDRAWN": 3242,
+    "DENIED": 1433
+  },
+  "wage_levels_seen": {
+    "II": 240,
+    "IV": 196,
+    "III": 153,
+    "I": 85,
+    "": 13
+  },
+  "wage_units_seen": {
+    "YEAR": 61,
+    "HOUR": 19,
+    "MONTH": 3,
+    "BI-WEEKLY": 2
+  },
+  "patterns": {
+    "basis": {
+      "filings": 85,
+      "employers": 68,
+      "measured_by": "employers",
+      "min_support_employers": 3
+    },
+    "job_titles": {
+      "recurring_tokens": [
+        {
+          "token": "logistics",
+          "employers": 34,
+          "filings": 35
+        },
+        {
+          "token": "analyst",
+          "employers": 28,
+          "filings": 29
+        },
+        {
+          "token": "specialist",
+          "employers": 14,
+          "filings": 21
+        },
+        {
+          "token": "supply",
+          "employers": 13,
+          "filings": 14
+        },
+        {
+          "token": "engineer",
+          "employers": 11,
+          "filings": 15
+        },
+        {
+          "token": "chain",
+          "employers": 11,
+          "filings": 12
+        },
+        {
+          "token": "coordinator",
+          "employers": 7,
+          "filings": 7
+        },
+        {
+          "token": "operations",
+          "employers": 6,
+          "filings": 9
+        },
+        {
+          "token": "manager",
+          "employers": 5,
+          "filings": 6
+        },
+        {
+          "token": "operation",
+          "employers": 4,
+          "filings": 5
+        },
+        {
+          "token": "logistic",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "business",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "management",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "planner",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "production",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "project",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "warehouse",
+          "employers": 3,
+          "filings": 3
+        }
+      ],
+      "distinct_titles": [
+        {
+          "title": "Logistics Analyst",
+          "employers": 12,
+          "filings": 12
+        },
+        {
+          "title": "Logistics Engineer",
+          "employers": 3,
+          "filings": 4
+        },
+        {
+          "title": "Supply Chain Analyst",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "Supply Chain Manager I",
+          "employers": 2,
+          "filings": 3
+        },
+        {
+          "title": "Terminal IT & Operation Analyst",
+          "employers": 2,
+          "filings": 3
+        },
+        {
+          "title": "Logistics Specialist",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Hardware Commodity Specialist II",
+          "employers": 1,
+          "filings": 4
+        },
+        {
+          "title": "Operations Engineer I",
+          "employers": 1,
+          "filings": 4
+        },
+        {
+          "title": "Assistant Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate Demand Planner",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Analyst I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Logistics Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Operations Specialists",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "CBR ANALYST/MATERIALS PLANNER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Delivery & Logistics Coordinator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Fulfilment Coordinator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Global Sea Logistics Trade Specialist-Transpacific Eastbound",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "HW COMMODITY SPECIALIST II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Hardware Commodity Specialist I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "International Logistics Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "LOGISTICIAN",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "LOGISTICS ANALYST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Logistic & WH Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Logistic Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Logistic Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Logistic, Supply Chain and Operation Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Logistician Analyst, Operations Planning & Control",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Logistics Analysts",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Logistics Engineering Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Logistics and Stock Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Logistics and Supply Chain Coordinator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Logistics and Technology Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Material Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Material Planner",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Operation Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Operations Coordinator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Operations Logistics Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Production Engineer and Lean Coordinator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Production Management Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Production Planning Specialist 1",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Coordinator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Manager Supply Chain Continuous Improvement",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Resource Management Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "SUPPLY CHAIN ANALYST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Logistics Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sourcing & Logistics Lead Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Specialist - Global Procurement",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Supervisor Logistics",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Supply Chain and Logistics Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Supply Chain and Logistics Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Supply Chains Systems Coordinator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Supply Management Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Trade Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Treefruit Category Administrator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Warehouse & Logistics Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Warehouse Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Warehouse Operations Managemen",
+          "employers": 1,
+          "filings": 1
+        }
+      ]
+    },
+    "onet_occupations": [
+      {
+        "soc_code": "13-1081.00",
+        "title": "Logisticians",
+        "employers": 28,
+        "filings": 37
+      },
+      {
+        "soc_code": "13-1081.02",
+        "title": "Logistics Analysts",
+        "employers": 28,
+        "filings": 29
+      },
+      {
+        "soc_code": "13-1081.01",
+        "title": "Logistics Engineers",
+        "employers": 15,
+        "filings": 19
+      }
+    ],
+    "placement_model": {
+      "in_house": {
+        "employers": 66,
+        "filings": 83
+      },
+      "third_party_site": {
+        "employers": 2,
+        "filings": 2
+      }
+    },
+    "industry_naics2": [
+      {
+        "code": "33",
+        "label": "Manufacturing",
+        "employers": 12,
+        "filings": 13
+      },
+      {
+        "code": "42",
+        "label": "Wholesale Trade",
+        "employers": 12,
+        "filings": 12
+      },
+      {
+        "code": "54",
+        "label": "Professional, Scientific, and Technical Services",
+        "employers": 11,
+        "filings": 13
+      },
+      {
+        "code": "48",
+        "label": "Transportation and Warehousing",
+        "employers": 6,
+        "filings": 7
+      },
+      {
+        "code": "45",
+        "label": "Retail Trade",
+        "employers": 5,
+        "filings": 11
+      },
+      {
+        "code": "31",
+        "label": "Manufacturing",
+        "employers": 4,
+        "filings": 4
+      },
+      {
+        "code": "49",
+        "label": "Transportation and Warehousing",
+        "employers": 3,
+        "filings": 4
+      },
+      {
+        "code": "23",
+        "label": "Construction",
+        "employers": 3,
+        "filings": 3
+      },
+      {
+        "code": "32",
+        "label": "Manufacturing",
+        "employers": 3,
+        "filings": 3
+      }
+    ]
+  },
+  "caveats": [
+    "An LCA certification is not a hire or an open role.",
+    "OPT is not sponsorship — a new grad's first job is on OPT; sponsorship comes 1-3 years later.",
+    "Employer names are conservatively normalized and may under-merge.",
+    "Career/portfolio guidance, not immigration legal advice."
+  ]
+}

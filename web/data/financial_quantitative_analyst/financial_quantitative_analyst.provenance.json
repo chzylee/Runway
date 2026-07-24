@@ -1,0 +1,526 @@
+{
+  "generated_at_utc": "2026-07-24 06:20 UTC",
+  "source": "US DOL OFLC LCA Programs disclosure data (public record)",
+  "filters": {
+    "case_status": "Certified",
+    "role": "financial_quantitative_analyst",
+    "soc_codes": [
+      "13-2099"
+    ],
+    "pw_wage_level": "I"
+  },
+  "quarters_used": [
+    "FY2025Q4",
+    "FY2026Q1"
+  ],
+  "quarters_superseded": {},
+  "rows_per_quarter": {
+    "FY2025Q4": 118580,
+    "FY2026Q1": 83120
+  },
+  "funnel": {
+    "rows_total": 201700,
+    "rows_certified": 181277,
+    "rows_soc_matched": 897,
+    "rows_selected": 88
+  },
+  "employer_groups": 61,
+  "distinct_raw_employer_spellings": 61,
+  "rows_wage_excluded_from_wage_stats": 0,
+  "case_statuses_seen": {
+    "CERTIFIED": 181277,
+    "CERTIFIED - WITHDRAWN": 15748,
+    "WITHDRAWN": 3242,
+    "DENIED": 1433
+  },
+  "wage_levels_seen": {
+    "II": 329,
+    "III": 243,
+    "IV": 219,
+    "I": 88,
+    "": 18
+  },
+  "wage_units_seen": {
+    "YEAR": 79,
+    "HOUR": 7,
+    "WEEK": 1,
+    "MONTH": 1
+  },
+  "patterns": {
+    "basis": {
+      "filings": 88,
+      "employers": 61,
+      "measured_by": "employers",
+      "min_support_employers": 3
+    },
+    "job_titles": {
+      "recurring_tokens": [
+        {
+          "token": "analyst",
+          "employers": 29,
+          "filings": 34
+        },
+        {
+          "token": "financial",
+          "employers": 21,
+          "filings": 24
+        },
+        {
+          "token": "quantitative",
+          "employers": 18,
+          "filings": 23
+        },
+        {
+          "token": "specialist",
+          "employers": 12,
+          "filings": 15
+        },
+        {
+          "token": "associate",
+          "employers": 9,
+          "filings": 13
+        },
+        {
+          "token": "operations",
+          "employers": 4,
+          "filings": 6
+        },
+        {
+          "token": "research",
+          "employers": 4,
+          "filings": 6
+        },
+        {
+          "token": "risk",
+          "employers": 4,
+          "filings": 6
+        },
+        {
+          "token": "trader",
+          "employers": 4,
+          "filings": 6
+        },
+        {
+          "token": "business",
+          "employers": 4,
+          "filings": 5
+        },
+        {
+          "token": "researcher",
+          "employers": 4,
+          "filings": 5
+        },
+        {
+          "token": "president",
+          "employers": 3,
+          "filings": 6
+        },
+        {
+          "token": "vice",
+          "employers": 3,
+          "filings": 6
+        },
+        {
+          "token": "junior",
+          "employers": 3,
+          "filings": 4
+        },
+        {
+          "token": "finance",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "investment",
+          "employers": 3,
+          "filings": 3
+        }
+      ],
+      "distinct_titles": [
+        {
+          "title": "Quantitative Researcher",
+          "employers": 4,
+          "filings": 5
+        },
+        {
+          "title": "Financial Specialist",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "title": "Quantitative Analyst",
+          "employers": 3,
+          "filings": 4
+        },
+        {
+          "title": "Financial Analyst",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "Financial Operations Specialist",
+          "employers": 2,
+          "filings": 4
+        },
+        {
+          "title": "Associate",
+          "employers": 2,
+          "filings": 3
+        },
+        {
+          "title": "Financial Quantitative Analyst",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Quantitative Research Analyst",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Analyst; Global Financial Crimes Specialist",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Associate II",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "BUSINESS ANALYST",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Quantitative Trader",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Research [00080461]",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Trader Junior",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "ALM Engineer II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Account Vice President, Financial Advisor",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Analyst, BDO Capital Advisors",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Analyst, Consumer Credit Risk",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Analyst, Quantitative Engineering",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Assistant Vice President (Enterprise Risk Management Dept.)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Assistant Vice President (The Clearing Department)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Assistant Vice President (Trade Services Department)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate (Enterprise Risk Management Department)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate Weather & Energy Derivatives",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate, Assistant Relationship Mgr (Financial Specialist)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Operation Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Consulting Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Credit Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Deal Manager Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Executive",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Finance Fellow",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Financial Analyst I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Financial Analyst II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Financial Operations Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Financial Quantative Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Financial Quantitative Analyst (Energy Trader)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Fund Studio Financial Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "GenAI Senior Product Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Global Stock Selection Research Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Hedge Fund Quantitative and Investment Risk Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Investment Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Investment Consulting, Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "JUNIOR ANALYST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Junior Quantitative Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Lead Customer Support Consultant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Officer; Quantitative Finance Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Operations - Settlement Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Portfolio Finance Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Fellow",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Private Banker",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Product Management [00079415]",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Quant Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Quantitative Analyst - KBGFJG297189-2",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Quantitative Risk [00080430]",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Quantitative Risk [00081355]",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "SAP FICO Lead",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Associate (Equity Long/Short Business)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sr. Financial Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "TRADER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Treasury Officer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Vice President",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Vice President, Research",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "business strategy analyst",
+          "employers": 1,
+          "filings": 1
+        }
+      ]
+    },
+    "onet_occupations": [
+      {
+        "soc_code": "13-2099.01",
+        "title": "Financial Quantitative Analysts",
+        "employers": 46,
+        "filings": 68
+      },
+      {
+        "soc_code": "13-2099.00",
+        "title": "Financial Specialists, All Other",
+        "employers": 15,
+        "filings": 18
+      },
+      {
+        "soc_code": "13-2099.04",
+        "title": "Fraud Examiners, Investigators and Analysts",
+        "employers": 1,
+        "filings": 2
+      }
+    ],
+    "placement_model": {
+      "in_house": {
+        "employers": 60,
+        "filings": 86
+      },
+      "third_party_site": {
+        "employers": 1,
+        "filings": 2
+      }
+    },
+    "industry_naics2": [
+      {
+        "code": "52",
+        "label": "Finance and Insurance",
+        "employers": 33,
+        "filings": 55
+      },
+      {
+        "code": "54",
+        "label": "Professional, Scientific, and Technical Services",
+        "employers": 7,
+        "filings": 9
+      },
+      {
+        "code": "45",
+        "label": "Retail Trade",
+        "employers": 4,
+        "filings": 4
+      },
+      {
+        "code": "55",
+        "label": "Management of Companies and Enterprises",
+        "employers": 4,
+        "filings": 4
+      },
+      {
+        "code": "61",
+        "label": "Educational Services",
+        "employers": 3,
+        "filings": 3
+      }
+    ]
+  },
+  "caveats": [
+    "An LCA certification is not a hire or an open role.",
+    "OPT is not sponsorship — a new grad's first job is on OPT; sponsorship comes 1-3 years later.",
+    "Employer names are conservatively normalized and may under-merge.",
+    "Career/portfolio guidance, not immigration legal advice."
+  ]
+}

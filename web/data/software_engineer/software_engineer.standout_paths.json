@@ -1,0 +1,44 @@
+{
+  "role": "software_engineer",
+  "curated_at_utc": "2026-07-24",
+  "kind": "curated-editorial",
+  "framework": "A path qualifies only when >=3 prominent, proven people in the field visibly share the capability, each with a resolving link — the pattern across standouts is the evidence, not market demand. Ranked by strength of that pattern. Curated editorial, not DOL-derived.",
+  "paths": [
+    {
+      "rank": 1,
+      "path": "Build and maintain a widely-used open-source project",
+      "what_it_is": "Create a developer tool or library, publish it publicly on GitHub, and keep maintaining it long enough that other engineers depend on it in production.",
+      "why_it_signals": "The most prominent standouts in software engineering share this exact pattern — each built and still maintains open-source infrastructure used by millions of other developers, proof of technical judgment no interview loop can replicate.",
+      "people": [
+        {"name": "Evan You", "link": "https://evanyou.me/"},
+        {"name": "Rich Harris", "link": "https://www.rich-harris.co.uk/"},
+        {"name": "Sindre Sorhus", "link": "https://sindresorhus.com/about"}
+      ],
+      "source": "https://evanyou.me/"
+    },
+    {
+      "rank": 2,
+      "path": "Write in public to teach hard technical concepts clearly",
+      "what_it_is": "Publish blog posts, zines, or books that break down difficult systems topics (networking, performance, distributed data) in a way that makes them accessible to other engineers.",
+      "why_it_signals": "Three of the field's most-cited technical communicators independently built their reputations the same way — writing clear, public explanations of hard systems concepts — showing this is a repeatable craft, not a personality trait.",
+      "people": [
+        {"name": "Julia Evans", "link": "https://jvns.ca/"},
+        {"name": "Brendan Gregg", "link": "https://www.brendangregg.com/"},
+        {"name": "Martin Kleppmann", "link": "https://martin.kleppmann.com/"}
+      ],
+      "source": "https://jvns.ca/"
+    },
+    {
+      "rank": 3,
+      "path": "Master competitive programming and algorithmic problem-solving",
+      "what_it_is": "Compete regularly in ranked algorithmic contests (Codeforces, ICPC, Topcoder) and reach elite, publicly verifiable rating tiers through sustained deliberate practice.",
+      "why_it_signals": "The top-rated competitive programmers in the world all reached that level through the same visible, rankable practice — years of contest problem-solving with public profiles — a craft any new grad can start building today, not a one-off talent claim.",
+      "people": [
+        {"name": "Gennady Korotkevich", "link": "https://codeforces.com/profile/tourist"},
+        {"name": "Petr Mitrichev", "link": "https://blog.mitrichev.ch/"},
+        {"name": "Kamil Debowski (Errichto)", "link": "https://codeforces.com/profile/Errichto"}
+      ],
+      "source": "https://codeforces.com/profile/tourist"
+    }
+  ]
+}

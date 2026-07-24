@@ -1,0 +1,44 @@
+{
+  "role": "qa_engineer",
+  "curated_at_utc": "2026-07-24",
+  "kind": "curated-editorial",
+  "framework": "A path qualifies only when >=3 prominent, proven people in the field visibly share the capability, each with a resolving link — the pattern across standouts is the evidence, not market demand. Ranked by strength of that pattern. Curated editorial, not DOL-derived.",
+  "paths": [
+    {
+      "rank": 1,
+      "path": "Publish your own testing methodology in writing",
+      "what_it_is": "Write and maintain a public body of work — blog, book, or course — that lays out a distinct, opinionated approach to how testing should be done, not just notes on tools.",
+      "why_it_signals": "The most recognized names in QA did not become known for finding bugs quietly; each of the three standouts below built and published a named methodology (context-driven testing, holistic testing, contemporary exploratory testing) that others now cite and teach from.",
+      "people": [
+        {"name": "James Bach", "link": "https://www.satisfice.com/about-james-bach"},
+        {"name": "Lisa Crispin", "link": "https://lisacrispin.com/about/"},
+        {"name": "Maaret Pyhäjärvi", "link": "https://maaretp.com/"}
+      ],
+      "source": "https://www.satisfice.com/about-james-bach"
+    },
+    {
+      "rank": 2,
+      "path": "Build and open-source your own test automation tooling",
+      "what_it_is": "Design, build, and publicly release a reusable automation library, framework, or course repository — not just use existing tools like Selenium or Appium, but extend or rebuild parts of that ecosystem yourself.",
+      "why_it_signals": "Each of these three standout automation engineers is known first for something they built and gave away — an API testing library, a driver-factory framework, contributions to Selenium/Appium itself — which is a much stronger signal of engineering craft than tool proficiency alone.",
+      "people": [
+        {"name": "Angie Jones", "link": "https://angiejones.tech/about/"},
+        {"name": "Bas Dijkstra", "link": "https://www.ontestautomation.com/about/"},
+        {"name": "Richard Bradshaw", "link": "https://github.com/FriendlyTester"}
+      ],
+      "source": "https://angiejones.tech/about/"
+    },
+    {
+      "rank": 3,
+      "path": "Teach live on conference and community stages",
+      "what_it_is": "Repeatedly propose, prepare, and deliver talks or workshops at testing conferences and community events, building a track record of public teaching in front of practitioner audiences.",
+      "why_it_signals": "These three built visible careers substantially through the stage — one founded an automation-only conference and podcast, one keynotes internationally on DevOps-era testing, one speaks and guest-lectures on automation strategy — showing that regular public teaching, not just private skill, is part of the shared pattern among standouts in this field.",
+      "people": [
+        {"name": "Joe Colantonio", "link": "https://testguild.com/joe-colantonio/"},
+        {"name": "Katrina Clokie", "link": "https://devopsdays.org/events/2018-wellington/speakers/katrina-clokie"},
+        {"name": "Paul Grizzaffi", "link": "https://testguild.com/podcast/automation/a501-paul/"}
+      ],
+      "source": "https://testguild.com/joe-colantonio/"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "role": "consultant_management",
+  "curated_at_utc": "2026-07-24",
+  "kind": "curated-editorial",
+  "framework": "A path qualifies only when >=3 prominent, proven people in the field visibly share the capability, each with a resolving link — the pattern across standouts is the evidence, not market demand. Ranked by strength of that pattern. Curated editorial, not DOL-derived.",
+  "paths": [
+    {
+      "rank": 1,
+      "path": "Codify the firm's thinking into a teachable method",
+      "what_it_is": "Distill the internal problem-structuring or communication technique you use on cases into a written method precise enough that someone else can pick it up and apply it without you in the room.",
+      "why_it_signals": "The exact same move recurs across the profession's most-cited texts: Barbara Minto turned McKinsey's internal writing discipline into the Pyramid Principle, Ethan Rasiel turned McKinsey's case technique into The McKinsey Way, and Marc Cosentino turned the case-cracking process into Case in Point — each now a standard reference used across the industry, not just at one firm.",
+      "people": [
+        {"name": "Barbara Minto", "link": "https://www.barbaraminto.com/"},
+        {"name": "Ethan M. Rasiel", "link": "https://www.linkedin.com/in/ethan-m-rasiel-0a6b83"},
+        {"name": "Marc P. Cosentino", "link": "https://casequestions.com/about/"}
+      ],
+      "source": "https://www.barbaraminto.com/"
+    },
+    {
+      "rank": 2,
+      "path": "Turn client-work patterns into a public strategy book",
+      "what_it_is": "Take the recurring pattern you keep seeing across client engagements and generalize it into a named framework and a book written for executives outside the firm, not just for fellow consultants.",
+      "why_it_signals": "Three practicing strategy partners independently made this move and each framework became business-canon in its own right: Roger Martin's five-choices cascade from Playing to Win, Chris Zook's core-business framework from Profit from the Core, and Adrian Slywotzky's value-migration model from The Profit Zone — all written while the author was still an active partner at a major strategy firm.",
+      "people": [
+        {"name": "Roger L. Martin", "link": "https://rogerlmartin.com/meet-roger"},
+        {"name": "Chris Zook", "link": "https://chriszook.biz/about"},
+        {"name": "Adrian Slywotzky", "link": "https://www.fastcompany.com/user/adrian-slywotzky"}
+      ],
+      "source": "https://rogerlmartin.com/meet-roger"
+    },
+    {
+      "rank": 3,
+      "path": "Build a public platform teaching the recruiting craft",
+      "what_it_is": "After learning the case-interview and problem-solving craft as a practicing consultant, build an openly public teaching platform (site, book, workshop series) that trains outsiders in that same craft at scale.",
+      "why_it_signals": "Victor Cheng (ex-McKinsey), David Ohrvall (ex-Bain), and Jenny Rae Le Roux (ex-Bain) each left practicing consulting to build a named training platform — CaseInterview.com, Zintervu, and Management Consulted respectively — that now trains tens of thousands of candidates a year, showing the underlying craft is genuinely teachable, not just personal talent.",
+      "people": [
+        {"name": "Victor Cheng", "link": "https://caseinterview.com/victor-cheng"},
+        {"name": "David Ohrvall", "link": "https://www.linkedin.com/in/david-ohrvall-9520782"},
+        {"name": "Jenny Rae Le Roux", "link": "https://www.event.consultingmag.com/risingstars/Jenny-Rae-Le-Roux"}
+      ],
+      "source": "https://caseinterview.com/victor-cheng"
+    }
+  ]
+}

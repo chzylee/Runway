@@ -1,0 +1,1010 @@
+{
+  "role": "economist",
+  "generated_at_utc": "2026-07-24 06:20 UTC",
+  "source": "US DOL OFLC LCA Programs disclosure data (public record)",
+  "filters": {
+    "case_status": "Certified",
+    "soc_codes": [
+      "19-3011"
+    ],
+    "pw_wage_level": "I"
+  },
+  "quarters_used": [
+    "FY2025Q4",
+    "FY2026Q1"
+  ],
+  "quarters_superseded": {},
+  "funnel": {
+    "rows_total": 201700,
+    "rows_certified": 181277,
+    "rows_soc_matched": 204,
+    "rows_selected": 56
+  },
+  "employer_groups": 43,
+  "rows_wage_excluded_from_wage_stats": 0,
+  "patterns": {
+    "basis": {
+      "filings": 56,
+      "employers": 43,
+      "measured_by": "employers",
+      "min_support_employers": 3
+    },
+    "job_titles": {
+      "recurring_tokens": [
+        {
+          "token": "research",
+          "employers": 15,
+          "filings": 23
+        },
+        {
+          "token": "analyst",
+          "employers": 14,
+          "filings": 17
+        },
+        {
+          "token": "associate",
+          "employers": 10,
+          "filings": 11
+        },
+        {
+          "token": "senior",
+          "employers": 8,
+          "filings": 10
+        },
+        {
+          "token": "economic",
+          "employers": 5,
+          "filings": 8
+        },
+        {
+          "token": "economist",
+          "employers": 5,
+          "filings": 7
+        },
+        {
+          "token": "postdoctoral",
+          "employers": 5,
+          "filings": 6
+        },
+        {
+          "token": "data",
+          "employers": 4,
+          "filings": 5
+        },
+        {
+          "token": "specialist",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "fellow",
+          "employers": 3,
+          "filings": 5
+        },
+        {
+          "token": "assistant",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "professor",
+          "employers": 3,
+          "filings": 3
+        }
+      ],
+      "distinct_titles": [
+        {
+          "title": "Postdoctoral Associate",
+          "employers": 2,
+          "filings": 3
+        },
+        {
+          "title": "Analyst",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Economic Development Specialist",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Research Associate",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Senior Analyst",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Growth Lab Research Fellow",
+          "employers": 1,
+          "filings": 3
+        },
+        {
+          "title": "Economic Research Analyst",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Economist I",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Senior Economic Research Economist",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Senior Research Analyst",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Agricultural Economic Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Assistant Professor",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Assistant Professor of Environmental Studies & Economics",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate - Antitrust & Competition Economics (China)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Consultant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Analyst D",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Analyst Senior",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Analyst “ Geochemical & Exploration Analytics",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Scientist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Economic Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Emerging Scholar",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Faculty Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Natural Resource Economist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Post Doctoral Research Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Post-Doctoral Research Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Fellow",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Research Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral fellow",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Pricing & Revenue Optimization Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Program Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "RESEARCH ASSISTANT PROFESSOR",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "RESEARCH SPECIALIST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Renewable Energy Economist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Administrator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Data Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Director",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Researcher “ People Analytics",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "SENIOR RESEARCH ECONOMIST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Policy Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Research Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Social Research Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Trading Research Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Vice President",
+          "employers": 1,
+          "filings": 1
+        }
+      ]
+    },
+    "onet_occupations": [
+      {
+        "soc_code": "19-3011.00",
+        "title": "Economists",
+        "employers": 35,
+        "filings": 47
+      },
+      {
+        "soc_code": "19-3011.01",
+        "title": "Environmental Economists",
+        "employers": 8,
+        "filings": 9
+      }
+    ],
+    "placement_model": {
+      "in_house": {
+        "employers": 42,
+        "filings": 55
+      },
+      "third_party_site": {
+        "employers": 1,
+        "filings": 1
+      }
+    },
+    "industry_naics2": [
+      {
+        "code": "61",
+        "label": "Educational Services",
+        "employers": 16,
+        "filings": 23
+      },
+      {
+        "code": "54",
+        "label": "Professional, Scientific, and Technical Services",
+        "employers": 16,
+        "filings": 21
+      }
+    ]
+  },
+  "caveats": [
+    "An LCA certification is not a hire or an open role.",
+    "OPT is not sponsorship — a new grad's first job is on OPT; sponsorship comes 1-3 years later.",
+    "Employer names are conservatively normalized and may under-merge.",
+    "Career/portfolio guidance, not immigration legal advice."
+  ],
+  "employers": [
+    {
+      "employer": "NORTH DAKOTA STATE UNIVERSITY",
+      "employer_display": "NORTH DAKOTA STATE UNIVERSITY",
+      "filing_count": 3,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "19-3011",
+      "soc_titles": "Economists",
+      "worksite_states": "ND",
+      "worksite_cities": "FARGO",
+      "wage_annual_min": 60778,
+      "wage_annual_median": 72000,
+      "wage_annual_max": 90000
+    },
+    {
+      "employer": "THE BRATTLE GROUP",
+      "employer_display": "The Brattle Group",
+      "filing_count": 2,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "19-3011",
+      "soc_titles": "Economists",
+      "worksite_states": "CA; NY",
+      "worksite_cities": "New York; San Francisco",
+      "wage_annual_min": 116316,
+      "wage_annual_median": 122133,
+      "wage_annual_max": 127950
+    },
+    {
+      "employer": "UNIVERSITY OF MARYLAND COLLEGE PARK",
+      "employer_display": "University of Maryland College Park",
+      "filing_count": 2,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "19-3011",
+      "soc_titles": "Environmental Economists",
+      "worksite_states": "MD",
+      "worksite_cities": "COLLEGE PARK; College Park",
+      "wage_annual_min": 78000,
+      "wage_annual_median": 81687,
+      "wage_annual_max": 85374
+    },
+    {
+      "employer": "ECONIC PARTNERS US",
+      "employer_display": "Econic Partners US LLC",
+      "filing_count": 4,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-3011",
+      "soc_titles": "Economists",
+      "worksite_states": "DC; NY",
+      "worksite_cities": "New York; Washignton DC; Washington DC",
+      "wage_annual_min": 112000,
+      "wage_annual_median": 125000,
+      "wage_annual_max": 125000
+    },
+    {
+      "employer": "HARVARD UNIVERSITY",
+      "employer_display": "Harvard University",
+      "filing_count": 3,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-3011",
+      "soc_titles": "Economists",
+      "worksite_states": "MA",
+      "worksite_cities": "Cambridge",
+      "wage_annual_min": 84460,
+      "wage_annual_median": 89610,
+      "wage_annual_max": 89610
+    },
+    {
+      "employer": "AMAZON COM SERVICES",
+      "employer_display": "Amazon.com Services LLC",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-3011",
+      "soc_titles": "Economists",
+      "worksite_states": "WA",
+      "worksite_cities": "Seattle",
+      "wage_annual_min": 147000,
+      "wage_annual_median": 147000,
+      "wage_annual_max": 147000
+    },
+    {
+      "employer": "INTERNATIONAL INITIATIVE FOR IMPACT EVALUATION",
+      "employer_display": "International Initiative for Impact Evaluation",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-3011",
+      "soc_titles": "Economists",
+      "worksite_states": "DC; NY",
+      "worksite_cities": "Brooklyn; Washington",
+      "wage_annual_min": 89600,
+      "wage_annual_median": 89622,
+      "wage_annual_max": 89643
+    },
+    {
+      "employer": "MISSISSIPPI STATE UNIVERSITY",
+      "employer_display": "Mississippi State University",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-3011",
+      "soc_titles": "Economists",
+      "worksite_states": "MS",
+      "worksite_cities": "Mississippi State",
+      "wage_annual_min": 64854,
+      "wage_annual_median": 64854,
+      "wage_annual_max": 64854
+    },
+    {
+      "employer": "TRUSTEES OF THE UNIVERSITY OF PENNSYLVANIA",
+      "employer_display": "TRUSTEES OF THE UNIVERSITY OF PENNSYLVANIA",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-3011",
+      "soc_titles": "Economists",
+      "worksite_states": "PA",
+      "worksite_cities": "Philadelphia",
+      "wage_annual_min": 86888,
+      "wage_annual_median": 93952,
+      "wage_annual_max": 101015
+    },
+    {
+      "employer": "AMERICAN CENTURY INVESTMENT MANAGEMENT",
+      "employer_display": "American Century Investment Management Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-3011",
+      "soc_titles": "Economists",
+      "worksite_states": "NY",
+      "worksite_cities": "New York",
+      "wage_annual_min": 122900,
+      "wage_annual_median": 122900,
+      "wage_annual_max": 122900
+    },
+    {
+      "employer": "ANALYSIS GROUP",
+      "employer_display": "Analysis Group, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-3011",
+      "soc_titles": "Economists",
+      "worksite_states": "WA",
+      "worksite_cities": "Redmond",
+      "wage_annual_min": 110000,
+      "wage_annual_median": 110000,
+      "wage_annual_max": 110000
+    },
+    {
+      "employer": "ARIZONA OFFICE OF ECONOMIC OPPORTUNITY",
+      "employer_display": "Arizona Office of Economic Opportunity",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-3011",
+      "soc_titles": "Economists",
+      "worksite_states": "AZ",
+      "worksite_cities": "Phoenix",
+      "wage_annual_min": 85000,
+      "wage_annual_median": 85000,
+      "wage_annual_max": 85000
+    },
+    {
+      "employer": "AUBURN UNIVERSITY",
+      "employer_display": "Auburn University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-3011",
+      "soc_titles": "Economists",
+      "worksite_states": "AL",
+      "worksite_cities": "Auburn",
+      "wage_annual_min": 64854,
+      "wage_annual_median": 64854,
+      "wage_annual_max": 64854
+    },
+    {
+      "employer": "AVANTUS",
+      "employer_display": "Avantus LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-3011",
+      "soc_titles": "Environmental Economists",
+      "worksite_states": "CA",
+      "worksite_cities": "San Francisco",
+      "wage_annual_min": 117300,
+      "wage_annual_median": 117300,
+      "wage_annual_max": 117300
+    },
+    {
+      "employer": "AZURA CONSULTING",
+      "employer_display": "Azura Consulting LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-3011",
+      "soc_titles": "Environmental Economists",
+      "worksite_states": "MA",
+      "worksite_cities": "East Falmouth",
+      "wage_annual_min": 90896,
+      "wage_annual_median": 90896,
+      "wage_annual_max": 90896
+    },
+    {
+      "employer": "BOARD OF REGENTS OF THE UNIVERSITY OF NEBRASKA",
+      "employer_display": "Board of Regents of the University of Nebraska",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-3011",
+      "soc_titles": "Environmental Economists",
+      "worksite_states": "NE",
+      "worksite_cities": "Lincoln",
+      "wage_annual_min": 70000,
+      "wage_annual_median": 70000,
+      "wage_annual_max": 70000
+    },
+    {
+      "employer": "BOSTON COLLEGE",
+      "employer_display": "Boston College",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-3011",
+      "soc_titles": "Economists",
+      "worksite_states": "MA",
+      "worksite_cities": "Chestnut Hill",
+      "wage_annual_min": 110062,
+      "wage_annual_median": 110062,
+      "wage_annual_max": 110062
+    },
+    {
+      "employer": "BRAVE RESOURCES",
+      "employer_display": "Brave Resources Inc",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-3011",
+      "soc_titles": "Economists",
+      "worksite_states": "MN",
+      "worksite_cities": "Blaine",
+      "wage_annual_min": 85000,
+      "wage_annual_median": 85000,
+      "wage_annual_max": 85000
+    },
+    {
+      "employer": "CENTER FOR CIVIC RESEARCH AND INNOVATION",
+      "employer_display": "Center for Civic Research and Innovation",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-3011",
+      "soc_titles": "Economists",
+      "worksite_states": "MO",
+      "worksite_cities": "St. Louis",
+      "wage_annual_min": 80000,
+      "wage_annual_median": 80000,
+      "wage_annual_max": 80000
+    },
+    {
+      "employer": "CENTRE FOR ECONOMIC DEVELOPMENT AND EXECUTION CORPORATION",
+      "employer_display": "Centre for Economic Development and Execution Corporation",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-3011",
+      "soc_titles": "Economists",
+      "worksite_states": "MA",
+      "worksite_cities": "Arlington",
+      "wage_annual_min": 85000,
+      "wage_annual_median": 85000,
+      "wage_annual_max": 85000
+    },
+    {
+      "employer": "CLIMATE POLICY INITIATIVE",
+      "employer_display": "Climate Policy Initiative, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-3011",
+      "soc_titles": "Economists",
+      "worksite_states": "DC",
+      "worksite_cities": "Washington",
+      "wage_annual_min": 82200,
+      "wage_annual_median": 82200,
+      "wage_annual_max": 82200
+    },
+    {
+      "employer": "CRA INTERNATIONAL",
+      "employer_display": "CRA International, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-3011",
+      "soc_titles": "Economists",
+      "worksite_states": "MA",
+      "worksite_cities": "Boston",
+      "wage_annual_min": 110000,
+      "wage_annual_median": 110000,
+      "wage_annual_max": 110000
+    },
+    {
+      "employer": "D E SHAW CO L P",
+      "employer_display": "D. E. Shaw & Co., L.P.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-3011",
+      "soc_titles": "Economists",
+      "worksite_states": "NY",
+      "worksite_cities": "New York",
+      "wage_annual_min": 200000,
+      "wage_annual_median": 200000,
+      "wage_annual_max": 200000
+    },
+    {
+      "employer": "ENTERVENDING",
+      "employer_display": "ENTERVENDING, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-3011",
+      "soc_titles": "Economists",
+      "worksite_states": "FL",
+      "worksite_cities": "ORLANDO",
+      "wage_annual_min": 60403,
+      "wage_annual_median": 60403,
+      "wage_annual_max": 60403
+    },
+    {
+      "employer": "FLORIDA GULF COAST UNIVERSITY",
+      "employer_display": "FLORIDA GULF COAST UNIVERSITY",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-3011",
+      "soc_titles": "Environmental Economists",
+      "worksite_states": "FL",
+      "worksite_cities": "Fort Myers",
+      "wage_annual_min": 64854,
+      "wage_annual_median": 64854,
+      "wage_annual_max": 64854
+    },
+    {
+      "employer": "HAMPTON UNIVERSITY",
+      "employer_display": "Hampton University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-3011",
+      "soc_titles": "Economists",
+      "worksite_states": "VA",
+      "worksite_cities": "Hampton",
+      "wage_annual_min": 73000,
+      "wage_annual_median": 73000,
+      "wage_annual_max": 73000
+    },
+    {
+      "employer": "INFORMATION TECHNOLOGY AND INNOVATION FOUNDATION",
+      "employer_display": "Information Technology and Innovation Foundation",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-3011",
+      "soc_titles": "Economists",
+      "worksite_states": "DC",
+      "worksite_cities": "Washington, DC",
+      "wage_annual_min": 112000,
+      "wage_annual_median": 112000,
+      "wage_annual_max": 112000
+    },
+    {
+      "employer": "INSTIGLIO",
+      "employer_display": "Instiglio Inc",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-3011",
+      "soc_titles": "Economists",
+      "worksite_states": "NY",
+      "worksite_cities": "Brooklyn",
+      "wage_annual_min": 99636,
+      "wage_annual_median": 99636,
+      "wage_annual_max": 99636
+    },
+    {
+      "employer": "INSTITUTE FOR WOMEN S POLICY RESEARCH",
+      "employer_display": "Institute for Women's Policy Research",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-3011",
+      "soc_titles": "Economists",
+      "worksite_states": "DC",
+      "worksite_cities": "Washington",
+      "wage_annual_min": 70000,
+      "wage_annual_median": 70000,
+      "wage_annual_max": 70000
+    },
+    {
+      "employer": "KENYON COLLEGE",
+      "employer_display": "Kenyon College",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-3011",
+      "soc_titles": "Environmental Economists",
+      "worksite_states": "OH",
+      "worksite_cities": "Gambier",
+      "wage_annual_min": 83500,
+      "wage_annual_median": 83500,
+      "wage_annual_max": 83500
+    },
+    {
+      "employer": "MEDICUS ECONOMICS",
+      "employer_display": "Medicus Economics, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-3011",
+      "soc_titles": "Economists",
+      "worksite_states": "CA",
+      "worksite_cities": "San Jose",
+      "wage_annual_min": 99000,
+      "wage_annual_median": 99000,
+      "wage_annual_max": 99000
+    },
+    {
+      "employer": "MERCATUS CENTER",
+      "employer_display": "Mercatus Center, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-3011",
+      "soc_titles": "Economists",
+      "worksite_states": "VA",
+      "worksite_cities": "Arlington",
+      "wage_annual_min": 85000,
+      "wage_annual_median": 85000,
+      "wage_annual_max": 85000
+    },
+    {
+      "employer": "NATIONAL ECONOMIC RESEARCH ASSOCIATES",
+      "employer_display": "NATIONAL ECONOMIC RESEARCH ASSOCIATES, INC.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-3011",
+      "soc_titles": "Economists",
+      "worksite_states": "MA",
+      "worksite_cities": "Boston",
+      "wage_annual_min": 115000,
+      "wage_annual_median": 115000,
+      "wage_annual_max": 115000
+    },
+    {
+      "employer": "NEW YORK POWER AUTHORITY",
+      "employer_display": "New York Power Authority",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-3011",
+      "soc_titles": "Environmental Economists",
+      "worksite_states": "NY",
+      "worksite_cities": "White Plains",
+      "wage_annual_min": 124982,
+      "wage_annual_median": 124982,
+      "wage_annual_max": 124982
+    },
+    {
+      "employer": "PA CONSULTING GROUP",
+      "employer_display": "PA Consulting Group, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-3011",
+      "soc_titles": "Economists",
+      "worksite_states": "CO",
+      "worksite_cities": "Denver",
+      "wage_annual_min": 110000,
+      "wage_annual_median": 110000,
+      "wage_annual_max": 110000
+    },
+    {
+      "employer": "PURDUE UNIVERSITY",
+      "employer_display": "Purdue University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-3011",
+      "soc_titles": "Economists",
+      "worksite_states": "IN",
+      "worksite_cities": "West Lafayette",
+      "wage_annual_min": 64854,
+      "wage_annual_median": 64854,
+      "wage_annual_max": 64854
+    },
+    {
+      "employer": "ROCKY MOUNTAIN INSTITUTE",
+      "employer_display": "ROCKY MOUNTAIN INSTITUTE, INC.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-3011",
+      "soc_titles": "Environmental Economists",
+      "worksite_states": "NY",
+      "worksite_cities": "New York",
+      "wage_annual_min": 82077,
+      "wage_annual_median": 82077,
+      "wage_annual_max": 82077
+    },
+    {
+      "employer": "TEXAS A M AGRILIFE RESEARCH",
+      "employer_display": "Texas A&M AgriLife Research",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-3011",
+      "soc_titles": "Economists",
+      "worksite_states": "TX",
+      "worksite_cities": "College Station",
+      "wage_annual_min": 74970,
+      "wage_annual_median": 74970,
+      "wage_annual_max": 74970
+    },
+    {
+      "employer": "THE LELAND STANFORD JR UNIVERSITY",
+      "employer_display": "The Leland Stanford, Jr University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-3011",
+      "soc_titles": "Economists",
+      "worksite_states": "MA",
+      "worksite_cities": "Lynnfield",
+      "wage_annual_min": 135000,
+      "wage_annual_median": 135000,
+      "wage_annual_max": 135000
+    },
+    {
+      "employer": "THE UNIVERSITY OF CHICAGO",
+      "employer_display": "The University of Chicago",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-3011",
+      "soc_titles": "Economists",
+      "worksite_states": "IL",
+      "worksite_cities": "Chicago",
+      "wage_annual_min": 116733,
+      "wage_annual_median": 116733,
+      "wage_annual_max": 116733
+    },
+    {
+      "employer": "UNIVERSITY OF ARKANSAS SYSTEM DIVISION OF AGRICULTURE",
+      "employer_display": "University of Arkansas System Division of Agriculture",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-3011",
+      "soc_titles": "Economists",
+      "worksite_states": "AR",
+      "worksite_cities": "FAYETTEVILLE",
+      "wage_annual_min": 64854,
+      "wage_annual_median": 64854,
+      "wage_annual_max": 64854
+    },
+    {
+      "employer": "UNIVERSITY OF CALIFORNIA BERKELEY",
+      "employer_display": "University of California, Berkeley",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-3011",
+      "soc_titles": "Economists",
+      "worksite_states": "CA",
+      "worksite_cities": "Berkeley",
+      "wage_annual_min": 72600,
+      "wage_annual_median": 72600,
+      "wage_annual_max": 72600
+    },
+    {
+      "employer": "WELLS PLUMBING AND HEATING SUPPLIES",
+      "employer_display": "Wells Plumbing and Heating Supplies, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-3011",
+      "soc_titles": "Economists",
+      "worksite_states": "CA",
+      "worksite_cities": "Monrovia",
+      "wage_annual_min": 84490,
+      "wage_annual_median": 84490,
+      "wage_annual_max": 84490
+    }
+  ]
+}

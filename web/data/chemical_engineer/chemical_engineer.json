@@ -1,0 +1,941 @@
+{
+  "role": "chemical_engineer",
+  "generated_at_utc": "2026-07-24 06:20 UTC",
+  "source": "US DOL OFLC LCA Programs disclosure data (public record)",
+  "filters": {
+    "case_status": "Certified",
+    "soc_codes": [
+      "17-2041"
+    ],
+    "pw_wage_level": "I"
+  },
+  "quarters_used": [
+    "FY2025Q4",
+    "FY2026Q1"
+  ],
+  "quarters_superseded": {},
+  "funnel": {
+    "rows_total": 201700,
+    "rows_certified": 181277,
+    "rows_soc_matched": 272,
+    "rows_selected": 59
+  },
+  "employer_groups": 43,
+  "rows_wage_excluded_from_wage_stats": 0,
+  "patterns": {
+    "basis": {
+      "filings": 59,
+      "employers": 43,
+      "measured_by": "employers",
+      "min_support_employers": 3
+    },
+    "job_titles": {
+      "recurring_tokens": [
+        {
+          "token": "engineer",
+          "employers": 18,
+          "filings": 23
+        },
+        {
+          "token": "associate",
+          "employers": 16,
+          "filings": 22
+        },
+        {
+          "token": "postdoctoral",
+          "employers": 15,
+          "filings": 25
+        },
+        {
+          "token": "research",
+          "employers": 13,
+          "filings": 23
+        },
+        {
+          "token": "process",
+          "employers": 10,
+          "filings": 11
+        },
+        {
+          "token": "chemical",
+          "employers": 6,
+          "filings": 10
+        },
+        {
+          "token": "fellow",
+          "employers": 4,
+          "filings": 7
+        },
+        {
+          "token": "post",
+          "employers": 3,
+          "filings": 4
+        },
+        {
+          "token": "engineering",
+          "employers": 3,
+          "filings": 3
+        }
+      ],
+      "distinct_titles": [
+        {
+          "title": "Postdoctoral Research Associate",
+          "employers": 6,
+          "filings": 7
+        },
+        {
+          "title": "Chemical Engineer",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "title": "Process Engineer",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "title": "Research Associate",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "Postdoctoral Associate",
+          "employers": 2,
+          "filings": 4
+        },
+        {
+          "title": "Postdoctoral Fellow",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Postdoctoral Research Fellow",
+          "employers": 1,
+          "filings": 4
+        },
+        {
+          "title": "Postdoctoral Research Scholar",
+          "employers": 1,
+          "filings": 4
+        },
+        {
+          "title": "CHEMICAL ENGINEER",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Post Doctorate Research Associate (Chemical Engineer)",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Process Safety Engineer",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Associate Engineer - Process",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Engineer II, Manufacturing Science and Technology (MS & T)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Engineering Supervisor, Chemicals & Applications",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Investigator, Modeling and Simulation",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Manufacturing Design Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Mechanical Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "POSTDOCTORAL RESEARCH ASSOCIATE",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "PhD Intern (Chemical Engineer)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Post Doctoral Researcher",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Post-Doctoral Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Fellow Research Associate (Chem Engr)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Research Associate in Engineering",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Scholar",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Process Design Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Process Designer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Process Dev Engineering Scientific Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Process Engineer I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Manager - Chemical Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Scientist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Technologist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Test Engineer",
+          "employers": 1,
+          "filings": 1
+        }
+      ]
+    },
+    "onet_occupations": [
+      {
+        "soc_code": "17-2041.00",
+        "title": "Chemical Engineers",
+        "employers": 43,
+        "filings": 59
+      }
+    ],
+    "placement_model": {
+      "in_house": {
+        "employers": 42,
+        "filings": 58
+      },
+      "third_party_site": {
+        "employers": 1,
+        "filings": 1
+      }
+    },
+    "industry_naics2": [
+      {
+        "code": "61",
+        "label": "Educational Services",
+        "employers": 17,
+        "filings": 28
+      },
+      {
+        "code": "54",
+        "label": "Professional, Scientific, and Technical Services",
+        "employers": 13,
+        "filings": 17
+      },
+      {
+        "code": "33",
+        "label": "Manufacturing",
+        "employers": 5,
+        "filings": 6
+      },
+      {
+        "code": "32",
+        "label": "Manufacturing",
+        "employers": 4,
+        "filings": 4
+      }
+    ]
+  },
+  "caveats": [
+    "An LCA certification is not a hire or an open role.",
+    "OPT is not sponsorship — a new grad's first job is on OPT; sponsorship comes 1-3 years later.",
+    "Employer names are conservatively normalized and may under-merge.",
+    "Career/portfolio guidance, not immigration legal advice."
+  ],
+  "employers": [
+    {
+      "employer": "NORTH CAROLINA STATE UNIVERSITY",
+      "employer_display": "North Carolina State University",
+      "filing_count": 4,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "17-2041",
+      "soc_titles": "Chemical Engineers",
+      "worksite_states": "NC",
+      "worksite_cities": "Raleigh",
+      "wage_annual_min": 59904,
+      "wage_annual_median": 60500,
+      "wage_annual_max": 64000
+    },
+    {
+      "employer": "UNIVERSITY OF MICHIGAN",
+      "employer_display": "University of Michigan",
+      "filing_count": 4,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "17-2041",
+      "soc_titles": "Chemical Engineers",
+      "worksite_states": "MI",
+      "worksite_cities": "Ann Arbor",
+      "wage_annual_min": 62232,
+      "wage_annual_median": 62617,
+      "wage_annual_max": 65000
+    },
+    {
+      "employer": "MASSACHUSETTS INSTITUTE OF TECHNOLOGY",
+      "employer_display": "Massachusetts Institute of Technology",
+      "filing_count": 3,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "17-2041",
+      "soc_titles": "Chemical Engineers",
+      "worksite_states": "MA",
+      "worksite_cities": "Cambridge",
+      "wage_annual_min": 71000,
+      "wage_annual_median": 74000,
+      "wage_annual_max": 75000
+    },
+    {
+      "employer": "RENSSELAER POLYTECHNIC INSTITUTE",
+      "employer_display": "Rensselaer Polytechnic Institute",
+      "filing_count": 3,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "17-2041",
+      "soc_titles": "Chemical Engineers",
+      "worksite_states": "NY",
+      "worksite_cities": "Troy",
+      "wage_annual_min": 58656,
+      "wage_annual_median": 62500,
+      "wage_annual_max": 63000
+    },
+    {
+      "employer": "BATTELLE MEMORIAL INSTITUTE",
+      "employer_display": "Battelle Memorial Institute",
+      "filing_count": 4,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2041",
+      "soc_titles": "Chemical Engineers",
+      "worksite_states": "WA",
+      "worksite_cities": "Richland",
+      "wage_annual_min": 66144,
+      "wage_annual_median": 95596,
+      "wage_annual_max": 98915
+    },
+    {
+      "employer": "SMITH BURGESS",
+      "employer_display": "Smith & Burgess LLC",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2041",
+      "soc_titles": "Chemical Engineers",
+      "worksite_states": "TX",
+      "worksite_cities": "Houston",
+      "wage_annual_min": 109699,
+      "wage_annual_median": 109699,
+      "wage_annual_max": 109699
+    },
+    {
+      "employer": "TECHEVON",
+      "employer_display": "TECHEVON LLC.",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2041",
+      "soc_titles": "Chemical Engineers",
+      "worksite_states": "IL",
+      "worksite_cities": "CHICAGO; ELK GROVE VILLAGE",
+      "wage_annual_min": 80000,
+      "wage_annual_median": 80000,
+      "wage_annual_max": 80000
+    },
+    {
+      "employer": "THE TRUSTEES OF PRINCETON UNIVERSITY",
+      "employer_display": "The Trustees of Princeton University",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2041",
+      "soc_titles": "Chemical Engineers",
+      "worksite_states": "NJ",
+      "worksite_cities": "PRINCETON; Princeton",
+      "wage_annual_min": 65000,
+      "wage_annual_median": 67500,
+      "wage_annual_max": 70000
+    },
+    {
+      "employer": "AZUL 3D",
+      "employer_display": "Azul 3D, Inc",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2041",
+      "soc_titles": "Chemical Engineers",
+      "worksite_states": "DC",
+      "worksite_cities": "WASHINGTON",
+      "wage_annual_min": 100000,
+      "wage_annual_median": 100000,
+      "wage_annual_max": 100000
+    },
+    {
+      "employer": "BLACK VEATCH CORPORATION",
+      "employer_display": "Black & Veatch Corporation",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2041",
+      "soc_titles": "Chemical Engineers",
+      "worksite_states": "FL",
+      "worksite_cities": "Tampa",
+      "wage_annual_min": 71448,
+      "wage_annual_median": 71448,
+      "wage_annual_max": 71448
+    },
+    {
+      "employer": "BP AMERICA",
+      "employer_display": "BP America Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2041",
+      "soc_titles": "Chemical Engineers",
+      "worksite_states": "IL",
+      "worksite_cities": "Chicago",
+      "wage_annual_min": 108243,
+      "wage_annual_median": 108243,
+      "wage_annual_max": 108243
+    },
+    {
+      "employer": "BROWN UNIVERSITY",
+      "employer_display": "Brown University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2041",
+      "soc_titles": "Chemical Engineers",
+      "worksite_states": "RI",
+      "worksite_cities": "Providence",
+      "wage_annual_min": 64356,
+      "wage_annual_median": 64356,
+      "wage_annual_max": 64356
+    },
+    {
+      "employer": "CAMBREX CHARLES CITY",
+      "employer_display": "Cambrex Charles City, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2041",
+      "soc_titles": "Chemical Engineers",
+      "worksite_states": "IA",
+      "worksite_cities": "Charles City",
+      "wage_annual_min": 82514,
+      "wage_annual_median": 82514,
+      "wage_annual_max": 82514
+    },
+    {
+      "employer": "CARNEGIE MELLON UNIVERSITY",
+      "employer_display": "Carnegie Mellon University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2041",
+      "soc_titles": "Chemical Engineers",
+      "worksite_states": "PA",
+      "worksite_cities": "Pittsburgh",
+      "wage_annual_min": 78100,
+      "wage_annual_median": 78100,
+      "wage_annual_max": 78100
+    },
+    {
+      "employer": "ENVISION ENERGY USA",
+      "employer_display": "ENVISION ENERGY USA LTD.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2041",
+      "soc_titles": "Chemical Engineers",
+      "worksite_states": "MA",
+      "worksite_cities": "Burlington",
+      "wage_annual_min": 89440,
+      "wage_annual_median": 89440,
+      "wage_annual_max": 89440
+    },
+    {
+      "employer": "GEORGIA INSTITUTE OF TECHNOLOGY",
+      "employer_display": "Georgia Institute of Technology",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2041",
+      "soc_titles": "Chemical Engineers",
+      "worksite_states": "GA",
+      "worksite_cities": "Atlanta",
+      "wage_annual_min": 58656,
+      "wage_annual_median": 58656,
+      "wage_annual_max": 58656
+    },
+    {
+      "employer": "GLAXOSMITHKLINE",
+      "employer_display": "GlaxoSmithKline LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2041",
+      "soc_titles": "Chemical Engineers",
+      "worksite_states": "PA",
+      "worksite_cities": "Collegeville",
+      "wage_annual_min": 110250,
+      "wage_annual_median": 110250,
+      "wage_annual_max": 110250
+    },
+    {
+      "employer": "GMP ENGINEERING",
+      "employer_display": "GMP Engineering Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2041",
+      "soc_titles": "Chemical Engineers",
+      "worksite_states": "NJ",
+      "worksite_cities": "Rahway",
+      "wage_annual_min": 83200,
+      "wage_annual_median": 83200,
+      "wage_annual_max": 83200
+    },
+    {
+      "employer": "IMPACT DISPLAYS GROUP",
+      "employer_display": "Impact Displays Group, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2041",
+      "soc_titles": "Chemical Engineers",
+      "worksite_states": "NJ",
+      "worksite_cities": "Carlstadt",
+      "wage_annual_min": 94286,
+      "wage_annual_median": 94286,
+      "wage_annual_max": 94286
+    },
+    {
+      "employer": "INNOVATION LABS",
+      "employer_display": "Innovation Labs Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2041",
+      "soc_titles": "Chemical Engineers",
+      "worksite_states": "NJ",
+      "worksite_cities": "Mahwah",
+      "wage_annual_min": 90000,
+      "wage_annual_median": 90000,
+      "wage_annual_max": 90000
+    },
+    {
+      "employer": "KLA CORPORATION",
+      "employer_display": "KLA Corporation",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2041",
+      "soc_titles": "Chemical Engineers",
+      "worksite_states": "CA",
+      "worksite_cities": "Milpitas",
+      "wage_annual_min": 115000,
+      "wage_annual_median": 115000,
+      "wage_annual_max": 115000
+    },
+    {
+      "employer": "KNIGHT MATERIAL TECHNOLOGIES",
+      "employer_display": "Knight Material Technologies LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2041",
+      "soc_titles": "Chemical Engineers",
+      "worksite_states": "TX",
+      "worksite_cities": "Humble",
+      "wage_annual_min": 130000,
+      "wage_annual_median": 130000,
+      "wage_annual_max": 130000
+    },
+    {
+      "employer": "MGC PURE CHEMICALS AMERICA",
+      "employer_display": "MGC Pure Chemicals America, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2041",
+      "soc_titles": "Chemical Engineers",
+      "worksite_states": "TX",
+      "worksite_cities": "Killeen",
+      "wage_annual_min": 177902400,
+      "wage_annual_median": 177902400,
+      "wage_annual_max": 177902400
+    },
+    {
+      "employer": "MICHIGAN TECHNOLOGICAL UNIVERSITY",
+      "employer_display": "Michigan Technological University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2041",
+      "soc_titles": "Chemical Engineers",
+      "worksite_states": "MI",
+      "worksite_cities": "Houghton",
+      "wage_annual_min": 62000,
+      "wage_annual_median": 62000,
+      "wage_annual_max": 62000
+    },
+    {
+      "employer": "MINUTRI",
+      "employer_display": "Minutri Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2041",
+      "soc_titles": "Chemical Engineers",
+      "worksite_states": "WA",
+      "worksite_cities": "Seattle",
+      "wage_annual_min": 84885,
+      "wage_annual_median": 84885,
+      "wage_annual_max": 84885
+    },
+    {
+      "employer": "MODERNATX",
+      "employer_display": "ModernaTX, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2041",
+      "soc_titles": "Chemical Engineers",
+      "worksite_states": "MA",
+      "worksite_cities": "Norwood",
+      "wage_annual_min": 87048,
+      "wage_annual_median": 87048,
+      "wage_annual_max": 87048
+    },
+    {
+      "employer": "OKLAHOMA STATE UNIVERSITY",
+      "employer_display": "Oklahoma State University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2041",
+      "soc_titles": "Chemical Engineers",
+      "worksite_states": "OK",
+      "worksite_cities": "Stillwater",
+      "wage_annual_min": 51792,
+      "wage_annual_median": 51792,
+      "wage_annual_max": 51792
+    },
+    {
+      "employer": "PROCEDYNE",
+      "employer_display": "Procedyne Corp.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2041",
+      "soc_titles": "Chemical Engineers",
+      "worksite_states": "NJ",
+      "worksite_cities": "New Brunswick",
+      "wage_annual_min": 83000,
+      "wage_annual_median": 83000,
+      "wage_annual_max": 83000
+    },
+    {
+      "employer": "PURDUE UNIVERSITY",
+      "employer_display": "Purdue University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2041",
+      "soc_titles": "Chemical Engineers",
+      "worksite_states": "IN",
+      "worksite_cities": "West Lafayette",
+      "wage_annual_min": 68000,
+      "wage_annual_median": 68000,
+      "wage_annual_max": 68000
+    },
+    {
+      "employer": "RESEARCH FOUNDATION FOR THE STATE UNIVERSITY OF NEW YORK",
+      "employer_display": "Research Foundation for the State University of New York",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2041",
+      "soc_titles": "Chemical Engineers",
+      "worksite_states": "NY",
+      "worksite_cities": "Stony Brook",
+      "wage_annual_min": 55411,
+      "wage_annual_median": 55411,
+      "wage_annual_max": 55411
+    },
+    {
+      "employer": "SCHLUMBERGER TECHNOLOGY CORPORATION",
+      "employer_display": "Schlumberger Technology Corporation",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2041",
+      "soc_titles": "Chemical Engineers",
+      "worksite_states": "TX",
+      "worksite_cities": "Sugar Land",
+      "wage_annual_min": 123630,
+      "wage_annual_median": 123630,
+      "wage_annual_max": 123630
+    },
+    {
+      "employer": "STANTEC CONSULTING SERVICES",
+      "employer_display": "Stantec Consulting Services Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2041",
+      "soc_titles": "Chemical Engineers",
+      "worksite_states": "TX",
+      "worksite_cities": "Plano",
+      "wage_annual_min": 95014,
+      "wage_annual_median": 95014,
+      "wage_annual_max": 95014
+    },
+    {
+      "employer": "TEXAS A M ENGINEERING EXPERIMENT STATION",
+      "employer_display": "Texas A&M Engineering Experiment Station",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2041",
+      "soc_titles": "Chemical Engineers",
+      "worksite_states": "CA",
+      "worksite_cities": "Fremont",
+      "wage_annual_min": 51792,
+      "wage_annual_median": 51792,
+      "wage_annual_max": 51792
+    },
+    {
+      "employer": "THE FLORIDA STATE UNIVERSITY",
+      "employer_display": "The Florida State University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2041",
+      "soc_titles": "Chemical Engineers",
+      "worksite_states": "FL",
+      "worksite_cities": "Tallahassee",
+      "wage_annual_min": 52575,
+      "wage_annual_median": 52575,
+      "wage_annual_max": 52575
+    },
+    {
+      "employer": "TRINITY CONSULTANTS",
+      "employer_display": "Trinity Consultants, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2041",
+      "soc_titles": "Chemical Engineers",
+      "worksite_states": "PA",
+      "worksite_cities": "Exton",
+      "wage_annual_min": 95819,
+      "wage_annual_median": 95819,
+      "wage_annual_max": 95819
+    },
+    {
+      "employer": "UNIVERSITY OF ARKANSAS",
+      "employer_display": "University of Arkansas",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2041",
+      "soc_titles": "Chemical Engineers",
+      "worksite_states": "AR",
+      "worksite_cities": "Fayetteville",
+      "wage_annual_min": 52000,
+      "wage_annual_median": 52000,
+      "wage_annual_max": 52000
+    },
+    {
+      "employer": "UNIVERSITY OF MARYLAND COLLEGE PARK",
+      "employer_display": "University of Maryland College Park",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2041",
+      "soc_titles": "Chemical Engineers",
+      "worksite_states": "MD",
+      "worksite_cities": "College Park",
+      "wage_annual_min": 55448,
+      "wage_annual_median": 55448,
+      "wage_annual_max": 55448
+    },
+    {
+      "employer": "UNIVERSITY OF NOTRE DAME DU LAC",
+      "employer_display": "University of Notre Dame du Lac",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2041",
+      "soc_titles": "Chemical Engineers",
+      "worksite_states": "IN",
+      "worksite_cities": "Notre Dame",
+      "wage_annual_min": 63120,
+      "wage_annual_median": 63120,
+      "wage_annual_max": 63120
+    },
+    {
+      "employer": "VERTEX PHARMACEUTICALS INCORPORATED",
+      "employer_display": "Vertex Pharmaceuticals Incorporated",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2041",
+      "soc_titles": "Chemical Engineers",
+      "worksite_states": "MA",
+      "worksite_cities": "Boston",
+      "wage_annual_min": 88483,
+      "wage_annual_median": 88483,
+      "wage_annual_max": 88483
+    },
+    {
+      "employer": "VIKING ENGINEERING LC",
+      "employer_display": "Viking Engineering, LC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2041",
+      "soc_titles": "Chemical Engineers",
+      "worksite_states": "TX",
+      "worksite_cities": "Houston",
+      "wage_annual_min": 121326,
+      "wage_annual_median": 121326,
+      "wage_annual_max": 121326
+    },
+    {
+      "employer": "WASHINGTON STATE UNIVERSITY",
+      "employer_display": "Washington State University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2041",
+      "soc_titles": "Chemical Engineers",
+      "worksite_states": "WA",
+      "worksite_cities": "Pullman",
+      "wage_annual_min": 69079,
+      "wage_annual_median": 69079,
+      "wage_annual_max": 69079
+    },
+    {
+      "employer": "WASHINGTON UNIVERSITY",
+      "employer_display": "Washington University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2041",
+      "soc_titles": "Chemical Engineers",
+      "worksite_states": "MO",
+      "worksite_cities": "St Louis",
+      "wage_annual_min": 63120,
+      "wage_annual_median": 63120,
+      "wage_annual_max": 63120
+    },
+    {
+      "employer": "YJ BIOPRODUCTS",
+      "employer_display": "YJ BIOPRODUCTS, INC.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2041",
+      "soc_titles": "Chemical Engineers",
+      "worksite_states": "CA",
+      "worksite_cities": "Rancho Cordova",
+      "wage_annual_min": 90000,
+      "wage_annual_median": 90000,
+      "wage_annual_max": 90000
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "role": "aerospace_engineer",
+  "curated_at_utc": "2026-07-24",
+  "kind": "curated-editorial",
+  "framework": "A path qualifies only when >=3 prominent, proven people in the field visibly share the capability, each with a resolving link — the pattern across standouts is the evidence, not market demand. Ranked by strength of that pattern. Curated editorial, not DOL-derived.",
+  "paths": [
+    {
+      "rank": 1,
+      "path": "Lead a full build-test-fly hardware team as a student",
+      "what_it_is": "Taking on a leadership role (structures, propulsion, or chief engineer) on a student high-power rocketry or UAV team that designs, builds, tests, and flies real hardware against a hard competition deadline, such as the Spaceport America Cup.",
+      "why_it_signals": "It proves someone can own a hardware subsystem end to end under real schedule and safety constraints, which is exactly the judgment aerospace employers are betting on when they sponsor a new grad.",
+      "people": [
+        {"name": "Quinn Edwards", "link": "https://quinnedwards.info/aboutme.html"},
+        {"name": "Scott Tuley", "link": "https://www.linkedin.com/in/scott-tuley"},
+        {"name": "Cameron Buccellato", "link": "https://www.linkedin.com/in/cameron-buccellato-b69369110"}
+      ],
+      "source": "https://quinnedwards.info/aboutme.html"
+    },
+    {
+      "rank": 2,
+      "path": "Build and maintain an open-source aerospace engineering tool",
+      "what_it_is": "Writing and sustaining a public simulation or design-optimization tool used by other engineers or student teams, such as a trajectory simulator or aerostructural optimization framework, from a student project into an actively maintained release.",
+      "why_it_signals": "Shipping software that other engineers trust with real flight and design decisions demonstrates rigor, documentation discipline, and technical range beyond what a single class project or internship can show.",
+      "people": [
+        {"name": "Giovani Ceotto", "link": "https://www.linkedin.com/in/giovaniceotto"},
+        {"name": "Sampo Niskanen", "link": "https://sampo.kapsi.fi/"},
+        {"name": "John Hwang", "link": "https://jacobsschool.ucsd.edu/faculty/profile?id=473"}
+      ],
+      "source": "https://www.linkedin.com/in/giovaniceotto"
+    },
+    {
+      "rank": 3,
+      "path": "Translate aerospace engineering into public teaching content",
+      "what_it_is": "Holding a real aerospace or aeronautical engineering credential while running a public-facing YouTube channel, blog, or video series that explains real engineering concepts, builds, and test data to a general audience.",
+      "why_it_signals": "Consistently explaining technical material clearly to a lay audience, while backed by genuine engineering work, signals communication skill and depth of understanding that written credentials alone can't show.",
+      "people": [
+        {"name": "Destin Sandlin", "link": "https://www.smartereveryday.com"},
+        {"name": "Brian McManus", "link": "https://en.wikipedia.org/wiki/Brian_McManus_(YouTuber)"},
+        {"name": "Tom Stanton", "link": "https://www.youtube.com/tomstantonengineering"}
+      ],
+      "source": "https://www.smartereveryday.com"
+    }
+  ]
+}

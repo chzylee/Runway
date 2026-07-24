@@ -1,0 +1,694 @@
+{
+  "generated_at_utc": "2026-07-24 06:20 UTC",
+  "source": "US DOL OFLC LCA Programs disclosure data (public record)",
+  "filters": {
+    "case_status": "Certified",
+    "role": "architect",
+    "soc_codes": [
+      "17-1011"
+    ],
+    "pw_wage_level": "I"
+  },
+  "quarters_used": [
+    "FY2025Q4",
+    "FY2026Q1"
+  ],
+  "quarters_superseded": {},
+  "rows_per_quarter": {
+    "FY2025Q4": 118580,
+    "FY2026Q1": 83120
+  },
+  "funnel": {
+    "rows_total": 201700,
+    "rows_certified": 181277,
+    "rows_soc_matched": 465,
+    "rows_selected": 216
+  },
+  "employer_groups": 166,
+  "distinct_raw_employer_spellings": 167,
+  "rows_wage_excluded_from_wage_stats": 0,
+  "case_statuses_seen": {
+    "CERTIFIED": 181277,
+    "CERTIFIED - WITHDRAWN": 15748,
+    "WITHDRAWN": 3242,
+    "DENIED": 1433
+  },
+  "wage_levels_seen": {
+    "I": 216,
+    "II": 150,
+    "III": 44,
+    "": 40,
+    "IV": 15
+  },
+  "wage_units_seen": {
+    "YEAR": 192,
+    "HOUR": 24
+  },
+  "patterns": {
+    "basis": {
+      "filings": 216,
+      "employers": 166,
+      "measured_by": "employers",
+      "min_support_employers": 3
+    },
+    "job_titles": {
+      "recurring_tokens": [
+        {
+          "token": "architectural",
+          "employers": 67,
+          "filings": 79
+        },
+        {
+          "token": "architect",
+          "employers": 41,
+          "filings": 46
+        },
+        {
+          "token": "project",
+          "employers": 25,
+          "filings": 26
+        },
+        {
+          "token": "intern",
+          "employers": 13,
+          "filings": 13
+        },
+        {
+          "token": "staff",
+          "employers": 8,
+          "filings": 10
+        },
+        {
+          "token": "captain",
+          "employers": 8,
+          "filings": 8
+        },
+        {
+          "token": "job",
+          "employers": 8,
+          "filings": 8
+        },
+        {
+          "token": "manager",
+          "employers": 8,
+          "filings": 8
+        },
+        {
+          "token": "associate",
+          "employers": 7,
+          "filings": 7
+        },
+        {
+          "token": "junior",
+          "employers": 7,
+          "filings": 7
+        },
+        {
+          "token": "senior",
+          "employers": 6,
+          "filings": 8
+        },
+        {
+          "token": "coordinator",
+          "employers": 6,
+          "filings": 6
+        },
+        {
+          "token": "professional",
+          "employers": 5,
+          "filings": 10
+        },
+        {
+          "token": "architecture",
+          "employers": 5,
+          "filings": 7
+        },
+        {
+          "token": "intermediate",
+          "employers": 4,
+          "filings": 5
+        },
+        {
+          "token": "licensure",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "path",
+          "employers": 3,
+          "filings": 3
+        }
+      ],
+      "distinct_titles": [
+        {
+          "title": "Architectural Designer",
+          "employers": 37,
+          "filings": 45
+        },
+        {
+          "title": "Designer",
+          "employers": 13,
+          "filings": 21
+        },
+        {
+          "title": "Architect",
+          "employers": 7,
+          "filings": 7
+        },
+        {
+          "title": "Project Designer",
+          "employers": 6,
+          "filings": 6
+        },
+        {
+          "title": "Designer II",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "title": "Architect I",
+          "employers": 3,
+          "filings": 4
+        },
+        {
+          "title": "Intermediate Designer",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "Intern Architect",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "Job Captain",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "Urban Designer",
+          "employers": 2,
+          "filings": 4
+        },
+        {
+          "title": "Architecture Designer II",
+          "employers": 2,
+          "filings": 3
+        },
+        {
+          "title": "Designer I",
+          "employers": 2,
+          "filings": 3
+        },
+        {
+          "title": "Staff Designer",
+          "employers": 2,
+          "filings": 3
+        },
+        {
+          "title": "ARCHITECT",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Architectural Associate",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Architectural Designer II",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Architectural Intern",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Architectural Staff",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Design Staff I",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "JUNIOR PROJECT ARCHITECT",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Junior Designer",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Project Coordinator",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Project Manager",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Senior Designer",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Architect (non-licensed)",
+          "employers": 1,
+          "filings": 3
+        },
+        {
+          "title": "Senior Design Professional",
+          "employers": 1,
+          "filings": 3
+        },
+        {
+          "title": "Architectural Designer 2",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Intermediate Architect",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Staff Architect",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "ARCHITECTURAL DESIGNER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "ARCHITECTURAL JOB CAPTAIN",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Architecs",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Architect (Unlicensed)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Architect 3",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Architect Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Architect Designer III",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Architect II (Intern-Level)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Architect III",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Architect Intern",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Architect Intern I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Architect/Project Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Architectural Desginer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Architectural Design Professional Intern",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Architectural Designer (Architectural Intern)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Architectural Designer 02",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Architectural Designer 1",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Architectural Designer I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Architectural Designers",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Architectural Intern (Project Technician)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Architectural Job Captain",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Architectural Job Captain (unlicensed)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Architectural Project Coordinator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Architectural Project Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Architectural Team Leader",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Architectural Technician",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Architecture Designer III",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate Technical Construction Project Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Asst. Project Manager - Architectural",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "BIM Coordinator & Computational Designer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Building and Structural Designer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Consultant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "DESIGNER TECHNICAL II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Design Associate I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Design Consultant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Design Coordinator 2",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Design Coordinator 3",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Design Professional",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Design Professional II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Design Professional II “ Facades",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Designer  - Architectural (Path to Licensure)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Designer - Architectural (Path to Licensure)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Designer -1",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Designer IB - Architectural (Path to Licensure)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Designer III - Architectural",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Designer, Architecture",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Environment Artist/Architect",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Facility Designer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Intern in Architecture",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Intern-architect",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Job Captain (Architect)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Jr. Architect",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Junior Architect",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Junior Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Junior Project Architect",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Lighting Designer (Architectural Projects)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Medical Planner I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Planner I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Professional Designer III",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Architect",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Architect II - Architecture",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Design Architect",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Director",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Manager ( Architectural Projects)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Manager/Architect",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Architectural Designer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Job Captain",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Space Architect",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sr Design Professional",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sr. Design Professional",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Staff Architect I",
+          "employers": 1,
+          "filings": 1
+        }
+      ]
+    },
+    "onet_occupations": [
+      {
+        "soc_code": "17-1011.00",
+        "title": "Architects, Except Landscape and Naval",
+        "employers": 166,
+        "filings": 216
+      }
+    ],
+    "placement_model": {
+      "in_house": {
+        "employers": 166,
+        "filings": 214
+      },
+      "third_party_site": {
+        "employers": 1,
+        "filings": 2
+      }
+    },
+    "industry_naics2": [
+      {
+        "code": "54",
+        "label": "Professional, Scientific, and Technical Services",
+        "employers": 159,
+        "filings": 209
+      },
+      {
+        "code": "23",
+        "label": "Construction",
+        "employers": 5,
+        "filings": 5
+      }
+    ]
+  },
+  "caveats": [
+    "An LCA certification is not a hire or an open role.",
+    "OPT is not sponsorship — a new grad's first job is on OPT; sponsorship comes 1-3 years later.",
+    "Employer names are conservatively normalized and may under-merge.",
+    "Career/portfolio guidance, not immigration legal advice."
+  ]
+}

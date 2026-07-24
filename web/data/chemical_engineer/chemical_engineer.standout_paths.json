@@ -1,0 +1,44 @@
+{
+  "role": "chemical_engineer",
+  "curated_at_utc": "2026-07-24",
+  "kind": "curated-editorial",
+  "framework": "A path qualifies only when >=3 prominent, proven people in the field visibly share the capability, each with a resolving link — the pattern across standouts is the evidence, not market demand. Ranked by strength of that pattern. Curated editorial, not DOL-derived.",
+  "paths": [
+    {
+      "rank": 1,
+      "path": "Process safety case-study writing",
+      "what_it_is": "Turning real plant incidents into rigorous, publicly taught case studies that explain root cause, not just what broke.",
+      "why_it_signals": "It proves an engineer can extract a transferable lesson from a failure and teach it well enough that other plants change how they operate.",
+      "people": [
+        {"name": "Trevor Kletz", "link": "https://www.aiche.org/bio/dr-trevor-kletz"},
+        {"name": "Daniel A. Crowl", "link": "https://www.mtu.edu/chemical/department/emeriti-faculty/crowl/"},
+        {"name": "Paul Amyotte", "link": "https://www.dal.ca/faculty/engineering/peas/faculty-staff/our-faculty/paul-amyotte.html"}
+      ],
+      "source": "https://www.aiche.org/bio/dr-trevor-kletz"
+    },
+    {
+      "rank": 2,
+      "path": "Public technical teaching of process fundamentals",
+      "what_it_is": "Distilling core chemical engineering concepts into free screencasts, videos, or courses used by students and practitioners worldwide.",
+      "why_it_signals": "Explaining a hard technical concept clearly enough for millions of independent learners to actually get it is a much higher bar than passing a class in it.",
+      "people": [
+        {"name": "Bill Hammack", "link": "https://chbe.illinois.edu/people/profile/whammack"},
+        {"name": "John L. Falconer", "link": "https://www.colorado.edu/faculty/falconer/teaching"},
+        {"name": "J. Will Medlin", "link": "https://www.colorado.edu/chbe/j-will-medlin"}
+      ],
+      "source": "https://chbe.illinois.edu/people/profile/whammack"
+    },
+    {
+      "rank": 3,
+      "path": "Building process optimization software adopted industry-wide",
+      "what_it_is": "Developing and publishing numerical solvers or modeling frameworks for process design and optimization that become standard tools across the field.",
+      "why_it_signals": "It shows the engineer can turn a mathematical method into working software robust enough that other engineers build their own work on top of it.",
+      "people": [
+        {"name": "Lorenz T. Biegler", "link": "https://www.cheme.engineering.cmu.edu/directory/bios/biegler-lorenz.html"},
+        {"name": "Carl D. Laird", "link": "https://www.cheme.engineering.cmu.edu/directory/bios/laird-carl.html"},
+        {"name": "Ignacio E. Grossmann", "link": "https://www.cheme.engineering.cmu.edu/directory/bios/grossmann-ignacio.html"}
+      ],
+      "source": "https://www.cheme.engineering.cmu.edu/directory/bios/biegler-lorenz.html"
+    }
+  ]
+}

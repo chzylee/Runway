@@ -1,0 +1,1829 @@
+{
+  "role": "project_management_specialist",
+  "generated_at_utc": "2026-07-24 06:20 UTC",
+  "source": "US DOL OFLC LCA Programs disclosure data (public record)",
+  "filters": {
+    "case_status": "Certified",
+    "soc_codes": [
+      "13-1082"
+    ],
+    "pw_wage_level": "I"
+  },
+  "quarters_used": [
+    "FY2025Q4",
+    "FY2026Q1"
+  ],
+  "quarters_superseded": {},
+  "funnel": {
+    "rows_total": 201700,
+    "rows_certified": 181277,
+    "rows_soc_matched": 1152,
+    "rows_selected": 107
+  },
+  "employer_groups": 89,
+  "rows_wage_excluded_from_wage_stats": 0,
+  "patterns": {
+    "basis": {
+      "filings": 107,
+      "employers": 89,
+      "measured_by": "employers",
+      "min_support_employers": 3
+    },
+    "job_titles": {
+      "recurring_tokens": [
+        {
+          "token": "project",
+          "employers": 58,
+          "filings": 69
+        },
+        {
+          "token": "manager",
+          "employers": 44,
+          "filings": 55
+        },
+        {
+          "token": "specialist",
+          "employers": 17,
+          "filings": 20
+        },
+        {
+          "token": "management",
+          "employers": 15,
+          "filings": 18
+        },
+        {
+          "token": "assistant",
+          "employers": 10,
+          "filings": 13
+        },
+        {
+          "token": "program",
+          "employers": 9,
+          "filings": 14
+        },
+        {
+          "token": "coordinator",
+          "employers": 8,
+          "filings": 8
+        },
+        {
+          "token": "engineer",
+          "employers": 8,
+          "filings": 8
+        },
+        {
+          "token": "analyst",
+          "employers": 5,
+          "filings": 5
+        },
+        {
+          "token": "associate",
+          "employers": 5,
+          "filings": 5
+        },
+        {
+          "token": "product",
+          "employers": 5,
+          "filings": 5
+        },
+        {
+          "token": "controls",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "data",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "lead",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "operations",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "planning",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "production",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "senior",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "support",
+          "employers": 3,
+          "filings": 3
+        }
+      ],
+      "distinct_titles": [
+        {
+          "title": "Project Management Specialist",
+          "employers": 13,
+          "filings": 16
+        },
+        {
+          "title": "Project Manager",
+          "employers": 11,
+          "filings": 12
+        },
+        {
+          "title": "Assistant Project Manager",
+          "employers": 5,
+          "filings": 8
+        },
+        {
+          "title": "ASSISTANT PROJECT MANAGER",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "Project Coordinator",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "Project Engineer",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "Program Manager I",
+          "employers": 2,
+          "filings": 6
+        },
+        {
+          "title": "Manager, Premium Support",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Planning and Production Engineer",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Program Manager",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Project Controls Specialist",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "PROJECT MANAGER",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Account Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Account Supervisor",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Architectural Design Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Assistant Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate Director",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Asst. Project Manager, Construction Mgmt.",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Claims Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Construction Project Coordinator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Project Management Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Digital Lead",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Goose Works Project Manager I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Junior Project Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Manager of Scholar Support Services",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Manager, Care Contiuum Operations",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Marketing Manager II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "OPERATIONS & PROJECT ENGINEER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Operational Project Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "PROGRAM MANAGER II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Product Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Product Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Product Manager - Technology",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Production Software Analyst (Systems & Data)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Professional Services - Solution Consultant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Program Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Program Manager (PM), Country Impact Team (CIT)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Program Manager- Technology I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Program Operations Coordinator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Assistant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Controls Analyst I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Controls Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Coordinator, Construction Mgmt.",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Engineer II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Management Associate - Global",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Manager 1",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Manager Aftermarket",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Manager Clinical Research",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Manager, Cost Control Lead",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Scheduler II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project and Data Coordinator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Project Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Residency Coordinator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "SENIOR CLIENT DELIVERY LEAD",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "School Planning Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Product Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Product Manager, Technical",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sr. NPI Program Manager",
+          "employers": 1,
+          "filings": 1
+        }
+      ]
+    },
+    "onet_occupations": [
+      {
+        "soc_code": "13-1082.00",
+        "title": "Project Management Specialists",
+        "employers": 89,
+        "filings": 107
+      }
+    ],
+    "placement_model": {
+      "in_house": {
+        "employers": 85,
+        "filings": 103
+      },
+      "third_party_site": {
+        "employers": 4,
+        "filings": 4
+      }
+    },
+    "industry_naics2": [
+      {
+        "code": "54",
+        "label": "Professional, Scientific, and Technical Services",
+        "employers": 36,
+        "filings": 46
+      },
+      {
+        "code": "23",
+        "label": "Construction",
+        "employers": 14,
+        "filings": 15
+      },
+      {
+        "code": "33",
+        "label": "Manufacturing",
+        "employers": 9,
+        "filings": 9
+      },
+      {
+        "code": "61",
+        "label": "Educational Services",
+        "employers": 6,
+        "filings": 6
+      },
+      {
+        "code": "62",
+        "label": "Health Care and Social Assistance",
+        "employers": 5,
+        "filings": 5
+      },
+      {
+        "code": "81",
+        "label": "Other Services (except Public Administration)",
+        "employers": 4,
+        "filings": 4
+      },
+      {
+        "code": "56",
+        "label": "Administrative and Support and Waste Management and Remediation Services",
+        "employers": 3,
+        "filings": 3
+      }
+    ]
+  },
+  "caveats": [
+    "An LCA certification is not a hire or an open role.",
+    "OPT is not sponsorship — a new grad's first job is on OPT; sponsorship comes 1-3 years later.",
+    "Employer names are conservatively normalized and may under-merge.",
+    "Career/portfolio guidance, not immigration legal advice."
+  ],
+  "employers": [
+    {
+      "employer": "MROTECHNY",
+      "employer_display": "MROTECHNY LLC",
+      "filing_count": 2,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "NJ; NY",
+      "worksite_cities": "QUEENS; WOOD RIDGE",
+      "wage_annual_min": 79248,
+      "wage_annual_median": 79248,
+      "wage_annual_max": 79248
+    },
+    {
+      "employer": "AMAZON COM SERVICES",
+      "employer_display": "Amazon.com Services LLC",
+      "filing_count": 6,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "CA; TN; WA",
+      "worksite_cities": "Bellevue; Nashville; SUNNYVALE; Seattle",
+      "wage_annual_min": 60424,
+      "wage_annual_median": 85550,
+      "wage_annual_max": 112800
+    },
+    {
+      "employer": "STV INCORPORATED",
+      "employer_display": "STV Incorporated",
+      "filing_count": 5,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "MA; MD; TX",
+      "worksite_cities": "Boston; Dallas; Houston; Owings Mills",
+      "wage_annual_min": 67937,
+      "wage_annual_median": 78800,
+      "wage_annual_max": 87500
+    },
+    {
+      "employer": "STV CONSTRUCTION",
+      "employer_display": "STV Construction Inc.",
+      "filing_count": 3,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "IL; NY",
+      "worksite_cities": "Chicago; New York",
+      "wage_annual_min": 71982,
+      "wage_annual_median": 79248,
+      "wage_annual_max": 82265
+    },
+    {
+      "employer": "A P S ENGINEERING AND TESTING",
+      "employer_display": "A P S Engineering and Testing, LLC",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "LA",
+      "worksite_cities": "Baton Rouge",
+      "wage_annual_min": 57824,
+      "wage_annual_median": 57824,
+      "wage_annual_max": 57824
+    },
+    {
+      "employer": "AIO APP",
+      "employer_display": "AIO APP Inc.",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "CA",
+      "worksite_cities": "San Jose",
+      "wage_annual_min": 91832,
+      "wage_annual_median": 92394,
+      "wage_annual_max": 92955
+    },
+    {
+      "employer": "ATLAS ESSENTIALS USA",
+      "employer_display": "Atlas Essentials USA LLC",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "TX",
+      "worksite_cities": "Dallas",
+      "wage_annual_min": 62400,
+      "wage_annual_median": 62400,
+      "wage_annual_max": 62400
+    },
+    {
+      "employer": "DESIMONE BUILDERS",
+      "employer_display": "DeSimone Builders, LLC",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "NY",
+      "worksite_cities": "New York",
+      "wage_annual_min": 85000,
+      "wage_annual_median": 85000,
+      "wage_annual_max": 85000
+    },
+    {
+      "employer": "THE CLEAR FUND",
+      "employer_display": "The Clear Fund",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "NY",
+      "worksite_cities": "Brooklyn",
+      "wage_annual_min": 100000,
+      "wage_annual_median": 100000,
+      "wage_annual_max": 100000
+    },
+    {
+      "employer": "YANWEN EXPRESS",
+      "employer_display": "Yanwen Express LLC",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "CA",
+      "worksite_cities": "Montebello",
+      "wage_annual_min": 67974,
+      "wage_annual_median": 67974,
+      "wage_annual_max": 67974
+    },
+    {
+      "employer": "AECOM TECHNICAL SERVICES",
+      "employer_display": "AECOM Technical Services Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "NY",
+      "worksite_cities": "New York",
+      "wage_annual_min": 83000,
+      "wage_annual_median": 83000,
+      "wage_annual_max": 83000
+    },
+    {
+      "employer": "AGD DEVELOPERS",
+      "employer_display": "AGD Developers LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "FL",
+      "worksite_cities": "Miami",
+      "wage_annual_min": 65000,
+      "wage_annual_median": 65000,
+      "wage_annual_max": 65000
+    },
+    {
+      "employer": "AMCS GROUP",
+      "employer_display": "AMCS Group Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "TX",
+      "worksite_cities": "Austin",
+      "wage_annual_min": 95000,
+      "wage_annual_median": 95000,
+      "wage_annual_max": 95000
+    },
+    {
+      "employer": "AMERICAN HEALTH FORMULATIONS",
+      "employer_display": "American Health Formulations, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "NY",
+      "worksite_cities": "Hauppauge",
+      "wage_annual_min": 80000,
+      "wage_annual_median": 80000,
+      "wage_annual_max": 80000
+    },
+    {
+      "employer": "APN CONSTRUCTION",
+      "employer_display": "APN CONSTRUCTION CORP",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "NY",
+      "worksite_cities": "WOODSIDE",
+      "wage_annual_min": 79248,
+      "wage_annual_median": 79248,
+      "wage_annual_max": 79248
+    },
+    {
+      "employer": "ARCADIS U S",
+      "employer_display": "Arcadis U.S., Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "NJ",
+      "worksite_cities": "Harrison",
+      "wage_annual_min": 86778,
+      "wage_annual_median": 86778,
+      "wage_annual_max": 86778
+    },
+    {
+      "employer": "ATLAS ESSENTIALS",
+      "employer_display": "Atlas Essentials LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "TX",
+      "worksite_cities": "Dallas",
+      "wage_annual_min": 62400,
+      "wage_annual_median": 62400,
+      "wage_annual_max": 62400
+    },
+    {
+      "employer": "AUSTIN COMMUNITY COLLEGE",
+      "employer_display": "Austin Community College",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "TX",
+      "worksite_cities": "Austin",
+      "wage_annual_min": 67205,
+      "wage_annual_median": 67205,
+      "wage_annual_max": 67205
+    },
+    {
+      "employer": "BAY AREA COMMUNITY HEALTH",
+      "employer_display": "Bay Area Community Health",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "CA",
+      "worksite_cities": "Fremont",
+      "wage_annual_min": 99704,
+      "wage_annual_median": 99704,
+      "wage_annual_max": 99704
+    },
+    {
+      "employer": "BEACON HILL SOLUTIONS GROUP",
+      "employer_display": "Beacon Hill Solutions Group LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "CA",
+      "worksite_cities": "Santa Clara",
+      "wage_annual_min": 93600,
+      "wage_annual_median": 93600,
+      "wage_annual_max": 93600
+    },
+    {
+      "employer": "BICYCLE FILM FESTIVAL",
+      "employer_display": "Bicycle Film Festival",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "NY",
+      "worksite_cities": "New York",
+      "wage_annual_min": 83200,
+      "wage_annual_median": 83200,
+      "wage_annual_max": 83200
+    },
+    {
+      "employer": "BUILD HEALTH INTERNATIONAL",
+      "employer_display": "Build Health International, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "MA",
+      "worksite_cities": "Beverly",
+      "wage_annual_min": 75000,
+      "wage_annual_median": 75000,
+      "wage_annual_max": 75000
+    },
+    {
+      "employer": "CINCINNATI CHILDREN S HOSPITAL MEDICAL CENTER",
+      "employer_display": "Cincinnati Children's Hospital Medical Center",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "OH",
+      "worksite_cities": "Cincinnati",
+      "wage_annual_min": 62000,
+      "wage_annual_median": 62000,
+      "wage_annual_max": 62000
+    },
+    {
+      "employer": "CM ASSOCIATES CONSTRUCTION MANAGEMENT",
+      "employer_display": "CM & Associates Construction Management LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "NY",
+      "worksite_cities": "New York",
+      "wage_annual_min": 140000,
+      "wage_annual_median": 140000,
+      "wage_annual_max": 140000
+    },
+    {
+      "employer": "COLLEGE TRACK",
+      "employer_display": "College Track",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "CA",
+      "worksite_cities": "Oakland",
+      "wage_annual_min": 93500,
+      "wage_annual_median": 93500,
+      "wage_annual_max": 93500
+    },
+    {
+      "employer": "COMPUTER SOLUTIONS",
+      "employer_display": "Computer Solutions Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "WY",
+      "worksite_cities": "Casper",
+      "wage_annual_min": 114400,
+      "wage_annual_median": 114400,
+      "wage_annual_max": 114400
+    },
+    {
+      "employer": "CUMMING MANAGEMENT GROUP",
+      "employer_display": "Cumming Management Group, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "CA",
+      "worksite_cities": "San Jose",
+      "wage_annual_min": 135000,
+      "wage_annual_median": 135000,
+      "wage_annual_max": 135000
+    },
+    {
+      "employer": "DISTRICT OF COLUMBIA PUBLIC SCHOOLS",
+      "employer_display": "DISTRICT OF COLUMBIA PUBLIC SCHOOLS",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "DC",
+      "worksite_cities": "WASHINGTON",
+      "wage_annual_min": 85000,
+      "wage_annual_median": 85000,
+      "wage_annual_max": 85000
+    },
+    {
+      "employer": "DOREL JUVENILE GROUP",
+      "employer_display": "Dorel Juvenile Group, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "NY",
+      "worksite_cities": "Brooklyn",
+      "wage_annual_min": 104000,
+      "wage_annual_median": 104000,
+      "wage_annual_max": 104000
+    },
+    {
+      "employer": "DUAL FUEL COMPANY",
+      "employer_display": "DUAL FUEL COMPANY LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "NY",
+      "worksite_cities": "MOUNT VERNON",
+      "wage_annual_min": 79248,
+      "wage_annual_median": 79248,
+      "wage_annual_max": 79248
+    },
+    {
+      "employer": "EASTERN PACIFIC ENGINEERING AND CONSTRUCTION",
+      "employer_display": "Eastern Pacific Engineering and Construction, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "GU",
+      "worksite_cities": "Barrigada",
+      "wage_annual_min": 48000,
+      "wage_annual_median": 48000,
+      "wage_annual_max": 48000
+    },
+    {
+      "employer": "ECOSYSTEM ENERGY SERVICES USA",
+      "employer_display": "Ecosystem Energy Services USA Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "NY",
+      "worksite_cities": "NEW YORK",
+      "wage_annual_min": 80000,
+      "wage_annual_median": 80000,
+      "wage_annual_max": 80000
+    },
+    {
+      "employer": "ENGAGEWELL IPA",
+      "employer_display": "EngageWell IPA",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "NY",
+      "worksite_cities": "Brooklyn",
+      "wage_annual_min": 84000,
+      "wage_annual_median": 84000,
+      "wage_annual_max": 84000
+    },
+    {
+      "employer": "ETFASHION",
+      "employer_display": "ETFashion, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "MA",
+      "worksite_cities": "New Centre",
+      "wage_annual_min": 75566,
+      "wage_annual_median": 75566,
+      "wage_annual_max": 75566
+    },
+    {
+      "employer": "EVERSANA LIFE SCIENCE SERVICES",
+      "employer_display": "Eversana Life Science Services, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "MA",
+      "worksite_cities": "Lexington",
+      "wage_annual_min": 76000,
+      "wage_annual_median": 76000,
+      "wage_annual_max": 76000
+    },
+    {
+      "employer": "FELTEN GROUP",
+      "employer_display": "FELTEN GROUP, INC.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "AZ",
+      "worksite_cities": "Phoenix",
+      "wage_annual_min": 69500,
+      "wage_annual_median": 69500,
+      "wage_annual_max": 69500
+    },
+    {
+      "employer": "FERAG AMERICA",
+      "employer_display": "Ferag America, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "NJ",
+      "worksite_cities": "Somerset",
+      "wage_annual_min": 80000,
+      "wage_annual_median": 80000,
+      "wage_annual_max": 80000
+    },
+    {
+      "employer": "FIRST SOLAR",
+      "employer_display": "First Solar, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "OH",
+      "worksite_cities": "Perrysburg",
+      "wage_annual_min": 61000,
+      "wage_annual_median": 61000,
+      "wage_annual_max": 61000
+    },
+    {
+      "employer": "GBC REGION",
+      "employer_display": "GBC Region, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "MD",
+      "worksite_cities": "Baltimore",
+      "wage_annual_min": 100000,
+      "wage_annual_median": 100000,
+      "wage_annual_max": 100000
+    },
+    {
+      "employer": "INFORMA MARKETS MEDICA",
+      "employer_display": "Informa Markets Medica LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "NY",
+      "worksite_cities": "New York",
+      "wage_annual_min": 88400,
+      "wage_annual_median": 88400,
+      "wage_annual_max": 88400
+    },
+    {
+      "employer": "INTERNATIONAL GRADUATE STUDIES",
+      "employer_display": "International Graduate Studies Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "NY",
+      "worksite_cities": "Yorktown Heights",
+      "wage_annual_min": 93600,
+      "wage_annual_median": 93600,
+      "wage_annual_max": 93600
+    },
+    {
+      "employer": "IPAS",
+      "employer_display": "iPas. Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "NC",
+      "worksite_cities": "Carrboro",
+      "wage_annual_min": 92169,
+      "wage_annual_median": 92169,
+      "wage_annual_max": 92169
+    },
+    {
+      "employer": "JOAN CREATIVE",
+      "employer_display": "JOAN Creative Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "NY",
+      "worksite_cities": "New York",
+      "wage_annual_min": 100000,
+      "wage_annual_median": 100000,
+      "wage_annual_max": 100000
+    },
+    {
+      "employer": "KEY GLOBAL SYNERGIES",
+      "employer_display": "KEY GLOBAL SYNERGIES INC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "DC",
+      "worksite_cities": "WASHINGTON",
+      "wage_annual_min": 78600,
+      "wage_annual_median": 78600,
+      "wage_annual_max": 78600
+    },
+    {
+      "employer": "KRAKEN TECHNOLOGIES US",
+      "employer_display": "KRAKEN TECHNOLOGIES US, INC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "NY",
+      "worksite_cities": "New York",
+      "wage_annual_min": 79248,
+      "wage_annual_median": 79248,
+      "wage_annual_max": 79248
+    },
+    {
+      "employer": "LCC3 SOLUTION",
+      "employer_display": "LCC3 SOLUTION INC.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "OH",
+      "worksite_cities": "Washington Township",
+      "wage_annual_min": 66560,
+      "wage_annual_median": 66560,
+      "wage_annual_max": 66560
+    },
+    {
+      "employer": "LODGING SOLUTIONS",
+      "employer_display": "Lodging Solutions LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "NY",
+      "worksite_cities": "Melville",
+      "wage_annual_min": 79250,
+      "wage_annual_median": 79250,
+      "wage_annual_max": 79250
+    },
+    {
+      "employer": "LSW ENGINEERS ARIZONA",
+      "employer_display": "LSW Engineers Arizona, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "AZ",
+      "worksite_cities": "Phoenix",
+      "wage_annual_min": 70720,
+      "wage_annual_median": 70720,
+      "wage_annual_max": 70720
+    },
+    {
+      "employer": "M C DEAN",
+      "employer_display": "M.C. Dean, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "VA",
+      "worksite_cities": "Sterling",
+      "wage_annual_min": 88999,
+      "wage_annual_median": 88999,
+      "wage_annual_max": 88999
+    },
+    {
+      "employer": "MAAS ENERGY WORKS",
+      "employer_display": "Maas Energy Works, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "CA",
+      "worksite_cities": "Redding",
+      "wage_annual_min": 75000,
+      "wage_annual_median": 75000,
+      "wage_annual_max": 75000
+    },
+    {
+      "employer": "MCCARTHY BUILDING COMPANIES",
+      "employer_display": "McCarthy Building Companies, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "TX",
+      "worksite_cities": "Richardson",
+      "wage_annual_min": 95000,
+      "wage_annual_median": 95000,
+      "wage_annual_max": 95000
+    },
+    {
+      "employer": "NAVVIS COMPANY",
+      "employer_display": "Navvis & Company, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "NJ",
+      "worksite_cities": "Harrison",
+      "wage_annual_min": 87500,
+      "wage_annual_median": 87500,
+      "wage_annual_max": 87500
+    },
+    {
+      "employer": "OPEN PHILANTHROPY PROJECT",
+      "employer_display": "Open Philanthropy Project",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "CA",
+      "worksite_cities": "San Francisco",
+      "wage_annual_min": 83321,
+      "wage_annual_median": 83321,
+      "wage_annual_max": 83321
+    },
+    {
+      "employer": "OTEK GROUP",
+      "employer_display": "OTEK GROUP INC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "TX",
+      "worksite_cities": "BROOKSHIRE",
+      "wage_annual_min": 61464,
+      "wage_annual_median": 61464,
+      "wage_annual_max": 61464
+    },
+    {
+      "employer": "PENCIL ONE",
+      "employer_display": "PENCIL ONE INC.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "MA",
+      "worksite_cities": "HOLBROOK",
+      "wage_annual_min": 76960,
+      "wage_annual_median": 76960,
+      "wage_annual_max": 76960
+    },
+    {
+      "employer": "POWER MOBILE LIFE",
+      "employer_display": "Power Mobile Life, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "WA",
+      "worksite_cities": "Bellevue",
+      "wage_annual_min": 90000,
+      "wage_annual_median": 90000,
+      "wage_annual_max": 90000
+    },
+    {
+      "employer": "PRIME NOW",
+      "employer_display": "Prime Now LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "WA",
+      "worksite_cities": "Seattle",
+      "wage_annual_min": 78000,
+      "wage_annual_median": 78000,
+      "wage_annual_max": 78000
+    },
+    {
+      "employer": "PSM ELECTRICAL",
+      "employer_display": "PSM ELECTRICAL LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "SC",
+      "worksite_cities": "FLORENCE",
+      "wage_annual_min": 56035,
+      "wage_annual_median": 56035,
+      "wage_annual_max": 56035
+    },
+    {
+      "employer": "PULLMAN SST",
+      "employer_display": "Pullman SST Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "CA",
+      "worksite_cities": "Benecia",
+      "wage_annual_min": 90800,
+      "wage_annual_median": 90800,
+      "wage_annual_max": 90800
+    },
+    {
+      "employer": "QXO",
+      "employer_display": "QXO, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "WA",
+      "worksite_cities": "Seattle",
+      "wage_annual_min": 205000,
+      "wage_annual_median": 205000,
+      "wage_annual_max": 205000
+    },
+    {
+      "employer": "RESONANT ENERGY",
+      "employer_display": "Resonant Energy LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "MA",
+      "worksite_cities": "Boston",
+      "wage_annual_min": 79500,
+      "wage_annual_median": 79500,
+      "wage_annual_max": 79500
+    },
+    {
+      "employer": "RMSI NORTH AMERICA",
+      "employer_display": "RMSI North America Inc",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "CA",
+      "worksite_cities": "San Ramon",
+      "wage_annual_min": 87464,
+      "wage_annual_median": 87464,
+      "wage_annual_max": 87464
+    },
+    {
+      "employer": "ROCK SOLID PROJECT SOLUTIONS",
+      "employer_display": "ROCK SOLID PROJECT SOLUTIONS, INC.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "NV",
+      "worksite_cities": "LAS VEGAS",
+      "wage_annual_min": 77000,
+      "wage_annual_median": 77000,
+      "wage_annual_max": 77000
+    },
+    {
+      "employer": "ROCKSTAR AUTOMATIONS",
+      "employer_display": "Rockstar Automations Ltd",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "CA",
+      "worksite_cities": "Palo Alto",
+      "wage_annual_min": 103000,
+      "wage_annual_median": 103000,
+      "wage_annual_max": 103000
+    },
+    {
+      "employer": "SOUTHERN NEW JERSEY PERINATAL COOPERATIVE",
+      "employer_display": "Southern New Jersey Perinatal Cooperative",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "NJ",
+      "worksite_cities": "Pennsauken",
+      "wage_annual_min": 70000,
+      "wage_annual_median": 70000,
+      "wage_annual_max": 70000
+    },
+    {
+      "employer": "ST MARTIN AMERICA",
+      "employer_display": "St. Martin America, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "MD",
+      "worksite_cities": "Middle River",
+      "wage_annual_min": 70000,
+      "wage_annual_median": 70000,
+      "wage_annual_max": 70000
+    },
+    {
+      "employer": "STANTEC CONSULTING SERVICES",
+      "employer_display": "Stantec Consulting Services Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "OH",
+      "worksite_cities": "Blue Ash",
+      "wage_annual_min": 74006,
+      "wage_annual_median": 74006,
+      "wage_annual_max": 74006
+    },
+    {
+      "employer": "STRATEGIC SOLUTIONS GROUP",
+      "employer_display": "Strategic Solutions Group, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "CO",
+      "worksite_cities": "Denver",
+      "wage_annual_min": 90000,
+      "wage_annual_median": 90000,
+      "wage_annual_max": 90000
+    },
+    {
+      "employer": "SURACHI AND CO",
+      "employer_display": "Surachi and Co. Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "CA",
+      "worksite_cities": "Los Angeles",
+      "wage_annual_min": 85000,
+      "wage_annual_median": 85000,
+      "wage_annual_max": 85000
+    },
+    {
+      "employer": "THE NEMOURS FOUNDATION NEMOURS CHILDREN S HEALTH",
+      "employer_display": "The Nemours Foundation - Nemours Children's Health",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "FL",
+      "worksite_cities": "Orlando",
+      "wage_annual_min": 65811,
+      "wage_annual_median": 65811,
+      "wage_annual_max": 65811
+    },
+    {
+      "employer": "THE UNIVERSITY OF TENNESSEE HEALTH SCIENCE CENTER",
+      "employer_display": "The University of Tennessee Health Science Center",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "TN",
+      "worksite_cities": "Chattanooga",
+      "wage_annual_min": 49088,
+      "wage_annual_median": 49088,
+      "wage_annual_max": 49088
+    },
+    {
+      "employer": "TI CLINICAL TRIAL SERVICES",
+      "employer_display": "TI Clinical Trial Services LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "NY",
+      "worksite_cities": "New York",
+      "wage_annual_min": 89391,
+      "wage_annual_median": 89391,
+      "wage_annual_max": 89391
+    },
+    {
+      "employer": "TIMBERTON ENTERPRISES LLLP",
+      "employer_display": "TIMBERTON ENTERPRISES, LLLP",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "GA",
+      "worksite_cities": "Johns Creek",
+      "wage_annual_min": 66789,
+      "wage_annual_median": 66789,
+      "wage_annual_max": 66789
+    },
+    {
+      "employer": "TRANSPERFECT TRANSLATIONS INTERNATIONAL",
+      "employer_display": "TransPerfect Translations International, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "NY",
+      "worksite_cities": "New York",
+      "wage_annual_min": 89391,
+      "wage_annual_median": 89391,
+      "wage_annual_max": 89391
+    },
+    {
+      "employer": "TRIBECA CABINETRY MD",
+      "employer_display": "Tribeca Cabinetry MD Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "MD",
+      "worksite_cities": "Middle River",
+      "wage_annual_min": 75000,
+      "wage_annual_median": 75000,
+      "wage_annual_max": 75000
+    },
+    {
+      "employer": "TRONICOM",
+      "employer_display": "Tronicom Corp",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "MO",
+      "worksite_cities": "St. Louis",
+      "wage_annual_min": 68649,
+      "wage_annual_median": 68649,
+      "wage_annual_max": 68649
+    },
+    {
+      "employer": "TURNBERRY SOLUTIONS",
+      "employer_display": "Turnberry Solutions Inc",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "MN",
+      "worksite_cities": "Minneapolis",
+      "wage_annual_min": 93267,
+      "wage_annual_median": 93267,
+      "wage_annual_max": 93267
+    },
+    {
+      "employer": "TURNER CONSTRUCTION COMPANY",
+      "employer_display": "Turner Construction Company",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "IN",
+      "worksite_cities": "Indianapolis",
+      "wage_annual_min": 85847,
+      "wage_annual_median": 85847,
+      "wage_annual_max": 85847
+    },
+    {
+      "employer": "TVU NETWORKS CORPORATION",
+      "employer_display": "TVU Networks Corporation",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "CA",
+      "worksite_cities": "Cupertino",
+      "wage_annual_min": 110000,
+      "wage_annual_median": 110000,
+      "wage_annual_max": 110000
+    },
+    {
+      "employer": "UNIVERSITY OF NOTRE DAME DU LAC",
+      "employer_display": "University of Notre Dame du Lac",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "IN",
+      "worksite_cities": "South Bend",
+      "wage_annual_min": 61630,
+      "wage_annual_median": 61630,
+      "wage_annual_max": 61630
+    },
+    {
+      "employer": "UT SOUTHWESTERN MEDICAL CENTER",
+      "employer_display": "UT Southwestern Medical Center",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "TX",
+      "worksite_cities": "Dallas",
+      "wage_annual_min": 80098,
+      "wage_annual_median": 80098,
+      "wage_annual_max": 80098
+    },
+    {
+      "employer": "UTAH TURF PROS",
+      "employer_display": "Utah Turf Pros LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "UT",
+      "worksite_cities": "Provo",
+      "wage_annual_min": 50440,
+      "wage_annual_median": 50440,
+      "wage_annual_max": 50440
+    },
+    {
+      "employer": "VALENZ CONSTRUCTION",
+      "employer_display": "VALENZ CONSTRUCTION INC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "CA",
+      "worksite_cities": "Walnut Creek",
+      "wage_annual_min": 87464,
+      "wage_annual_median": 87464,
+      "wage_annual_max": 87464
+    },
+    {
+      "employer": "VOLVO GROUP NORTH AMERICA",
+      "employer_display": "VOLVO GROUP NORTH AMERICA, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "NC",
+      "worksite_cities": "Greensboro",
+      "wage_annual_min": 68700,
+      "wage_annual_median": 68700,
+      "wage_annual_max": 68700
+    },
+    {
+      "employer": "WILLDAN LIGHTING AND ELECTRIC",
+      "employer_display": "Willdan Lighting and Electric, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "NY",
+      "worksite_cities": "Maspeth",
+      "wage_annual_min": 79248,
+      "wage_annual_median": 79248,
+      "wage_annual_max": 79248
+    },
+    {
+      "employer": "XEBIA USA",
+      "employer_display": "Xebia USA Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "CO",
+      "worksite_cities": "Denver",
+      "wage_annual_min": 91936,
+      "wage_annual_median": 91936,
+      "wage_annual_max": 91936
+    },
+    {
+      "employer": "YAZAKI NORTH AMERICA",
+      "employer_display": "Yazaki North America Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "MI",
+      "worksite_cities": "Canton",
+      "wage_annual_min": 78000,
+      "wage_annual_median": 78000,
+      "wage_annual_max": 78000
+    },
+    {
+      "employer": "ZBEATS",
+      "employer_display": "ZBeats INC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "NY",
+      "worksite_cities": "Stony Brook",
+      "wage_annual_min": 79248,
+      "wage_annual_median": 79248,
+      "wage_annual_max": 79248
+    },
+    {
+      "employer": "ZT GROUP INT L",
+      "employer_display": "ZT Group Int'l, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1082",
+      "soc_titles": "Project Management Specialists",
+      "worksite_states": "NJ",
+      "worksite_cities": "Secaucus",
+      "wage_annual_min": 79248,
+      "wage_annual_median": 79248,
+      "wage_annual_max": 79248
+    }
+  ]
+}

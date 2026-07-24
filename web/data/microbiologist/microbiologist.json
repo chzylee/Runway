@@ -1,0 +1,673 @@
+{
+  "role": "microbiologist",
+  "generated_at_utc": "2026-07-24 06:20 UTC",
+  "source": "US DOL OFLC LCA Programs disclosure data (public record)",
+  "filters": {
+    "case_status": "Certified",
+    "soc_codes": [
+      "19-1022"
+    ],
+    "pw_wage_level": "I"
+  },
+  "quarters_used": [
+    "FY2025Q4",
+    "FY2026Q1"
+  ],
+  "quarters_superseded": {},
+  "funnel": {
+    "rows_total": 201700,
+    "rows_certified": 181277,
+    "rows_soc_matched": 123,
+    "rows_selected": 36
+  },
+  "employer_groups": 31,
+  "rows_wage_excluded_from_wage_stats": 0,
+  "patterns": {
+    "basis": {
+      "filings": 36,
+      "employers": 31,
+      "measured_by": "employers",
+      "min_support_employers": 3
+    },
+    "job_titles": {
+      "recurring_tokens": [
+        {
+          "token": "postdoctoral",
+          "employers": 17,
+          "filings": 18
+        },
+        {
+          "token": "research",
+          "employers": 15,
+          "filings": 16
+        },
+        {
+          "token": "fellow",
+          "employers": 8,
+          "filings": 8
+        },
+        {
+          "token": "scientist",
+          "employers": 7,
+          "filings": 8
+        },
+        {
+          "token": "associate",
+          "employers": 5,
+          "filings": 7
+        },
+        {
+          "token": "scholar",
+          "employers": 4,
+          "filings": 5
+        },
+        {
+          "token": "assistant",
+          "employers": 3,
+          "filings": 3
+        }
+      ],
+      "distinct_titles": [
+        {
+          "title": "Postdoctoral Fellow",
+          "employers": 6,
+          "filings": 6
+        },
+        {
+          "title": "Postdoctoral Scholar",
+          "employers": 3,
+          "filings": 4
+        },
+        {
+          "title": "Research Scientist",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "Post-Doctoral Associate",
+          "employers": 2,
+          "filings": 3
+        },
+        {
+          "title": "Postdoctoral Research Associate",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Postdoctoral Researcher",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Research Assistant Professor",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Basic Life Research Scientist",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Assistant Research Scientist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Bioanalyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Laboratory Scientist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Microbiologist II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Research Associate in MMI",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Research Fellow",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Research Scholar",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "RESEARCH INTERN",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Fellow in Microbiology",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Lab Supervisor",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Scientist I",
+          "employers": 1,
+          "filings": 1
+        }
+      ]
+    },
+    "onet_occupations": [
+      {
+        "soc_code": "19-1022.00",
+        "title": "Microbiologists",
+        "employers": 31,
+        "filings": 36
+      }
+    ],
+    "placement_model": {
+      "in_house": {
+        "employers": 31,
+        "filings": 36
+      },
+      "third_party_site": {
+        "employers": 0,
+        "filings": 0
+      }
+    },
+    "industry_naics2": [
+      {
+        "code": "61",
+        "label": "Educational Services",
+        "employers": 28,
+        "filings": 33
+      }
+    ]
+  },
+  "caveats": [
+    "An LCA certification is not a hire or an open role.",
+    "OPT is not sponsorship — a new grad's first job is on OPT; sponsorship comes 1-3 years later.",
+    "Employer names are conservatively normalized and may under-merge.",
+    "Career/portfolio guidance, not immigration legal advice."
+  ],
+  "employers": [
+    {
+      "employer": "THE UNIVERSITY OF CHICAGO",
+      "employer_display": "The University of Chicago",
+      "filing_count": 2,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "19-1022",
+      "soc_titles": "Microbiologists",
+      "worksite_states": "IL",
+      "worksite_cities": "Chicago; Chicagoi",
+      "wage_annual_min": 61008,
+      "wage_annual_median": 61620,
+      "wage_annual_max": 62232
+    },
+    {
+      "employer": "UNIVERSITY OF MARYLAND COLLEGE PARK",
+      "employer_display": "University of Maryland College Park",
+      "filing_count": 2,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "19-1022",
+      "soc_titles": "Microbiologists",
+      "worksite_states": "MD",
+      "worksite_cities": "College Park",
+      "wage_annual_min": 58710,
+      "wage_annual_median": 60855,
+      "wage_annual_max": 63000
+    },
+    {
+      "employer": "UNIVERSITY OF WISCONSIN SYSTEM",
+      "employer_display": "University of Wisconsin System",
+      "filing_count": 2,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "19-1022",
+      "soc_titles": "Microbiologists",
+      "worksite_states": "WI",
+      "worksite_cities": "MADISON",
+      "wage_annual_min": 50045,
+      "wage_annual_median": 56540,
+      "wage_annual_max": 63036
+    },
+    {
+      "employer": "THE LELAND STANFORD JR UNIVERSITY",
+      "employer_display": "The Leland Stanford, Jr University",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-1022",
+      "soc_titles": "Microbiologists",
+      "worksite_states": "CA",
+      "worksite_cities": "Stanford",
+      "wage_annual_min": 81000,
+      "wage_annual_median": 82500,
+      "wage_annual_max": 84000
+    },
+    {
+      "employer": "UNIVERSITY OF MINNESOTA",
+      "employer_display": "University of Minnesota",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-1022",
+      "soc_titles": "Microbiologists",
+      "worksite_states": "MN",
+      "worksite_cities": "Minneapolis; Saint Paul",
+      "wage_annual_min": 61008,
+      "wage_annual_median": 64986,
+      "wage_annual_max": 68964
+    },
+    {
+      "employer": "AGROWTH",
+      "employer_display": "Agrowth",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-1022",
+      "soc_titles": "Microbiologists",
+      "worksite_states": "CA",
+      "worksite_cities": "San Leandro",
+      "wage_annual_min": 91104,
+      "wage_annual_median": 91104,
+      "wage_annual_max": 91104
+    },
+    {
+      "employer": "ALBERT EINSTEIN COLLEGE OF MEDICINE",
+      "employer_display": "Albert Einstein College of Medicine",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-1022",
+      "soc_titles": "Microbiologists",
+      "worksite_states": "NY",
+      "worksite_cities": "Bronx",
+      "wage_annual_min": 85000,
+      "wage_annual_median": 85000,
+      "wage_annual_max": 85000
+    },
+    {
+      "employer": "ARIZONA STATE UNIVERSITY",
+      "employer_display": "Arizona State University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-1022",
+      "soc_titles": "Microbiologists",
+      "worksite_states": "AZ",
+      "worksite_cities": "Tempe",
+      "wage_annual_min": 63120,
+      "wage_annual_median": 63120,
+      "wage_annual_max": 63120
+    },
+    {
+      "employer": "BROWN UNIVERSITY",
+      "employer_display": "Brown University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-1022",
+      "soc_titles": "Microbiologists",
+      "worksite_states": "RI",
+      "worksite_cities": "Providence",
+      "wage_annual_min": 61008,
+      "wage_annual_median": 61008,
+      "wage_annual_max": 61008
+    },
+    {
+      "employer": "CLEMSON UNIVERSITY",
+      "employer_display": "Clemson University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-1022",
+      "soc_titles": "Microbiologists",
+      "worksite_states": "SC",
+      "worksite_cities": "Clemson",
+      "wage_annual_min": 58840,
+      "wage_annual_median": 58840,
+      "wage_annual_max": 58840
+    },
+    {
+      "employer": "EAST CAROLINA UNIVERSITY",
+      "employer_display": "East Carolina University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-1022",
+      "soc_titles": "Microbiologists",
+      "worksite_states": "NC",
+      "worksite_cities": "Greenville",
+      "wage_annual_min": 63120,
+      "wage_annual_median": 63120,
+      "wage_annual_max": 63120
+    },
+    {
+      "employer": "EMORY UNIVERSITY",
+      "employer_display": "Emory University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-1022",
+      "soc_titles": "Microbiologists",
+      "worksite_states": "GA",
+      "worksite_cities": "Atlanta",
+      "wage_annual_min": 62000,
+      "wage_annual_median": 62000,
+      "wage_annual_max": 62000
+    },
+    {
+      "employer": "GEORGIA STATE UNIVERSITY",
+      "employer_display": "Georgia State University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-1022",
+      "soc_titles": "Microbiologists",
+      "worksite_states": "GA",
+      "worksite_cities": "Atlanta",
+      "wage_annual_min": 61584,
+      "wage_annual_median": 61584,
+      "wage_annual_max": 61584
+    },
+    {
+      "employer": "HARVARD UNIVERSITY",
+      "employer_display": "Harvard University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-1022",
+      "soc_titles": "Microbiologists",
+      "worksite_states": "MA",
+      "worksite_cities": "Boston",
+      "wage_annual_min": 77500,
+      "wage_annual_median": 77500,
+      "wage_annual_max": 77500
+    },
+    {
+      "employer": "JOHNS HOPKINS UNIVERSITY",
+      "employer_display": "Johns Hopkins University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-1022",
+      "soc_titles": "Microbiologists",
+      "worksite_states": "MD",
+      "worksite_cities": "Baltimore",
+      "wage_annual_min": 77075,
+      "wage_annual_median": 77075,
+      "wage_annual_max": 77075
+    },
+    {
+      "employer": "LONG ISLAND UNIVERSITY",
+      "employer_display": "Long Island University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-1022",
+      "soc_titles": "Microbiologists",
+      "worksite_states": "NY",
+      "worksite_cities": "Brookville",
+      "wage_annual_min": 52915,
+      "wage_annual_median": 52915,
+      "wage_annual_max": 52915
+    },
+    {
+      "employer": "LOUISIANA STATE UNIVERSITY AND A M COLLEGE",
+      "employer_display": "Louisiana State University and A&M College",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-1022",
+      "soc_titles": "Microbiologists",
+      "worksite_states": "LA",
+      "worksite_cities": "Baton Rouge",
+      "wage_annual_min": 65000,
+      "wage_annual_median": 65000,
+      "wage_annual_max": 65000
+    },
+    {
+      "employer": "MASSACHUSETTS INSTITUTE OF TECHNOLOGY",
+      "employer_display": "Massachusetts Institute of Technology",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-1022",
+      "soc_titles": "Microbiologists",
+      "worksite_states": "MA",
+      "worksite_cities": "Cambridge",
+      "wage_annual_min": 78290,
+      "wage_annual_median": 78290,
+      "wage_annual_max": 78290
+    },
+    {
+      "employer": "SGS NORTH AMERICA",
+      "employer_display": "SGS NORTH AMERICA, INC.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-1022",
+      "soc_titles": "Microbiologists",
+      "worksite_states": "NJ",
+      "worksite_cities": "Fairfield",
+      "wage_annual_min": 63378,
+      "wage_annual_median": 63378,
+      "wage_annual_max": 63378
+    },
+    {
+      "employer": "TEAM YOUNG",
+      "employer_display": "TEAM YOUNG INC.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-1022",
+      "soc_titles": "Microbiologists",
+      "worksite_states": "CA",
+      "worksite_cities": "Baldwin Park",
+      "wage_annual_min": 79622,
+      "wage_annual_median": 79622,
+      "wage_annual_max": 79622
+    },
+    {
+      "employer": "TEXAS A M UNIVERSITY",
+      "employer_display": "Texas A&M University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-1022",
+      "soc_titles": "Microbiologists",
+      "worksite_states": "TX",
+      "worksite_cities": "Bryan",
+      "wage_annual_min": 58000,
+      "wage_annual_median": 58000,
+      "wage_annual_max": 58000
+    },
+    {
+      "employer": "THE CURATORS OF THE UNIVERSITY OF MISSOURI",
+      "employer_display": "The Curators of the University of Missouri",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-1022",
+      "soc_titles": "Microbiologists",
+      "worksite_states": "MO",
+      "worksite_cities": "Columbia",
+      "wage_annual_min": 55000,
+      "wage_annual_median": 55000,
+      "wage_annual_max": 55000
+    },
+    {
+      "employer": "THE PENNSYLVANIA STATE UNIVERSITY",
+      "employer_display": "The Pennsylvania State University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-1022",
+      "soc_titles": "Microbiologists",
+      "worksite_states": "PA",
+      "worksite_cities": "University Park",
+      "wage_annual_min": 61008,
+      "wage_annual_median": 61008,
+      "wage_annual_max": 61008
+    },
+    {
+      "employer": "THE UNIVERSITY OF IOWA",
+      "employer_display": "The University of Iowa",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-1022",
+      "soc_titles": "Microbiologists",
+      "worksite_states": "IA",
+      "worksite_cities": "Iowa City",
+      "wage_annual_min": 70344,
+      "wage_annual_median": 70344,
+      "wage_annual_max": 70344
+    },
+    {
+      "employer": "TRUSTEES OF THE UNIVERSITY OF PENNSYLVANIA",
+      "employer_display": "TRUSTEES OF THE UNIVERSITY OF PENNSYLVANIA",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-1022",
+      "soc_titles": "Microbiologists",
+      "worksite_states": "PA",
+      "worksite_cities": "Philadelphia",
+      "wage_annual_min": 68814,
+      "wage_annual_median": 68814,
+      "wage_annual_max": 68814
+    },
+    {
+      "employer": "UNIVERSITY OF ARKANSAS FOR MEDICAL SCIENCES",
+      "employer_display": "University of Arkansas for Medical Sciences",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-1022",
+      "soc_titles": "Microbiologists",
+      "worksite_states": "AR",
+      "worksite_cities": "Little Rock",
+      "wage_annual_min": 61428,
+      "wage_annual_median": 61428,
+      "wage_annual_max": 61428
+    },
+    {
+      "employer": "UNIVERSITY OF LOUISVILLE",
+      "employer_display": "University of Louisville",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-1022",
+      "soc_titles": "Microbiologists",
+      "worksite_states": "KY",
+      "worksite_cities": "Louisville",
+      "wage_annual_min": 61800,
+      "wage_annual_median": 61800,
+      "wage_annual_max": 61800
+    },
+    {
+      "employer": "UNIVERSITY OF MARYLAND BALTIMORE",
+      "employer_display": "University of Maryland Baltimore",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-1022",
+      "soc_titles": "Microbiologists",
+      "worksite_states": "MD",
+      "worksite_cities": "Baltimore",
+      "wage_annual_min": 70344,
+      "wage_annual_median": 70344,
+      "wage_annual_max": 70344
+    },
+    {
+      "employer": "UNIVERSITY OF TEXAS MEDICAL BRANCH",
+      "employer_display": "University of Texas Medical Branch",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-1022",
+      "soc_titles": "Microbiologists",
+      "worksite_states": "TX",
+      "worksite_cities": "Galveston",
+      "wage_annual_min": 68964,
+      "wage_annual_median": 68964,
+      "wage_annual_max": 68964
+    },
+    {
+      "employer": "UNIVERSITY OF WISCONSIN MILWAUKEE",
+      "employer_display": "University of Wisconsin-Milwaukee",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-1022",
+      "soc_titles": "Microbiologists",
+      "worksite_states": "WI",
+      "worksite_cities": "Milwaukee",
+      "wage_annual_min": 72500,
+      "wage_annual_median": 72500,
+      "wage_annual_max": 72500
+    },
+    {
+      "employer": "WASHINGTON UNIVERSITY",
+      "employer_display": "Washington University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-1022",
+      "soc_titles": "Microbiologists",
+      "worksite_states": "MO",
+      "worksite_cities": "St Louis",
+      "wage_annual_min": 56700,
+      "wage_annual_median": 56700,
+      "wage_annual_max": 56700
+    }
+  ]
+}

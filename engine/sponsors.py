@@ -62,6 +62,47 @@ ROLE_SOC = {
     # "Consultant" titles that are actually computer occupations, mirroring
     # "design"'s multi-code bundle rather than one omnibus "consultant" role.
     "consultant_tech": ["15-1252", "15-1299", "15-1211"],
+
+    # Software & IT
+    "qa_engineer": ["15-1253"],
+    "network_administrator": ["15-1244"],
+    "information_security_analyst": ["15-1212"],
+    "computer_network_architect": ["15-1241"],
+    "web_developer": ["15-1254"],
+    "applied_scientist": ["15-1221"],
+    # Bundled like "design": one field spanning several codes. Database Architects
+    # (15-1243) is deliberately out - "Data Engineer" filings arrive via 15-2051.
+    "data": ["15-2051", "15-2031", "15-2041"],
+    # Engineering
+    "mechanical_engineer": ["17-2141"],
+    "civil_engineer": ["17-2051"],
+    "industrial_engineer": ["17-2112"],
+    "electrical_engineer": ["17-2071"],
+    "mechatronics_robotics_engineer": ["17-2199"],
+    "electronics_engineer": ["17-2072"],
+    "chemical_engineer": ["17-2041"],
+    "environmental_engineer": ["17-2081"],
+    "materials_engineer": ["17-2131"],
+    "aerospace_engineer": ["17-2011"],
+    # Architecture: buildings (17-1011), a different SOC family from the design roles.
+    "architect": ["17-1011"],
+    # Finance & Accounting
+    "accountant": ["13-2011"],
+    "financial_analyst": ["13-2051"],
+    "financial_quantitative_analyst": ["13-2099"],
+    "budget_analyst": ["13-2031"],
+    # Business / Marketing / Ops
+    "marketing_specialist": ["13-1161"],
+    "project_management_specialist": ["13-1082"],
+    "logistics": ["13-1081"],
+    "business_operations_specialist": ["13-1199"],
+    "human_resources_specialist": ["13-1071"],
+    "actuary": ["15-2011"],
+    # Sciences
+    "chemist": ["19-2031"],
+    "physicist": ["19-2012"],
+    "economist": ["19-3011"],
+    "microbiologist": ["19-1022"],
 }
 
 # Annualization multipliers for WAGE_UNIT_OF_PAY. A unit outside this map

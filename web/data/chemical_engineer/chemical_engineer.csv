@@ -1,0 +1,44 @@
+employer,employer_display,filing_count,quarters_present,quarters,repeat_sponsor,soc_codes,soc_titles,worksite_states,worksite_cities,wage_annual_min,wage_annual_median,wage_annual_max
+NORTH CAROLINA STATE UNIVERSITY,North Carolina State University,4,2,FY2025Q4; FY2026Q1,yes,17-2041,Chemical Engineers,NC,Raleigh,59904,60500,64000
+UNIVERSITY OF MICHIGAN,University of Michigan,4,2,FY2025Q4; FY2026Q1,yes,17-2041,Chemical Engineers,MI,Ann Arbor,62232,62617,65000
+MASSACHUSETTS INSTITUTE OF TECHNOLOGY,Massachusetts Institute of Technology,3,2,FY2025Q4; FY2026Q1,yes,17-2041,Chemical Engineers,MA,Cambridge,71000,74000,75000
+RENSSELAER POLYTECHNIC INSTITUTE,Rensselaer Polytechnic Institute,3,2,FY2025Q4; FY2026Q1,yes,17-2041,Chemical Engineers,NY,Troy,58656,62500,63000
+BATTELLE MEMORIAL INSTITUTE,Battelle Memorial Institute,4,1,FY2025Q4,no,17-2041,Chemical Engineers,WA,Richland,66144,95596,98915
+SMITH BURGESS,Smith & Burgess LLC,2,1,FY2025Q4,no,17-2041,Chemical Engineers,TX,Houston,109699,109699,109699
+TECHEVON,TECHEVON LLC.,2,1,FY2025Q4,no,17-2041,Chemical Engineers,IL,CHICAGO; ELK GROVE VILLAGE,80000,80000,80000
+THE TRUSTEES OF PRINCETON UNIVERSITY,The Trustees of Princeton University,2,1,FY2025Q4,no,17-2041,Chemical Engineers,NJ,PRINCETON; Princeton,65000,67500,70000
+AZUL 3D,"Azul 3D, Inc",1,1,FY2025Q4,no,17-2041,Chemical Engineers,DC,WASHINGTON,100000,100000,100000
+BLACK VEATCH CORPORATION,Black & Veatch Corporation,1,1,FY2026Q1,no,17-2041,Chemical Engineers,FL,Tampa,71448,71448,71448
+BP AMERICA,BP America Inc.,1,1,FY2025Q4,no,17-2041,Chemical Engineers,IL,Chicago,108243,108243,108243
+BROWN UNIVERSITY,Brown University,1,1,FY2025Q4,no,17-2041,Chemical Engineers,RI,Providence,64356,64356,64356
+CAMBREX CHARLES CITY,"Cambrex Charles City, Inc.",1,1,FY2026Q1,no,17-2041,Chemical Engineers,IA,Charles City,82514,82514,82514
+CARNEGIE MELLON UNIVERSITY,Carnegie Mellon University,1,1,FY2025Q4,no,17-2041,Chemical Engineers,PA,Pittsburgh,78100,78100,78100
+ENVISION ENERGY USA,ENVISION ENERGY USA LTD.,1,1,FY2026Q1,no,17-2041,Chemical Engineers,MA,Burlington,89440,89440,89440
+GEORGIA INSTITUTE OF TECHNOLOGY,Georgia Institute of Technology,1,1,FY2025Q4,no,17-2041,Chemical Engineers,GA,Atlanta,58656,58656,58656
+GLAXOSMITHKLINE,GlaxoSmithKline LLC,1,1,FY2025Q4,no,17-2041,Chemical Engineers,PA,Collegeville,110250,110250,110250
+GMP ENGINEERING,GMP Engineering Inc.,1,1,FY2025Q4,no,17-2041,Chemical Engineers,NJ,Rahway,83200,83200,83200
+IMPACT DISPLAYS GROUP,"Impact Displays Group, LLC",1,1,FY2025Q4,no,17-2041,Chemical Engineers,NJ,Carlstadt,94286,94286,94286
+INNOVATION LABS,Innovation Labs Inc.,1,1,FY2026Q1,no,17-2041,Chemical Engineers,NJ,Mahwah,90000,90000,90000
+KLA CORPORATION,KLA Corporation,1,1,FY2026Q1,no,17-2041,Chemical Engineers,CA,Milpitas,115000,115000,115000
+KNIGHT MATERIAL TECHNOLOGIES,Knight Material Technologies LLC,1,1,FY2025Q4,no,17-2041,Chemical Engineers,TX,Humble,130000,130000,130000
+MGC PURE CHEMICALS AMERICA,"MGC Pure Chemicals America, Inc.",1,1,FY2025Q4,no,17-2041,Chemical Engineers,TX,Killeen,177902400,177902400,177902400
+MICHIGAN TECHNOLOGICAL UNIVERSITY,Michigan Technological University,1,1,FY2025Q4,no,17-2041,Chemical Engineers,MI,Houghton,62000,62000,62000
+MINUTRI,Minutri Inc.,1,1,FY2025Q4,no,17-2041,Chemical Engineers,WA,Seattle,84885,84885,84885
+MODERNATX,"ModernaTX, Inc.",1,1,FY2025Q4,no,17-2041,Chemical Engineers,MA,Norwood,87048,87048,87048
+OKLAHOMA STATE UNIVERSITY,Oklahoma State University,1,1,FY2025Q4,no,17-2041,Chemical Engineers,OK,Stillwater,51792,51792,51792
+PROCEDYNE,Procedyne Corp.,1,1,FY2026Q1,no,17-2041,Chemical Engineers,NJ,New Brunswick,83000,83000,83000
+PURDUE UNIVERSITY,Purdue University,1,1,FY2025Q4,no,17-2041,Chemical Engineers,IN,West Lafayette,68000,68000,68000
+RESEARCH FOUNDATION FOR THE STATE UNIVERSITY OF NEW YORK,Research Foundation for the State University of New York,1,1,FY2025Q4,no,17-2041,Chemical Engineers,NY,Stony Brook,55411,55411,55411
+SCHLUMBERGER TECHNOLOGY CORPORATION,Schlumberger Technology Corporation,1,1,FY2026Q1,no,17-2041,Chemical Engineers,TX,Sugar Land,123630,123630,123630
+STANTEC CONSULTING SERVICES,Stantec Consulting Services Inc.,1,1,FY2025Q4,no,17-2041,Chemical Engineers,TX,Plano,95014,95014,95014
+TEXAS A M ENGINEERING EXPERIMENT STATION,Texas A&M Engineering Experiment Station,1,1,FY2026Q1,no,17-2041,Chemical Engineers,CA,Fremont,51792,51792,51792
+THE FLORIDA STATE UNIVERSITY,The Florida State University,1,1,FY2025Q4,no,17-2041,Chemical Engineers,FL,Tallahassee,52575,52575,52575
+TRINITY CONSULTANTS,"Trinity Consultants, Inc.",1,1,FY2025Q4,no,17-2041,Chemical Engineers,PA,Exton,95819,95819,95819
+UNIVERSITY OF ARKANSAS,University of Arkansas,1,1,FY2025Q4,no,17-2041,Chemical Engineers,AR,Fayetteville,52000,52000,52000
+UNIVERSITY OF MARYLAND COLLEGE PARK,University of Maryland College Park,1,1,FY2026Q1,no,17-2041,Chemical Engineers,MD,College Park,55448,55448,55448
+UNIVERSITY OF NOTRE DAME DU LAC,University of Notre Dame du Lac,1,1,FY2025Q4,no,17-2041,Chemical Engineers,IN,Notre Dame,63120,63120,63120
+VERTEX PHARMACEUTICALS INCORPORATED,Vertex Pharmaceuticals Incorporated,1,1,FY2025Q4,no,17-2041,Chemical Engineers,MA,Boston,88483,88483,88483
+VIKING ENGINEERING LC,"Viking Engineering, LC",1,1,FY2025Q4,no,17-2041,Chemical Engineers,TX,Houston,121326,121326,121326
+WASHINGTON STATE UNIVERSITY,Washington State University,1,1,FY2025Q4,no,17-2041,Chemical Engineers,WA,Pullman,69079,69079,69079
+WASHINGTON UNIVERSITY,Washington University,1,1,FY2026Q1,no,17-2041,Chemical Engineers,MO,St Louis,63120,63120,63120
+YJ BIOPRODUCTS,"YJ BIOPRODUCTS, INC.",1,1,FY2025Q4,no,17-2041,Chemical Engineers,CA,Rancho Cordova,90000,90000,90000

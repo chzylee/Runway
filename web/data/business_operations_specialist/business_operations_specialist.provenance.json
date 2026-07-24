@@ -1,0 +1,413 @@
+{
+  "generated_at_utc": "2026-07-24 06:20 UTC",
+  "source": "US DOL OFLC LCA Programs disclosure data (public record)",
+  "filters": {
+    "case_status": "Certified",
+    "role": "business_operations_specialist",
+    "soc_codes": [
+      "13-1199"
+    ],
+    "pw_wage_level": "I"
+  },
+  "quarters_used": [
+    "FY2025Q4",
+    "FY2026Q1"
+  ],
+  "quarters_superseded": {},
+  "rows_per_quarter": {
+    "FY2025Q4": 118580,
+    "FY2026Q1": 83120
+  },
+  "funnel": {
+    "rows_total": 201700,
+    "rows_certified": 181277,
+    "rows_soc_matched": 215,
+    "rows_selected": 54
+  },
+  "employer_groups": 51,
+  "distinct_raw_employer_spellings": 52,
+  "rows_wage_excluded_from_wage_stats": 0,
+  "case_statuses_seen": {
+    "CERTIFIED": 181277,
+    "CERTIFIED - WITHDRAWN": 15748,
+    "WITHDRAWN": 3242,
+    "DENIED": 1433
+  },
+  "wage_levels_seen": {
+    "II": 79,
+    "I": 54,
+    "III": 44,
+    "IV": 36,
+    "": 2
+  },
+  "wage_units_seen": {
+    "YEAR": 41,
+    "HOUR": 10,
+    "MONTH": 3
+  },
+  "patterns": {
+    "basis": {
+      "filings": 54,
+      "employers": 51,
+      "measured_by": "employers",
+      "min_support_employers": 3
+    },
+    "job_titles": {
+      "recurring_tokens": [
+        {
+          "token": "specialist",
+          "employers": 18,
+          "filings": 21
+        },
+        {
+          "token": "operations",
+          "employers": 18,
+          "filings": 20
+        },
+        {
+          "token": "business",
+          "employers": 17,
+          "filings": 18
+        },
+        {
+          "token": "analyst",
+          "employers": 5,
+          "filings": 5
+        },
+        {
+          "token": "associate",
+          "employers": 5,
+          "filings": 5
+        },
+        {
+          "token": "coordinator",
+          "employers": 5,
+          "filings": 5
+        },
+        {
+          "token": "manager",
+          "employers": 5,
+          "filings": 5
+        },
+        {
+          "token": "development",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "administrator",
+          "employers": 3,
+          "filings": 3
+        }
+      ],
+      "distinct_titles": [
+        {
+          "title": "Business Operations Specialist",
+          "employers": 6,
+          "filings": 7
+        },
+        {
+          "title": "Associate",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Business Manager",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Operations Associate",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Station Operations Specialist",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Account Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "BUSINESS ADMINISTRATOR",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "BUSINESS CONSULTANT (OPERATIONS, EDUCATION & MARKETING)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Continuity Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Data Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Development Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Development Officer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Development Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Operations Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Operations Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Catalog Operations Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Commercial Operation Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Culinary Operations Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Customer Service Team Lead (US)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Director",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Dispatcher Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Energy Analyst & Project Coordinator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Energy Modeling Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "External Affairs & Strategic Outreach Coordinator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Growth Generalist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Human Resources Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Inside Sales Team Lead",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "International Operations Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Managing Director of Rules & Competitions",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Motion Graphics Coordinator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Online marketing specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Operation Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Operations Design Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Operations Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Operations and Systems Coordinator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Management Specialists",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Projects Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Quality Control Administrator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Services Administrator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Resource Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sales Development Representative",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Consultant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sustainability Coordinator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sustainability Designer",
+          "employers": 1,
+          "filings": 1
+        }
+      ]
+    },
+    "onet_occupations": [
+      {
+        "soc_code": "13-1199.00",
+        "title": "Business Operations Specialists, All Other",
+        "employers": 41,
+        "filings": 44
+      },
+      {
+        "soc_code": "13-1199.05",
+        "title": "Sustainability Specialists",
+        "employers": 6,
+        "filings": 6
+      },
+      {
+        "soc_code": "13-1199.04",
+        "title": "Business Continuity Planners",
+        "employers": 4,
+        "filings": 4
+      }
+    ],
+    "placement_model": {
+      "in_house": {
+        "employers": 50,
+        "filings": 53
+      },
+      "third_party_site": {
+        "employers": 1,
+        "filings": 1
+      }
+    },
+    "industry_naics2": [
+      {
+        "code": "54",
+        "label": "Professional, Scientific, and Technical Services",
+        "employers": 15,
+        "filings": 17
+      },
+      {
+        "code": "42",
+        "label": "Wholesale Trade",
+        "employers": 5,
+        "filings": 5
+      },
+      {
+        "code": "61",
+        "label": "Educational Services",
+        "employers": 4,
+        "filings": 4
+      },
+      {
+        "code": "81",
+        "label": "Other Services (except Public Administration)",
+        "employers": 4,
+        "filings": 4
+      },
+      {
+        "code": "23",
+        "label": "Construction",
+        "employers": 3,
+        "filings": 3
+      },
+      {
+        "code": "51",
+        "label": "Information",
+        "employers": 3,
+        "filings": 3
+      },
+      {
+        "code": "56",
+        "label": "Administrative and Support and Waste Management and Remediation Services",
+        "employers": 3,
+        "filings": 3
+      },
+      {
+        "code": "62",
+        "label": "Health Care and Social Assistance",
+        "employers": 3,
+        "filings": 3
+      }
+    ]
+  },
+  "caveats": [
+    "An LCA certification is not a hire or an open role.",
+    "OPT is not sponsorship — a new grad's first job is on OPT; sponsorship comes 1-3 years later.",
+    "Employer names are conservatively normalized and may under-merge.",
+    "Career/portfolio guidance, not immigration legal advice."
+  ]
+}

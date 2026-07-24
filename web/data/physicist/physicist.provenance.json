@@ -1,0 +1,596 @@
+{
+  "generated_at_utc": "2026-07-24 06:20 UTC",
+  "source": "US DOL OFLC LCA Programs disclosure data (public record)",
+  "filters": {
+    "case_status": "Certified",
+    "role": "physicist",
+    "soc_codes": [
+      "19-2012"
+    ],
+    "pw_wage_level": "I"
+  },
+  "quarters_used": [
+    "FY2025Q4",
+    "FY2026Q1"
+  ],
+  "quarters_superseded": {},
+  "rows_per_quarter": {
+    "FY2025Q4": 118580,
+    "FY2026Q1": 83120
+  },
+  "funnel": {
+    "rows_total": 201700,
+    "rows_certified": 181277,
+    "rows_soc_matched": 421,
+    "rows_selected": 203
+  },
+  "employer_groups": 97,
+  "distinct_raw_employer_spellings": 100,
+  "rows_wage_excluded_from_wage_stats": 0,
+  "case_statuses_seen": {
+    "CERTIFIED": 181277,
+    "CERTIFIED - WITHDRAWN": 15748,
+    "WITHDRAWN": 3242,
+    "DENIED": 1433
+  },
+  "wage_levels_seen": {
+    "I": 203,
+    "II": 82,
+    "III": 66,
+    "": 41,
+    "IV": 29
+  },
+  "wage_units_seen": {
+    "YEAR": 176,
+    "HOUR": 25,
+    "MONTH": 2
+  },
+  "patterns": {
+    "basis": {
+      "filings": 203,
+      "employers": 97,
+      "measured_by": "employers",
+      "min_support_employers": 3
+    },
+    "job_titles": {
+      "recurring_tokens": [
+        {
+          "token": "research",
+          "employers": 53,
+          "filings": 114
+        },
+        {
+          "token": "postdoctoral",
+          "employers": 39,
+          "filings": 57
+        },
+        {
+          "token": "associate",
+          "employers": 36,
+          "filings": 81
+        },
+        {
+          "token": "scientist",
+          "employers": 23,
+          "filings": 37
+        },
+        {
+          "token": "assistant",
+          "employers": 16,
+          "filings": 23
+        },
+        {
+          "token": "fellow",
+          "employers": 15,
+          "filings": 23
+        },
+        {
+          "token": "physicist",
+          "employers": 10,
+          "filings": 12
+        },
+        {
+          "token": "scholar",
+          "employers": 10,
+          "filings": 11
+        },
+        {
+          "token": "professor",
+          "employers": 8,
+          "filings": 9
+        },
+        {
+          "token": "physics",
+          "employers": 6,
+          "filings": 21
+        },
+        {
+          "token": "doctoral",
+          "employers": 6,
+          "filings": 15
+        },
+        {
+          "token": "post",
+          "employers": 6,
+          "filings": 15
+        },
+        {
+          "token": "medical",
+          "employers": 5,
+          "filings": 7
+        },
+        {
+          "token": "researcher",
+          "employers": 5,
+          "filings": 5
+        },
+        {
+          "token": "engineer",
+          "employers": 4,
+          "filings": 7
+        },
+        {
+          "token": "staff",
+          "employers": 3,
+          "filings": 4
+        },
+        {
+          "token": "senior",
+          "employers": 3,
+          "filings": 3
+        }
+      ],
+      "distinct_titles": [
+        {
+          "title": "Research Associate",
+          "employers": 12,
+          "filings": 21
+        },
+        {
+          "title": "Postdoctoral Research Associate",
+          "employers": 9,
+          "filings": 15
+        },
+        {
+          "title": "Postdoctoral Associate",
+          "employers": 9,
+          "filings": 11
+        },
+        {
+          "title": "Research Scientist",
+          "employers": 8,
+          "filings": 10
+        },
+        {
+          "title": "Postdoctoral Fellow",
+          "employers": 8,
+          "filings": 9
+        },
+        {
+          "title": "Assistant Research Scientist",
+          "employers": 5,
+          "filings": 8
+        },
+        {
+          "title": "Postdoctoral Scholar",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "title": "Assistant Research Professor",
+          "employers": 3,
+          "filings": 4
+        },
+        {
+          "title": "Assistant Scientist",
+          "employers": 2,
+          "filings": 3
+        },
+        {
+          "title": "Post-Doctoral Research Associate",
+          "employers": 2,
+          "filings": 3
+        },
+        {
+          "title": "Postdoctoral Research Scholar",
+          "employers": 2,
+          "filings": 3
+        },
+        {
+          "title": "Research Fellow",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Research Scholar",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "medical physicist",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Research Associate Physics",
+          "employers": 1,
+          "filings": 10
+        },
+        {
+          "title": "Flatiron Research Fellow",
+          "employers": 1,
+          "filings": 6
+        },
+        {
+          "title": "Post-Doctoral Associate",
+          "employers": 1,
+          "filings": 5
+        },
+        {
+          "title": "Postdoctoral Research Affiliate",
+          "employers": 1,
+          "filings": 5
+        },
+        {
+          "title": "Postdoctoral Appointee",
+          "employers": 1,
+          "filings": 4
+        },
+        {
+          "title": "Physical Science Research Scientist",
+          "employers": 1,
+          "filings": 3
+        },
+        {
+          "title": "Research Faculty I",
+          "employers": 1,
+          "filings": 3
+        },
+        {
+          "title": "Detector Engineer",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Medical Physicist Assistant II",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Physics Associate IV",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Post Doctoral Research Associate",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Post-doctoral Associate",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Postgraduate Trainee 1",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Research Scientist I",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Scientist 2",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Scientist 3",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Staff Engineer, Hardware Development Engineering",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Accelerator Operator II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Assistant Professor",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Assistant Professor of Clinical",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Assistant Professor of Physics",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate Research Physicist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate Research Scholar",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate Research Scientist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate Scientist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Clinical Physics Assistant I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Computational Physicist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Detector Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "ELECTRONIC STRUCTURE OF TOPOLOG. MATERIALS POSTDOC. RESEARCH",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "GAPS JUNIOR RESEARCHER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Instructor",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "LIGO Laser Physicist/Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Medical Physicist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Medical Physicist Assistant Professor",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Physics Associate III",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Physics Post Doctoral Fellow",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Post Doctoral Researcher",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Post-Doctoral Fellow",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoc Res Assoc-Neutron Scattering & Quantum Materials",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoc Res Assoc/Polarized Neutron Scattering Study",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoc-Machine Learning Assisted SANS Data Analysis Platfor",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Fellow Research Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Fellow in the Department of Physics",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Research Associate of Physics",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Research Fellow",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Researcher",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Scholar, Quantum Optics/Optomechanics",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Scientist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "RESEARCH ENGINEER-3",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "RadOnc Physics Resident",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Radiation Physicist 2",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Assistant Professor",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Associate physics",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Associate-LUX - ZEPLIN Dark Matter Search",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Professional",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Staff 2 Physics",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Researcher 1",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Researcher/Scientist III",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Resident",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Scientist III",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Research Associate/Beamline Scientist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Research Fellow",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Space Plasmas Data Analytics",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Staff Scientist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Therapy Medical Physicist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "physicist",
+          "employers": 1,
+          "filings": 1
+        }
+      ]
+    },
+    "onet_occupations": [
+      {
+        "soc_code": "19-2012.00",
+        "title": "Physicists",
+        "employers": 97,
+        "filings": 203
+      }
+    ],
+    "placement_model": {
+      "in_house": {
+        "employers": 91,
+        "filings": 191
+      },
+      "third_party_site": {
+        "employers": 9,
+        "filings": 12
+      }
+    },
+    "industry_naics2": [
+      {
+        "code": "61",
+        "label": "Educational Services",
+        "employers": 74,
+        "filings": 144
+      },
+      {
+        "code": "54",
+        "label": "Professional, Scientific, and Technical Services",
+        "employers": 16,
+        "filings": 51
+      },
+      {
+        "code": "62",
+        "label": "Health Care and Social Assistance",
+        "employers": 3,
+        "filings": 3
+      }
+    ]
+  },
+  "caveats": [
+    "An LCA certification is not a hire or an open role.",
+    "OPT is not sponsorship — a new grad's first job is on OPT; sponsorship comes 1-3 years later.",
+    "Employer names are conservatively normalized and may under-merge.",
+    "Career/portfolio guidance, not immigration legal advice."
+  ]
+}

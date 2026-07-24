@@ -1,0 +1,794 @@
+{
+  "generated_at_utc": "2026-07-24 06:19 UTC",
+  "source": "US DOL OFLC LCA Programs disclosure data (public record)",
+  "filters": {
+    "case_status": "Certified",
+    "role": "consultant_management",
+    "soc_codes": [
+      "13-1111"
+    ],
+    "pw_wage_level": "I"
+  },
+  "quarters_used": [
+    "FY2025Q4",
+    "FY2026Q1"
+  ],
+  "quarters_superseded": {},
+  "rows_per_quarter": {
+    "FY2025Q4": 118580,
+    "FY2026Q1": 83120
+  },
+  "funnel": {
+    "rows_total": 201700,
+    "rows_certified": 181277,
+    "rows_soc_matched": 2066,
+    "rows_selected": 217
+  },
+  "employer_groups": 173,
+  "distinct_raw_employer_spellings": 173,
+  "rows_wage_excluded_from_wage_stats": 0,
+  "case_statuses_seen": {
+    "CERTIFIED": 181277,
+    "CERTIFIED - WITHDRAWN": 15748,
+    "WITHDRAWN": 3242,
+    "DENIED": 1433
+  },
+  "wage_levels_seen": {
+    "II": 721,
+    "IV": 612,
+    "III": 481,
+    "I": 217,
+    "": 35
+  },
+  "wage_units_seen": {
+    "YEAR": 163,
+    "HOUR": 54
+  },
+  "patterns": {
+    "basis": {
+      "filings": 217,
+      "employers": 173,
+      "measured_by": "employers",
+      "min_support_employers": 3
+    },
+    "job_titles": {
+      "recurring_tokens": [
+        {
+          "token": "analyst",
+          "employers": 124,
+          "filings": 148
+        },
+        {
+          "token": "management",
+          "employers": 61,
+          "filings": 80
+        },
+        {
+          "token": "business",
+          "employers": 47,
+          "filings": 59
+        },
+        {
+          "token": "consultant",
+          "employers": 13,
+          "filings": 28
+        },
+        {
+          "token": "strategy",
+          "employers": 11,
+          "filings": 14
+        },
+        {
+          "token": "manager",
+          "employers": 11,
+          "filings": 11
+        },
+        {
+          "token": "senior",
+          "employers": 10,
+          "filings": 14
+        },
+        {
+          "token": "associate",
+          "employers": 10,
+          "filings": 13
+        },
+        {
+          "token": "specialist",
+          "employers": 9,
+          "filings": 11
+        },
+        {
+          "token": "data",
+          "employers": 9,
+          "filings": 9
+        },
+        {
+          "token": "operations",
+          "employers": 8,
+          "filings": 8
+        },
+        {
+          "token": "project",
+          "employers": 7,
+          "filings": 8
+        },
+        {
+          "token": "development",
+          "employers": 6,
+          "filings": 6
+        },
+        {
+          "token": "sourcing",
+          "employers": 4,
+          "filings": 5
+        },
+        {
+          "token": "program",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "production",
+          "employers": 3,
+          "filings": 4
+        },
+        {
+          "token": "lead",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "solutions",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "strategic",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "technical",
+          "employers": 3,
+          "filings": 3
+        }
+      ],
+      "distinct_titles": [
+        {
+          "title": "Management Analyst",
+          "employers": 37,
+          "filings": 43
+        },
+        {
+          "title": "Business Analyst",
+          "employers": 22,
+          "filings": 23
+        },
+        {
+          "title": "BUSINESS ANALYST",
+          "employers": 5,
+          "filings": 7
+        },
+        {
+          "title": "SOURCING ANALYST",
+          "employers": 3,
+          "filings": 4
+        },
+        {
+          "title": "MANAGEMENT ANALYST",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "Consultant",
+          "employers": 2,
+          "filings": 5
+        },
+        {
+          "title": "Associate",
+          "employers": 2,
+          "filings": 3
+        },
+        {
+          "title": "Analyst",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Business Development Specialist",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Business Innovation Analyst",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Data Analyst",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Project Management Analyst",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Business Analyst (Management Consultant)",
+          "employers": 1,
+          "filings": 6
+        },
+        {
+          "title": "Management Analysts - KBGFJG177107-7",
+          "employers": 1,
+          "filings": 4
+        },
+        {
+          "title": "Strategy Advancement Advisor",
+          "employers": 1,
+          "filings": 4
+        },
+        {
+          "title": "Associate Consultant",
+          "employers": 1,
+          "filings": 3
+        },
+        {
+          "title": "Senior Business Analyst (Management Consultant)",
+          "employers": 1,
+          "filings": 3
+        },
+        {
+          "title": "Assistant Director of Analytics",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Business Management Analyst",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Digital Transformation & AI Adoption Specialist",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Leadership Consultant",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Production Management Analyst",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Project Delivery Analyst",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Research Analyst",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Senior Analytical Consultant",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Senior Specialist, Partner Integrations",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "AI Implementation Lead",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Assistant Manager, Pharma Production",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate Partner Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate, Strategy",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "BUSINESS DEVELOPMENT/MANAGEMENT ANALYST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "BUSINESS MANAGEMENT ANALYST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Budget Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Analyst - Customer Satisfaction",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Development Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Development and Management Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Operations Lead",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Process Analyst (Business Ops / Reporting Analyst)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business System Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Systems Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Client Solutions Consultant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Continuous Improvement Business Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Corporate Strategy Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "DATA ANALYST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Strategy Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Digital Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Director of Analytics",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "ERP Consultant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Ecommerce Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Employee, Event Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Engineer & Consultant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Engineering Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Financial Business Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "GRANTS MANAGEMENT ANALYST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "HR Management Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Intake Operations Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "MANAGEMENT ANALYST I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Management Analyst - Entrepreneurship & Data Strategy",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Management Analyst - North America",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Management Analyst in E-Commerce",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Management Consultant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "OPERATIONS ANALYST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "ORGANIZATIONAL DEVELOPMENT AND MANAGEMENT ANALYST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Operating Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Operations and Budget Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "PRODUCT OWNER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Planning and Portfolio Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Pre-Sales Consultant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Product Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Program Coordinator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Program Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Program Manager Occupational Medicine",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Program Specialist, Senior",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Coordinator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Manager, HR",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Quality Project Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Risk Management Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "SAP Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "STRATEGY  CONSULTING ANALYST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "SYSTEMS ANALYST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sales & Solutions Engineer - MMC",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Salesforce Business Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Salesforce Operations Administrator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Associate (Management Analyst)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Business Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Business Management Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Consultant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Data Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Managing Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sourcing Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Specialist I, Production Data Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Strategic Account Executive, North America",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Strategic Planning Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Strategic Professional for Retail Talent Solutions",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Strategy & Operations Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Strategy & Tech Operations Lead",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Strategy Consultant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Strategy Management Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Strategy and Operations Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Technical Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Technical Project Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Technical Specialist I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "TikTok Shop - Special Projects Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "WorkDay Analyst.",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "engineering analyst",
+          "employers": 1,
+          "filings": 1
+        }
+      ]
+    },
+    "onet_occupations": [
+      {
+        "soc_code": "13-1111.00",
+        "title": "Management Analysts",
+        "employers": 173,
+        "filings": 217
+      }
+    ],
+    "placement_model": {
+      "in_house": {
+        "employers": 154,
+        "filings": 188
+      },
+      "third_party_site": {
+        "employers": 23,
+        "filings": 29
+      }
+    },
+    "industry_naics2": [
+      {
+        "code": "54",
+        "label": "Professional, Scientific, and Technical Services",
+        "employers": 77,
+        "filings": 107
+      },
+      {
+        "code": "42",
+        "label": "Wholesale Trade",
+        "employers": 16,
+        "filings": 16
+      },
+      {
+        "code": "33",
+        "label": "Manufacturing",
+        "employers": 11,
+        "filings": 13
+      },
+      {
+        "code": "62",
+        "label": "Health Care and Social Assistance",
+        "employers": 11,
+        "filings": 12
+      },
+      {
+        "code": "61",
+        "label": "Educational Services",
+        "employers": 10,
+        "filings": 11
+      },
+      {
+        "code": "72",
+        "label": "Accommodation and Food Services",
+        "employers": 8,
+        "filings": 9
+      },
+      {
+        "code": "44",
+        "label": "Retail Trade",
+        "employers": 7,
+        "filings": 8
+      },
+      {
+        "code": "32",
+        "label": "Manufacturing",
+        "employers": 5,
+        "filings": 5
+      },
+      {
+        "code": "53",
+        "label": "Real Estate and Rental and Leasing",
+        "employers": 4,
+        "filings": 6
+      },
+      {
+        "code": "52",
+        "label": "Finance and Insurance",
+        "employers": 4,
+        "filings": 4
+      },
+      {
+        "code": "49",
+        "label": "Transportation and Warehousing",
+        "employers": 3,
+        "filings": 4
+      },
+      {
+        "code": "48",
+        "label": "Transportation and Warehousing",
+        "employers": 3,
+        "filings": 3
+      }
+    ]
+  },
+  "caveats": [
+    "An LCA certification is not a hire or an open role.",
+    "OPT is not sponsorship — a new grad's first job is on OPT; sponsorship comes 1-3 years later.",
+    "Employer names are conservatively normalized and may under-merge.",
+    "Career/portfolio guidance, not immigration legal advice."
+  ]
+}

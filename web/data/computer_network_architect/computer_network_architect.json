@@ -1,0 +1,1146 @@
+{
+  "role": "computer_network_architect",
+  "generated_at_utc": "2026-07-24 06:19 UTC",
+  "source": "US DOL OFLC LCA Programs disclosure data (public record)",
+  "filters": {
+    "case_status": "Certified",
+    "soc_codes": [
+      "15-1241"
+    ],
+    "pw_wage_level": "I"
+  },
+  "quarters_used": [
+    "FY2025Q4",
+    "FY2026Q1"
+  ],
+  "quarters_superseded": {},
+  "funnel": {
+    "rows_total": 201700,
+    "rows_certified": 181277,
+    "rows_soc_matched": 831,
+    "rows_selected": 67
+  },
+  "employer_groups": 51,
+  "rows_wage_excluded_from_wage_stats": 0,
+  "patterns": {
+    "basis": {
+      "filings": 67,
+      "employers": 51,
+      "measured_by": "employers",
+      "min_support_employers": 3
+    },
+    "job_titles": {
+      "recurring_tokens": [
+        {
+          "token": "engineer",
+          "employers": 36,
+          "filings": 51
+        },
+        {
+          "token": "network",
+          "employers": 28,
+          "filings": 34
+        },
+        {
+          "token": "architect",
+          "employers": 12,
+          "filings": 12
+        },
+        {
+          "token": "senior",
+          "employers": 5,
+          "filings": 6
+        },
+        {
+          "token": "technical",
+          "employers": 4,
+          "filings": 7
+        },
+        {
+          "token": "data",
+          "employers": 3,
+          "filings": 6
+        },
+        {
+          "token": "development",
+          "employers": 3,
+          "filings": 4
+        },
+        {
+          "token": "cloud",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "computer",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "solution",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "solutions",
+          "employers": 3,
+          "filings": 3
+        }
+      ],
+      "distinct_titles": [
+        {
+          "title": "Network Engineer",
+          "employers": 7,
+          "filings": 7
+        },
+        {
+          "title": "NETWORK ENGINEER",
+          "employers": 3,
+          "filings": 4
+        },
+        {
+          "title": "Technical Support Engineer",
+          "employers": 2,
+          "filings": 5
+        },
+        {
+          "title": "COMPUTER NETWORK ARCHITECT",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Network Architect",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "DATA CENTER ENGINEER",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "IP Network Engineer III",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Network Development Engineer I",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Network Security Engineer",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Senior Software Engineer",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Azure Cloud Architect",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Development Leader",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Cloud Network Engineering",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Cloud Solutions Architect",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Computer Network Architect / Consultant II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "DATA CENTRE SYSTEMS ENGINEER(SME)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "DATA ENGINEER ADMINISTRATOR",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Engineer Administrator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Engineer 3, Engineering Operations",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Engineer 3, Network Engineering - Architecture & Design",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Enterprise Act Engineer II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Infrastructure Engineer I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "NETWORK ARCHITECT",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "NETWORK ENGINEER - WIRELESS & RF TESTING",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "NETWORK L3 ENGINEER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Network Development Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Network Operations Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Network Optimization Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Network and Security Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Networking Systems Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Principal Engineer I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Principal Engineer I - Customer Networks",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Professional Services Network Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "RAN Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "RF Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "SENIOR SOLUTION ARCHITECT",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "SOLUTION ARCHITECT",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Data Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Network Engineer, Information Technology",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Technical Solutions Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Site Reliability Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Software Engineer, Ads Serving and Foundation - USDS",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Solution Architect",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Solutions Engineer 2",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Technical Architect",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Telecom Network Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Telecommunications Engineer",
+          "employers": 1,
+          "filings": 1
+        }
+      ]
+    },
+    "onet_occupations": [
+      {
+        "soc_code": "15-1241.00",
+        "title": "Computer Network Architects",
+        "employers": 49,
+        "filings": 65
+      },
+      {
+        "soc_code": "15-1241.01",
+        "title": "Telecommunications Engineering Specialists",
+        "employers": 2,
+        "filings": 2
+      }
+    ],
+    "placement_model": {
+      "in_house": {
+        "employers": 39,
+        "filings": 52
+      },
+      "third_party_site": {
+        "employers": 14,
+        "filings": 15
+      }
+    },
+    "industry_naics2": [
+      {
+        "code": "54",
+        "label": "Professional, Scientific, and Technical Services",
+        "employers": 29,
+        "filings": 35
+      },
+      {
+        "code": "51",
+        "label": "Information",
+        "employers": 12,
+        "filings": 17
+      },
+      {
+        "code": "33",
+        "label": "Manufacturing",
+        "employers": 3,
+        "filings": 7
+      }
+    ]
+  },
+  "caveats": [
+    "An LCA certification is not a hire or an open role.",
+    "OPT is not sponsorship — a new grad's first job is on OPT; sponsorship comes 1-3 years later.",
+    "Employer names are conservatively normalized and may under-merge.",
+    "Career/portfolio guidance, not immigration legal advice."
+  ],
+  "employers": [
+    {
+      "employer": "COMCAST CABLE COMMUNICATIONS",
+      "employer_display": "Comcast Cable Communications, LLC",
+      "filing_count": 3,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "15-1241",
+      "soc_titles": "Computer Network Architects",
+      "worksite_states": "NJ; NY",
+      "worksite_cities": "Brooklyn; Mount Laurel; Mt. Laurel",
+      "wage_annual_min": 88816,
+      "wage_annual_median": 88816,
+      "wage_annual_max": 103938
+    },
+    {
+      "employer": "AMAZON DATA SERVICES",
+      "employer_display": "Amazon Data Services, Inc",
+      "filing_count": 2,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "15-1241",
+      "soc_titles": "Computer Network Architects",
+      "worksite_states": "WA",
+      "worksite_cities": "Seattle",
+      "wage_annual_min": 112382,
+      "wage_annual_median": 133691,
+      "wage_annual_max": 155000
+    },
+    {
+      "employer": "JUNIPER NETWORKS US",
+      "employer_display": "Juniper Networks (US), Inc.",
+      "filing_count": 4,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1241",
+      "soc_titles": "Computer Network Architects",
+      "worksite_states": "CA; MA; TX",
+      "worksite_cities": "McKinney; Sunnyvale; Westford",
+      "wage_annual_min": 93309,
+      "wage_annual_median": 110500,
+      "wage_annual_max": 121846
+    },
+    {
+      "employer": "SMART INFO SOLUTIONS",
+      "employer_display": "SMART INFO SOLUTIONS LLC",
+      "filing_count": 3,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1241",
+      "soc_titles": "Computer Network Architects",
+      "worksite_states": "NY",
+      "worksite_cities": "JAMAICA",
+      "wage_annual_min": 104550,
+      "wage_annual_median": 104550,
+      "wage_annual_max": 104550
+    },
+    {
+      "employer": "TELEGUAM HOLDINGS",
+      "employer_display": "TELEGUAM HOLDINGS LLC",
+      "filing_count": 3,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1241",
+      "soc_titles": "Computer Network Architects",
+      "worksite_states": "GU",
+      "worksite_cities": "Tamuning",
+      "wage_annual_min": 87526,
+      "wage_annual_median": 87526,
+      "wage_annual_max": 87526
+    },
+    {
+      "employer": "ARM",
+      "employer_display": "Arm, Inc.",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1241",
+      "soc_titles": "Computer Network Architects",
+      "worksite_states": "CA",
+      "worksite_cities": "San Jose",
+      "wage_annual_min": 121846,
+      "wage_annual_median": 121846,
+      "wage_annual_max": 121846
+    },
+    {
+      "employer": "DATASTACK TECHNOLOGIES",
+      "employer_display": "DataStack Technologies LLC",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1241",
+      "soc_titles": "Computer Network Architects",
+      "worksite_states": "NC; TX",
+      "worksite_cities": "Charlotte; Plano",
+      "wage_annual_min": 93309,
+      "wage_annual_median": 93631,
+      "wage_annual_max": 93954
+    },
+    {
+      "employer": "INSIGHT DIRECT USA",
+      "employer_display": "Insight Direct USA, Inc.",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1241",
+      "soc_titles": "Computer Network Architects",
+      "worksite_states": "AZ; TX",
+      "worksite_cities": "Austin; Chandler",
+      "wage_annual_min": 108000,
+      "wage_annual_median": 110000,
+      "wage_annual_max": 112000
+    },
+    {
+      "employer": "ONLY IT CONSULTING",
+      "employer_display": "ONLY IT CONSULTING LLC",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1241",
+      "soc_titles": "Computer Network Architects",
+      "worksite_states": "IL; PA",
+      "worksite_cities": "PITTSBURGH; WARRENVILLE",
+      "wage_annual_min": 97074,
+      "wage_annual_median": 98249,
+      "wage_annual_max": 99424
+    },
+    {
+      "employer": "TECH RAKERS",
+      "employer_display": "Tech Rakers, Inc.",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1241",
+      "soc_titles": "Computer Network Architects",
+      "worksite_states": "TX",
+      "worksite_cities": "Austin",
+      "wage_annual_min": 96200,
+      "wage_annual_median": 96200,
+      "wage_annual_max": 96200
+    },
+    {
+      "employer": "U S ELECTRONICS",
+      "employer_display": "U.S. ELECTRONICS, INC.",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1241",
+      "soc_titles": "Computer Network Architects",
+      "worksite_states": "TX",
+      "worksite_cities": "SAN ANTONIO; San Antonio",
+      "wage_annual_min": 80787,
+      "wage_annual_median": 80787,
+      "wage_annual_max": 80787
+    },
+    {
+      "employer": "3D TECHNOLOGIES",
+      "employer_display": "3D TECHNOLOGIES LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1241",
+      "soc_titles": "Computer Network Architects",
+      "worksite_states": "CA",
+      "worksite_cities": "ROSEMEAD",
+      "wage_annual_min": 96262,
+      "wage_annual_median": 96262,
+      "wage_annual_max": 96262
+    },
+    {
+      "employer": "A10 NETWORKS",
+      "employer_display": "A10 Networks, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1241",
+      "soc_titles": "Computer Network Architects",
+      "worksite_states": "NC",
+      "worksite_cities": "Cary",
+      "wage_annual_min": 80454,
+      "wage_annual_median": 80454,
+      "wage_annual_max": 80454
+    },
+    {
+      "employer": "AMAZON DEVELOPMENT CENTER U S",
+      "employer_display": "Amazon Development Center U.S., Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1241",
+      "soc_titles": "Computer Network Architects",
+      "worksite_states": "CA",
+      "worksite_cities": "Mountain View",
+      "wage_annual_min": 131300,
+      "wage_annual_median": 131300,
+      "wage_annual_max": 131300
+    },
+    {
+      "employer": "ARTIFINT TECHNOLOGIES",
+      "employer_display": "ARTIFINT TECHNOLOGIES LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1241",
+      "soc_titles": "Computer Network Architects",
+      "worksite_states": "GA",
+      "worksite_cities": "ALPHARETTA",
+      "wage_annual_min": 96054,
+      "wage_annual_median": 96054,
+      "wage_annual_max": 96054
+    },
+    {
+      "employer": "ATEK IT",
+      "employer_display": "Atek IT Inc",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1241",
+      "soc_titles": "Computer Network Architects",
+      "worksite_states": "NY",
+      "worksite_cities": "Albany",
+      "wage_annual_min": 81000,
+      "wage_annual_median": 81000,
+      "wage_annual_max": 81000
+    },
+    {
+      "employer": "AXIUM PACKAGING",
+      "employer_display": "Axium Packaging, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1241",
+      "soc_titles": "Computer Network Architects",
+      "worksite_states": "IL",
+      "worksite_cities": "Bartlett",
+      "wage_annual_min": 101000,
+      "wage_annual_median": 101000,
+      "wage_annual_max": 101000
+    },
+    {
+      "employer": "CENTRALSQUARE TECHNOLOGIES",
+      "employer_display": "CentralSquare Technologies, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1241",
+      "soc_titles": "Computer Network Architects",
+      "worksite_states": "SD",
+      "worksite_cities": "Sioux Falls",
+      "wage_annual_min": 110531,
+      "wage_annual_median": 110531,
+      "wage_annual_max": 110531
+    },
+    {
+      "employer": "CHARTER COMMUNICATIONS",
+      "employer_display": "Charter Communications, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1241",
+      "soc_titles": "Computer Network Architects",
+      "worksite_states": "CO",
+      "worksite_cities": "Greenwood Village",
+      "wage_annual_min": 110660,
+      "wage_annual_median": 110660,
+      "wage_annual_max": 110660
+    },
+    {
+      "employer": "CITIZENS FINANCIAL GROUP",
+      "employer_display": "Citizens Financial Group, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1241",
+      "soc_titles": "Computer Network Architects",
+      "worksite_states": "RI",
+      "worksite_cities": "Johnston",
+      "wage_annual_min": 77600,
+      "wage_annual_median": 77600,
+      "wage_annual_max": 77600
+    },
+    {
+      "employer": "DISH WIRELESS",
+      "employer_display": "DISH Wireless, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1241",
+      "soc_titles": "Computer Network Architects",
+      "worksite_states": "CO",
+      "worksite_cities": "Englewood",
+      "wage_annual_min": 96250,
+      "wage_annual_median": 96250,
+      "wage_annual_max": 96250
+    },
+    {
+      "employer": "EXOSTAR",
+      "employer_display": "Exostar LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1241",
+      "soc_titles": "Computer Network Architects",
+      "worksite_states": "NJ",
+      "worksite_cities": "Dayton",
+      "wage_annual_min": 139600,
+      "wage_annual_median": 139600,
+      "wage_annual_max": 139600
+    },
+    {
+      "employer": "GRID DYNAMICS HOLDINGS",
+      "employer_display": "GRID DYNAMICS HOLDINGS, INC.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1241",
+      "soc_titles": "Computer Network Architects",
+      "worksite_states": "CA",
+      "worksite_cities": "Santa Clara",
+      "wage_annual_min": 121846,
+      "wage_annual_median": 121846,
+      "wage_annual_max": 121846
+    },
+    {
+      "employer": "H TOWN TECHNOLOGIES",
+      "employer_display": "H-TOWN TECHNOLOGIES INC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1241",
+      "soc_titles": "Computer Network Architects",
+      "worksite_states": "CA",
+      "worksite_cities": "San Jose",
+      "wage_annual_min": 121846,
+      "wage_annual_median": 121846,
+      "wage_annual_max": 121846
+    },
+    {
+      "employer": "HERMITAGE INFO TECH",
+      "employer_display": "HERMITAGE INFO TECH, LLC.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1241",
+      "soc_titles": "Computer Network Architects",
+      "worksite_states": "TX",
+      "worksite_cities": "DALLAS",
+      "wage_annual_min": 93309,
+      "wage_annual_median": 93309,
+      "wage_annual_max": 93309
+    },
+    {
+      "employer": "HUGHES NETWORK SYSTEMS",
+      "employer_display": "Hughes Network Systems LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1241",
+      "soc_titles": "Computer Network Architects",
+      "worksite_states": "MD",
+      "worksite_cities": "Germantown",
+      "wage_annual_min": 122757,
+      "wage_annual_median": 122757,
+      "wage_annual_max": 122757
+    },
+    {
+      "employer": "INTUNE SYSTEMS",
+      "employer_display": "INTUNE SYSTEMS INC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1241",
+      "soc_titles": "Computer Network Architects",
+      "worksite_states": "NY",
+      "worksite_cities": "Brooklyn",
+      "wage_annual_min": 103938,
+      "wage_annual_median": 103938,
+      "wage_annual_max": 103938
+    },
+    {
+      "employer": "JAD ASSOCIATES",
+      "employer_display": "JAD & Associates LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1241",
+      "soc_titles": "Telecommunications Engineering Specialists",
+      "worksite_states": "CA",
+      "worksite_cities": "Anaheim",
+      "wage_annual_min": 96262,
+      "wage_annual_median": 96262,
+      "wage_annual_max": 96262
+    },
+    {
+      "employer": "LIFESHARE NETWORK",
+      "employer_display": "LifeShare Network, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1241",
+      "soc_titles": "Computer Network Architects",
+      "worksite_states": "OK",
+      "worksite_cities": "Oklahoma City",
+      "wage_annual_min": 93309,
+      "wage_annual_median": 93309,
+      "wage_annual_max": 93309
+    },
+    {
+      "employer": "MICROSOFT CORPORATION",
+      "employer_display": "Microsoft Corporation",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1241",
+      "soc_titles": "Computer Network Architects",
+      "worksite_states": "WA",
+      "worksite_cities": "BONNEY LAKE",
+      "wage_annual_min": 141500,
+      "wage_annual_median": 141500,
+      "wage_annual_max": 141500
+    },
+    {
+      "employer": "ML TECHNOLOGIES",
+      "employer_display": "ML TECHNOLOGIES LLC.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1241",
+      "soc_titles": "Computer Network Architects",
+      "worksite_states": "NJ",
+      "worksite_cities": "EDISON",
+      "wage_annual_min": 103938,
+      "wage_annual_median": 103938,
+      "wage_annual_max": 103938
+    },
+    {
+      "employer": "MOLABS MEDIA",
+      "employer_display": "Molabs Media LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1241",
+      "soc_titles": "Telecommunications Engineering Specialists",
+      "worksite_states": "TX",
+      "worksite_cities": "Dallas",
+      "wage_annual_min": 94000,
+      "wage_annual_median": 94000,
+      "wage_annual_max": 94000
+    },
+    {
+      "employer": "MP INFOTECH",
+      "employer_display": "MP INFOTECH CORP.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1241",
+      "soc_titles": "Computer Network Architects",
+      "worksite_states": "NJ",
+      "worksite_cities": "PRINCETON",
+      "wage_annual_min": 103938,
+      "wage_annual_median": 103938,
+      "wage_annual_max": 103938
+    },
+    {
+      "employer": "NETNOLOGY",
+      "employer_display": "Netnology LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1241",
+      "soc_titles": "Computer Network Architects",
+      "worksite_states": "TX",
+      "worksite_cities": "Plano",
+      "wage_annual_min": 93309,
+      "wage_annual_median": 93309,
+      "wage_annual_max": 93309
+    },
+    {
+      "employer": "NIVID INFOTECH",
+      "employer_display": "Nivid Infotech, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1241",
+      "soc_titles": "Computer Network Architects",
+      "worksite_states": "GA",
+      "worksite_cities": "Atlanta",
+      "wage_annual_min": 96054,
+      "wage_annual_median": 96054,
+      "wage_annual_max": 96054
+    },
+    {
+      "employer": "NOKIA OF AMERICA CORPORATION",
+      "employer_display": "Nokia of America Corporation",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1241",
+      "soc_titles": "Computer Network Architects",
+      "worksite_states": "IL",
+      "worksite_cities": "Naperville",
+      "wage_annual_min": 113568,
+      "wage_annual_median": 113568,
+      "wage_annual_max": 113568
+    },
+    {
+      "employer": "OCIENT",
+      "employer_display": "Ocient Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1241",
+      "soc_titles": "Computer Network Architects",
+      "worksite_states": "IL",
+      "worksite_cities": "Chicago",
+      "wage_annual_min": 115000,
+      "wage_annual_median": 115000,
+      "wage_annual_max": 115000
+    },
+    {
+      "employer": "PC CONNECTION",
+      "employer_display": "PC Connection, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1241",
+      "soc_titles": "Computer Network Architects",
+      "worksite_states": "NH",
+      "worksite_cities": "Merrimack",
+      "wage_annual_min": 116960,
+      "wage_annual_median": 116960,
+      "wage_annual_max": 116960
+    },
+    {
+      "employer": "RADCOM",
+      "employer_display": "RADCOM Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1241",
+      "soc_titles": "Computer Network Architects",
+      "worksite_states": "CO",
+      "worksite_cities": "Parker",
+      "wage_annual_min": 125000,
+      "wage_annual_median": 125000,
+      "wage_annual_max": 125000
+    },
+    {
+      "employer": "SERENA WHOLESALE",
+      "employer_display": "Serena Wholesale, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1241",
+      "soc_titles": "Computer Network Architects",
+      "worksite_states": "GA",
+      "worksite_cities": "Macon",
+      "wage_annual_min": 91894,
+      "wage_annual_median": 91894,
+      "wage_annual_max": 91894
+    },
+    {
+      "employer": "SMAR SYSTEMS",
+      "employer_display": "SMAR Systems Inc",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1241",
+      "soc_titles": "Computer Network Architects",
+      "worksite_states": "CA",
+      "worksite_cities": "Milpitas",
+      "wage_annual_min": 121846,
+      "wage_annual_median": 121846,
+      "wage_annual_max": 121846
+    },
+    {
+      "employer": "TECHCOREGLOBAL",
+      "employer_display": "TechCoreGlobal, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1241",
+      "soc_titles": "Computer Network Architects",
+      "worksite_states": "CA",
+      "worksite_cities": "Sunnyvale",
+      "wage_annual_min": 122000,
+      "wage_annual_median": 122000,
+      "wage_annual_max": 122000
+    },
+    {
+      "employer": "TECHNOVISION SOLUTION",
+      "employer_display": "TECHNOVISION SOLUTION LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1241",
+      "soc_titles": "Computer Network Architects",
+      "worksite_states": "CO",
+      "worksite_cities": "Denver",
+      "wage_annual_min": 92394,
+      "wage_annual_median": 92394,
+      "wage_annual_max": 92394
+    },
+    {
+      "employer": "TELEWORLD SOLUTIONS",
+      "employer_display": "Teleworld Solutions, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1241",
+      "soc_titles": "Computer Network Architects",
+      "worksite_states": "TX",
+      "worksite_cities": "Irving",
+      "wage_annual_min": 96461,
+      "wage_annual_median": 96461,
+      "wage_annual_max": 96461
+    },
+    {
+      "employer": "TIKTOK U S DATA SECURITY",
+      "employer_display": "TikTok U.S. Data Security Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1241",
+      "soc_titles": "Computer Network Architects",
+      "worksite_states": "CA",
+      "worksite_cities": "San Jose",
+      "wage_annual_min": 144000,
+      "wage_annual_median": 144000,
+      "wage_annual_max": 144000
+    },
+    {
+      "employer": "UNIVERSITY OF NEVADA LAS VEGAS",
+      "employer_display": "University of Nevada, Las Vegas",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1241",
+      "soc_titles": "Computer Network Architects",
+      "worksite_states": "NV",
+      "worksite_cities": "Las Vegas",
+      "wage_annual_min": 102500,
+      "wage_annual_median": 102500,
+      "wage_annual_max": 102500
+    },
+    {
+      "employer": "VISIONSOFT",
+      "employer_display": "VISIONSOFT INC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1241",
+      "soc_titles": "Computer Network Architects",
+      "worksite_states": "NJ",
+      "worksite_cities": "BRANCHBURG",
+      "wage_annual_min": 114400,
+      "wage_annual_median": 114400,
+      "wage_annual_max": 114400
+    },
+    {
+      "employer": "VLINK",
+      "employer_display": "VLink Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1241",
+      "soc_titles": "Computer Network Architects",
+      "worksite_states": "OH",
+      "worksite_cities": "Akron",
+      "wage_annual_min": 83034,
+      "wage_annual_median": 83034,
+      "wage_annual_max": 83034
+    },
+    {
+      "employer": "WOONGJIN",
+      "employer_display": "WOONGJIN INC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1241",
+      "soc_titles": "Computer Network Architects",
+      "worksite_states": "CA",
+      "worksite_cities": "BUENA PARK",
+      "wage_annual_min": 96720,
+      "wage_annual_median": 96720,
+      "wage_annual_max": 96720
+    },
+    {
+      "employer": "XPAND NET",
+      "employer_display": "Xpand-Net Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1241",
+      "soc_titles": "Computer Network Architects",
+      "worksite_states": "CA",
+      "worksite_cities": "San Jose",
+      "wage_annual_min": 121846,
+      "wage_annual_median": 121846,
+      "wage_annual_max": 121846
+    },
+    {
+      "employer": "ZAYO GROUP",
+      "employer_display": "Zayo Group, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1241",
+      "soc_titles": "Computer Network Architects",
+      "worksite_states": "CO",
+      "worksite_cities": "Denver",
+      "wage_annual_min": 88000,
+      "wage_annual_median": 88000,
+      "wage_annual_max": 88000
+    }
+  ]
+}

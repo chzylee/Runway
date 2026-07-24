@@ -103,8 +103,8 @@ def emit_env(tmp_path, monkeypatch):
 
     return SimpleNamespace(
         raw=raw, processed=processed, webdata=webdata,
-        json=webdata / "design.json",
-        provenance=webdata / "design.provenance.json",
-        csv=webdata / "design.csv",
+        json=webdata / "design" / "design.json",
+        provenance=webdata / "design" / "design.provenance.json",
+        csv=webdata / "design" / "design.csv",
         place_fixture=place_fixture, run=run,
     )

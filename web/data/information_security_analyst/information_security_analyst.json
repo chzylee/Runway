@@ -1,0 +1,1528 @@
+{
+  "role": "information_security_analyst",
+  "generated_at_utc": "2026-07-24 06:19 UTC",
+  "source": "US DOL OFLC LCA Programs disclosure data (public record)",
+  "filters": {
+    "case_status": "Certified",
+    "soc_codes": [
+      "15-1212"
+    ],
+    "pw_wage_level": "I"
+  },
+  "quarters_used": [
+    "FY2025Q4",
+    "FY2026Q1"
+  ],
+  "quarters_superseded": {},
+  "funnel": {
+    "rows_total": 201700,
+    "rows_certified": 181277,
+    "rows_soc_matched": 1345,
+    "rows_selected": 112
+  },
+  "employer_groups": 69,
+  "rows_wage_excluded_from_wage_stats": 0,
+  "patterns": {
+    "basis": {
+      "filings": 112,
+      "employers": 69,
+      "measured_by": "employers",
+      "min_support_employers": 3
+    },
+    "job_titles": {
+      "recurring_tokens": [
+        {
+          "token": "security",
+          "employers": 42,
+          "filings": 79
+        },
+        {
+          "token": "analyst",
+          "employers": 34,
+          "filings": 40
+        },
+        {
+          "token": "engineer",
+          "employers": 17,
+          "filings": 27
+        },
+        {
+          "token": "it",
+          "employers": 9,
+          "filings": 10
+        },
+        {
+          "token": "information",
+          "employers": 8,
+          "filings": 29
+        },
+        {
+          "token": "associate",
+          "employers": 6,
+          "filings": 8
+        },
+        {
+          "token": "operations",
+          "employers": 6,
+          "filings": 7
+        },
+        {
+          "token": "consultant",
+          "employers": 5,
+          "filings": 7
+        },
+        {
+          "token": "cyber",
+          "employers": 5,
+          "filings": 6
+        },
+        {
+          "token": "senior",
+          "employers": 5,
+          "filings": 6
+        },
+        {
+          "token": "cybersecurity",
+          "employers": 5,
+          "filings": 5
+        },
+        {
+          "token": "compliance",
+          "employers": 4,
+          "filings": 5
+        },
+        {
+          "token": "specialist",
+          "employers": 4,
+          "filings": 5
+        },
+        {
+          "token": "cloud",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "risk",
+          "employers": 3,
+          "filings": 3
+        }
+      ],
+      "distinct_titles": [
+        {
+          "title": "Information Security Analyst",
+          "employers": 7,
+          "filings": 8
+        },
+        {
+          "title": "Security Analyst",
+          "employers": 6,
+          "filings": 7
+        },
+        {
+          "title": "Security Engineer I",
+          "employers": 3,
+          "filings": 11
+        },
+        {
+          "title": "Cloud Security Engineer",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Information security Analysts - KBGFJG219733-5",
+          "employers": 1,
+          "filings": 7
+        },
+        {
+          "title": "Information Security Analysts - KBGFJG341142-2",
+          "employers": 1,
+          "filings": 6
+        },
+        {
+          "title": "Security Assurance",
+          "employers": 1,
+          "filings": 3
+        },
+        {
+          "title": "Analyst, Technology Audit",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Application Security Engineer",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Associate",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Cyber Consultant I - Testing",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Data Security Analyst Intermediate",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Information Security Analyst - KBGFJG224417-5",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Information Security Analysts - KBGFJG219231-4",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Information Security Analysts - KBGFJG221526-6",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Information Security Analysts - Kbgfjg218791-5",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Security Operations Center Analyst",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Security Specialist",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Senior Associate, IT Compliance",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "ASSOCIATE II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate II, PMO Operations",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Auditor",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "CLOUD SECURITY ENGINEEER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Consultant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Cyber Privacy & Data Protection Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Cyber Security Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Cyber Security Engineer II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Cybersecurity Operations Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Cybersecurity Penetration Tester",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "DFIR Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Directory Services Security Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Engineer 3, Cyber Security Operations",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Firewall Security Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Generative AI Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "IS Project Compliance Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "IT Audit Staff Consultant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "IT Auditor",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "IT Pro 2 - Security Operations (Linux Security Analyst)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "IT Risk & Cybersecurity Consultant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "IT Risk Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "IT SECURITY ADMINISTRATOR",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "IT SECURITY ANALYST (CYBERSECURITY)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "IT Security Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Infrastructure Security Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "NETWORK ENGINEER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Network Security Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Programmer Analyst/Cloud Security Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Risk Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "SAP Security and Compliance Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "SPLUNK ADMIN",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "SPLUNK DETECTION ENGINEER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Security Engineer, Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Security Operations Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Security Support Engineer III",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Security and Compliance Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Associate Technical Consultant, Security",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Consultant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Detection & Response Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Policy Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sr Cybersecurity Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "System Specialist",
+          "employers": 1,
+          "filings": 1
+        }
+      ]
+    },
+    "onet_occupations": [
+      {
+        "soc_code": "15-1212.00",
+        "title": "Information Security Analysts",
+        "employers": 69,
+        "filings": 112
+      }
+    ],
+    "placement_model": {
+      "in_house": {
+        "employers": 56,
+        "filings": 90
+      },
+      "third_party_site": {
+        "employers": 14,
+        "filings": 22
+      }
+    },
+    "industry_naics2": [
+      {
+        "code": "54",
+        "label": "Professional, Scientific, and Technical Services",
+        "employers": 38,
+        "filings": 68
+      },
+      {
+        "code": "52",
+        "label": "Finance and Insurance",
+        "employers": 8,
+        "filings": 10
+      },
+      {
+        "code": "51",
+        "label": "Information",
+        "employers": 5,
+        "filings": 7
+      },
+      {
+        "code": "33",
+        "label": "Manufacturing",
+        "employers": 5,
+        "filings": 5
+      },
+      {
+        "code": "61",
+        "label": "Educational Services",
+        "employers": 3,
+        "filings": 4
+      },
+      {
+        "code": "56",
+        "label": "Administrative and Support and Waste Management and Remediation Services",
+        "employers": 3,
+        "filings": 3
+      }
+    ]
+  },
+  "caveats": [
+    "An LCA certification is not a hire or an open role.",
+    "OPT is not sponsorship — a new grad's first job is on OPT; sponsorship comes 1-3 years later.",
+    "Employer names are conservatively normalized and may under-merge.",
+    "Career/portfolio guidance, not immigration legal advice."
+  ],
+  "employers": [
+    {
+      "employer": "ERNST YOUNG U S LLP",
+      "employer_display": "Ernst & Young U.S. LLP",
+      "filing_count": 21,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "CA; GA; IL; TX; WI",
+      "worksite_cities": "Atlanta; Chicago; Dallas; Kennedale; Milwaukee; Northbrook; San Francisco",
+      "wage_annual_min": 78000,
+      "wage_annual_median": 101249,
+      "wage_annual_max": 110000
+    },
+    {
+      "employer": "LEVELBLUE",
+      "employer_display": "LevelBlue, LLC",
+      "filing_count": 3,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "MA; NJ; NY",
+      "worksite_cities": "Framingham; Harrison; New York",
+      "wage_annual_min": 86528,
+      "wage_annual_median": 94016,
+      "wage_annual_max": 100000
+    },
+    {
+      "employer": "MICROSOFT CORPORATION",
+      "employer_display": "Microsoft Corporation",
+      "filing_count": 3,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "WA",
+      "worksite_cities": "Seattle",
+      "wage_annual_min": 130501,
+      "wage_annual_median": 138000,
+      "wage_annual_max": 138000
+    },
+    {
+      "employer": "AIG EMPLOYEE SERVICES",
+      "employer_display": "AIG Employee Services, Inc.",
+      "filing_count": 2,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "TX; VA",
+      "worksite_cities": "Houston; Reston",
+      "wage_annual_min": 77750,
+      "wage_annual_median": 88628,
+      "wage_annual_max": 99507
+    },
+    {
+      "employer": "GOLDMAN SACHS CO",
+      "employer_display": "GOLDMAN SACHS & CO. LLC",
+      "filing_count": 2,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "NY; TX",
+      "worksite_cities": "Dallas; New York",
+      "wage_annual_min": 88000,
+      "wage_annual_median": 93000,
+      "wage_annual_max": 98000
+    },
+    {
+      "employer": "AMAZON COM SERVICES",
+      "employer_display": "Amazon.com Services LLC",
+      "filing_count": 9,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "CA; NY; TX; VA; WA",
+      "worksite_cities": "Arlington; Austin; Irvine; New York; Seattle",
+      "wage_annual_min": 136000,
+      "wage_annual_median": 158000,
+      "wage_annual_max": 187000
+    },
+    {
+      "employer": "DIGITAL MANAGEMENT",
+      "employer_display": "DIGITAL MANAGEMENT LLC",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "DC",
+      "worksite_cities": "Washington",
+      "wage_annual_min": 102928,
+      "wage_annual_median": 106464,
+      "wage_annual_max": 110000
+    },
+    {
+      "employer": "EPACE TECHNOLOGIES",
+      "employer_display": "EPACE TECHNOLOGIES INC",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "CA",
+      "worksite_cities": "Oakland",
+      "wage_annual_min": 108888,
+      "wage_annual_median": 108888,
+      "wage_annual_max": 108888
+    },
+    {
+      "employer": "GP TECHNOLOGIES",
+      "employer_display": "GP TECHNOLOGIES LLC",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "TX",
+      "worksite_cities": "Cypress",
+      "wage_annual_min": 77800,
+      "wage_annual_median": 77800,
+      "wage_annual_max": 77800
+    },
+    {
+      "employer": "KASEYA US",
+      "employer_display": "Kaseya US LLC",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "FL",
+      "worksite_cities": "Orlando",
+      "wage_annual_min": 72197,
+      "wage_annual_median": 72197,
+      "wage_annual_max": 72197
+    },
+    {
+      "employer": "PRICEWATERHOUSECOOPERS ADVISORY SERVICES",
+      "employer_display": "PRICEWATERHOUSECOOPERS ADVISORY SERVICES LLC",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "NY; TX",
+      "worksite_cities": "Dallas; New York",
+      "wage_annual_min": 95000,
+      "wage_annual_median": 100000,
+      "wage_annual_max": 105000
+    },
+    {
+      "employer": "PROGRESSIVE SOFTWARE COMPUTING",
+      "employer_display": "Progressive Software Computing Inc",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "DE",
+      "worksite_cities": "Bear; Dover",
+      "wage_annual_min": 86500,
+      "wage_annual_median": 86500,
+      "wage_annual_max": 86500
+    },
+    {
+      "employer": "SOAPROJECTS",
+      "employer_display": "SOAProjects, Inc.",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "CA",
+      "worksite_cities": "Mountain View",
+      "wage_annual_min": 106080,
+      "wage_annual_median": 106080,
+      "wage_annual_max": 106080
+    },
+    {
+      "employer": "SOYO SOFT",
+      "employer_display": "SOYO SOFT, INC.",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "TX",
+      "worksite_cities": "Meadows Place",
+      "wage_annual_min": 94016,
+      "wage_annual_median": 94016,
+      "wage_annual_max": 94016
+    },
+    {
+      "employer": "UNIVERSITY OF MICHIGAN",
+      "employer_display": "University of Michigan",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "MI",
+      "worksite_cities": "Ann Arbor",
+      "wage_annual_min": 87844,
+      "wage_annual_median": 87844,
+      "wage_annual_max": 87844
+    },
+    {
+      "employer": "ABB",
+      "employer_display": "ABB Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "NC",
+      "worksite_cities": "Cary",
+      "wage_annual_min": 76315,
+      "wage_annual_median": 76315,
+      "wage_annual_max": 76315
+    },
+    {
+      "employer": "AHEAD",
+      "employer_display": "Ahead, Inc",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "TX",
+      "worksite_cities": "Cedar Park",
+      "wage_annual_min": 87000,
+      "wage_annual_median": 87000,
+      "wage_annual_max": 87000
+    },
+    {
+      "employer": "AMAZON DEVELOPMENT CENTER U S",
+      "employer_display": "Amazon Development Center U.S., Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "VA",
+      "worksite_cities": "Arlington",
+      "wage_annual_min": 160000,
+      "wage_annual_median": 160000,
+      "wage_annual_max": 160000
+    },
+    {
+      "employer": "AMAZON WEB SERVICES",
+      "employer_display": "Amazon Web Services, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "WA",
+      "worksite_cities": "Seattle",
+      "wage_annual_min": 136000,
+      "wage_annual_median": 136000,
+      "wage_annual_max": 136000
+    },
+    {
+      "employer": "AMERICAN EXPRESS TRAVEL RELATED SERVICES COMPANY",
+      "employer_display": "American Express Travel Related Services Company, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "CA",
+      "worksite_cities": "Palo Alto",
+      "wage_annual_min": 141728,
+      "wage_annual_median": 141728,
+      "wage_annual_max": 141728
+    },
+    {
+      "employer": "ATLINK COMMUNICATIONS",
+      "employer_display": "Atlink Communications Inc",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "TX",
+      "worksite_cities": "Houston",
+      "wage_annual_min": 80330,
+      "wage_annual_median": 80330,
+      "wage_annual_max": 80330
+    },
+    {
+      "employer": "BIM SOLUTIONS",
+      "employer_display": "BIM SOLUTIONS, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "NJ",
+      "worksite_cities": "Monmouth Junction",
+      "wage_annual_min": 94016,
+      "wage_annual_median": 94016,
+      "wage_annual_max": 94016
+    },
+    {
+      "employer": "BNS INTERNATIONAL",
+      "employer_display": "BNS INTERNATIONAL INC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "CA",
+      "worksite_cities": "Irvine",
+      "wage_annual_min": 76648,
+      "wage_annual_median": 76648,
+      "wage_annual_max": 76648
+    },
+    {
+      "employer": "BRIGHTEDGE TECHNOLOGIES",
+      "employer_display": "BrightEdge Technologies, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "IL",
+      "worksite_cities": "Chicago",
+      "wage_annual_min": 75608,
+      "wage_annual_median": 75608,
+      "wage_annual_max": 75608
+    },
+    {
+      "employer": "CDATASYSTEMS",
+      "employer_display": "CDATASYSTEMS INC.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "TX",
+      "worksite_cities": "Houston",
+      "wage_annual_min": 77750,
+      "wage_annual_median": 77750,
+      "wage_annual_max": 77750
+    },
+    {
+      "employer": "CITY OF PHILADELPHIA",
+      "employer_display": "City of Philadelphia",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "PA",
+      "worksite_cities": "Philadelphia",
+      "wage_annual_min": 89903,
+      "wage_annual_median": 89903,
+      "wage_annual_max": 89903
+    },
+    {
+      "employer": "CLARK SCHAEFER HACKETT CO",
+      "employer_display": "Clark, Schaefer, Hackett & Co.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "OH",
+      "worksite_cities": "Dayton",
+      "wage_annual_min": 71885,
+      "wage_annual_median": 71885,
+      "wage_annual_max": 71885
+    },
+    {
+      "employer": "COMCAST CABLE COMMUNICATIONS",
+      "employer_display": "Comcast Cable Communications, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "PA",
+      "worksite_cities": "Philadelphia",
+      "wage_annual_min": 80974,
+      "wage_annual_median": 80974,
+      "wage_annual_max": 80974
+    },
+    {
+      "employer": "CONQUERTECH INNOVATIONS",
+      "employer_display": "ConquerTech Innovations, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "NJ",
+      "worksite_cities": "Princeton",
+      "wage_annual_min": 95680,
+      "wage_annual_median": 95680,
+      "wage_annual_max": 95680
+    },
+    {
+      "employer": "COREWELL HEALTH",
+      "employer_display": "Corewell Health",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "MI",
+      "worksite_cities": "Grand Rapids",
+      "wage_annual_min": 62296,
+      "wage_annual_median": 62296,
+      "wage_annual_max": 62296
+    },
+    {
+      "employer": "DEEL US",
+      "employer_display": "Deel US LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "MI",
+      "worksite_cities": "Okemos",
+      "wage_annual_min": 79000,
+      "wage_annual_median": 79000,
+      "wage_annual_max": 79000
+    },
+    {
+      "employer": "EHEALTHINSURANCE SERVICES",
+      "employer_display": "eHealthInsurance Services, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "CA",
+      "worksite_cities": "Fremont",
+      "wage_annual_min": 108888,
+      "wage_annual_median": 108888,
+      "wage_annual_max": 108888
+    },
+    {
+      "employer": "ELFA VENTURES",
+      "employer_display": "ELFA Ventures LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "CT",
+      "worksite_cities": "South Windsor",
+      "wage_annual_min": 166400,
+      "wage_annual_median": 166400,
+      "wage_annual_max": 166400
+    },
+    {
+      "employer": "F5",
+      "employer_display": "F5, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "WA",
+      "worksite_cities": "Seattle",
+      "wage_annual_min": 108949,
+      "wage_annual_median": 108949,
+      "wage_annual_max": 108949
+    },
+    {
+      "employer": "FIDELITY TECHNOLOGY GROUP LLC D B A FIDELITY INVESTMENTS",
+      "employer_display": "Fidelity Technology Group, LLC d/b/a Fidelity Investments",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "MA",
+      "worksite_cities": "Boston",
+      "wage_annual_min": 86528,
+      "wage_annual_median": 86528,
+      "wage_annual_max": 86528
+    },
+    {
+      "employer": "GQG PARTNERS",
+      "employer_display": "GQG Partners LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "TX",
+      "worksite_cities": "Irving",
+      "wage_annual_min": 181000,
+      "wage_annual_median": 181000,
+      "wage_annual_max": 181000
+    },
+    {
+      "employer": "ICON PAYMENTS",
+      "employer_display": "ICON PAYMENTS LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "FL",
+      "worksite_cities": "Jacksonville",
+      "wage_annual_min": 74880,
+      "wage_annual_median": 74880,
+      "wage_annual_max": 74880
+    },
+    {
+      "employer": "INFOSMART TECHNOLOGIES",
+      "employer_display": "Infosmart Technologies, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "GA",
+      "worksite_cities": "Alpharetta",
+      "wage_annual_min": 81848,
+      "wage_annual_median": 81848,
+      "wage_annual_max": 81848
+    },
+    {
+      "employer": "INSIGHT GLOBAL",
+      "employer_display": "Insight Global, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "CA",
+      "worksite_cities": "Santa Clara",
+      "wage_annual_min": 107661,
+      "wage_annual_median": 107661,
+      "wage_annual_max": 107661
+    },
+    {
+      "employer": "INSPIRA ENTERPRISE",
+      "employer_display": "INSPIRA ENTERPRISE INC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "TX",
+      "worksite_cities": "WESTLAKE",
+      "wage_annual_min": 95000,
+      "wage_annual_median": 95000,
+      "wage_annual_max": 95000
+    },
+    {
+      "employer": "IZEAL",
+      "employer_display": "iZeal, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "OR",
+      "worksite_cities": "Portland",
+      "wage_annual_min": 95971,
+      "wage_annual_median": 95971,
+      "wage_annual_max": 95971
+    },
+    {
+      "employer": "KET SOFTWARE SERVICES",
+      "employer_display": "KET SOFTWARE SERVICES, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "NH",
+      "worksite_cities": "Concord",
+      "wage_annual_min": 85800,
+      "wage_annual_median": 85800,
+      "wage_annual_max": 85800
+    },
+    {
+      "employer": "LBMC PC",
+      "employer_display": "LBMC, PC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "TN",
+      "worksite_cities": "Murfreesboro",
+      "wage_annual_min": 85000,
+      "wage_annual_median": 85000,
+      "wage_annual_max": 85000
+    },
+    {
+      "employer": "MAXIL TECHNOLOGY SOLUTIONS",
+      "employer_display": "Maxil Technology Solutions, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "IL",
+      "worksite_cities": "Oak Brook",
+      "wage_annual_min": 100000,
+      "wage_annual_median": 100000,
+      "wage_annual_max": 100000
+    },
+    {
+      "employer": "MEDITOLOGY SERVICES",
+      "employer_display": "MEDITOLOGY SERVICES LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "IL",
+      "worksite_cities": "ELK GROVE VILLAGE",
+      "wage_annual_min": 75608,
+      "wage_annual_median": 75608,
+      "wage_annual_max": 75608
+    },
+    {
+      "employer": "MOBE",
+      "employer_display": "MOBE, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "MN",
+      "worksite_cities": "Minneapolis",
+      "wage_annual_min": 91730,
+      "wage_annual_median": 91730,
+      "wage_annual_max": 91730
+    },
+    {
+      "employer": "NEW YORK CITY OFFICE OF TECHNOLOGY AND INNOVATION",
+      "employer_display": "New York City Office of Technology and Innovation",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "NY",
+      "worksite_cities": "Brooklyn",
+      "wage_annual_min": 115733,
+      "wage_annual_median": 115733,
+      "wage_annual_max": 115733
+    },
+    {
+      "employer": "OMNIVISION TECHNOLOGIES",
+      "employer_display": "OmniVision Technologies, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "CA",
+      "worksite_cities": "Santa Clara",
+      "wage_annual_min": 106080,
+      "wage_annual_median": 106080,
+      "wage_annual_max": 106080
+    },
+    {
+      "employer": "ONLY IT CONSULTING",
+      "employer_display": "ONLY IT CONSULTING LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "IL",
+      "worksite_cities": "CHICAGO",
+      "wage_annual_min": 75608,
+      "wage_annual_median": 75608,
+      "wage_annual_max": 75608
+    },
+    {
+      "employer": "QUALITAS CONSULTING GROUP",
+      "employer_display": "Qualitas Consulting Group",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "GA",
+      "worksite_cities": "Lawrenceville",
+      "wage_annual_min": 85000,
+      "wage_annual_median": 85000,
+      "wage_annual_max": 85000
+    },
+    {
+      "employer": "RAPID7",
+      "employer_display": "Rapid7 LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "VA",
+      "worksite_cities": "Arlington",
+      "wage_annual_min": 115000,
+      "wage_annual_median": 115000,
+      "wage_annual_max": 115000
+    },
+    {
+      "employer": "REDSUN SOLUTIONS",
+      "employer_display": "Redsun Solutions LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "CA",
+      "worksite_cities": "Rancho Cucamonga",
+      "wage_annual_min": 70117,
+      "wage_annual_median": 70117,
+      "wage_annual_max": 70117
+    },
+    {
+      "employer": "RS SOLUTIONS",
+      "employer_display": "RS SOLUTIONS, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "NC",
+      "worksite_cities": "CARY",
+      "wage_annual_min": 76315,
+      "wage_annual_median": 76315,
+      "wage_annual_max": 76315
+    },
+    {
+      "employer": "SAMSUNG AUSTIN SEMICONDUCTOR",
+      "employer_display": "SAMSUNG AUSTIN SEMICONDUCTOR, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "TX",
+      "worksite_cities": "Austin",
+      "wage_annual_min": 97900,
+      "wage_annual_median": 97900,
+      "wage_annual_max": 97900
+    },
+    {
+      "employer": "SBP CONSTRUCTION",
+      "employer_display": "SBP CONSTRUCTION LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "NJ",
+      "worksite_cities": "BERGENFIELD",
+      "wage_annual_min": 94016,
+      "wage_annual_median": 94016,
+      "wage_annual_max": 94016
+    },
+    {
+      "employer": "SG AMERICAS OPERATIONAL SERVICES",
+      "employer_display": "SG Americas Operational Services, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "NJ",
+      "worksite_cities": "Jersey City",
+      "wage_annual_min": 125000,
+      "wage_annual_median": 125000,
+      "wage_annual_max": 125000
+    },
+    {
+      "employer": "SOFTSOLV",
+      "employer_display": "SOFTSOLV, INC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "TX",
+      "worksite_cities": "McKinney",
+      "wage_annual_min": 85717,
+      "wage_annual_median": 85717,
+      "wage_annual_max": 85717
+    },
+    {
+      "employer": "SPARKSOFT CORPORATION",
+      "employer_display": "Sparksoft Corporation",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "VA",
+      "worksite_cities": "Jeffersonton",
+      "wage_annual_min": 100000,
+      "wage_annual_median": 100000,
+      "wage_annual_max": 100000
+    },
+    {
+      "employer": "SPRINGSHINE CONSULTING",
+      "employer_display": "Springshine Consulting Inc",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "VA",
+      "worksite_cities": "Ashburn",
+      "wage_annual_min": 99507,
+      "wage_annual_median": 99507,
+      "wage_annual_max": 99507
+    },
+    {
+      "employer": "STAPLES",
+      "employer_display": "Staples, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "MA",
+      "worksite_cities": "Framingham",
+      "wage_annual_min": 99419,
+      "wage_annual_median": 99419,
+      "wage_annual_max": 99419
+    },
+    {
+      "employer": "TEKCOMMANDS",
+      "employer_display": "TeKCommands Inc",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "TX",
+      "worksite_cities": "Fort Worth",
+      "wage_annual_min": 85750,
+      "wage_annual_median": 85750,
+      "wage_annual_max": 85750
+    },
+    {
+      "employer": "THINKTEL",
+      "employer_display": "ThinkTel, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "CA",
+      "worksite_cities": "Los Angeles",
+      "wage_annual_min": 76648,
+      "wage_annual_median": 76648,
+      "wage_annual_max": 76648
+    },
+    {
+      "employer": "TOPCON POSITIONING SYSTEMS",
+      "employer_display": "Topcon Positioning Systems, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "CA",
+      "worksite_cities": "Livermore",
+      "wage_annual_min": 153830,
+      "wage_annual_median": 153830,
+      "wage_annual_max": 153830
+    },
+    {
+      "employer": "TOPGOLF CALLAWAY BRANDS",
+      "employer_display": "Topgolf Callaway Brands Corp.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "CA",
+      "worksite_cities": "Carlsbad",
+      "wage_annual_min": 105000,
+      "wage_annual_median": 105000,
+      "wage_annual_max": 105000
+    },
+    {
+      "employer": "UNIVERSITY OF MINNESOTA",
+      "employer_display": "University of Minnesota",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "MN",
+      "worksite_cities": "Minneapolis",
+      "wage_annual_min": 87610,
+      "wage_annual_median": 87610,
+      "wage_annual_max": 87610
+    },
+    {
+      "employer": "VISUAL COMFORT",
+      "employer_display": "Visual Comfort LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "TX",
+      "worksite_cities": "Houston",
+      "wage_annual_min": 100000,
+      "wage_annual_median": 100000,
+      "wage_annual_max": 100000
+    },
+    {
+      "employer": "WASHINGTON STATE UNIVERSITY",
+      "employer_display": "Washington State University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "UT",
+      "worksite_cities": "Farmington",
+      "wage_annual_min": 87822,
+      "wage_annual_median": 87822,
+      "wage_annual_max": 87822
+    },
+    {
+      "employer": "WELLNESS CARE GROUP OF TEXAS",
+      "employer_display": "Wellness & Care Group of Texas",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "TX",
+      "worksite_cities": "Frisco",
+      "wage_annual_min": 89000,
+      "wage_annual_median": 89000,
+      "wage_annual_max": 89000
+    },
+    {
+      "employer": "ZURICH SERVICES US",
+      "employer_display": "Zurich Services US LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1212",
+      "soc_titles": "Information Security Analysts",
+      "worksite_states": "IL",
+      "worksite_cities": "Schaumburg",
+      "wage_annual_min": 82363,
+      "wage_annual_median": 82363,
+      "wage_annual_max": 82363
+    }
+  ]
+}

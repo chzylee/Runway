@@ -1,0 +1,44 @@
+{
+  "role": "human_resources_specialist",
+  "curated_at_utc": "2026-07-24",
+  "kind": "curated-editorial",
+  "framework": "A path qualifies only when >=3 prominent, proven people in the field visibly share the capability, each with a resolving link — the pattern across standouts is the evidence, not market demand. Ranked by strength of that pattern. Curated editorial, not DOL-derived.",
+  "paths": [
+    {
+      "rank": 1,
+      "path": "Advanced technical sourcing craft",
+      "what_it_is": "Mastering advanced Boolean and X-ray search strings, deep-web candidate research, and passive-candidate sourcing methodology to surface talent that standard keyword search misses.",
+      "why_it_signals": "Multiple decades-long careers were built entirely on this one technical craft, and each practitioner trained cohorts of other sourcers in it, showing it is a learnable, high-leverage skill that turns a recruiter into an industry authority rather than a routine job requirement.",
+      "people": [
+        {"name": "Irina Shamaeva", "link": "https://www.booleanstrings.com/about/"},
+        {"name": "Glen Cathey", "link": "https://www.linkedin.com/in/glencathey"},
+        {"name": "Shally Steckerl", "link": "https://www.linkedin.com/in/shally-steckerl"}
+      ],
+      "source": "https://www.booleanstrings.com/about/"
+    },
+    {
+      "rank": 2,
+      "path": "People analytics and data storytelling",
+      "what_it_is": "Building rigorous people-analytics research, workforce measurement frameworks, and data storytelling that turn HR data into decisions executives actually act on.",
+      "why_it_signals": "Several practitioners independently built recognized bodies of research, newsletters, and speaking platforms around this same skill, showing the ability to translate workforce data into business insight compounds into industry authority rather than staying a back-office reporting function.",
+      "people": [
+        {"name": "David Green", "link": "https://www.davidrgreen.com/"},
+        {"name": "Serena H. Huang", "link": "https://www.linkedin.com/in/serenahhuangphd"},
+        {"name": "Dieter Veldsman", "link": "https://www.linkedin.com/in/dieterveldsman"}
+      ],
+      "source": "https://www.davidrgreen.com/"
+    },
+    {
+      "rank": 3,
+      "path": "Equitable-systems design",
+      "what_it_is": "Designing structured frameworks and assessment tools that embed fairness and equity directly into hiring, promotion, and organizational processes, rather than relying on one-off training sessions.",
+      "why_it_signals": "Multiple practitioners independently built named, reusable frameworks and consulting practices around this same systems-design skill, showing it is a distinct, transferable capability that clients and employers seek out by name.",
+      "people": [
+        {"name": "Aubrey Blanche", "link": "https://aubreyblanche.com/"},
+        {"name": "Lily Zheng", "link": "https://www.lilyzheng.co/"},
+        {"name": "Joelle Emerson", "link": "https://www.linkedin.com/in/joelle-emerson-4a24225"}
+      ],
+      "source": "https://aubreyblanche.com/"
+    }
+  ]
+}

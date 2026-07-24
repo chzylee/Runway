@@ -1,0 +1,44 @@
+{
+  "role": "electrical_engineer",
+  "curated_at_utc": "2026-07-24",
+  "kind": "curated-editorial",
+  "framework": "A path qualifies only when >=3 prominent, proven people in the field visibly share the capability, each with a resolving link — the pattern across standouts is the evidence, not market demand. Ranked by strength of that pattern. Curated editorial, not DOL-derived.",
+  "paths": [
+    {
+      "rank": 1,
+      "path": "Public signal-integrity / EMI mastery through teaching",
+      "what_it_is": "Building deep, rigorous expertise in signal integrity, EMI, and PCB noise control, then codifying it into publicly accessible courses, textbooks, and conference talks that other engineers rely on.",
+      "why_it_signals": "It proves an engineer's understanding is precise enough to teach and defend in public, not just apply privately — the rarest and most trusted form of technical credibility in the field.",
+      "people": [
+        {"name": "Eric Bogatin", "link": "https://www.colorado.edu/faculty/bogatin/"},
+        {"name": "Rick Hartley", "link": "https://www.linkedin.com/in/rick-hartley-8571216"},
+        {"name": "Henry Ott", "link": "http://www.hottconsultants.com/"}
+      ],
+      "source": "https://www.colorado.edu/faculty/bogatin/"
+    },
+    {
+      "rank": 2,
+      "path": "Public teardown and reverse-engineering practice",
+      "what_it_is": "Systematically opening up hardware — chips, instruments, vintage and modern devices — and publishing detailed, rigorous write-ups of how the internals actually work.",
+      "why_it_signals": "It demonstrates the ability to read and explain real circuits from the ground up, a form of hands-on technical fluency that is hard to fake and highly visible to peers.",
+      "people": [
+        {"name": "Ken Shirriff", "link": "https://www.righto.com/"},
+        {"name": "Dave Jones", "link": "https://www.eevblog.com/"},
+        {"name": "Kerry Wong", "link": "http://www.kerrywong.com/"}
+      ],
+      "source": "https://www.righto.com/"
+    },
+    {
+      "rank": 3,
+      "path": "Open-hardware project leadership with public PCB documentation",
+      "what_it_is": "Leading an open-hardware project or design practice and publishing the schematics, PCB layouts, and design-decision rationale for others to study and build on.",
+      "why_it_signals": "It shows an engineer can carry a design from concept to a manufacturable, well-documented product — and is confident enough in the work to expose it to public scrutiny.",
+      "people": [
+        {"name": "Limor Fried", "link": "https://www.adafruit.com/about"},
+        {"name": "Chris Gammell", "link": "https://chrisgammell.com/"},
+        {"name": "Phil Salmony", "link": "https://www.phils-lab.net/"}
+      ],
+      "source": "https://www.adafruit.com/about"
+    }
+  ]
+}

@@ -1,0 +1,449 @@
+{
+  "role": "web_developer",
+  "generated_at_utc": "2026-07-24 06:19 UTC",
+  "source": "US DOL OFLC LCA Programs disclosure data (public record)",
+  "filters": {
+    "case_status": "Certified",
+    "soc_codes": [
+      "15-1254"
+    ],
+    "pw_wage_level": "I"
+  },
+  "quarters_used": [
+    "FY2025Q4",
+    "FY2026Q1"
+  ],
+  "quarters_superseded": {},
+  "funnel": {
+    "rows_total": 201700,
+    "rows_certified": 181277,
+    "rows_soc_matched": 202,
+    "rows_selected": 30
+  },
+  "employer_groups": 19,
+  "rows_wage_excluded_from_wage_stats": 0,
+  "patterns": {
+    "basis": {
+      "filings": 30,
+      "employers": 19,
+      "measured_by": "employers",
+      "min_support_employers": 3
+    },
+    "job_titles": {
+      "recurring_tokens": [
+        {
+          "token": "developer",
+          "employers": 17,
+          "filings": 27
+        },
+        {
+          "token": "web",
+          "employers": 14,
+          "filings": 21
+        }
+      ],
+      "distinct_titles": [
+        {
+          "title": "Web Developer",
+          "employers": 6,
+          "filings": 7
+        },
+        {
+          "title": "WEB DEVELOPER",
+          "employers": 2,
+          "filings": 3
+        },
+        {
+          "title": "IT Consultant (Web Developer )",
+          "employers": 1,
+          "filings": 6
+        },
+        {
+          "title": "Frontend Developer",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Full-Stack Developer",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "CRM & Web Support Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Full Stack Web Developer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Java Developer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Jr. Software Developer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Software Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "UI DEVELOPER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Web Developer (Part-Time)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Web Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Web developer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "WordPress Developer",
+          "employers": 1,
+          "filings": 1
+        }
+      ]
+    },
+    "onet_occupations": [
+      {
+        "soc_code": "15-1254.00",
+        "title": "Web Developers",
+        "employers": 19,
+        "filings": 30
+      }
+    ],
+    "placement_model": {
+      "in_house": {
+        "employers": 14,
+        "filings": 16
+      },
+      "third_party_site": {
+        "employers": 6,
+        "filings": 14
+      }
+    },
+    "industry_naics2": [
+      {
+        "code": "54",
+        "label": "Professional, Scientific, and Technical Services",
+        "employers": 10,
+        "filings": 20
+      },
+      {
+        "code": "61",
+        "label": "Educational Services",
+        "employers": 5,
+        "filings": 6
+      }
+    ]
+  },
+  "caveats": [
+    "An LCA certification is not a hire or an open role.",
+    "OPT is not sponsorship — a new grad's first job is on OPT; sponsorship comes 1-3 years later.",
+    "Employer names are conservatively normalized and may under-merge.",
+    "Career/portfolio guidance, not immigration legal advice."
+  ],
+  "employers": [
+    {
+      "employer": "RYZLINK",
+      "employer_display": "RYZLINK CORP",
+      "filing_count": 4,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "15-1254",
+      "soc_titles": "Web Developers",
+      "worksite_states": "CA",
+      "worksite_cities": "Santa Clara; Sunnyvale",
+      "wage_annual_min": 92768,
+      "wage_annual_median": 104000,
+      "wage_annual_max": 115648
+    },
+    {
+      "employer": "THE FLORIDA STATE UNIVERSITY",
+      "employer_display": "The Florida State University",
+      "filing_count": 2,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "15-1254",
+      "soc_titles": "Web Developers",
+      "worksite_states": "TX",
+      "worksite_cities": "Austin",
+      "wage_annual_min": 76800,
+      "wage_annual_median": 76800,
+      "wage_annual_max": 76800
+    },
+    {
+      "employer": "PEOPLE TECH GROUP",
+      "employer_display": "People Tech Group, Inc",
+      "filing_count": 6,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1254",
+      "soc_titles": "Web Developers",
+      "worksite_states": "WA",
+      "worksite_cities": "Seattle",
+      "wage_annual_min": 76357,
+      "wage_annual_median": 76357,
+      "wage_annual_max": 76357
+    },
+    {
+      "employer": "KINETICA SYSTEMS",
+      "employer_display": "KINETICA SYSTEMS LLC",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1254",
+      "soc_titles": "Web Developers",
+      "worksite_states": "FL",
+      "worksite_cities": "SUNRISE",
+      "wage_annual_min": 62462,
+      "wage_annual_median": 62462,
+      "wage_annual_max": 62462
+    },
+    {
+      "employer": "TANISHA SYSTEMS",
+      "employer_display": "TANISHA SYSTEMS INC",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1254",
+      "soc_titles": "Web Developers",
+      "worksite_states": "CA",
+      "worksite_cities": "San Leandro",
+      "wage_annual_min": 83491,
+      "wage_annual_median": 83491,
+      "wage_annual_max": 83491
+    },
+    {
+      "employer": "BAY ATLANTIC UNIVERSITY BAU",
+      "employer_display": "Bay Atlantic University (BAU) LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1254",
+      "soc_titles": "Web Developers",
+      "worksite_states": "DC",
+      "worksite_cities": "Washington",
+      "wage_annual_min": 86944,
+      "wage_annual_median": 86944,
+      "wage_annual_max": 86944
+    },
+    {
+      "employer": "DANDELION PAYMENTS",
+      "employer_display": "Dandelion Payments, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1254",
+      "soc_titles": "Web Developers",
+      "worksite_states": "CA",
+      "worksite_cities": "Buena Park",
+      "wage_annual_min": 74621,
+      "wage_annual_median": 74621,
+      "wage_annual_max": 74621
+    },
+    {
+      "employer": "DATAQUAD",
+      "employer_display": "Dataquad Inc",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1254",
+      "soc_titles": "Web Developers",
+      "worksite_states": "CA",
+      "worksite_cities": "Sunnyvale",
+      "wage_annual_min": 93000,
+      "wage_annual_median": 93000,
+      "wage_annual_max": 93000
+    },
+    {
+      "employer": "DENAGO EV CORPORATION",
+      "employer_display": "Denago EV Corporation",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1254",
+      "soc_titles": "Web Developers",
+      "worksite_states": "TX",
+      "worksite_cities": "Plano",
+      "wage_annual_min": 50000,
+      "wage_annual_median": 50000,
+      "wage_annual_max": 50000
+    },
+    {
+      "employer": "DOE LABS",
+      "employer_display": "Doe Labs, Corp.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1254",
+      "soc_titles": "Web Developers",
+      "worksite_states": "CA",
+      "worksite_cities": "San Francisco",
+      "wage_annual_min": 100000,
+      "wage_annual_median": 100000,
+      "wage_annual_max": 100000
+    },
+    {
+      "employer": "HASHFOREST TECHNOLOGY",
+      "employer_display": "Hashforest Technology LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1254",
+      "soc_titles": "Web Developers",
+      "worksite_states": "CA",
+      "worksite_cities": "NEWARK",
+      "wage_annual_min": 84000,
+      "wage_annual_median": 84000,
+      "wage_annual_max": 84000
+    },
+    {
+      "employer": "HIH",
+      "employer_display": "HIH INC.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1254",
+      "soc_titles": "Web Developers",
+      "worksite_states": "CA",
+      "worksite_cities": "SANTA CLARA",
+      "wage_annual_min": 92768,
+      "wage_annual_median": 92768,
+      "wage_annual_max": 92768
+    },
+    {
+      "employer": "KNS RETAIL",
+      "employer_display": "KNS Retail LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1254",
+      "soc_titles": "Web Developers",
+      "worksite_states": "TX",
+      "worksite_cities": "Nederland",
+      "wage_annual_min": 64875,
+      "wage_annual_median": 64875,
+      "wage_annual_max": 64875
+    },
+    {
+      "employer": "LOUISIANA TECH UNIVERSITY",
+      "employer_display": "Louisiana Tech University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1254",
+      "soc_titles": "Web Developers",
+      "worksite_states": "LA",
+      "worksite_cities": "Ruston",
+      "wage_annual_min": 59000,
+      "wage_annual_median": 59000,
+      "wage_annual_max": 59000
+    },
+    {
+      "employer": "MISSISSIPPI STATE UNIVERSITY",
+      "employer_display": "Mississippi State University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1254",
+      "soc_titles": "Web Developers",
+      "worksite_states": "MS",
+      "worksite_cities": "Starkville",
+      "wage_annual_min": 64000,
+      "wage_annual_median": 64000,
+      "wage_annual_max": 64000
+    },
+    {
+      "employer": "RELIVE AI",
+      "employer_display": "relive.ai LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1254",
+      "soc_titles": "Web Developers",
+      "worksite_states": "MA",
+      "worksite_cities": "Boston",
+      "wage_annual_min": 72800,
+      "wage_annual_median": 72800,
+      "wage_annual_max": 72800
+    },
+    {
+      "employer": "TEKTASTIC TECHNICAL SERVICES",
+      "employer_display": "Tektastic Technical Services LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1254",
+      "soc_titles": "Web Developers",
+      "worksite_states": "CA",
+      "worksite_cities": "Sunnyvale",
+      "wage_annual_min": 93000,
+      "wage_annual_median": 93000,
+      "wage_annual_max": 93000
+    },
+    {
+      "employer": "THE MIDNIGHT TRADING",
+      "employer_display": "The Midnight Trading Inc",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1254",
+      "soc_titles": "Web Developers",
+      "worksite_states": "CA",
+      "worksite_cities": "Irvine",
+      "wage_annual_min": 59218,
+      "wage_annual_median": 59218,
+      "wage_annual_max": 59218
+    },
+    {
+      "employer": "THE UNIVERSITY OF TENNESSEE",
+      "employer_display": "THE UNIVERSITY OF TENNESSEE",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1254",
+      "soc_titles": "Web Developers",
+      "worksite_states": "TN",
+      "worksite_cities": "Knoxville",
+      "wage_annual_min": 75000,
+      "wage_annual_median": 75000,
+      "wage_annual_max": 75000
+    }
+  ]
+}

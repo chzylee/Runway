@@ -1,0 +1,654 @@
+{
+  "generated_at_utc": "2026-07-24 06:19 UTC",
+  "source": "US DOL OFLC LCA Programs disclosure data (public record)",
+  "filters": {
+    "case_status": "Certified",
+    "role": "mechatronics_robotics_engineer",
+    "soc_codes": [
+      "17-2199"
+    ],
+    "pw_wage_level": "I"
+  },
+  "quarters_used": [
+    "FY2025Q4",
+    "FY2026Q1"
+  ],
+  "quarters_superseded": {},
+  "rows_per_quarter": {
+    "FY2025Q4": 118580,
+    "FY2026Q1": 83120
+  },
+  "funnel": {
+    "rows_total": 201700,
+    "rows_certified": 181277,
+    "rows_soc_matched": 687,
+    "rows_selected": 106
+  },
+  "employer_groups": 88,
+  "distinct_raw_employer_spellings": 89,
+  "rows_wage_excluded_from_wage_stats": 0,
+  "case_statuses_seen": {
+    "CERTIFIED": 181277,
+    "CERTIFIED - WITHDRAWN": 15748,
+    "WITHDRAWN": 3242,
+    "DENIED": 1433
+  },
+  "wage_levels_seen": {
+    "II": 230,
+    "III": 168,
+    "IV": 153,
+    "I": 106,
+    "": 30
+  },
+  "wage_units_seen": {
+    "YEAR": 91,
+    "HOUR": 15
+  },
+  "patterns": {
+    "basis": {
+      "filings": 106,
+      "employers": 88,
+      "measured_by": "employers",
+      "min_support_employers": 3
+    },
+    "job_titles": {
+      "recurring_tokens": [
+        {
+          "token": "engineer",
+          "employers": 64,
+          "filings": 73
+        },
+        {
+          "token": "research",
+          "employers": 11,
+          "filings": 14
+        },
+        {
+          "token": "automation",
+          "employers": 9,
+          "filings": 9
+        },
+        {
+          "token": "postdoctoral",
+          "employers": 8,
+          "filings": 10
+        },
+        {
+          "token": "robotics",
+          "employers": 8,
+          "filings": 10
+        },
+        {
+          "token": "senior",
+          "employers": 7,
+          "filings": 8
+        },
+        {
+          "token": "project",
+          "employers": 7,
+          "filings": 7
+        },
+        {
+          "token": "associate",
+          "employers": 6,
+          "filings": 7
+        },
+        {
+          "token": "specialist",
+          "employers": 6,
+          "filings": 6
+        },
+        {
+          "token": "controls",
+          "employers": 5,
+          "filings": 6
+        },
+        {
+          "token": "software",
+          "employers": 5,
+          "filings": 6
+        },
+        {
+          "token": "field",
+          "employers": 5,
+          "filings": 5
+        },
+        {
+          "token": "mechatronics",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "systems",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "analyst",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "scientist",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "service",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "validation",
+          "employers": 3,
+          "filings": 3
+        }
+      ],
+      "distinct_titles": [
+        {
+          "title": "Automation Engineer",
+          "employers": 6,
+          "filings": 6
+        },
+        {
+          "title": "Robotics Engineer",
+          "employers": 5,
+          "filings": 5
+        },
+        {
+          "title": "Project Engineer",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "title": "Mechatronics Engineer",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "Postdoctoral Research Associate",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "Controls Engineer",
+          "employers": 2,
+          "filings": 3
+        },
+        {
+          "title": "Field Service Engineer",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Research Scientist",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Senior Robotics Engineer",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Embedded Software Engineer",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Postdoctoral Associate (Photonics Engineers)",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Postdoctoral Researcher",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Research Staff 2",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "3D Printing Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Aircraft Technologies Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Automation Engineer II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Automation Software Engineer II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Automation Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Automotive Body Systems Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Autonomy Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Compliance Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Control Systems Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Controls Software Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Controls System Lead",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "DPM Field Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "DRE “ BIW Upper Body",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Design Engineer II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Electrical Design Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Energy Consultant [00088281]",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Energy Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Equipment Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Evaluation Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "FIELD SERVICE SYSTEMS APPLICATIONS ENGINEER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Field Application Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "GEIR”Mechatronics Engineering Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Industrial Robotics Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Integration Engineer (E&C)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Junior Project Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Lead Sustainability Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Long Haul Fiber Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Manufacturing Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Manufacturing Quality Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Mechanical Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Micro/Nanofabrication Research Specialist - Engineering",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Microfabrication - Semiconductor Process Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Multi-Skilled Sr. Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Optical Systems R&D Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "PV Design Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Post Doctoral Research Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Research Affiliate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Research Fellow",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Scholar",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Process Engineer II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Product Development Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Product Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Engineer II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "R&D Prototype and Test Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "RESEARCH ENGINEER AND INSTRUMENTATION SPECIALIST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "RF Validation Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Assistant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Robotics Engineer II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "SOLAR ENGINEER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Scientist II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Analyst Solutions Architecture",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Electronics Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Machine Learning Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Project Technician",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Robotics Engineer I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Software Controls Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Software Developer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Solar Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sr. Decarbonization Analyst [00088282]",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Technical Consultant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Technician",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Validation Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Vehicle Validation Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Visual Design and Construction Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Wireless Network Engineer",
+          "employers": 1,
+          "filings": 1
+        }
+      ]
+    },
+    "onet_occupations": [
+      {
+        "soc_code": "17-2199.05",
+        "title": "Mechatronics Engineers",
+        "employers": 27,
+        "filings": 33
+      },
+      {
+        "soc_code": "17-2199.08",
+        "title": "Robotics Engineers",
+        "employers": 18,
+        "filings": 23
+      },
+      {
+        "soc_code": "17-2199.00",
+        "title": "Engineers, All Other",
+        "employers": 16,
+        "filings": 17
+      },
+      {
+        "soc_code": "17-2199.03",
+        "title": "Energy Engineers, Except Wind and Solar",
+        "employers": 9,
+        "filings": 10
+      },
+      {
+        "soc_code": "17-2199.09",
+        "title": "Nanosystems Engineers",
+        "employers": 8,
+        "filings": 8
+      },
+      {
+        "soc_code": "17-2199.11",
+        "title": "Solar Energy Systems Engineers",
+        "employers": 5,
+        "filings": 5
+      },
+      {
+        "soc_code": "17-2199.07",
+        "title": "Photonics Engineers",
+        "employers": 4,
+        "filings": 5
+      },
+      {
+        "soc_code": "17-2199.06",
+        "title": "Microsystems Engineers",
+        "employers": 3,
+        "filings": 5
+      }
+    ],
+    "placement_model": {
+      "in_house": {
+        "employers": 82,
+        "filings": 95
+      },
+      "third_party_site": {
+        "employers": 7,
+        "filings": 11
+      }
+    },
+    "industry_naics2": [
+      {
+        "code": "54",
+        "label": "Professional, Scientific, and Technical Services",
+        "employers": 36,
+        "filings": 46
+      },
+      {
+        "code": "33",
+        "label": "Manufacturing",
+        "employers": 21,
+        "filings": 24
+      },
+      {
+        "code": "61",
+        "label": "Educational Services",
+        "employers": 12,
+        "filings": 15
+      },
+      {
+        "code": "42",
+        "label": "Wholesale Trade",
+        "employers": 4,
+        "filings": 5
+      },
+      {
+        "code": "23",
+        "label": "Construction",
+        "employers": 4,
+        "filings": 4
+      }
+    ]
+  },
+  "caveats": [
+    "An LCA certification is not a hire or an open role.",
+    "OPT is not sponsorship — a new grad's first job is on OPT; sponsorship comes 1-3 years later.",
+    "Employer names are conservatively normalized and may under-merge.",
+    "Career/portfolio guidance, not immigration legal advice."
+  ]
+}

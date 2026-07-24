@@ -1,0 +1,46 @@
+{
+  "role": "environmental_engineer",
+  "curated_at_utc": "2026-07-24",
+  "kind": "curated-editorial",
+  "framework": "A path qualifies only when >=3 prominent, proven people in the field visibly share the capability, each with a resolving link — the pattern across standouts is the evidence, not market demand. Ranked by strength of that pattern. Curated editorial, not DOL-derived.",
+  "paths": [
+    {
+      "rank": 1,
+      "path": "Citizen-science contamination testing",
+      "what_it_is": "Mobilizing residents to independently sample water or other environmental exposures when official monitoring is inadequate, then publishing the results with full transparency about methodology.",
+      "why_it_signals": "It proves the engineer treats public health protection as the actual mission rather than regulatory box-checking, which is exactly what turns a new engineer into the trusted go-to expert during a crisis.",
+      "people": [
+        {"name": "Marc Edwards", "link": "https://www.webapps.cee.vt.edu/index.php?category=people&do=getprofile&pagetype=bio&user=edwards.html"},
+        {"name": "Siddhartha Roy", "link": "https://roy.rutgers.edu/about/"},
+        {"name": "Kelsey Pieper", "link": "https://coe.northeastern.edu/people/pieper-kelsey/"},
+        {"name": "Andrew Whelton", "link": "https://engineering.purdue.edu/CCE/People/ptProfile?resource_id=110359"}
+      ],
+      "source": "https://www.webapps.cee.vt.edu/index.php?category=people&do=getprofile&pagetype=bio&user=edwards.html"
+    },
+    {
+      "rank": 2,
+      "path": "Building open-source LCA tools",
+      "what_it_is": "Building and maintaining open-source life-cycle-assessment (LCA) software or modeling frameworks that other practitioners run their environmental impact calculations on.",
+      "why_it_signals": "It shows technical depth beyond running someone else's spreadsheet model, plus a habit of building durable, reusable infrastructure that is visible and verifiable on GitHub and in citations, not just claimed on a resume.",
+      "people": [
+        {"name": "Chris Mutel", "link": "https://chris.mutel.org/"},
+        {"name": "Bernhard Steubing", "link": "https://www.universiteitleiden.nl/en/staffmembers/bernhard-steubing"},
+        {"name": "Andreas Ciroth", "link": "https://www.greendelta.com/about-us/team-2-2/"}
+      ],
+      "source": "https://chris.mutel.org/"
+    },
+    {
+      "rank": 3,
+      "path": "Low-cost sensor calibration and validation",
+      "what_it_is": "Designing, field-deploying, and rigorously calibrating low-cost environmental sensor networks (air quality, particulates, gases) against reference-grade instruments, then publishing the calibration methodology openly.",
+      "why_it_signals": "It bridges hardware, data science, and field engineering to extend monitoring into places expensive regulatory-grade equipment never reaches, a combination that increasingly separates engineers who generate new, usable data from those who only interpret existing data.",
+      "people": [
+        {"name": "R. Subramanian", "link": "https://www.rsubramanian.com/"},
+        {"name": "Naomi Zimmerman", "link": "https://naomizimmerman.com/"},
+        {"name": "Albert Presto", "link": "https://engineering.cmu.edu/directory/bios/presto-albert.html"},
+        {"name": "Michael Hannigan", "link": "https://www.colorado.edu/lab/hannigan/team/mike-hannigan"}
+      ],
+      "source": "https://www.rsubramanian.com/"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+employer,employer_display,filing_count,quarters_present,quarters,repeat_sponsor,soc_codes,soc_titles,worksite_states,worksite_cities,wage_annual_min,wage_annual_median,wage_annual_max
+ERNST YOUNG U S LLP,Ernst & Young U.S. LLP,21,2,FY2025Q4; FY2026Q1,yes,15-1212,Information Security Analysts,CA; GA; IL; TX; WI,Atlanta; Chicago; Dallas; Kennedale; Milwaukee; Northbrook; San Francisco,78000,101249,110000
+LEVELBLUE,"LevelBlue, LLC",3,2,FY2025Q4; FY2026Q1,yes,15-1212,Information Security Analysts,MA; NJ; NY,Framingham; Harrison; New York,86528,94016,100000
+MICROSOFT CORPORATION,Microsoft Corporation,3,2,FY2025Q4; FY2026Q1,yes,15-1212,Information Security Analysts,WA,Seattle,130501,138000,138000
+AIG EMPLOYEE SERVICES,"AIG Employee Services, Inc.",2,2,FY2025Q4; FY2026Q1,yes,15-1212,Information Security Analysts,TX; VA,Houston; Reston,77750,88628,99507
+GOLDMAN SACHS CO,GOLDMAN SACHS & CO. LLC,2,2,FY2025Q4; FY2026Q1,yes,15-1212,Information Security Analysts,NY; TX,Dallas; New York,88000,93000,98000
+AMAZON COM SERVICES,Amazon.com Services LLC,9,1,FY2025Q4,no,15-1212,Information Security Analysts,CA; NY; TX; VA; WA,Arlington; Austin; Irvine; New York; Seattle,136000,158000,187000
+DIGITAL MANAGEMENT,DIGITAL MANAGEMENT LLC,2,1,FY2026Q1,no,15-1212,Information Security Analysts,DC,Washington,102928,106464,110000
+EPACE TECHNOLOGIES,EPACE TECHNOLOGIES INC,2,1,FY2025Q4,no,15-1212,Information Security Analysts,CA,Oakland,108888,108888,108888
+GP TECHNOLOGIES,GP TECHNOLOGIES LLC,2,1,FY2025Q4,no,15-1212,Information Security Analysts,TX,Cypress,77800,77800,77800
+KASEYA US,Kaseya US LLC,2,1,FY2025Q4,no,15-1212,Information Security Analysts,FL,Orlando,72197,72197,72197
+PRICEWATERHOUSECOOPERS ADVISORY SERVICES,PRICEWATERHOUSECOOPERS ADVISORY SERVICES LLC,2,1,FY2026Q1,no,15-1212,Information Security Analysts,NY; TX,Dallas; New York,95000,100000,105000
+PROGRESSIVE SOFTWARE COMPUTING,Progressive Software Computing Inc,2,1,FY2026Q1,no,15-1212,Information Security Analysts,DE,Bear; Dover,86500,86500,86500
+SOAPROJECTS,"SOAProjects, Inc.",2,1,FY2025Q4,no,15-1212,Information Security Analysts,CA,Mountain View,106080,106080,106080
+SOYO SOFT,"SOYO SOFT, INC.",2,1,FY2025Q4,no,15-1212,Information Security Analysts,TX,Meadows Place,94016,94016,94016
+UNIVERSITY OF MICHIGAN,University of Michigan,2,1,FY2026Q1,no,15-1212,Information Security Analysts,MI,Ann Arbor,87844,87844,87844
+ABB,ABB Inc.,1,1,FY2025Q4,no,15-1212,Information Security Analysts,NC,Cary,76315,76315,76315
+AHEAD,"Ahead, Inc",1,1,FY2026Q1,no,15-1212,Information Security Analysts,TX,Cedar Park,87000,87000,87000
+AMAZON DEVELOPMENT CENTER U S,"Amazon Development Center U.S., Inc.",1,1,FY2025Q4,no,15-1212,Information Security Analysts,VA,Arlington,160000,160000,160000
+AMAZON WEB SERVICES,"Amazon Web Services, Inc.",1,1,FY2025Q4,no,15-1212,Information Security Analysts,WA,Seattle,136000,136000,136000
+AMERICAN EXPRESS TRAVEL RELATED SERVICES COMPANY,"American Express Travel Related Services Company, Inc.",1,1,FY2025Q4,no,15-1212,Information Security Analysts,CA,Palo Alto,141728,141728,141728
+ATLINK COMMUNICATIONS,Atlink Communications Inc,1,1,FY2025Q4,no,15-1212,Information Security Analysts,TX,Houston,80330,80330,80330
+BIM SOLUTIONS,"BIM SOLUTIONS, LLC",1,1,FY2025Q4,no,15-1212,Information Security Analysts,NJ,Monmouth Junction,94016,94016,94016
+BNS INTERNATIONAL,BNS INTERNATIONAL INC,1,1,FY2026Q1,no,15-1212,Information Security Analysts,CA,Irvine,76648,76648,76648
+BRIGHTEDGE TECHNOLOGIES,"BrightEdge Technologies, Inc.",1,1,FY2025Q4,no,15-1212,Information Security Analysts,IL,Chicago,75608,75608,75608
+CDATASYSTEMS,CDATASYSTEMS INC.,1,1,FY2026Q1,no,15-1212,Information Security Analysts,TX,Houston,77750,77750,77750
+CITY OF PHILADELPHIA,City of Philadelphia,1,1,FY2025Q4,no,15-1212,Information Security Analysts,PA,Philadelphia,89903,89903,89903
+CLARK SCHAEFER HACKETT CO,"Clark, Schaefer, Hackett & Co.",1,1,FY2025Q4,no,15-1212,Information Security Analysts,OH,Dayton,71885,71885,71885
+COMCAST CABLE COMMUNICATIONS,"Comcast Cable Communications, LLC",1,1,FY2025Q4,no,15-1212,Information Security Analysts,PA,Philadelphia,80974,80974,80974
+CONQUERTECH INNOVATIONS,"ConquerTech Innovations, LLC",1,1,FY2025Q4,no,15-1212,Information Security Analysts,NJ,Princeton,95680,95680,95680
+COREWELL HEALTH,Corewell Health,1,1,FY2026Q1,no,15-1212,Information Security Analysts,MI,Grand Rapids,62296,62296,62296
+DEEL US,Deel US LLC,1,1,FY2025Q4,no,15-1212,Information Security Analysts,MI,Okemos,79000,79000,79000
+EHEALTHINSURANCE SERVICES,"eHealthInsurance Services, Inc.",1,1,FY2025Q4,no,15-1212,Information Security Analysts,CA,Fremont,108888,108888,108888
+ELFA VENTURES,ELFA Ventures LLC,1,1,FY2025Q4,no,15-1212,Information Security Analysts,CT,South Windsor,166400,166400,166400
+F5,"F5, Inc.",1,1,FY2025Q4,no,15-1212,Information Security Analysts,WA,Seattle,108949,108949,108949
+FIDELITY TECHNOLOGY GROUP LLC D B A FIDELITY INVESTMENTS,"Fidelity Technology Group, LLC d/b/a Fidelity Investments",1,1,FY2025Q4,no,15-1212,Information Security Analysts,MA,Boston,86528,86528,86528
+GQG PARTNERS,GQG Partners LLC,1,1,FY2026Q1,no,15-1212,Information Security Analysts,TX,Irving,181000,181000,181000
+ICON PAYMENTS,ICON PAYMENTS LLC,1,1,FY2025Q4,no,15-1212,Information Security Analysts,FL,Jacksonville,74880,74880,74880
+INFOSMART TECHNOLOGIES,"Infosmart Technologies, Inc.",1,1,FY2026Q1,no,15-1212,Information Security Analysts,GA,Alpharetta,81848,81848,81848
+INSIGHT GLOBAL,"Insight Global, LLC",1,1,FY2025Q4,no,15-1212,Information Security Analysts,CA,Santa Clara,107661,107661,107661
+INSPIRA ENTERPRISE,INSPIRA ENTERPRISE INC,1,1,FY2025Q4,no,15-1212,Information Security Analysts,TX,WESTLAKE,95000,95000,95000
+IZEAL,"iZeal, Inc.",1,1,FY2026Q1,no,15-1212,Information Security Analysts,OR,Portland,95971,95971,95971
+KET SOFTWARE SERVICES,"KET SOFTWARE SERVICES, LLC",1,1,FY2025Q4,no,15-1212,Information Security Analysts,NH,Concord,85800,85800,85800
+LBMC PC,"LBMC, PC",1,1,FY2025Q4,no,15-1212,Information Security Analysts,TN,Murfreesboro,85000,85000,85000
+MAXIL TECHNOLOGY SOLUTIONS,"Maxil Technology Solutions, Inc.",1,1,FY2025Q4,no,15-1212,Information Security Analysts,IL,Oak Brook,100000,100000,100000
+MEDITOLOGY SERVICES,MEDITOLOGY SERVICES LLC,1,1,FY2025Q4,no,15-1212,Information Security Analysts,IL,ELK GROVE VILLAGE,75608,75608,75608
+MOBE,"MOBE, LLC",1,1,FY2025Q4,no,15-1212,Information Security Analysts,MN,Minneapolis,91730,91730,91730
+NEW YORK CITY OFFICE OF TECHNOLOGY AND INNOVATION,New York City Office of Technology and Innovation,1,1,FY2025Q4,no,15-1212,Information Security Analysts,NY,Brooklyn,115733,115733,115733
+OMNIVISION TECHNOLOGIES,"OmniVision Technologies, Inc.",1,1,FY2025Q4,no,15-1212,Information Security Analysts,CA,Santa Clara,106080,106080,106080
+ONLY IT CONSULTING,ONLY IT CONSULTING LLC,1,1,FY2026Q1,no,15-1212,Information Security Analysts,IL,CHICAGO,75608,75608,75608
+QUALITAS CONSULTING GROUP,Qualitas Consulting Group,1,1,FY2025Q4,no,15-1212,Information Security Analysts,GA,Lawrenceville,85000,85000,85000
+RAPID7,Rapid7 LLC,1,1,FY2025Q4,no,15-1212,Information Security Analysts,VA,Arlington,115000,115000,115000
+REDSUN SOLUTIONS,Redsun Solutions LLC,1,1,FY2025Q4,no,15-1212,Information Security Analysts,CA,Rancho Cucamonga,70117,70117,70117
+RS SOLUTIONS,"RS SOLUTIONS, LLC",1,1,FY2025Q4,no,15-1212,Information Security Analysts,NC,CARY,76315,76315,76315
+SAMSUNG AUSTIN SEMICONDUCTOR,"SAMSUNG AUSTIN SEMICONDUCTOR, LLC",1,1,FY2025Q4,no,15-1212,Information Security Analysts,TX,Austin,97900,97900,97900
+SBP CONSTRUCTION,SBP CONSTRUCTION LLC,1,1,FY2025Q4,no,15-1212,Information Security Analysts,NJ,BERGENFIELD,94016,94016,94016
+SG AMERICAS OPERATIONAL SERVICES,"SG Americas Operational Services, LLC",1,1,FY2025Q4,no,15-1212,Information Security Analysts,NJ,Jersey City,125000,125000,125000
+SOFTSOLV,"SOFTSOLV, INC",1,1,FY2025Q4,no,15-1212,Information Security Analysts,TX,McKinney,85717,85717,85717
+SPARKSOFT CORPORATION,Sparksoft Corporation,1,1,FY2025Q4,no,15-1212,Information Security Analysts,VA,Jeffersonton,100000,100000,100000
+SPRINGSHINE CONSULTING,Springshine Consulting Inc,1,1,FY2025Q4,no,15-1212,Information Security Analysts,VA,Ashburn,99507,99507,99507
+STAPLES,"Staples, Inc.",1,1,FY2026Q1,no,15-1212,Information Security Analysts,MA,Framingham,99419,99419,99419
+TEKCOMMANDS,TeKCommands Inc,1,1,FY2025Q4,no,15-1212,Information Security Analysts,TX,Fort Worth,85750,85750,85750
+THINKTEL,"ThinkTel, Inc.",1,1,FY2025Q4,no,15-1212,Information Security Analysts,CA,Los Angeles,76648,76648,76648
+TOPCON POSITIONING SYSTEMS,"Topcon Positioning Systems, Inc.",1,1,FY2026Q1,no,15-1212,Information Security Analysts,CA,Livermore,153830,153830,153830
+TOPGOLF CALLAWAY BRANDS,Topgolf Callaway Brands Corp.,1,1,FY2025Q4,no,15-1212,Information Security Analysts,CA,Carlsbad,105000,105000,105000
+UNIVERSITY OF MINNESOTA,University of Minnesota,1,1,FY2025Q4,no,15-1212,Information Security Analysts,MN,Minneapolis,87610,87610,87610
+VISUAL COMFORT,Visual Comfort LLC,1,1,FY2026Q1,no,15-1212,Information Security Analysts,TX,Houston,100000,100000,100000
+WASHINGTON STATE UNIVERSITY,Washington State University,1,1,FY2026Q1,no,15-1212,Information Security Analysts,UT,Farmington,87822,87822,87822
+WELLNESS CARE GROUP OF TEXAS,Wellness & Care Group of Texas,1,1,FY2025Q4,no,15-1212,Information Security Analysts,TX,Frisco,89000,89000,89000
+ZURICH SERVICES US,Zurich Services US LLC,1,1,FY2026Q1,no,15-1212,Information Security Analysts,IL,Schaumburg,82363,82363,82363

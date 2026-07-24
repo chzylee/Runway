@@ -1,0 +1,640 @@
+{
+  "generated_at_utc": "2026-07-24 06:19 UTC",
+  "source": "US DOL OFLC LCA Programs disclosure data (public record)",
+  "filters": {
+    "case_status": "Certified",
+    "role": "network_administrator",
+    "soc_codes": [
+      "15-1244"
+    ],
+    "pw_wage_level": "I"
+  },
+  "quarters_used": [
+    "FY2025Q4",
+    "FY2026Q1"
+  ],
+  "quarters_superseded": {},
+  "rows_per_quarter": {
+    "FY2025Q4": 118580,
+    "FY2026Q1": 83120
+  },
+  "funnel": {
+    "rows_total": 201700,
+    "rows_certified": 181277,
+    "rows_soc_matched": 1863,
+    "rows_selected": 163
+  },
+  "employer_groups": 128,
+  "distinct_raw_employer_spellings": 131,
+  "rows_wage_excluded_from_wage_stats": 0,
+  "case_statuses_seen": {
+    "CERTIFIED": 181277,
+    "CERTIFIED - WITHDRAWN": 15748,
+    "WITHDRAWN": 3242,
+    "DENIED": 1433
+  },
+  "wage_levels_seen": {
+    "II": 931,
+    "III": 389,
+    "IV": 342,
+    "I": 163,
+    "": 38
+  },
+  "wage_units_seen": {
+    "YEAR": 145,
+    "HOUR": 18
+  },
+  "patterns": {
+    "basis": {
+      "filings": 163,
+      "employers": 128,
+      "measured_by": "employers",
+      "min_support_employers": 3
+    },
+    "job_titles": {
+      "recurring_tokens": [
+        {
+          "token": "engineer",
+          "employers": 63,
+          "filings": 88
+        },
+        {
+          "token": "network",
+          "employers": 48,
+          "filings": 63
+        },
+        {
+          "token": "systems",
+          "employers": 38,
+          "filings": 45
+        },
+        {
+          "token": "administrator",
+          "employers": 37,
+          "filings": 41
+        },
+        {
+          "token": "computer",
+          "employers": 15,
+          "filings": 17
+        },
+        {
+          "token": "specialist",
+          "employers": 12,
+          "filings": 12
+        },
+        {
+          "token": "support",
+          "employers": 11,
+          "filings": 16
+        },
+        {
+          "token": "it",
+          "employers": 10,
+          "filings": 12
+        },
+        {
+          "token": "system",
+          "employers": 9,
+          "filings": 10
+        },
+        {
+          "token": "information",
+          "employers": 6,
+          "filings": 6
+        },
+        {
+          "token": "senior",
+          "employers": 5,
+          "filings": 7
+        },
+        {
+          "token": "technology",
+          "employers": 5,
+          "filings": 5
+        },
+        {
+          "token": "admin",
+          "employers": 4,
+          "filings": 6
+        },
+        {
+          "token": "analyst",
+          "employers": 4,
+          "filings": 5
+        },
+        {
+          "token": "devops",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "technician",
+          "employers": 3,
+          "filings": 5
+        },
+        {
+          "token": "software",
+          "employers": 3,
+          "filings": 4
+        },
+        {
+          "token": "cloud",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "infrastructure",
+          "employers": 3,
+          "filings": 3
+        }
+      ],
+      "distinct_titles": [
+        {
+          "title": "Network Engineer",
+          "employers": 20,
+          "filings": 24
+        },
+        {
+          "title": "Systems Administrator",
+          "employers": 12,
+          "filings": 14
+        },
+        {
+          "title": "NETWORK ENGINEER",
+          "employers": 6,
+          "filings": 8
+        },
+        {
+          "title": "Network Administrator",
+          "employers": 5,
+          "filings": 5
+        },
+        {
+          "title": "Network and Computer Systems Administrator",
+          "employers": 4,
+          "filings": 5
+        },
+        {
+          "title": "Systems Engineer",
+          "employers": 4,
+          "filings": 5
+        },
+        {
+          "title": "Computer Systems Administrator",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "title": "Information Technology Specialist",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "Network and System Administrator",
+          "employers": 2,
+          "filings": 3
+        },
+        {
+          "title": "Cloud Engineer",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Computer Specialist II",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Devops Engineer",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "IT Specialist",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "NETWORK ADMINISTRATOR",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "System Administrator",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "DCO Technician IV",
+          "employers": 1,
+          "filings": 3
+        },
+        {
+          "title": "IT Consultant (Salesforce Admin)",
+          "employers": 1,
+          "filings": 3
+        },
+        {
+          "title": "SUPPORT ENGINEER I-EXTERNAL",
+          "employers": 1,
+          "filings": 3
+        },
+        {
+          "title": "Senior Network Engineer (SERVLLGX0199)",
+          "employers": 1,
+          "filings": 3
+        },
+        {
+          "title": "APPLICATION SUPPORT ENGINEER",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Business Analyst",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "COMPUTER SYSTEMS ENGINEER",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Systems Software Engineer",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "VMware Engineer",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "ABINITIO PRODUCTION SUPPORT",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Applications Analyst II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Assistant Systems Administrator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate - IT Support Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Boomi Developer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Cloud Computer Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Computer System Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Computer Systems Admin",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "DevEx Engineer I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "DevOps Engineer 2",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Engineer 3, Software Dev. & Eng. - Full Stack Development",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Enterprise Systems Engineer (BCDR)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Field Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Health IT Support Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "IT Business Analyst 2",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "IT Dev OPS Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "IT Maintenance Technician",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "IT and Network Administrator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Information Systems Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Information Systems Project Coordinator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Information Technology Professional",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Infrastructure Operator Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "LMS Administrator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Mainframe Support",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "NETWORK AND COMPUTER SYSTEMS ADMINISTRATOR",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Network & System Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Network Administrator/Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Network Automation Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Network Engineer (SERVLLGX0007)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Network Field Technician",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Network Infrastructure Engineer I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Network Security Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Network and Operations Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Network and Systems Support  Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Network support engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Nutanix Architect",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Operations Staff Assistant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Principal Engineer I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "RAN Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "SITE RELIABILITY/DEVOPS ENGINEER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "SUPPORT ENGINEER II- EXTERNAL",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "SYSTEMS INFRASTRUCTURE ENGINEER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Engineer - Wireless",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Network Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Systems Administrator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Technical Support Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Software Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Storage Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Support Engineer I-External",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Support Systems Admin - Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "System Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "System Reliability Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "System/IT Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Systems Admin/Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Systems Engineer 2",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Systems Support Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Technology Director",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Workstation Engineer",
+          "employers": 1,
+          "filings": 1
+        }
+      ]
+    },
+    "onet_occupations": [
+      {
+        "soc_code": "15-1244.00",
+        "title": "Network and Computer Systems Administrators",
+        "employers": 128,
+        "filings": 163
+      }
+    ],
+    "placement_model": {
+      "in_house": {
+        "employers": 94,
+        "filings": 108
+      },
+      "third_party_site": {
+        "employers": 37,
+        "filings": 55
+      }
+    },
+    "industry_naics2": [
+      {
+        "code": "54",
+        "label": "Professional, Scientific, and Technical Services",
+        "employers": 65,
+        "filings": 91
+      },
+      {
+        "code": "61",
+        "label": "Educational Services",
+        "employers": 15,
+        "filings": 15
+      },
+      {
+        "code": "51",
+        "label": "Information",
+        "employers": 11,
+        "filings": 14
+      },
+      {
+        "code": "62",
+        "label": "Health Care and Social Assistance",
+        "employers": 8,
+        "filings": 9
+      },
+      {
+        "code": "45",
+        "label": "Retail Trade",
+        "employers": 6,
+        "filings": 8
+      },
+      {
+        "code": "42",
+        "label": "Wholesale Trade",
+        "employers": 5,
+        "filings": 6
+      },
+      {
+        "code": "33",
+        "label": "Manufacturing",
+        "employers": 4,
+        "filings": 4
+      },
+      {
+        "code": "52",
+        "label": "Finance and Insurance",
+        "employers": 3,
+        "filings": 3
+      }
+    ]
+  },
+  "caveats": [
+    "An LCA certification is not a hire or an open role.",
+    "OPT is not sponsorship — a new grad's first job is on OPT; sponsorship comes 1-3 years later.",
+    "Employer names are conservatively normalized and may under-merge.",
+    "Career/portfolio guidance, not immigration legal advice."
+  ]
+}

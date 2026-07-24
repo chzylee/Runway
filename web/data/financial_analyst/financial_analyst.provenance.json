@@ -1,0 +1,1032 @@
+{
+  "generated_at_utc": "2026-07-24 06:20 UTC",
+  "source": "US DOL OFLC LCA Programs disclosure data (public record)",
+  "filters": {
+    "case_status": "Certified",
+    "role": "financial_analyst",
+    "soc_codes": [
+      "13-2051"
+    ],
+    "pw_wage_level": "I"
+  },
+  "quarters_used": [
+    "FY2025Q4",
+    "FY2026Q1"
+  ],
+  "quarters_superseded": {},
+  "rows_per_quarter": {
+    "FY2025Q4": 118580,
+    "FY2026Q1": 83120
+  },
+  "funnel": {
+    "rows_total": 201700,
+    "rows_certified": 181277,
+    "rows_soc_matched": 2331,
+    "rows_selected": 310
+  },
+  "employer_groups": 247,
+  "distinct_raw_employer_spellings": 251,
+  "rows_wage_excluded_from_wage_stats": 0,
+  "case_statuses_seen": {
+    "CERTIFIED": 181277,
+    "CERTIFIED - WITHDRAWN": 15748,
+    "WITHDRAWN": 3242,
+    "DENIED": 1433
+  },
+  "wage_levels_seen": {
+    "II": 748,
+    "IV": 624,
+    "III": 520,
+    "I": 310,
+    "": 129
+  },
+  "wage_units_seen": {
+    "YEAR": 263,
+    "HOUR": 47
+  },
+  "patterns": {
+    "basis": {
+      "filings": 310,
+      "employers": 247,
+      "measured_by": "employers",
+      "min_support_employers": 3
+    },
+    "job_titles": {
+      "recurring_tokens": [
+        {
+          "token": "analyst",
+          "employers": 176,
+          "filings": 201
+        },
+        {
+          "token": "financial",
+          "employers": 116,
+          "filings": 140
+        },
+        {
+          "token": "associate",
+          "employers": 41,
+          "filings": 51
+        },
+        {
+          "token": "investment",
+          "employers": 30,
+          "filings": 50
+        },
+        {
+          "token": "senior",
+          "employers": 20,
+          "filings": 24
+        },
+        {
+          "token": "finance",
+          "employers": 11,
+          "filings": 14
+        },
+        {
+          "token": "manager",
+          "employers": 10,
+          "filings": 11
+        },
+        {
+          "token": "business",
+          "employers": 9,
+          "filings": 9
+        },
+        {
+          "token": "sales",
+          "employers": 5,
+          "filings": 9
+        },
+        {
+          "token": "credit",
+          "employers": 5,
+          "filings": 7
+        },
+        {
+          "token": "operations",
+          "employers": 5,
+          "filings": 5
+        },
+        {
+          "token": "analysts",
+          "employers": 4,
+          "filings": 19
+        },
+        {
+          "token": "treasury",
+          "employers": 4,
+          "filings": 5
+        },
+        {
+          "token": "consultant",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "data",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "investor",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "junior",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "partner",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "portfolio",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "strategy",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "fellow",
+          "employers": 3,
+          "filings": 6
+        },
+        {
+          "token": "risk",
+          "employers": 3,
+          "filings": 4
+        },
+        {
+          "token": "specialist",
+          "employers": 3,
+          "filings": 4
+        },
+        {
+          "token": "advisor",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "asset",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "banking",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "corporate",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "development",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "lead",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "planning",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "relations",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "research",
+          "employers": 3,
+          "filings": 3
+        }
+      ],
+      "distinct_titles": [
+        {
+          "title": "Financial Analyst",
+          "employers": 76,
+          "filings": 78
+        },
+        {
+          "title": "Analyst",
+          "employers": 11,
+          "filings": 12
+        },
+        {
+          "title": "Associate",
+          "employers": 11,
+          "filings": 12
+        },
+        {
+          "title": "Investment Analyst",
+          "employers": 11,
+          "filings": 12
+        },
+        {
+          "title": "FINANCIAL ANALYST",
+          "employers": 9,
+          "filings": 10
+        },
+        {
+          "title": "Investment Associate",
+          "employers": 5,
+          "filings": 8
+        },
+        {
+          "title": "Senior Financial Analyst",
+          "employers": 3,
+          "filings": 4
+        },
+        {
+          "title": "Business Analyst",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "Financial Analyst I",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "Financial and Investment Analyst",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "INVESTMENT ANALYST",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "Senior Analyst",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "Senior Associate",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "Analyst, Sales",
+          "employers": 2,
+          "filings": 4
+        },
+        {
+          "title": "CRR/FTR Analyst in ERCOT and PJM",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Finance Analyst",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Financial Analysts",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Real Estate Analyst",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Finance Fellow",
+          "employers": 1,
+          "filings": 4
+        },
+        {
+          "title": "Financial and Investment Analysts - KBGFJG220327-3",
+          "employers": 1,
+          "filings": 3
+        },
+        {
+          "title": "Financial and Investment Analysts - KBGFJG331818-2",
+          "employers": 1,
+          "filings": 3
+        },
+        {
+          "title": "Financial and Investment analysts - KBGFJG271438-8",
+          "employers": 1,
+          "filings": 3
+        },
+        {
+          "title": "Analyst, Sales Support",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Analyst, Securities Valuation",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Associate - GIB",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Associate, Investment Team",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Financial  Analysts",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Financial and Investment Analysts - KBGFJG217975-6",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Financial and Investment Analysts - KBGFJG274141-4",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Financial and Investment analysts - Kbgfjg220631-4",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Grants and Contracts Specialist",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Principal Aviation Analyst",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Senior Associate, Alternative Credit and Private Strategies",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Senior Associate, Credit Risk Reporting",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Treasury Analyst",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Vice President",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Alpha Researcher",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Analyst - Finance & Portfolio Valuations",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Analyst - GIB",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Analyst - Trading",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Analyst Business Valuation",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Analyst, Banker - CSG",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Analyst, Capital Planning - KBGFJG368258-1",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Analyst, Investing",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Analyst, Investment Banking",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Analyst, Trading",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Analytics & Modeling Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Asset & Portfolio Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Asset Manager/Development Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate 2",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate Manager Research Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate Portfolio Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate Portfolio Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate “ Finance & Commercial",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate “ Trading",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate, CUSO Treasury Operations",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate, Finance & Strategy",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate, Investments",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate, Originations",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate, Product Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate- Strategic Capital",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate; Treasury Sales Associate I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Development Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business and Financial Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "CORPORATE FINANCIAL ANALYST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "City Business Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Credit Trader",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Credit Underwriter",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Scientist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Derivatives Operations Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Development Coordinator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Director of Customer Experience",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "ERP / LMS Consultant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Equity Research Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Field Financial Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Finance Business Partner",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Finance Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Financial  Data Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Financial & Market Strategy Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Financial Analyst & Strategist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Financial Analyst (System)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Financial Analyst 2",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Financial Analyst II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Financial Business Partner Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Financial Consultant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Financial Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Financial Planning & Analysis Advisor",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Front Office Consultant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Fund Operations Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "GCIB GMC Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Genesis Management Holdings LLC",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Global Account Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Great Wall Securities LLC",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Growth Analytics Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Investment Banking Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Investment Banking Senior Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Investor",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Investor Relations & Corporate Strategy Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Investor Relations Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Investor Relations Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Junior Controlling Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Junior Investment Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Junior Originator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Junior Trader",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Lead Financial Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Lead Investment Sales Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "MG - Finance Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Multi-Asset Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Operations and Financial Data Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Partner",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Policy and Investment Fellow",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Pricing Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Private Infrastructure Investment Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Program Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Senior Financial Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Quantitative Research Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Regional Financial Planning Analyst Lead, Marketing",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Reporting Analyst Finance",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Risk Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Associate, Corporate Finance",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Credit Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Financial Analyst Accounting",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Financial Analyst, Sales and Marketing Fina",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Financial Risk Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Operations Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Product Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sr. Financial Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Strategy and Financial Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Technical Financial Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "ToBlue Aviation Digital Inc",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Treasury Consultant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "VC Fellow",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Venture Partner Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Warranty Administrator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Wealth Advisor",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Wealth Advisor Associate",
+          "employers": 1,
+          "filings": 1
+        }
+      ]
+    },
+    "onet_occupations": [
+      {
+        "soc_code": "13-2051.00",
+        "title": "Financial and Investment Analysts",
+        "employers": 247,
+        "filings": 310
+      }
+    ],
+    "placement_model": {
+      "in_house": {
+        "employers": 243,
+        "filings": 305
+      },
+      "third_party_site": {
+        "employers": 4,
+        "filings": 5
+      }
+    },
+    "industry_naics2": [
+      {
+        "code": "52",
+        "label": "Finance and Insurance",
+        "employers": 103,
+        "filings": 126
+      },
+      {
+        "code": "54",
+        "label": "Professional, Scientific, and Technical Services",
+        "employers": 42,
+        "filings": 62
+      },
+      {
+        "code": "61",
+        "label": "Educational Services",
+        "employers": 13,
+        "filings": 16
+      },
+      {
+        "code": "42",
+        "label": "Wholesale Trade",
+        "employers": 11,
+        "filings": 12
+      },
+      {
+        "code": "53",
+        "label": "Real Estate and Rental and Leasing",
+        "employers": 11,
+        "filings": 12
+      },
+      {
+        "code": "62",
+        "label": "Health Care and Social Assistance",
+        "employers": 11,
+        "filings": 12
+      },
+      {
+        "code": "55",
+        "label": "Management of Companies and Enterprises",
+        "employers": 10,
+        "filings": 15
+      },
+      {
+        "code": "51",
+        "label": "Information",
+        "employers": 8,
+        "filings": 10
+      },
+      {
+        "code": "45",
+        "label": "Retail Trade",
+        "employers": 7,
+        "filings": 9
+      },
+      {
+        "code": "81",
+        "label": "Other Services (except Public Administration)",
+        "employers": 6,
+        "filings": 9
+      },
+      {
+        "code": "33",
+        "label": "Manufacturing",
+        "employers": 4,
+        "filings": 5
+      },
+      {
+        "code": "49",
+        "label": "Transportation and Warehousing",
+        "employers": 4,
+        "filings": 4
+      },
+      {
+        "code": "23",
+        "label": "Construction",
+        "employers": 3,
+        "filings": 3
+      },
+      {
+        "code": "44",
+        "label": "Retail Trade",
+        "employers": 3,
+        "filings": 3
+      },
+      {
+        "code": "72",
+        "label": "Accommodation and Food Services",
+        "employers": 3,
+        "filings": 3
+      }
+    ]
+  },
+  "caveats": [
+    "An LCA certification is not a hire or an open role.",
+    "OPT is not sponsorship — a new grad's first job is on OPT; sponsorship comes 1-3 years later.",
+    "Employer names are conservatively normalized and may under-merge.",
+    "Career/portfolio guidance, not immigration legal advice."
+  ]
+}

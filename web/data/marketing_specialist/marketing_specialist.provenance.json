@@ -1,0 +1,1236 @@
+{
+  "generated_at_utc": "2026-07-24 06:20 UTC",
+  "source": "US DOL OFLC LCA Programs disclosure data (public record)",
+  "filters": {
+    "case_status": "Certified",
+    "role": "marketing_specialist",
+    "soc_codes": [
+      "13-1161"
+    ],
+    "pw_wage_level": "I"
+  },
+  "quarters_used": [
+    "FY2025Q4",
+    "FY2026Q1"
+  ],
+  "quarters_superseded": {},
+  "rows_per_quarter": {
+    "FY2025Q4": 118580,
+    "FY2026Q1": 83120
+  },
+  "funnel": {
+    "rows_total": 201700,
+    "rows_certified": 181277,
+    "rows_soc_matched": 1381,
+    "rows_selected": 338
+  },
+  "employer_groups": 287,
+  "distinct_raw_employer_spellings": 287,
+  "rows_wage_excluded_from_wage_stats": 0,
+  "case_statuses_seen": {
+    "CERTIFIED": 181277,
+    "CERTIFIED - WITHDRAWN": 15748,
+    "WITHDRAWN": 3242,
+    "DENIED": 1433
+  },
+  "wage_levels_seen": {
+    "II": 437,
+    "I": 338,
+    "IV": 309,
+    "III": 270,
+    "": 27
+  },
+  "wage_units_seen": {
+    "YEAR": 264,
+    "HOUR": 72,
+    "MONTH": 2
+  },
+  "patterns": {
+    "basis": {
+      "filings": 338,
+      "employers": 287,
+      "measured_by": "employers",
+      "min_support_employers": 3
+    },
+    "job_titles": {
+      "recurring_tokens": [
+        {
+          "token": "marketing",
+          "employers": 122,
+          "filings": 139
+        },
+        {
+          "token": "specialist",
+          "employers": 98,
+          "filings": 109
+        },
+        {
+          "token": "analyst",
+          "employers": 95,
+          "filings": 117
+        },
+        {
+          "token": "market",
+          "employers": 73,
+          "filings": 90
+        },
+        {
+          "token": "research",
+          "employers": 65,
+          "filings": 79
+        },
+        {
+          "token": "business",
+          "employers": 35,
+          "filings": 41
+        },
+        {
+          "token": "development",
+          "employers": 30,
+          "filings": 36
+        },
+        {
+          "token": "manager",
+          "employers": 21,
+          "filings": 23
+        },
+        {
+          "token": "associate",
+          "employers": 19,
+          "filings": 20
+        },
+        {
+          "token": "digital",
+          "employers": 17,
+          "filings": 19
+        },
+        {
+          "token": "coordinator",
+          "employers": 15,
+          "filings": 16
+        },
+        {
+          "token": "account",
+          "employers": 10,
+          "filings": 13
+        },
+        {
+          "token": "strategist",
+          "employers": 10,
+          "filings": 11
+        },
+        {
+          "token": "senior",
+          "employers": 9,
+          "filings": 11
+        },
+        {
+          "token": "media",
+          "employers": 9,
+          "filings": 10
+        },
+        {
+          "token": "operations",
+          "employers": 8,
+          "filings": 11
+        },
+        {
+          "token": "communications",
+          "employers": 8,
+          "filings": 8
+        },
+        {
+          "token": "strategy",
+          "employers": 8,
+          "filings": 8
+        },
+        {
+          "token": "product",
+          "employers": 7,
+          "filings": 10
+        },
+        {
+          "token": "sales",
+          "employers": 7,
+          "filings": 8
+        },
+        {
+          "token": "social",
+          "employers": 7,
+          "filings": 8
+        },
+        {
+          "token": "analytics",
+          "employers": 6,
+          "filings": 8
+        },
+        {
+          "token": "executive",
+          "employers": 6,
+          "filings": 7
+        },
+        {
+          "token": "director",
+          "employers": 4,
+          "filings": 5
+        },
+        {
+          "token": "growth",
+          "employers": 4,
+          "filings": 5
+        },
+        {
+          "token": "analysts",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "consultant",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "assistant",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "brand",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "data",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "global",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "project",
+          "employers": 3,
+          "filings": 3
+        }
+      ],
+      "distinct_titles": [
+        {
+          "title": "Market Research Analyst",
+          "employers": 37,
+          "filings": 47
+        },
+        {
+          "title": "Marketing Specialist",
+          "employers": 36,
+          "filings": 42
+        },
+        {
+          "title": "Business Development Specialist",
+          "employers": 10,
+          "filings": 11
+        },
+        {
+          "title": "Market Analyst",
+          "employers": 6,
+          "filings": 7
+        },
+        {
+          "title": "Digital Marketing Specialist",
+          "employers": 6,
+          "filings": 6
+        },
+        {
+          "title": "Marketing Analyst",
+          "employers": 6,
+          "filings": 6
+        },
+        {
+          "title": "MARKET RESEARCH ANALYST",
+          "employers": 4,
+          "filings": 7
+        },
+        {
+          "title": "Business Development Analyst",
+          "employers": 3,
+          "filings": 7
+        },
+        {
+          "title": "Marketing Coordinator",
+          "employers": 3,
+          "filings": 4
+        },
+        {
+          "title": "Marketing Research Analyst",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "MARKETING ANALYST",
+          "employers": 2,
+          "filings": 3
+        },
+        {
+          "title": "Account Executive",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "BUSINESS DEVELOPMENT SPECIALIST",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Business Analyst",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Content Marketing Specialist",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Digital Marketing Analyst",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Digital Media Strategist",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Influencer and PR Coordinator",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "MARKETING SPECIALIST",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Market Research Analysts",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Market research analyst",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Marketing Associate",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Marketing Manager",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "MARKETING & OPERATIONS ANALYST",
+          "employers": 1,
+          "filings": 3
+        },
+        {
+          "title": "Analyst, ME&I",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Channel Account Manager",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Digital Innovation Strategist",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Digital Marketing Manager",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Growth Generalist",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "MARKETING AND MARKET ANALYSIS SPECIALIST",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Market  Research Specialist",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Marketing Operations & Analytics Specialist",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Marketing and Sales Specialist",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Product Marketing Engineer",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Product Marketing I",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Product Owner",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Senior Account Executive",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Senior Associate, Advanced Analytics",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Social Media Director",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "VP of Business Development",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "AACRE Program & Communications Advocate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Account Coordinator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Account Coordinator, Digitial Client Services",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Account Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Account Manager I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Account Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Ad Operations Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Administrative Assistant/ Marketing Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Advancement and Marketing Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Agency Communication and Marketing Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Analyst - Procurement",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Analyst, Customer Success",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate, Strategy & Analytics",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associated Embedded Sales Executive",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "BRANDING SPECIALIST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Brand Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Brand Marketing Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business & System Support Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Development Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Development Consultant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Development Specialists",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Operations and Market Strategy Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Strategy Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Strategy Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Systems Analyst Team Lead",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Campaign Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Commercial Agency Operations Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Communications Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Communications and Marketing Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Community Relations Assistant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Consultant & Marketing Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Consultant 2 - Business Operations",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Consultant, Advanced Analytics",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Coordinator, Data & Member Resources",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Corporate Sales & Marketing Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Creative Coordinator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Creative Projects Lead",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "DIGITAL MARKETING STRATEGIST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Development Operations Assistant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Digital Market Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Digital Marketing Technology Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Digital Strategist and Senior Community Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Digital Strategy Coordinator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Director of Business Development",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Director of Growth and Strategy",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "EB-5 Investor Market Research Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "FASHION MARKETING AND BUYING SPECIALIST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Fashion Product Developer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Front End Developer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "GTM Strategist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "General MKTG I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Global Editorial Strategy Office Editorial Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Growth Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "INTERNATIONAL COMMUNICATIONS ANALYST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Inside Sales Representative",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Inside Sales Representative II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "International Marketing Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Internet Marketing Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Junior Brand Planner",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Junior Marketing Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Legal Business Development Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Lifecycle Marketing Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "MARKET RESEARCH EXECUTIVE",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "MARKETING AND MARKET DATA SPECIALIST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "MARKETING RESEARCH ANALYST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Management Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Manager, Marketing Analytics",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Manager, Marketing Nails",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Market Analyst, GTM Strategy",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Market Analyst-Communications Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Market Associate - North American Power - KBGFJG253122-3",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Market Data Analytics",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Market Research & Development Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Market Research Analyst and Marketing Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Market Research Analysts & Marketing Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Market Research Analysts and Marketing Specialists",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Market Research Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Market Research and Business Development",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Market Research and Business Development Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Market Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Marketing & Business Development Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Marketing & Communications Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Marketing & Development Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Marketing & Social Media Coordinator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Marketing Account Coordinator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Marketing Assoicate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Marketing Cloud Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Marketing Generalist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Marketing Operations Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Marketing Senior Associate, Global Campaigns",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Marketing Strategist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Marketing and Business Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Marketing and Client Development Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Marketing and Communications Coordinator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Marketing and Communications Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Marketing and Research Director",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Markets Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "North American Market Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Operation Manager (Marketing)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Outreach and Marketing Coordinator - ILTC",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Partnerships and Growth Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Pharmacy Marketing Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Physician Liaison",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Pricing Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Product & Customer Research Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Product Designer (Marketing)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Product Marketing Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project and Marketing Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "RETAIL BUSINESS DEVELOPMENT SPECIALIST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research & Insights Analyst (Social Media & Sprinklr)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "SENIOR ASSOCIATE, MARKETING SCIENCE",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "SEO/SEM Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "SOCIAL MEDIA MANAGER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "STRATEGIC MARKET RESEARCH ANALYST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sales and Market Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sales and Marketing Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Search Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Associate, Service - Global PSF",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Business Development Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Marketing Strategist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Social Media & Marketing Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Social Media Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Social Media and Marketing Strategist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Squash Market Research Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sr. Paid Marketing Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Story Telling and Engagement Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Strategic Marketing Specialist “ AEC Executive Forums",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Strategist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Technical Account Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "TikTok Shop & Merchandising Coordinator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "UI/UX Designer",
+          "employers": 1,
+          "filings": 1
+        }
+      ]
+    },
+    "onet_occupations": [
+      {
+        "soc_code": "13-1161.00",
+        "title": "Market Research Analysts and Marketing Specialists",
+        "employers": 273,
+        "filings": 324
+      },
+      {
+        "soc_code": "13-1161.01",
+        "title": "Search Marketing Strategists",
+        "employers": 14,
+        "filings": 14
+      }
+    ],
+    "placement_model": {
+      "in_house": {
+        "employers": 284,
+        "filings": 333
+      },
+      "third_party_site": {
+        "employers": 4,
+        "filings": 5
+      }
+    },
+    "industry_naics2": [
+      {
+        "code": "54",
+        "label": "Professional, Scientific, and Technical Services",
+        "employers": 78,
+        "filings": 97
+      },
+      {
+        "code": "42",
+        "label": "Wholesale Trade",
+        "employers": 41,
+        "filings": 50
+      },
+      {
+        "code": "61",
+        "label": "Educational Services",
+        "employers": 20,
+        "filings": 20
+      },
+      {
+        "code": "45",
+        "label": "Retail Trade",
+        "employers": 19,
+        "filings": 20
+      },
+      {
+        "code": "52",
+        "label": "Finance and Insurance",
+        "employers": 16,
+        "filings": 16
+      },
+      {
+        "code": "51",
+        "label": "Information",
+        "employers": 15,
+        "filings": 15
+      },
+      {
+        "code": "62",
+        "label": "Health Care and Social Assistance",
+        "employers": 12,
+        "filings": 15
+      },
+      {
+        "code": "81",
+        "label": "Other Services (except Public Administration)",
+        "employers": 12,
+        "filings": 12
+      },
+      {
+        "code": "48",
+        "label": "Transportation and Warehousing",
+        "employers": 11,
+        "filings": 15
+      },
+      {
+        "code": "72",
+        "label": "Accommodation and Food Services",
+        "employers": 11,
+        "filings": 12
+      },
+      {
+        "code": "56",
+        "label": "Administrative and Support and Waste Management and Remediation Services",
+        "employers": 11,
+        "filings": 11
+      },
+      {
+        "code": "44",
+        "label": "Retail Trade",
+        "employers": 10,
+        "filings": 14
+      },
+      {
+        "code": "53",
+        "label": "Real Estate and Rental and Leasing",
+        "employers": 7,
+        "filings": 10
+      },
+      {
+        "code": "33",
+        "label": "Manufacturing",
+        "employers": 7,
+        "filings": 9
+      },
+      {
+        "code": "49",
+        "label": "Transportation and Warehousing",
+        "employers": 4,
+        "filings": 8
+      },
+      {
+        "code": "32",
+        "label": "Manufacturing",
+        "employers": 3,
+        "filings": 3
+      },
+      {
+        "code": "71",
+        "label": "Arts, Entertainment, and Recreation",
+        "employers": 3,
+        "filings": 3
+      }
+    ]
+  },
+  "caveats": [
+    "An LCA certification is not a hire or an open role.",
+    "OPT is not sponsorship — a new grad's first job is on OPT; sponsorship comes 1-3 years later.",
+    "Employer names are conservatively normalized and may under-merge.",
+    "Career/portfolio guidance, not immigration legal advice."
+  ]
+}

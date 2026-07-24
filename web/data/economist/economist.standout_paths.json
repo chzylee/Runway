@@ -1,0 +1,47 @@
+{
+  "role": "economist",
+  "curated_at_utc": "2026-07-24",
+  "kind": "curated-editorial",
+  "framework": "A path qualifies only when >=3 prominent, proven people in the field visibly share the capability, each with a resolving link — the pattern across standouts is the evidence, not market demand. Ranked by strength of that pattern. Curated editorial, not DOL-derived.",
+  "paths": [
+    {
+      "rank": 1,
+      "path": "Become an embedded chief/in-house economist inside a tech company",
+      "what_it_is": "Apply PhD-level econometrics, market design, and causal inference directly inside a tech company's product and policy decisions, often as a named Chief Economist or economics-team lead.",
+      "why_it_signals": "Multiple major tech companies have independently created and repeatedly filled a Chief Economist role with academically trained economists, showing this is a real, repeatable career track rather than one company's idiosyncratic hire.",
+      "people": [
+        {"name": "Hal Varian", "link": "https://en.wikipedia.org/wiki/Hal_Varian"},
+        {"name": "Susan Athey", "link": "https://gsb.stanford.edu/faculty-research/faculty/susan-athey"},
+        {"name": "Michael Schwarz", "link": "https://www.microsoft.com/en-us/research/people/mschwarz/"},
+        {"name": "Preston McAfee", "link": "https://blogs.microsoft.com/blog/2014/06/02/microsoft-hires-preston-mcafee-as-chief-economist/"}
+      ],
+      "source": "https://en.wikipedia.org/wiki/Hal_Varian"
+    },
+    {
+      "rank": 2,
+      "path": "Publish a public-facing economics newsletter or blog with a real following",
+      "what_it_is": "Write regularly for a broad public audience (Substack, blog) translating economic analysis into accessible, widely-read commentary, building a personal platform alongside or instead of an academic post.",
+      "why_it_signals": "Several trained economists — from a Nobel laureate to tenured professors — have each built independent, large public readerships this way, showing the capability (not one-off virality) is what carries the following.",
+      "people": [
+        {"name": "Noah Smith", "link": "https://www.noahpinion.blog/about"},
+        {"name": "Tyler Cowen", "link": "https://marginalrevolution.com/about"},
+        {"name": "Emily Oster", "link": "https://parentdata.org/author/eoster/"},
+        {"name": "Paul Krugman", "link": "https://paulkrugman.substack.com/about"}
+      ],
+      "source": "https://www.noahpinion.blog/about"
+    },
+    {
+      "rank": 3,
+      "path": "Turn research into an open, policy-used public data tool",
+      "what_it_is": "Build and maintain a large-scale, publicly accessible dataset or interactive tool (mobility, inequality, tax data) that policymakers, journalists, and other researchers directly use.",
+      "why_it_signals": "Several economists working in overlapping teams have each shipped and sustained a named public data infrastructure project used well beyond academia, showing this is a buildable, repeatable capability rather than a single lucky project.",
+      "people": [
+        {"name": "Raj Chetty", "link": "https://rajchetty.com/the-opportunity-atlas/"},
+        {"name": "Emmanuel Saez", "link": "https://eml.berkeley.edu/~saez/"},
+        {"name": "Gabriel Zucman", "link": "https://gabriel-zucman.eu/"},
+        {"name": "John Friedman", "link": "https://opportunityinsights.org/team/john-friedman/"}
+      ],
+      "source": "https://rajchetty.com/the-opportunity-atlas/"
+    }
+  ]
+}

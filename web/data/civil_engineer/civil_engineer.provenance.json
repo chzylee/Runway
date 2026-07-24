@@ -1,0 +1,1135 @@
+{
+  "generated_at_utc": "2026-07-24 06:19 UTC",
+  "source": "US DOL OFLC LCA Programs disclosure data (public record)",
+  "filters": {
+    "case_status": "Certified",
+    "role": "civil_engineer",
+    "soc_codes": [
+      "17-2051"
+    ],
+    "pw_wage_level": "I"
+  },
+  "quarters_used": [
+    "FY2025Q4",
+    "FY2026Q1"
+  ],
+  "quarters_superseded": {},
+  "rows_per_quarter": {
+    "FY2025Q4": 118580,
+    "FY2026Q1": 83120
+  },
+  "funnel": {
+    "rows_total": 201700,
+    "rows_certified": 181277,
+    "rows_soc_matched": 1572,
+    "rows_selected": 418
+  },
+  "employer_groups": 267,
+  "distinct_raw_employer_spellings": 270,
+  "rows_wage_excluded_from_wage_stats": 0,
+  "case_statuses_seen": {
+    "CERTIFIED": 181277,
+    "CERTIFIED - WITHDRAWN": 15748,
+    "WITHDRAWN": 3242,
+    "DENIED": 1433
+  },
+  "wage_levels_seen": {
+    "II": 536,
+    "I": 418,
+    "III": 318,
+    "IV": 203,
+    "": 97
+  },
+  "wage_units_seen": {
+    "YEAR": 400,
+    "HOUR": 17,
+    "WEEK": 1
+  },
+  "patterns": {
+    "basis": {
+      "filings": 418,
+      "employers": 267,
+      "measured_by": "employers",
+      "min_support_employers": 3
+    },
+    "job_titles": {
+      "recurring_tokens": [
+        {
+          "token": "engineer",
+          "employers": 217,
+          "filings": 326
+        },
+        {
+          "token": "project",
+          "employers": 88,
+          "filings": 109
+        },
+        {
+          "token": "civil",
+          "employers": 68,
+          "filings": 129
+        },
+        {
+          "token": "structural",
+          "employers": 23,
+          "filings": 33
+        },
+        {
+          "token": "field",
+          "employers": 16,
+          "filings": 20
+        },
+        {
+          "token": "manager",
+          "employers": 15,
+          "filings": 16
+        },
+        {
+          "token": "assistant",
+          "employers": 14,
+          "filings": 15
+        },
+        {
+          "token": "associate",
+          "employers": 13,
+          "filings": 15
+        },
+        {
+          "token": "staff",
+          "employers": 12,
+          "filings": 14
+        },
+        {
+          "token": "engineering",
+          "employers": 11,
+          "filings": 24
+        },
+        {
+          "token": "transportation",
+          "employers": 10,
+          "filings": 11
+        },
+        {
+          "token": "geotechnical",
+          "employers": 8,
+          "filings": 15
+        },
+        {
+          "token": "bridge",
+          "employers": 8,
+          "filings": 9
+        },
+        {
+          "token": "senior",
+          "employers": 8,
+          "filings": 8
+        },
+        {
+          "token": "construction",
+          "employers": 7,
+          "filings": 11
+        },
+        {
+          "token": "research",
+          "employers": 6,
+          "filings": 7
+        },
+        {
+          "token": "postdoctoral",
+          "employers": 6,
+          "filings": 6
+        },
+        {
+          "token": "specialist",
+          "employers": 5,
+          "filings": 13
+        },
+        {
+          "token": "traffic",
+          "employers": 5,
+          "filings": 6
+        },
+        {
+          "token": "analyst",
+          "employers": 5,
+          "filings": 5
+        },
+        {
+          "token": "water",
+          "employers": 4,
+          "filings": 6
+        },
+        {
+          "token": "controls",
+          "employers": 4,
+          "filings": 5
+        },
+        {
+          "token": "estimator",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "junior",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "data",
+          "employers": 3,
+          "filings": 11
+        },
+        {
+          "token": "graduate",
+          "employers": 3,
+          "filings": 5
+        },
+        {
+          "token": "coordinator",
+          "employers": 3,
+          "filings": 4
+        },
+        {
+          "token": "entry",
+          "employers": 3,
+          "filings": 4
+        },
+        {
+          "token": "highway",
+          "employers": 3,
+          "filings": 4
+        },
+        {
+          "token": "office",
+          "employers": 3,
+          "filings": 4
+        },
+        {
+          "token": "quality",
+          "employers": 3,
+          "filings": 4
+        },
+        {
+          "token": "building",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "eit",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "training",
+          "employers": 3,
+          "filings": 3
+        }
+      ],
+      "distinct_titles": [
+        {
+          "title": "Project Engineer",
+          "employers": 44,
+          "filings": 53
+        },
+        {
+          "title": "Civil Engineer",
+          "employers": 34,
+          "filings": 49
+        },
+        {
+          "title": "Structural Engineer",
+          "employers": 12,
+          "filings": 14
+        },
+        {
+          "title": "CIVIL ENGINEER",
+          "employers": 11,
+          "filings": 33
+        },
+        {
+          "title": "Field Engineer",
+          "employers": 11,
+          "filings": 14
+        },
+        {
+          "title": "Assistant Project Manager",
+          "employers": 8,
+          "filings": 9
+        },
+        {
+          "title": "PROJECT ENGINEER",
+          "employers": 8,
+          "filings": 8
+        },
+        {
+          "title": "Geotechnical Engineer",
+          "employers": 6,
+          "filings": 12
+        },
+        {
+          "title": "Engineer I",
+          "employers": 6,
+          "filings": 6
+        },
+        {
+          "title": "Engineer II",
+          "employers": 5,
+          "filings": 5
+        },
+        {
+          "title": "Staff Engineer",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "title": "Design Engineer",
+          "employers": 3,
+          "filings": 4
+        },
+        {
+          "title": "Project Engineer I",
+          "employers": 3,
+          "filings": 4
+        },
+        {
+          "title": "Project Manager",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "Senior Project Engineer",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "Transportation Engineer",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "Data Centre Infrastructure Engineer I",
+          "employers": 2,
+          "filings": 10
+        },
+        {
+          "title": "Graduate Engineer",
+          "employers": 2,
+          "filings": 4
+        },
+        {
+          "title": "Civil Designer",
+          "employers": 2,
+          "filings": 3
+        },
+        {
+          "title": "Designer, Highway",
+          "employers": 2,
+          "filings": 3
+        },
+        {
+          "title": "Field/Office Engineer",
+          "employers": 2,
+          "filings": 3
+        },
+        {
+          "title": "Bridge Engineer",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Civil Design Engineer",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Engineer",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Postdoctoral Research Associate",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Project Controls Analyst",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "TRANSPORTATION ENGINEER",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Project Engineer (Civil/Construction)",
+          "employers": 1,
+          "filings": 5
+        },
+        {
+          "title": "Structural steel detailer",
+          "employers": 1,
+          "filings": 4
+        },
+        {
+          "title": "Engineering Specialist, Civil Engineering",
+          "employers": 1,
+          "filings": 3
+        },
+        {
+          "title": "Civil Engineer I",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Civil Engineering II",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Designer 4",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Engineer/Civil",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Project Controls Specialist 2",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Project Engineer (Civil engineering)",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Project Engineer, Solar",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Quality Control Engineer I",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "STRUCTURAL ENGINEERING PROFESSIONAL ASSOCIATE",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Water Engineer 2",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "ASSOCIATE TRAFFIC ENGINEER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Assistant Construction Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Assistant Construction Manager (Civil Engineer)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Assistant MEP Coordinator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Assistant Project Manager II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Assistant Resident Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate Consultant, Building Technology Systems",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate Design Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate Engineer - Structural",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "BIM/VDC Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Bridge Designer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Bridge Project Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Building Enclosure System Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "CDFD Project Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "CIVIL ENGINEERING PROFESSIONAL, ENTRY LEVEL",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "CONSTRUCTION MANAGEMENT PROFESSIONAL - INTERMEDIATE",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Civil Engineer (Quality Engineer)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Civil Engineer (Structural)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Civil Engineer - Mining Expertise",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Civil Engineer 1",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Civil Engineer II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Civil Engineer-EIT",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Civil Engineer/Staff Consultant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Civil Engineering III",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Compliance Engineer II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Construction / Civil Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Construction Design Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Construction Estimator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "DC Centre Infrastructure Engineer I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "DESIGN ARCHITECTURE PROFESSIONAL ENTRY LEVEL",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "DESIGN ARCHITECTURE PROFESSIONAL INTERMEDIATE",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Design Engineer 1",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Design Engineer 3, Traffic",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Design Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Designer, Bridge",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Detailer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "EPC Project Field Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "ESTIMATOR",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Energy Efficiency Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Engineer 2",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Engineer I (Civil)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Engineer I, Transportation",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Engineer II (entry)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Engineering Assistant II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Engineering Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Engineering Design Professional - Building Physics",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Engineering Designer II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Engineering Designer II Civil",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Engineering Designer II Civil, Grade B",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Engineering Specialist,  Civil Engineering",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Engineering Specialist, Civil",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Engineering Specialist, Civil Engg",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Entry Level Structural (Bridge) Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Facilities Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Field Project Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Forensic Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "GRADUATE TRAFFIC ENGINEER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Geotechnical - Staff Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Geotechnical Staff Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Greenhouse Structural Engineer I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "HIGHWAY ENGINEERING PROFESSIONAL ASSOCIATE.",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "INSPECTOR",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Intermediate Structural Designer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Junior Civil Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Junior Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Junior Engineer, Bridge Design",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Junior Structural Designer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Lead Civil Estimator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Net Zero Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Office Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "PROJECT ENGINEER II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Post Doctoral Research Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Fellow",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Research Scholar",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Researcher",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Preconstruction Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Process Designer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Consultant/Civil Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Controls Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Engineer - Civil",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Engineer I, Traffic",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Engineer II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Engineer/Civil",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Engineer/Estimator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Geotechnical Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Projects and Lab Coordinator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "QC/QA Civil Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Quality Assurance - Road Inspection Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Rail Bridge Coordinator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "STAFF ENGINEER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "STAFF ENGINEER I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "STRUCTURAL ENGINEER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "STRUCTURAL ENGINEER PROFESSIONAL INTERMEDIATE",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "STRUCTURAL/BRIDGE ENGINEER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "SUPPORT ENGINEER III",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Scheduling Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Designer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Engineer (Project Control Engineer)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Field Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Research Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Staff Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Special Instructor/Structural Designer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Staff CMT/Civil Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Staff Consultant/Civil Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Staff Structural (Civil) Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Structural Designer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Structural Staff Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Structures Engineer in Training (EIT)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Tech Ops Engineer I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Technical I, Engineering Design",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Traffic Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Traffic Engineering Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Transportation Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Transportation Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Transportation Data Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Transportation Designer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Transportation Engineer in Training",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "VDC Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Water Engineering Designer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Water Resources Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Water Resources Engineer in Training (EIT)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Water/Wastewater Coordinator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "project engineer",
+          "employers": 1,
+          "filings": 1
+        }
+      ]
+    },
+    "onet_occupations": [
+      {
+        "soc_code": "17-2051.00",
+        "title": "Civil Engineers",
+        "employers": 253,
+        "filings": 390
+      },
+      {
+        "soc_code": "17-2051.01",
+        "title": "Transportation Engineers",
+        "employers": 15,
+        "filings": 18
+      },
+      {
+        "soc_code": "17-2051.02",
+        "title": "Water/Wastewater Engineers",
+        "employers": 8,
+        "filings": 10
+      }
+    ],
+    "placement_model": {
+      "in_house": {
+        "employers": 262,
+        "filings": 412
+      },
+      "third_party_site": {
+        "employers": 6,
+        "filings": 6
+      }
+    },
+    "industry_naics2": [
+      {
+        "code": "54",
+        "label": "Professional, Scientific, and Technical Services",
+        "employers": 150,
+        "filings": 211
+      },
+      {
+        "code": "23",
+        "label": "Construction",
+        "employers": 92,
+        "filings": 167
+      },
+      {
+        "code": "61",
+        "label": "Educational Services",
+        "employers": 9,
+        "filings": 12
+      },
+      {
+        "code": "51",
+        "label": "Information",
+        "employers": 3,
+        "filings": 13
+      },
+      {
+        "code": "56",
+        "label": "Administrative and Support and Waste Management and Remediation Services",
+        "employers": 3,
+        "filings": 3
+      }
+    ]
+  },
+  "caveats": [
+    "An LCA certification is not a hire or an open role.",
+    "OPT is not sponsorship — a new grad's first job is on OPT; sponsorship comes 1-3 years later.",
+    "Employer names are conservatively normalized and may under-merge.",
+    "Career/portfolio guidance, not immigration legal advice."
+  ]
+}

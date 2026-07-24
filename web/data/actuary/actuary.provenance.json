@@ -1,0 +1,187 @@
+{
+  "generated_at_utc": "2026-07-24 06:20 UTC",
+  "source": "US DOL OFLC LCA Programs disclosure data (public record)",
+  "filters": {
+    "case_status": "Certified",
+    "role": "actuary",
+    "soc_codes": [
+      "15-2011"
+    ],
+    "pw_wage_level": "I"
+  },
+  "quarters_used": [
+    "FY2025Q4",
+    "FY2026Q1"
+  ],
+  "quarters_superseded": {},
+  "rows_per_quarter": {
+    "FY2025Q4": 118580,
+    "FY2026Q1": 83120
+  },
+  "funnel": {
+    "rows_total": 201700,
+    "rows_certified": 181277,
+    "rows_soc_matched": 128,
+    "rows_selected": 21
+  },
+  "employer_groups": 14,
+  "distinct_raw_employer_spellings": 16,
+  "rows_wage_excluded_from_wage_stats": 0,
+  "case_statuses_seen": {
+    "CERTIFIED": 181277,
+    "CERTIFIED - WITHDRAWN": 15748,
+    "WITHDRAWN": 3242,
+    "DENIED": 1433
+  },
+  "wage_levels_seen": {
+    "II": 35,
+    "III": 31,
+    "IV": 29,
+    "I": 21,
+    "": 12
+  },
+  "wage_units_seen": {
+    "YEAR": 21
+  },
+  "patterns": {
+    "basis": {
+      "filings": 21,
+      "employers": 14,
+      "measured_by": "employers",
+      "min_support_employers": 3
+    },
+    "job_titles": {
+      "recurring_tokens": [
+        {
+          "token": "actuarial",
+          "employers": 12,
+          "filings": 16
+        },
+        {
+          "token": "analyst",
+          "employers": 7,
+          "filings": 8
+        },
+        {
+          "token": "associate",
+          "employers": 5,
+          "filings": 6
+        },
+        {
+          "token": "assistant",
+          "employers": 3,
+          "filings": 5
+        },
+        {
+          "token": "senior",
+          "employers": 3,
+          "filings": 4
+        }
+      ],
+      "distinct_titles": [
+        {
+          "title": "Actuarial Analyst",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "title": "Actuarial Associate",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "ADP Actuarial Assistant",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Consultant",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "ADP Assistant Actuary",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Actuarial Analyst II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Actuarial Assistant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Actuarial Assistant Senior",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Health & Benefits Analyst - Actuarial",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Health Actuary-Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Actuarial Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Actuarial Associate - KBGFJG223530-4",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Actuarial Associate - KBGFJG271226-2",
+          "employers": 1,
+          "filings": 1
+        }
+      ]
+    },
+    "onet_occupations": [
+      {
+        "soc_code": "15-2011.00",
+        "title": "Actuaries",
+        "employers": 14,
+        "filings": 21
+      }
+    ],
+    "placement_model": {
+      "in_house": {
+        "employers": 14,
+        "filings": 21
+      },
+      "third_party_site": {
+        "employers": 0,
+        "filings": 0
+      }
+    },
+    "industry_naics2": [
+      {
+        "code": "52",
+        "label": "Finance and Insurance",
+        "employers": 12,
+        "filings": 17
+      }
+    ]
+  },
+  "caveats": [
+    "An LCA certification is not a hire or an open role.",
+    "OPT is not sponsorship — a new grad's first job is on OPT; sponsorship comes 1-3 years later.",
+    "Employer names are conservatively normalized and may under-merge.",
+    "Career/portfolio guidance, not immigration legal advice."
+  ]
+}

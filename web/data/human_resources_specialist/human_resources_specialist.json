@@ -1,0 +1,953 @@
+{
+  "role": "human_resources_specialist",
+  "generated_at_utc": "2026-07-24 06:20 UTC",
+  "source": "US DOL OFLC LCA Programs disclosure data (public record)",
+  "filters": {
+    "case_status": "Certified",
+    "soc_codes": [
+      "13-1071"
+    ],
+    "pw_wage_level": "I"
+  },
+  "quarters_used": [
+    "FY2025Q4",
+    "FY2026Q1"
+  ],
+  "quarters_superseded": {},
+  "funnel": {
+    "rows_total": 201700,
+    "rows_certified": 181277,
+    "rows_soc_matched": 215,
+    "rows_selected": 47
+  },
+  "employer_groups": 44,
+  "rows_wage_excluded_from_wage_stats": 0,
+  "patterns": {
+    "basis": {
+      "filings": 47,
+      "employers": 44,
+      "measured_by": "employers",
+      "min_support_employers": 3
+    },
+    "job_titles": {
+      "recurring_tokens": [
+        {
+          "token": "specialist",
+          "employers": 21,
+          "filings": 22
+        },
+        {
+          "token": "human",
+          "employers": 15,
+          "filings": 15
+        },
+        {
+          "token": "resources",
+          "employers": 11,
+          "filings": 11
+        },
+        {
+          "token": "hr",
+          "employers": 10,
+          "filings": 11
+        },
+        {
+          "token": "recruiter",
+          "employers": 7,
+          "filings": 8
+        },
+        {
+          "token": "analyst",
+          "employers": 4,
+          "filings": 5
+        },
+        {
+          "token": "resource",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "technical",
+          "employers": 3,
+          "filings": 3
+        }
+      ],
+      "distinct_titles": [
+        {
+          "title": "Human Resources Specialist",
+          "employers": 7,
+          "filings": 7
+        },
+        {
+          "title": "HR Specialist",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "title": "Human Resource Specialist",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "Nurse Recruiter",
+          "employers": 2,
+          "filings": 3
+        },
+        {
+          "title": "HR Analyst",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "SR. ENGINEERING TECHNICAL RECRUITER",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "HR  Specialist",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Talent Analyst",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "CBSS Recruiter",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Career MGT Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "DEI Coordinator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data and Reporting Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "HR Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "HR EXECUTIVE",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "HR SPECIALIST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "HRIS and Payroll Support Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "HUMAN RESOURCES SPECIALIST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Human Resource",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Human Resources Administrator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Human Resources Generalist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Human Resources and Administration coordinator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Onboarding Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "PEOPLE OPERATIONS ADMINISTRATOR",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Partner, Talent Acquisition",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "People Business Partner",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Recruiter",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Recruiting Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Recruitment Consultant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Service Delivery Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Technical Recruiter",
+          "employers": 1,
+          "filings": 1
+        }
+      ]
+    },
+    "onet_occupations": [
+      {
+        "soc_code": "13-1071.00",
+        "title": "Human Resources Specialists",
+        "employers": 44,
+        "filings": 47
+      }
+    ],
+    "placement_model": {
+      "in_house": {
+        "employers": 43,
+        "filings": 46
+      },
+      "third_party_site": {
+        "employers": 1,
+        "filings": 1
+      }
+    },
+    "industry_naics2": [
+      {
+        "code": "54",
+        "label": "Professional, Scientific, and Technical Services",
+        "employers": 11,
+        "filings": 12
+      },
+      {
+        "code": "62",
+        "label": "Health Care and Social Assistance",
+        "employers": 7,
+        "filings": 8
+      },
+      {
+        "code": "56",
+        "label": "Administrative and Support and Waste Management and Remediation Services",
+        "employers": 4,
+        "filings": 4
+      },
+      {
+        "code": "72",
+        "label": "Accommodation and Food Services",
+        "employers": 4,
+        "filings": 4
+      },
+      {
+        "code": "42",
+        "label": "Wholesale Trade",
+        "employers": 3,
+        "filings": 3
+      },
+      {
+        "code": "61",
+        "label": "Educational Services",
+        "employers": 3,
+        "filings": 3
+      }
+    ]
+  },
+  "caveats": [
+    "An LCA certification is not a hire or an open role.",
+    "OPT is not sponsorship — a new grad's first job is on OPT; sponsorship comes 1-3 years later.",
+    "Employer names are conservatively normalized and may under-merge.",
+    "Career/portfolio guidance, not immigration legal advice."
+  ],
+  "employers": [
+    {
+      "employer": "EVERGREEN EMPLOYEE MANAGEMENT CO",
+      "employer_display": "Evergreen Employee Management Co.",
+      "filing_count": 2,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "13-1071",
+      "soc_titles": "Human Resources Specialists",
+      "worksite_states": "CA",
+      "worksite_cities": "San Francisco",
+      "wage_annual_min": 90000,
+      "wage_annual_median": 90000,
+      "wage_annual_max": 90000
+    },
+    {
+      "employer": "PEOPLE TECH GROUP",
+      "employer_display": "People Tech Group, Inc",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1071",
+      "soc_titles": "Human Resources Specialists",
+      "worksite_states": "WA",
+      "worksite_cities": "Redmond",
+      "wage_annual_min": 62400,
+      "wage_annual_median": 62400,
+      "wage_annual_max": 62400
+    },
+    {
+      "employer": "RN EXPRESS STAFFING REGISTRY",
+      "employer_display": "RN Express Staffing Registry, LLC",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1071",
+      "soc_titles": "Human Resources Specialists",
+      "worksite_states": "NY",
+      "worksite_cities": "New York",
+      "wage_annual_min": 62400,
+      "wage_annual_median": 62400,
+      "wage_annual_max": 62400
+    },
+    {
+      "employer": "8 TUXEDOS",
+      "employer_display": "8 TUXEDOS INC.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1071",
+      "soc_titles": "Human Resources Specialists",
+      "worksite_states": "NY",
+      "worksite_cities": "NEW YORK",
+      "wage_annual_min": 75000,
+      "wage_annual_median": 75000,
+      "wage_annual_max": 75000
+    },
+    {
+      "employer": "AHRC NYC",
+      "employer_display": "AHRC NYC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1071",
+      "soc_titles": "Human Resources Specialists",
+      "worksite_states": "NY",
+      "worksite_cities": "New York",
+      "wage_annual_min": 58200,
+      "wage_annual_median": 58200,
+      "wage_annual_max": 58200
+    },
+    {
+      "employer": "ALTERNATIVE HEALTHCARE VENTURES IN AMERICA STAFFING SOLUTIONS",
+      "employer_display": "ALTERNATIVE HEALTHCARE VENTURES IN AMERICA STAFFING SOLUTIONS LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1071",
+      "soc_titles": "Human Resources Specialists",
+      "worksite_states": "NJ",
+      "worksite_cities": "Jersey City",
+      "wage_annual_min": 58157,
+      "wage_annual_median": 58157,
+      "wage_annual_max": 58157
+    },
+    {
+      "employer": "ALTURA STONE AND TILE",
+      "employer_display": "Altura Stone and Tile, Inc",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1071",
+      "soc_titles": "Human Resources Specialists",
+      "worksite_states": "NJ",
+      "worksite_cities": "Fairfield",
+      "wage_annual_min": 58157,
+      "wage_annual_median": 58157,
+      "wage_annual_max": 58157
+    },
+    {
+      "employer": "ARTIFINT TECHNOLOGIES",
+      "employer_display": "ARTIFINT TECHNOLOGIES LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1071",
+      "soc_titles": "Human Resources Specialists",
+      "worksite_states": "CA",
+      "worksite_cities": "SAN CARLOS",
+      "wage_annual_min": 67954,
+      "wage_annual_median": 67954,
+      "wage_annual_max": 67954
+    },
+    {
+      "employer": "AVENUE REALTY",
+      "employer_display": "Avenue Realty, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1071",
+      "soc_titles": "Human Resources Specialists",
+      "worksite_states": "CO",
+      "worksite_cities": "Vail",
+      "wage_annual_min": 52000,
+      "wage_annual_median": 52000,
+      "wage_annual_max": 52000
+    },
+    {
+      "employer": "BRIGHT SIDE BROOKLYN",
+      "employer_display": "Bright Side Brooklyn LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1071",
+      "soc_titles": "Human Resources Specialists",
+      "worksite_states": "NY",
+      "worksite_cities": "Brooklyn",
+      "wage_annual_min": 58157,
+      "wage_annual_median": 58157,
+      "wage_annual_max": 58157
+    },
+    {
+      "employer": "BYTE WAVE TECHNOLOGIES",
+      "employer_display": "BYTE WAVE TECHNOLOGIES INC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1071",
+      "soc_titles": "Human Resources Specialists",
+      "worksite_states": "TN",
+      "worksite_cities": "KNOXVILLE",
+      "wage_annual_min": 47840,
+      "wage_annual_median": 47840,
+      "wage_annual_max": 47840
+    },
+    {
+      "employer": "CHERRY TECHNOLOGIES",
+      "employer_display": "Cherry Technologies, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1071",
+      "soc_titles": "Human Resources Specialists",
+      "worksite_states": "MA",
+      "worksite_cities": "Watertown",
+      "wage_annual_min": 88000,
+      "wage_annual_median": 88000,
+      "wage_annual_max": 88000
+    },
+    {
+      "employer": "COMRISE TECHNOLOGY",
+      "employer_display": "Comrise Technology, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1071",
+      "soc_titles": "Human Resources Specialists",
+      "worksite_states": "NJ",
+      "worksite_cities": "Edison",
+      "wage_annual_min": 58157,
+      "wage_annual_median": 58157,
+      "wage_annual_max": 58157
+    },
+    {
+      "employer": "COSMOS GRANITE WEST",
+      "employer_display": "Cosmos Granite West LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1071",
+      "soc_titles": "Human Resources Specialists",
+      "worksite_states": "UT",
+      "worksite_cities": "Salt Lake City",
+      "wage_annual_min": 48298,
+      "wage_annual_median": 48298,
+      "wage_annual_max": 48298
+    },
+    {
+      "employer": "CREATIVE TEAM",
+      "employer_display": "Creative Team LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1071",
+      "soc_titles": "Human Resources Specialists",
+      "worksite_states": "TX",
+      "worksite_cities": "Houston",
+      "wage_annual_min": 60000,
+      "wage_annual_median": 60000,
+      "wage_annual_max": 60000
+    },
+    {
+      "employer": "CREDO SEMICONDUCTOR",
+      "employer_display": "Credo Semiconductor, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1071",
+      "soc_titles": "Human Resources Specialists",
+      "worksite_states": "CA",
+      "worksite_cities": "San Jose",
+      "wage_annual_min": 170000,
+      "wage_annual_median": 170000,
+      "wage_annual_max": 170000
+    },
+    {
+      "employer": "DAVEY BICKFORD USA",
+      "employer_display": "Davey Bickford USA Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1071",
+      "soc_titles": "Human Resources Specialists",
+      "worksite_states": "UT",
+      "worksite_cities": "Salt Lake City",
+      "wage_annual_min": 48298,
+      "wage_annual_median": 48298,
+      "wage_annual_max": 48298
+    },
+    {
+      "employer": "EASTIN MANAGEMENT",
+      "employer_display": "Eastin Management Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1071",
+      "soc_titles": "Human Resources Specialists",
+      "worksite_states": "CA",
+      "worksite_cities": "Rancho Cucamonga",
+      "wage_annual_min": 60000,
+      "wage_annual_median": 60000,
+      "wage_annual_max": 60000
+    },
+    {
+      "employer": "ESSEN CARE MANAGEMENT",
+      "employer_display": "Essen Care Management, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1071",
+      "soc_titles": "Human Resources Specialists",
+      "worksite_states": "NY",
+      "worksite_cities": "Bronx",
+      "wage_annual_min": 71448,
+      "wage_annual_median": 71448,
+      "wage_annual_max": 71448
+    },
+    {
+      "employer": "HEALTHCARE ARIZONA",
+      "employer_display": "Healthcare Arizona LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1071",
+      "soc_titles": "Human Resources Specialists",
+      "worksite_states": "AZ",
+      "worksite_cities": "Goodyear",
+      "wage_annual_min": 50000,
+      "wage_annual_median": 50000,
+      "wage_annual_max": 50000
+    },
+    {
+      "employer": "HEYTEA USA",
+      "employer_display": "Heytea USA Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1071",
+      "soc_titles": "Human Resources Specialists",
+      "worksite_states": "NY",
+      "worksite_cities": "New York",
+      "wage_annual_min": 58157,
+      "wage_annual_median": 58157,
+      "wage_annual_max": 58157
+    },
+    {
+      "employer": "HJZ BOSTON",
+      "employer_display": "HJZ BOSTON LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1071",
+      "soc_titles": "Human Resources Specialists",
+      "worksite_states": "MA",
+      "worksite_cities": "Allston",
+      "wage_annual_min": 71000,
+      "wage_annual_median": 71000,
+      "wage_annual_max": 71000
+    },
+    {
+      "employer": "HRCAP",
+      "employer_display": "HRCap, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1071",
+      "soc_titles": "Human Resources Specialists",
+      "worksite_states": "NJ",
+      "worksite_cities": "Ridgefield Park",
+      "wage_annual_min": 74194,
+      "wage_annual_median": 74194,
+      "wage_annual_max": 74194
+    },
+    {
+      "employer": "JACKSON STREET YOUTH SERVICES",
+      "employer_display": "Jackson Street Youth Services, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1071",
+      "soc_titles": "Human Resources Specialists",
+      "worksite_states": "OR",
+      "worksite_cities": "Corvallis",
+      "wage_annual_min": 54891,
+      "wage_annual_median": 54891,
+      "wage_annual_max": 54891
+    },
+    {
+      "employer": "JD LOGISTICS UNITED STATES COMPANY",
+      "employer_display": "JD LOGISTICS UNITED STATES COMPANY",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1071",
+      "soc_titles": "Human Resources Specialists",
+      "worksite_states": "NJ",
+      "worksite_cities": "PERTH AMBOY",
+      "wage_annual_min": 72000,
+      "wage_annual_median": 72000,
+      "wage_annual_max": 72000
+    },
+    {
+      "employer": "LIVE AUCTIONEERS",
+      "employer_display": "LIVE AUCTIONEERS LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1071",
+      "soc_titles": "Human Resources Specialists",
+      "worksite_states": "NY",
+      "worksite_cities": "NEW YORK",
+      "wage_annual_min": 63000,
+      "wage_annual_median": 63000,
+      "wage_annual_max": 63000
+    },
+    {
+      "employer": "MANNA ORGANICS",
+      "employer_display": "Manna Organics, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1071",
+      "soc_titles": "Human Resources Specialists",
+      "worksite_states": "NJ",
+      "worksite_cities": "Newark",
+      "wage_annual_min": 58240,
+      "wage_annual_median": 58240,
+      "wage_annual_max": 58240
+    },
+    {
+      "employer": "MARY S CENTER FOR MATERNAL AND CHILD CARE",
+      "employer_display": "Mary's Center for Maternal and Child Care, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1071",
+      "soc_titles": "Human Resources Specialists",
+      "worksite_states": "DC",
+      "worksite_cities": "Washington",
+      "wage_annual_min": 75000,
+      "wage_annual_median": 75000,
+      "wage_annual_max": 75000
+    },
+    {
+      "employer": "MRS BPO",
+      "employer_display": "MRS BPO LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1071",
+      "soc_titles": "Human Resources Specialists",
+      "worksite_states": "NJ",
+      "worksite_cities": "Cherry Hill Township",
+      "wage_annual_min": 51000,
+      "wage_annual_median": 51000,
+      "wage_annual_max": 51000
+    },
+    {
+      "employer": "NEW YORK UNIVERSITY",
+      "employer_display": "New York University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1071",
+      "soc_titles": "Human Resources Specialists",
+      "worksite_states": "NY",
+      "worksite_cities": "New York",
+      "wage_annual_min": 80000,
+      "wage_annual_median": 80000,
+      "wage_annual_max": 80000
+    },
+    {
+      "employer": "NORTH SUFFOLK COMMUNITY SERVICES",
+      "employer_display": "North Suffolk Community Services, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1071",
+      "soc_titles": "Human Resources Specialists",
+      "worksite_states": "MA",
+      "worksite_cities": "Chelsea",
+      "wage_annual_min": 63523,
+      "wage_annual_median": 63523,
+      "wage_annual_max": 63523
+    },
+    {
+      "employer": "OLIVET ACADEMY",
+      "employer_display": "Olivet Academy",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1071",
+      "soc_titles": "Human Resources Specialists",
+      "worksite_states": "NY",
+      "worksite_cities": "Amenia",
+      "wage_annual_min": 51730,
+      "wage_annual_median": 51730,
+      "wage_annual_max": 51730
+    },
+    {
+      "employer": "PAGO",
+      "employer_display": "PAGO LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1071",
+      "soc_titles": "Human Resources Specialists",
+      "worksite_states": "CA",
+      "worksite_cities": "LA MIRADA",
+      "wage_annual_min": 60000,
+      "wage_annual_median": 60000,
+      "wage_annual_max": 60000
+    },
+    {
+      "employer": "RECONSTRUCTION EXPERTS",
+      "employer_display": "Reconstruction Experts, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1071",
+      "soc_titles": "Human Resources Specialists",
+      "worksite_states": "CO",
+      "worksite_cities": "Lakewood",
+      "wage_annual_min": 60000,
+      "wage_annual_median": 60000,
+      "wage_annual_max": 60000
+    },
+    {
+      "employer": "RENAISSANCE RESOURCES",
+      "employer_display": "Renaissance Resources, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1071",
+      "soc_titles": "Human Resources Specialists",
+      "worksite_states": "GA",
+      "worksite_cities": "Atlanta",
+      "wage_annual_min": 47902,
+      "wage_annual_median": 47902,
+      "wage_annual_max": 47902
+    },
+    {
+      "employer": "SHINEBRIGHT USA",
+      "employer_display": "Shinebright USA Inc",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1071",
+      "soc_titles": "Human Resources Specialists",
+      "worksite_states": "NY",
+      "worksite_cities": "New York",
+      "wage_annual_min": 70000,
+      "wage_annual_median": 70000,
+      "wage_annual_max": 70000
+    },
+    {
+      "employer": "SOHO APPAREL GROUP",
+      "employer_display": "Soho Apparel Group Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1071",
+      "soc_titles": "Human Resources Specialists",
+      "worksite_states": "CA",
+      "worksite_cities": "City of Industry",
+      "wage_annual_min": 60000,
+      "wage_annual_median": 60000,
+      "wage_annual_max": 60000
+    },
+    {
+      "employer": "SZOOOM",
+      "employer_display": "SZOOOM LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1071",
+      "soc_titles": "Human Resources Specialists",
+      "worksite_states": "VA",
+      "worksite_cities": "Ashburn",
+      "wage_annual_min": 62483,
+      "wage_annual_median": 62483,
+      "wage_annual_max": 62483
+    },
+    {
+      "employer": "TECH WISH",
+      "employer_display": "Tech Wish, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1071",
+      "soc_titles": "Human Resources Specialists",
+      "worksite_states": "VA",
+      "worksite_cities": "Sterling",
+      "wage_annual_min": 63000,
+      "wage_annual_median": 63000,
+      "wage_annual_max": 63000
+    },
+    {
+      "employer": "TGRC",
+      "employer_display": "TGRC INC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1071",
+      "soc_titles": "Human Resources Specialists",
+      "worksite_states": "NY",
+      "worksite_cities": "New York",
+      "wage_annual_min": 73000,
+      "wage_annual_median": 73000,
+      "wage_annual_max": 73000
+    },
+    {
+      "employer": "UNIVERSITY SETTLEMENT SOCIETY OF NEW YORK",
+      "employer_display": "University Settlement Society of New York",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1071",
+      "soc_titles": "Human Resources Specialists",
+      "worksite_states": "NY",
+      "worksite_cities": "New York",
+      "wage_annual_min": 87560,
+      "wage_annual_median": 87560,
+      "wage_annual_max": 87560
+    },
+    {
+      "employer": "VIRGINIA POLYTECHNIC INSTITUTE STATE UNIVERSITY",
+      "employer_display": "Virginia Polytechnic Institute & State University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1071",
+      "soc_titles": "Human Resources Specialists",
+      "worksite_states": "VA",
+      "worksite_cities": "Blacksburg",
+      "wage_annual_min": 53219,
+      "wage_annual_median": 53219,
+      "wage_annual_max": 53219
+    },
+    {
+      "employer": "VIRTUAL REALITY TECHNOLOGIES",
+      "employer_display": "VIRTUAL REALITY TECHNOLOGIES LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1071",
+      "soc_titles": "Human Resources Specialists",
+      "worksite_states": "CA",
+      "worksite_cities": "SAN CARLOS",
+      "wage_annual_min": 67954,
+      "wage_annual_median": 67954,
+      "wage_annual_max": 67954
+    },
+    {
+      "employer": "WEJOB HR SOLUTIONS",
+      "employer_display": "WeJob HR Solutions, LLC.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1071",
+      "soc_titles": "Human Resources Specialists",
+      "worksite_states": "NY",
+      "worksite_cities": "New York",
+      "wage_annual_min": 65000,
+      "wage_annual_median": 65000,
+      "wage_annual_max": 65000
+    }
+  ]
+}

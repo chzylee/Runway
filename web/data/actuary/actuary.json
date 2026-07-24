@@ -1,0 +1,378 @@
+{
+  "role": "actuary",
+  "generated_at_utc": "2026-07-24 06:20 UTC",
+  "source": "US DOL OFLC LCA Programs disclosure data (public record)",
+  "filters": {
+    "case_status": "Certified",
+    "soc_codes": [
+      "15-2011"
+    ],
+    "pw_wage_level": "I"
+  },
+  "quarters_used": [
+    "FY2025Q4",
+    "FY2026Q1"
+  ],
+  "quarters_superseded": {},
+  "funnel": {
+    "rows_total": 201700,
+    "rows_certified": 181277,
+    "rows_soc_matched": 128,
+    "rows_selected": 21
+  },
+  "employer_groups": 14,
+  "rows_wage_excluded_from_wage_stats": 0,
+  "patterns": {
+    "basis": {
+      "filings": 21,
+      "employers": 14,
+      "measured_by": "employers",
+      "min_support_employers": 3
+    },
+    "job_titles": {
+      "recurring_tokens": [
+        {
+          "token": "actuarial",
+          "employers": 12,
+          "filings": 16
+        },
+        {
+          "token": "analyst",
+          "employers": 7,
+          "filings": 8
+        },
+        {
+          "token": "associate",
+          "employers": 5,
+          "filings": 6
+        },
+        {
+          "token": "assistant",
+          "employers": 3,
+          "filings": 5
+        },
+        {
+          "token": "senior",
+          "employers": 3,
+          "filings": 4
+        }
+      ],
+      "distinct_titles": [
+        {
+          "title": "Actuarial Analyst",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "title": "Actuarial Associate",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "ADP Actuarial Assistant",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Consultant",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "ADP Assistant Actuary",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Actuarial Analyst II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Actuarial Assistant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Actuarial Assistant Senior",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Health & Benefits Analyst - Actuarial",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Health Actuary-Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Actuarial Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Actuarial Associate - KBGFJG223530-4",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Actuarial Associate - KBGFJG271226-2",
+          "employers": 1,
+          "filings": 1
+        }
+      ]
+    },
+    "onet_occupations": [
+      {
+        "soc_code": "15-2011.00",
+        "title": "Actuaries",
+        "employers": 14,
+        "filings": 21
+      }
+    ],
+    "placement_model": {
+      "in_house": {
+        "employers": 14,
+        "filings": 21
+      },
+      "third_party_site": {
+        "employers": 0,
+        "filings": 0
+      }
+    },
+    "industry_naics2": [
+      {
+        "code": "52",
+        "label": "Finance and Insurance",
+        "employers": 12,
+        "filings": 17
+      }
+    ]
+  },
+  "caveats": [
+    "An LCA certification is not a hire or an open role.",
+    "OPT is not sponsorship — a new grad's first job is on OPT; sponsorship comes 1-3 years later.",
+    "Employer names are conservatively normalized and may under-merge.",
+    "Career/portfolio guidance, not immigration legal advice."
+  ],
+  "employers": [
+    {
+      "employer": "AMERICAN GENERAL LIFE INSURANCE COMPANY",
+      "employer_display": "American General Life Insurance Company",
+      "filing_count": 3,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "15-2011",
+      "soc_titles": "Actuaries",
+      "worksite_states": "NJ; TX",
+      "worksite_cities": "Houston; Jersey City",
+      "wage_annual_min": 80300,
+      "wage_annual_median": 92500,
+      "wage_annual_max": 119200
+    },
+    {
+      "employer": "OLIVER WYMAN ACTUARIAL CONSULTING",
+      "employer_display": "Oliver Wyman Actuarial Consulting, Inc",
+      "filing_count": 3,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "15-2011",
+      "soc_titles": "Actuaries",
+      "worksite_states": "IL; NY",
+      "worksite_cities": "Chicago; New York",
+      "wage_annual_min": 90000,
+      "wage_annual_median": 100000,
+      "wage_annual_max": 100000
+    },
+    {
+      "employer": "AON CONSULTING",
+      "employer_display": "Aon Consulting, Inc.",
+      "filing_count": 2,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "15-2011",
+      "soc_titles": "Actuaries",
+      "worksite_states": "MA; PA",
+      "worksite_cities": "Boston; Philadelphia",
+      "wage_annual_min": 114100,
+      "wage_annual_median": 122150,
+      "wage_annual_max": 130200
+    },
+    {
+      "employer": "NATIONAL UNION FIRE INSURANCE COMPANY OF PITTSBURGH PA",
+      "employer_display": "National Union Fire Insurance Company of Pittsburgh, Pa.",
+      "filing_count": 2,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "15-2011",
+      "soc_titles": "Actuaries",
+      "worksite_states": "IL; NJ",
+      "worksite_cities": "Chicago; Jersey City",
+      "wage_annual_min": 87152,
+      "wage_annual_median": 88951,
+      "wage_annual_max": 90750
+    },
+    {
+      "employer": "THE PRUDENTIAL INSURANCE COMPANY OF AMERICA",
+      "employer_display": "The Prudential Insurance Company of America",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-2011",
+      "soc_titles": "Actuaries",
+      "worksite_states": "NJ",
+      "worksite_cities": "Newark",
+      "wage_annual_min": 121600,
+      "wage_annual_median": 122450,
+      "wage_annual_max": 123300
+    },
+    {
+      "employer": "AMERICAN NATIONAL GROUP SERVICES",
+      "employer_display": "American National Group Services LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-2011",
+      "soc_titles": "Actuaries",
+      "worksite_states": "TX",
+      "worksite_cities": "League City",
+      "wage_annual_min": 100000,
+      "wage_annual_median": 100000,
+      "wage_annual_max": 100000
+    },
+    {
+      "employer": "MERCER HEALTH BENEFITS",
+      "employer_display": "Mercer Health & Benefits LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-2011",
+      "soc_titles": "Actuaries",
+      "worksite_states": "CA",
+      "worksite_cities": "San Francisco",
+      "wage_annual_min": 102000,
+      "wage_annual_median": 102000,
+      "wage_annual_max": 102000
+    },
+    {
+      "employer": "NEW YORK LIFE INSURANCE COMPANY",
+      "employer_display": "New York Life Insurance Company",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-2011",
+      "soc_titles": "Actuaries",
+      "worksite_states": "TX",
+      "worksite_cities": "Austin",
+      "wage_annual_min": 62691,
+      "wage_annual_median": 62691,
+      "wage_annual_max": 62691
+    },
+    {
+      "employer": "PACIFICSOURCE",
+      "employer_display": "PacificSource",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-2011",
+      "soc_titles": "Actuaries",
+      "worksite_states": "ID",
+      "worksite_cities": "Boise",
+      "wage_annual_min": 81500,
+      "wage_annual_median": 81500,
+      "wage_annual_max": 81500
+    },
+    {
+      "employer": "RGA ENTERPRISE SERVICES COMPANY",
+      "employer_display": "RGA Enterprise Services Company",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-2011",
+      "soc_titles": "Actuaries",
+      "worksite_states": "CA",
+      "worksite_cities": "Irvine",
+      "wage_annual_min": 91786,
+      "wage_annual_median": 91786,
+      "wage_annual_max": 91786
+    },
+    {
+      "employer": "TRUPANION MANAGERS USA",
+      "employer_display": "Trupanion Managers USA, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-2011",
+      "soc_titles": "Actuaries",
+      "worksite_states": "MA",
+      "worksite_cities": "East Boston",
+      "wage_annual_min": 90000,
+      "wage_annual_median": 90000,
+      "wage_annual_max": 90000
+    },
+    {
+      "employer": "VIAC SERVICES COMPANY",
+      "employer_display": "VIAC SERVICES COMPANY",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-2011",
+      "soc_titles": "Actuaries",
+      "worksite_states": "PA",
+      "worksite_cities": "West Chester",
+      "wage_annual_min": 115000,
+      "wage_annual_median": 115000,
+      "wage_annual_max": 115000
+    },
+    {
+      "employer": "VOYA RETIREMENT INSURANCE AND ANNUITY COMPANY",
+      "employer_display": "VOYA RETIREMENT INSURANCE AND ANNUITY COMPANY",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-2011",
+      "soc_titles": "Actuaries",
+      "worksite_states": "GA",
+      "worksite_cities": "Atlanta",
+      "wage_annual_min": 100250,
+      "wage_annual_median": 100250,
+      "wage_annual_max": 100250
+    },
+    {
+      "employer": "VOYA SERVICES COMPANY",
+      "employer_display": "Voya Services Company",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-2011",
+      "soc_titles": "Actuaries",
+      "worksite_states": "SD",
+      "worksite_cities": "Vermillion",
+      "wage_annual_min": 88700,
+      "wage_annual_median": 88700,
+      "wage_annual_max": 88700
+    }
+  ]
+}

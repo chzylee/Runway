@@ -1,0 +1,1256 @@
+{
+  "generated_at_utc": "2026-07-24 06:19 UTC",
+  "source": "US DOL OFLC LCA Programs disclosure data (public record)",
+  "filters": {
+    "case_status": "Certified",
+    "role": "mechanical_engineer",
+    "soc_codes": [
+      "17-2141"
+    ],
+    "pw_wage_level": "I"
+  },
+  "quarters_used": [
+    "FY2025Q4",
+    "FY2026Q1"
+  ],
+  "quarters_superseded": {},
+  "rows_per_quarter": {
+    "FY2025Q4": 118580,
+    "FY2026Q1": 83120
+  },
+  "funnel": {
+    "rows_total": 201700,
+    "rows_certified": 181277,
+    "rows_soc_matched": 3220,
+    "rows_selected": 420
+  },
+  "employer_groups": 299,
+  "distinct_raw_employer_spellings": 303,
+  "rows_wage_excluded_from_wage_stats": 0,
+  "case_statuses_seen": {
+    "CERTIFIED": 181277,
+    "CERTIFIED - WITHDRAWN": 15748,
+    "WITHDRAWN": 3242,
+    "DENIED": 1433
+  },
+  "wage_levels_seen": {
+    "II": 1150,
+    "IV": 739,
+    "III": 734,
+    "I": 420,
+    "": 177
+  },
+  "wage_units_seen": {
+    "YEAR": 357,
+    "HOUR": 61,
+    "MONTH": 1,
+    "WEEK": 1
+  },
+  "patterns": {
+    "basis": {
+      "filings": 420,
+      "employers": 299,
+      "measured_by": "employers",
+      "min_support_employers": 3
+    },
+    "job_titles": {
+      "recurring_tokens": [
+        {
+          "token": "engineer",
+          "employers": 255,
+          "filings": 354
+        },
+        {
+          "token": "mechanical",
+          "employers": 131,
+          "filings": 173
+        },
+        {
+          "token": "project",
+          "employers": 26,
+          "filings": 27
+        },
+        {
+          "token": "senior",
+          "employers": 15,
+          "filings": 24
+        },
+        {
+          "token": "product",
+          "employers": 13,
+          "filings": 13
+        },
+        {
+          "token": "quality",
+          "employers": 12,
+          "filings": 15
+        },
+        {
+          "token": "manufacturing",
+          "employers": 10,
+          "filings": 14
+        },
+        {
+          "token": "manager",
+          "employers": 10,
+          "filings": 11
+        },
+        {
+          "token": "associate",
+          "employers": 9,
+          "filings": 15
+        },
+        {
+          "token": "application",
+          "employers": 9,
+          "filings": 9
+        },
+        {
+          "token": "postdoctoral",
+          "employers": 8,
+          "filings": 15
+        },
+        {
+          "token": "research",
+          "employers": 8,
+          "filings": 15
+        },
+        {
+          "token": "engineering",
+          "employers": 7,
+          "filings": 16
+        },
+        {
+          "token": "development",
+          "employers": 6,
+          "filings": 11
+        },
+        {
+          "token": "process",
+          "employers": 6,
+          "filings": 7
+        },
+        {
+          "token": "assistant",
+          "employers": 5,
+          "filings": 6
+        },
+        {
+          "token": "equipment",
+          "employers": 5,
+          "filings": 6
+        },
+        {
+          "token": "sr",
+          "employers": 5,
+          "filings": 5
+        },
+        {
+          "token": "systems",
+          "employers": 5,
+          "filings": 5
+        },
+        {
+          "token": "aircraft",
+          "employers": 4,
+          "filings": 7
+        },
+        {
+          "token": "software",
+          "employers": 4,
+          "filings": 6
+        },
+        {
+          "token": "specialist",
+          "employers": 4,
+          "filings": 6
+        },
+        {
+          "token": "release",
+          "employers": 4,
+          "filings": 5
+        },
+        {
+          "token": "support",
+          "employers": 4,
+          "filings": 5
+        },
+        {
+          "token": "control",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "integration",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "test",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "technologies",
+          "employers": 3,
+          "filings": 6
+        },
+        {
+          "token": "calibration",
+          "employers": 3,
+          "filings": 5
+        },
+        {
+          "token": "field",
+          "employers": 3,
+          "filings": 4
+        },
+        {
+          "token": "automotive",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "hvac",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "production",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "program",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "technical",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "validation",
+          "employers": 3,
+          "filings": 3
+        }
+      ],
+      "distinct_titles": [
+        {
+          "title": "Mechanical Engineer",
+          "employers": 76,
+          "filings": 91
+        },
+        {
+          "title": "Mechanical Design Engineer",
+          "employers": 15,
+          "filings": 19
+        },
+        {
+          "title": "Design Engineer",
+          "employers": 12,
+          "filings": 16
+        },
+        {
+          "title": "Project Engineer",
+          "employers": 12,
+          "filings": 12
+        },
+        {
+          "title": "MECHANICAL ENGINEER",
+          "employers": 10,
+          "filings": 22
+        },
+        {
+          "title": "Quality Engineer",
+          "employers": 6,
+          "filings": 7
+        },
+        {
+          "title": "Product Engineer",
+          "employers": 6,
+          "filings": 6
+        },
+        {
+          "title": "Manufacturing Engineer",
+          "employers": 5,
+          "filings": 8
+        },
+        {
+          "title": "MECHANICAL DESIGN ENGINEER",
+          "employers": 4,
+          "filings": 7
+        },
+        {
+          "title": "Application Engineer",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "title": "Postdoctoral Research Associate",
+          "employers": 3,
+          "filings": 6
+        },
+        {
+          "title": "Engineer",
+          "employers": 3,
+          "filings": 4
+        },
+        {
+          "title": "AIRCRAFT TECHNOLOGIES ENGINEER",
+          "employers": 2,
+          "filings": 5
+        },
+        {
+          "title": "Assistant Project Manager",
+          "employers": 2,
+          "filings": 3
+        },
+        {
+          "title": "Design Engineer II",
+          "employers": 2,
+          "filings": 3
+        },
+        {
+          "title": "Mechanical Engineer I",
+          "employers": 2,
+          "filings": 3
+        },
+        {
+          "title": "Postdoctoral Scholar",
+          "employers": 2,
+          "filings": 3
+        },
+        {
+          "title": "Equipment Engineer",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Mechanical  Engineer",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Mechanical Designer",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Mechanical Project Engineer",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Project Manager",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "R&D Mechanical Engineer",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Senior Engineer",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Systems Engineer",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Validation Engineer",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Senior Designer",
+          "employers": 1,
+          "filings": 6
+        },
+        {
+          "title": "Senior Engineer, Development Engineering",
+          "employers": 1,
+          "filings": 4
+        },
+        {
+          "title": "Calibration Engineer",
+          "employers": 1,
+          "filings": 3
+        },
+        {
+          "title": "Software Algorithm Engineer",
+          "employers": 1,
+          "filings": 3
+        },
+        {
+          "title": "Certification Engineer",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Cooling System Engineer",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Design Engineer Specialist",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Design Release Engineer II",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Engineer (Mechanical)",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Exterior - Front Lighting “ DRE",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Field Engineer",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Junior Mechanical Engineer",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "POSTDOCTORAL APPOINTEE - COMBUSTION ENGINEERING",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Petroleum Inspection Engineer",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Postdoctoral Research Staff",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Process Support Engineer",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Staff Engineer, Hardware Development Engineering",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Staff Engineer, Quality Assurance Engineering",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "ADAS Test Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "APPLICATIONS ENGINEER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "AUTOMOTIVE ENGINEER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Aircraft Maintenance Technician",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Aircraft Technologies Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Application Support Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Applications Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Assistant Program Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Assistant Research Professor",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate Engineer, Interiors",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate Manufacturing Equipment Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate Mechanical Design Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate Research Scientist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Automotive Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "CONTROLS ENGINEER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Calibration and Validation Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Current Collector Assembly Application Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "DC Infra Eng I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "DELIVERY MANAGER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "DESIGN ENGINEER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "DRE “ BIW Upper Body",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Design & Release Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Design Consultant II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Design Engineer III",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Design Engineer/Mechanical Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Design Release Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Design Release Engineer - Intermediate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Designer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Development Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Development Engineer “ Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Distribution Engineer in Training (EIT)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "EHS Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "ENGINEER (HVAC)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "ENGINEER (PLUMBING)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Electromechanical Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Embedded Software Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Energy Application Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Energy Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Engineer - Operations",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Engineer Design and Quality Control",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Engineer II, Manufacturing Engineering",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Engineer II, Mechanical",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Engineer Sr.",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Engineering Specialist,  Mechanical Engineering",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Engineering Specialist, Mechanical",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Equipment Services Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Equipment Test Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Exterior Trim - Functional Plastics Engineers DRE",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "FEA Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Factory Automation Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Field Application Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Field Service Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Foundry Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Functional Safety Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "GLOBAL ENTREPRENEUR IN RESIDENCE - Mechanical Engineering",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "HC FORKLIFT AMERICA CORPORATION",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "HVAC Mechanical Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Instrument Engineer II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Integration Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Lead Engineer “ Aero Thermal",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Lead Engineer-Stress",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "MLP Trans OBD Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "MRP Buyer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Manufacturing Equipment Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Manufacturing Process Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Mechanic Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Mechanical Engineer 2",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Mechanical Engineer II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Mechanical Engineer “ Flexible Electronics & Actuators",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Mechanical Manufacturing Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Mechanical Project Manager/HVAC Project Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Mechanical and Quality Control Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Metrologist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Operations Monitoring Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "PCB Process Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "PRODUCT DEVELOPMENT ENGINEER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "PROJECT ENGINEER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "PROJECT ENGINEERING PROFESSIONAL ASSOCIATE",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Packaging Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Phosphate Maintenance Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Planner",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Post Doctoral Research Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Post Processor Developer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Research Assistant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Process Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Product Development Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Product Engineer - II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Product Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Product and Process Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Production Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Production Process Control Engineer - KBGFJG231915-3",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Production Supervisor",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Program Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Controls Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Engineer I “ Engine Calibration",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Engineer/Reverse Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "QUALITY CONTROL ANALYST II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Quality Engineer III",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "R&D Mechanical Engineer, Senior",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "R&D Robotics Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Race Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Reliability Engineer I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research and Development Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Researcher/Scientist III",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Roboticist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Safety CAE Engineer I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior CAD Designer - Automotive Headlamps",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Design Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Estimator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Manufacturing Engineer Contract Manufacturing",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Mechanical Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Mechanical Engineer, Battery HV Distribution",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Product Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Project Engineer - Mechanical",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Quality Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Software Engineer Infotainment",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Solution Engineer-EDEM",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Social Science Research Professional 1",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Special Research Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sr. ADAS Test Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sr. Engineer I, Mechanical",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sr. Mechanical Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sr. Product Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Stress Analysis Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Structural Engineer 2",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Supply Engineer, Quality",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Support Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Systems Engineer - PLM and MES",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Systems Integration Engineer I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Systems Integration Engineer II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Technical Program Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Technical Solutions Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Technical Support Lead Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Test Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Thermal Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Vehicle Application Engineer II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Vehicle Software Integration Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "engineering project estimator",
+          "employers": 1,
+          "filings": 1
+        }
+      ]
+    },
+    "onet_occupations": [
+      {
+        "soc_code": "17-2141.00",
+        "title": "Mechanical Engineers",
+        "employers": 285,
+        "filings": 399
+      },
+      {
+        "soc_code": "17-2141.02",
+        "title": "Automotive Engineers",
+        "employers": 17,
+        "filings": 21
+      }
+    ],
+    "placement_model": {
+      "in_house": {
+        "employers": 252,
+        "filings": 322
+      },
+      "third_party_site": {
+        "employers": 49,
+        "filings": 98
+      }
+    },
+    "industry_naics2": [
+      {
+        "code": "54",
+        "label": "Professional, Scientific, and Technical Services",
+        "employers": 108,
+        "filings": 180
+      },
+      {
+        "code": "33",
+        "label": "Manufacturing",
+        "employers": 104,
+        "filings": 127
+      },
+      {
+        "code": "23",
+        "label": "Construction",
+        "employers": 22,
+        "filings": 29
+      },
+      {
+        "code": "42",
+        "label": "Wholesale Trade",
+        "employers": 17,
+        "filings": 17
+      },
+      {
+        "code": "61",
+        "label": "Educational Services",
+        "employers": 13,
+        "filings": 20
+      },
+      {
+        "code": "32",
+        "label": "Manufacturing",
+        "employers": 8,
+        "filings": 10
+      },
+      {
+        "code": "22",
+        "label": "Utilities",
+        "employers": 5,
+        "filings": 5
+      },
+      {
+        "code": "48",
+        "label": "Transportation and Warehousing",
+        "employers": 4,
+        "filings": 6
+      },
+      {
+        "code": "81",
+        "label": "Other Services (except Public Administration)",
+        "employers": 4,
+        "filings": 5
+      },
+      {
+        "code": "56",
+        "label": "Administrative and Support and Waste Management and Remediation Services",
+        "employers": 3,
+        "filings": 6
+      },
+      {
+        "code": "21",
+        "label": "Mining, Quarrying, and Oil and Gas Extraction",
+        "employers": 3,
+        "filings": 4
+      }
+    ]
+  },
+  "caveats": [
+    "An LCA certification is not a hire or an open role.",
+    "OPT is not sponsorship — a new grad's first job is on OPT; sponsorship comes 1-3 years later.",
+    "Employer names are conservatively normalized and may under-merge.",
+    "Career/portfolio guidance, not immigration legal advice."
+  ]
+}

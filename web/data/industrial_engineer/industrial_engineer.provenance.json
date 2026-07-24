@@ -1,0 +1,1313 @@
+{
+  "generated_at_utc": "2026-07-24 06:19 UTC",
+  "source": "US DOL OFLC LCA Programs disclosure data (public record)",
+  "filters": {
+    "case_status": "Certified",
+    "role": "industrial_engineer",
+    "soc_codes": [
+      "17-2112"
+    ],
+    "pw_wage_level": "I"
+  },
+  "quarters_used": [
+    "FY2025Q4",
+    "FY2026Q1"
+  ],
+  "quarters_superseded": {},
+  "rows_per_quarter": {
+    "FY2025Q4": 118580,
+    "FY2026Q1": 83120
+  },
+  "funnel": {
+    "rows_total": 201700,
+    "rows_certified": 181277,
+    "rows_soc_matched": 3063,
+    "rows_selected": 375
+  },
+  "employer_groups": 248,
+  "distinct_raw_employer_spellings": 255,
+  "rows_wage_excluded_from_wage_stats": 0,
+  "case_statuses_seen": {
+    "CERTIFIED": 181277,
+    "CERTIFIED - WITHDRAWN": 15748,
+    "WITHDRAWN": 3242,
+    "DENIED": 1433
+  },
+  "wage_levels_seen": {
+    "II": 1093,
+    "III": 784,
+    "IV": 664,
+    "I": 375,
+    "": 147
+  },
+  "wage_units_seen": {
+    "YEAR": 297,
+    "HOUR": 75,
+    "MONTH": 2,
+    "WEEK": 1
+  },
+  "patterns": {
+    "basis": {
+      "filings": 375,
+      "employers": 248,
+      "measured_by": "employers",
+      "min_support_employers": 3
+    },
+    "job_titles": {
+      "recurring_tokens": [
+        {
+          "token": "engineer",
+          "employers": 210,
+          "filings": 311
+        },
+        {
+          "token": "quality",
+          "employers": 52,
+          "filings": 67
+        },
+        {
+          "token": "manufacturing",
+          "employers": 43,
+          "filings": 58
+        },
+        {
+          "token": "validation",
+          "employers": 31,
+          "filings": 47
+        },
+        {
+          "token": "industrial",
+          "employers": 29,
+          "filings": 38
+        },
+        {
+          "token": "process",
+          "employers": 27,
+          "filings": 31
+        },
+        {
+          "token": "specialist",
+          "employers": 17,
+          "filings": 22
+        },
+        {
+          "token": "supplier",
+          "employers": 11,
+          "filings": 15
+        },
+        {
+          "token": "development",
+          "employers": 11,
+          "filings": 14
+        },
+        {
+          "token": "operations",
+          "employers": 9,
+          "filings": 29
+        },
+        {
+          "token": "associate",
+          "employers": 8,
+          "filings": 10
+        },
+        {
+          "token": "systems",
+          "employers": 7,
+          "filings": 8
+        },
+        {
+          "token": "senior",
+          "employers": 6,
+          "filings": 10
+        },
+        {
+          "token": "automation",
+          "employers": 6,
+          "filings": 6
+        },
+        {
+          "token": "manager",
+          "employers": 6,
+          "filings": 6
+        },
+        {
+          "token": "product",
+          "employers": 6,
+          "filings": 6
+        },
+        {
+          "token": "project",
+          "employers": 6,
+          "filings": 6
+        },
+        {
+          "token": "test",
+          "employers": 6,
+          "filings": 6
+        },
+        {
+          "token": "compliance",
+          "employers": 5,
+          "filings": 6
+        },
+        {
+          "token": "planning",
+          "employers": 4,
+          "filings": 8
+        },
+        {
+          "token": "analyst",
+          "employers": 4,
+          "filings": 5
+        },
+        {
+          "token": "sr",
+          "employers": 4,
+          "filings": 5
+        },
+        {
+          "token": "assurance",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "control",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "controls",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "packaging",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "research",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "technical",
+          "employers": 3,
+          "filings": 23
+        },
+        {
+          "token": "engineering",
+          "employers": 3,
+          "filings": 6
+        },
+        {
+          "token": "consultant",
+          "employers": 3,
+          "filings": 4
+        },
+        {
+          "token": "assistant",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "continuous",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "cqv",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "improvement",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "mechanical",
+          "employers": 3,
+          "filings": 3
+        }
+      ],
+      "distinct_titles": [
+        {
+          "title": "Manufacturing Engineer",
+          "employers": 24,
+          "filings": 28
+        },
+        {
+          "title": "Quality Engineer",
+          "employers": 20,
+          "filings": 22
+        },
+        {
+          "title": "Industrial Engineer",
+          "employers": 19,
+          "filings": 23
+        },
+        {
+          "title": "Validation Engineer",
+          "employers": 17,
+          "filings": 24
+        },
+        {
+          "title": "Process Engineer",
+          "employers": 13,
+          "filings": 15
+        },
+        {
+          "title": "Supplier Quality Engineer",
+          "employers": 6,
+          "filings": 6
+        },
+        {
+          "title": "Validation Specialist",
+          "employers": 4,
+          "filings": 5
+        },
+        {
+          "title": "Manufacturing Quality Engineer",
+          "employers": 3,
+          "filings": 5
+        },
+        {
+          "title": "Engineer",
+          "employers": 3,
+          "filings": 4
+        },
+        {
+          "title": "MANUFACTURING ENGINEER",
+          "employers": 3,
+          "filings": 4
+        },
+        {
+          "title": "Project Engineer",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "Planning Engineer",
+          "employers": 2,
+          "filings": 4
+        },
+        {
+          "title": "Associate Consultant",
+          "employers": 2,
+          "filings": 3
+        },
+        {
+          "title": "Quality Analyst",
+          "employers": 2,
+          "filings": 3
+        },
+        {
+          "title": "VALIDATION ENGINEER",
+          "employers": 2,
+          "filings": 3
+        },
+        {
+          "title": "Mechanical Engineer",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Product Development Engineer",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Project Manager",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "QUALITY ENGINEER",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Quality Control Engineer",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "SUPPLIER QUALITY ENGINEER",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Systems Engineer",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Test Engineer",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Tooling Engineer",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Technical Operations Engineer I",
+          "employers": 1,
+          "filings": 20
+        },
+        {
+          "title": "Senior Engineer, Industrial Engineering",
+          "employers": 1,
+          "filings": 4
+        },
+        {
+          "title": "Industrial Designer I",
+          "employers": 1,
+          "filings": 3
+        },
+        {
+          "title": "Validation Engineer 2",
+          "employers": 1,
+          "filings": 3
+        },
+        {
+          "title": "Complaint Specialist",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Growth Program Engineer",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Lean Manufacturing Engineer",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Manufacturing Batch Record Reviewer",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Manufacturing Engineer II",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "QA Shop Floor Compliance Specialist",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Quality Systems Expert",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "RFID Engineer",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Senior Planning Engineer",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Supplier Development Quality Engineer II",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Account Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Advanced Engineer, Chemical Process Technology",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Advanced Purchasing Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Applications Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Assembly Pre-Production Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Assistant Development Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Assistant Quality Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate Deviation Writer (Validation Engineer)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate Director",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate Quality Engineer - Site Call Management",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Automation & Controls Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Automation Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Automation Process Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Automation Specialist 1",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Autonomous Systems Verification & Validation Engineer II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Excellence Leader",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "CONTINUOUS IMPROVEMENT ENGINEER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "CQV Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "CQV Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "CQV and GMP Quality Compliance Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Color Development Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Commissioning Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Commissioning and Qualification Engineer I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Computer System Validation Specialist Level 3",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Consultant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Continuous Improvement Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Continuous Improvement Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Controls Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Customer Service Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "D&E Calibrator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "DESIGN ENGINEER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "DEVELOPMENT QUALITY ENGINEER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Design Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Design Quality Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "EMC Test Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Electrical Development Quality Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Engineer  I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Engineer - Mfg",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Engineer I, Fenestration/Manufacturing Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Engineer Process",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Engineer Product II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Engineer, RAM Hardware ID1",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Engineer, RNA Drug Substance Manufacturing",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "FAB Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Facilities Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Fleet Engineer II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Global Operational Procurement Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "HEALTH SYSTEMS ENGINEER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Hardware Development Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "IT Systems Engineer I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Industrial Data Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Industrial Engineer (Brand Coordinator)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Industrial Engineer (Processing)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Industrial Engineer II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Industrial Engineer Specialist II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Industrial Engineer “ Controls Integration",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Industrial Engineer, Distribution Planning & Operations",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Industrial Engineering",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Low Voltage Test Engineer, Semi",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "MANUFACTURING PROCESS ENGINEER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "MES Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "MRP Buyer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Maintenance Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Manager, Enterprise Shared Services",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Manufacturing Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Manufacturing Engineer / PD Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Manufacturing Engineer, Assembly",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Manufacturing Equipment Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Manufacturing Process Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Manufacturing Project Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Manufacturing Quality Controls Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Manufacturing Supervisor",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Manufacturing and Operations Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Master Scheduler",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Mechanical Design Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Mobile Device Testing Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "NPI/Manufacturing Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "OPERATIONS AND AUTOMATION MANAGER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "OPERATIONS ENGINEER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Operations Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Operations Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Operations Monitoring Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "PACKAGING SPECIALIST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "PCB Process Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "PE Systems Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "PRODUCT DEVELOPMENT ENGINEER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "PRODUCT QUALITY ENGINEER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Packaging Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Packaging Mechanic",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Physical Automation Development Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Plant Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Research Assistant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Process Control Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Process Engineer (Manufacturing Sciences)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Process Engineer - Special Projects",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Process Engineer - Warehouse",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Process Engineer I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Process Engineer II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Process Sr. Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Product Performance Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Prophase Technical Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "QA Documentation Reviewer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "QC CHEMIST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "QUALITY ASSURANCE ENGINEER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Quality Assurance Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Quality Assurance Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Quality Assurance Engineer, Level 1",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Quality Control Engineer I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Quality Engineer I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Quality Engineer II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Quality MS Lead",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Quality Process Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Quality and Compliance Engineer Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Quality/Test Engineer II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "R & D Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "R&D Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Reliability Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Scientist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Scientist II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research and Design Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "SENIOR VALIDATION ENGINEER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "SUPPLIER DEVELOPMENT QUALITY ENGINEER II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Engineer, R&D Packaging",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Process Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Validation Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Smart Factory Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Software Development Engineer in Test (SDET)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Specialist-BP & Analytics",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sr Engineer Field Application Engineering",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sr Engineer Quality",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sr. Associate SCADA & Operations",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sr. Engineer - Data",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Staff Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Supervisor Production Line Maintenance",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Supplier Development Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Supplier Industrialization Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Supplier Manufacturing Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Supplier Relations Engineer II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Supply Chain Planning Analyst II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Support Engineer III",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "System Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "TECHNICAL OPERATIONS ENGINEER I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Technical Preparation Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "UX Designer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "User Interface/Experience (UI/UX) Designer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "User Interface/Experience (UI/UX), Designer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Validation & Compliance Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Validation Engineer (TMV)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Validation Engineer I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Validation Engineer II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Validation Engineer/ CSV Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Validation Specialist II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Validation and Compliance Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Wafer Process Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Warehouse Products Engineer",
+          "employers": 1,
+          "filings": 1
+        }
+      ]
+    },
+    "onet_occupations": [
+      {
+        "soc_code": "17-2112.00",
+        "title": "Industrial Engineers",
+        "employers": 130,
+        "filings": 189
+      },
+      {
+        "soc_code": "17-2112.02",
+        "title": "Validation Engineers",
+        "employers": 63,
+        "filings": 102
+      },
+      {
+        "soc_code": "17-2112.03",
+        "title": "Manufacturing Engineers",
+        "employers": 64,
+        "filings": 80
+      },
+      {
+        "soc_code": "17-2112.01",
+        "title": "Human Factors Engineers and Ergonomists",
+        "employers": 3,
+        "filings": 4
+      }
+    ],
+    "placement_model": {
+      "in_house": {
+        "employers": 206,
+        "filings": 283
+      },
+      "third_party_site": {
+        "employers": 46,
+        "filings": 92
+      }
+    },
+    "industry_naics2": [
+      {
+        "code": "33",
+        "label": "Manufacturing",
+        "employers": 88,
+        "filings": 110
+      },
+      {
+        "code": "54",
+        "label": "Professional, Scientific, and Technical Services",
+        "employers": 78,
+        "filings": 137
+      },
+      {
+        "code": "32",
+        "label": "Manufacturing",
+        "employers": 31,
+        "filings": 46
+      },
+      {
+        "code": "42",
+        "label": "Wholesale Trade",
+        "employers": 9,
+        "filings": 9
+      },
+      {
+        "code": "23",
+        "label": "Construction",
+        "employers": 7,
+        "filings": 8
+      },
+      {
+        "code": "56",
+        "label": "Administrative and Support and Waste Management and Remediation Services",
+        "employers": 6,
+        "filings": 6
+      },
+      {
+        "code": "31",
+        "label": "Manufacturing",
+        "employers": 5,
+        "filings": 7
+      },
+      {
+        "code": "45",
+        "label": "Retail Trade",
+        "employers": 4,
+        "filings": 8
+      },
+      {
+        "code": "61",
+        "label": "Educational Services",
+        "employers": 4,
+        "filings": 4
+      },
+      {
+        "code": "51",
+        "label": "Information",
+        "employers": 3,
+        "filings": 22
+      },
+      {
+        "code": "44",
+        "label": "Retail Trade",
+        "employers": 3,
+        "filings": 3
+      }
+    ]
+  },
+  "caveats": [
+    "An LCA certification is not a hire or an open role.",
+    "OPT is not sponsorship — a new grad's first job is on OPT; sponsorship comes 1-3 years later.",
+    "Employer names are conservatively normalized and may under-merge.",
+    "Career/portfolio guidance, not immigration legal advice."
+  ]
+}

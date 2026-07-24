@@ -1,0 +1,4279 @@
+{
+  "generated_at_utc": "2026-07-24 06:19 UTC",
+  "source": "US DOL OFLC LCA Programs disclosure data (public record)",
+  "filters": {
+    "case_status": "Certified",
+    "role": "data",
+    "soc_codes": [
+      "15-2051",
+      "15-2031",
+      "15-2041"
+    ],
+    "pw_wage_level": "I"
+  },
+  "quarters_used": [
+    "FY2025Q4",
+    "FY2026Q1"
+  ],
+  "quarters_superseded": {},
+  "rows_per_quarter": {
+    "FY2025Q4": 118580,
+    "FY2026Q1": 83120
+  },
+  "funnel": {
+    "rows_total": 201700,
+    "rows_certified": 181277,
+    "rows_soc_matched": 12822,
+    "rows_selected": 1595
+  },
+  "employer_groups": 1028,
+  "distinct_raw_employer_spellings": 1038,
+  "rows_wage_excluded_from_wage_stats": 2,
+  "case_statuses_seen": {
+    "CERTIFIED": 181277,
+    "CERTIFIED - WITHDRAWN": 15748,
+    "WITHDRAWN": 3242,
+    "DENIED": 1433
+  },
+  "wage_levels_seen": {
+    "II": 4436,
+    "III": 3064,
+    "IV": 2641,
+    "I": 1595,
+    "": 1086
+  },
+  "wage_units_seen": {
+    "YEAR": 1395,
+    "HOUR": 193,
+    "MONTH": 4,
+    "BI-WEEKLY": 2,
+    "WEEK": 1
+  },
+  "patterns": {
+    "basis": {
+      "filings": 1595,
+      "employers": 1028,
+      "measured_by": "employers",
+      "min_support_employers": 3
+    },
+    "job_titles": {
+      "recurring_tokens": [
+        {
+          "token": "analyst",
+          "employers": 569,
+          "filings": 754
+        },
+        {
+          "token": "data",
+          "employers": 471,
+          "filings": 664
+        },
+        {
+          "token": "business",
+          "employers": 252,
+          "filings": 340
+        },
+        {
+          "token": "engineer",
+          "employers": 145,
+          "filings": 257
+        },
+        {
+          "token": "scientist",
+          "employers": 141,
+          "filings": 174
+        },
+        {
+          "token": "intelligence",
+          "employers": 122,
+          "filings": 166
+        },
+        {
+          "token": "research",
+          "employers": 99,
+          "filings": 140
+        },
+        {
+          "token": "senior",
+          "employers": 82,
+          "filings": 95
+        },
+        {
+          "token": "operations",
+          "employers": 77,
+          "filings": 100
+        },
+        {
+          "token": "associate",
+          "employers": 66,
+          "filings": 85
+        },
+        {
+          "token": "manager",
+          "employers": 53,
+          "filings": 59
+        },
+        {
+          "token": "analytics",
+          "employers": 46,
+          "filings": 56
+        },
+        {
+          "token": "specialist",
+          "employers": 44,
+          "filings": 52
+        },
+        {
+          "token": "biostatistician",
+          "employers": 31,
+          "filings": 50
+        },
+        {
+          "token": "sr",
+          "employers": 27,
+          "filings": 39
+        },
+        {
+          "token": "consultant",
+          "employers": 26,
+          "filings": 68
+        },
+        {
+          "token": "science",
+          "employers": 23,
+          "filings": 28
+        },
+        {
+          "token": "statistical",
+          "employers": 22,
+          "filings": 32
+        },
+        {
+          "token": "product",
+          "employers": 21,
+          "filings": 23
+        },
+        {
+          "token": "postdoctoral",
+          "employers": 20,
+          "filings": 27
+        },
+        {
+          "token": "developer",
+          "employers": 18,
+          "filings": 24
+        },
+        {
+          "token": "systems",
+          "employers": 18,
+          "filings": 21
+        },
+        {
+          "token": "ai",
+          "employers": 18,
+          "filings": 19
+        },
+        {
+          "token": "bi",
+          "employers": 16,
+          "filings": 26
+        },
+        {
+          "token": "programmer",
+          "employers": 16,
+          "filings": 21
+        },
+        {
+          "token": "strategy",
+          "employers": 16,
+          "filings": 19
+        },
+        {
+          "token": "lead",
+          "employers": 16,
+          "filings": 18
+        },
+        {
+          "token": "statistician",
+          "employers": 14,
+          "filings": 20
+        },
+        {
+          "token": "software",
+          "employers": 13,
+          "filings": 19
+        },
+        {
+          "token": "assistant",
+          "employers": 12,
+          "filings": 14
+        },
+        {
+          "token": "management",
+          "employers": 12,
+          "filings": 13
+        },
+        {
+          "token": "reporting",
+          "employers": 12,
+          "filings": 13
+        },
+        {
+          "token": "learning",
+          "employers": 12,
+          "filings": 12
+        },
+        {
+          "token": "machine",
+          "employers": 12,
+          "filings": 12
+        },
+        {
+          "token": "fellow",
+          "employers": 11,
+          "filings": 15
+        },
+        {
+          "token": "it",
+          "employers": 10,
+          "filings": 39
+        },
+        {
+          "token": "clinical",
+          "employers": 10,
+          "filings": 13
+        },
+        {
+          "token": "insights",
+          "employers": 10,
+          "filings": 11
+        },
+        {
+          "token": "technical",
+          "employers": 9,
+          "filings": 10
+        },
+        {
+          "token": "director",
+          "employers": 9,
+          "filings": 9
+        },
+        {
+          "token": "sales",
+          "employers": 9,
+          "filings": 9
+        },
+        {
+          "token": "solutions",
+          "employers": 9,
+          "filings": 9
+        },
+        {
+          "token": "coordinator",
+          "employers": 8,
+          "filings": 9
+        },
+        {
+          "token": "services",
+          "employers": 8,
+          "filings": 9
+        },
+        {
+          "token": "system",
+          "employers": 8,
+          "filings": 8
+        },
+        {
+          "token": "marketing",
+          "employers": 7,
+          "filings": 7
+        },
+        {
+          "token": "project",
+          "employers": 6,
+          "filings": 10
+        },
+        {
+          "token": "compliance",
+          "employers": 6,
+          "filings": 7
+        },
+        {
+          "token": "development",
+          "employers": 6,
+          "filings": 6
+        },
+        {
+          "token": "principal",
+          "employers": 6,
+          "filings": 6
+        },
+        {
+          "token": "risk",
+          "employers": 6,
+          "filings": 6
+        },
+        {
+          "token": "healthcare",
+          "employers": 5,
+          "filings": 8
+        },
+        {
+          "token": "power",
+          "employers": 5,
+          "filings": 8
+        },
+        {
+          "token": "researcher",
+          "employers": 5,
+          "filings": 7
+        },
+        {
+          "token": "analysis",
+          "employers": 5,
+          "filings": 6
+        },
+        {
+          "token": "applications",
+          "employers": 5,
+          "filings": 6
+        },
+        {
+          "token": "azure",
+          "employers": 5,
+          "filings": 6
+        },
+        {
+          "token": "health",
+          "employers": 5,
+          "filings": 6
+        },
+        {
+          "token": "market",
+          "employers": 5,
+          "filings": 6
+        },
+        {
+          "token": "database",
+          "employers": 5,
+          "filings": 5
+        },
+        {
+          "token": "financial",
+          "employers": 5,
+          "filings": 5
+        },
+        {
+          "token": "medical",
+          "employers": 5,
+          "filings": 5
+        },
+        {
+          "token": "operation",
+          "employers": 5,
+          "filings": 5
+        },
+        {
+          "token": "process",
+          "employers": 5,
+          "filings": 5
+        },
+        {
+          "token": "program",
+          "employers": 5,
+          "filings": 5
+        },
+        {
+          "token": "revenue",
+          "employers": 5,
+          "filings": 5
+        },
+        {
+          "token": "scholar",
+          "employers": 5,
+          "filings": 5
+        },
+        {
+          "token": "support",
+          "employers": 5,
+          "filings": 5
+        },
+        {
+          "token": "intel",
+          "employers": 4,
+          "filings": 7
+        },
+        {
+          "token": "quantitative",
+          "employers": 4,
+          "filings": 6
+        },
+        {
+          "token": "scientists",
+          "employers": 4,
+          "filings": 6
+        },
+        {
+          "token": "customer",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "institutional",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "junior",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "ml",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "production",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "quality",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "report",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "staff",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "technology",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "analysts",
+          "employers": 3,
+          "filings": 15
+        },
+        {
+          "token": "solution",
+          "employers": 3,
+          "filings": 7
+        },
+        {
+          "token": "commercial",
+          "employers": 3,
+          "filings": 5
+        },
+        {
+          "token": "computational",
+          "employers": 3,
+          "filings": 5
+        },
+        {
+          "token": "chain",
+          "employers": 3,
+          "filings": 4
+        },
+        {
+          "token": "finance",
+          "employers": 3,
+          "filings": 4
+        },
+        {
+          "token": "growth",
+          "employers": 3,
+          "filings": 4
+        },
+        {
+          "token": "intermediate",
+          "employers": 3,
+          "filings": 4
+        },
+        {
+          "token": "supply",
+          "employers": 3,
+          "filings": 4
+        },
+        {
+          "token": "biostatistics",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "cloud",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "computer",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "decision",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "digital",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "engineering",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "hr",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "information",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "master",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "operational",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "performance",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "professional",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "professor",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "salesforce",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "strategist",
+          "employers": 3,
+          "filings": 3
+        }
+      ],
+      "distinct_titles": [
+        {
+          "title": "Data Analyst",
+          "employers": 88,
+          "filings": 102
+        },
+        {
+          "title": "Business Intelligence Analyst",
+          "employers": 77,
+          "filings": 90
+        },
+        {
+          "title": "Data Scientist",
+          "employers": 64,
+          "filings": 78
+        },
+        {
+          "title": "Data Engineer",
+          "employers": 44,
+          "filings": 60
+        },
+        {
+          "title": "Business Analyst",
+          "employers": 40,
+          "filings": 47
+        },
+        {
+          "title": "DATA ANALYST",
+          "employers": 26,
+          "filings": 38
+        },
+        {
+          "title": "Operations Research Analyst",
+          "employers": 20,
+          "filings": 26
+        },
+        {
+          "title": "Biostatistician",
+          "employers": 13,
+          "filings": 16
+        },
+        {
+          "title": "BUSINESS ANALYST",
+          "employers": 13,
+          "filings": 15
+        },
+        {
+          "title": "Business Data Analyst",
+          "employers": 13,
+          "filings": 15
+        },
+        {
+          "title": "BUSINESS INTELLIGENCE ANALYST",
+          "employers": 12,
+          "filings": 14
+        },
+        {
+          "title": "DATA SCIENTIST",
+          "employers": 9,
+          "filings": 9
+        },
+        {
+          "title": "DATA ENGINEER",
+          "employers": 8,
+          "filings": 9
+        },
+        {
+          "title": "Data Analyst II",
+          "employers": 8,
+          "filings": 9
+        },
+        {
+          "title": "Analyst",
+          "employers": 8,
+          "filings": 8
+        },
+        {
+          "title": "Consultant",
+          "employers": 7,
+          "filings": 14
+        },
+        {
+          "title": "Data Scientist I",
+          "employers": 7,
+          "filings": 12
+        },
+        {
+          "title": "Data Engineer I",
+          "employers": 6,
+          "filings": 22
+        },
+        {
+          "title": "Research Associate",
+          "employers": 6,
+          "filings": 7
+        },
+        {
+          "title": "Data Engineer II",
+          "employers": 6,
+          "filings": 6
+        },
+        {
+          "title": "Machine Learning Engineer",
+          "employers": 6,
+          "filings": 6
+        },
+        {
+          "title": "Senior Analyst",
+          "employers": 6,
+          "filings": 6
+        },
+        {
+          "title": "Senior Data Analyst",
+          "employers": 6,
+          "filings": 6
+        },
+        {
+          "title": "Biostatistician I",
+          "employers": 5,
+          "filings": 12
+        },
+        {
+          "title": "Statistical Analyst",
+          "employers": 5,
+          "filings": 9
+        },
+        {
+          "title": "Biostatistician II",
+          "employers": 5,
+          "filings": 8
+        },
+        {
+          "title": "Postdoctoral Fellow",
+          "employers": 5,
+          "filings": 7
+        },
+        {
+          "title": "Senior Data Scientist",
+          "employers": 5,
+          "filings": 6
+        },
+        {
+          "title": "Data Analyst I",
+          "employers": 5,
+          "filings": 5
+        },
+        {
+          "title": "Research Analyst",
+          "employers": 5,
+          "filings": 5
+        },
+        {
+          "title": "Software Engineer",
+          "employers": 4,
+          "filings": 8
+        },
+        {
+          "title": "Associate Data Scientist",
+          "employers": 4,
+          "filings": 5
+        },
+        {
+          "title": "OPERATIONS RESEARCH ANALYST",
+          "employers": 4,
+          "filings": 5
+        },
+        {
+          "title": "Operations Analyst",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "title": "Healthcare Data Analyst",
+          "employers": 3,
+          "filings": 6
+        },
+        {
+          "title": "SR DATA ANALYST",
+          "employers": 3,
+          "filings": 6
+        },
+        {
+          "title": "Data Scientists",
+          "employers": 3,
+          "filings": 5
+        },
+        {
+          "title": "Data Manager",
+          "employers": 3,
+          "filings": 4
+        },
+        {
+          "title": "Research Data Analyst",
+          "employers": 3,
+          "filings": 4
+        },
+        {
+          "title": "Statistician",
+          "employers": 3,
+          "filings": 4
+        },
+        {
+          "title": "Azure Data Engineer",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "Business Systems Analyst",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "Data Science Engineer",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "Operations Specialist",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "Postdoctoral Research Associate",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "Senior Associate",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "Senior Data Engineer",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "Statistical Programmer",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "Business Intelligence Engineer I",
+          "employers": 2,
+          "filings": 22
+        },
+        {
+          "title": "Business Analyst I",
+          "employers": 2,
+          "filings": 10
+        },
+        {
+          "title": "Business Intel Engineer I",
+          "employers": 2,
+          "filings": 5
+        },
+        {
+          "title": "Business Analyst II",
+          "employers": 2,
+          "filings": 4
+        },
+        {
+          "title": "Postdoctoral Research Fellow",
+          "employers": 2,
+          "filings": 4
+        },
+        {
+          "title": "Statistician I",
+          "employers": 2,
+          "filings": 4
+        },
+        {
+          "title": "Analytics Engineer",
+          "employers": 2,
+          "filings": 3
+        },
+        {
+          "title": "DATA SCIENCE ENGINEER",
+          "employers": 2,
+          "filings": 3
+        },
+        {
+          "title": "Manager, Business Intelligence",
+          "employers": 2,
+          "filings": 3
+        },
+        {
+          "title": "Postdoctoral Associate",
+          "employers": 2,
+          "filings": 3
+        },
+        {
+          "title": "Postdoctoral Researcher",
+          "employers": 2,
+          "filings": 3
+        },
+        {
+          "title": "Senior Data Science Analyst",
+          "employers": 2,
+          "filings": 3
+        },
+        {
+          "title": "Accountable Care Organization Analyst",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Associate Product Manager",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "BI Analyst",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "BI Engineer",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "BUSINESS SYSTEM ANALYST",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Business Intelligence Analyst II",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Business Intelligence Developer",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Business Intelligence Engineer",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Business System Analyst",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "DATA SCIENTIST I",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Data Architect",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Data Miner",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Data and Reporting Analyst",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Data scientist",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "IT Support Engineer I",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Insights Analyst",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Junior Data Scientist",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Market Intelligence Analyst",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Medical Review Coordinator I",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Operation Analyst",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "PROCESS ENGINEER",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Postdoctoral Scholar",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Product Analyst",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Program Manager I",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Programmer Analyst II",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Quality Assurance Analyst",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Research Data Scientist",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Research Fellow",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Research Scientist",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Research Scientist I",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Salesforce Business Analyst",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Senior Statistical Programmer",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Senior Statistician",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Software Engineer I",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Sr. Biostatistician",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Statistical Data Analyst",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Trade Analyst",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "IT Consultant (Data Engineer)",
+          "employers": 1,
+          "filings": 11
+        },
+        {
+          "title": "IT Consultant(Data Engineer)",
+          "employers": 1,
+          "filings": 6
+        },
+        {
+          "title": "Visiting Associate",
+          "employers": 1,
+          "filings": 6
+        },
+        {
+          "title": "Operations Research Analysts - KBGFJG218975-11",
+          "employers": 1,
+          "filings": 5
+        },
+        {
+          "title": "IT Consultant (Power BI Developer/Engineer)",
+          "employers": 1,
+          "filings": 4
+        },
+        {
+          "title": "Research Data Analyst 1",
+          "employers": 1,
+          "filings": 4
+        },
+        {
+          "title": "Solution Specialist",
+          "employers": 1,
+          "filings": 4
+        },
+        {
+          "title": "Applied Sciences",
+          "employers": 1,
+          "filings": 3
+        },
+        {
+          "title": "BI Developer I",
+          "employers": 1,
+          "filings": 3
+        },
+        {
+          "title": "Data Science",
+          "employers": 1,
+          "filings": 3
+        },
+        {
+          "title": "IT Consultant (BI Engineer)",
+          "employers": 1,
+          "filings": 3
+        },
+        {
+          "title": "IT Consultant (UKG Pro Consultant)",
+          "employers": 1,
+          "filings": 3
+        },
+        {
+          "title": "Operations Research Analysts - KBGFJG177065-15",
+          "employers": 1,
+          "filings": 3
+        },
+        {
+          "title": "Operations Research Analysts - KBGFJG218620-6",
+          "employers": 1,
+          "filings": 3
+        },
+        {
+          "title": "Senior Business Data Analyst",
+          "employers": 1,
+          "filings": 3
+        },
+        {
+          "title": "Sr. Computational Statistician",
+          "employers": 1,
+          "filings": 3
+        },
+        {
+          "title": "ANALYTICS ANALYST",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "ASSISTANT BIOSTATISTICIAN",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "AZURE DATA ENGINEER",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Analyst, Data Management Analytics",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Analyst, Supply Chain",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Associate Consultant, Analytics",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Associate Manager",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "BUSINESS ANALYST I",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "BUSINESS INTELLIGENCE ENGINEER I",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Business Intelligence Data Engineer",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Clinical Research Data Specialist",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Consultant (Market Intelligence Consultant)",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "DATA ANALYST/SCIENTIST",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "DATA OPERATIONS ANALYST",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Data Scientist - KBGFJG274214-4",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Data Scientist Assistant",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Data Services Developer",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "EDI Analyst",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Enterprise Data & Analytics Consultant",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Execution Researcher",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Functional Business Analyst",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Gen AI Data Engineer",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Growth Analyst",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "IT Consultant (Data Scientist)",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Industry Analyst II",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Model/Analysis/Validation Officer",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Operations Research Analysts - KBGFJG218403-4",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Optimization Modeler",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "PA, Premium Concierge Specialist",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "PROGRAMMER LEAD DATA SCIENTIST",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Pharmacy Applications Analyst",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Population Health Analyst",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Product Line Manager",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Project Delivery Senior Analyst",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Python Data Engineer",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Research project analyst lead",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "SAS Programmer/Analyst",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "SENIOR SURVEY ASSOCIATE",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "SR. DATA ANALYST",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "STRATEGY ANALYST",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Senior Analyst, Analytics",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Senior Analyst, Commercial Business Analytics",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Senior Business Intelligence Analyst",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Senior Business Operations Specialist",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Senior Data Strategy Analyst",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Solution Delivery Associate",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Sr. Analyst, Enterprise BI Data Products & Governance",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Sr. Compliance Analyst",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Sr. Research Data Analyst",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Statistical  Analyst",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Statistical Analyst A",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Statistical Analyst B",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Systems Analyst (SAP BW/BI)",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Technical Analyst",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "VP of Product",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Visiting Scientist",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Workforce Analytics & Reporting Analyst",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "A/B Testing and Optimization Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "ADAS Data Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "ADVANCED ANALYTICS SPECIALIST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "AI Business Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "AI Data Scientist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "AI Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "AI Research Assistant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "AI Research Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "AI Scientist II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "AI/ML ENGINEER “ MACHINE LEARNING & GENERATIVE AI",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "AI/ML Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "ANALYTICAL STRATEGIST, MARKET & BUSINESS INTELLIGENCE",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "ANALYTICS & DATA CONSULTANT",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "ASS. DIRECTOR OF INTL. ADMISSIONS & ENROLLMENT ANALYTICS",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "ASSOCIATE DATA SCIENTIST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "AWS Data Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Actuarial Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Administrative Coordinator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Ads Account Manager I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Advanced Solutions Consultant (Senior)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Advancement Data Services Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Agentic AI Teacher",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Analyst - Labor & Employment",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Analyst II, IT Business",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Analyst, Commercial Business Analytics",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Analyst, Construction Tech Solutions",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Analyst, Data Intelligence",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Analyst, Pet Services",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Analyst, Sales Operations",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Analyst, Search Marketing",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Analyst-Business Process",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Analytics & Strategy Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Analytics Developer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Analytics Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Analytics Specialist I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Anti-Fraud Data Analyst - USDS",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Application Specialist: Data Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Applications Programmer/Analyst Intermediate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Applications System  Data and Report Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Applied Scientist - Computer Vision",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Assistant Director of Data Management",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Assistant Director of Enrollment Reporting",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Assistant Director of Partnership Operations",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Assistant Professor",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Assistant Professor of Scholar Support and Data Services",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Assistant Research Scientist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Assistant Scientist/College of Education",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate (America Data Center)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate (Associate Band)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate (Operation Service Department)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate Analytics Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate Biostatistician",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate Business Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate Business Intelligence Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate Consultant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate Data Engineer III",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate Data Science Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate Director of Institutional Research",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate Director, Clinical Strategy, Analysis & Practice",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate I Outcomes and Operational Intelligence",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate Scientist II/Visiting Scientist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate Scientist/School of Medicine and Clinical Affairs",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate Systems Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate, Analytics Solutions",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate, Finance & Strategy",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Audience Business Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Azure DevOps Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "BI Developer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "BI ENGINEER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "BI Report Developer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "BIG DATA ENGINEER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "BIOSTATISTICIAN II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "BUSINESS ANALYSIS LEAD ANALYST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "BUSINESS ANALYST (CPQ ANALYST)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "BUSINESS ANALYST EXPERT",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "BUSINESS ANALYTICS SPECIALIST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "BUSINESS DATA ANALYST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "BUSINESS DEVELOPMENT ANALYST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "BUSINESS INSIGHTS ANALYST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "BUSINESS INTELLIGENCE SPECIALIST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "BUSINESS SYSTEMS ANALYST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Bioinformatics Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Biomedical Data Scientist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Biostatistical Consultant I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Biostatistical Consultant II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Biostatistician 1",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Biostatistician 2",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Biostatistician Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Biostatistician Consultant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Biostatistician in Ctr for Health System Sustainability",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Biostatistician/Junior Research Scientist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Biostatisticians",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Broker Agent Service Consultant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business  Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Analyst - Business Focused",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Analyst - Technical - Senior",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Analyst III",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Analyst and QA/Tester",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Analyst, Financial Systems and Technology",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Analyst, Scrum Master",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Analytics Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Analytics Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Data Analyst II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Data Anaylst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Information Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Insights Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Intel Developer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Intelligence Analyst (Customer Retention Analyst)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Intelligence Analyst I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Intelligence Analysts",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Intelligence Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Intelligence Developer Intermediate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Intelligence Engineer II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Intelligence Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Intelligence Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Operations Associate, Restaurant Tech Systems",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Operations Consultant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Operations Research Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Operations Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Process and Systems Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Senior Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Solutions Consultant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Statistical Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Systems & Data Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Systems Analyst (Business Intelligence Analyst)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Systems Analyst Sr",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Systems Analyst-INTMD",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "CEbP Research Associate II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "CLINICAL DATA ANALYST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "CRR/FTR Analyst in ERCOT and PJM",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "CUSTOMER EXPERIENCE SPECIALIST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Campaign Manager Data Analyst (Business Intelligence Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Capacity Accreditation Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "CareDx",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Catalog Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Channel Category Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Chief of Staff to the CEO",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Client Analytics Manager I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Client Services Representative",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Clinical  Statistical  Programmer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Clinical Data Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Clinical Data Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Clinical Informatics Engineer, EM",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Clinical Practice Data Analyst Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Clinical Research Coordinator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Clinical Research Coordinator II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Clinical Research Data Specialist Lead",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Cloud Data Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Cloud FinOps Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Coder Auditor",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Commercial Analytics Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Commercial Data Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Compliance Analyst- Model Governance",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Compliance Data Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Computational and Data Science Research Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Computer Programmer / Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Computer Vision Scientist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Congestion & Market Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Construction Management Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Consultant II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Consultant “ Data Analytics",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Content Specialist III",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Corporate Performance Improvement Coordinator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Customer Success Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "DATA ANALYST, REGULATORY & COMPLIANCE",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "DATA ENGINEER I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "DATA ENGINEER II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "DATA INGESTION ANALYST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "DATA MEASUREMENT AND REPORTING ANALYST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "DATA QUALITY ANALYST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "DATA SCIENCE SPECIALIST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "DATA SCIENTIST II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "DATA SCIENTISTS",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "DATA/MODELLING ENGINEER II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data & Analytics Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data & Artificial Intelligence Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Analyst - AI Solutions",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Analyst - Energy/ Asset Management",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Analyst - Marketing & Operations",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Analyst - Pharmaceutical Sciences",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Analyst 2",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Analyst C",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Analyst III (PMO Data Analyst)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Analyst Principal",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Analyst “ Data Center Operations",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Analyst “ Power BI, Assessments, and Research",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Analyst, Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Analyst, Consultant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Analyst, Forecasting & Analytics",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Analyst, US Business Insights",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Analytics Analyst 2",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Analytics Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Analytics Science Analyst 2",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Analytics Scientist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Design Technologist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Engineer (Python/AWS)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Engineer Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Engineering",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Engineering Lead",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Information and Systems Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Insights Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Integration Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Integration Lead",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Management Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Management Senior Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Manager/Statistician",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Operations Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Programmer Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Science Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Science Analyst - KBGFJG229751-5",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Science Fellow",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Science Pred Modeler",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Science Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Scientist - Technical Programs",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Scientist Engineer I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Scientist I - P1",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Scientist II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Scientist and Analytics Engineer Senior",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Scientist “ Healthcare Revenue & Systems Analytics",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Scientist, Operational Excellence",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Scientist, Prod. Trust & Access Gov. - Global Sec. Org.",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Scientist: Workforce",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Solutions Consultant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Systems Manager I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Visualization Engineer II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Warehouse ETL Developer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data and AI Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data and Analytics Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data and Analytics Lead",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data integrity Validation Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data/Business Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Database Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Database Analyst I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Database Analyst II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Database Analyst/Programmer Intermediate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Decision Support Specialist 3",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Decision Technology Analyst- DFP and Reporting",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Defi Strategy Research Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Deployment Strategist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Developer, Business Intelligence",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Digital Operations Strategist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Digital Product Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Director Institutional Effectiveness",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Director of Revenue Analytics & Insights",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "EA Business Solution Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "EHR Support Technician",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Engineer- Performance and Prediction II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Entrepreneur In Residence",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Facilitations Professional I. (Data Scientist)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Financial Business Intelligence Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Financial Data Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Forecasting Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Founder and CTO/Data Scientist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Founding Data Scientist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "GCP DATA ENGINEER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "GIS Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "GTM Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "GenAI Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Girls Soccer Operations Lead",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Growth Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "HR Data & Accounting Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "HR Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "HRIS Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "HRIS Consultant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "HSCSN Business Analyst HPO",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Head of Machine Learning",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Health Information and Human Services Data Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "IAM COMPLIANCE ANALYST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "INTEGRATED BUSINESS ANALYST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "IT BUSINESS ANALYST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "IT Business Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "IT Consultant (Data Scientist )",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "IT Data Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "IT SPECIALIST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Imaging Project Coordinator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Initiatives Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Insight Analyst II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Insights Analyst II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Institutional Analytics and Research Data Scientist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Intermediate Database Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Internal Audit Experienced Business Intelligence Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "International Business Risk Associate, CMD",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Jr Data Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Junior Data Science Developer / Operational Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "LEAD DATA ENGINEER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Land-Use Data Scientist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Lead AI/ML Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Lead Biostatistician in Ctr for Gerontology & Healthcare",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Lead Data Scientist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Lead Gen AI Data Scientist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Listing Business Development Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Loan Operations Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Logistics Operations Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "MARKETING ANALYST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "MARKETING DATA ANALYST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "MHE IT Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "MLOps Engineer, Manager - Analytics Operations",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Machine Learning Applications Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Machine Learning Scientist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Machine Learning/AI Engineer III",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Managed Services Business Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Management & HR Operations Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Manager I, ML Data Operations",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Manager, Biostatistics",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Manager, Business Analytics",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Manager, CRM Analytics & Insights",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Manager, Data Analytics & Insights",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Manager, Data Analytics I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Manager, IPv4 Lease Operations",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Manager, Web Analytics",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Marketing Data Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Marketing Data Analyst II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Master Data Analyst - Shared Services",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Medical Data Scientist I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Medical Informaticist II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "NIAR Research Engineer-Statistician",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "OPERATIONS BUSINESS ANALYST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "OPERATIONS COORDINATOR",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Officer; Quantitative Finance Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Officer; Quantitative Financial Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Officer; Risk Analysis Specialist II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Operation Research Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Operation Supervisor",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Operations & Business Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Operations Data Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Operations Improvement & Funding Coordinator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Operations Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Operations Research Analysts",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Operations Research Data Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Operations Research Scientist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Operations Research Scientist Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Operations Strategy and Solutions Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Oracle Cloud Report Developer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "PRODUCTION RESEARCH ANALYST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Patient Safety Data Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "People Operations Research Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Performance Analyst Principal",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Post-Doctoral Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Research Assistant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Researcher in Computational Biomechanics",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Scholar - Research Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Scholar Employee",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Power BI Consultant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Power BI Developer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Power BI Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Principal AI Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Principal Data Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Process Imprv Specialist I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Procurement Data Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Product Analyst - Healow Insights",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Product Business Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Product Data Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Product Data Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Product Enablement Manager, Academy",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Product Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Product Management",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Product Manager AI and Data Science",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Product Manager I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Product Operations Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Product Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Production Data Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Production Planner II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Programmer Analyst I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Manager (Labs)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Prompt Engineering Program Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Public Health Operations Research Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Quality Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Quant Analytics Lead",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Quantitative Medicine Developer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Quantitative Operations Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "R&D Data Scientist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "REPORTING BUSINESS ANALYST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "RESEARCH ANALYST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "RESEARCH DATA ANALYST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "RESEARCH DATA ANALYST III",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "RESEARCH DATA MANAGER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Reliability Data Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Reporting Development Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Reporting Specialist, Risk",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Reporting and Analytics Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research  Instructor",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Analyst (Remote)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Analyst - IT Operations",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Analyst I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Assistant Professor",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Associate - Informatics",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Coverage Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Data Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Data Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Extension Specialist (Data Science)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Manager (Data Scientist)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Professional 5 - Biostatistics",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Program Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Project Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Specialist V",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Statistician",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research and Innovation Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research and Reporting Analyst - Student Success",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Researcher Senior",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Revenue Data Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Revenue Integrity Data Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Revenue Operations Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Risk Management and Business Continuity Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Routing/IP Software Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "SALES ANALYST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "SALES DATA ANALYST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "SAS Programmer I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "SCRUM Master",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "SDTM Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "SEO Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "SQL DATA ANALYST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "SR. DATA ENGINEER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "SR. PRODUCT ANALYST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "STATISTICAL DATA ANALYST II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "SYSTEM DEVELOPMENT ENGINEER II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sales Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sales Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sales Management Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sales Operations Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sales Strategy & Operations Sr. Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Salesforce.com Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Scientist, Statistical Programming",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Security Systems Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Seismic Imager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Analyst “ BCG Vantage",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Analyst, CORE Planning",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Analyst, Collections & Recoveries Strategy",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Analyst, Corporate CRM & Consumer Analytics, NA",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Analytics Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Associate Data Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Associate Decision Scientist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Associate, Dasher & Logistics - Strategy & Operations",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Associate, New Verticals",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Associate, Strategy & Growth",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Biostatistician/Epidemiologist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Business Development Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Business Intelligence & Report Developer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Business Solutions Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Business Strategy Analyst - Global SMB Ads - SJC",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Business Systems Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Consultant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Credit Risk Data Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Customer Engagement Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Data Science Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Data Scientist [00078596]",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Fulfillment Technology Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Health Data Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Imaging Project Leader",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Media Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Medical Economics Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Operations & Strategy Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Operations Consultant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Operations Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior PCT Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Postdoctoral Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Principal Emerging Technologies Management",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Quantitative Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Research Data Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Software Product Manager-Operations",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Statistician II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Supply Chain Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior System Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Systems Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Trader",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Social Science/Humanities Research Associate V",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Software (Data) Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Software Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Software Consultant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Software Development Engineer - Large Language Models, AML",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Software Engineer - Data Science",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Software Engineer I - P1",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Software Engineer, Data",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Solutions Strategy Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sourcing Operations Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Specialist I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Specialist, Recruitment Production",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sr Analyst, Business Risk Management",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sr Analyst, Digital Product",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sr Analyst-Business Intel",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sr Data Analyst AI",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sr Specialist Data Scientist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sr. Associate, Genesis Owner Experience",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sr. BOM Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sr. Business Analyst, Pricing Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sr. Business Applications Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sr. Business Intelligence Developer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sr. Data Analyst & BI Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sr. Financial Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sr. Institutional Research Analyst/Statistician & Instructor",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sr. Sales Operations and Strategy Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Staff Associate 1",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Staff Machine Learning Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Staff SAP FICO Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Statistical Programmer Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Statistical Programmer I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Statistical Programmer/Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Statistical Programming Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Statistical Research Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Statistical Science Associate Director",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Statistician 2",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Statistician Senior",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Statistics and Biostatistics Analyst 3",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Strategic Initiatives Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Strategic Sourcing Data and Compliance Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Strategy & Operations Associate Principal",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Strategy and Finance Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Supply Chain Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sustainable Manufacturing Research Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Systems Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "TECHNOLOGY LEAD",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "TRAFFIC SAFETY RESEARCH FELLOW",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "TSG Data Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Talent Analytics Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Team Lead SBO Reporting",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Technical Business Analysis “ Sr Professional I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Technical Business Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Technical CSM I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Technical Program Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Technical Project Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Technical Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Test Data Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Trainer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Transportation Operations Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Vice President - Marketing and Design",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Vice President; Sr. Quantitative Finance Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Workday Data Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "eCommerce Analyst",
+          "employers": 1,
+          "filings": 1
+        }
+      ]
+    },
+    "onet_occupations": [
+      {
+        "soc_code": "15-2051.00",
+        "title": "Data Scientists",
+        "employers": 467,
+        "filings": 651
+      },
+      {
+        "soc_code": "15-2051.01",
+        "title": "Business Intelligence Analysts",
+        "employers": 343,
+        "filings": 469
+      },
+      {
+        "soc_code": "15-2031.00",
+        "title": "Operations Research Analysts",
+        "employers": 175,
+        "filings": 229
+      },
+      {
+        "soc_code": "15-2041.00",
+        "title": "Statisticians",
+        "employers": 83,
+        "filings": 111
+      },
+      {
+        "soc_code": "15-2041.01",
+        "title": "Biostatisticians",
+        "employers": 56,
+        "filings": 92
+      },
+      {
+        "soc_code": "15-2051.02",
+        "title": "Clinical Data Managers",
+        "employers": 29,
+        "filings": 43
+      }
+    ],
+    "placement_model": {
+      "in_house": {
+        "employers": 872,
+        "filings": 1314
+      },
+      "third_party_site": {
+        "employers": 177,
+        "filings": 281
+      }
+    },
+    "industry_naics2": [
+      {
+        "code": "54",
+        "label": "Professional, Scientific, and Technical Services",
+        "employers": 425,
+        "filings": 660
+      },
+      {
+        "code": "61",
+        "label": "Educational Services",
+        "employers": 118,
+        "filings": 224
+      },
+      {
+        "code": "62",
+        "label": "Health Care and Social Assistance",
+        "employers": 81,
+        "filings": 119
+      },
+      {
+        "code": "51",
+        "label": "Information",
+        "employers": 71,
+        "filings": 104
+      },
+      {
+        "code": "52",
+        "label": "Finance and Insurance",
+        "employers": 69,
+        "filings": 94
+      },
+      {
+        "code": "42",
+        "label": "Wholesale Trade",
+        "employers": 41,
+        "filings": 45
+      },
+      {
+        "code": "33",
+        "label": "Manufacturing",
+        "employers": 39,
+        "filings": 44
+      },
+      {
+        "code": "45",
+        "label": "Retail Trade",
+        "employers": 24,
+        "filings": 97
+      },
+      {
+        "code": "56",
+        "label": "Administrative and Support and Waste Management and Remediation Services",
+        "employers": 24,
+        "filings": 37
+      },
+      {
+        "code": "32",
+        "label": "Manufacturing",
+        "employers": 22,
+        "filings": 28
+      },
+      {
+        "code": "44",
+        "label": "Retail Trade",
+        "employers": 13,
+        "filings": 17
+      },
+      {
+        "code": "49",
+        "label": "Transportation and Warehousing",
+        "employers": 12,
+        "filings": 17
+      },
+      {
+        "code": "55",
+        "label": "Management of Companies and Enterprises",
+        "employers": 11,
+        "filings": 15
+      },
+      {
+        "code": "71",
+        "label": "Arts, Entertainment, and Recreation",
+        "employers": 11,
+        "filings": 12
+      },
+      {
+        "code": "23",
+        "label": "Construction",
+        "employers": 10,
+        "filings": 14
+      },
+      {
+        "code": "53",
+        "label": "Real Estate and Rental and Leasing",
+        "employers": 9,
+        "filings": 12
+      },
+      {
+        "code": "81",
+        "label": "Other Services (except Public Administration)",
+        "employers": 9,
+        "filings": 10
+      },
+      {
+        "code": "72",
+        "label": "Accommodation and Food Services",
+        "employers": 8,
+        "filings": 9
+      },
+      {
+        "code": "92",
+        "label": "Public Administration",
+        "employers": 8,
+        "filings": 9
+      },
+      {
+        "code": "48",
+        "label": "Transportation and Warehousing",
+        "employers": 8,
+        "filings": 8
+      },
+      {
+        "code": "22",
+        "label": "Utilities",
+        "employers": 7,
+        "filings": 9
+      },
+      {
+        "code": "31",
+        "label": "Manufacturing",
+        "employers": 6,
+        "filings": 6
+      }
+    ]
+  },
+  "caveats": [
+    "An LCA certification is not a hire or an open role.",
+    "OPT is not sponsorship — a new grad's first job is on OPT; sponsorship comes 1-3 years later.",
+    "Employer names are conservatively normalized and may under-merge.",
+    "Career/portfolio guidance, not immigration legal advice."
+  ]
+}

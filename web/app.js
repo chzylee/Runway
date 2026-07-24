@@ -12,7 +12,7 @@
  * extends it to the pasted LLM result.
  */
 
-// Each registered role (dec. #39, #45, #46) is a sibling data file: data/<role>.json.
+// Each registered role (dec. #39, #45, #46) lives in a per-role folder: data/<role>/<role>.json.
 // Keep in sync with the <option value="..."> list in index.html.
 const ROLE_LABELS = {
   design: "Design",
@@ -20,14 +20,46 @@ const ROLE_LABELS = {
   software_engineer: "Software Engineer",
   consultant_management: "Consultant (Management)",
   consultant_tech: "Consultant (Technology)",
+  qa_engineer: "QA Engineer",
+  network_administrator: "Network / Systems Administrator",
+  information_security_analyst: "Information Security Analyst",
+  computer_network_architect: "Computer Network Architect",
+  web_developer: "Web Developer",
+  applied_scientist: "Applied Scientist",
+  data: "Data",
+  mechanical_engineer: "Mechanical Engineer",
+  civil_engineer: "Civil Engineer",
+  industrial_engineer: "Industrial Engineer",
+  electrical_engineer: "Electrical Engineer",
+  mechatronics_robotics_engineer: "Mechatronics / Robotics Engineer",
+  electronics_engineer: "Electronics Engineer",
+  chemical_engineer: "Chemical Engineer",
+  environmental_engineer: "Environmental Engineer",
+  materials_engineer: "Materials Engineer",
+  aerospace_engineer: "Aerospace Engineer",
+  architect: "Architect (Buildings)",
+  accountant: "Accountant",
+  financial_analyst: "Financial Analyst",
+  financial_quantitative_analyst: "Quantitative Analyst",
+  budget_analyst: "Budget Analyst",
+  marketing_specialist: "Marketing Specialist",
+  project_management_specialist: "Project Management Specialist",
+  logistics: "Logistics",
+  business_operations_specialist: "Business Operations Specialist",
+  human_resources_specialist: "Human Resources Specialist",
+  actuary: "Actuary",
+  chemist: "Chemist",
+  physicist: "Physicist",
+  economist: "Economist",
+  microbiologist: "Microbiologist",
 };
 const KNOWN_ROLES = new Set(Object.keys(ROLE_LABELS));
-const dataUrlFor = (role) => `data/${role}.json`;
+const dataUrlFor = (role) => `data/${role}/${role}.json`;
 // Curated, hand-written editorial content — deliberately a SIBLING file, never
 // folded into <role>.json, because that bundle promises every value traces to a
 // public DOL filing and these do not. A role without one is normal: the prompt
 // then omits the section rather than inventing paths.
-const standoutUrlFor = (role) => `data/${role}.standout_paths.json`;
+const standoutUrlFor = (role) => `data/${role}/${role}.standout_paths.json`;
 // Build-written mirror of the repo's prompts/recommendations.md (single source,
 // D5): the server root is web/, so the repo-root original is unreachable from
 // here. scripts/run.py rewrites the mirror on every build (dec. #35).
@@ -221,10 +253,10 @@ function renderShortlist(data) {
   prov.replaceChildren();
   prov.append(`Source: ${data.source} · generated ${data.generated_at_utc} · `);
   const provLink = document.createElement("a");
-  provLink.href = `data/${state.role}.provenance.json`;
+  provLink.href = `data/${state.role}/${state.role}.provenance.json`;
   provLink.textContent = "provenance";
   const csvLink = document.createElement("a");
-  csvLink.href = `data/${state.role}.csv`;
+  csvLink.href = `data/${state.role}/${state.role}.csv`;
   csvLink.textContent = "download the shortlist (CSV)";
   prov.append(provLink, " · ", csvLink);
 }

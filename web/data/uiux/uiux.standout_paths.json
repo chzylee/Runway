@@ -1,0 +1,44 @@
+{
+  "role": "uiux",
+  "curated_at_utc": "2026-07-24",
+  "kind": "curated-editorial",
+  "framework": "A path qualifies only when >=3 prominent, proven people in the field visibly share the capability, each with a resolving link — the pattern across standouts is the evidence, not market demand. Ranked by strength of that pattern. Curated editorial, not DOL-derived.",
+  "paths": [
+    {
+      "rank": 1,
+      "path": "Ship your own interface in production code",
+      "what_it_is": "Design and implement the UI yourself in the actual codebase, owning components live in production rather than handing off static files to an engineer.",
+      "why_it_signals": "Emil Kowalski and Paco Coursey at Linear, and Rauno Freiberg at Vercel, are design engineers whose job is exactly this fusion - and each has proof in widely-used open-source UI libraries they built (Sonner, Vaul, cmdk).",
+      "people": [
+        {"name": "Emil Kowalski", "link": "https://emilkowal.ski/"},
+        {"name": "Rauno Freiberg", "link": "https://rauno.me/"},
+        {"name": "Paco Coursey", "link": "https://paco.me/"}
+      ],
+      "source": "https://emilkowal.ski/"
+    },
+    {
+      "rank": 2,
+      "path": "Own and scale a documented design system",
+      "what_it_is": "Build a versioned, documented component system that other teams design and build against, and keep it alive as the organization grows.",
+      "why_it_signals": "Brad Frost (Atomic Design), Nathan Curtis (EightShapes) and Dan Mall (SuperFriendly) each built entire practices around leading design systems for other companies, showing this is a recognized specialty rather than a side task.",
+      "people": [
+        {"name": "Brad Frost", "link": "https://bradfrost.com/"},
+        {"name": "Nathan Curtis", "link": "https://eightshapes.com/nathan-curtis/"},
+        {"name": "Dan Mall", "link": "https://danmall.com/about/"}
+      ],
+      "source": "https://bradfrost.com/"
+    },
+    {
+      "rank": 3,
+      "path": "Specialize in motion and interaction craft",
+      "what_it_is": "Go deep on animation and micro-interaction design - timing, easing, physics - as a specialty rather than a finishing touch applied at the end.",
+      "why_it_signals": "Val Head (Adobe, author of Designing Interface Animation), Cassie Evans (GSAP, Webflow) and Rachel Nabors (Microsoft, Meta, Mozilla, W3C) each built recognized careers specifically as motion and interaction specialists within UX.",
+      "people": [
+        {"name": "Val Head", "link": "https://valhead.com/"},
+        {"name": "Cassie Evans", "link": "https://cassie.codes/"},
+        {"name": "Rachel Nabors", "link": "https://nearestnabors.com/"}
+      ],
+      "source": "https://valhead.com/"
+    }
+  ]
+}

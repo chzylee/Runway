@@ -1,0 +1,513 @@
+{
+  "generated_at_utc": "2026-07-24 06:19 UTC",
+  "source": "US DOL OFLC LCA Programs disclosure data (public record)",
+  "filters": {
+    "case_status": "Certified",
+    "role": "information_security_analyst",
+    "soc_codes": [
+      "15-1212"
+    ],
+    "pw_wage_level": "I"
+  },
+  "quarters_used": [
+    "FY2025Q4",
+    "FY2026Q1"
+  ],
+  "quarters_superseded": {},
+  "rows_per_quarter": {
+    "FY2025Q4": 118580,
+    "FY2026Q1": 83120
+  },
+  "funnel": {
+    "rows_total": 201700,
+    "rows_certified": 181277,
+    "rows_soc_matched": 1345,
+    "rows_selected": 112
+  },
+  "employer_groups": 69,
+  "distinct_raw_employer_spellings": 70,
+  "rows_wage_excluded_from_wage_stats": 0,
+  "case_statuses_seen": {
+    "CERTIFIED": 181277,
+    "CERTIFIED - WITHDRAWN": 15748,
+    "WITHDRAWN": 3242,
+    "DENIED": 1433
+  },
+  "wage_levels_seen": {
+    "II": 439,
+    "IV": 386,
+    "III": 296,
+    "I": 112,
+    "": 112
+  },
+  "wage_units_seen": {
+    "YEAR": 101,
+    "HOUR": 11
+  },
+  "patterns": {
+    "basis": {
+      "filings": 112,
+      "employers": 69,
+      "measured_by": "employers",
+      "min_support_employers": 3
+    },
+    "job_titles": {
+      "recurring_tokens": [
+        {
+          "token": "security",
+          "employers": 42,
+          "filings": 79
+        },
+        {
+          "token": "analyst",
+          "employers": 34,
+          "filings": 40
+        },
+        {
+          "token": "engineer",
+          "employers": 17,
+          "filings": 27
+        },
+        {
+          "token": "it",
+          "employers": 9,
+          "filings": 10
+        },
+        {
+          "token": "information",
+          "employers": 8,
+          "filings": 29
+        },
+        {
+          "token": "associate",
+          "employers": 6,
+          "filings": 8
+        },
+        {
+          "token": "operations",
+          "employers": 6,
+          "filings": 7
+        },
+        {
+          "token": "consultant",
+          "employers": 5,
+          "filings": 7
+        },
+        {
+          "token": "cyber",
+          "employers": 5,
+          "filings": 6
+        },
+        {
+          "token": "senior",
+          "employers": 5,
+          "filings": 6
+        },
+        {
+          "token": "cybersecurity",
+          "employers": 5,
+          "filings": 5
+        },
+        {
+          "token": "compliance",
+          "employers": 4,
+          "filings": 5
+        },
+        {
+          "token": "specialist",
+          "employers": 4,
+          "filings": 5
+        },
+        {
+          "token": "cloud",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "risk",
+          "employers": 3,
+          "filings": 3
+        }
+      ],
+      "distinct_titles": [
+        {
+          "title": "Information Security Analyst",
+          "employers": 7,
+          "filings": 8
+        },
+        {
+          "title": "Security Analyst",
+          "employers": 6,
+          "filings": 7
+        },
+        {
+          "title": "Security Engineer I",
+          "employers": 3,
+          "filings": 11
+        },
+        {
+          "title": "Cloud Security Engineer",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Information security Analysts - KBGFJG219733-5",
+          "employers": 1,
+          "filings": 7
+        },
+        {
+          "title": "Information Security Analysts - KBGFJG341142-2",
+          "employers": 1,
+          "filings": 6
+        },
+        {
+          "title": "Security Assurance",
+          "employers": 1,
+          "filings": 3
+        },
+        {
+          "title": "Analyst, Technology Audit",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Application Security Engineer",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Associate",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Cyber Consultant I - Testing",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Data Security Analyst Intermediate",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Information Security Analyst - KBGFJG224417-5",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Information Security Analysts - KBGFJG219231-4",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Information Security Analysts - KBGFJG221526-6",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Information Security Analysts - Kbgfjg218791-5",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Security Operations Center Analyst",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Security Specialist",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Senior Associate, IT Compliance",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "ASSOCIATE II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate II, PMO Operations",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Auditor",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "CLOUD SECURITY ENGINEEER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Consultant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Cyber Privacy & Data Protection Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Cyber Security Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Cyber Security Engineer II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Cybersecurity Operations Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Cybersecurity Penetration Tester",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "DFIR Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Directory Services Security Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Engineer 3, Cyber Security Operations",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Firewall Security Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Generative AI Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "IS Project Compliance Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "IT Audit Staff Consultant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "IT Auditor",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "IT Pro 2 - Security Operations (Linux Security Analyst)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "IT Risk & Cybersecurity Consultant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "IT Risk Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "IT SECURITY ADMINISTRATOR",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "IT SECURITY ANALYST (CYBERSECURITY)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "IT Security Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Infrastructure Security Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "NETWORK ENGINEER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Network Security Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Programmer Analyst/Cloud Security Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Risk Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "SAP Security and Compliance Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "SPLUNK ADMIN",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "SPLUNK DETECTION ENGINEER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Security Engineer, Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Security Operations Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Security Support Engineer III",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Security and Compliance Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Associate Technical Consultant, Security",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Consultant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Detection & Response Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Policy Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sr Cybersecurity Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "System Specialist",
+          "employers": 1,
+          "filings": 1
+        }
+      ]
+    },
+    "onet_occupations": [
+      {
+        "soc_code": "15-1212.00",
+        "title": "Information Security Analysts",
+        "employers": 69,
+        "filings": 112
+      }
+    ],
+    "placement_model": {
+      "in_house": {
+        "employers": 56,
+        "filings": 90
+      },
+      "third_party_site": {
+        "employers": 14,
+        "filings": 22
+      }
+    },
+    "industry_naics2": [
+      {
+        "code": "54",
+        "label": "Professional, Scientific, and Technical Services",
+        "employers": 38,
+        "filings": 68
+      },
+      {
+        "code": "52",
+        "label": "Finance and Insurance",
+        "employers": 8,
+        "filings": 10
+      },
+      {
+        "code": "51",
+        "label": "Information",
+        "employers": 5,
+        "filings": 7
+      },
+      {
+        "code": "33",
+        "label": "Manufacturing",
+        "employers": 5,
+        "filings": 5
+      },
+      {
+        "code": "61",
+        "label": "Educational Services",
+        "employers": 3,
+        "filings": 4
+      },
+      {
+        "code": "56",
+        "label": "Administrative and Support and Waste Management and Remediation Services",
+        "employers": 3,
+        "filings": 3
+      }
+    ]
+  },
+  "caveats": [
+    "An LCA certification is not a hire or an open role.",
+    "OPT is not sponsorship — a new grad's first job is on OPT; sponsorship comes 1-3 years later.",
+    "Employer names are conservatively normalized and may under-merge.",
+    "Career/portfolio guidance, not immigration legal advice."
+  ]
+}

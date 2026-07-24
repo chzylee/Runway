@@ -1,0 +1,45 @@
+{
+  "role": "actuary",
+  "curated_at_utc": "2026-07-24",
+  "kind": "curated-editorial",
+  "framework": "A path qualifies only when >=3 prominent, proven people in the field visibly share the capability, each with a resolving link -- the pattern across standouts is the evidence, not market demand. Ranked by strength of that pattern. Curated editorial, not DOL-derived.",
+  "paths": [
+    {
+      "rank": 1,
+      "path": "Open-source actuarial tooling",
+      "what_it_is": "Building and publicly maintaining free software packages (in R, Python, etc.) that implement core actuarial methods -- claims reserving, loss-distribution fitting, life and pension projection models -- so the whole profession can use and inspect them.",
+      "why_it_signals": "When multiple senior, credentialed actuaries independently choose to spend unpaid time building and maintaining tools their peers actually adopt, it demonstrates a rarer combination than passing exams: deep technical command of the methods plus the software engineering discipline to make that command usable and durable by others.",
+      "people": [
+        {"name": "Markus Gesmann", "link": "https://www.magesblog.com/"},
+        {"name": "Vincent Goulet", "link": "https://vincent-goulet.fsg.ulaval.ca/en"},
+        {"name": "Christophe Dutang", "link": "https://dutangc.perso.math.cnrs.fr/"},
+        {"name": "Fumito Hamamura", "link": "https://github.com/fumitoh"}
+      ],
+      "source": "https://www.magesblog.com/"
+    },
+    {
+      "rank": 2,
+      "path": "Published predictive-modeling and data-science research",
+      "what_it_is": "Producing a public, citable body of original technical work -- papers, monographs, or textbooks -- that applies statistical learning and data-science methods to core actuarial problems like pricing, reserving, and claims.",
+      "why_it_signals": "A sustained, publicly attributable research record shows an actuary can push the discipline's methods forward rather than only apply the existing toolkit, which is exactly the kind of judgment employers cannot get from an exam transcript alone.",
+      "people": [
+        {"name": "Mario V. Wuthrich", "link": "https://people.math.ethz.ch/~wueth/papers.html"},
+        {"name": "Louise Francis", "link": "https://francisanalytics.com/biography/"},
+        {"name": "Roosevelt Mosley", "link": "https://www.pinnacleactuaries.com/article/roosevelt-mosley-begins-term-cas-president"}
+      ],
+      "source": "https://people.math.ethz.ch/~wueth/papers.html"
+    },
+    {
+      "rank": 3,
+      "path": "Public actuarial teaching and exam-prep content",
+      "what_it_is": "Writing, coaching, or publishing books and courses that teach other candidates how to pass actuarial exams and build a career, done publicly and by name while working as a credentialed actuary.",
+      "why_it_signals": "Turning personal exam and career success into a public teaching product that other candidates rely on shows communication skill and initiative beyond passing exams privately -- the same skills that make someone worth backing to represent an employer to clients and regulators.",
+      "people": [
+        {"name": "Brea Fried", "link": "https://etchedactuarial.com/about/"},
+        {"name": "Roy Ju", "link": "https://www.soa.org/future-actuaries/cand-conn-features/2015-youngest-fsa/"},
+        {"name": "Mike Jennings", "link": "https://www.rethinkstudying.com/press/"}
+      ],
+      "source": "https://etchedactuarial.com/about/"
+    }
+  ]
+}

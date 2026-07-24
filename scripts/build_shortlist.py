@@ -6,9 +6,9 @@ Runs the engine over every quarter found in data/processed/, verifies the result
 artifacts the frontend consumes (Design Doc §4.2, §7, D9; dec. #39 for the
 per-role generalization):
 
-  web/data/<role>.json             the closed §4.2 schema the site fetch()es
-  web/data/<role>.provenance.json  the full audit/provenance object
-  web/data/<role>.csv              the public shortlist download (v0 CSV columns)
+  web/data/<role>/<role>.json             the closed §4.2 schema the site fetch()es
+  web/data/<role>/<role>.provenance.json  the full audit/provenance object
+  web/data/<role>/<role>.csv              the public shortlist download (v0 CSV columns)
 
 All three (per role) are written in ONE job (#10 — the build identity is the
 CSV<->provenance binding), guarded by a same-generation assertion (§4.3). The
@@ -34,7 +34,8 @@ WAGE_LEVEL = "I"
 
 
 def _role_paths(role):
-    return (WEB_DATA / f"{role}.json", WEB_DATA / f"{role}.provenance.json", WEB_DATA / f"{role}.csv")
+    role_dir = WEB_DATA / role
+    return (role_dir / f"{role}.json", role_dir / f"{role}.provenance.json", role_dir / f"{role}.csv")
 
 # The employer row columns, in order — exactly the v0 CSV columns (Design Doc §4.2
 # employers[] = "exactly the v0 CSV columns"). Kept explicit so the closed schema is
@@ -70,6 +71,7 @@ def _employer_records(table):
 def build(role=ROLE, requested_quarters=None):
     ensure_dirs()
     json_path, provenance_path, csv_path = _role_paths(role)
+    json_path.parent.mkdir(parents=True, exist_ok=True)
     quarters = load_quarters(DATA_PROCESSED, requested_quarters)
     print(f"[shortlist:{role}] quarters loaded: {', '.join(sorted(quarters))}")
 

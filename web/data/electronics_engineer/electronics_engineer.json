@@ -1,0 +1,1311 @@
+{
+  "role": "electronics_engineer",
+  "generated_at_utc": "2026-07-24 06:20 UTC",
+  "source": "US DOL OFLC LCA Programs disclosure data (public record)",
+  "filters": {
+    "case_status": "Certified",
+    "soc_codes": [
+      "17-2072"
+    ],
+    "pw_wage_level": "I"
+  },
+  "quarters_used": [
+    "FY2025Q4",
+    "FY2026Q1"
+  ],
+  "quarters_superseded": {},
+  "funnel": {
+    "rows_total": 201700,
+    "rows_certified": 181277,
+    "rows_soc_matched": 2575,
+    "rows_selected": 77
+  },
+  "employer_groups": 58,
+  "rows_wage_excluded_from_wage_stats": 0,
+  "patterns": {
+    "basis": {
+      "filings": 77,
+      "employers": 58,
+      "measured_by": "employers",
+      "min_support_employers": 3
+    },
+    "job_titles": {
+      "recurring_tokens": [
+        {
+          "token": "engineer",
+          "employers": 51,
+          "filings": 67
+        },
+        {
+          "token": "rf",
+          "employers": 8,
+          "filings": 9
+        },
+        {
+          "token": "senior",
+          "employers": 6,
+          "filings": 11
+        },
+        {
+          "token": "systems",
+          "employers": 6,
+          "filings": 8
+        },
+        {
+          "token": "product",
+          "employers": 6,
+          "filings": 7
+        },
+        {
+          "token": "applications",
+          "employers": 6,
+          "filings": 6
+        },
+        {
+          "token": "engineering",
+          "employers": 4,
+          "filings": 8
+        },
+        {
+          "token": "verification",
+          "employers": 3,
+          "filings": 5
+        },
+        {
+          "token": "electronic",
+          "employers": 3,
+          "filings": 4
+        },
+        {
+          "token": "asic",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "electronics",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "service",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "system",
+          "employers": 3,
+          "filings": 3
+        }
+      ],
+      "distinct_titles": [
+        {
+          "title": "RF Engineer",
+          "employers": 6,
+          "filings": 7
+        },
+        {
+          "title": "Systems Design Engineer",
+          "employers": 2,
+          "filings": 3
+        },
+        {
+          "title": "Design Engineer",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Electronic System Engineer",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Electronics Engineer",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Senior Engineer",
+          "employers": 1,
+          "filings": 3
+        },
+        {
+          "title": "Design Verification Engineer",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Product Engineer",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Senior Designer",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Senior Engineer, Electronic Design Engineering",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Staff Engineer, Systems Design Verification Engineering",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Staff Engineer, VLSI Design Engineering",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Wireless Engineer",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "4G 5G RAN TEST Engineer III",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "ASIC Verification Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "ASIC/RTL Design Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "AUTOMATION ENGINEER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Applications Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Applications Engineer - Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Applications Support Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate Field Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Battery Test Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Controls Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Demand Developer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Designer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "ELECTRONICS HARDWARE ENGINEER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Electrical Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Embedded Software Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Engineer II - Analog Design",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Engineer, Product Engineering",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Field Service Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Lead Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "NOC Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "NPI Project Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "PCB Layout Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "POSTDOCTORAL APPOINTEE - POWER SYSTEMS",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Research Scholar",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Product Development Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "RAN Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "RF ENGINEER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "RF Engineer III",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior ASIC Design Verficaition Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Engineer 1 - Product",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Engineer I - Corporate Applications",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Engineer, Product Applications",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Service Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Silicon Design Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sr. Product Development Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Staff Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Systems Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Systems Integration Engineer II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Technical Operations Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Technical Service Representative I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Telematics System Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "VLSI CAD Support Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Validation Engineering",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Wireless Applications Engineer",
+          "employers": 1,
+          "filings": 1
+        }
+      ]
+    },
+    "onet_occupations": [
+      {
+        "soc_code": "17-2072.00",
+        "title": "Electronics Engineers, Except Computer",
+        "employers": 57,
+        "filings": 76
+      },
+      {
+        "soc_code": "17-2072.01",
+        "title": "Radio Frequency Identification Device Specialists",
+        "employers": 1,
+        "filings": 1
+      }
+    ],
+    "placement_model": {
+      "in_house": {
+        "employers": 49,
+        "filings": 64
+      },
+      "third_party_site": {
+        "employers": 11,
+        "filings": 13
+      }
+    },
+    "industry_naics2": [
+      {
+        "code": "54",
+        "label": "Professional, Scientific, and Technical Services",
+        "employers": 27,
+        "filings": 34
+      },
+      {
+        "code": "33",
+        "label": "Manufacturing",
+        "employers": 22,
+        "filings": 33
+      },
+      {
+        "code": "32",
+        "label": "Manufacturing",
+        "employers": 3,
+        "filings": 3
+      }
+    ]
+  },
+  "caveats": [
+    "An LCA certification is not a hire or an open role.",
+    "OPT is not sponsorship — a new grad's first job is on OPT; sponsorship comes 1-3 years later.",
+    "Employer names are conservatively normalized and may under-merge.",
+    "Career/portfolio guidance, not immigration legal advice."
+  ],
+  "employers": [
+    {
+      "employer": "ADVANCED MICRO DEVICES",
+      "employer_display": "Advanced Micro Devices, Inc.",
+      "filing_count": 3,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "TX",
+      "worksite_cities": "Austin",
+      "wage_annual_min": 84947,
+      "wage_annual_median": 85384,
+      "wage_annual_max": 110000
+    },
+    {
+      "employer": "SAMSUNG AUSTIN SEMICONDUCTOR",
+      "employer_display": "SAMSUNG AUSTIN SEMICONDUCTOR,LLC",
+      "filing_count": 3,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "CA; TX",
+      "worksite_cities": "Austin; San Jose",
+      "wage_annual_min": 124000,
+      "wage_annual_median": 139000,
+      "wage_annual_max": 139000
+    },
+    {
+      "employer": "SYNAPSIQ",
+      "employer_display": "SYNAPSIQ LLC",
+      "filing_count": 2,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "NY; TX",
+      "worksite_cities": "Frisco; Huntington",
+      "wage_annual_min": 90147,
+      "wage_annual_median": 96012,
+      "wage_annual_max": 101878
+    },
+    {
+      "employer": "SANDISK TECHNOLOGIES",
+      "employer_display": "Sandisk Technologies, Inc.",
+      "filing_count": 4,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "CA",
+      "worksite_cities": "Cupertino; Los Gatos; Milpitas",
+      "wage_annual_min": 124197,
+      "wage_annual_median": 124197,
+      "wage_annual_max": 124197
+    },
+    {
+      "employer": "HCL AMERICA",
+      "employer_display": "HCL AMERICA INC",
+      "filing_count": 3,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "CA; GA",
+      "worksite_cities": "Covington; Irvine; Santa Clara",
+      "wage_annual_min": 86736,
+      "wage_annual_median": 92518,
+      "wage_annual_max": 127234
+    },
+    {
+      "employer": "MICROCHIP TECHNOLOGY",
+      "employer_display": "Microchip Technology Inc.",
+      "filing_count": 3,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "AZ; CO; NY",
+      "worksite_cities": "Chandler; Colorado Springs; Hauppauge",
+      "wage_annual_min": 83678,
+      "wage_annual_median": 89731,
+      "wage_annual_max": 101878
+    },
+    {
+      "employer": "AUMRAJ",
+      "employer_display": "AumRaj, Inc.",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "CA",
+      "worksite_cities": "Fremont",
+      "wage_annual_min": 105000,
+      "wage_annual_median": 108000,
+      "wage_annual_max": 111000
+    },
+    {
+      "employer": "COGNIER",
+      "employer_display": "COGNIER INC",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "CA",
+      "worksite_cities": "Los Angeles",
+      "wage_annual_min": 92518,
+      "wage_annual_median": 92518,
+      "wage_annual_max": 92518
+    },
+    {
+      "employer": "SIEMENS INDUSTRY SOFTWARE",
+      "employer_display": "Siemens Industry Software Inc.",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "OR; TX",
+      "worksite_cities": "Austin; Wilsonville",
+      "wage_annual_min": 96283,
+      "wage_annual_median": 102216,
+      "wage_annual_max": 108148
+    },
+    {
+      "employer": "SUNSOFT SERVICES",
+      "employer_display": "SUNSOFT SERVICES INC",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "CO; NJ",
+      "worksite_cities": "Englewood; Jersey City",
+      "wage_annual_min": 88000,
+      "wage_annual_median": 95000,
+      "wage_annual_max": 102000
+    },
+    {
+      "employer": "WESTERN DIGITAL TECHNOLOGIES",
+      "employer_display": "Western Digital Technologies, Inc.",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "CA",
+      "worksite_cities": "Irvine",
+      "wage_annual_min": 82534,
+      "wage_annual_median": 82534,
+      "wage_annual_max": 82534
+    },
+    {
+      "employer": "XILINX",
+      "employer_display": "Xilinx, Inc.",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "CA",
+      "worksite_cities": "San Jose",
+      "wage_annual_min": 127234,
+      "wage_annual_median": 127234,
+      "wage_annual_max": 127234
+    },
+    {
+      "employer": "ZENDAR",
+      "employer_display": "Zendar Inc.",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "CA",
+      "worksite_cities": "Berkeley",
+      "wage_annual_min": 140000,
+      "wage_annual_median": 140000,
+      "wage_annual_max": 140000
+    },
+    {
+      "employer": "3LP",
+      "employer_display": "3LP, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "PR",
+      "worksite_cities": "Yabucoa",
+      "wage_annual_min": 93950,
+      "wage_annual_median": 93950,
+      "wage_annual_max": 93950
+    },
+    {
+      "employer": "AGR INTERNATIONAL",
+      "employer_display": "Agr International, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "PA",
+      "worksite_cities": "Butler",
+      "wage_annual_min": 77106,
+      "wage_annual_median": 77106,
+      "wage_annual_max": 77106
+    },
+    {
+      "employer": "ALBIREO ENERGY",
+      "employer_display": "Albireo Energy LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "MA",
+      "worksite_cities": "Chelmsford",
+      "wage_annual_min": 102514,
+      "wage_annual_median": 102514,
+      "wage_annual_max": 102514
+    },
+    {
+      "employer": "AMD DESIGN",
+      "employer_display": "AMD Design LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "NJ",
+      "worksite_cities": "Secaucus",
+      "wage_annual_min": 101878,
+      "wage_annual_median": 101878,
+      "wage_annual_max": 101878
+    },
+    {
+      "employer": "ANALOG DEVICES",
+      "employer_display": "Analog Devices, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "TX",
+      "worksite_cities": "Dallas",
+      "wage_annual_min": 115578,
+      "wage_annual_median": 115578,
+      "wage_annual_max": 115578
+    },
+    {
+      "employer": "APTAMITRA USA CONSULTING",
+      "employer_display": "Aptamitra USA Consulting LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "TX",
+      "worksite_cities": "Irving",
+      "wage_annual_min": 84500,
+      "wage_annual_median": 84500,
+      "wage_annual_max": 84500
+    },
+    {
+      "employer": "ARIZONA STATE UNIVERSITY",
+      "employer_display": "Arizona State University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "AZ",
+      "worksite_cities": "Tempe",
+      "wage_annual_min": 65250,
+      "wage_annual_median": 65250,
+      "wage_annual_max": 65250
+    },
+    {
+      "employer": "ARM",
+      "employer_display": "Arm, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "CA",
+      "worksite_cities": "San Jose",
+      "wage_annual_min": 127234,
+      "wage_annual_median": 127234,
+      "wage_annual_max": 127234
+    },
+    {
+      "employer": "CALIFORNIA PACIFIC TECHNICAL SERVICES",
+      "employer_display": "California Pacific Technical Services, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer2.00",
+      "worksite_states": "GU",
+      "worksite_cities": "Tamuning",
+      "wage_annual_min": 85883,
+      "wage_annual_median": 85883,
+      "wage_annual_max": 85883
+    },
+    {
+      "employer": "COMPASS",
+      "employer_display": "Compass, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "IL",
+      "worksite_cities": "Chillicothe",
+      "wage_annual_min": 83429,
+      "wage_annual_median": 83429,
+      "wage_annual_max": 83429
+    },
+    {
+      "employer": "CYBEL",
+      "employer_display": "Cybel, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "PA",
+      "worksite_cities": "Bethlehem",
+      "wage_annual_min": 90000,
+      "wage_annual_median": 90000,
+      "wage_annual_max": 90000
+    },
+    {
+      "employer": "DAIMLER TRUCK NORTH AMERICA",
+      "employer_display": "Daimler Truck North America, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "OR",
+      "worksite_cities": "Portland",
+      "wage_annual_min": 94515,
+      "wage_annual_median": 94515,
+      "wage_annual_max": 94515
+    },
+    {
+      "employer": "ENERVENUE",
+      "employer_display": "EnerVenue, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "CA",
+      "worksite_cities": "Fremont",
+      "wage_annual_min": 104374,
+      "wage_annual_median": 104374,
+      "wage_annual_max": 104374
+    },
+    {
+      "employer": "ENHANCED EXTERIOR PRODUCTS",
+      "employer_display": "Enhanced Exterior Products, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "UT",
+      "worksite_cities": "American Fork",
+      "wage_annual_min": 56000,
+      "wage_annual_median": 56000,
+      "wage_annual_max": 56000
+    },
+    {
+      "employer": "ERIDAN COMMUNICATIONS",
+      "employer_display": "Eridan Communications, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "CA",
+      "worksite_cities": "Sunnyvale",
+      "wage_annual_min": 127234,
+      "wage_annual_median": 127234,
+      "wage_annual_max": 127234
+    },
+    {
+      "employer": "FNS SYSTEMS",
+      "employer_display": "FNS Systems LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "TX",
+      "worksite_cities": "Grand Prairie",
+      "wage_annual_min": 91000,
+      "wage_annual_median": 91000,
+      "wage_annual_max": 91000
+    },
+    {
+      "employer": "HTN WIRELESS",
+      "employer_display": "HTN Wireless, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "WA",
+      "worksite_cities": "Bellevue",
+      "wage_annual_min": 92518,
+      "wage_annual_median": 92518,
+      "wage_annual_max": 92518
+    },
+    {
+      "employer": "INFOBAHN SOFTWORLD",
+      "employer_display": "Infobahn Softworld Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "CA",
+      "worksite_cities": "Santa Clara",
+      "wage_annual_min": 127234,
+      "wage_annual_median": 127234,
+      "wage_annual_max": 127234
+    },
+    {
+      "employer": "INVENCES",
+      "employer_display": "Invences Inc",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "TX",
+      "worksite_cities": "Plano",
+      "wage_annual_min": 90147,
+      "wage_annual_median": 90147,
+      "wage_annual_max": 90147
+    },
+    {
+      "employer": "KGPCO SERVICES LLC DBA CIRCET USA",
+      "employer_display": "KGPCo. Services, LLC dba Circet USA",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "TX",
+      "worksite_cities": "Celina",
+      "wage_annual_min": 90147,
+      "wage_annual_median": 90147,
+      "wage_annual_max": 90147
+    },
+    {
+      "employer": "LAM RESEARCH CORPORATION",
+      "employer_display": "Lam Research Corporation",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "AZ",
+      "worksite_cities": "Phoenix",
+      "wage_annual_min": 89731,
+      "wage_annual_median": 89731,
+      "wage_annual_max": 89731
+    },
+    {
+      "employer": "LECTRONIX",
+      "employer_display": "LECTRONIX INC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "MI",
+      "worksite_cities": "LANSING",
+      "wage_annual_min": 89752,
+      "wage_annual_median": 89752,
+      "wage_annual_max": 89752
+    },
+    {
+      "employer": "LITEPOINT CORPORATION",
+      "employer_display": "LitePoint Corporation",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "CA",
+      "worksite_cities": "San Jose",
+      "wage_annual_min": 189690,
+      "wage_annual_median": 189690,
+      "wage_annual_max": 189690
+    },
+    {
+      "employer": "MAGNETIC INSIGHT",
+      "employer_display": "Magnetic Insight, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "CA",
+      "worksite_cities": "Alameda",
+      "wage_annual_min": 112091,
+      "wage_annual_median": 112091,
+      "wage_annual_max": 112091
+    },
+    {
+      "employer": "MEDLEY NETWORKS",
+      "employer_display": "MEDLEY NETWORKS INC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "NJ",
+      "worksite_cities": "PARSIPPANY",
+      "wage_annual_min": 101878,
+      "wage_annual_median": 101878,
+      "wage_annual_max": 101878
+    },
+    {
+      "employer": "NOVELBEAM TECHNOLOGY",
+      "employer_display": "Novelbeam Technology Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "CA",
+      "worksite_cities": "San Jose",
+      "wage_annual_min": 132000,
+      "wage_annual_median": 132000,
+      "wage_annual_max": 132000
+    },
+    {
+      "employer": "NTESS",
+      "employer_display": "NTESS LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "NM",
+      "worksite_cities": "ALBUQUERQUE",
+      "wage_annual_min": 98500,
+      "wage_annual_median": 98500,
+      "wage_annual_max": 98500
+    },
+    {
+      "employer": "OLEIN RECOVERY CORPORATION",
+      "employer_display": "Olein Recovery Corporation",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "PR",
+      "worksite_cities": "Yabucoa",
+      "wage_annual_min": 93950,
+      "wage_annual_median": 93950,
+      "wage_annual_max": 93950
+    },
+    {
+      "employer": "PENTANGLE TECH SERVICES",
+      "employer_display": "Pentangle Tech Services LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "MI",
+      "worksite_cities": "Plymouth",
+      "wage_annual_min": 98000,
+      "wage_annual_median": 98000,
+      "wage_annual_max": 98000
+    },
+    {
+      "employer": "PROCTEK TEXAS",
+      "employer_display": "PROCTEK TEXAS, INC.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "TX",
+      "worksite_cities": "MIDLAND",
+      "wage_annual_min": 80954,
+      "wage_annual_median": 80954,
+      "wage_annual_max": 80954
+    },
+    {
+      "employer": "PSEMI CORPORATION",
+      "employer_display": "PSEMI CORPORATION",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "CA",
+      "worksite_cities": "San Diego",
+      "wage_annual_min": 106000,
+      "wage_annual_median": 106000,
+      "wage_annual_max": 106000
+    },
+    {
+      "employer": "RAM TEK COMMUNICATIONS",
+      "employer_display": "RAM TEK Communications LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Radio Frequency Identification Device Specialists",
+      "worksite_states": "TX",
+      "worksite_cities": "DALLAS",
+      "wage_annual_min": 91000,
+      "wage_annual_median": 91000,
+      "wage_annual_max": 91000
+    },
+    {
+      "employer": "RAMBUS",
+      "employer_display": "Rambus Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "CA",
+      "worksite_cities": "San Jose",
+      "wage_annual_min": 127234,
+      "wage_annual_median": 127234,
+      "wage_annual_max": 127234
+    },
+    {
+      "employer": "REEKON TOOLS",
+      "employer_display": "Reekon Tools Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "MA",
+      "worksite_cities": "Charlestown",
+      "wage_annual_min": 101000,
+      "wage_annual_median": 101000,
+      "wage_annual_max": 101000
+    },
+    {
+      "employer": "REGAL REXNORD CORPORATION",
+      "employer_display": "Regal Rexnord Corporation",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "OH",
+      "worksite_cities": "Tipp City",
+      "wage_annual_min": 90163,
+      "wage_annual_median": 90163,
+      "wage_annual_max": 90163
+    },
+    {
+      "employer": "SYNAPSE DESIGN AUTOMATION",
+      "employer_display": "Synapse Design Automation, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "CA",
+      "worksite_cities": "Santa Clara",
+      "wage_annual_min": 152000,
+      "wage_annual_median": 152000,
+      "wage_annual_max": 152000
+    },
+    {
+      "employer": "SYNTEGON TECHNOLOGY SERVICES",
+      "employer_display": "Syntegon Technology Services LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "MO",
+      "worksite_cities": "St Louis",
+      "wage_annual_min": 90626,
+      "wage_annual_median": 90626,
+      "wage_annual_max": 90626
+    },
+    {
+      "employer": "TATA TECHNOLOGIES",
+      "employer_display": "Tata Technologies, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "IL",
+      "worksite_cities": "Chillicothe",
+      "wage_annual_min": 101920,
+      "wage_annual_median": 101920,
+      "wage_annual_max": 101920
+    },
+    {
+      "employer": "TELEGUAM HOLDINGS",
+      "employer_display": "TELEGUAM HOLDINGS LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "GU",
+      "worksite_cities": "Tamuning",
+      "wage_annual_min": 85883,
+      "wage_annual_median": 85883,
+      "wage_annual_max": 85883
+    },
+    {
+      "employer": "TELKA",
+      "employer_display": "TELKA LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "TX",
+      "worksite_cities": "Plano",
+      "wage_annual_min": 90147,
+      "wage_annual_median": 90147,
+      "wage_annual_max": 90147
+    },
+    {
+      "employer": "TMEIC CORPORATION AMERICAS",
+      "employer_display": "TMEIC CORPORATION AMERICAS",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "NC",
+      "worksite_cities": "Concord",
+      "wage_annual_min": 85966,
+      "wage_annual_median": 85966,
+      "wage_annual_max": 85966
+    },
+    {
+      "employer": "TSMC TECHNOLOGY",
+      "employer_display": "TSMC Technology, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "CA",
+      "worksite_cities": "San Jose",
+      "wage_annual_min": 127234,
+      "wage_annual_median": 127234,
+      "wage_annual_max": 127234
+    },
+    {
+      "employer": "UPSCALE AI",
+      "employer_display": "Upscale AI, Inc",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "CA",
+      "worksite_cities": "Santa Clara",
+      "wage_annual_min": 130000,
+      "wage_annual_median": 130000,
+      "wage_annual_max": 130000
+    },
+    {
+      "employer": "YOCHANA IT SOLUTIONS",
+      "employer_display": "Yochana IT Solutions Inc",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "MI",
+      "worksite_cities": "Novi",
+      "wage_annual_min": 92019,
+      "wage_annual_median": 92019,
+      "wage_annual_max": 92019
+    },
+    {
+      "employer": "ZEF SCIENTIFIC",
+      "employer_display": "Zef Scientific, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2072",
+      "soc_titles": "Electronics Engineers, Except Computer",
+      "worksite_states": "DE",
+      "worksite_cities": "Newark",
+      "wage_annual_min": 84365,
+      "wage_annual_median": 84365,
+      "wage_annual_max": 84365
+    }
+  ]
+}

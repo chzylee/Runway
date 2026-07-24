@@ -1,0 +1,528 @@
+{
+  "generated_at_utc": "2026-07-24 06:20 UTC",
+  "source": "US DOL OFLC LCA Programs disclosure data (public record)",
+  "filters": {
+    "case_status": "Certified",
+    "role": "chemist",
+    "soc_codes": [
+      "19-2031"
+    ],
+    "pw_wage_level": "I"
+  },
+  "quarters_used": [
+    "FY2025Q4",
+    "FY2026Q1"
+  ],
+  "quarters_superseded": {},
+  "rows_per_quarter": {
+    "FY2025Q4": 118580,
+    "FY2026Q1": 83120
+  },
+  "funnel": {
+    "rows_total": 201700,
+    "rows_certified": 181277,
+    "rows_soc_matched": 604,
+    "rows_selected": 151
+  },
+  "employer_groups": 97,
+  "distinct_raw_employer_spellings": 99,
+  "rows_wage_excluded_from_wage_stats": 0,
+  "case_statuses_seen": {
+    "CERTIFIED": 181277,
+    "CERTIFIED - WITHDRAWN": 15748,
+    "WITHDRAWN": 3242,
+    "DENIED": 1433
+  },
+  "wage_levels_seen": {
+    "II": 157,
+    "I": 151,
+    "III": 138,
+    "IV": 125,
+    "": 33
+  },
+  "wage_units_seen": {
+    "YEAR": 139,
+    "HOUR": 11,
+    "MONTH": 1
+  },
+  "patterns": {
+    "basis": {
+      "filings": 151,
+      "employers": 97,
+      "measured_by": "employers",
+      "min_support_employers": 3
+    },
+    "job_titles": {
+      "recurring_tokens": [
+        {
+          "token": "postdoctoral",
+          "employers": 38,
+          "filings": 65
+        },
+        {
+          "token": "research",
+          "employers": 36,
+          "filings": 50
+        },
+        {
+          "token": "associate",
+          "employers": 32,
+          "filings": 44
+        },
+        {
+          "token": "chemist",
+          "employers": 29,
+          "filings": 41
+        },
+        {
+          "token": "fellow",
+          "employers": 14,
+          "filings": 24
+        },
+        {
+          "token": "scientist",
+          "employers": 8,
+          "filings": 8
+        },
+        {
+          "token": "scholar",
+          "employers": 7,
+          "filings": 16
+        },
+        {
+          "token": "analytical",
+          "employers": 7,
+          "filings": 9
+        },
+        {
+          "token": "post",
+          "employers": 7,
+          "filings": 9
+        },
+        {
+          "token": "quality",
+          "employers": 7,
+          "filings": 8
+        },
+        {
+          "token": "doctoral",
+          "employers": 6,
+          "filings": 8
+        },
+        {
+          "token": "chemistry",
+          "employers": 5,
+          "filings": 5
+        },
+        {
+          "token": "qc",
+          "employers": 4,
+          "filings": 10
+        },
+        {
+          "token": "control",
+          "employers": 4,
+          "filings": 5
+        },
+        {
+          "token": "senior",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "specialist",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "analyst",
+          "employers": 3,
+          "filings": 3
+        }
+      ],
+      "distinct_titles": [
+        {
+          "title": "Postdoctoral Research Associate",
+          "employers": 10,
+          "filings": 15
+        },
+        {
+          "title": "Chemist",
+          "employers": 8,
+          "filings": 9
+        },
+        {
+          "title": "Research Associate",
+          "employers": 7,
+          "filings": 11
+        },
+        {
+          "title": "Postdoctoral Associate",
+          "employers": 7,
+          "filings": 8
+        },
+        {
+          "title": "Postdoctoral Scholar",
+          "employers": 6,
+          "filings": 13
+        },
+        {
+          "title": "Postdoctoral Fellow",
+          "employers": 6,
+          "filings": 12
+        },
+        {
+          "title": "Postdoctoral Research Fellow",
+          "employers": 3,
+          "filings": 5
+        },
+        {
+          "title": "QC Chemist",
+          "employers": 2,
+          "filings": 6
+        },
+        {
+          "title": "Analytical Chemist",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Quality Assurance Chemist",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Quality Control & Pharmaceutical Production Specialist",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Research Chemist",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Postdoctoral Appointee",
+          "employers": 1,
+          "filings": 5
+        },
+        {
+          "title": "QC Analytical Chemist",
+          "employers": 1,
+          "filings": 3
+        },
+        {
+          "title": "Chemist 2",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Post Doctoral Scholar",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Post-Doctoral Research Associate",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Product Development Chemist",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "QUALITY CONTROL CHEMIST",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Advanced Chemical Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Analytical Chemist II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Analytical Separations Scientist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Assistant Clinical Research Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate Scientist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Chemist, Organics and Inorganics Analysis",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Compounding Chemist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Review Chemist I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Director's Postdoctoral Fellow",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Engineer II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Formulation Chemist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Lab Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Materials Research Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Materials Scientist (Chemist)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Medicinal Chemistry Contractor",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "POSTDOCTORAL APPOINTEE - ULTRAFAST CHEMICAL DYNAMICS",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "POSTDOCTORAL RESEARCH ASSOCIATE",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "POSTDOCTORAL RESEARCH FELLOW",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "POSTDOCTORAL RESEARCH FELLOW-CHEMISTRY",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "PhD Intern ( Chemistry)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Post Doctoral",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Post Doctoral Fellow/Researcher (Chemistry)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Post Doctoral Research Fellow",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Post Doctorate Research Associate (Chemist)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Post-Doctoral Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdocoral Scholar, Physical Chemist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Fellow/Department of Chemistry and Biochemistry",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Researcher",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Scientist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "QA Food Technician",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "QA Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "QC Analytical Chemist I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "QUALITY CONTROL ANALYST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Quality Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "RESEARCH ASSOCIATE-POSTDEGREE TRAINEE",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Radiochemical Manufacturing, Chemist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Associate II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Fellow",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Scientist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Scientist (PhD)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "SENIOR RESEARCH ASSOCIATE",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Scientist I.",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Scientist-Analytical",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Chemist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Research Assistant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Research Engineer",
+          "employers": 1,
+          "filings": 1
+        }
+      ]
+    },
+    "onet_occupations": [
+      {
+        "soc_code": "19-2031.00",
+        "title": "Chemists",
+        "employers": 97,
+        "filings": 151
+      }
+    ],
+    "placement_model": {
+      "in_house": {
+        "employers": 94,
+        "filings": 148
+      },
+      "third_party_site": {
+        "employers": 3,
+        "filings": 3
+      }
+    },
+    "industry_naics2": [
+      {
+        "code": "61",
+        "label": "Educational Services",
+        "employers": 51,
+        "filings": 85
+      },
+      {
+        "code": "54",
+        "label": "Professional, Scientific, and Technical Services",
+        "employers": 19,
+        "filings": 28
+      },
+      {
+        "code": "32",
+        "label": "Manufacturing",
+        "employers": 16,
+        "filings": 25
+      },
+      {
+        "code": "42",
+        "label": "Wholesale Trade",
+        "employers": 3,
+        "filings": 3
+      },
+      {
+        "code": "45",
+        "label": "Retail Trade",
+        "employers": 3,
+        "filings": 3
+      }
+    ]
+  },
+  "caveats": [
+    "An LCA certification is not a hire or an open role.",
+    "OPT is not sponsorship — a new grad's first job is on OPT; sponsorship comes 1-3 years later.",
+    "Employer names are conservatively normalized and may under-merge.",
+    "Career/portfolio guidance, not immigration legal advice."
+  ]
+}

@@ -1,0 +1,280 @@
+{
+  "generated_at_utc": "2026-07-24 06:20 UTC",
+  "source": "US DOL OFLC LCA Programs disclosure data (public record)",
+  "filters": {
+    "case_status": "Certified",
+    "role": "environmental_engineer",
+    "soc_codes": [
+      "17-2081"
+    ],
+    "pw_wage_level": "I"
+  },
+  "quarters_used": [
+    "FY2025Q4",
+    "FY2026Q1"
+  ],
+  "quarters_superseded": {},
+  "rows_per_quarter": {
+    "FY2025Q4": 118580,
+    "FY2026Q1": 83120
+  },
+  "funnel": {
+    "rows_total": 201700,
+    "rows_certified": 181277,
+    "rows_soc_matched": 126,
+    "rows_selected": 34
+  },
+  "employer_groups": 30,
+  "distinct_raw_employer_spellings": 30,
+  "rows_wage_excluded_from_wage_stats": 0,
+  "case_statuses_seen": {
+    "CERTIFIED": 181277,
+    "CERTIFIED - WITHDRAWN": 15748,
+    "WITHDRAWN": 3242,
+    "DENIED": 1433
+  },
+  "wage_levels_seen": {
+    "I": 34,
+    "II": 31,
+    "III": 31,
+    "IV": 16,
+    "": 14
+  },
+  "wage_units_seen": {
+    "YEAR": 33,
+    "HOUR": 1
+  },
+  "patterns": {
+    "basis": {
+      "filings": 34,
+      "employers": 30,
+      "measured_by": "employers",
+      "min_support_employers": 3
+    },
+    "job_titles": {
+      "recurring_tokens": [
+        {
+          "token": "engineer",
+          "employers": 13,
+          "filings": 16
+        },
+        {
+          "token": "environmental",
+          "employers": 12,
+          "filings": 13
+        },
+        {
+          "token": "research",
+          "employers": 9,
+          "filings": 9
+        },
+        {
+          "token": "associate",
+          "employers": 8,
+          "filings": 8
+        },
+        {
+          "token": "postdoctoral",
+          "employers": 6,
+          "filings": 6
+        },
+        {
+          "token": "civil",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "project",
+          "employers": 3,
+          "filings": 3
+        }
+      ],
+      "distinct_titles": [
+        {
+          "title": "Environmental Engineer",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "Postdoctoral Research Associate",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Research Associate",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Energy and Climate Life Cycle Analyst (Junior Engineer)",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Junior Engineer",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "ASSISTANT BIOSAFETY OFFICER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate Consultant, Environmental Engineering",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Civil & Environmental Engineering PostDoc",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Civil Designer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Civil Project Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "ENVIRONMENTAL ENGINEER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Environmental Engineer 2",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Environmental Engineer 3",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Environmental Engineer 4",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Facilities Project Management Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Hydraulic (Environmental) Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Post Doctoral Research Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Post Doctorate Research Associate (Environmental Engineer)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Appointee",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Fellow",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Research Scholar",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Environmental Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Scholar",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Environmental Management Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sr Coordinator, Technical Services (Env & Industrial Safety)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Water Engineer 2",
+          "employers": 1,
+          "filings": 1
+        }
+      ]
+    },
+    "onet_occupations": [
+      {
+        "soc_code": "17-2081.00",
+        "title": "Environmental Engineers",
+        "employers": 30,
+        "filings": 34
+      }
+    ],
+    "placement_model": {
+      "in_house": {
+        "employers": 28,
+        "filings": 31
+      },
+      "third_party_site": {
+        "employers": 2,
+        "filings": 3
+      }
+    },
+    "industry_naics2": [
+      {
+        "code": "54",
+        "label": "Professional, Scientific, and Technical Services",
+        "employers": 13,
+        "filings": 14
+      },
+      {
+        "code": "61",
+        "label": "Educational Services",
+        "employers": 12,
+        "filings": 14
+      },
+      {
+        "code": "92",
+        "label": "Public Administration",
+        "employers": 3,
+        "filings": 4
+      }
+    ]
+  },
+  "caveats": [
+    "An LCA certification is not a hire or an open role.",
+    "OPT is not sponsorship — a new grad's first job is on OPT; sponsorship comes 1-3 years later.",
+    "Employer names are conservatively normalized and may under-merge.",
+    "Career/portfolio guidance, not immigration legal advice."
+  ]
+}

@@ -1,0 +1,314 @@
+{
+  "generated_at_utc": "2026-07-24 06:20 UTC",
+  "source": "US DOL OFLC LCA Programs disclosure data (public record)",
+  "filters": {
+    "case_status": "Certified",
+    "role": "human_resources_specialist",
+    "soc_codes": [
+      "13-1071"
+    ],
+    "pw_wage_level": "I"
+  },
+  "quarters_used": [
+    "FY2025Q4",
+    "FY2026Q1"
+  ],
+  "quarters_superseded": {},
+  "rows_per_quarter": {
+    "FY2025Q4": 118580,
+    "FY2026Q1": 83120
+  },
+  "funnel": {
+    "rows_total": 201700,
+    "rows_certified": 181277,
+    "rows_soc_matched": 215,
+    "rows_selected": 47
+  },
+  "employer_groups": 44,
+  "distinct_raw_employer_spellings": 44,
+  "rows_wage_excluded_from_wage_stats": 0,
+  "case_statuses_seen": {
+    "CERTIFIED": 181277,
+    "CERTIFIED - WITHDRAWN": 15748,
+    "WITHDRAWN": 3242,
+    "DENIED": 1433
+  },
+  "wage_levels_seen": {
+    "II": 63,
+    "III": 56,
+    "I": 47,
+    "IV": 45,
+    "": 4
+  },
+  "wage_units_seen": {
+    "YEAR": 37,
+    "HOUR": 9,
+    "MONTH": 1
+  },
+  "patterns": {
+    "basis": {
+      "filings": 47,
+      "employers": 44,
+      "measured_by": "employers",
+      "min_support_employers": 3
+    },
+    "job_titles": {
+      "recurring_tokens": [
+        {
+          "token": "specialist",
+          "employers": 21,
+          "filings": 22
+        },
+        {
+          "token": "human",
+          "employers": 15,
+          "filings": 15
+        },
+        {
+          "token": "resources",
+          "employers": 11,
+          "filings": 11
+        },
+        {
+          "token": "hr",
+          "employers": 10,
+          "filings": 11
+        },
+        {
+          "token": "recruiter",
+          "employers": 7,
+          "filings": 8
+        },
+        {
+          "token": "analyst",
+          "employers": 4,
+          "filings": 5
+        },
+        {
+          "token": "resource",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "technical",
+          "employers": 3,
+          "filings": 3
+        }
+      ],
+      "distinct_titles": [
+        {
+          "title": "Human Resources Specialist",
+          "employers": 7,
+          "filings": 7
+        },
+        {
+          "title": "HR Specialist",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "title": "Human Resource Specialist",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "Nurse Recruiter",
+          "employers": 2,
+          "filings": 3
+        },
+        {
+          "title": "HR Analyst",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "SR. ENGINEERING TECHNICAL RECRUITER",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "HR  Specialist",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Talent Analyst",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "CBSS Recruiter",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Career MGT Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "DEI Coordinator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data and Reporting Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "HR Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "HR EXECUTIVE",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "HR SPECIALIST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "HRIS and Payroll Support Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "HUMAN RESOURCES SPECIALIST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Human Resource",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Human Resources Administrator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Human Resources Generalist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Human Resources and Administration coordinator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Onboarding Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "PEOPLE OPERATIONS ADMINISTRATOR",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Partner, Talent Acquisition",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "People Business Partner",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Recruiter",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Recruiting Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Recruitment Consultant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Service Delivery Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Technical Recruiter",
+          "employers": 1,
+          "filings": 1
+        }
+      ]
+    },
+    "onet_occupations": [
+      {
+        "soc_code": "13-1071.00",
+        "title": "Human Resources Specialists",
+        "employers": 44,
+        "filings": 47
+      }
+    ],
+    "placement_model": {
+      "in_house": {
+        "employers": 43,
+        "filings": 46
+      },
+      "third_party_site": {
+        "employers": 1,
+        "filings": 1
+      }
+    },
+    "industry_naics2": [
+      {
+        "code": "54",
+        "label": "Professional, Scientific, and Technical Services",
+        "employers": 11,
+        "filings": 12
+      },
+      {
+        "code": "62",
+        "label": "Health Care and Social Assistance",
+        "employers": 7,
+        "filings": 8
+      },
+      {
+        "code": "56",
+        "label": "Administrative and Support and Waste Management and Remediation Services",
+        "employers": 4,
+        "filings": 4
+      },
+      {
+        "code": "72",
+        "label": "Accommodation and Food Services",
+        "employers": 4,
+        "filings": 4
+      },
+      {
+        "code": "42",
+        "label": "Wholesale Trade",
+        "employers": 3,
+        "filings": 3
+      },
+      {
+        "code": "61",
+        "label": "Educational Services",
+        "employers": 3,
+        "filings": 3
+      }
+    ]
+  },
+  "caveats": [
+    "An LCA certification is not a hire or an open role.",
+    "OPT is not sponsorship — a new grad's first job is on OPT; sponsorship comes 1-3 years later.",
+    "Employer names are conservatively normalized and may under-merge.",
+    "Career/portfolio guidance, not immigration legal advice."
+  ]
+}

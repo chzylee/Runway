@@ -1,0 +1,1962 @@
+{
+  "role": "chemist",
+  "generated_at_utc": "2026-07-24 06:20 UTC",
+  "source": "US DOL OFLC LCA Programs disclosure data (public record)",
+  "filters": {
+    "case_status": "Certified",
+    "soc_codes": [
+      "19-2031"
+    ],
+    "pw_wage_level": "I"
+  },
+  "quarters_used": [
+    "FY2025Q4",
+    "FY2026Q1"
+  ],
+  "quarters_superseded": {},
+  "funnel": {
+    "rows_total": 201700,
+    "rows_certified": 181277,
+    "rows_soc_matched": 604,
+    "rows_selected": 151
+  },
+  "employer_groups": 97,
+  "rows_wage_excluded_from_wage_stats": 0,
+  "patterns": {
+    "basis": {
+      "filings": 151,
+      "employers": 97,
+      "measured_by": "employers",
+      "min_support_employers": 3
+    },
+    "job_titles": {
+      "recurring_tokens": [
+        {
+          "token": "postdoctoral",
+          "employers": 38,
+          "filings": 65
+        },
+        {
+          "token": "research",
+          "employers": 36,
+          "filings": 50
+        },
+        {
+          "token": "associate",
+          "employers": 32,
+          "filings": 44
+        },
+        {
+          "token": "chemist",
+          "employers": 29,
+          "filings": 41
+        },
+        {
+          "token": "fellow",
+          "employers": 14,
+          "filings": 24
+        },
+        {
+          "token": "scientist",
+          "employers": 8,
+          "filings": 8
+        },
+        {
+          "token": "scholar",
+          "employers": 7,
+          "filings": 16
+        },
+        {
+          "token": "analytical",
+          "employers": 7,
+          "filings": 9
+        },
+        {
+          "token": "post",
+          "employers": 7,
+          "filings": 9
+        },
+        {
+          "token": "quality",
+          "employers": 7,
+          "filings": 8
+        },
+        {
+          "token": "doctoral",
+          "employers": 6,
+          "filings": 8
+        },
+        {
+          "token": "chemistry",
+          "employers": 5,
+          "filings": 5
+        },
+        {
+          "token": "qc",
+          "employers": 4,
+          "filings": 10
+        },
+        {
+          "token": "control",
+          "employers": 4,
+          "filings": 5
+        },
+        {
+          "token": "senior",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "specialist",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "analyst",
+          "employers": 3,
+          "filings": 3
+        }
+      ],
+      "distinct_titles": [
+        {
+          "title": "Postdoctoral Research Associate",
+          "employers": 10,
+          "filings": 15
+        },
+        {
+          "title": "Chemist",
+          "employers": 8,
+          "filings": 9
+        },
+        {
+          "title": "Research Associate",
+          "employers": 7,
+          "filings": 11
+        },
+        {
+          "title": "Postdoctoral Associate",
+          "employers": 7,
+          "filings": 8
+        },
+        {
+          "title": "Postdoctoral Scholar",
+          "employers": 6,
+          "filings": 13
+        },
+        {
+          "title": "Postdoctoral Fellow",
+          "employers": 6,
+          "filings": 12
+        },
+        {
+          "title": "Postdoctoral Research Fellow",
+          "employers": 3,
+          "filings": 5
+        },
+        {
+          "title": "QC Chemist",
+          "employers": 2,
+          "filings": 6
+        },
+        {
+          "title": "Analytical Chemist",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Quality Assurance Chemist",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Quality Control & Pharmaceutical Production Specialist",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Research Chemist",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Postdoctoral Appointee",
+          "employers": 1,
+          "filings": 5
+        },
+        {
+          "title": "QC Analytical Chemist",
+          "employers": 1,
+          "filings": 3
+        },
+        {
+          "title": "Chemist 2",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Post Doctoral Scholar",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Post-Doctoral Research Associate",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Product Development Chemist",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "QUALITY CONTROL CHEMIST",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Advanced Chemical Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Analytical Chemist II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Analytical Separations Scientist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Assistant Clinical Research Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate Scientist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Chemist, Organics and Inorganics Analysis",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Compounding Chemist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Review Chemist I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Director's Postdoctoral Fellow",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Engineer II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Formulation Chemist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Lab Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Materials Research Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Materials Scientist (Chemist)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Medicinal Chemistry Contractor",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "POSTDOCTORAL APPOINTEE - ULTRAFAST CHEMICAL DYNAMICS",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "POSTDOCTORAL RESEARCH ASSOCIATE",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "POSTDOCTORAL RESEARCH FELLOW",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "POSTDOCTORAL RESEARCH FELLOW-CHEMISTRY",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "PhD Intern ( Chemistry)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Post Doctoral",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Post Doctoral Fellow/Researcher (Chemistry)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Post Doctoral Research Fellow",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Post Doctorate Research Associate (Chemist)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Post-Doctoral Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdocoral Scholar, Physical Chemist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Fellow/Department of Chemistry and Biochemistry",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Researcher",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Scientist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "QA Food Technician",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "QA Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "QC Analytical Chemist I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "QUALITY CONTROL ANALYST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Quality Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "RESEARCH ASSOCIATE-POSTDEGREE TRAINEE",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Radiochemical Manufacturing, Chemist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Associate II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Fellow",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Scientist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Scientist (PhD)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "SENIOR RESEARCH ASSOCIATE",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Scientist I.",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Scientist-Analytical",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Chemist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Research Assistant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Research Engineer",
+          "employers": 1,
+          "filings": 1
+        }
+      ]
+    },
+    "onet_occupations": [
+      {
+        "soc_code": "19-2031.00",
+        "title": "Chemists",
+        "employers": 97,
+        "filings": 151
+      }
+    ],
+    "placement_model": {
+      "in_house": {
+        "employers": 94,
+        "filings": 148
+      },
+      "third_party_site": {
+        "employers": 3,
+        "filings": 3
+      }
+    },
+    "industry_naics2": [
+      {
+        "code": "61",
+        "label": "Educational Services",
+        "employers": 51,
+        "filings": 85
+      },
+      {
+        "code": "54",
+        "label": "Professional, Scientific, and Technical Services",
+        "employers": 19,
+        "filings": 28
+      },
+      {
+        "code": "32",
+        "label": "Manufacturing",
+        "employers": 16,
+        "filings": 25
+      },
+      {
+        "code": "42",
+        "label": "Wholesale Trade",
+        "employers": 3,
+        "filings": 3
+      },
+      {
+        "code": "45",
+        "label": "Retail Trade",
+        "employers": 3,
+        "filings": 3
+      }
+    ]
+  },
+  "caveats": [
+    "An LCA certification is not a hire or an open role.",
+    "OPT is not sponsorship — a new grad's first job is on OPT; sponsorship comes 1-3 years later.",
+    "Employer names are conservatively normalized and may under-merge.",
+    "Career/portfolio guidance, not immigration legal advice."
+  ],
+  "employers": [
+    {
+      "employer": "EMORY UNIVERSITY",
+      "employer_display": "Emory University",
+      "filing_count": 6,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "GA",
+      "worksite_cities": "Atlanta",
+      "wage_annual_min": 62652,
+      "wage_annual_median": 66042,
+      "wage_annual_max": 72960
+    },
+    {
+      "employer": "UCHICAGO ARGONNE",
+      "employer_display": "UChicago Argonne, LLC",
+      "filing_count": 5,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "IL",
+      "worksite_cities": "Lemont",
+      "wage_annual_min": 70758,
+      "wage_annual_median": 70758,
+      "wage_annual_max": 70758
+    },
+    {
+      "employer": "UNIVERSITY OF CHICAGO",
+      "employer_display": "University of Chicago",
+      "filing_count": 5,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "IL",
+      "worksite_cities": "Chicago",
+      "wage_annual_min": 65520,
+      "wage_annual_median": 66000,
+      "wage_annual_max": 78000
+    },
+    {
+      "employer": "BRIO PHARMACEUTICALS",
+      "employer_display": "Brio Pharmaceuticals Inc",
+      "filing_count": 4,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "TX",
+      "worksite_cities": "Houston",
+      "wage_annual_min": 74672,
+      "wage_annual_median": 74672,
+      "wage_annual_max": 74672
+    },
+    {
+      "employer": "NORTHWESTERN UNIVERSITY",
+      "employer_display": "Northwestern University",
+      "filing_count": 4,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "IL",
+      "worksite_cities": "Evanston",
+      "wage_annual_min": 65520,
+      "wage_annual_median": 66884,
+      "wage_annual_max": 75000
+    },
+    {
+      "employer": "THE TRUSTEES OF PRINCETON UNIVERSITY",
+      "employer_display": "The Trustees of Princeton University",
+      "filing_count": 4,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "NJ",
+      "worksite_cities": "Princeton",
+      "wage_annual_min": 65000,
+      "wage_annual_median": 65000,
+      "wage_annual_max": 65000
+    },
+    {
+      "employer": "BATTELLE MEMORIAL INSTITUTE",
+      "employer_display": "Battelle Memorial Institute",
+      "filing_count": 3,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "WA",
+      "worksite_cities": "Richland; Seattle",
+      "wage_annual_min": 61152,
+      "wage_annual_median": 90235,
+      "wage_annual_max": 90730
+    },
+    {
+      "employer": "TEXAS A M UNIVERSITY",
+      "employer_display": "Texas A&M University",
+      "filing_count": 3,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "TX",
+      "worksite_cities": "College Station",
+      "wage_annual_min": 56160,
+      "wage_annual_median": 58000,
+      "wage_annual_max": 61812
+    },
+    {
+      "employer": "THE OHIO STATE UNIVERSITY",
+      "employer_display": "The Ohio State University",
+      "filing_count": 3,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "OH",
+      "worksite_cities": "Columbus",
+      "wage_annual_min": 61008,
+      "wage_annual_median": 61008,
+      "wage_annual_max": 62838
+    },
+    {
+      "employer": "UNIVERSITY OF MICHIGAN",
+      "employer_display": "University of Michigan",
+      "filing_count": 3,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "MI",
+      "worksite_cities": "Ann Arbor",
+      "wage_annual_min": 62800,
+      "wage_annual_median": 70000,
+      "wage_annual_max": 85000
+    },
+    {
+      "employer": "JOHNS HOPKINS UNIVERSITY",
+      "employer_display": "Johns Hopkins University",
+      "filing_count": 2,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "MD",
+      "worksite_cities": "Baltimore",
+      "wage_annual_min": 68599,
+      "wage_annual_median": 70780,
+      "wage_annual_max": 72960
+    },
+    {
+      "employer": "LELAND STANFORD JR UNIV SLAC NATIONAL ACCELERATOR LAB",
+      "employer_display": "Leland Stanford Jr. Univ/SLAC National Accelerator Lab",
+      "filing_count": 2,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "CA",
+      "worksite_cities": "Menlo Park",
+      "wage_annual_min": 83075,
+      "wage_annual_median": 86538,
+      "wage_annual_max": 90000
+    },
+    {
+      "employer": "POWER ENVIRONMENTAL ENERGY RESEARCH INSTITUTE",
+      "employer_display": "Power Environmental Energy Research Institute",
+      "filing_count": 2,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "CA",
+      "worksite_cities": "Covina",
+      "wage_annual_min": 62000,
+      "wage_annual_median": 68500,
+      "wage_annual_max": 75000
+    },
+    {
+      "employer": "STRIVE PHARMACEUTICALS",
+      "employer_display": "Strive Pharmaceuticals, Inc.",
+      "filing_count": 2,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "NJ",
+      "worksite_cities": "East Brunswick",
+      "wage_annual_min": 65000,
+      "wage_annual_median": 65000,
+      "wage_annual_max": 65000
+    },
+    {
+      "employer": "THE SCRIPPS RESEARCH INSTITUTE",
+      "employer_display": "The Scripps Research Institute",
+      "filing_count": 2,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "CA",
+      "worksite_cities": "La Jolla",
+      "wage_annual_min": 76918,
+      "wage_annual_median": 76918,
+      "wage_annual_max": 76918
+    },
+    {
+      "employer": "THE UNIVERSITY OF TENNESSEE",
+      "employer_display": "THE UNIVERSITY OF TENNESSEE",
+      "filing_count": 2,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "TN",
+      "worksite_cities": "Knoxville",
+      "wage_annual_min": 50000,
+      "wage_annual_median": 64000,
+      "wage_annual_max": 78000
+    },
+    {
+      "employer": "UNIVERSITY OF MARYLAND COLLEGE PARK",
+      "employer_display": "University of Maryland College Park",
+      "filing_count": 2,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "MD",
+      "worksite_cities": "College Park",
+      "wage_annual_min": 65000,
+      "wage_annual_median": 65000,
+      "wage_annual_max": 65000
+    },
+    {
+      "employer": "APPCO PHARMA",
+      "employer_display": "APPCO Pharma LLC",
+      "filing_count": 6,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "NJ",
+      "worksite_cities": "Piscataway",
+      "wage_annual_min": 65000,
+      "wage_annual_median": 67000,
+      "wage_annual_max": 68355
+    },
+    {
+      "employer": "THE UNIVERSITY OF VIRGINIA",
+      "employer_display": "The University of Virginia",
+      "filing_count": 4,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "VA",
+      "worksite_cities": "Charlottesville",
+      "wage_annual_min": 56000,
+      "wage_annual_median": 60700,
+      "wage_annual_max": 70000
+    },
+    {
+      "employer": "KENT STATE UNIVERSITY",
+      "employer_display": "Kent State University",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "OH",
+      "worksite_cities": "Kent",
+      "wage_annual_min": 55100,
+      "wage_annual_median": 63734,
+      "wage_annual_max": 72368
+    },
+    {
+      "employer": "MED VALLEY",
+      "employer_display": "Med Valley Inc.",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "PA",
+      "worksite_cities": "Hatboro",
+      "wage_annual_min": 70000,
+      "wage_annual_median": 72835000,
+      "wage_annual_max": 145600000
+    },
+    {
+      "employer": "MICHIGAN STATE UNIVERSITY",
+      "employer_display": "Michigan State University",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "MI",
+      "worksite_cities": "East Lansing",
+      "wage_annual_min": 52662,
+      "wage_annual_median": 55336,
+      "wage_annual_max": 58011
+    },
+    {
+      "employer": "RESEARCH TRIANGLE INSTITUTE U S",
+      "employer_display": "Research Triangle Institute (U.S.)",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "NC",
+      "worksite_cities": "Durham",
+      "wage_annual_min": 75405,
+      "wage_annual_median": 75405,
+      "wage_annual_max": 75405
+    },
+    {
+      "employer": "SEAWAY PHARMA",
+      "employer_display": "SEAWAY PHARMA INC",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "NY",
+      "worksite_cities": "MASSENA",
+      "wage_annual_min": 64397,
+      "wage_annual_median": 64397,
+      "wage_annual_max": 64397
+    },
+    {
+      "employer": "THE CURATORS OF THE UNIVERSITY OF MISSOURI",
+      "employer_display": "The Curators of the University of Missouri",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "MO",
+      "worksite_cities": "Columbia",
+      "wage_annual_min": 52875,
+      "wage_annual_median": 57074,
+      "wage_annual_max": 61273
+    },
+    {
+      "employer": "W M RICE UNIVERSITY",
+      "employer_display": "W.M. RICE UNIVERSITY",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "TX",
+      "worksite_cities": "Houston",
+      "wage_annual_min": 48000,
+      "wage_annual_median": 54000,
+      "wage_annual_max": 60000
+    },
+    {
+      "employer": "WAKE FOREST UNIVERSITY",
+      "employer_display": "WAKE FOREST UNIVERSITY",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "NC",
+      "worksite_cities": "WINSTON SALEM",
+      "wage_annual_min": 53102,
+      "wage_annual_median": 53102,
+      "wage_annual_max": 53102
+    },
+    {
+      "employer": "WASHINGTON UNIVERSITY",
+      "employer_display": "Washington University",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "MO",
+      "worksite_cities": "St Louis",
+      "wage_annual_min": 63120,
+      "wage_annual_median": 63120,
+      "wage_annual_max": 63120
+    },
+    {
+      "employer": "ADARX PHARMACEUTICALS",
+      "employer_display": "ADARx Pharmaceuticals, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "CA",
+      "worksite_cities": "San Diego",
+      "wage_annual_min": 72000,
+      "wage_annual_median": 72000,
+      "wage_annual_max": 72000
+    },
+    {
+      "employer": "ADVANCED TECHNOLOGY LABORATORIES",
+      "employer_display": "Advanced Technology Laboratories Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "CA",
+      "worksite_cities": "SACRAMENTO",
+      "wage_annual_min": 58344,
+      "wage_annual_median": 58344,
+      "wage_annual_max": 58344
+    },
+    {
+      "employer": "AN PHAT INTERNATIONAL",
+      "employer_display": "An Phat International, Inc",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "TX",
+      "worksite_cities": "Houston",
+      "wage_annual_min": 75000,
+      "wage_annual_median": 75000,
+      "wage_annual_max": 75000
+    },
+    {
+      "employer": "APTAPHARMA",
+      "employer_display": "APTAPHARMA, INC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "NJ",
+      "worksite_cities": "Pennsauken",
+      "wage_annual_min": 74000,
+      "wage_annual_median": 74000,
+      "wage_annual_max": 74000
+    },
+    {
+      "employer": "ARCHER DANIELS MIDLAND COMPANY",
+      "employer_display": "Archer Daniels Midland Company",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "GA",
+      "worksite_cities": "Kennesaw",
+      "wage_annual_min": 66000,
+      "wage_annual_median": 66000,
+      "wage_annual_max": 66000
+    },
+    {
+      "employer": "ARL BIO PHARMA",
+      "employer_display": "ARL Bio Pharma, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "OK",
+      "worksite_cities": "Oklahoma City",
+      "wage_annual_min": 54080,
+      "wage_annual_median": 54080,
+      "wage_annual_max": 54080
+    },
+    {
+      "employer": "ASCENT PHARMACEUTICALS",
+      "employer_display": "ASCENT PHARMACEUTICALS, INC.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "NY",
+      "worksite_cities": "Central Islip",
+      "wage_annual_min": 75000,
+      "wage_annual_median": 75000,
+      "wage_annual_max": 75000
+    },
+    {
+      "employer": "AVA",
+      "employer_display": "AVA Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "IL",
+      "worksite_cities": "Willowbrook",
+      "wage_annual_min": 65291,
+      "wage_annual_median": 65291,
+      "wage_annual_max": 65291
+    },
+    {
+      "employer": "AXLE INFORMATICS",
+      "employer_display": "Axle Informatics LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "MD",
+      "worksite_cities": "Bethesda",
+      "wage_annual_min": 110156,
+      "wage_annual_median": 110156,
+      "wage_annual_max": 110156
+    },
+    {
+      "employer": "BOARD OF REGENTS OF THE UNIVERSITY OF NEBRASKA",
+      "employer_display": "Board of Regents of the University of Nebraska",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "NE",
+      "worksite_cities": "Lincoln",
+      "wage_annual_min": 56000,
+      "wage_annual_median": 56000,
+      "wage_annual_max": 56000
+    },
+    {
+      "employer": "BOSTON ANALYTICAL",
+      "employer_display": "Boston Analytical, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "NH",
+      "worksite_cities": "Salem",
+      "wage_annual_min": 82950,
+      "wage_annual_median": 82950,
+      "wage_annual_max": 82950
+    },
+    {
+      "employer": "DAVION",
+      "employer_display": "DAVION INC.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "NJ",
+      "worksite_cities": "NORTH BRUNSWICK",
+      "wage_annual_min": 95000,
+      "wage_annual_median": 95000,
+      "wage_annual_max": 95000
+    },
+    {
+      "employer": "DUKE UNIVERSITY",
+      "employer_display": "Duke University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "NC",
+      "worksite_cities": "Durham",
+      "wage_annual_min": 64170,
+      "wage_annual_median": 64170,
+      "wage_annual_max": 64170
+    },
+    {
+      "employer": "EBIN NEW YORK",
+      "employer_display": "EBIN New York, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "NJ",
+      "worksite_cities": "South Hackensack",
+      "wage_annual_min": 64480,
+      "wage_annual_median": 64480,
+      "wage_annual_max": 64480
+    },
+    {
+      "employer": "ESJAY PHARMA",
+      "employer_display": "ESJAY PHARMA LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "NJ",
+      "worksite_cities": "EAST WINDSOR",
+      "wage_annual_min": 60715,
+      "wage_annual_median": 60715,
+      "wage_annual_max": 60715
+    },
+    {
+      "employer": "EUROFINS LANCASTER LABORATORIES PROFESSIONAL SCIENTIFIC SERVICES",
+      "employer_display": "Eurofins Lancaster Laboratories Professional Scientific Services, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "PA",
+      "worksite_cities": "Malvern",
+      "wage_annual_min": 60000,
+      "wage_annual_median": 60000,
+      "wage_annual_max": 60000
+    },
+    {
+      "employer": "EVARIC PHARMACEUTICALS",
+      "employer_display": "EVARIC PHARMACEUTICALS INC.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "NY",
+      "worksite_cities": "Hauppauge",
+      "wage_annual_min": 64500,
+      "wage_annual_median": 64500,
+      "wage_annual_max": 64500
+    },
+    {
+      "employer": "FERRIS STATE UNIVERSITY",
+      "employer_display": "Ferris State University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "MI",
+      "worksite_cities": "Big Rapids",
+      "wage_annual_min": 62000,
+      "wage_annual_median": 62000,
+      "wage_annual_max": 62000
+    },
+    {
+      "employer": "FORMUREX",
+      "employer_display": "Formurex, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "CA",
+      "worksite_cities": "Stockton",
+      "wage_annual_min": 62000,
+      "wage_annual_median": 62000,
+      "wage_annual_max": 62000
+    },
+    {
+      "employer": "GEORGIA INSTITUTE OF TECHNOLOGY",
+      "employer_display": "Georgia Institute of Technology",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "GA",
+      "worksite_cities": "Atlanta",
+      "wage_annual_min": 65416,
+      "wage_annual_median": 65416,
+      "wage_annual_max": 65416
+    },
+    {
+      "employer": "GOTION",
+      "employer_display": "Gotion, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "OH",
+      "worksite_cities": "Independence",
+      "wage_annual_min": 70000,
+      "wage_annual_median": 70000,
+      "wage_annual_max": 70000
+    },
+    {
+      "employer": "GUARDIAN DRUG COMPANY",
+      "employer_display": "Guardian Drug Company, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "NJ",
+      "worksite_cities": "Dayton",
+      "wage_annual_min": 68000,
+      "wage_annual_median": 68000,
+      "wage_annual_max": 68000
+    },
+    {
+      "employer": "INDIANA UNIVERSITY",
+      "employer_display": "Indiana University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "IN",
+      "worksite_cities": "Bloomington",
+      "wage_annual_min": 55000,
+      "wage_annual_median": 55000,
+      "wage_annual_max": 55000
+    },
+    {
+      "employer": "INVAGEN PHARMACEUTICALS",
+      "employer_display": "InvaGen Pharmaceuticals, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "NY",
+      "worksite_cities": "Hauppauge",
+      "wage_annual_min": 75000,
+      "wage_annual_median": 75000,
+      "wage_annual_max": 75000
+    },
+    {
+      "employer": "INVAHEALTH",
+      "employer_display": "Invahealth Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "NJ",
+      "worksite_cities": "Cranbury",
+      "wage_annual_min": 65000,
+      "wage_annual_median": 65000,
+      "wage_annual_max": 65000
+    },
+    {
+      "employer": "INVATECH PHARMA SOLUTIONS",
+      "employer_display": "InvaTech Pharma Solutions LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "NJ",
+      "worksite_cities": "East Brunswick",
+      "wage_annual_min": 65000,
+      "wage_annual_median": 65000,
+      "wage_annual_max": 65000
+    },
+    {
+      "employer": "ISORX",
+      "employer_display": "IsoRx Corp.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "CA",
+      "worksite_cities": "Richmond",
+      "wage_annual_min": 78270,
+      "wage_annual_median": 78270,
+      "wage_annual_max": 78270
+    },
+    {
+      "employer": "ISORX TEXAS",
+      "employer_display": "IsoRX Texas LTD",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "CA",
+      "worksite_cities": "Richmond",
+      "wage_annual_min": 78270,
+      "wage_annual_median": 78270,
+      "wage_annual_max": 78270
+    },
+    {
+      "employer": "J STAR RESEARCH",
+      "employer_display": "J-Star Research, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "NJ",
+      "worksite_cities": "South Plainfield",
+      "wage_annual_min": 80300,
+      "wage_annual_median": 80300,
+      "wage_annual_max": 80300
+    },
+    {
+      "employer": "LEE KUM KEE USA",
+      "employer_display": "Lee Kum Kee (USA) Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "GA",
+      "worksite_cities": "Newnan",
+      "wage_annual_min": 65333,
+      "wage_annual_median": 65333,
+      "wage_annual_max": 65333
+    },
+    {
+      "employer": "LOUISIANA STATE UNIVERSITY HEALTH SCIENCES CENTER AT SHREVEPORT",
+      "employer_display": "Louisiana State University Health Sciences Center at Shreveport",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "LA",
+      "worksite_cities": "Shreveport",
+      "wage_annual_min": 60000,
+      "wage_annual_median": 60000,
+      "wage_annual_max": 60000
+    },
+    {
+      "employer": "MASSACHUSETTS INSTITUTE OF TECHNOLOGY",
+      "employer_display": "Massachusetts Institute of Technology",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "MA",
+      "worksite_cities": "Cambridge",
+      "wage_annual_min": 71000,
+      "wage_annual_median": 71000,
+      "wage_annual_max": 71000
+    },
+    {
+      "employer": "NEW MEXICO STATE UNIVERSITY",
+      "employer_display": "New Mexico State University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "NM",
+      "worksite_cities": "Las Cruces",
+      "wage_annual_min": 68200,
+      "wage_annual_median": 68200,
+      "wage_annual_max": 68200
+    },
+    {
+      "employer": "NORTH CAROLINA STATE UNIVERSITY",
+      "employer_display": "North Carolina State University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "NC",
+      "worksite_cities": "Raleigh",
+      "wage_annual_min": 58656,
+      "wage_annual_median": 58656,
+      "wage_annual_max": 58656
+    },
+    {
+      "employer": "NOVO NORDISK RESEARCH DEVELOPMENT US",
+      "employer_display": "Novo Nordisk Research & Development US, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "MA",
+      "worksite_cities": "LEXINGTON",
+      "wage_annual_min": 88400,
+      "wage_annual_median": 88400,
+      "wage_annual_max": 88400
+    },
+    {
+      "employer": "NTESS",
+      "employer_display": "NTESS LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "CA",
+      "worksite_cities": "LIVERMORE",
+      "wage_annual_min": 110000,
+      "wage_annual_median": 110000,
+      "wage_annual_max": 110000
+    },
+    {
+      "employer": "NUKEMED",
+      "employer_display": "Nukemed, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "IN",
+      "worksite_cities": "Bunker Hill",
+      "wage_annual_min": 64958,
+      "wage_annual_median": 64958,
+      "wage_annual_max": 64958
+    },
+    {
+      "employer": "NURIX THERAPEUTICS",
+      "employer_display": "Nurix Therapeutics, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "CA",
+      "worksite_cities": "San Francisco",
+      "wage_annual_min": 87360,
+      "wage_annual_median": 87360,
+      "wage_annual_max": 87360
+    },
+    {
+      "employer": "PPD DEVELOPMENT L P",
+      "employer_display": "PPD Development, L.P.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "NJ",
+      "worksite_cities": "Secaucus",
+      "wage_annual_min": 64230,
+      "wage_annual_median": 64230,
+      "wage_annual_max": 64230
+    },
+    {
+      "employer": "RENSSELAER POLYTECHNIC INSTITUTE",
+      "employer_display": "Rensselaer Polytechnic Institute",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "NY",
+      "worksite_cities": "Troy",
+      "wage_annual_min": 65000,
+      "wage_annual_median": 65000,
+      "wage_annual_max": 65000
+    },
+    {
+      "employer": "SAIN TECHNOLOGIES",
+      "employer_display": "Sain Technologies LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "NC",
+      "worksite_cities": "Sanford",
+      "wage_annual_min": 60000,
+      "wage_annual_median": 60000,
+      "wage_annual_max": 60000
+    },
+    {
+      "employer": "SHREE MELDI KRUPA",
+      "employer_display": "Shree Meldi Krupa LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "NJ",
+      "worksite_cities": "Parsippany",
+      "wage_annual_min": 65000,
+      "wage_annual_median": 65000,
+      "wage_annual_max": 65000
+    },
+    {
+      "employer": "THE FLORIDA STATE UNIVERSITY",
+      "employer_display": "The Florida State University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "FL",
+      "worksite_cities": "Tallahassee",
+      "wage_annual_min": 60000,
+      "wage_annual_median": 60000,
+      "wage_annual_max": 60000
+    },
+    {
+      "employer": "THE PENNSYLVANIA STATE UNIVERSITY",
+      "employer_display": "The Pennsylvania State University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "PA",
+      "worksite_cities": "University Park",
+      "wage_annual_min": 68352,
+      "wage_annual_median": 68352,
+      "wage_annual_max": 68352
+    },
+    {
+      "employer": "THE UNIVERSITY OF TEXAS AT ARLINGTON",
+      "employer_display": "The University of Texas at Arlington",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "TX",
+      "worksite_cities": "Arlington",
+      "wage_annual_min": 58000,
+      "wage_annual_median": 58000,
+      "wage_annual_max": 58000
+    },
+    {
+      "employer": "THE UNIVERSITY OF TEXAS AT AUSTIN",
+      "employer_display": "The University of Texas at Austin",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "TX",
+      "worksite_cities": "Austin",
+      "wage_annual_min": 75000,
+      "wage_annual_median": 75000,
+      "wage_annual_max": 75000
+    },
+    {
+      "employer": "THE UNIVERSITY OF TULSA",
+      "employer_display": "THE UNIVERSITY OF TULSA",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "OK",
+      "worksite_cities": "TULSA",
+      "wage_annual_min": 70040,
+      "wage_annual_median": 70040,
+      "wage_annual_max": 70040
+    },
+    {
+      "employer": "TRIAD NATIONAL SECURITY",
+      "employer_display": "TRIAD NATIONAL SECURITY, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "NM",
+      "worksite_cities": "Los Alamos",
+      "wage_annual_min": 110223,
+      "wage_annual_median": 110223,
+      "wage_annual_max": 110223
+    },
+    {
+      "employer": "TRIS PHARMA",
+      "employer_display": "Tris Pharma, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "NJ",
+      "worksite_cities": "Monmouth Junction",
+      "wage_annual_min": 63086,
+      "wage_annual_median": 63086,
+      "wage_annual_max": 63086
+    },
+    {
+      "employer": "TRUSTEES OF THE UNIVERSITY OF PENNSYLVANIA",
+      "employer_display": "TRUSTEES OF THE UNIVERSITY OF PENNSYLVANIA",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "PA",
+      "worksite_cities": "Philadelphia",
+      "wage_annual_min": 69339,
+      "wage_annual_median": 69339,
+      "wage_annual_max": 69339
+    },
+    {
+      "employer": "UNIVERSITY OF ARKANSAS",
+      "employer_display": "University of Arkansas",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "AR",
+      "worksite_cities": "Fayetteville",
+      "wage_annual_min": 53102,
+      "wage_annual_median": 53102,
+      "wage_annual_max": 53102
+    },
+    {
+      "employer": "UNIVERSITY OF DENVER",
+      "employer_display": "University of Denver",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "CO",
+      "worksite_cities": "Denver",
+      "wage_annual_min": 53102,
+      "wage_annual_median": 53102,
+      "wage_annual_max": 53102
+    },
+    {
+      "employer": "UNIVERSITY OF GEORGIA OGE",
+      "employer_display": "University of Georgia; OGE",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "GA",
+      "worksite_cities": "Athens",
+      "wage_annual_min": 672000,
+      "wage_annual_median": 672000,
+      "wage_annual_max": 672000
+    },
+    {
+      "employer": "UNIVERSITY OF ILLINOIS CHICAGO",
+      "employer_display": "University of Illinois Chicago",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "IL",
+      "worksite_cities": "Chicago",
+      "wage_annual_min": 65520,
+      "wage_annual_median": 65520,
+      "wage_annual_max": 65520
+    },
+    {
+      "employer": "UNIVERSITY OF KENTUCKY",
+      "employer_display": "UNIVERSITY OF KENTUCKY",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "KY",
+      "worksite_cities": "Lexington",
+      "wage_annual_min": 52021,
+      "wage_annual_median": 52021,
+      "wage_annual_max": 52021
+    },
+    {
+      "employer": "UNIVERSITY OF MINNESOTA",
+      "employer_display": "University of Minnesota",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "MN",
+      "worksite_cities": "Minneapolis",
+      "wage_annual_min": 61008,
+      "wage_annual_median": 61008,
+      "wage_annual_max": 61008
+    },
+    {
+      "employer": "UNIVERSITY OF MISSISSIPPI",
+      "employer_display": "University of Mississippi",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "MS",
+      "worksite_cities": "University",
+      "wage_annual_min": 53102,
+      "wage_annual_median": 53102,
+      "wage_annual_max": 53102
+    },
+    {
+      "employer": "UNIVERSITY OF NEVADA LAS VEGAS",
+      "employer_display": "University of Nevada, Las Vegas",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "NV",
+      "worksite_cities": "Las Vegas",
+      "wage_annual_min": 54080,
+      "wage_annual_median": 54080,
+      "wage_annual_max": 54080
+    },
+    {
+      "employer": "UNIVERSITY OF NORTH CAROLINA AT CHARLOTTE",
+      "employer_display": "University of North Carolina at Charlotte",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "NC",
+      "worksite_cities": "Charlotte",
+      "wage_annual_min": 61884,
+      "wage_annual_median": 61884,
+      "wage_annual_max": 61884
+    },
+    {
+      "employer": "UNIVERSITY OF NORTH DAKOTA",
+      "employer_display": "University of North Dakota",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "ND",
+      "worksite_cities": "Grand Forks",
+      "wage_annual_min": 50000,
+      "wage_annual_median": 50000,
+      "wage_annual_max": 50000
+    },
+    {
+      "employer": "UNIVERSITY OF ROCHESTER",
+      "employer_display": "University of Rochester",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "NY",
+      "worksite_cities": "Rochester",
+      "wage_annual_min": 54000,
+      "wage_annual_median": 54000,
+      "wage_annual_max": 54000
+    },
+    {
+      "employer": "UNIVERSITY OF SOUTH CAROLINA",
+      "employer_display": "University of South Carolina",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "SC",
+      "worksite_cities": "Columbia",
+      "wage_annual_min": 55000,
+      "wage_annual_median": 55000,
+      "wage_annual_max": 55000
+    },
+    {
+      "employer": "UNIVERSITY OF WISCONSIN MILWAUKEE",
+      "employer_display": "University of Wisconsin-Milwaukee",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "WI",
+      "worksite_cities": "Milwaukee",
+      "wage_annual_min": 62400,
+      "wage_annual_median": 62400,
+      "wage_annual_max": 62400
+    },
+    {
+      "employer": "UNIVERSITY OF WISCONSIN SYSTEM",
+      "employer_display": "University of Wisconsin System",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "WI",
+      "worksite_cities": "MADISON",
+      "wage_annual_min": 53200,
+      "wage_annual_median": 53200,
+      "wage_annual_max": 53200
+    },
+    {
+      "employer": "VANDERBILT UNIVERSITY",
+      "employer_display": "Vanderbilt University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "TN",
+      "worksite_cities": "Nashville",
+      "wage_annual_min": 48547,
+      "wage_annual_median": 48547,
+      "wage_annual_max": 48547
+    },
+    {
+      "employer": "VI R INVESTMENTS",
+      "employer_display": "VI R-Investments LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "TX",
+      "worksite_cities": "Fort Worth",
+      "wage_annual_min": 58136,
+      "wage_annual_median": 58136,
+      "wage_annual_max": 58136
+    },
+    {
+      "employer": "WRIGHT PIERCE",
+      "employer_display": "Wright-Pierce",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "NY",
+      "worksite_cities": "Clifton Park",
+      "wage_annual_min": 90000,
+      "wage_annual_median": 90000,
+      "wage_annual_max": 90000
+    },
+    {
+      "employer": "XAVIER UNIVERSITY OF LOUISIANA",
+      "employer_display": "Xavier University of Louisiana",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "LA",
+      "worksite_cities": "New Orleans",
+      "wage_annual_min": 53102,
+      "wage_annual_median": 53102,
+      "wage_annual_max": 53102
+    },
+    {
+      "employer": "YALE UNIVERSITY",
+      "employer_display": "Yale University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2031",
+      "soc_titles": "Chemists",
+      "worksite_states": "CT",
+      "worksite_cities": "New Haven",
+      "wage_annual_min": 69000,
+      "wage_annual_median": 69000,
+      "wage_annual_max": 69000
+    }
+  ]
+}

@@ -1,0 +1,1973 @@
+{
+  "role": "applied_scientist",
+  "generated_at_utc": "2026-07-24 06:19 UTC",
+  "source": "US DOL OFLC LCA Programs disclosure data (public record)",
+  "filters": {
+    "case_status": "Certified",
+    "soc_codes": [
+      "15-1221"
+    ],
+    "pw_wage_level": "I"
+  },
+  "quarters_used": [
+    "FY2025Q4",
+    "FY2026Q1"
+  ],
+  "quarters_superseded": {},
+  "funnel": {
+    "rows_total": 201700,
+    "rows_certified": 181277,
+    "rows_soc_matched": 1129,
+    "rows_selected": 145
+  },
+  "employer_groups": 89,
+  "rows_wage_excluded_from_wage_stats": 0,
+  "patterns": {
+    "basis": {
+      "filings": 145,
+      "employers": 89,
+      "measured_by": "employers",
+      "min_support_employers": 3
+    },
+    "job_titles": {
+      "recurring_tokens": [
+        {
+          "token": "research",
+          "employers": 44,
+          "filings": 68
+        },
+        {
+          "token": "scientist",
+          "employers": 33,
+          "filings": 67
+        },
+        {
+          "token": "postdoctoral",
+          "employers": 20,
+          "filings": 26
+        },
+        {
+          "token": "engineer",
+          "employers": 19,
+          "filings": 21
+        },
+        {
+          "token": "associate",
+          "employers": 15,
+          "filings": 20
+        },
+        {
+          "token": "learning",
+          "employers": 9,
+          "filings": 9
+        },
+        {
+          "token": "machine",
+          "employers": 9,
+          "filings": 9
+        },
+        {
+          "token": "fellow",
+          "employers": 8,
+          "filings": 9
+        },
+        {
+          "token": "data",
+          "employers": 7,
+          "filings": 8
+        },
+        {
+          "token": "researcher",
+          "employers": 6,
+          "filings": 8
+        },
+        {
+          "token": "senior",
+          "employers": 6,
+          "filings": 6
+        },
+        {
+          "token": "applied",
+          "employers": 5,
+          "filings": 28
+        },
+        {
+          "token": "computer",
+          "employers": 4,
+          "filings": 6
+        },
+        {
+          "token": "science",
+          "employers": 4,
+          "filings": 6
+        },
+        {
+          "token": "scholar",
+          "employers": 4,
+          "filings": 5
+        },
+        {
+          "token": "ai",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "systems",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "computational",
+          "employers": 3,
+          "filings": 7
+        },
+        {
+          "token": "staff",
+          "employers": 3,
+          "filings": 6
+        },
+        {
+          "token": "post",
+          "employers": 3,
+          "filings": 5
+        },
+        {
+          "token": "information",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "it",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "manager",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "software",
+          "employers": 3,
+          "filings": 3
+        }
+      ],
+      "distinct_titles": [
+        {
+          "title": "Research Scientist",
+          "employers": 7,
+          "filings": 9
+        },
+        {
+          "title": "Postdoctoral Research Associate",
+          "employers": 5,
+          "filings": 7
+        },
+        {
+          "title": "Applied Scientist II",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "title": "Postdoctoral Fellow",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "title": "Applied Scientist I",
+          "employers": 3,
+          "filings": 22
+        },
+        {
+          "title": "Postdoctoral Research Scholar",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "Research Engineer",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "Research Scientist I",
+          "employers": 2,
+          "filings": 4
+        },
+        {
+          "title": "Data Scientist",
+          "employers": 2,
+          "filings": 3
+        },
+        {
+          "title": "Postdoctoral Research Fellow",
+          "employers": 2,
+          "filings": 3
+        },
+        {
+          "title": "Machine Learning Engineer",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Research Associate",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Research Scientist II",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Senior Machine Learning Scientist",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Post Doc Researcher",
+          "employers": 1,
+          "filings": 3
+        },
+        {
+          "title": "Computer Scientist III",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Founding Research Engineer",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "RESEARCH SCIENTIST",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Research and Development Engineer",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "AI / ML Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "APPLIED SCIENTIST I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Advisor",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Algorithm Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Applied Scientist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Assistant Research Scientist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Bioinformatics & Data Science Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "CTO & AI Research Scientist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Computational and Data Science Research P4",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Computer Scientist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Computer Scientist VI",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Computer and Information Systems Scientist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "DATA ENGINEER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data scientist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "GLOBAL ENTREPRENEUR IN RESIDENCE - Comp & Info Res Science",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "HPC RESEARCH FACILITATOR III",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "HPC User Support Specialist 3",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Health Information Data Scientist I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Information Systems Research Scientist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "MTS Researcher",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Machine Learning Scientist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Machine Learning Senior Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Machine Learning Software Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Member of Technical Staff",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "PDC JUNIOR AI ENGINEER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Post Doctoral Research Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Post Doctorate Research Associate(Computer Scientist)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoc Research Associate -Computational Systems Biology",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Fellow - TEIL",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Research Associate I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Research Associate III",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Research Scientist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Research Staff",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Researcher",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Scholar - Research Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Scholar “ Research Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Predoctoral Appointee",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Principal Machine Learning Engineer-Scientist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Product Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Product Manager, IT",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "RESEARCH ANALYST II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Assistant Professor",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Associate Computational Science",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Associate, Energy & IT",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Fellow",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Programmer I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Project Manager II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Scientist - Speech",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Scientist III",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Software Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Software Engineer III",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Staff 1 Computational",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Staff 1 Computational Science",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Staff 2 Computational Science",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Staff 3 Computational",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Scientist 2",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior AI Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Associate Researcher",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Machine Learning Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Systems Administrator - IT Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Technical Support Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "UX Researcher",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "UX Researcher II",
+          "employers": 1,
+          "filings": 1
+        }
+      ]
+    },
+    "onet_occupations": [
+      {
+        "soc_code": "15-1221.00",
+        "title": "Computer and Information Research Scientists",
+        "employers": 89,
+        "filings": 145
+      }
+    ],
+    "placement_model": {
+      "in_house": {
+        "employers": 86,
+        "filings": 142
+      },
+      "third_party_site": {
+        "employers": 3,
+        "filings": 3
+      }
+    },
+    "industry_naics2": [
+      {
+        "code": "61",
+        "label": "Educational Services",
+        "employers": 35,
+        "filings": 49
+      },
+      {
+        "code": "54",
+        "label": "Professional, Scientific, and Technical Services",
+        "employers": 32,
+        "filings": 39
+      },
+      {
+        "code": "51",
+        "label": "Information",
+        "employers": 7,
+        "filings": 15
+      },
+      {
+        "code": "33",
+        "label": "Manufacturing",
+        "employers": 5,
+        "filings": 10
+      },
+      {
+        "code": "52",
+        "label": "Finance and Insurance",
+        "employers": 4,
+        "filings": 5
+      },
+      {
+        "code": "45",
+        "label": "Retail Trade",
+        "employers": 3,
+        "filings": 22
+      }
+    ]
+  },
+  "caveats": [
+    "An LCA certification is not a hire or an open role.",
+    "OPT is not sponsorship — a new grad's first job is on OPT; sponsorship comes 1-3 years later.",
+    "Employer names are conservatively normalized and may under-merge.",
+    "Career/portfolio guidance, not immigration legal advice."
+  ],
+  "employers": [
+    {
+      "employer": "AMAZON COM SERVICES",
+      "employer_display": "Amazon.com Services LLC",
+      "filing_count": 21,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "CA; MA; NY; WA",
+      "worksite_cities": "Bellevue; Culver City; New York; North Reading; Palo Alto; SANTA CLARA; San Diego; San Francisco; Santa Clara; Seattle",
+      "wage_annual_min": 127712,
+      "wage_annual_median": 158000,
+      "wage_annual_max": 209500
+    },
+    {
+      "employer": "AMAZON DEVELOPMENT CENTER U S",
+      "employer_display": "Amazon Development Center U.S., Inc.",
+      "filing_count": 8,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "CA; NY",
+      "worksite_cities": "NEW YORK; Pasadena; San Francisco; Santa Clara; Sunnyvale",
+      "wage_annual_min": 140000,
+      "wage_annual_median": 162338,
+      "wage_annual_max": 187700
+    },
+    {
+      "employer": "BROOKHAVEN NATIONAL LABORATORY",
+      "employer_display": "Brookhaven National Laboratory",
+      "filing_count": 5,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "NY",
+      "worksite_cities": "UPTON; Upton",
+      "wage_annual_min": 95202,
+      "wage_annual_median": 95944,
+      "wage_annual_max": 119038
+    },
+    {
+      "employer": "NVIDIA CORPORATION",
+      "employer_display": "NVIDIA Corporation",
+      "filing_count": 5,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "CA; IN; MA; TX",
+      "worksite_cities": "Austin; Santa Clara; West Lafayette; Westford",
+      "wage_annual_min": 127712,
+      "wage_annual_median": 147992,
+      "wage_annual_max": 159182
+    },
+    {
+      "employer": "W M RICE UNIVERSITY",
+      "employer_display": "W.M. RICE UNIVERSITY",
+      "filing_count": 4,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "TX",
+      "worksite_cities": "Houston",
+      "wage_annual_min": 65998,
+      "wage_annual_median": 78000,
+      "wage_annual_max": 80000
+    },
+    {
+      "employer": "MEMORIOUS",
+      "employer_display": "Memorious Inc.",
+      "filing_count": 3,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "CA",
+      "worksite_cities": "San Francisco",
+      "wage_annual_min": 175000,
+      "wage_annual_median": 178000,
+      "wage_annual_max": 178000
+    },
+    {
+      "employer": "THE UNIVERSITY OF ALABAMA IN HUNTSVILLE",
+      "employer_display": "The University of Alabama in Huntsville",
+      "filing_count": 3,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "AL",
+      "worksite_cities": "Huntsville",
+      "wage_annual_min": 98000,
+      "wage_annual_median": 100000,
+      "wage_annual_max": 110000
+    },
+    {
+      "employer": "NORTHEASTERN UNIVERSITY",
+      "employer_display": "Northeastern University",
+      "filing_count": 2,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "MA",
+      "worksite_cities": "Boston",
+      "wage_annual_min": 98509,
+      "wage_annual_median": 98509,
+      "wage_annual_max": 98509
+    },
+    {
+      "employer": "PURDUE UNIVERSITY",
+      "employer_display": "Purdue University",
+      "filing_count": 2,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "IN",
+      "worksite_cities": "West Lafayette",
+      "wage_annual_min": 47798,
+      "wage_annual_median": 53399,
+      "wage_annual_max": 59000
+    },
+    {
+      "employer": "THE UNIVERSITY OF IOWA",
+      "employer_display": "The University of Iowa",
+      "filing_count": 2,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "IA",
+      "worksite_cities": "Iowa City",
+      "wage_annual_min": 64356,
+      "wage_annual_median": 64356,
+      "wage_annual_max": 64356
+    },
+    {
+      "employer": "UNIVERSITY OF PITTSBURGH",
+      "employer_display": "University of Pittsburgh",
+      "filing_count": 2,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "PA",
+      "worksite_cities": "Pittsburgh",
+      "wage_annual_min": 89296,
+      "wage_annual_median": 92158,
+      "wage_annual_max": 95019
+    },
+    {
+      "employer": "ZOOM COMMUNICATIONS",
+      "employer_display": "Zoom Communications, Inc.",
+      "filing_count": 2,
+      "quarters_present": 2,
+      "quarters": "FY2025Q4; FY2026Q1",
+      "repeat_sponsor": "yes",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "WA",
+      "worksite_cities": "Bellevue",
+      "wage_annual_min": 142064,
+      "wage_annual_median": 201032,
+      "wage_annual_max": 260000
+    },
+    {
+      "employer": "THE UNIVERSITY OF SOUTHERN CALIFORNIA",
+      "employer_display": "The University of Southern California",
+      "filing_count": 3,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "CA",
+      "worksite_cities": "Los Angeles; Marina del Rey; Playa Vista",
+      "wage_annual_min": 60965,
+      "wage_annual_median": 60965,
+      "wage_annual_max": 69850
+    },
+    {
+      "employer": "CARNEGIE MELLON UNIVERSITY",
+      "employer_display": "Carnegie Mellon University",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "PA",
+      "worksite_cities": "Pittsburgh",
+      "wage_annual_min": 70000,
+      "wage_annual_median": 102468,
+      "wage_annual_max": 134936
+    },
+    {
+      "employer": "COLLINEAR AI",
+      "employer_display": "Collinear Ai Inc.",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "CA",
+      "worksite_cities": "Mountain View",
+      "wage_annual_min": 150000,
+      "wage_annual_median": 150000,
+      "wage_annual_max": 150000
+    },
+    {
+      "employer": "CONTINENTAL FINANCE COMPANY",
+      "employer_display": "Continental Finance Company, LLC",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "DE",
+      "worksite_cities": "Wilmington",
+      "wage_annual_min": 91000,
+      "wage_annual_median": 91000,
+      "wage_annual_max": 91000
+    },
+    {
+      "employer": "GEORGE MASON UNIVERSITY",
+      "employer_display": "George Mason University",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "VA",
+      "worksite_cities": "Fairfax",
+      "wage_annual_min": 85240,
+      "wage_annual_median": 86564,
+      "wage_annual_max": 87889
+    },
+    {
+      "employer": "INTEL CORPORATION",
+      "employer_display": "Intel Corporation",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "OR",
+      "worksite_cities": "Hillsboro",
+      "wage_annual_min": 129917,
+      "wage_annual_median": 129917,
+      "wage_annual_max": 129917
+    },
+    {
+      "employer": "THE UNIVERSITY OF ARIZONA",
+      "employer_display": "The University of Arizona",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "AZ",
+      "worksite_cities": "Tucson",
+      "wage_annual_min": 65640,
+      "wage_annual_median": 67820,
+      "wage_annual_max": 70000
+    },
+    {
+      "employer": "WORLDENGINE AI",
+      "employer_display": "WORLDENGINE AI, INC",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "CA",
+      "worksite_cities": "LOS ANGELES",
+      "wage_annual_min": 87797,
+      "wage_annual_median": 87797,
+      "wage_annual_max": 87797
+    },
+    {
+      "employer": "ABRIDGE AI",
+      "employer_display": "Abridge AI, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "CA",
+      "worksite_cities": "San Francisco",
+      "wage_annual_min": 275000,
+      "wage_annual_median": 275000,
+      "wage_annual_max": 275000
+    },
+    {
+      "employer": "AIVA GLOBAL",
+      "employer_display": "AIVA Global, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "PA",
+      "worksite_cities": "Pittsburgh",
+      "wage_annual_min": 110000,
+      "wage_annual_median": 110000,
+      "wage_annual_max": 110000
+    },
+    {
+      "employer": "ALANN",
+      "employer_display": "Alann LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "AZ",
+      "worksite_cities": "Tempe",
+      "wage_annual_min": 120000,
+      "wage_annual_median": 120000,
+      "wage_annual_max": 120000
+    },
+    {
+      "employer": "AMAZON ADVERTISING",
+      "employer_display": "Amazon Advertising LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "NY",
+      "worksite_cities": "New York",
+      "wage_annual_min": 185000,
+      "wage_annual_median": 185000,
+      "wage_annual_max": 185000
+    },
+    {
+      "employer": "AMAZON WEB SERVICES",
+      "employer_display": "Amazon Web Services, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "WA",
+      "worksite_cities": "Seattle",
+      "wage_annual_min": 170300,
+      "wage_annual_median": 170300,
+      "wage_annual_max": 170300
+    },
+    {
+      "employer": "ANOMALI INCORPORATED",
+      "employer_display": "Anomali Incorporated",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "CA",
+      "worksite_cities": "Redwood City",
+      "wage_annual_min": 96970,
+      "wage_annual_median": 96970,
+      "wage_annual_max": 96970
+    },
+    {
+      "employer": "ARIZONA STATE UNIVERSITY",
+      "employer_display": "Arizona State University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "AZ",
+      "worksite_cities": "Mesa",
+      "wage_annual_min": 61008,
+      "wage_annual_median": 61008,
+      "wage_annual_max": 61008
+    },
+    {
+      "employer": "ASTROBLOX",
+      "employer_display": "Astroblox, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "CA",
+      "worksite_cities": "Los Altos",
+      "wage_annual_min": 140000,
+      "wage_annual_median": 140000,
+      "wage_annual_max": 140000
+    },
+    {
+      "employer": "AXON ENTERPRISE",
+      "employer_display": "Axon Enterprise, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "WA",
+      "worksite_cities": "Seattle",
+      "wage_annual_min": 150000,
+      "wage_annual_median": 150000,
+      "wage_annual_max": 150000
+    },
+    {
+      "employer": "BATTELLE MEMORIAL INSTITUTE",
+      "employer_display": "Battelle Memorial Institute",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "CA",
+      "worksite_cities": "Castro Valley",
+      "wage_annual_min": 99459,
+      "wage_annual_median": 99459,
+      "wage_annual_max": 99459
+    },
+    {
+      "employer": "COMMA AI",
+      "employer_display": "Comma.ai, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "CA",
+      "worksite_cities": "San Diego",
+      "wage_annual_min": 84000,
+      "wage_annual_median": 84000,
+      "wage_annual_max": 84000
+    },
+    {
+      "employer": "COMMON SENSE MACHINES",
+      "employer_display": "Common Sense Machines, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "MA",
+      "worksite_cities": "Cambridge",
+      "wage_annual_min": 130000,
+      "wage_annual_median": 130000,
+      "wage_annual_max": 130000
+    },
+    {
+      "employer": "COOLABAH CAPITAL INVESTMENTS USA",
+      "employer_display": "Coolabah Capital Investments (USA) Inc",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "FL",
+      "worksite_cities": "MIAMI",
+      "wage_annual_min": 96000,
+      "wage_annual_median": 96000,
+      "wage_annual_max": 96000
+    },
+    {
+      "employer": "COX AUTOMOTIVE CORPORATE SERVICES",
+      "employer_display": "Cox Automotive Corporate Services, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "CA",
+      "worksite_cities": "San Francisco",
+      "wage_annual_min": 207645,
+      "wage_annual_median": 207645,
+      "wage_annual_max": 207645
+    },
+    {
+      "employer": "DANA FARBER CANCER INSTITUTE",
+      "employer_display": "Dana-Farber Cancer Institute",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "MA",
+      "worksite_cities": "Boston",
+      "wage_annual_min": 158117,
+      "wage_annual_median": 158117,
+      "wage_annual_max": 158117
+    },
+    {
+      "employer": "DUQUESNE UNIVERSITY",
+      "employer_display": "Duquesne University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "PA",
+      "worksite_cities": "Pittsburgh",
+      "wage_annual_min": 83200,
+      "wage_annual_median": 83200,
+      "wage_annual_max": 83200
+    },
+    {
+      "employer": "ECHO NEUROTECHNOLOGIES CORPORATION",
+      "employer_display": "Echo Neurotechnologies Corporation",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "CA",
+      "worksite_cities": "San Francisco",
+      "wage_annual_min": 249995,
+      "wage_annual_median": 249995,
+      "wage_annual_max": 249995
+    },
+    {
+      "employer": "FLORIDA INSTITUTE OF TECHNOLOGY",
+      "employer_display": "Florida Institute of Technology",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "FL",
+      "worksite_cities": "Melbourne",
+      "wage_annual_min": 70000,
+      "wage_annual_median": 70000,
+      "wage_annual_max": 70000
+    },
+    {
+      "employer": "FORD MOTOR COMPANY",
+      "employer_display": "FORD MOTOR COMPANY",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "MI",
+      "worksite_cities": "Dearborn",
+      "wage_annual_min": 104770,
+      "wage_annual_median": 104770,
+      "wage_annual_max": 104770
+    },
+    {
+      "employer": "GEORGIA INSTITUTE OF TECHNOLOGY",
+      "employer_display": "Georgia Institute of Technology",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "GA",
+      "worksite_cities": "Atlanta",
+      "wage_annual_min": 75000,
+      "wage_annual_median": 75000,
+      "wage_annual_max": 75000
+    },
+    {
+      "employer": "GEORGIA STATE UNIVERSITY",
+      "employer_display": "Georgia State University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "GA",
+      "worksite_cities": "Atlanta",
+      "wage_annual_min": 60965,
+      "wage_annual_median": 60965,
+      "wage_annual_max": 60965
+    },
+    {
+      "employer": "GOOGLE",
+      "employer_display": "Google LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "CA",
+      "worksite_cities": "Los Angeles",
+      "wage_annual_min": 162000,
+      "wage_annual_median": 162000,
+      "wage_annual_max": 162000
+    },
+    {
+      "employer": "H2O AI",
+      "employer_display": "H2O.ai, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "NJ",
+      "worksite_cities": "Hoboken",
+      "wage_annual_min": 130000,
+      "wage_annual_median": 130000,
+      "wage_annual_max": 130000
+    },
+    {
+      "employer": "HONDA RESEARCH INSTITUTE USA",
+      "employer_display": "Honda Research Institute USA, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "CA",
+      "worksite_cities": "San Jose",
+      "wage_annual_min": 152300,
+      "wage_annual_median": 152300,
+      "wage_annual_max": 152300
+    },
+    {
+      "employer": "HOUSTON ADVANCED RESEARCH CENTER HARC",
+      "employer_display": "Houston Advanced Research Center (HARC)",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "TX",
+      "worksite_cities": "The Woodlands",
+      "wage_annual_min": 80036,
+      "wage_annual_median": 80036,
+      "wage_annual_max": 80036
+    },
+    {
+      "employer": "INFERACT",
+      "employer_display": "Inferact, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "CA",
+      "worksite_cities": "Berkeley",
+      "wage_annual_min": 96678,
+      "wage_annual_median": 96678,
+      "wage_annual_max": 96678
+    },
+    {
+      "employer": "INFOBLOX",
+      "employer_display": "Infoblox Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "CA",
+      "worksite_cities": "Santa Clara",
+      "wage_annual_min": 128000,
+      "wage_annual_median": 128000,
+      "wage_annual_max": 128000
+    },
+    {
+      "employer": "JOHNS HOPKINS UNIVERSITY",
+      "employer_display": "Johns Hopkins University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "MD",
+      "worksite_cities": "Baltimore",
+      "wage_annual_min": 115000,
+      "wage_annual_median": 115000,
+      "wage_annual_max": 115000
+    },
+    {
+      "employer": "KLA CORPORATION",
+      "employer_display": "KLA Corporation",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "CA",
+      "worksite_cities": "Milpitas",
+      "wage_annual_min": 190000,
+      "wage_annual_median": 190000,
+      "wage_annual_max": 190000
+    },
+    {
+      "employer": "LAWRENCE LIVERMORE NATIONAL SECURITY",
+      "employer_display": "Lawrence Livermore National Security, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "TX",
+      "worksite_cities": "Austin",
+      "wage_annual_min": 135056,
+      "wage_annual_median": 135056,
+      "wage_annual_max": 135056
+    },
+    {
+      "employer": "LOUISIANA STATE UNIVERSITY AND A M COLLEGE",
+      "employer_display": "Louisiana State University and A&M College",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "LA",
+      "worksite_cities": "Baton Rouge",
+      "wage_annual_min": 92700,
+      "wage_annual_median": 92700,
+      "wage_annual_max": 92700
+    },
+    {
+      "employer": "MAGICBYTE AI",
+      "employer_display": "MagicByte AI, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "AZ",
+      "worksite_cities": "Chandler",
+      "wage_annual_min": 110240,
+      "wage_annual_median": 110240,
+      "wage_annual_max": 110240
+    },
+    {
+      "employer": "METHODIST LE BONHEUR HEALTHCARE",
+      "employer_display": "Methodist Le Bonheur Healthcare",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "TN",
+      "worksite_cities": "Memphis",
+      "wage_annual_min": 88691,
+      "wage_annual_median": 88691,
+      "wage_annual_max": 88691
+    },
+    {
+      "employer": "MITCHELL INTERNATIONAL",
+      "employer_display": "MITCHELL INTERNATIONAL INC.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "VA",
+      "worksite_cities": "Fairfax",
+      "wage_annual_min": 120000,
+      "wage_annual_median": 120000,
+      "wage_annual_max": 120000
+    },
+    {
+      "employer": "NASTERQUEST",
+      "employer_display": "NasterQuest Inc",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "TX",
+      "worksite_cities": "Northlake",
+      "wage_annual_min": 128960,
+      "wage_annual_median": 128960,
+      "wage_annual_max": 128960
+    },
+    {
+      "employer": "NEC LABORATORIES AMERICA",
+      "employer_display": "NEC Laboratories America, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "NJ",
+      "worksite_cities": "Princeton",
+      "wage_annual_min": 145900,
+      "wage_annual_median": 145900,
+      "wage_annual_max": 145900
+    },
+    {
+      "employer": "NYU GROSSMAN SCHOOL OF MEDICINE",
+      "employer_display": "NYU Grossman School of Medicine",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "NY",
+      "worksite_cities": "New York",
+      "wage_annual_min": 110000,
+      "wage_annual_median": 110000,
+      "wage_annual_max": 110000
+    },
+    {
+      "employer": "OPENEVIDENCE",
+      "employer_display": "OpenEvidence, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "NJ",
+      "worksite_cities": "Jersey City",
+      "wage_annual_min": 325000,
+      "wage_annual_median": 325000,
+      "wage_annual_max": 325000
+    },
+    {
+      "employer": "PROMETHEUS COMPUTING",
+      "employer_display": "Prometheus Computing LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "MD",
+      "worksite_cities": "Gaithersburg",
+      "wage_annual_min": 115000,
+      "wage_annual_median": 115000,
+      "wage_annual_max": 115000
+    },
+    {
+      "employer": "REGENTS OF THE UNIVERSITY OF MINNESOTA",
+      "employer_display": "Regents of the University of Minnesota",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "MN",
+      "worksite_cities": "Austin",
+      "wage_annual_min": 74006,
+      "wage_annual_median": 74006,
+      "wage_annual_max": 74006
+    },
+    {
+      "employer": "RESEARCH CORPORATION OF THE UNIVERSITY OF HAWAII",
+      "employer_display": "Research Corporation of the University of Hawaii",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "HI",
+      "worksite_cities": "Kihei",
+      "wage_annual_min": 91499,
+      "wage_annual_median": 91499,
+      "wage_annual_max": 91499
+    },
+    {
+      "employer": "RESONATE NETWORKS",
+      "employer_display": "Resonate Networks, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "VA",
+      "worksite_cities": "McLean",
+      "wage_annual_min": 132434,
+      "wage_annual_median": 132434,
+      "wage_annual_max": 132434
+    },
+    {
+      "employer": "RESOURCE INNOVATIVE TECHNOLOGIES",
+      "employer_display": "RESOURCE INNOVATIVE TECHNOLOGIES LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "GA",
+      "worksite_cities": "ALPHARETTA",
+      "wage_annual_min": 90000,
+      "wage_annual_median": 90000,
+      "wage_annual_max": 90000
+    },
+    {
+      "employer": "SOUTHERN METHODIST UNIVERSITY",
+      "employer_display": "SOUTHERN METHODIST UNIVERSITY",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "TX",
+      "worksite_cities": "Dallas",
+      "wage_annual_min": 62000,
+      "wage_annual_median": 62000,
+      "wage_annual_max": 62000
+    },
+    {
+      "employer": "SPARC GROUP",
+      "employer_display": "SPARC Group LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "CA",
+      "worksite_cities": "Antioch",
+      "wage_annual_min": 111427,
+      "wage_annual_median": 111427,
+      "wage_annual_max": 111427
+    },
+    {
+      "employer": "SPECRIGHT",
+      "employer_display": "Specright, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "CA",
+      "worksite_cities": "Tustin",
+      "wage_annual_min": 158760,
+      "wage_annual_median": 158760,
+      "wage_annual_max": 158760
+    },
+    {
+      "employer": "SUBTLE MEDICAL",
+      "employer_display": "Subtle Medical, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "MA",
+      "worksite_cities": "Revere",
+      "wage_annual_min": 140000,
+      "wage_annual_median": 140000,
+      "wage_annual_max": 140000
+    },
+    {
+      "employer": "TEMPUS AI",
+      "employer_display": "Tempus AI",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "CA",
+      "worksite_cities": "San Francisco",
+      "wage_annual_min": 156300,
+      "wage_annual_median": 156300,
+      "wage_annual_max": 156300
+    },
+    {
+      "employer": "THE CURATORS OF THE UNIVERSITY OF MISSOURI",
+      "employer_display": "The Curators of the University of Missouri",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "MO",
+      "worksite_cities": "Columbia",
+      "wage_annual_min": 68500,
+      "wage_annual_median": 68500,
+      "wage_annual_max": 68500
+    },
+    {
+      "employer": "THE TRUSTEES OF PRINCETON UNIVERSITY",
+      "employer_display": "The Trustees of Princeton University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "NJ",
+      "worksite_cities": "Princeton",
+      "wage_annual_min": 86403,
+      "wage_annual_median": 86403,
+      "wage_annual_max": 86403
+    },
+    {
+      "employer": "THE UNIVERSITY OF TEXAS AT AUSTIN",
+      "employer_display": "The University of Texas at Austin",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "TX",
+      "worksite_cities": "Austin",
+      "wage_annual_min": 75000,
+      "wage_annual_median": 75000,
+      "wage_annual_max": 75000
+    },
+    {
+      "employer": "THE UNIVERSITY OF TEXAS RIO GRANDE VALLEY",
+      "employer_display": "THE UNIVERSITY OF TEXAS RIO GRANDE VALLEY",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "TX",
+      "worksite_cities": "San Antonio",
+      "wage_annual_min": 60000,
+      "wage_annual_median": 60000,
+      "wage_annual_max": 60000
+    },
+    {
+      "employer": "TRIAD NATIONAL SECURITY",
+      "employer_display": "Triad National Security, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "NM",
+      "worksite_cities": "Los Alamos",
+      "wage_annual_min": 141918,
+      "wage_annual_median": 141918,
+      "wage_annual_max": 141918
+    },
+    {
+      "employer": "TRUSTEES OF THE UNIVERSITY OF PENNSYLVANIA",
+      "employer_display": "TRUSTEES OF THE UNIVERSITY OF PENNSYLVANIA",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "PA",
+      "worksite_cities": "Philadelphia",
+      "wage_annual_min": 86403,
+      "wage_annual_median": 86403,
+      "wage_annual_max": 86403
+    },
+    {
+      "employer": "UCHICAGO ARGONNE",
+      "employer_display": "UChicago Argonne, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "IL",
+      "worksite_cities": "Lemont",
+      "wage_annual_min": 60965,
+      "wage_annual_median": 60965,
+      "wage_annual_max": 60965
+    },
+    {
+      "employer": "UNIVERSITY OF CALIFORNIA SAN DIEGO",
+      "employer_display": "UNIVERSITY OF CALIFORNIA, SAN DIEGO",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "CA",
+      "worksite_cities": "La Jolla",
+      "wage_annual_min": 145188,
+      "wage_annual_median": 145188,
+      "wage_annual_max": 145188
+    },
+    {
+      "employer": "UNIVERSITY OF ILLINOIS",
+      "employer_display": "University of Illinois",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "IL",
+      "worksite_cities": "Urbana",
+      "wage_annual_min": 96673,
+      "wage_annual_median": 96673,
+      "wage_annual_max": 96673
+    },
+    {
+      "employer": "UNIVERSITY OF LOUISIANA AT LAFAYETTE",
+      "employer_display": "University of Louisiana at Lafayette",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "LA",
+      "worksite_cities": "Lafayette",
+      "wage_annual_min": 60965,
+      "wage_annual_median": 60965,
+      "wage_annual_max": 60965
+    },
+    {
+      "employer": "UNIVERSITY OF MASSACHUSETTS BOSTON",
+      "employer_display": "University of Massachusetts Boston",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "MA",
+      "worksite_cities": "Boston",
+      "wage_annual_min": 98509,
+      "wage_annual_median": 98509,
+      "wage_annual_max": 98509
+    },
+    {
+      "employer": "UNIVERSITY OF MICHIGAN",
+      "employer_display": "University of Michigan",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer & Information Research Scientists",
+      "worksite_states": "MI",
+      "worksite_cities": "Flint",
+      "wage_annual_min": 64147,
+      "wage_annual_median": 64147,
+      "wage_annual_max": 64147
+    },
+    {
+      "employer": "UNIVERSITY OF ROCHESTER",
+      "employer_display": "University of Rochester",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "NY",
+      "worksite_cities": "Rochester",
+      "wage_annual_min": 60965,
+      "wage_annual_median": 60965,
+      "wage_annual_max": 60965
+    },
+    {
+      "employer": "UT BATTELLE LLC OAK RIDGE NATIONAL LABORATORY",
+      "employer_display": "UT-BATTELLE, LLC (OAK RIDGE NATIONAL LABORATORY)",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "TN",
+      "worksite_cities": "Oak Ridge",
+      "wage_annual_min": 91447,
+      "wage_annual_median": 91447,
+      "wage_annual_max": 91447
+    },
+    {
+      "employer": "UT SOUTHWESTERN MEDICAL CENTER",
+      "employer_display": "UT Southwestern Medical Center",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "TX",
+      "worksite_cities": "Dallas",
+      "wage_annual_min": 130000,
+      "wage_annual_median": 130000,
+      "wage_annual_max": 130000
+    },
+    {
+      "employer": "VANDERBILT UNIVERSITY",
+      "employer_display": "Vanderbilt University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "TN",
+      "worksite_cities": "Nashville",
+      "wage_annual_min": 75000,
+      "wage_annual_median": 75000,
+      "wage_annual_max": 75000
+    },
+    {
+      "employer": "VIRGINIA POLYTECHNIC INSTITUTE STATE UNIVERSITY",
+      "employer_display": "Virginia Polytechnic Institute & State University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "VA",
+      "worksite_cities": "Blacksburg",
+      "wage_annual_min": 75000,
+      "wage_annual_median": 75000,
+      "wage_annual_max": 75000
+    },
+    {
+      "employer": "WAKE FOREST UNIVERSITY BAPTIST MEDICAL CENTER",
+      "employer_display": "Wake Forest University Baptist Medical Center",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "NC",
+      "worksite_cities": "Winston Salem",
+      "wage_annual_min": 64896,
+      "wage_annual_median": 64896,
+      "wage_annual_max": 64896
+    },
+    {
+      "employer": "WASHINGTON UNIVERSITY",
+      "employer_display": "Washington University",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "MO",
+      "worksite_cities": "ST LOUIS",
+      "wage_annual_min": 98088,
+      "wage_annual_median": 98088,
+      "wage_annual_max": 98088
+    },
+    {
+      "employer": "WILLSFLY TECHNOLOGIES",
+      "employer_display": "Willsfly Technologies Inc",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2025Q4",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "WA",
+      "worksite_cities": "Spokane",
+      "wage_annual_min": 128688,
+      "wage_annual_median": 128688,
+      "wage_annual_max": 128688
+    },
+    {
+      "employer": "ZESTFINANCE",
+      "employer_display": "ZestFinance, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "15-1221",
+      "soc_titles": "Computer and Information Research Scientists",
+      "worksite_states": "NJ",
+      "worksite_cities": "Secaucus",
+      "wage_annual_min": 140000,
+      "wage_annual_median": 140000,
+      "wage_annual_max": 140000
+    }
+  ]
+}

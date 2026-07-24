@@ -1,0 +1,44 @@
+{
+  "role": "accountant",
+  "curated_at_utc": "2026-07-24",
+  "kind": "curated-editorial",
+  "framework": "A path qualifies only when >=3 prominent, proven people in the field visibly share the capability, each with a resolving link — the pattern across standouts is the evidence, not market demand. Ranked by strength of that pattern. Curated editorial, not DOL-derived.",
+  "paths": [
+    {
+      "rank": 1,
+      "path": "Teach accounting and tax publicly at scale",
+      "what_it_is": "Publish free video, podcast, or newsletter content that teaches real accounting and technology skills to a broad audience, not only your own firm's clients.",
+      "why_it_signals": "Hector Garcia's QuickBooks YouTube channel, Blake Oliver's Accounting Podcast/Earmark, and Caleb Newquist's Going Concern and Oh My Fraud each built a national reputation from public teaching rather than private client work.",
+      "people": [
+        {"name": "Hector Garcia, CPA", "link": "https://hectorgarcia.com/"},
+        {"name": "Blake Oliver, CPA", "link": "https://www.blakeoliver.com/"},
+        {"name": "Caleb Newquist", "link": "https://podcast.earmarkcpe.com/people/caleb-newquist"}
+      ],
+      "source": "https://hectorgarcia.com/"
+    },
+    {
+      "rank": 2,
+      "path": "Specialize in fraud investigation and make it public",
+      "what_it_is": "Build a forensic-accounting or fraud-examiner practice and turn real case narratives into public books, podcasts, or documentaries.",
+      "why_it_signals": "Tracy Coenen, Kelly Richmond Pope, and Kelly Paxton each turned forensic-accounting casework into public books and podcasts that built national reputations distinct from routine audit or bookkeeping work.",
+      "people": [
+        {"name": "Tracy Coenen, CPA, CFF", "link": "https://www.sequenceinc.com/tracy-coenen-biography/"},
+        {"name": "Kelly Richmond Pope, PhD, CPA", "link": "https://kellyrichmondpope.com/"},
+        {"name": "Kelly Paxton, CFE", "link": "https://kellypaxton.com/"}
+      ],
+      "source": "https://www.sequenceinc.com/tracy-coenen-biography/"
+    },
+    {
+      "rank": 3,
+      "path": "Lead the firm's technology and automation practice",
+      "what_it_is": "Become the accountant who builds and evangelizes automation — no-code tools, Python, AI — for the back office, instead of only executing manual workflows.",
+      "why_it_signals": "Jason Staats (Realize), David Cieslak (\"Inspector Gadget\"), and Byron Patrick (VERIFYiQ, TB Academy) each built national profiles as the technology voice inside accounting rather than as generalist practitioners.",
+      "people": [
+        {"name": "Jason Staats, CPA", "link": "https://www.jasonstaats.com/"},
+        {"name": "David Cieslak, CPA.CITP", "link": "https://www.linkedin.com/in/davidmcieslak/"},
+        {"name": "Byron Patrick, CPA.CITP", "link": "https://www.linkedin.com/in/byronpatrick/"}
+      ],
+      "source": "https://www.jasonstaats.com/"
+    }
+  ]
+}

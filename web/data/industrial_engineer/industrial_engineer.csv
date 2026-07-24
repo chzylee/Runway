@@ -1,0 +1,249 @@
+employer,employer_display,filing_count,quarters_present,quarters,repeat_sponsor,soc_codes,soc_titles,worksite_states,worksite_cities,wage_annual_min,wage_annual_median,wage_annual_max
+VASTEK,Vastek Inc,24,2,FY2025Q4; FY2026Q1,yes,17-2112,Manufacturing Engineers; Validation Engineers,CA; FL; IN; MA; NC; NJ; NY; OH; PA; UT,Boston; Danvers; Greendale; Holly springs; Irvine; Lancaster; Lebanon; New Albany; Palm Beach Gardens; Pleasanton; Rensselaer; Salt Lake City; San Diego; San Jose; Summit; Swiftwater; Whippany,70720,81037,95139
+AMAZON DATA SERVICES,"Amazon Data Services, Inc",21,2,FY2025Q4; FY2026Q1,yes,17-2112,Industrial Engineers,AZ; GA; IN; MS; NC; OH; OR; PA; TX; VA,Atlanta; Canton; Charlotte; Columbus; Dallas; Fredericksburg; Herndon; Mesa; New Albany; Philadelphia; South Bend; Stafford; UMATILLA,71053,130000,140000
+TESLA,"Tesla, Inc.",7,2,FY2025Q4; FY2026Q1,yes,17-2112,Industrial Engineers; Manufacturing Engineers; Validation Engineers,CA; NV,Fremont; Palo Alto; Sparks,90000,115841,120000
+QUANTA MANUFACTURING NASHVILLE,"Quanta Manufacturing Nashville, LLC",6,2,FY2025Q4; FY2026Q1,yes,17-2112,Industrial Engineers,TN,La Vergne,76544,90500,108000
+AMAZON COM SERVICES,Amazon.com Services LLC,5,2,FY2025Q4; FY2026Q1,yes,17-2112,Industrial Engineers,MA; TX; VA; WA,Arlington; Austin; Bellevue; Boston; Seattle,99000,115000,140000
+ELIQUENT LIFE SCIENCES,Eliquent Life Sciences,5,2,FY2025Q4; FY2026Q1,yes,17-2112,Validation Engineers,DC; MA,Framingham; Washington,78146,82451,90126
+KARTECH SOLUTIONS,"Kartech Solutions, Inc.",5,2,FY2025Q4; FY2026Q1,yes,17-2112,Manufacturing Engineers,TX,Austin,69389,72000,72000
+ST JUDE MEDICAL CARDIOLOGY DIVISION,"St. Jude Medical, Cardiology Division, Inc.",5,2,FY2025Q4; FY2026Q1,yes,17-2112,Industrial Engineers; Validation Engineers,CA; MN,PLEASANTON; Pleasanton; Plymouth; Saint Paul; Sunnyvale,78000,95000,99000
+KATALYST HEALTHCARES LIFE SCIENCES,KATALYST HEALTHCARES & LIFE SCIENCES INC.,4,2,FY2025Q4; FY2026Q1,yes,17-2112,Manufacturing Engineers; Validation Engineers,CT; MA; NJ; NY,EAST HANOVER; MANSFIELD; NORTH HAVEN; TROY,79685,81546,85904
+VALIDATION ASSOCIATES,Validation Associates LLC,4,2,FY2025Q4; FY2026Q1,yes,17-2112,Validation Engineers,CA; NJ; NY,Clifton Park; Cranbury; East Greenbush; Foster City,81037,90293,97760
+FEDERAL EXPRESS CORPORATION,Federal Express Corporation,3,2,FY2025Q4; FY2026Q1,yes,17-2112,Industrial Engineers,CO; TN,Collierville; Denver; Memphis,76370,77311,79600
+FUYAO GLASS AMERICA,Fuyao Glass America Inc.,3,2,FY2025Q4; FY2026Q1,yes,17-2112,Industrial Engineers,MI; OH,Montgomery; Plymouth,76648,79455,83000
+LG ENERGY SOLUTION ARIZONA,"LG Energy Solution Arizona, Inc.",3,2,FY2025Q4; FY2026Q1,yes,17-2112,Industrial Engineers,AZ,Queen Creek,106000,119703,137000
+NOVOZEN HEALTHCARE,NOVOZEN HEALTHCARE LLC.,3,2,FY2025Q4; FY2026Q1,yes,17-2112,Validation Engineers,IA; MA,ANDOVER; CHARLES CITY; Wakefield,72800,87360,99840
+STARK PHARMA SOLUTIONS,STARK PHARMA SOLUTIONS INC.,3,2,FY2025Q4; FY2026Q1,yes,17-2112,Manufacturing Engineers; Validation Engineers,CA; MA,Lake Elsinore; Westborough,81037,81120,81120
+ACUITY BRANDS LIGHTING,"Acuity Brands Lighting, Inc.",2,2,FY2025Q4; FY2026Q1,yes,17-2112,Manufacturing Engineers,IN,Crawfordsville,68827,70658,72488
+BCVS,BCVS,2,2,FY2025Q4; FY2026Q1,yes,17-2112,Validation Engineers,IN; NJ,Batesville; Wayne,72800,76918,81037
+BIOMET MANUFACTURING,"Biomet Manufacturing, LLC",2,2,FY2025Q4; FY2026Q1,yes,17-2112,Manufacturing Engineers,IN,Warsaw,80730,90648972,181217213
+INVAGEN PHARMACEUTICALS,"InvaGen Pharmaceuticals, Inc.",2,2,FY2025Q4; FY2026Q1,yes,17-2112,Manufacturing Engineers; Validation Engineers,MA; NY,Central Islip; Fall River,80000,85000,90000
+MAXGRIP AMERICAS,Maxgrip Americas Inc,2,2,FY2025Q4; FY2026Q1,yes,17-2112,Industrial Engineers,TX,Houston,81000,84550,88100
+NIAGARA BOTTLING,"Niagara Bottling, LLC",2,2,FY2025Q4; FY2026Q1,yes,17-2112,Industrial Engineers,CA,Diamond Bar,96000,103000,110000
+YANFENG INTERNATIONAL AUTOMOTIVE TECHNOLOGY US I,Yanfeng International Automotive Technology US I LLC,2,2,FY2025Q4; FY2026Q1,yes,17-2112,Industrial Engineers; Validation Engineers,MI; TN,Chattanooga; Novi,76648,80824,85000
+INTELLECTT,"INTELLECTT, INC.",9,1,FY2025Q4,no,17-2112,Industrial Engineers; Manufacturing Engineers; Validation Engineers,CA; ME; NJ; TX,IRVING; MENLO PARK; PLANO; PLEASANTON; Plainfield; SANTA CLARA; SCARBOROUGH; SYLMAR,83200,93600,114400
+WESTERN DIGITAL TECHNOLOGIES,"Western Digital Technologies, Inc.",4,1,FY2025Q4,no,17-2112,Industrial Engineers,CA,Fremont; Milpitas; San Jose,90251,91614,92976
+ALTEN TECHNOLOGY USA,"Alten Technology USA, Inc.",3,1,FY2025Q4,no,17-2112,Industrial Engineers,AL; MI; OH,Auburn Hills; Mobile; Raymond,73736,76648,80496
+COMMEX,Commex Corp.,3,1,FY2025Q4,no,17-2112,Industrial Engineers; Manufacturing Engineers,CA,Hayward,102000,102000,1136184
+SPARK LIFE SOLUTIONS,Spark Life Solutions Inc.,3,1,FY2026Q1,no,17-2112,Validation Engineers,CA,Pleasanton; San Diego,82160,82160,95680
+TAILSTORM HEALTH,"Tailstorm Health, Inc",3,1,FY2026Q1,no,17-2112,Validation Engineers,AZ,Chandler,81370,81370,81370
+ACOUSTICAL SOLUTIONS,Acoustical Solutions,2,1,FY2025Q4,no,17-2112,Industrial Engineers,VA,Henrico,90279,90279,90279
+CORNERSTONE BUILDING BRANDS SERVICES,"Cornerstone Building Brands Services, Inc.",2,1,FY2025Q4,no,17-2112,Manufacturing Engineers,NH,Londonderry,86902,2302903,4518904
+CURIA NEW MEXICO,"Curia New Mexico, LLC",2,1,FY2026Q1,no,17-2112,Validation Engineers,NM,Albuquerque,92427,92427,92427
+EKHO,Ekho Inc.,2,1,FY2026Q1,no,17-2112,Industrial Engineers,NY,New York,141000,141000,141000
+EMPWR USA,EMPWR USA Inc.,2,1,FY2025Q4,no,17-2112,Industrial Engineers,OR,McMinnville,88816,88816,88816
+FINDICA,"Findica, Inc.",2,1,FY2025Q4,no,17-2112,Validation Engineers,NJ,Dayton,81037,81037,81037
+FUYAO GLASS SOUTH CAROLINA,"Fuyao Glass South Carolina, Inc.",2,1,FY2026Q1,no,17-2112,Industrial Engineers,SC,Fountain Inn,73694,77691,81687
+GANNECT ELECTRONICS LIMITED COMPANY,Gannect Electronics Limited Company,2,1,FY2025Q4,no,17-2112,Industrial Engineers,TX,FORT WORTH; Frot Worth,76960,76960,76960
+GEORGE SCHMITT CO,"George Schmitt & Co., Inc.",2,1,FY2025Q4,no,17-2112,Manufacturing Engineers,CT,Guilford,82056,82056,82056
+GLOBALFOUNDRIES U S,"GlobalFoundries U.S., Inc.",2,1,FY2025Q4,no,17-2112,Industrial Engineers,NY; TX,Malta; The Colony,76939,81422,85904
+JINDAL PIPE USA,Jindal Pipe USA INC,2,1,FY2025Q4,no,17-2112,Industrial Engineers,TX,Baytown,71594,75844,80094
+LANCESOFT,LanceSoft Inc.,2,1,FY2026Q1,no,17-2112,Validation Engineers,CA; WA,Campbell; Spokane,71677,83408,95139
+SYNOPSYS,"Synopsys, Inc.",2,1,FY2026Q1,no,17-2112,Human Factors Engineers and Ergonomists,CA,Woodland Hills,79955,79955,79955
+UNITED PARCEL SERVICE GENERAL SERVICES CO,"United Parcel Service General Services, Co.",2,1,FY2026Q1,no,17-2112,Industrial Engineers,CA,Fremont,95520,95520,95520
+WEST PHARMACEUTICAL SERVICES,"West Pharmaceutical Services, Inc.",2,1,FY2026Q1,no,17-2112,Manufacturing Engineers; Validation Engineers,AZ,Scottsdale,95110,96335,97560
+3V METALS,"3V Metals, Inc",1,1,FY2026Q1,no,17-2112,Manufacturing Engineers,FL,Jacksonville,68806,68806,68806
+A B ENVIRONMENTAL SERVICES,"A & B Environmental Services, Inc.",1,1,FY2026Q1,no,17-2112,Validation Engineers,TX,Houston,73278,73278,73278
+A V REFRIGERATION,A & V Refrigeration Corp.,1,1,FY2025Q4,no,17-2112,Industrial Engineers,FL,Hialeah,75000,75000,75000
+ADH HEALTH PRODUCTS,ADH HEALTH PRODUCTS INC.,1,1,FY2025Q4,no,17-2112,Manufacturing Engineers,NY,CONGERS,115000,115000,115000
+AKKODIS,"Akkodis, Inc.",1,1,FY2026Q1,no,17-2112,Validation Engineers,MI,Chelsea,74880,74880,74880
+ALKERMES,"Alkermes, Inc.",1,1,FY2025Q4,no,17-2112,Validation Engineers,OH,Wilmington,89300,89300,89300
+ALPS ALPINE NORTH AMERICA,"Alps Alpine North America, Inc.",1,1,FY2026Q1,no,17-2112,Industrial Engineers,MI,AUBURN HILLS,100100,100100,100100
+AMAX ENGINEERING CORPORATION,Amax Engineering Corporation,1,1,FY2025Q4,no,17-2112,Manufacturing Engineers,CA,Fremont,116600,116600,116600
+AMPHENOL THERMOMETRICS,"Amphenol Thermometrics, Inc.",1,1,FY2025Q4,no,17-2112,Manufacturing Engineers,CA,Fremont,115000,115000,115000
+ANCHOR GLASS CONTAINER CORPORATION,Anchor Glass Container Corporation,1,1,FY2025Q4,no,17-2112,Industrial Engineers,FL,Tampa,95000,95000,95000
+ANDERSEN CORPORATION,Andersen Corporation,1,1,FY2025Q4,no,17-2112,Manufacturing Engineers,AZ,Goodyear,91847,91847,91847
+ANSYS,"ANSYS, Inc.",1,1,FY2025Q4,no,17-2112,Human Factors Engineers and Ergonomists,CA,Woodland Hills,79955,79955,79955
+ARCH GROUP,Arch Group LLC,1,1,FY2025Q4,no,17-2112,Validation Engineers,MN,Lake Elmo,78000,78000,78000
+ARCHITECTURAL BUILDERS HARDWARE MANUFACTURING,Architectural Builders Hardware Manufacturing Inc,1,1,FY2026Q1,no,17-2112,Industrial Engineers,IL,Itasca,71240,71240,71240
+AREVON ENERGY,"Arevon Energy, Inc.",1,1,FY2025Q4,no,17-2112,Industrial Engineers,CA,San Jose,99000,99000,99000
+ARTIEL SYSTEMS INTEGRATION,"ARTIEL SYSTEMS INTEGRATION, LLC",1,1,FY2025Q4,no,17-2112,Industrial Engineers,NJ,Whitehouse Station,81037,81037,81037
+ASM SOLUTIONS,ASM Solutions LLC,1,1,FY2025Q4,no,17-2112,Validation Engineers,IL,Crystal Lake,72800,72800,72800
+AURIS HEALTH,"Auris Health, Inc.",1,1,FY2026Q1,no,17-2112,Manufacturing Engineers,CA,Santa Clara,136254,136254,136254
+AUTOMOTIVE ROBOTICS PROVING LABS,Automotive Robotics Proving Labs LLC,1,1,FY2026Q1,no,17-2112,Industrial Engineers,IN,Lafayette,79997,79997,79997
+AUTONOMOUS STUFF,Autonomous Stuff LLC,1,1,FY2026Q1,no,17-2112,Validation Engineers,IL,Morton,77800,77800,77800
+AVEVA DRUG DELIVERY SYSTEMS,"Aveva Drug Delivery Systems, Inc.",1,1,FY2026Q1,no,17-2112,Industrial Engineers,FL,Tamarac,85000,85000,85000
+AXITEM SOFTWARE SOLUTION,AXITEM SOFTWARE SOLUTION INC,1,1,FY2025Q4,no,17-2112,Validation Engineers,MI,Northville,77000,77000,77000
+AXON ENTERPRISE,"Axon Enterprise, Inc.",1,1,FY2025Q4,no,17-2112,Industrial Engineers,AZ,Scottsdale,100000,100000,100000
+BECTON DICKINSON AND COMPANY,"Becton, Dickinson and Company",1,1,FY2026Q1,no,17-2112,Industrial Engineers,NE,Columbus,80000,80000,80000
+BIOPHARMA CONSULTING JAD GROUP,Biopharma Consulting JAD Group Inc.,1,1,FY2026Q1,no,17-2112,Validation Engineers,TX,San Antonio,72800,72800,72800
+BORGWARNER DIXON,"BorgWarner Dixon, LLC",1,1,FY2026Q1,no,17-2112,Industrial Engineers,IL,Dixon,67288,67288,67288
+BSI AMERICA PROFESSIONAL SERVICES,BSI America Professional Services Inc.,1,1,FY2025Q4,no,17-2112,Industrial Engineers,CA,San Jose,95139,95139,95139
+BUNGE NORTH AMERICA EAST,Bunge North America (East) LLC,1,1,FY2025Q4,no,17-2112,Industrial Engineers,IN,Morristown,79849,79849,79849
+BYD COACH AND BUS,BYD Coach and Bus LLC,1,1,FY2025Q4,no,17-2112,Industrial Engineers,CA,Lancaster,79955,79955,79955
+CANADIAN SOLAR U S MODULE MANUFACTURING CORPORATION,Canadian Solar U.S. Module Manufacturing Corporation,1,1,FY2025Q4,no,17-2112,Industrial Engineers,TX,Mesquite,79000,79000,79000
+CANDYCO,"CandyCo, LLC",1,1,FY2026Q1,no,17-2112,Validation Engineers,UT,Lindon,76565,76565,76565
+CELANESE CORPORATION,Celanese Corporation,1,1,FY2025Q4,no,17-2112,Industrial Engineers,TX,Bishop,116189,116189,116189
+CENOVUS U S SERVICES,Cenovus U.S. Services Inc.,1,1,FY2026Q1,no,17-2112,Manufacturing Engineers,WI,Superior,144000,144000,144000
+CHALLENGE MANUFACTURING HOLDINGS,"Challenge Manufacturing Holdings, Inc.",1,1,FY2026Q1,no,17-2112,Manufacturing Engineers,TX,Northlake,77000,77000,77000
+CONSOLIDATED METCO,"Consolidated Metco, Inc.",1,1,FY2025Q4,no,17-2112,Industrial Engineers,NC,Monroe,93120,93120,93120
+CONSTELLIUM AUTOMOTIVE USA,"Constellium Automotive USA, LLC",1,1,FY2026Q1,no,17-2112,Industrial Engineers,MI,Van Buren Township,81500,81500,81500
+CORDIALSA USA,"Cordialsa USA, Inc.",1,1,FY2025Q4,no,17-2112,Industrial Engineers,CA,Corona,74090,74090,74090
+CRENLO CAB PRODUCTS,"Crenlo Cab Products, Inc.",1,1,FY2025Q4,no,17-2112,Industrial Engineers,MN,Rochester,84000,84000,84000
+CURIA GLOBAL,"Curia Global, Inc.",1,1,FY2025Q4,no,17-2112,Industrial Engineers,NY,Albany,100100,100100,100100
+DAEYOUNG ELECTRONICS USA,Daeyoung Electronics USA LLC,1,1,FY2025Q4,no,17-2112,Industrial Engineers,SC,Prosperity,71344,71344,71344
+DAIMAY NORTH AMERICA AUTOMOTIVE,"Daimay North America Automotive, Inc.",1,1,FY2025Q4,no,17-2112,Manufacturing Engineers,MI,Redford,76648,76648,76648
+DEERE COMPANY,Deere & Company,1,1,FY2025Q4,no,17-2112,Industrial Engineers,LA,Thibodaux,109000,109000,109000
+DEKRA CERTIFICATION,"DEKRA Certification, Inc.",1,1,FY2026Q1,no,17-2112,Validation Engineers,MI,Plymouth,76648,76648,76648
+DELTA ELECTRONICS USA,DELTA ELECTRONICS (USA) INC.,1,1,FY2025Q4,no,17-2112,Industrial Engineers,TX,Plano,76939,76939,76939
+DELTA MATERIALS HANDLING,"Delta Materials Handling, Inc.",1,1,FY2025Q4,no,17-2112,Industrial Engineers,TN,Memphis,72862,72862,72862
+DETROIT MANUFACTURING SYSTEMS,"Detroit Manufacturing Systems, LLC",1,1,FY2025Q4,no,17-2112,Industrial Engineers,MI,Detroit,85590,85590,85590
+DEXIAN,Dexian LLC,1,1,FY2025Q4,no,17-2112,Manufacturing Engineers,TX,Houston,94720,94720,94720
+DIGITAL TERRAIN,"DIGITAL TERRAIN, INC.",1,1,FY2026Q1,no,17-2112,Industrial Engineers,TX,Forney,76939,76939,76939
+DISCOVERY ENERGY,"Discovery Energy, LLC",1,1,FY2025Q4,no,17-2112,Manufacturing Engineers,WI,Sheboygan,76050,76050,76050
+DON WOOD,Don Wood Inc,1,1,FY2025Q4,no,17-2112,Industrial Engineers,FL,ORLANDO,75000,75000,75000
+DUCON ENVIRONMENTAL SYSTEMS,Ducon Environmental Systems,1,1,FY2025Q4,no,17-2112,Industrial Engineers,TX,Houston,90000,90000,90000
+DYNAMIXE,"DynamixE, Inc.",1,1,FY2026Q1,no,17-2112,Validation Engineers,NY,Rensselaer,86000,86000,86000
+EAST WEST INDUSTRIAL ENGINEERING,East West Industrial Engineering LLC,1,1,FY2025Q4,no,17-2112,Manufacturing Engineers,IN,Columbus,84094,84094,84094
+ECLIPSE MOLD,"Eclipse Mold, Inc.",1,1,FY2025Q4,no,17-2112,Industrial Engineers,MI,Chesterfield,85000,85000,85000
+ELI LILLY AND COMPANY,Eli Lilly and Company,1,1,FY2025Q4,no,17-2112,Industrial Engineers,IN,Indianapolis,84625,84625,84625
+ELITE DIGITAL LOGISTICS,Elite Digital Logistics Inc,1,1,FY2025Q4,no,17-2112,Industrial Engineers,TX,Houston,73278,73278,73278
+EMBRAER EXECUTIVE AIRCRAFT,"Embraer Executive Aircraft, Inc.",1,1,FY2026Q1,no,17-2112,Manufacturing Engineers,FL,Melbourne,90000,90000,90000
+EMPOWER CLINIC SERVICES L L C,"Empower Clinic Services, L.L.C.",1,1,FY2025Q4,no,17-2112,Validation Engineers,TX,Houston,92000,92000,92000
+ENDOLOGIX,Endologix LLC,1,1,FY2025Q4,no,17-2112,Validation Engineers,CA,Los Angeles,79955,79955,79955
+ENFOTECH CONSULTING,"Enfotech & Consulting, Inc.",1,1,FY2025Q4,no,17-2112,Industrial Engineers,NJ,North Brunswick,91000,91000,91000
+ENIN SYSTEMS,ENIN SYSTEMS INC.,1,1,FY2025Q4,no,17-2112,Validation Engineers,CA,SYLMAR,79955,79955,79955
+ENVISTA,enVista LLC,1,1,FY2025Q4,no,17-2112,Industrial Engineers,IN,Carmel,90126,90126,90126
+ETERAFLEXCONNECTS,"eteraflexconnects, LLC",1,1,FY2026Q1,no,17-2112,Validation Engineers,MA,Marlborough,86902,86902,86902
+EVEREST GLOBAL SOLUTIONS,"Everest Global Solutions, Inc.",1,1,FY2025Q4,no,17-2112,Validation Engineers,NJ,Dayton,81037,81037,81037
+EXENTEC U S,"Exentec U.S., Inc.",1,1,FY2026Q1,no,17-2112,Manufacturing Engineers,OR,Tualatin,90000,90000,90000
+FAMILIA CARE,"Familia Care, Inc.",1,1,FY2025Q4,no,17-2112,Industrial Engineers,TX,Dallas,86851,86851,86851
+FGS GLOBAL,FGS Global,1,1,FY2025Q4,no,17-2112,Human Factors Engineers and Ergonomists,NY,New York,80000,80000,80000
+FILTRONA FILTERS,Filtrona Filters Inc,1,1,FY2026Q1,no,17-2112,Manufacturing Engineers,NC,Greensboro,80000,80000,80000
+FLEXTRONICS AMERICA,"Flextronics America, LLC",1,1,FY2025Q4,no,17-2112,Manufacturing Engineers,TX,Austin,85000,85000,85000
+FORD MOTOR COMPANY,FORD MOTOR COMPANY,1,1,FY2025Q4,no,17-2112,Manufacturing Engineers,MI,Dearborn,96720,96720,96720
+FREUDENBERG MEDICAL,"Freudenberg Medical, LLC",1,1,FY2025Q4,no,17-2112,Industrial Engineers,CA,Baldwin Park,95774,95774,95774
+FSC,FSC Inc.,1,1,FY2025Q4,no,17-2112,Industrial Engineers,KS,Overland Park,75000,75000,75000
+GEON PERFORMANCE SOLUTIONS,"Geon Performance Solutions, LLC",1,1,FY2026Q1,no,17-2112,Validation Engineers,CT,Putnam,76024,76024,76024
+GLOBAL STEERING SYSTEMS,"Global Steering Systems, LLC",1,1,FY2025Q4,no,17-2112,Manufacturing Engineers,CT,Watertown,75000,75000,75000
+GRAY ARCHITECTS AND ENGINEERS,"Gray Architects and Engineers, LLC",1,1,FY2025Q4,no,17-2112,Manufacturing Engineers,GA,Atlanta,74048,74048,74048
+GUARDIAN DRUG COMPANY,"Guardian Drug Company, Inc.",1,1,FY2025Q4,no,17-2112,Industrial Engineers,NJ,Dayton,89440,89440,89440
+H E B LP,"H-E-B, LP",1,1,FY2026Q1,no,17-2112,Industrial Engineers,TX,Houston,73278,73278,73278
+HA AUTOMOTIVE SYSTEMS,"HA Automotive Systems, Inc.",1,1,FY2025Q4,no,17-2112,Industrial Engineers,MI,Troy,76648,76648,76648
+HARVARD APPARATUS REGENERATIVE TECHNOLOGY,"Harvard Apparatus Regenerative Technology, Inc.",1,1,FY2025Q4,no,17-2112,Validation Engineers,MN,St. Paul,78000,78000,78000
+HARVARD BIOSCIENCE,Harvard Bioscience Inc.,1,1,FY2025Q4,no,17-2112,Validation Engineers,MN,St. Paul,78000,78000,78000
+HIRE IT PEOPLE,"Hire IT People, Inc",1,1,FY2025Q4,no,17-2112,Validation Engineers,CA,Mountain View,95680,95680,95680
+HL MANDO AMERICA CORPORATION,HL Mando America Corporation,1,1,FY2025Q4,no,17-2112,Validation Engineers,GA,Hogansville,71115,71115,71115
+HUF NORTH AMERICA AUTOMOTIVE PARTS MANUFACTURING,"Huf North America Automotive Parts Manufacturing, Corp.",1,1,FY2025Q4,no,17-2112,Industrial Engineers,TN,Greeneville,87793,87793,87793
+IFA ROTORION NORTH AMERICA,IFA ROTORION- North America LLC,1,1,FY2025Q4,no,17-2112,Industrial Engineers,SC,Summerville,86000,86000,86000
+IFAB,IFAB CORP,1,1,FY2026Q1,no,17-2112,Industrial Engineers,NC,Gastonia,85000,85000,85000
+INFONERO,INFONERO INC,1,1,FY2026Q1,no,17-2112,Manufacturing Engineers,IL,Mapleton,77300,77300,77300
+INTERTECH PLASTICS,"Intertech Plastics, LLC",1,1,FY2025Q4,no,17-2112,Validation Engineers,CO,Denver,82160,82160,82160
+JCS SYSTEMS,JCS SYSTEMS INC,1,1,FY2025Q4,no,17-2112,Validation Engineers,GA,CARTERSVILLE,79000,79000,79000
+JSW STEEL USA,JSW Steel USA Inc.,1,1,FY2025Q4,no,17-2112,Industrial Engineers,TX,Baytown,95319,95319,95319
+KENNEDY INTERNATIONAL SOFTWARE,Kennedy International Software Inc,1,1,FY2025Q4,no,17-2112,Validation Engineers,CA,Santa Clara,108160,108160,108160
+LABRADOR FUNDORA CORPORATION,Labrador & Fundora Corporation,1,1,FY2025Q4,no,17-2112,Industrial Engineers,FL,Opa-Locka,74235,74235,74235
+LANDSCAPE FORMS,"Landscape Forms, Inc.",1,1,FY2025Q4,no,17-2112,Manufacturing Engineers,MI,Kalamazoo,72000,72000,72000
+LEAR CORPORATION,LEAR CORPORATION,1,1,FY2025Q4,no,17-2112,Industrial Engineers,TX,Grand Prairie,100000,100000,100000
+LONZA BIOLOGICS,Lonza Biologics Inc.,1,1,FY2026Q1,no,17-2112,Validation Engineers,NH,Portsmouth,90870,90870,90870
+LS SOLUTIONS,"LS Solutions, Inc.",1,1,FY2026Q1,no,17-2112,Validation Engineers,CA,Irvine,80000,80000,80000
+MAGELLAN AEROSPACE NEW YORK,"Magellan Aerospace New York, Inc.",1,1,FY2026Q1,no,17-2112,Industrial Engineers,NY,Corona,87390,87390,87390
+MAKINO,Makino Inc.,1,1,FY2026Q1,no,17-2112,Industrial Engineers,MI,Auburn Hills,86214,86214,86214
+MALACH USA LLP,Malach USA LLP,1,1,FY2025Q4,no,17-2112,Manufacturing Engineers,ND,Valley City,70000,70000,70000
+MASTER COMPLIANCE,"Master Compliance, Inc.",1,1,FY2025Q4,no,17-2112,Validation Engineers,NJ,Summit,76000,76000,76000
+MAVEN COMPANIES,"MAVEN COMPANIES, INC.",1,1,FY2025Q4,no,17-2112,Industrial Engineers,CT,Bloomfield,79477,79477,79477
+MEDEFIL,"Medefil, Inc.",1,1,FY2025Q4,no,17-2112,Industrial Engineers,IL,Glendale Heights,90000,90000,90000
+MESTEK,Mestek Inc.,1,1,FY2025Q4,no,17-2112,Manufacturing Engineers,TX,Dallas,88140,88140,88140
+MI WINDOWS AND DOORS,MI Windows and Doors LLC,1,1,FY2026Q1,no,17-2112,Industrial Engineers,OR,Tualatin,90000,90000,90000
+MICRO SYSTEMS ENGINEERING,"Micro Systems Engineering, Inc.",1,1,FY2025Q4,no,17-2112,Industrial Engineers,OR,Lake Oswego,88816,88816,88816
+MICRON IDAHO SEMICONDUCTOR MANUFACTURING TRITON,Micron Idaho Semiconductor Manufacturing (Triton) LLC,1,1,FY2025Q4,no,17-2112,Manufacturing Engineers,ID,Boise,98000,98000,98000
+MICRON TECHNOLOGY,"Micron Technology, Inc.",1,1,FY2025Q4,no,17-2112,Manufacturing Engineers,VA,Manassas,95080,95080,95080
+MILLENNIUM SOFTWARE,"Millennium Software, Inc.",1,1,FY2026Q1,no,17-2112,Manufacturing Engineers,TX,Irving,76939,76939,76939
+MITAC INFORMATION SYSTEMS,Mitac Information Systems Corp.,1,1,FY2025Q4,no,17-2112,Industrial Engineers,CA,Newark,100000,100000,100000
+MONTANA SPECIALTY MILLS,MONTANA SPECIALTY MILLS LLC,1,1,FY2026Q1,no,17-2112,Industrial Engineers,MT,GREAT FALLS,95000,95000,95000
+MORTON INDUSTRIES FORT WORTH,Morton Industries Fort Worth LLC,1,1,FY2026Q1,no,17-2112,Manufacturing Engineers,TX,Fort Worth,76939,76939,76939
+MOTHERSON TECHNOLOGY SERVICES USA,"Motherson Technology Services USA, Ltd.",1,1,FY2026Q1,no,17-2112,Manufacturing Engineers,AL,Cottondale,74568,74568,74568
+MSR TECHNOLOGY GROUP,MSR TECHNOLOGY GROUP LLC,1,1,FY2025Q4,no,17-2112,Manufacturing Engineers,TX,CONROE,73500,73500,73500
+MULTILINK,Multilink Inc,1,1,FY2025Q4,no,17-2112,Manufacturing Engineers,OH,Elyria,85000,85000,85000
+N A PROJECT MANAGEMENT USA,"N&A Project Management USA, Inc",1,1,FY2026Q1,no,17-2112,Industrial Engineers,TX,Houston,84386,84386,84386
+ND GLOBAL CONSULTING SERVICES,ND Global Consulting Services Inc.,1,1,FY2025Q4,no,17-2112,Validation Engineers,CA,Santa Rosa,86528,86528,86528
+NEURALINK,Neuralink Corp.,1,1,FY2026Q1,no,17-2112,Manufacturing Engineers,CA,Fremont,95000,95000,95000
+NEW ENGLAND WHEELS,"New England Wheels, Inc.",1,1,FY2026Q1,no,17-2112,Manufacturing Engineers,MA,Billerica,86902,86902,86902
+NIDEC MOBILITY AMERICA CORPORATION,Nidec Mobility America Corporation,1,1,FY2026Q1,no,17-2112,Industrial Engineers,IL,St. Charles,85000,85000,85000
+NORTH ALABAMA FABRICATING COMPANY,"North Alabama Fabricating Company, Inc.",1,1,FY2025Q4,no,17-2112,Industrial Engineers,IL,Chicago,78208,78208,78208
+NORWOOD MEDICAL,Norwood Medical LLC,1,1,FY2025Q4,no,17-2112,Industrial Engineers,OH,Dayton,74000,74000,74000
+OMNIMETRIX,Omnimetrix  LLC,1,1,FY2025Q4,no,17-2112,Industrial Engineers,GA,Buford,80500,80500,80500
+ONEH2,"OneH2, Inc.",1,1,FY2025Q4,no,17-2112,Industrial Engineers,NC,Longview,70000,70000,70000
+ONESOURCE SERVICES US,OneSource Services US LLC,1,1,FY2026Q1,no,17-2112,Validation Engineers,CT,Shelton,89357,89357,89357
+ONESUBSEA,OneSubsea LLC,1,1,FY2026Q1,no,17-2112,Validation Engineers,AL,Mobile,92950,92950,92950
+ONWARD TECHNOLOGIES,Onward Technologies Inc,1,1,FY2026Q1,no,17-2112,Industrial Engineers,MS,Grenada,65166,65166,65166
+PENSKE LOGISTICS,Penske Logistics LLC,1,1,FY2026Q1,no,17-2112,Industrial Engineers,MO,Maryland Heights,83200,83200,83200
+PERKINELMER US,PERKINELMER US LLC,1,1,FY2025Q4,no,17-2112,Validation Engineers,CT,Shelton,90000,90000,90000
+PFIZER,PFIZER INC.,1,1,FY2026Q1,no,17-2112,Validation Engineers,WA,BOTHELL,96300,96300,96300
+PQE US INCORPORATED,PQE US Incorporated,1,1,FY2025Q4,no,17-2112,Validation Engineers,NJ,Pennington,90000,90000,90000
+PRECISION GLASS INDUSTRIES,Precision Glass Industries,1,1,FY2025Q4,no,17-2112,Industrial Engineers,TX,Houston,73278,73278,73278
+PREMIUM FAMILY PHARMACY,Premium Family Pharmacy LLC,1,1,FY2025Q4,no,17-2112,Industrial Engineers,TX,Denton,77000,77000,77000
+PRICE INDUSTRIES,"Price Industries, Inc",1,1,FY2026Q1,no,17-2112,Manufacturing Engineers,GA,Winder,75000,75000,75000
+PRIME CONTROLS L P,Prime Controls L.P.,1,1,FY2025Q4,no,17-2112,Manufacturing Engineers,TX,Sugar Land,76939,76939,76939
+PROCESS DISPLAYS,Process Displays LLC,1,1,FY2025Q4,no,17-2112,Industrial Engineers,MN,Golden Valley,78000,78000,78000
+PRODUCTION SERVICES MANAGEMENT,Production Services Management LLC,1,1,FY2025Q4,no,17-2112,Industrial Engineers,IA,Waterloo,83948,83948,83948
+PRODUCTIVE RESOURCES,"Productive Resources, LLC",1,1,FY2026Q1,no,17-2112,Manufacturing Engineers,IA,Waterloo,80854,80854,80854
+PROFESSIONAL SERVICE INDUSTRIES INC D B A INTERTEK PSI,"Professional Service Industries, Inc. d/b/a Intertek PSI",1,1,FY2026Q1,no,17-2112,Validation Engineers,TX,La Porte,76000,76000,76000
+PURDUE UNIVERSITY,Purdue University,1,1,FY2025Q4,no,17-2112,Industrial Engineers,IN,West Lafayette,66300,66300,66300
+PURE AUTOMATION CORPORATION,Pure Automation Corporation,1,1,FY2025Q4,no,17-2112,Industrial Engineers,CA,Chino,71718,71718,71718
+QCWORLDFRUIT LIMITED LIABILITY COMPANY,QCWORLDFRUIT LIMITED LIABILITY COMPANY,1,1,FY2026Q1,no,17-2112,Industrial Engineers,NJ,Vineland,76336,76336,76336
+QVALFOCUS,QvalFocus Inc.,1,1,FY2026Q1,no,17-2112,Validation Engineers,NJ,Millburn,82000,82000,82000
+R D CIRCUITS,"R&D Circuits, Inc.",1,1,FY2025Q4,no,17-2112,Manufacturing Engineers,NJ,South Plainfield,81037,81037,81037
+RAGAN CONSULTING SOLUTIONS,"RAGAN CONSULTING SOLUTIONS, LLC",1,1,FY2026Q1,no,17-2112,Manufacturing Engineers,CT,TRUMBULL,89357,89357,89357
+RELIANCE ELECTRONICS,"Reliance Electronics, Inc.",1,1,FY2025Q4,no,17-2112,Manufacturing Engineers,NJ,Totowa,81162,81162,81162
+RENEWAL BY ANDERSEN,Renewal By Andersen,1,1,FY2026Q1,no,17-2112,Industrial Engineers,MN,Cottage Grove,88986,88986,88986
+ROCKET EMS,"Rocket EMS, Inc.",1,1,FY2026Q1,no,17-2112,Validation Engineers,CA,Santa Clara,95139,95139,95139
+ROLENE,ROLENE LLC,1,1,FY2025Q4,no,17-2112,Industrial Engineers,MA,Somerville,86902,86902,86902
+ROLLS ROYCE SOLUTIONS AMERICA,Rolls-Royce Solutions America Inc.,1,1,FY2026Q1,no,17-2112,Industrial Engineers,MN,Mankato,68000,68000,68000
+ROOTS MULTI CLEAN,"Roots Multi Clean, Inc.",1,1,FY2025Q4,no,17-2112,Industrial Engineers,AL,Lacey's Spring,82576,82576,82576
+RUNERGY ALABAMA,RUNERGY ALABAMA INC,1,1,FY2026Q1,no,17-2112,Industrial Engineers,AL,HUNTSVILLE,77210,77210,77210
+RYZEN SOLUTIONS,RYZEN SOLUTIONS,1,1,FY2026Q1,no,17-2112,Validation Engineers,CA,Sunnyvale,104000,104000,104000
+SAF HOLLAND,"SAF-HOLLAND, Inc.",1,1,FY2025Q4,no,17-2112,Industrial Engineers,AR,Dumas,75000,75000,75000
+SAMSUNG AUSTIN SEMICONDUCTOR,"Samsung Austin Semiconductor, LLC.",1,1,FY2026Q1,no,17-2112,Validation Engineers,TX,Austin,75000,75000,75000
+SAREPTA THERAPEUTICS,"Sarepta Therapeutics, Inc.",1,1,FY2025Q4,no,17-2112,Manufacturing Engineers,MA,Andover,85000,85000,85000
+SEATRIUM LETOURNEAU USA,"Seatrium LeTourneau USA, Inc.",1,1,FY2026Q1,no,17-2112,Industrial Engineers,LA,Metairie,93454,93454,93454
+SEDIA,Sedia Inc,1,1,FY2026Q1,no,17-2112,Industrial Engineers,WI,Glendale,77000,77000,77000
+SEGULA TECHNOLOGIES USA,"SEGULA TECHNOLOGIES USA, INC.",1,1,FY2026Q1,no,17-2112,Industrial Engineers,PA,Macungie,74880,74880,74880
+SHANDS TEACHING HOSPITAL AND CLINICS,"SHANDS TEACHING HOSPITAL AND CLINICS, INC.",1,1,FY2025Q4,no,17-2112,Industrial Engineers,FL,Gainesville,73154,73154,73154
+SHL MEDICAL ASSEMBLY SERVICES,SHL Medical Assembly & Services LLC,1,1,FY2025Q4,no,17-2112,Manufacturing Engineers,FL,Deerfield Beach,80038,80038,80038
+SHOOLIN,Shoolin Inc,1,1,FY2025Q4,no,17-2112,Industrial Engineers,MA,North Andover,86902,86902,86902
+SIRIUS CONTROLS,Sirius Controls Inc.,1,1,FY2025Q4,no,17-2112,Industrial Engineers,TX,Midland,90438,90438,90438
+SMART KARTON NORTH AMERICA,Smart Karton North America LLC,1,1,FY2025Q4,no,17-2112,Industrial Engineers,MO,Maryland Heights,70574,70574,70574
+SOFIDEL AMERICA CORPORATION,Sofidel America Corporation,1,1,FY2025Q4,no,17-2112,Industrial Engineers,AZ,Phoenix,93000,93000,93000
+SPECIALTY BOLT AND SCREW,"Specialty Bolt and Screw, Inc.",1,1,FY2025Q4,no,17-2112,Industrial Engineers,MA,Agawam,75816,75816,75816
+SPIRIT AIRLINES,"Spirit Airlines, LLC",1,1,FY2026Q1,no,17-2112,Industrial Engineers,FL,Dania Beach,90000,90000,90000
+STARK ASSOCIATES,"STARK ASSOCIATES, LLC.",1,1,FY2025Q4,no,17-2112,Validation Engineers,TX,AUSTIN,69389,69389,69389
+STRONG TOWER CONSTRUCTION,"Strong Tower Construction, LLC",1,1,FY2025Q4,no,17-2112,Industrial Engineers,KY,Louisville,85000,85000,85000
+STRYKER CORPORATION,Stryker Corporation,1,1,FY2025Q4,no,17-2112,Industrial Engineers,CA,Fremont,100400,100400,100400
+SUPERIOR COMPOSITES CO,"Superior Composites Co., LLC",1,1,FY2026Q1,no,17-2112,Manufacturing Engineers,KY,Vanceburg,71053,71053,71053
+SYNQOR,"SynQor, Inc.",1,1,FY2025Q4,no,17-2112,Manufacturing Engineers,MA,Boxborough,92500,92500,92500
+SYSTEMS TECHNOLOGY GROUP,Systems Technology Group Inc,1,1,FY2026Q1,no,17-2112,Validation Engineers,MI,Pontiac,76648,76648,76648
+TAMED,TAMED LLC,1,1,FY2026Q1,no,17-2112,Industrial Engineers,FL,North Miami Beach,76024,76024,76024
+TAYSE INTERNATIONAL TRADING,TAYSE INTERNATIONAL TRADING INC.,1,1,FY2026Q1,no,17-2112,Industrial Engineers,GA,Calhoun,68390,68390,68390
+TECNOCAP,Tecnocap LLC,1,1,FY2025Q4,no,17-2112,Manufacturing Engineers,WV,Glen Dale,79040,79040,79040
+TEK LABS,"Tek Labs, Inc.",1,1,FY2025Q4,no,17-2112,Manufacturing Engineers,TX,Weatherford,76939,76939,76939
+TEMPUR PRODUCTION USA,"Tempur Production USA, LLC",1,1,FY2026Q1,no,17-2112,Industrial Engineers,NM,Albuquerque,91339,91339,91339
+TERMINAL INVESTMENT CORPORATION TICO MANUFACTURING DIVISION,Terminal Investment Corporation (TICO) - Manufacturing Division,1,1,FY2025Q4,no,17-2112,Manufacturing Engineers,SC,Ridgeland,84341,84341,84341
+TETRA COMPUTING,Tetra Computing LLC,1,1,FY2026Q1,no,17-2112,Validation Engineers,KS,Overland Park,83200,83200,83200
+TEXAS STATE UNIVERSITY,Texas State University,1,1,FY2026Q1,no,17-2112,Industrial Engineers,TX,San Marcos,94000,94000,94000
+THE PRODUCTIVITY TEAM,The Productivity Team LLC,1,1,FY2026Q1,no,17-2112,Industrial Engineers,OH,Sheffield,93600,93600,93600
+THERM X OF CALIFORNIA,"Therm-X of California, Inc.",1,1,FY2026Q1,no,17-2112,Manufacturing Engineers,CA,Hayward,105336,105336,105336
+TITAN INDUSTRIAL SERVICES,"Titan Industrial Services, Inc.",1,1,FY2025Q4,no,17-2112,Industrial Engineers,MD,Baltimore,85000,85000,85000
+TOTEX MANUFACTURING,Totex Manufacturing Inc.,1,1,FY2026Q1,no,17-2112,Manufacturing Engineers,CA,Torrance,79999,79999,79999
+TRADEMARK PLASTICS,"Trademark Plastics, Inc.",1,1,FY2025Q4,no,17-2112,Manufacturing Engineers,CA,Riverside,85000,85000,85000
+TUV RHEINLAND OF NORTH AMERICA,"TUV Rheinland of North America, Inc.",1,1,FY2025Q4,no,17-2112,Validation Engineers,CA,Pleasanton,100878,100878,100878
+UIPATHTEK,UIPATHTEK LLC,1,1,FY2025Q4,no,17-2112,Validation Engineers,CA,Oceanside,81245,81245,81245
+ULTIUM CELLS,Ultium Cells LLC,1,1,FY2025Q4,no,17-2112,Industrial Engineers,OH,Warren,82000,82000,82000
+UNITED PARCEL SERVICE,"United Parcel Service, Inc.",1,1,FY2025Q4,no,17-2112,Industrial Engineers,CA,Fremont,99683,99683,99683
+UNIVERSITY OF FLORIDA HEALTH CORPORATION,University of Florida Health Corporation,1,1,FY2026Q1,no,17-2112,Industrial Engineers,FL,Gainesville,77542,77542,77542
+UNIVERSITY OF HOUSTON,University of Houston,1,1,FY2026Q1,no,17-2112,Industrial Engineers,TX,Houston,75000,75000,75000
+UNIVERSITY OF LOUISVILLE,University of Louisville,1,1,FY2025Q4,no,17-2112,Industrial Engineers,KY,Louisville,62213,62213,62213
+VALENT AEROSTRUCTURES,"Valent Aerostructures, LLC",1,1,FY2025Q4,no,17-2112,Industrial Engineers,MO,Washington,70902,70902,70902
+VALIDYNE ENGINEERING CORPORATION,Validyne Engineering Corporation,1,1,FY2026Q1,no,17-2112,Industrial Engineers,CA,Canoga Park,83000,83000,83000
+VENTI AIR PRODUCTS,VENTI AIR PRODUCTS LLC,1,1,FY2025Q4,no,17-2112,Industrial Engineers,TX,ROSENBERG,74000,74000,74000
+VENUS CONCEPT USA,Venus Concept USA Inc,1,1,FY2025Q4,no,17-2112,Validation Engineers,CA,San Jose,107000,107000,107000
+VIAVI SOLUTIONS,Viavi Solutions Inc,1,1,FY2025Q4,no,17-2112,Manufacturing Engineers,VA,Paeonian Springs,110000,110000,110000
+VISUAL COMFORT,Visual Comfort LLC,1,1,FY2026Q1,no,17-2112,Industrial Engineers,TX,Houston,86775,86775,86775
+VOLVO GROUP NORTH AMERICA,"VOLVO GROUP NORTH AMERICA, LLC",1,1,FY2025Q4,no,17-2112,Manufacturing Engineers,NC,Greensboro,89000,89000,89000
+WABTEC US RAIL,"Wabtec US Rail, Inc.",1,1,FY2025Q4,no,17-2112,Validation Engineers,FL,West Melbourne,121021,121021,121021
+WAHL CLIPPER CORPORATION,Wahl Clipper Corporation,1,1,FY2025Q4,no,17-2112,Industrial Engineers,IL,Sterling,80000,80000,80000
+WELK KO FABRICATORS,"WELK-KO FABRICATORS, INC.",1,1,FY2025Q4,no,17-2112,Manufacturing Engineers,MI,Livonia,80000,80000,80000
+WESTERN EXTRUSIONS CORPORATION,Western Extrusions Corporation,1,1,FY2026Q1,no,17-2112,Industrial Engineers,TX,Carrollton,85000,85000,85000
+WESTROCK SERVICES,"WestRock Services, LLC",1,1,FY2026Q1,no,17-2112,Industrial Engineers,TX,Houston,92000,92000,92000
+WS AUDIOLOGY USA,"WS Audiology USA, Inc.",1,1,FY2026Q1,no,17-2112,Industrial Engineers,NY,Hauppauge,81037,81037,81037
+XLC SERVICES,"XLC Services, LLC",1,1,FY2025Q4,no,17-2112,Industrial Engineers,OH,Cincinnati,82000,82000,82000

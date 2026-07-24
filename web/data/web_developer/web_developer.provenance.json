@@ -1,0 +1,184 @@
+{
+  "generated_at_utc": "2026-07-24 06:19 UTC",
+  "source": "US DOL OFLC LCA Programs disclosure data (public record)",
+  "filters": {
+    "case_status": "Certified",
+    "role": "web_developer",
+    "soc_codes": [
+      "15-1254"
+    ],
+    "pw_wage_level": "I"
+  },
+  "quarters_used": [
+    "FY2025Q4",
+    "FY2026Q1"
+  ],
+  "quarters_superseded": {},
+  "rows_per_quarter": {
+    "FY2025Q4": 118580,
+    "FY2026Q1": 83120
+  },
+  "funnel": {
+    "rows_total": 201700,
+    "rows_certified": 181277,
+    "rows_soc_matched": 202,
+    "rows_selected": 30
+  },
+  "employer_groups": 19,
+  "distinct_raw_employer_spellings": 19,
+  "rows_wage_excluded_from_wage_stats": 0,
+  "case_statuses_seen": {
+    "CERTIFIED": 181277,
+    "CERTIFIED - WITHDRAWN": 15748,
+    "WITHDRAWN": 3242,
+    "DENIED": 1433
+  },
+  "wage_levels_seen": {
+    "II": 143,
+    "I": 30,
+    "III": 14,
+    "IV": 13,
+    "": 2
+  },
+  "wage_units_seen": {
+    "YEAR": 28,
+    "HOUR": 2
+  },
+  "patterns": {
+    "basis": {
+      "filings": 30,
+      "employers": 19,
+      "measured_by": "employers",
+      "min_support_employers": 3
+    },
+    "job_titles": {
+      "recurring_tokens": [
+        {
+          "token": "developer",
+          "employers": 17,
+          "filings": 27
+        },
+        {
+          "token": "web",
+          "employers": 14,
+          "filings": 21
+        }
+      ],
+      "distinct_titles": [
+        {
+          "title": "Web Developer",
+          "employers": 6,
+          "filings": 7
+        },
+        {
+          "title": "WEB DEVELOPER",
+          "employers": 2,
+          "filings": 3
+        },
+        {
+          "title": "IT Consultant (Web Developer )",
+          "employers": 1,
+          "filings": 6
+        },
+        {
+          "title": "Frontend Developer",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Full-Stack Developer",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "CRM & Web Support Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Full Stack Web Developer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Java Developer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Jr. Software Developer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Software Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "UI DEVELOPER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Web Developer (Part-Time)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Web Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Web developer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "WordPress Developer",
+          "employers": 1,
+          "filings": 1
+        }
+      ]
+    },
+    "onet_occupations": [
+      {
+        "soc_code": "15-1254.00",
+        "title": "Web Developers",
+        "employers": 19,
+        "filings": 30
+      }
+    ],
+    "placement_model": {
+      "in_house": {
+        "employers": 14,
+        "filings": 16
+      },
+      "third_party_site": {
+        "employers": 6,
+        "filings": 14
+      }
+    },
+    "industry_naics2": [
+      {
+        "code": "54",
+        "label": "Professional, Scientific, and Technical Services",
+        "employers": 10,
+        "filings": 20
+      },
+      {
+        "code": "61",
+        "label": "Educational Services",
+        "employers": 5,
+        "filings": 6
+      }
+    ]
+  },
+  "caveats": [
+    "An LCA certification is not a hire or an open role.",
+    "OPT is not sponsorship — a new grad's first job is on OPT; sponsorship comes 1-3 years later.",
+    "Employer names are conservatively normalized and may under-merge.",
+    "Career/portfolio guidance, not immigration legal advice."
+  ]
+}

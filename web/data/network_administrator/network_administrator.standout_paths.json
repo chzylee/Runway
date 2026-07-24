@@ -1,0 +1,44 @@
+{
+  "role": "network_administrator",
+  "curated_at_utc": "2026-07-24",
+  "kind": "curated-editorial",
+  "framework": "A path qualifies only when >=3 prominent, proven people in the field visibly share the capability, each with a resolving link — the pattern across standouts is the evidence, not market demand. Ranked by strength of that pattern. Curated editorial, not DOL-derived.",
+  "paths": [
+    {
+      "rank": 1,
+      "path": "Earn an expert-level hands-on certification, then teach it publicly",
+      "what_it_is": "Passing a grueling, lab-based expert certification (like Cisco's CCIE, which requires live troubleshooting under time pressure, not just multiple-choice) and then converting that mastery into public courses, YouTube channels, or books that teach other engineers.",
+      "why_it_signals": "David Bombal, Keith Barker, and Wendell Odom are all CCIE holders who each built a large public teaching platform on top of that credential — the recurring pattern is expert-level hands-on mastery paired with public teaching, not the credential alone.",
+      "people": [
+        {"name": "David Bombal", "link": "https://davidbombal.com/about-us/"},
+        {"name": "Keith Barker", "link": "https://www.cbtnuggets.com/trainers/keith-barker"},
+        {"name": "Wendell Odom", "link": "https://www.certskills.com/"}
+      ],
+      "source": "https://davidbombal.com/about-us/"
+    },
+    {
+      "rank": 2,
+      "path": "Build and maintain open-source network automation tooling",
+      "what_it_is": "Writing and publishing open-source Python tools (SSH automation libraries, config-driven source-of-truth platforms, workflow automation engines) that other network engineers adopt to replace manual CLI work.",
+      "why_it_signals": "Kirk Byers (creator of the Netmiko library), Jason Edelman (founder of Network to Code and creator of the Nautobot project), and Matt Oswalt (creator of StackStorm and NRE Labs) each earned their standing by shipping open-source automation tooling the industry actually adopted — the pattern shows public code, not just certifications, is a recognized route to standout status in this field.",
+      "people": [
+        {"name": "Kirk Byers", "link": "https://pynet.twb-tech.com/about.html"},
+        {"name": "Jason Edelman", "link": "https://jedelman.com/about/"},
+        {"name": "Matt Oswalt", "link": "https://oswalt.dev/"}
+      ],
+      "source": "https://pynet.twb-tech.com/about.html"
+    },
+    {
+      "rank": 3,
+      "path": "Build a home lab and publicly document every project",
+      "what_it_is": "Running a personal lab of servers, switches, virtualization hosts, and self-hosted services, then publishing detailed build logs, tutorials, or videos walking through how it was configured and troubleshot.",
+      "why_it_signals": "Jeff Geerling, Tom Lawrence (Lawrence Systems), and NetworkChuck each grew their reputations by documenting hands-on home-lab work in public over years — the pattern shows visible, self-directed infrastructure practice is a consistent signal among standout network and systems people, independent of any employer giving them the opportunity.",
+      "people": [
+        {"name": "Jeff Geerling", "link": "https://www.jeffgeerling.com/about/"},
+        {"name": "Tom Lawrence", "link": "https://lawrencesystems.com/"},
+        {"name": "NetworkChuck (Chuck Keith)", "link": "https://networkchuck.com/"}
+      ],
+      "source": "https://www.jeffgeerling.com/about/"
+    }
+  ]
+}

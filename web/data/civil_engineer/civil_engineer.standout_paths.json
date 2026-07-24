@@ -1,0 +1,44 @@
+{
+  "role": "civil_engineer",
+  "curated_at_utc": "2026-07-24",
+  "kind": "curated-editorial",
+  "framework": "A path qualifies only when >=3 prominent, proven people in the field visibly share the capability, each with a resolving link — the pattern across standouts is the evidence, not market demand. Ranked by strength of that pattern. Curated editorial, not DOL-derived.",
+  "paths": [
+    {
+      "rank": 1,
+      "path": "Forensic failure-analysis investigation",
+      "what_it_is": "Systematically investigating why a structure failed - reconstructing loads, testing materials, modeling the collapse mechanism - and publishing the findings as case studies other engineers learn from.",
+      "why_it_signals": "It proves an engineer can diagnose real structural behavior under uncertainty and turn hard lessons into durable, teachable knowledge, not just design to code.",
+      "people": [
+        {"name": "Henry Petroski", "link": "https://today.duke.edu/2023/06/henry-petroski-poet-laureate-technology-and-professor-engineering-and-history-dies"},
+        {"name": "Norbert Delatte", "link": "https://fulbrightscholars.org/alumni-ambassadors/norb-delatte"},
+        {"name": "Kenneth Carper", "link": "https://news.wsu.edu/news/1997/09/02/wsu-prof-honored-as-nations-foremost-building-failure-sleuth/"}
+      ],
+      "source": "https://today.duke.edu/2023/06/henry-petroski-poet-laureate-technology-and-professor-engineering-and-history-dies"
+    },
+    {
+      "rank": 2,
+      "path": "Landmark-scale structural design",
+      "what_it_is": "Leading the structural engineering of record-setting or architecturally singular buildings and bridges, from concept through construction.",
+      "why_it_signals": "Delivering a landmark under real physical and safety constraints demonstrates command of structural theory, materials, and construction pushed to the edge of what has been built before.",
+      "people": [
+        {"name": "William F. Baker", "link": "https://www.som.com/news/bill-baker-interview-building-the-worlds-tallest-skyscraper-the-burj-khalifa/"},
+        {"name": "Leslie E. Robertson", "link": "https://skyscraper.org/speakers/leslie-e-robertson/"},
+        {"name": "Ian Firth", "link": "https://www.ianfirth.com/"}
+      ],
+      "source": "https://www.som.com/news/bill-baker-interview-building-the-worlds-tallest-skyscraper-the-burj-khalifa/"
+    },
+    {
+      "rank": 3,
+      "path": "Public structural-engineering communication",
+      "what_it_is": "Explaining how structures work, and why they sometimes fail, to a broad public audience through video, writing, or talks - grounded in real practicing experience.",
+      "why_it_signals": "Translating rigorous engineering judgment into content a lay audience trusts and keeps coming back to shows a depth of understanding rare enough to set a candidate apart.",
+      "people": [
+        {"name": "Grady Hillhouse", "link": "https://practical.engineering/about"},
+        {"name": "Nehemiah Mabry", "link": "https://www.nehemiahmabry.com/"},
+        {"name": "Justin Roczniak", "link": "https://en.wikipedia.org/wiki/Justin_Roczniak"}
+      ],
+      "source": "https://practical.engineering/about"
+    }
+  ]
+}

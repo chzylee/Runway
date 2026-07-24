@@ -1,0 +1,251 @@
+{
+  "generated_at_utc": "2026-07-24 06:20 UTC",
+  "source": "US DOL OFLC LCA Programs disclosure data (public record)",
+  "filters": {
+    "case_status": "Certified",
+    "role": "materials_engineer",
+    "soc_codes": [
+      "17-2131"
+    ],
+    "pw_wage_level": "I"
+  },
+  "quarters_used": [
+    "FY2025Q4",
+    "FY2026Q1"
+  ],
+  "quarters_superseded": {},
+  "rows_per_quarter": {
+    "FY2025Q4": 118580,
+    "FY2026Q1": 83120
+  },
+  "funnel": {
+    "rows_total": 201700,
+    "rows_certified": 181277,
+    "rows_soc_matched": 360,
+    "rows_selected": 35
+  },
+  "employer_groups": 29,
+  "distinct_raw_employer_spellings": 29,
+  "rows_wage_excluded_from_wage_stats": 0,
+  "case_statuses_seen": {
+    "CERTIFIED": 181277,
+    "CERTIFIED - WITHDRAWN": 15748,
+    "WITHDRAWN": 3242,
+    "DENIED": 1433
+  },
+  "wage_levels_seen": {
+    "III": 154,
+    "IV": 75,
+    "II": 73,
+    "I": 35,
+    "": 23
+  },
+  "wage_units_seen": {
+    "YEAR": 33,
+    "HOUR": 2
+  },
+  "patterns": {
+    "basis": {
+      "filings": 35,
+      "employers": 29,
+      "measured_by": "employers",
+      "min_support_employers": 3
+    },
+    "job_titles": {
+      "recurring_tokens": [
+        {
+          "token": "engineer",
+          "employers": 15,
+          "filings": 16
+        },
+        {
+          "token": "postdoctoral",
+          "employers": 7,
+          "filings": 11
+        },
+        {
+          "token": "process",
+          "employers": 7,
+          "filings": 8
+        },
+        {
+          "token": "research",
+          "employers": 6,
+          "filings": 10
+        },
+        {
+          "token": "materials",
+          "employers": 6,
+          "filings": 6
+        },
+        {
+          "token": "associate",
+          "employers": 3,
+          "filings": 6
+        }
+      ],
+      "distinct_titles": [
+        {
+          "title": "Materials Engineer",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "title": "Process Engineer",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "Postdoctoral Research Associate",
+          "employers": 2,
+          "filings": 4
+        },
+        {
+          "title": "Postdoctoral Scholar",
+          "employers": 2,
+          "filings": 3
+        },
+        {
+          "title": "Research Scientist",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Postdoctoral Research Fellow",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Process Support Engineer",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Applications Development Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Material Process Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Metallurgist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Metrology Application Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Fellow/Department of Mechanical Engineering",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Process Metallurgist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Process and Reliability Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Product Development Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Production Superintendent",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "R&D Materials Engineer I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Assistant Professor",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sr. Materials Product Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Test Engineer",
+          "employers": 1,
+          "filings": 1
+        }
+      ]
+    },
+    "onet_occupations": [
+      {
+        "soc_code": "17-2131.00",
+        "title": "Materials Engineers",
+        "employers": 29,
+        "filings": 35
+      }
+    ],
+    "placement_model": {
+      "in_house": {
+        "employers": 28,
+        "filings": 34
+      },
+      "third_party_site": {
+        "employers": 1,
+        "filings": 1
+      }
+    },
+    "industry_naics2": [
+      {
+        "code": "61",
+        "label": "Educational Services",
+        "employers": 10,
+        "filings": 15
+      },
+      {
+        "code": "33",
+        "label": "Manufacturing",
+        "employers": 9,
+        "filings": 10
+      },
+      {
+        "code": "54",
+        "label": "Professional, Scientific, and Technical Services",
+        "employers": 4,
+        "filings": 4
+      },
+      {
+        "code": "32",
+        "label": "Manufacturing",
+        "employers": 3,
+        "filings": 3
+      }
+    ]
+  },
+  "caveats": [
+    "An LCA certification is not a hire or an open role.",
+    "OPT is not sponsorship — a new grad's first job is on OPT; sponsorship comes 1-3 years later.",
+    "Employer names are conservatively normalized and may under-merge.",
+    "Career/portfolio guidance, not immigration legal advice."
+  ]
+}

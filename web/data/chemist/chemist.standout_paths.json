@@ -1,0 +1,44 @@
+{
+  "role": "chemist",
+  "curated_at_utc": "2026-07-24",
+  "kind": "curated-editorial",
+  "framework": "A path qualifies only when >=3 prominent, proven people in the field visibly share the capability, each with a resolving link — the pattern across standouts is the evidence, not market demand. Ranked by strength of that pattern. Curated editorial, not DOL-derived.",
+  "paths": [
+    {
+      "rank": 1,
+      "path": "Public chemistry science communication via a self-produced video channel",
+      "what_it_is": "Building a public YouTube/TikTok channel where a trained chemist runs and films real syntheses and reactions, explains the underlying chemistry in depth, and grows a large recurring audience around it.",
+      "why_it_signals": "Sustaining a channel like this demands real bench mastery performed under public scrutiny plus the discipline to explain and package it consistently, which reads as initiative and communication skill worth sponsoring.",
+      "people": [
+        {"name": "Nigel Braun (NileRed)", "link": "https://www.nile.red/"},
+        {"name": "Dr. Josiah Newton (That Chemist)", "link": "https://newchem.ca/"},
+        {"name": "NurdRage", "link": "https://www.youtube.com/@NurdRage"}
+      ],
+      "source": "https://www.nile.red/"
+    },
+    {
+      "rank": 2,
+      "path": "Open-source cheminformatics / computational-chemistry tool building",
+      "what_it_is": "Contributing merged, production-grade features or documentation to widely used open-source chemistry software such as RDKit, or shipping and publicly writing up your own cheminformatics tools.",
+      "why_it_signals": "A merged contribution to software the whole industry runs on is public, verifiable proof of both chemistry judgment and software craft that a resume line can't fake.",
+      "people": [
+        {"name": "Andrew Dalke", "link": "http://dalkescientific.com/"},
+        {"name": "Jeremy Monat, PhD", "link": "https://bertiewooster.github.io/"},
+        {"name": "David Cosgrove", "link": "https://www.linkedin.com/in/davidacosgrove"}
+      ],
+      "source": "http://dalkescientific.com/"
+    },
+    {
+      "rank": 3,
+      "path": "Public industry/drug-discovery chemistry writing",
+      "what_it_is": "Running a long-running blog or newsletter that translates real pharma or chemical-industry work, technical judgment, and trends for a broad technical readership.",
+      "why_it_signals": "Sustained, well-argued public writing about the industry demonstrates deep domain fluency plus the rarer ability to communicate it clearly, a combination recruiters treat as a proxy for seniority beyond years of experience.",
+      "people": [
+        {"name": "Derek Lowe", "link": "https://www.science.org/blogs/pipeline"},
+        {"name": "Ash Jogalekar", "link": "https://medchemash.substack.com/"},
+        {"name": "Tony Maiorana", "link": "https://polymerist.substack.com/"}
+      ],
+      "source": "https://www.science.org/blogs/pipeline"
+    }
+  ]
+}

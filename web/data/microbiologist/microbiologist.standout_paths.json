@@ -1,0 +1,45 @@
+{
+  "role": "microbiologist",
+  "curated_at_utc": "2026-07-24",
+  "kind": "curated-editorial",
+  "framework": "A path qualifies only when >=3 prominent, proven people in the field visibly share the capability, each with a resolving link — the pattern across standouts is the evidence, not market demand. Ranked by strength of that pattern. Curated editorial, not DOL-derived.",
+  "paths": [
+    {
+      "rank": 1,
+      "path": "Build open-source bioinformatics tools microbiologists run their analyses on",
+      "what_it_is": "Design, build, and maintain the open-source software (QIIME 2, DADA2, mothur, phyloseq, etc.) that microbiologists and microbiome researchers worldwide use daily to process, denoise, and analyze sequencing data, developed and released out of an academic research lab rather than a company.",
+      "why_it_signals": "Four senior, still-active academic microbiologists/bioinformaticians each built and continue to maintain a tool that became a de facto field standard (QIIME 2, DADA2, mothur, phyloseq), each cited thousands of times and taught in nearly every microbiome methods course, showing that becoming the person behind the standard tool is a repeatable, learnable career pattern built on software craft, not company formation.",
+      "people": [
+        {"name": "J. Gregory Caporaso", "link": "https://experts.nau.edu/en/persons/greg-caporaso/"},
+        {"name": "Benjamin Callahan", "link": "https://cvm.ncsu.edu/people/bcallah/"},
+        {"name": "Patrick Schloss", "link": "https://medschool.umich.edu/profile/2341/patrick-d-schloss"},
+        {"name": "Susan Holmes", "link": "https://profiles.stanford.edu/susan-holmes"}
+      ],
+      "source": "https://experts.nau.edu/en/persons/greg-caporaso/"
+    },
+    {
+      "rank": 2,
+      "path": "Develop and publish a standardized lab protocol the field adopts wholesale",
+      "what_it_is": "Design, test, and publish a wet-lab sample-collection, extraction, or sequencing protocol (e.g., the Earth Microbiome Project's standardized DNA extraction and 16S/18S/ITS amplicon protocols) precise and reproducible enough that thousands of other labs adopt it directly instead of writing their own.",
+      "why_it_signals": "Three prominent microbial ecologists each co-authored and published a standardized protocol that became the field's default method, adopted by thousands of independent labs worldwide and underpinning some of microbiology's most-cited papers, showing that becoming known as the author of 'the protocol everyone runs' is a repeatable craft, not a one-off achievement.",
+      "people": [
+        {"name": "Noah Fierer", "link": "https://www.colorado.edu/ebio/noah-fierer"},
+        {"name": "Janet Jansson", "link": "https://www.emsl.pnnl.gov/people/janet-jansson"},
+        {"name": "Luke Thompson", "link": "https://www.aoml.noaa.gov/luke-thompson/"}
+      ],
+      "source": "https://www.colorado.edu/ebio/noah-fierer"
+    },
+    {
+      "rank": 3,
+      "path": "Communicate microbiology to a public audience via podcast or blog",
+      "what_it_is": "Build a real, ongoing public-facing show, blog, or newsletter that explains microbiology/infectious disease to a lay or semi-lay audience, on top of formal PhD-level training.",
+      "why_it_signals": "Three PhD-credentialed microbiologists each independently built durable, named public media properties (podcasts/blogs with real archives and audiences) alongside their science careers, showing this is a learnable, repeatable capability rather than one famous exception.",
+      "people": [
+        {"name": "Vincent Racaniello", "link": "https://asm.org/biographies/vincent-racaniello"},
+        {"name": "Justine Dees", "link": "https://joyfulmicrobe.com/about/"},
+        {"name": "Tess Deyett", "link": "https://micro-bites.org/home-2/people/tess-deyett/"}
+      ],
+      "source": "https://asm.org/biographies/vincent-racaniello"
+    }
+  ]
+}

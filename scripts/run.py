@@ -79,8 +79,7 @@ def main():
     built = build_shortlist.build_all(requested_quarters=requested)
     print("[run] done:")
     for role in built:
-        print(f"[run]   web/data/{role}.json" + " " * max(1, 22 - len(role))
-              + "site data (+ .provenance.json, .csv)")
+        print(f"[run]   web/data/{role}/{role}.json   site data (+ .provenance.json, .csv)")
     print("[run]   web/prompts/recommendations.md   prompt-template mirror (do not edit)")
     print("[run]   serve locally: python -m http.server  (rooted at web/)")
 

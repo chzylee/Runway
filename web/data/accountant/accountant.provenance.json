@@ -1,0 +1,1018 @@
+{
+  "generated_at_utc": "2026-07-24 06:20 UTC",
+  "source": "US DOL OFLC LCA Programs disclosure data (public record)",
+  "filters": {
+    "case_status": "Certified",
+    "role": "accountant",
+    "soc_codes": [
+      "13-2011"
+    ],
+    "pw_wage_level": "I"
+  },
+  "quarters_used": [
+    "FY2025Q4",
+    "FY2026Q1"
+  ],
+  "quarters_superseded": {},
+  "rows_per_quarter": {
+    "FY2025Q4": 118580,
+    "FY2026Q1": 83120
+  },
+  "funnel": {
+    "rows_total": 201700,
+    "rows_certified": 181277,
+    "rows_soc_matched": 2267,
+    "rows_selected": 451
+  },
+  "employer_groups": 320,
+  "distinct_raw_employer_spellings": 323,
+  "rows_wage_excluded_from_wage_stats": 1,
+  "case_statuses_seen": {
+    "CERTIFIED": 181277,
+    "CERTIFIED - WITHDRAWN": 15748,
+    "WITHDRAWN": 3242,
+    "DENIED": 1433
+  },
+  "wage_levels_seen": {
+    "II": 854,
+    "IV": 485,
+    "I": 451,
+    "III": 424,
+    "": 53
+  },
+  "wage_units_seen": {
+    "YEAR": 365,
+    "HOUR": 84,
+    "BI-WEEKLY": 1,
+    "WEEK": 1
+  },
+  "patterns": {
+    "basis": {
+      "filings": 451,
+      "employers": 320,
+      "measured_by": "employers",
+      "min_support_employers": 3
+    },
+    "job_titles": {
+      "recurring_tokens": [
+        {
+          "token": "accountant",
+          "employers": 235,
+          "filings": 259
+        },
+        {
+          "token": "staff",
+          "employers": 63,
+          "filings": 69
+        },
+        {
+          "token": "accounting",
+          "employers": 28,
+          "filings": 33
+        },
+        {
+          "token": "associate",
+          "employers": 21,
+          "filings": 29
+        },
+        {
+          "token": "financial",
+          "employers": 19,
+          "filings": 22
+        },
+        {
+          "token": "analyst",
+          "employers": 18,
+          "filings": 19
+        },
+        {
+          "token": "senior",
+          "employers": 17,
+          "filings": 25
+        },
+        {
+          "token": "specialist",
+          "employers": 16,
+          "filings": 23
+        },
+        {
+          "token": "tax",
+          "employers": 12,
+          "filings": 22
+        },
+        {
+          "token": "auditor",
+          "employers": 12,
+          "filings": 16
+        },
+        {
+          "token": "audit",
+          "employers": 12,
+          "filings": 13
+        },
+        {
+          "token": "manager",
+          "employers": 11,
+          "filings": 12
+        },
+        {
+          "token": "finance",
+          "employers": 8,
+          "filings": 9
+        },
+        {
+          "token": "accounts",
+          "employers": 5,
+          "filings": 5
+        },
+        {
+          "token": "management",
+          "employers": 5,
+          "filings": 5
+        },
+        {
+          "token": "reporting",
+          "employers": 5,
+          "filings": 5
+        },
+        {
+          "token": "assistant",
+          "employers": 4,
+          "filings": 5
+        },
+        {
+          "token": "cost",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "controller",
+          "employers": 3,
+          "filings": 10
+        },
+        {
+          "token": "assurance",
+          "employers": 3,
+          "filings": 4
+        },
+        {
+          "token": "business",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "corporate",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "project",
+          "employers": 3,
+          "filings": 3
+        }
+      ],
+      "distinct_titles": [
+        {
+          "title": "Accountant",
+          "employers": 108,
+          "filings": 124
+        },
+        {
+          "title": "Staff Accountant",
+          "employers": 49,
+          "filings": 53
+        },
+        {
+          "title": "ACCOUNTANT",
+          "employers": 12,
+          "filings": 13
+        },
+        {
+          "title": "STAFF ACCOUNTANT",
+          "employers": 8,
+          "filings": 8
+        },
+        {
+          "title": "Associate",
+          "employers": 7,
+          "filings": 7
+        },
+        {
+          "title": "Senior Accountant",
+          "employers": 7,
+          "filings": 7
+        },
+        {
+          "title": "Accounting Specialist",
+          "employers": 6,
+          "filings": 8
+        },
+        {
+          "title": "Tax Accountant",
+          "employers": 5,
+          "filings": 5
+        },
+        {
+          "title": "Audit Associate",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "title": "Auditor",
+          "employers": 3,
+          "filings": 5
+        },
+        {
+          "title": "Accounting Analyst",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "Accounting Manager",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "Cost Accountant",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "Financial Accountant",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "Project Accountant",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "Accountant 2",
+          "employers": 2,
+          "filings": 3
+        },
+        {
+          "title": "Financial Analyst",
+          "employers": 2,
+          "filings": 3
+        },
+        {
+          "title": "Accounts Manager",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Corporate Accountant",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Financial Reporting Accountant",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Group Accountant",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Management Accountant",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Tax Consultant",
+          "employers": 1,
+          "filings": 8
+        },
+        {
+          "title": "Fund Controller",
+          "employers": 1,
+          "filings": 7
+        },
+        {
+          "title": "Accountants and Auditors - KBGFJG265808-3",
+          "employers": 1,
+          "filings": 6
+        },
+        {
+          "title": "Accountants and Auditors - KBGFJG218083-15",
+          "employers": 1,
+          "filings": 5
+        },
+        {
+          "title": "Accountants and Auditors - KBGFJG266624-3",
+          "employers": 1,
+          "filings": 5
+        },
+        {
+          "title": "Senior Associate",
+          "employers": 1,
+          "filings": 5
+        },
+        {
+          "title": "Accountants and Auditors - KBGFJG218762-7",
+          "employers": 1,
+          "filings": 4
+        },
+        {
+          "title": "Accountants and Auditors - KBGFJG222003-4",
+          "employers": 1,
+          "filings": 4
+        },
+        {
+          "title": "Accountants and Auditors - KBGFJG220299-6",
+          "employers": 1,
+          "filings": 3
+        },
+        {
+          "title": "Accountants and Auditors - KBGFJG222555-6",
+          "employers": 1,
+          "filings": 3
+        },
+        {
+          "title": "Accountants and Auditors - KBGFJG266194-3",
+          "employers": 1,
+          "filings": 3
+        },
+        {
+          "title": "Accountants and Auditors - KBGFJG274383-3",
+          "employers": 1,
+          "filings": 3
+        },
+        {
+          "title": "Accountants and Auditors - KBGFJG331205-2",
+          "employers": 1,
+          "filings": 3
+        },
+        {
+          "title": "Accountants and Auditors - KBGFJG331449-2",
+          "employers": 1,
+          "filings": 3
+        },
+        {
+          "title": "Accountants and Auditors - KBGFJG331823-4",
+          "employers": 1,
+          "filings": 3
+        },
+        {
+          "title": "Accountants and Auditors - KBGFJG331888-2",
+          "employers": 1,
+          "filings": 3
+        },
+        {
+          "title": "Accountants and Auditors - Kbgfjg266470-5",
+          "employers": 1,
+          "filings": 3
+        },
+        {
+          "title": "Accounting and Financial Planning Specialist",
+          "employers": 1,
+          "filings": 3
+        },
+        {
+          "title": "ACCOUNTANT/LINE PRODUCER",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Accountants and Auditors - KBGFJG221570-21",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Accountants and Auditors - KBGFJG274377-2",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Accountants and Auditors - KBGFJG330310-2",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Accountants and Auditors - KBGFJG332803-2",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Accountants and Auditors - KBGFJG339640-2",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Audit & Assurance Senior Assistant",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "CP-Leadership Resident Yeat 2",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Finance Associate",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Staff Auditor",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Tax Senior",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Tax Specialist",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "ACCOUNT COORDINATOR (LOGISTICS)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "ACCOUNTANT & AUDITOR",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "ACCOUNTANT, MANAGEMENT REPORTING",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "ACCOUNTING MANAGER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "ACCOUNTING SPECIALIST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Acccountant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Accountant (Client Billing and Collections Supervisor)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Accountant (Financial Analyst)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Accountant / Auditor",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Accountant Assistant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Accountant II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Accountant, Rotational Program",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Accountants and Auditors",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Accountants and Auditors - KBGFJG222594-2",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Accounting Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Accounting Associate - KBGFJG274040-2",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Accounting Professional",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Accounting Specialist I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Accounting Supervisor",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Accounting/Finance Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Accounts Payable Accountant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Accounts Payable Specialist I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Accoutant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Analyst, Technology Audit",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate Accountant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Audit Assurance Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Audit Senior Staff Accountant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Auditor Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Billing Analyst - LBCS",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business / Operational Audit [00080459]",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Business Financial Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "COST ACCOUNTANT",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Controller",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Corporate Auditor",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "ENGAGEMENT MANAGER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Engagement Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Expense Management Accountant, AVP",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Experienced Staff - Audit & Assurance",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "FAAS - Experienced Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "FINANCE COORDINATOR",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "FINANCIAL REPORTING ACCOUNTANT",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "FINANCIAL SPECIALIST",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "FUND CONTROLLER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Finance Generalist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Finance and Accounting Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Finance and Administration Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Financial & Accounting Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Financial Account Administrator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Financial Accounting Audit Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Financial Analyst (Accounting/Fiscal Manager III)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Financial Planning and Analysis Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Financial Reporting and Analyst/AVP",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Financial and Tax Accounting Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Fiscal Assistant - General Fund",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Full Charge Accountant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "GL Accountant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "General Ledger Accountant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Hotel Accountant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "IN-HOUSE ACCOUNTANT",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "International Senior Accountant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "International Tax Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Investigations Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "JUNIOR ACCOUNTANT",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Jr. Staff Accountant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Lead Assistant Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Management accountant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Operations Audit Senior Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Principal and Controller",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Regional Finance and Commercial Operations Lead",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Retail Reconciliation Auditor",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "SENIOR ACCOUNTANT",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "SENIOR AUDITOR",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "STAFF AUDITOR",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Auditor",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Auditor II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Staff Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior finance and accounting analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sr Tax Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sr. Accountant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Staff Accountant II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Tax Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Tax Cumulating and Accounts Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Technical Accounting Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Time & Labor Business Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Transaction Advisory Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Treasury Specialist I (Accounting)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "accountant",
+          "employers": 1,
+          "filings": 1
+        }
+      ]
+    },
+    "onet_occupations": [
+      {
+        "soc_code": "13-2011.00",
+        "title": "Accountants and Auditors",
+        "employers": 320,
+        "filings": 451
+      }
+    ],
+    "placement_model": {
+      "in_house": {
+        "employers": 314,
+        "filings": 430
+      },
+      "third_party_site": {
+        "employers": 9,
+        "filings": 21
+      }
+    },
+    "industry_naics2": [
+      {
+        "code": "54",
+        "label": "Professional, Scientific, and Technical Services",
+        "employers": 127,
+        "filings": 221
+      },
+      {
+        "code": "33",
+        "label": "Manufacturing",
+        "employers": 31,
+        "filings": 40
+      },
+      {
+        "code": "42",
+        "label": "Wholesale Trade",
+        "employers": 24,
+        "filings": 27
+      },
+      {
+        "code": "61",
+        "label": "Educational Services",
+        "employers": 19,
+        "filings": 20
+      },
+      {
+        "code": "52",
+        "label": "Finance and Insurance",
+        "employers": 15,
+        "filings": 18
+      },
+      {
+        "code": "81",
+        "label": "Other Services (except Public Administration)",
+        "employers": 11,
+        "filings": 13
+      },
+      {
+        "code": "45",
+        "label": "Retail Trade",
+        "employers": 11,
+        "filings": 11
+      },
+      {
+        "code": "23",
+        "label": "Construction",
+        "employers": 10,
+        "filings": 11
+      },
+      {
+        "code": "62",
+        "label": "Health Care and Social Assistance",
+        "employers": 10,
+        "filings": 11
+      },
+      {
+        "code": "72",
+        "label": "Accommodation and Food Services",
+        "employers": 8,
+        "filings": 9
+      },
+      {
+        "code": "44",
+        "label": "Retail Trade",
+        "employers": 8,
+        "filings": 8
+      },
+      {
+        "code": "51",
+        "label": "Information",
+        "employers": 7,
+        "filings": 8
+      },
+      {
+        "code": "48",
+        "label": "Transportation and Warehousing",
+        "employers": 7,
+        "filings": 7
+      },
+      {
+        "code": "56",
+        "label": "Administrative and Support and Waste Management and Remediation Services",
+        "employers": 6,
+        "filings": 21
+      },
+      {
+        "code": "32",
+        "label": "Manufacturing",
+        "employers": 5,
+        "filings": 5
+      },
+      {
+        "code": "53",
+        "label": "Real Estate and Rental and Leasing",
+        "employers": 5,
+        "filings": 5
+      },
+      {
+        "code": "31",
+        "label": "Manufacturing",
+        "employers": 4,
+        "filings": 4
+      },
+      {
+        "code": "49",
+        "label": "Transportation and Warehousing",
+        "employers": 4,
+        "filings": 4
+      },
+      {
+        "code": "55",
+        "label": "Management of Companies and Enterprises",
+        "employers": 4,
+        "filings": 4
+      }
+    ]
+  },
+  "caveats": [
+    "An LCA certification is not a hire or an open role.",
+    "OPT is not sponsorship — a new grad's first job is on OPT; sponsorship comes 1-3 years later.",
+    "Employer names are conservatively normalized and may under-merge.",
+    "Career/portfolio guidance, not immigration legal advice."
+  ]
+}

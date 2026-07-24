@@ -1,0 +1,44 @@
+{
+  "role": "project_management_specialist",
+  "curated_at_utc": "2026-07-24",
+  "kind": "curated-editorial",
+  "framework": "A path qualifies only when >=3 prominent, proven people in the field visibly share the capability, each with a resolving link — the pattern across standouts is the evidence, not market demand. Ranked by strength of that pattern. Curated editorial, not DOL-derived.",
+  "paths": [
+    {
+      "rank": 1,
+      "path": "Designing and teaching a scaled-delivery methodology",
+      "what_it_is": "Codifying your own delivery practice into a repeatable, teachable methodology (an agile coaching curriculum, a scaling framework, a certification course) and personally training other practitioners and organizations to adopt it.",
+      "why_it_signals": "Multiple independently prominent delivery leaders built their standing the same way — turning personal delivery practice into a licensable, teachable methodology used by thousands of other practitioners — which shows the differentiator is a learnable craft (curriculum design plus train-the-trainer delivery), not innate charisma.",
+      "people": [
+        {"name": "Mike Cohn", "link": "https://www.mountaingoatsoftware.com/site/about"},
+        {"name": "Lyssa Adkins", "link": "https://lyssaadkins.com/about-lyssa/"},
+        {"name": "Dean Leffingwell", "link": "https://scalingsoftwareagility.wordpress.com/about-2/"}
+      ],
+      "source": "https://www.mountaingoatsoftware.com/site/about"
+    },
+    {
+      "rank": 2,
+      "path": "Long-running public program-management education platform",
+      "what_it_is": "Building and personally hosting a recurring, long-running public teaching format — a podcast, interview series, or education site — that explains and demonstrates delivery practice episode after episode for years, not a single viral post.",
+      "why_it_signals": "Several senior project and program leaders earned industry-recognized authority through the same mechanism — sustained, disciplined public teaching sustained over a decade or more — which shows the credibility comes from consistent repetition, a habit a new grad can start building immediately rather than something that requires seniority first.",
+      "people": [
+        {"name": "Cornelius Fichtner", "link": "https://www.project-management-podcast.com/cornelius-fichtner"},
+        {"name": "Ricardo Vargas", "link": "https://ricardo-vargas.com/podcasts/"},
+        {"name": "Ben Aston", "link": "https://benaston.com"}
+      ],
+      "source": "https://www.project-management-podcast.com/cornelius-fichtner"
+    },
+    {
+      "rank": 3,
+      "path": "Practitioner newsletter codifying delivery playbooks",
+      "what_it_is": "Writing a regular newsletter or blog, grounded in your own day-to-day program or project work, that turns lived delivery experience into named frameworks and playbooks written for peers doing the same job.",
+      "why_it_signals": "Several working project and technical program managers have differentiated themselves early in their careers this way, showing that externalizing and structuring your own delivery thinking into a public, citable body of work is itself a recognizable and learnable signal of standout capability, distinct from simply doing the job well.",
+      "people": [
+        {"name": "James Dayhuff", "link": "https://thetpmcraft.substack.com"},
+        {"name": "Aadil Maan", "link": "https://artoftpm.substack.com/about"},
+        {"name": "Elizabeth Harrin", "link": "https://rebelsguidetopm.com/about/"}
+      ],
+      "source": "https://thetpmcraft.substack.com"
+    }
+  ]
+}

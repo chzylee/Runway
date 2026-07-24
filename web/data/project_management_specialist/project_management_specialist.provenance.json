@@ -1,0 +1,514 @@
+{
+  "generated_at_utc": "2026-07-24 06:20 UTC",
+  "source": "US DOL OFLC LCA Programs disclosure data (public record)",
+  "filters": {
+    "case_status": "Certified",
+    "role": "project_management_specialist",
+    "soc_codes": [
+      "13-1082"
+    ],
+    "pw_wage_level": "I"
+  },
+  "quarters_used": [
+    "FY2025Q4",
+    "FY2026Q1"
+  ],
+  "quarters_superseded": {},
+  "rows_per_quarter": {
+    "FY2025Q4": 118580,
+    "FY2026Q1": 83120
+  },
+  "funnel": {
+    "rows_total": 201700,
+    "rows_certified": 181277,
+    "rows_soc_matched": 1152,
+    "rows_selected": 107
+  },
+  "employer_groups": 89,
+  "distinct_raw_employer_spellings": 90,
+  "rows_wage_excluded_from_wage_stats": 0,
+  "case_statuses_seen": {
+    "CERTIFIED": 181277,
+    "CERTIFIED - WITHDRAWN": 15748,
+    "WITHDRAWN": 3242,
+    "DENIED": 1433
+  },
+  "wage_levels_seen": {
+    "IV": 385,
+    "III": 335,
+    "II": 293,
+    "I": 107,
+    "": 32
+  },
+  "wage_units_seen": {
+    "YEAR": 90,
+    "HOUR": 17
+  },
+  "patterns": {
+    "basis": {
+      "filings": 107,
+      "employers": 89,
+      "measured_by": "employers",
+      "min_support_employers": 3
+    },
+    "job_titles": {
+      "recurring_tokens": [
+        {
+          "token": "project",
+          "employers": 58,
+          "filings": 69
+        },
+        {
+          "token": "manager",
+          "employers": 44,
+          "filings": 55
+        },
+        {
+          "token": "specialist",
+          "employers": 17,
+          "filings": 20
+        },
+        {
+          "token": "management",
+          "employers": 15,
+          "filings": 18
+        },
+        {
+          "token": "assistant",
+          "employers": 10,
+          "filings": 13
+        },
+        {
+          "token": "program",
+          "employers": 9,
+          "filings": 14
+        },
+        {
+          "token": "coordinator",
+          "employers": 8,
+          "filings": 8
+        },
+        {
+          "token": "engineer",
+          "employers": 8,
+          "filings": 8
+        },
+        {
+          "token": "analyst",
+          "employers": 5,
+          "filings": 5
+        },
+        {
+          "token": "associate",
+          "employers": 5,
+          "filings": 5
+        },
+        {
+          "token": "product",
+          "employers": 5,
+          "filings": 5
+        },
+        {
+          "token": "controls",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "data",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "lead",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "operations",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "planning",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "production",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "senior",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "support",
+          "employers": 3,
+          "filings": 3
+        }
+      ],
+      "distinct_titles": [
+        {
+          "title": "Project Management Specialist",
+          "employers": 13,
+          "filings": 16
+        },
+        {
+          "title": "Project Manager",
+          "employers": 11,
+          "filings": 12
+        },
+        {
+          "title": "Assistant Project Manager",
+          "employers": 5,
+          "filings": 8
+        },
+        {
+          "title": "ASSISTANT PROJECT MANAGER",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "Project Coordinator",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "Project Engineer",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "Program Manager I",
+          "employers": 2,
+          "filings": 6
+        },
+        {
+          "title": "Manager, Premium Support",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Planning and Production Engineer",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Program Manager",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Project Controls Specialist",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "PROJECT MANAGER",
+          "employers": 1,
+          "filings": 2
+        },
+        {
+          "title": "Account Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Account Supervisor",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Architectural Design Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Assistant Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Associate Director",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Asst. Project Manager, Construction Mgmt.",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Claims Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Construction Project Coordinator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Data Project Management Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Digital Lead",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Goose Works Project Manager I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Junior Project Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Manager of Scholar Support Services",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Manager, Care Contiuum Operations",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Marketing Manager II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "OPERATIONS & PROJECT ENGINEER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Operational Project Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "PROGRAM MANAGER II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Product Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Product Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Product Manager - Technology",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Production Software Analyst (Systems & Data)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Professional Services - Solution Consultant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Program Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Program Manager (PM), Country Impact Team (CIT)",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Program Manager- Technology I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Program Operations Coordinator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Assistant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Controls Analyst I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Controls Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Coordinator, Construction Mgmt.",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Engineer II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Management Associate - Global",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Manager 1",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Manager Aftermarket",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Manager Clinical Research",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Manager, Cost Control Lead",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Scheduler II",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project and Data Coordinator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Project Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Residency Coordinator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "SENIOR CLIENT DELIVERY LEAD",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "School Planning Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Product Manager",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Senior Product Manager, Technical",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Sr. NPI Program Manager",
+          "employers": 1,
+          "filings": 1
+        }
+      ]
+    },
+    "onet_occupations": [
+      {
+        "soc_code": "13-1082.00",
+        "title": "Project Management Specialists",
+        "employers": 89,
+        "filings": 107
+      }
+    ],
+    "placement_model": {
+      "in_house": {
+        "employers": 85,
+        "filings": 103
+      },
+      "third_party_site": {
+        "employers": 4,
+        "filings": 4
+      }
+    },
+    "industry_naics2": [
+      {
+        "code": "54",
+        "label": "Professional, Scientific, and Technical Services",
+        "employers": 36,
+        "filings": 46
+      },
+      {
+        "code": "23",
+        "label": "Construction",
+        "employers": 14,
+        "filings": 15
+      },
+      {
+        "code": "33",
+        "label": "Manufacturing",
+        "employers": 9,
+        "filings": 9
+      },
+      {
+        "code": "61",
+        "label": "Educational Services",
+        "employers": 6,
+        "filings": 6
+      },
+      {
+        "code": "62",
+        "label": "Health Care and Social Assistance",
+        "employers": 5,
+        "filings": 5
+      },
+      {
+        "code": "81",
+        "label": "Other Services (except Public Administration)",
+        "employers": 4,
+        "filings": 4
+      },
+      {
+        "code": "56",
+        "label": "Administrative and Support and Waste Management and Remediation Services",
+        "employers": 3,
+        "filings": 3
+      }
+    ]
+  },
+  "caveats": [
+    "An LCA certification is not a hire or an open role.",
+    "OPT is not sponsorship — a new grad's first job is on OPT; sponsorship comes 1-3 years later.",
+    "Employer names are conservatively normalized and may under-merge.",
+    "Career/portfolio guidance, not immigration legal advice."
+  ]
+}
