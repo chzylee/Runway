@@ -57,3 +57,7 @@ Thumbs.db
 # analysis and must never be committed.
 runway-report-*.json
 runway-report-*.html
+
+# Local working directory for the role-expansion runs (sweeps, drafts, reports).
+# Run output, not source: never committed.
+proposals/

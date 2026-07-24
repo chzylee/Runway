@@ -6,9 +6,9 @@
   "paths": [
     {
       "rank": 1,
-      "path": "Become an embedded chief/in-house economist inside a tech company",
-      "what_it_is": "Apply econometrics, market design, and causal inference directly inside a tech company's product and policy decisions, often as a named economics lead.",
-      "why_it_signals": "It proves your research skills convert directly into decisions that move a real business, not just publications — the kind of applied judgment companies pay to keep in-house.",
+      "path": "Apply causal inference and market design to business decisions",
+      "what_it_is": "Use econometrics, causal inference, and auction or market design to shape a company's pricing, marketplaces, ad auctions, and experiments.",
+      "why_it_signals": "It proves you can turn rigorous economic method into decisions a business is willing to act on, not just conclusions worth publishing.",
       "people": [
         {"name": "Hal Varian", "link": "https://en.wikipedia.org/wiki/Hal_Varian"},
         {"name": "Susan Athey", "link": "https://gsb.stanford.edu/faculty-research/faculty/susan-athey"},
