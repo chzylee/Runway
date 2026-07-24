@@ -7,8 +7,8 @@
     {
       "rank": 1,
       "path": "Citizen-science contamination testing",
-      "what_it_is": "Mobilizing residents to independently sample water or other environmental exposures when official monitoring is inadequate, then publishing the results with full transparency about methodology.",
-      "why_it_signals": "It proves the engineer treats public health protection as the actual mission rather than regulatory box-checking, which is exactly what turns a new engineer into the trusted go-to expert during a crisis.",
+      "what_it_is": "Mobilize residents to independently sample water or other environmental exposures when official monitoring is inadequate, then publish the results with full transparency about methodology.",
+      "why_it_signals": "It proves you treat public health protection as the actual mission rather than regulatory box-checking, which is what makes you the trusted expert people turn to during a crisis.",
       "people": [
         {"name": "Marc Edwards", "link": "https://www.webapps.cee.vt.edu/index.php?category=people&do=getprofile&pagetype=bio&user=edwards.html"},
         {"name": "Siddhartha Roy", "link": "https://roy.rutgers.edu/about/"},
@@ -20,8 +20,8 @@
     {
       "rank": 2,
       "path": "Building open-source LCA tools",
-      "what_it_is": "Building and maintaining open-source life-cycle-assessment (LCA) software or modeling frameworks that other practitioners run their environmental impact calculations on.",
-      "why_it_signals": "It shows technical depth beyond running someone else's spreadsheet model, plus a habit of building durable, reusable infrastructure that is visible and verifiable on GitHub and in citations, not just claimed on a resume.",
+      "what_it_is": "Build and maintain open-source life-cycle-assessment software or modeling frameworks that other practitioners run their environmental impact calculations on.",
+      "why_it_signals": "It proves technical depth beyond running someone else's spreadsheet model, plus a habit of building durable infrastructure that is visible and verifiable, not just claimed on a resume.",
       "people": [
         {"name": "Chris Mutel", "link": "https://chris.mutel.org/"},
         {"name": "Bernhard Steubing", "link": "https://www.universiteitleiden.nl/en/staffmembers/bernhard-steubing"},
@@ -32,8 +32,8 @@
     {
       "rank": 3,
       "path": "Low-cost sensor calibration and validation",
-      "what_it_is": "Designing, field-deploying, and rigorously calibrating low-cost environmental sensor networks (air quality, particulates, gases) against reference-grade instruments, then publishing the calibration methodology openly.",
-      "why_it_signals": "It bridges hardware, data science, and field engineering to extend monitoring into places expensive regulatory-grade equipment never reaches, a combination that increasingly separates engineers who generate new, usable data from those who only interpret existing data.",
+      "what_it_is": "Design, field-deploy, and rigorously calibrate a low-cost environmental sensor network against reference-grade instruments, then publish the calibration methodology openly.",
+      "why_it_signals": "It proves you can bridge hardware, data science, and field engineering to generate new, usable data instead of only interpreting data someone else collected.",
       "people": [
         {"name": "R. Subramanian", "link": "https://www.rsubramanian.com/"},
         {"name": "Naomi Zimmerman", "link": "https://naomizimmerman.com/"},

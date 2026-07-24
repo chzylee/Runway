@@ -7,8 +7,8 @@
     {
       "rank": 1,
       "path": "Building open computational materials databases",
-      "what_it_is": "Using high-throughput DFT (density functional theory) calculations to compute and publish the properties of thousands to millions of materials in a free, queryable database or open-source analysis library.",
-      "why_it_signals": "It proves someone can turn deep quantum-mechanical materials theory into infrastructure that thousands of other scientists and engineers rely on daily, rather than keeping the expertise locked in one lab's private results.",
+      "what_it_is": "Use high-throughput DFT calculations to compute and publish the properties of thousands of materials in a free, queryable database or open-source library.",
+      "why_it_signals": "It proves you can turn deep quantum-mechanical materials theory into infrastructure other scientists and engineers rely on daily, rather than keeping the expertise locked in one lab's private results.",
       "people": [
         {"name": "Kristin Persson", "link": "https://mse.berkeley.edu/people_new/persson/"},
         {"name": "Chris Wolverton", "link": "https://www.wolverton.northwestern.edu/"},
@@ -19,14 +19,26 @@
     {
       "rank": 2,
       "path": "Maintaining open-source atomistic simulation software",
-      "what_it_is": "Writing and long-term maintaining open-source molecular dynamics or simulation-analysis software (e.g., LAMMPS, OVITO) that becomes a standard tool across the materials modeling community.",
-      "why_it_signals": "Sustaining production-grade scientific software for a global user base demonstrates engineering discipline layered on top of materials science depth — a rarer combination than research output alone.",
+      "what_it_is": "Write and maintain open-source molecular dynamics or simulation-analysis software that becomes a standard tool across the materials modeling community.",
+      "why_it_signals": "Sustaining production-grade scientific software for a global user base proves engineering discipline layered on top of materials science depth - a rarer combination than research output alone.",
       "people": [
         {"name": "Steve Plimpton", "link": "https://sjplimp.github.io/"},
         {"name": "Axel Kohlmeyer", "link": "https://sites.google.com/site/akohlmey/"},
         {"name": "Alexander Stukowski", "link": "https://de.linkedin.com/in/alexander-stukowski"}
       ],
       "source": "https://sjplimp.github.io/"
+    },
+    {
+      "rank": 3,
+      "path": "Master atom-probe tomography and teach it openly",
+      "what_it_is": "Build hands-on command of atom-probe tomography - specimen preparation, laser-assisted acquisition, 3D reconstruction - then publish analysis methods and train other researchers in the technique.",
+      "why_it_signals": "It proves you can turn a demanding experimental method into a capability others can learn from you, not just something you quietly do well on your own samples.",
+      "people": [
+        {"name": "Baptiste Gault", "link": "https://sites.google.com/view/batomprobe/home"},
+        {"name": "Julie Cairney", "link": "https://profiles.sydney.edu.au/julie.cairney"},
+        {"name": "Michael Moody", "link": "https://atomprobe.materials.ox.ac.uk/people/prof-michael-moody"}
+      ],
+      "source": "https://sites.google.com/view/batomprobe/home"
     }
   ]
 }

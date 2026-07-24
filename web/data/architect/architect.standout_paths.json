@@ -7,8 +7,8 @@
     {
       "rank": 1,
       "path": "Computational/parametric design scripting",
-      "what_it_is": "Generating architectural form through code and parametric logic (Grasshopper, Rhino scripting, custom algorithms) rather than manual drafting alone.",
-      "why_it_signals": "It shows a designer can originate a signature formal language and push it through fabrication-ready complexity, not just operate someone else's software.",
+      "what_it_is": "Generate architectural form through code and parametric logic - Grasshopper, Rhino scripting, custom algorithms - rather than manual drafting alone.",
+      "why_it_signals": "It proves you can originate a signature formal language and push it through fabrication-ready complexity, not just operate someone else's software.",
       "people": [
         {"name": "Patrik Schumacher", "link": "https://patrikschumacher.com/"},
         {"name": "Michael Hansmeyer", "link": "https://michael-hansmeyer.com/"},
@@ -19,8 +19,8 @@
     {
       "rank": 2,
       "path": "Hand-drawing and watercolor as the core design-thinking tool",
-      "what_it_is": "Using freehand sketches or watercolor as the primary instrument for developing and testing a design concept before it is drafted or modeled.",
-      "why_it_signals": "It shows a designer can generate and interrogate an idea directly through drawing fluency, a skill juries and principals still read as evidence of design authorship.",
+      "what_it_is": "Use freehand sketches or watercolor as the primary instrument for developing and testing a design concept before it is drafted or modeled.",
+      "why_it_signals": "It proves you can generate and interrogate an idea directly through drawing fluency, a skill juries and principals still read as evidence of design authorship.",
       "people": [
         {"name": "Renzo Piano", "link": "https://www.fondazionerenzopiano.org/en/"},
         {"name": "Santiago Calatrava", "link": "https://calatrava.com/"},
@@ -31,8 +31,8 @@
     {
       "rank": 3,
       "path": "Material science and digital fabrication research crossover",
-      "what_it_is": "Running or contributing to a research practice that bridges architecture with materials science, robotics, or synthetic biology to invent new building materials and fabrication methods.",
-      "why_it_signals": "It shows a designer can operate past the boundary of conventional practice and produce inventions (new materials, robotic construction processes) that firms and universities compete to hire.",
+      "what_it_is": "Run or contribute to a research practice that bridges architecture with materials science, robotics, or synthetic biology to invent new building materials and fabrication methods.",
+      "why_it_signals": "It proves you can operate past the boundary of conventional practice and produce inventions that firms and universities compete to hire.",
       "people": [
         {"name": "Neri Oxman", "link": "https://oxman.com/"},
         {"name": "Skylar Tibbits", "link": "https://selfassemblylab.mit.edu/skylar-tibbits"},

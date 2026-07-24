@@ -389,7 +389,29 @@
       var c = el("div", "card");
       c.appendChild(el("h3", null, sp.recommended.path));
       if (sp.recommended.why_them) c.appendChild(el("p", null, sp.recommended.why_them));
-      var recSrc = sourceList(sp.recommended.source ? [sp.recommended.source] : []);
+      var ppl = Array.isArray(sp.recommended.people)
+        ? sp.recommended.people.filter(function (p) { return p && p.name; }) : [];
+      if (ppl.length) {
+        var pw = el("div", "sources");
+        pw.appendChild(el("span", "label", "Who does this: "));
+        var pul = el("ul");
+        ppl.forEach(function (p) {
+          var li = el("li");
+          if (p.link && /^https?:\/\//i.test(String(p.link))) {
+            var pa = el("a", null, p.name);
+            pa.href = p.link; pa.target = "_blank"; pa.rel = "noopener noreferrer";
+            pa.appendChild(el("span", "visually-hidden", " (opens in a new tab)"));
+            li.appendChild(pa);
+          } else {
+            li.appendChild(el("span", null, p.name));
+          }
+          pul.appendChild(li);
+        });
+        pw.appendChild(pul);
+        c.appendChild(pw);
+      }
+      // Older reports carry a bare source URL instead of people[].
+      var recSrc = ppl.length ? null : sourceList(sp.recommended.source ? [sp.recommended.source] : []);
       if (recSrc) c.appendChild(recSrc);
 
       var others = Array.isArray(sp.others) ? sp.others.filter(function (o) { return o && o.path; }) : [];

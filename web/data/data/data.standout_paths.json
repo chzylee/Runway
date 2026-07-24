@@ -8,7 +8,7 @@
       "rank": 1,
       "path": "Reach the top tier of competitive machine learning (Kaggle Grandmaster)",
       "what_it_is": "Repeatedly place at the top of public, leaderboard-scored data science and ML competitions until the platform itself certifies you at its highest rank, producing a fully public, objective track record of modeling skill.",
-      "why_it_signals": "Abhishek Thakur, Bojan Tunguz and Jean-Francois Puget each built careers on this exact ladder - the pattern is strong enough that NVIDIA runs a standing hiring team (KGMON) built entirely around Kaggle Grandmasters, turning competition rank into a direct, verifiable hiring signal.",
+      "why_it_signals": "It proves modeling skill through a fully public, objective track record — a verifiable rank instead of a self-reported claim.",
       "people": [
         {"name": "Abhishek Thakur", "link": "https://www.kaggle.com/abhishek"},
         {"name": "Bojan Tunguz", "link": "https://www.linkedin.com/in/tunguz"},
@@ -20,7 +20,7 @@
       "rank": 2,
       "path": "Build and maintain an open-source data tool that the industry runs on",
       "what_it_is": "Write and keep maintaining a foundational open-source library or engine for the data stack - a dataframe library, a parallel-compute framework, a database engine - visible in a public commit and release history, not a one-off internal script.",
-      "why_it_signals": "Wes McKinney (pandas, Apache Arrow), Matthew Rocklin (Dask) and Hannes Muhleisen (DuckDB) each turned sustained open-source engineering into the credential that defined their careers - the shared pattern is public, load-bearing infrastructure work that thousands of other practitioners depend on daily.",
+      "why_it_signals": "It proves you can build and sustain load-bearing infrastructure that other practitioners depend on daily, not just a one-off internal script.",
       "people": [
         {"name": "Wes McKinney", "link": "https://wesmckinney.com/"},
         {"name": "Matthew Rocklin", "link": "https://matthewrocklin.com/"},
@@ -32,7 +32,7 @@
       "rank": 3,
       "path": "Publish technical writing that becomes the canonical explainer in the field",
       "what_it_is": "Write and consistently ship public technical explanations - a blog, a newsletter, an illustrated deep-dive - that other practitioners cite and pass around as the clearest account of a hard data or ML concept, rather than writing only for an internal audience.",
-      "why_it_signals": "Sebastian Raschka, Jay Alammar and Chip Huyen each built outsized reputations primarily through public technical writing that became reference material across the field - the pattern shows sustained public explanation, not a single viral post, is what compounds into a durable, hire-worthy signal.",
+      "why_it_signals": "It proves you can explain a hard data or ML concept clearly enough that other practitioners cite and pass it around — sustained explanation, not one viral post.",
       "people": [
         {"name": "Sebastian Raschka", "link": "https://sebastianraschka.com/"},
         {"name": "Jay Alammar", "link": "https://jalammar.github.io/"},

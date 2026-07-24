@@ -8,7 +8,7 @@
       "rank": 1,
       "path": "Author IETF RFCs that become deployed internet infrastructure",
       "what_it_is": "Writing and shepherding an Internet-Draft through IETF working-group review until it is published as an RFC that vendors and operators actually implement, not just proposing an idea informally.",
-      "why_it_signals": "Randy Bush, Job Snijders, and Radia Perlman each turned protocol work (BGP/RPKI security, spanning tree/TRILL) into formally ratified, widely-deployed IETF standards, and employers can verify the exact standard a candidate shipped rather than take their word for design skill.",
+      "why_it_signals": "It proves your design work survived formal peer review and got adopted at internet scale, a claim an employer can verify directly rather than take on faith.",
       "people": [
         {"name": "Randy Bush", "link": "https://archive.psg.com/index1.html"},
         {"name": "Job Snijders", "link": "https://instituut.net/~job/"},
@@ -20,7 +20,7 @@
       "rank": 2,
       "path": "Maintain an open-source routing daemon or protocol tool relied on in production",
       "what_it_is": "Becoming a committer or maintainer on a widely-deployed open-source networking project (a BGP/routing daemon, LLDP implementation, or protocol tooling) rather than only operating vendor black boxes.",
-      "why_it_signals": "Vincent Bernat (lldpd), Donatas Abraitis (FRRouting), and Martin Mareš (BIRD Internet Routing Daemon) all built reputations network operators trust specifically because their code runs inside real production routing stacks used by ISPs, IXPs, and hyperscalers.",
+      "why_it_signals": "It proves your code runs inside real production routing stacks that ISPs and hyperscalers depend on — trust that operating vendor black boxes alone can't earn.",
       "people": [
         {"name": "Vincent Bernat", "link": "https://vincent.bernat.ch/en"},
         {"name": "Donatas Abraitis", "link": "https://donatas.net/about/"},
@@ -32,7 +32,7 @@
       "rank": 3,
       "path": "Publish public technical writing that teaches network design at scale",
       "what_it_is": "Regularly writing blog posts, books, or measurement reports that explain how large networks actually behave and are designed, aimed at other engineers rather than marketing.",
-      "why_it_signals": "Ivan Pepelnjak, Russ White, and Geoff Huston each built decades-long public bodies of writing (ipSpace.net, rule11.tech, potaroo.net) that turned their operational network-design judgment into a durable, citable public record other architects rely on.",
+      "why_it_signals": "It proves you can turn operational network-design judgment into a durable, citable record other architects actually rely on.",
       "people": [
         {"name": "Ivan Pepelnjak", "link": "https://www.ipspace.net/About_Ivan_Pepelnjak"},
         {"name": "Russ White", "link": "https://rule11.tech"},

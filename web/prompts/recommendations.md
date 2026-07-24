@@ -177,11 +177,16 @@ in full.
 ### 5a. Standout paths for this role (may be absent)
 
 A short, curated, ranked list of the capabilities you would expect the standouts in
-this role to have — each with a source. **This is supplied data, not something you
-generate.** If it reads `none provided`, this role has no curated list yet: omit
-`standout_path` from your output entirely. Do not research or invent replacements;
-an absent section is honest, an invented one is the exact listicle noise this
-report exists to cut through.
+this role to have. Each carries a `people` array: three or more proven practitioners
+who visibly share that capability, with links. **Those people are the receipts, not
+the recommendation** — they are how the path was qualified and how a skeptical reader
+verifies it. Say what the capability is and what it would prove about *this person*;
+do not narrate the practitioners' careers back at them.
+
+**This is supplied data, not something you generate.** If it reads `none provided`,
+this role has no curated list yet: omit `standout_path` from your output entirely. Do
+not research or invent replacements; an absent section is honest, an invented one is
+the exact listicle noise this report exists to cut through.
 
 {{STANDOUT_PATHS}}
 
@@ -246,7 +251,10 @@ Work your directives and patterns over these inputs and return the JSON below.
 - **standout_path** — pick the **highest-ranked supplied path this person does not
   already have**. Judge "already have it" from their materials, not charitably.
   `why_them` names what it unlocks *for them* — the dependency it removes — traced
-  to their materials, never a general case for the skill.
+  to their materials, never a general case for the skill. **Never name the supplied
+  practitioners in `why_them`**; copy their `people` array through unchanged instead,
+  so the reader can check the basis without the prose turning into someone else's
+  story.
   The rest go in `others`, one line and a source each, marked whether they have it.
   **They are not a second and third recommendation** — they are why the first is
   credible. Omit the whole field when no paths were supplied.
@@ -296,7 +304,9 @@ this object is the next section — it depends on what your runtime can do.
     "evidence": "... or null", "sources": ["https://…"], "why_it_could_matter": "..."
   },
   "standout_path": {
-    "recommended": { "path": "copied from the supplied list", "why_them": "...", "source": "https://…" },
+    "recommended": { "path": "copied from the supplied list", "why_them": "...",
+      "people": [ { "name": "copied through unchanged", "link": "https://…" } ],
+      "source": "https://…" },
     "others": [ { "path": "...", "already_have_it": true, "note": "one line", "source": "https://…" } ]
   },
   "company_notes": [

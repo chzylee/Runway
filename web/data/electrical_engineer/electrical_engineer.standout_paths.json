@@ -7,8 +7,8 @@
     {
       "rank": 1,
       "path": "Public signal-integrity / EMI mastery through teaching",
-      "what_it_is": "Building deep, rigorous expertise in signal integrity, EMI, and PCB noise control, then codifying it into publicly accessible courses, textbooks, and conference talks that other engineers rely on.",
-      "why_it_signals": "It proves an engineer's understanding is precise enough to teach and defend in public, not just apply privately — the rarest and most trusted form of technical credibility in the field.",
+      "what_it_is": "Build deep, rigorous expertise in signal integrity, EMI, and PCB noise control, and codify it into a publicly accessible course, textbook, or conference talk other engineers rely on.",
+      "why_it_signals": "It proves your understanding is precise enough to teach and defend in public, not just apply privately - the rarest and most trusted form of technical credibility.",
       "people": [
         {"name": "Eric Bogatin", "link": "https://www.colorado.edu/faculty/bogatin/"},
         {"name": "Rick Hartley", "link": "https://www.linkedin.com/in/rick-hartley-8571216"},
@@ -19,8 +19,8 @@
     {
       "rank": 2,
       "path": "Public teardown and reverse-engineering practice",
-      "what_it_is": "Systematically opening up hardware — chips, instruments, vintage and modern devices — and publishing detailed, rigorous write-ups of how the internals actually work.",
-      "why_it_signals": "It demonstrates the ability to read and explain real circuits from the ground up, a form of hands-on technical fluency that is hard to fake and highly visible to peers.",
+      "what_it_is": "Open up hardware - chips, instruments, vintage and modern devices - and publish a detailed, rigorous write-up of how the internals actually work.",
+      "why_it_signals": "It proves you can read and explain real circuits from the ground up, a form of hands-on technical fluency that is hard to fake.",
       "people": [
         {"name": "Ken Shirriff", "link": "https://www.righto.com/"},
         {"name": "Dave Jones", "link": "https://www.eevblog.com/"},
@@ -31,8 +31,8 @@
     {
       "rank": 3,
       "path": "Open-hardware project leadership with public PCB documentation",
-      "what_it_is": "Leading an open-hardware project or design practice and publishing the schematics, PCB layouts, and design-decision rationale for others to study and build on.",
-      "why_it_signals": "It shows an engineer can carry a design from concept to a manufacturable, well-documented product — and is confident enough in the work to expose it to public scrutiny.",
+      "what_it_is": "Lead an open-hardware project and publish the schematics, PCB layouts, and design-decision rationale for others to study and build on.",
+      "why_it_signals": "It proves you can carry a design from concept to a manufacturable, well-documented product, and are confident enough in the work to expose it to public scrutiny.",
       "people": [
         {"name": "Limor Fried", "link": "https://www.adafruit.com/about"},
         {"name": "Chris Gammell", "link": "https://chrisgammell.com/"},

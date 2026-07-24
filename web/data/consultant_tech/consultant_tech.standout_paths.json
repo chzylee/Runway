@@ -8,7 +8,7 @@
       "rank": 1,
       "path": "Originate and publish a named pattern from client work",
       "what_it_is": "Turn a solution pattern discovered while solving real client problems into a clearly named, publicly written methodology (a book, long-form essay series, or open pattern language) that other practitioners can pick up and use.",
-      "why_it_signals": "Multiple senior technologists at the same consultancy, working independently on different client problems, each converged on the same craft of extracting and publishing a named methodology from their engagements (refactoring, microservices, data mesh, evolutionary architecture) — showing it is a repeatable practice, not one person's luck or fame.",
+      "why_it_signals": "It proves you can extract a reusable method from a one-off engagement — evidence your judgment generalizes past the specific client you were solving for.",
       "people": [
         {"name": "Martin Fowler", "link": "https://martinfowler.com/"},
         {"name": "Zhamak Dehghani", "link": "https://martinfowler.com/articles/data-mesh-principles.html"},
@@ -21,7 +21,7 @@
       "rank": 2,
       "path": "Independent specialist with a public technical voice",
       "what_it_is": "Pick one narrow technical domain (a cloud platform or a specific service class within it), build deep hands-on expertise through real production work, and consistently publish that expertise as an independent consultant rather than as an employee of the vendor.",
-      "why_it_signals": "Three separate independent consultants each built distinct solo practices around a narrow cloud specialty, and each earned the vendor's own public recognition (AWS Hero) purely by demonstrating and teaching that expertise — showing the pattern of depth-plus-visibility is buildable, not circumstantial.",
+      "why_it_signals": "It proves your expertise stands on its own, independent of any employer's brand backing it — depth plus visibility that is buildable, not just circumstantial.",
       "people": [
         {"name": "Corey Quinn", "link": "https://www.lastweekinaws.com/about/"},
         {"name": "Yan Cui", "link": "https://theburningmonk.com/"},
@@ -33,7 +33,7 @@
       "rank": 3,
       "path": "Single-platform mastery with vendor community recognition",
       "what_it_is": "Specialize in one enterprise SaaS platform deeply enough — architecture, certifications, and years of public teaching and community contribution — to earn the platform vendor's own recognition (e.g., Salesforce MVP) on top of delivering client implementations as a consultant.",
-      "why_it_signals": "Multiple independent consultants earned this vendor-level recognition through the same combination of implementation depth and public teaching rather than through any single employer or client name, showing platform depth plus community contribution is a repeatable craft for standing out.",
+      "why_it_signals": "It proves your platform depth is recognized by the vendor itself, not just claimed on a resume — third-party validation that de-risks hiring you sight unseen.",
       "people": [
         {"name": "Andrew Fawcett", "link": "https://andyinthecloud.com/about/"},
         {"name": "Rakesh Gupta", "link": "https://automationchampion.com/about-me/"},

@@ -8,7 +8,7 @@
       "rank": 1,
       "path": "Build and open-source a security tool people actually run",
       "what_it_is": "Write and publicly maintain a scanner, framework, or detection-rule set (an exploitation framework, a YARA/Sigma rule set, an IOC scanner, a Linux security distro) that other practitioners install and depend on.",
-      "why_it_signals": "The standouts here — HD Moore, Florian Roth, and Mati Aharoni — each turned a personal tool into industry-standard infrastructure, which proves an employer-grade combination of technical depth, follow-through, and community trust that a resume line can't fake.",
+      "why_it_signals": "It proves technical depth, follow-through, and community trust — a tool other practitioners depend on, verified by adoption instead of a resume line.",
       "people": [
         {"name": "HD Moore", "link": "https://hdm.io/"},
         {"name": "Florian Roth", "link": "https://github.com/neo23x0"},
@@ -20,7 +20,7 @@
       "rank": 2,
       "path": "Hunt vulnerabilities and publish public writeups of the findings",
       "what_it_is": "Find real bugs through bug-bounty programs and publish detailed, technical writeups of how each one was discovered and exploited, building a public track record over time.",
-      "why_it_signals": "STÖK, Ben Sadeghipour (NahamSec), and Frans Rosén all built their careers the same way — hunting live targets and narrating the methodology in public — which shows an employer the exact offense-minded, self-directed research skill they'd otherwise have to take on faith.",
+      "why_it_signals": "It proves offense-minded, self-directed research skill that an employer would otherwise have to take entirely on faith.",
       "people": [
         {"name": "STÖK (Fredrik Alexandersson)", "link": "https://stokfredrik.com/"},
         {"name": "Ben Sadeghipour (NahamSec)", "link": "https://www.nahamsec.com/about"},
@@ -32,7 +32,7 @@
       "rank": 3,
       "path": "Compete in CTFs and teach what you learned in public",
       "what_it_is": "Play Capture-the-Flag competitions regularly and publish walkthroughs (video or written) that explain the exploitation technique step by step, not just the flag.",
-      "why_it_signals": "LiveOverflow (Fabian Fäßler), John Hammond, and Perri Adams all paired competitive CTF play with public teaching, showing employers a rare double signal: hands-on offensive skill plus the ability to explain it clearly, which is exactly what strong SOC and red-team hires need.",
+      "why_it_signals": "It proves both hands-on offensive skill and the ability to explain the technique clearly afterward — exactly what strong SOC and red-team work needs.",
       "people": [
         {"name": "Fabian Fäßler (LiveOverflow)", "link": "https://liveoverflow.com/"},
         {"name": "John Hammond", "link": "https://www.johnhammond.llc/bio"},

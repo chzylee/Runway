@@ -7,8 +7,8 @@
     {
       "rank": 1,
       "path": "Public full-stack robot build documentation",
-      "what_it_is": "Designing, machining, wiring, and programming complete robots or machines solo, then publishing the entire build process (mechanical CAD, electronics, and control code) for others to learn from.",
-      "why_it_signals": "It proves one person can own the whole mechatronics stack end to end, rather than a single narrow specialty, and that the work holds up under public scrutiny.",
+      "what_it_is": "Design, machine, wire, and program a complete robot or machine solo, then publish the entire build process - mechanical CAD, electronics, and control code - for others to learn from.",
+      "why_it_signals": "It proves you can own the whole mechatronics stack end to end, rather than a single narrow specialty, and that the work holds up under public scrutiny.",
       "people": [
         {"name": "James Bruton", "link": "https://www.xrobots.tech/about/"},
         {"name": "Ivan Miranda", "link": "https://ivanmiranda.com/"},
@@ -19,8 +19,8 @@
     {
       "rank": 2,
       "path": "Open-source motor-control and actuator engineering",
-      "what_it_is": "Designing and publishing open-source actuators, motor drivers, or field-oriented-control firmware that other roboticists adopt as building blocks for their own machines.",
-      "why_it_signals": "Actuator and control-loop design is one of the hardest, most failure-prone parts of a robot; shipping an open-source version that strangers rely on demonstrates deep, verifiable control-systems mastery.",
+      "what_it_is": "Design and publish an open-source actuator, motor driver, or field-oriented-control firmware that other roboticists adopt as a building block for their own machines.",
+      "why_it_signals": "Actuator and control-loop design is one of the hardest, most failure-prone parts of a robot, so shipping a version strangers rely on proves deep, verifiable control-systems mastery.",
       "people": [
         {"name": "Ben Katz", "link": "https://meche.mit.edu/people/ben-katz"},
         {"name": "Oskar Weigl", "link": "https://www.linkedin.com/in/oskar-weigl-87447813b"},
@@ -31,8 +31,8 @@
     {
       "rank": 3,
       "path": "Competition-robotics track record",
-      "what_it_is": "Designing, building, and driving robots in public combat or competition arenas (BattleBots and similar) across many seasons, with a documented history of wins, iteration, and survivable engineering.",
-      "why_it_signals": "Competition robots face a public, unforgiving pass/fail test every match, so a sustained track record is hard evidence of real mechanical and electrical design skill under pressure, not just a resume line.",
+      "what_it_is": "Design, build, and compete with robots in a public combat or competition arena across multiple seasons, with a documented history of wins, iteration, and survivable engineering.",
+      "why_it_signals": "Competition robots face a public, unforgiving pass/fail test every match, so a sustained track record is hard evidence of real mechanical and electrical design skill under pressure.",
       "people": [
         {"name": "Ray Billings", "link": "https://www.linkedin.com/in/ray-billings-86292897"},
         {"name": "Jamison Go", "link": "https://jamisongo.com/about/"},

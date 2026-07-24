@@ -7,8 +7,8 @@
     {
       "rank": 1,
       "path": "Public IC die imaging and silicon reverse engineering",
-      "what_it_is": "Delidding, imaging, and analyzing the internal structure of integrated circuits, then publishing detailed write-ups or high-resolution die photography explaining how the silicon actually works.",
-      "why_it_signals": "It proves a candidate can read silicon at the transistor and process-node level, a rare, hard-to-fake depth of understanding that goes far beyond datasheet-level knowledge.",
+      "what_it_is": "Delid, image, and analyze the internal structure of an integrated circuit, then publish a detailed write-up or high-resolution die photography explaining how the silicon actually works.",
+      "why_it_signals": "It proves you can read silicon at the transistor and process-node level, a rare depth of understanding that goes far beyond datasheet-level knowledge.",
       "people": [
         {"name": "Ken Shirriff", "link": "http://www.righto.com/"},
         {"name": "John McMaster", "link": "https://siliconpr0n.org/"},
@@ -19,8 +19,8 @@
     {
       "rank": 2,
       "path": "Open-source hardware project leadership",
-      "what_it_is": "Designing a hardware product (board, radio, computer) in the open, publishing schematics/PCB layouts/firmware, and sustaining the project through community adoption and iteration.",
-      "why_it_signals": "It demonstrates the full engineering loop, design, manufacturing, documentation, and support, done publicly where the work can be independently scrutinized and reused.",
+      "what_it_is": "Design a hardware product in the open, publish its schematics, PCB layouts, and firmware, and sustain it through community adoption and iteration.",
+      "why_it_signals": "It proves you can run the full engineering loop - design, manufacturing, documentation, support - in public, where the work can be independently scrutinized and reused.",
       "people": [
         {"name": "Limor Fried", "link": "https://www.ladyada.net/bio/"},
         {"name": "Andrew \"bunnie\" Huang", "link": "https://www.bunniestudios.com/"},
@@ -31,8 +31,8 @@
     {
       "rank": 3,
       "path": "Rigorous public teardown and board-level reverse engineering",
-      "what_it_is": "Publicly tracing schematics from bare boards, diagnosing failures at the component level, and documenting the reverse-engineered circuit behavior of consumer and industrial electronics.",
-      "why_it_signals": "It shows fast, disciplined circuit-level diagnosis under real-world constraints, the same skill that separates engineers who can debug a misbehaving board from those who can only design one in isolation.",
+      "what_it_is": "Publicly trace a schematic from a bare board, diagnose failures at the component level, and document the reverse-engineered circuit behavior.",
+      "why_it_signals": "It proves fast, disciplined circuit-level diagnosis under real-world constraints - the skill that separates engineers who can debug a misbehaving board from those who can only design one in isolation.",
       "people": [
         {"name": "Dave Jones", "link": "https://www.eevblog.com/"},
         {"name": "Louis Rossmann", "link": "https://rossmanngroup.com/"},

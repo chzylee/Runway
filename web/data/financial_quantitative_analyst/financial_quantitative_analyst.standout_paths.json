@@ -8,7 +8,7 @@
       "rank": 1,
       "path": "Publish research that becomes an industry-standard reference",
       "what_it_is": "Write books or papers that practitioners across the industry cite and teach from, not just internal research memos kept inside one firm.",
-      "why_it_signals": "Marcos Lopez de Prado, Emanuel Derman, and John Hull each authored quant-finance texts that became the field's standard curriculum, out of Cornell/ADIA, Goldman Sachs/Columbia, and the University of Toronto respectively.",
+      "why_it_signals": "It proves your methods are rigorous enough to withstand outside replication and critique, not just internal sign-off — a bar a private research note never has to clear.",
       "people": [
         {"name": "Marcos Lopez de Prado", "link": "https://www.quantresearch.org/Vita.htm"},
         {"name": "Emanuel Derman", "link": "https://emanuelderman.com/"},
@@ -20,7 +20,7 @@
       "rank": 2,
       "path": "Open-source your trading strategies and code",
       "what_it_is": "Publish runnable, backtested strategy code and methodology in public, instead of keeping the edge entirely proprietary.",
-      "why_it_signals": "Ernest Chan, Yves Hilpisch, and Michael Halls-Moore each built public followings by releasing real strategy code and teaching materials rather than only claiming a private track record.",
+      "why_it_signals": "It proves your edge comes from a process and rigor you can defend in the open, not from opacity — a confidence a hidden black box can't demonstrate.",
       "people": [
         {"name": "Ernest P. Chan", "link": "http://epchan.blogspot.com/"},
         {"name": "Yves Hilpisch", "link": "https://hilpisch.com/"},
@@ -32,7 +32,7 @@
       "rank": 3,
       "path": "Build a public quant training or credentialing platform",
       "what_it_is": "Create a structured training or credentialing program that trains the next generation of quants at scale, rather than mentoring one analyst at a time.",
-      "why_it_signals": "Paul Wilmott's CQF, Attilio Meucci's ARPM, and Igor Tulchinsky's WorldQuant University each became recognized industry credentials or degree programs built and personally fronted by a single named quant.",
+      "why_it_signals": "It proves you can formalize expert judgment into something teachable and repeatable — a structuring skill well beyond running your own models.",
       "people": [
         {"name": "Paul Wilmott", "link": "https://www.wilmott.com/paul-wilmott/"},
         {"name": "Attilio Meucci", "link": "https://www.arpm.co/about"},

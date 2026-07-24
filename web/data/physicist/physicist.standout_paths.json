@@ -7,8 +7,8 @@
     {
       "rank": 1,
       "path": "Build open-source scientific-computing tools the field runs on",
-      "what_it_is": "Write and maintain the interactive-computing and data-tooling infrastructure (notebooks, kernels, parallel-computing libraries, hosting infrastructure) that physicists and other scientists use daily, starting as a grad-student side project and growing it into foundational, widely-adopted software.",
-      "why_it_signals": "Three physics-trained researchers built IPython/Jupyter directly out of their physics graduate work — one from a particle-physics PhD, one from a physics PhD plus a physics professorship, one from an engineering-physics/plasma-physics background — and turned it into the computing substrate the entire scientific-Python ecosystem now runs on, showing that shipping open-source tooling is a buildable, learnable craft a new physics grad can start on day one, not a rare accident.",
+      "what_it_is": "Build and maintain interactive-computing or data-tooling infrastructure — notebooks, kernels, parallel-computing libraries — that other scientists rely on daily, growing it from a side project into real infrastructure.",
+      "why_it_signals": "It proves you can turn a personal tool into infrastructure an entire field depends on — reach that goes far beyond your own research results.",
       "people": [
         {"name": "Fernando Pérez", "link": "https://fernandoperez.org/"},
         {"name": "Brian Granger", "link": "https://physics.calpoly.edu/bgranger"},
@@ -18,9 +18,9 @@
     },
     {
       "rank": 2,
-      "path": "Take a physics PhD into quantitative finance",
-      "what_it_is": "Apply the modeling and statistical-physics toolkit from a physics doctorate to build trading systems, risk models, or an entire quant fund.",
-      "why_it_signals": "Three physicists with physics PhDs (not math or economics) became foundational figures in quant finance — one effectively created the modern 'quant' role at a major bank, one co-founded one of the first automated trading firms, and one founded econophysics and built it into a major hedge fund — showing the physics-to-quant jump is a well-worn, repeatable route.",
+      "path": "Apply physics training to quantitative finance",
+      "what_it_is": "Apply the modeling and statistical-physics toolkit from your physics background to build trading systems, risk models, or pricing tools in finance.",
+      "why_it_signals": "It proves you can turn abstract physics modeling into tools that move real money under real constraints — a concrete, high-stakes test of your quantitative skill.",
       "people": [
         {"name": "Emanuel Derman", "link": "https://emanuelderman.com"},
         {"name": "J. Doyne Farmer", "link": "https://www.doynefarmer.com"},
@@ -31,8 +31,8 @@
     {
       "rank": 3,
       "path": "Communicate physics to a broad public audience",
-      "what_it_is": "Build a durable, named public following (blog, podcast, or books) that explains physics to a general audience while remaining research-credentialed.",
-      "why_it_signals": "Three working physicists each built a distinct, large, long-running public platform (a research blog and YouTube channel, a philosophy-of-science blog and interview podcast, and bestselling books plus a science festival) on top of active physics careers, showing public communication is a buildable, repeated craft among standout physicists rather than incidental fame.",
+      "what_it_is": "Build a durable public platform — blog, podcast, or book — that explains physics to a general audience, alongside your research or industry work.",
+      "why_it_signals": "Making physics legible to non-specialists proves you understand it well enough to compress it, extending your value beyond people who already read papers in your subfield.",
       "people": [
         {"name": "Sabine Hossenfelder", "link": "https://backreaction.blogspot.com"},
         {"name": "Sean Carroll", "link": "https://www.preposterousuniverse.com"},

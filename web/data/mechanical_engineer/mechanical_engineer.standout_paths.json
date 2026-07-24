@@ -7,8 +7,8 @@
     {
       "rank": 1,
       "path": "Public teardown-driven DFM analysis",
-      "what_it_is": "Systematically disassembling and benchmarking a product to expose its cost, manufacturing, and design tradeoffs, then publishing the findings.",
-      "why_it_signals": "It proves a candidate can read a physical product back into the design and manufacturing decisions behind it, a rigor that has repeatedly reshaped how major automakers engineer their vehicles.",
+      "what_it_is": "Disassemble and benchmark a product to expose its cost, manufacturing, and design tradeoffs, then publish the findings.",
+      "why_it_signals": "It proves you can read a physical product back into the design and manufacturing decisions behind it, not just describe what it does.",
       "people": [
         {"name": "Sandy Munro", "link": "https://en.wikipedia.org/wiki/Sandy_Munro"},
         {"name": "Cory Steuben", "link": "https://www.linkedin.com/in/cory-steuben-10752612"},
@@ -19,8 +19,8 @@
     {
       "rank": 2,
       "path": "Public CAD-to-fabrication build documentation",
-      "what_it_is": "Owning a project end-to-end, designing it in CAD, fabricating and testing it, and publicly documenting the full iteration loop.",
-      "why_it_signals": "It puts the entire mechanical engineering pipeline on display, giving an employer direct, verifiable evidence of design judgment and hands-on execution instead of a resume claim.",
+      "what_it_is": "Own a project end-to-end - design it in CAD, fabricate and test it, and publicly document the full iteration loop.",
+      "why_it_signals": "It gives a hiring manager direct, verifiable evidence of design judgment and hands-on execution instead of a resume claim.",
       "people": [
         {"name": "Jeremy Fielding", "link": "https://jeremyfielding.com/"},
         {"name": "Shane Wighton", "link": "https://en.wikipedia.org/wiki/Shane_Wighton"},
@@ -31,8 +31,8 @@
     {
       "rank": 3,
       "path": "GD&T and tolerance-stack mastery",
-      "what_it_is": "Deep fluency in geometric dimensioning and tolerancing and tolerance-stack analysis, demonstrated through authored training material or standards-committee work.",
-      "why_it_signals": "It shows a candidate can make assemblies fit and function correctly at scale, the exact skill that prevents costly manufacturing and quality failures.",
+      "what_it_is": "Build deep fluency in geometric dimensioning and tolerancing and tolerance-stack analysis, and show it through authored training material or standards work.",
+      "why_it_signals": "It proves you can make assemblies fit and function correctly at scale, the exact skill that prevents costly manufacturing and quality failures.",
       "people": [
         {"name": "James D. Meadows", "link": "https://geotolmeadows.com/about.htm"},
         {"name": "Bryan Fischer", "link": "https://tdp360.com/about/"},

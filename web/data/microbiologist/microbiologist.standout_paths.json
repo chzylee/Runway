@@ -7,8 +7,8 @@
     {
       "rank": 1,
       "path": "Build open-source bioinformatics tools microbiologists run their analyses on",
-      "what_it_is": "Design, build, and maintain the open-source software (QIIME 2, DADA2, mothur, phyloseq, etc.) that microbiologists and microbiome researchers worldwide use daily to process, denoise, and analyze sequencing data, developed and released out of an academic research lab rather than a company.",
-      "why_it_signals": "Four senior, still-active academic microbiologists/bioinformaticians each built and continue to maintain a tool that became a de facto field standard (QIIME 2, DADA2, mothur, phyloseq), each cited thousands of times and taught in nearly every microbiome methods course, showing that becoming the person behind the standard tool is a repeatable, learnable career pattern built on software craft, not company formation.",
+      "what_it_is": "Design, build, and maintain open-source software that microbiologists use daily to process, denoise, and analyze sequencing data, released out of a research lab rather than a company.",
+      "why_it_signals": "It proves you can turn your science into software the field actually runs its work on — impact that reaches far beyond your own study or paper.",
       "people": [
         {"name": "J. Gregory Caporaso", "link": "https://experts.nau.edu/en/persons/greg-caporaso/"},
         {"name": "Benjamin Callahan", "link": "https://cvm.ncsu.edu/people/bcallah/"},
@@ -20,8 +20,8 @@
     {
       "rank": 2,
       "path": "Develop and publish a standardized lab protocol the field adopts wholesale",
-      "what_it_is": "Design, test, and publish a wet-lab sample-collection, extraction, or sequencing protocol (e.g., the Earth Microbiome Project's standardized DNA extraction and 16S/18S/ITS amplicon protocols) precise and reproducible enough that thousands of other labs adopt it directly instead of writing their own.",
-      "why_it_signals": "Three prominent microbial ecologists each co-authored and published a standardized protocol that became the field's default method, adopted by thousands of independent labs worldwide and underpinning some of microbiology's most-cited papers, showing that becoming known as the author of 'the protocol everyone runs' is a repeatable craft, not a one-off achievement.",
+      "what_it_is": "Design, validate, and publish a wet-lab protocol — sample collection, extraction, or sequencing — precise and reproducible enough that other labs adopt it directly instead of writing their own.",
+      "why_it_signals": "It proves your method is reproducible enough for strangers to run unsupervised and get the same result — the strongest test of scientific rigor there is.",
       "people": [
         {"name": "Noah Fierer", "link": "https://www.colorado.edu/ebio/noah-fierer"},
         {"name": "Janet Jansson", "link": "https://www.emsl.pnnl.gov/people/janet-jansson"},
@@ -32,8 +32,8 @@
     {
       "rank": 3,
       "path": "Communicate microbiology to a public audience via podcast or blog",
-      "what_it_is": "Build a real, ongoing public-facing show, blog, or newsletter that explains microbiology/infectious disease to a lay or semi-lay audience, on top of formal PhD-level training.",
-      "why_it_signals": "Three PhD-credentialed microbiologists each independently built durable, named public media properties (podcasts/blogs with real archives and audiences) alongside their science careers, showing this is a learnable, repeatable capability rather than one famous exception.",
+      "what_it_is": "Build an ongoing public-facing show, blog, or newsletter that explains microbiology or infectious disease to a lay audience, alongside your formal training.",
+      "why_it_signals": "It proves you understand the science well enough to make it make sense to people outside the field — and puts your name in front of audiences your resume alone never reaches.",
       "people": [
         {"name": "Vincent Racaniello", "link": "https://asm.org/biographies/vincent-racaniello"},
         {"name": "Justine Dees", "link": "https://joyfulmicrobe.com/about/"},

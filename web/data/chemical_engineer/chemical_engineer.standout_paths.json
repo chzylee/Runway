@@ -7,8 +7,8 @@
     {
       "rank": 1,
       "path": "Process safety case-study writing",
-      "what_it_is": "Turning real plant incidents into rigorous, publicly taught case studies that explain root cause, not just what broke.",
-      "why_it_signals": "It proves an engineer can extract a transferable lesson from a failure and teach it well enough that other plants change how they operate.",
+      "what_it_is": "Turn a real plant incident into a rigorous, publicly taught case study that explains root cause, not just what broke.",
+      "why_it_signals": "It proves you can extract a transferable lesson from a failure and teach it well enough that other plants change how they operate.",
       "people": [
         {"name": "Trevor Kletz", "link": "https://www.aiche.org/bio/dr-trevor-kletz"},
         {"name": "Daniel A. Crowl", "link": "https://www.mtu.edu/chemical/department/emeriti-faculty/crowl/"},
@@ -19,8 +19,8 @@
     {
       "rank": 2,
       "path": "Public technical teaching of process fundamentals",
-      "what_it_is": "Distilling core chemical engineering concepts into free screencasts, videos, or courses used by students and practitioners worldwide.",
-      "why_it_signals": "Explaining a hard technical concept clearly enough for millions of independent learners to actually get it is a much higher bar than passing a class in it.",
+      "what_it_is": "Distill a core chemical engineering concept into a free screencast, video, or course used by students and practitioners.",
+      "why_it_signals": "Explaining a hard technical concept clearly enough for independent learners to actually get it is a much higher bar than passing a class in it.",
       "people": [
         {"name": "Bill Hammack", "link": "https://chbe.illinois.edu/people/profile/whammack"},
         {"name": "John L. Falconer", "link": "https://www.colorado.edu/faculty/falconer/teaching"},
@@ -31,8 +31,8 @@
     {
       "rank": 3,
       "path": "Building process optimization software adopted industry-wide",
-      "what_it_is": "Developing and publishing numerical solvers or modeling frameworks for process design and optimization that become standard tools across the field.",
-      "why_it_signals": "It shows the engineer can turn a mathematical method into working software robust enough that other engineers build their own work on top of it.",
+      "what_it_is": "Develop and publish a numerical solver or modeling framework for process design and optimization that becomes a standard tool across the field.",
+      "why_it_signals": "It proves you can turn a mathematical method into working software robust enough that other engineers build their own work on top of it.",
       "people": [
         {"name": "Lorenz T. Biegler", "link": "https://www.cheme.engineering.cmu.edu/directory/bios/biegler-lorenz.html"},
         {"name": "Carl D. Laird", "link": "https://www.cheme.engineering.cmu.edu/directory/bios/laird-carl.html"},

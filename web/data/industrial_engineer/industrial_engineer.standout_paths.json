@@ -7,8 +7,8 @@
     {
       "rank": 1,
       "path": "Lean / Toyota Production System practice and teaching",
-      "what_it_is": "Deep, hands-on mastery of Toyota-style lean manufacturing (value stream mapping, kaizen, scientific-thinking coaching) codified into books, courses, or consulting that others use to run their own plants.",
-      "why_it_signals": "It shows the engineer can turn tacit shop-floor craft into a repeatable system that other organizations can actually pick up and run.",
+      "what_it_is": "Build deep, hands-on mastery of lean manufacturing - value stream mapping, kaizen, scientific-thinking coaching - and codify it into a book, course, or consulting practice others use to run their own plants.",
+      "why_it_signals": "It proves you can turn tacit shop-floor craft into a repeatable system that other organizations can actually pick up and run.",
       "people": [
         {"name": "Jeffrey Liker", "link": "https://ioe.engin.umich.edu/people/liker-jeffrey/"},
         {"name": "John Shook", "link": "https://www.lean.org/about-lei/senior-advisors-staff/john-shook/"},
@@ -19,8 +19,8 @@
     {
       "rank": 2,
       "path": "Six Sigma / statistical quality-systems authority",
-      "what_it_is": "Building and publishing a rigorous, statistically grounded methodology for eliminating defects and variation, then training others to apply it across industries.",
-      "why_it_signals": "It proves the engineer can make quality improvement measurable and teachable rather than a matter of individual intuition.",
+      "what_it_is": "Build and publish a rigorous, statistically grounded methodology for eliminating defects and variation, then train others to apply it across industries.",
+      "why_it_signals": "It proves you can make quality improvement measurable and teachable rather than a matter of individual intuition.",
       "people": [
         {"name": "Thomas Pyzdek", "link": "https://www.pyzdekinstitute.com/blog/six-sigma/announcing-the-release-of-the-6th-edition-of-the-six-sigma-handbook-by-thomas-pyzdek.html"},
         {"name": "Forrest Breyfogle III", "link": "https://smartersolutions.com/about-smarter-solutions/forrest-breyfogle-iii/"},
@@ -31,8 +31,8 @@
     {
       "rank": 3,
       "path": "Design of experiments (DOE) rigor for process improvement",
-      "what_it_is": "Using formal statistical experiment design to isolate which process variables actually drive quality and yield, instead of changing one factor at a time by guesswork.",
-      "why_it_signals": "It shows the engineer can extract a correct causal answer from a noisy process with the fewest possible experimental runs, a skill that scales far beyond any one product line.",
+      "what_it_is": "Use formal statistical experiment design to isolate which process variables actually drive quality and yield, instead of changing one factor at a time by guesswork.",
+      "why_it_signals": "It proves you can extract a correct causal answer from a noisy process with the fewest possible experimental runs, a skill that scales far beyond any one product line.",
       "people": [
         {"name": "Douglas Montgomery", "link": "https://news.asu.edu/20250819-science-and-technology-doug-montgomery-helps-engineers-design-better-decisions"},
         {"name": "Bradley Jones", "link": "https://community.jmp.com/t5/user/viewprofilepage/user-id/4366"},

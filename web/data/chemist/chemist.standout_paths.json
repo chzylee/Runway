@@ -6,9 +6,9 @@
   "paths": [
     {
       "rank": 1,
-      "path": "Public chemistry science communication via a self-produced video channel",
-      "what_it_is": "Building a public YouTube/TikTok channel where a trained chemist runs and films real syntheses and reactions, explains the underlying chemistry in depth, and grows a large recurring audience around it.",
-      "why_it_signals": "Sustaining a channel like this demands real bench mastery performed under public scrutiny plus the discipline to explain and package it consistently, which reads as initiative and communication skill worth sponsoring.",
+      "path": "Run a public chemistry video channel",
+      "what_it_is": "Film and narrate real syntheses and reactions for a public YouTube or TikTok channel, explaining the chemistry as you go, consistently enough to build a lasting audience.",
+      "why_it_signals": "It proves your lab technique and your explanations both hold up under public scrutiny — verifiable skill an employer can check before ever meeting you.",
       "people": [
         {"name": "Nigel Braun (NileRed)", "link": "https://www.nile.red/"},
         {"name": "Dr. Josiah Newton (That Chemist)", "link": "https://newchem.ca/"},
@@ -18,9 +18,9 @@
     },
     {
       "rank": 2,
-      "path": "Open-source cheminformatics / computational-chemistry tool building",
-      "what_it_is": "Contributing merged, production-grade features or documentation to widely used open-source chemistry software such as RDKit, or shipping and publicly writing up your own cheminformatics tools.",
-      "why_it_signals": "A merged contribution to software the whole industry runs on is public, verifiable proof of both chemistry judgment and software craft that a resume line can't fake.",
+      "path": "Build open-source cheminformatics tools",
+      "what_it_is": "Get a real feature, fix, or set of docs merged into widely used chemistry software such as RDKit, or build and publicly document your own cheminformatics tool.",
+      "why_it_signals": "A merged contribution to software the field runs on is public proof you can turn chemistry judgment into working code, not just describe it.",
       "people": [
         {"name": "Andrew Dalke", "link": "http://dalkescientific.com/"},
         {"name": "Jeremy Monat, PhD", "link": "https://bertiewooster.github.io/"},
@@ -30,9 +30,9 @@
     },
     {
       "rank": 3,
-      "path": "Public industry/drug-discovery chemistry writing",
-      "what_it_is": "Running a long-running blog or newsletter that translates real pharma or chemical-industry work, technical judgment, and trends for a broad technical readership.",
-      "why_it_signals": "Sustained, well-argued public writing about the industry demonstrates deep domain fluency plus the rarer ability to communicate it clearly, a combination recruiters treat as a proxy for seniority beyond years of experience.",
+      "path": "Write publicly about industry and drug-discovery chemistry",
+      "what_it_is": "Run a long-running blog or newsletter that translates real pharma or chemical-industry work, technical judgment, and trends for a broad technical readership.",
+      "why_it_signals": "Sustained, well-argued industry writing proves domain fluency plus the rarer ability to explain it clearly — evidence of judgment beyond your years of experience.",
       "people": [
         {"name": "Derek Lowe", "link": "https://www.science.org/blogs/pipeline"},
         {"name": "Ash Jogalekar", "link": "https://medchemash.substack.com/"},

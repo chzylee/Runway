@@ -7,8 +7,8 @@
     {
       "rank": 1,
       "path": "Become an embedded chief/in-house economist inside a tech company",
-      "what_it_is": "Apply PhD-level econometrics, market design, and causal inference directly inside a tech company's product and policy decisions, often as a named Chief Economist or economics-team lead.",
-      "why_it_signals": "Multiple major tech companies have independently created and repeatedly filled a Chief Economist role with academically trained economists, showing this is a real, repeatable career track rather than one company's idiosyncratic hire.",
+      "what_it_is": "Apply econometrics, market design, and causal inference directly inside a tech company's product and policy decisions, often as a named economics lead.",
+      "why_it_signals": "It proves your research skills convert directly into decisions that move a real business, not just publications — the kind of applied judgment companies pay to keep in-house.",
       "people": [
         {"name": "Hal Varian", "link": "https://en.wikipedia.org/wiki/Hal_Varian"},
         {"name": "Susan Athey", "link": "https://gsb.stanford.edu/faculty-research/faculty/susan-athey"},
@@ -19,9 +19,9 @@
     },
     {
       "rank": 2,
-      "path": "Publish a public-facing economics newsletter or blog with a real following",
-      "what_it_is": "Write regularly for a broad public audience (Substack, blog) translating economic analysis into accessible, widely-read commentary, building a personal platform alongside or instead of an academic post.",
-      "why_it_signals": "Several trained economists — from a Nobel laureate to tenured professors — have each built independent, large public readerships this way, showing the capability (not one-off virality) is what carries the following.",
+      "path": "Publish a public-facing economics newsletter or blog",
+      "what_it_is": "Write regularly for a public audience, translating economic analysis into clear, accessible commentary on a personal newsletter or blog.",
+      "why_it_signals": "Sustained public writing proves you can turn technical analysis into arguments non-economists actually read and trust — a skill few credentialed economists build.",
       "people": [
         {"name": "Noah Smith", "link": "https://www.noahpinion.blog/about"},
         {"name": "Tyler Cowen", "link": "https://marginalrevolution.com/about"},
@@ -33,8 +33,8 @@
     {
       "rank": 3,
       "path": "Turn research into an open, policy-used public data tool",
-      "what_it_is": "Build and maintain a large-scale, publicly accessible dataset or interactive tool (mobility, inequality, tax data) that policymakers, journalists, and other researchers directly use.",
-      "why_it_signals": "Several economists working in overlapping teams have each shipped and sustained a named public data infrastructure project used well beyond academia, showing this is a buildable, repeatable capability rather than a single lucky project.",
+      "what_it_is": "Build and maintain a large-scale, publicly accessible dataset or interactive tool that policymakers, journalists, and other researchers use directly.",
+      "why_it_signals": "It proves you can turn research into infrastructure other people build decisions on — impact that outlasts any single paper.",
       "people": [
         {"name": "Raj Chetty", "link": "https://rajchetty.com/the-opportunity-atlas/"},
         {"name": "Emmanuel Saez", "link": "https://eml.berkeley.edu/~saez/"},

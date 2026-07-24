@@ -8,7 +8,7 @@
       "rank": 1,
       "path": "Ship your own interface in production code",
       "what_it_is": "Design and implement the UI yourself in the actual codebase, owning components live in production rather than handing off static files to an engineer.",
-      "why_it_signals": "Emil Kowalski and Paco Coursey at Linear, and Rauno Freiberg at Vercel, are design engineers whose job is exactly this fusion - and each has proof in widely-used open-source UI libraries they built (Sonner, Vaul, cmdk).",
+      "why_it_signals": "It proves you can own a UI live in production code, not just hand off static files and hope the implementation matches the intent.",
       "people": [
         {"name": "Emil Kowalski", "link": "https://emilkowal.ski/"},
         {"name": "Rauno Freiberg", "link": "https://rauno.me/"},
@@ -20,7 +20,7 @@
       "rank": 2,
       "path": "Own and scale a documented design system",
       "what_it_is": "Build a versioned, documented component system that other teams design and build against, and keep it alive as the organization grows.",
-      "why_it_signals": "Brad Frost (Atomic Design), Nathan Curtis (EightShapes) and Dan Mall (SuperFriendly) each built entire practices around leading design systems for other companies, showing this is a recognized specialty rather than a side task.",
+      "why_it_signals": "It proves you can build a component system disciplined enough for other teams to design and build against, and keep it alive as the organization grows.",
       "people": [
         {"name": "Brad Frost", "link": "https://bradfrost.com/"},
         {"name": "Nathan Curtis", "link": "https://eightshapes.com/nathan-curtis/"},
@@ -32,7 +32,7 @@
       "rank": 3,
       "path": "Specialize in motion and interaction craft",
       "what_it_is": "Go deep on animation and micro-interaction design - timing, easing, physics - as a specialty rather than a finishing touch applied at the end.",
-      "why_it_signals": "Val Head (Adobe, author of Designing Interface Animation), Cassie Evans (GSAP, Webflow) and Rachel Nabors (Microsoft, Meta, Mozilla, W3C) each built recognized careers specifically as motion and interaction specialists within UX.",
+      "why_it_signals": "It proves deep, deliberate command of timing and interaction feel — a specialty distinct from treating animation as a last-minute polish pass.",
       "people": [
         {"name": "Val Head", "link": "https://valhead.com/"},
         {"name": "Cassie Evans", "link": "https://cassie.codes/"},
