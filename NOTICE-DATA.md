@@ -28,7 +28,7 @@ They are **build outputs, not source.** Regenerate them with
 
 ## The curated content
 
-`prompts/recommendations.md`, the `*.standout_paths.json` files, and the site
+`web/prompts/recommendations.md`, the `*.standout_paths.json` files, and the site
 copy in `web/` are written by hand rather than generated. They are also MIT.
 Splitting them onto a separate content license would be more precise and more
 friction than a project this size warrants.

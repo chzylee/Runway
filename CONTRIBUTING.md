@@ -22,7 +22,7 @@ codes, not a role name — so a new role is a small change. Open an issue first;
 see below.
 
 **Improve the site or the prompt.** `web/` is a static page and
-`prompts/recommendations.md` is the reviewer prompt template. Both take
+`web/prompts/recommendations.md` is the reviewer prompt template. Both take
 ordinary pull requests.
 
 **Fix a bug.** Especially anything where the page fails in a way a user cannot
@@ -77,7 +77,7 @@ occupations should become two narrow roles rather than one noisy bundle.
 
 ## What will not be merged
 
-- **Hand-edited files in `web/data/` or `web/prompts/`.** Both are build
+- **Hand-edited files in `web/data/`.** These are build
   outputs. Change the code that generates them.
 - **Caveat text edited anywhere but `scripts/_util.py`'s `CAVEATS`.** Those
   caveats are emitted verbatim into every role's JSON and mirrored into the

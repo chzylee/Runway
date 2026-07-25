@@ -1,4 +1,4 @@
-"""Build-time check: the caveats embedded in prompts/recommendations.md must be
+"""Build-time check: the caveats embedded in web/prompts/recommendations.md must be
 byte-for-byte identical to the engine's single-source `_util.CAVEATS` (design doc
 §7 — one source of truth for the five caveats).
 
@@ -21,7 +21,9 @@ from engine import RunwayError
 # Resolve the template relative to this file so the check works from any CWD.
 from pathlib import Path
 
-RECOMMENDATIONS_PATH = Path(__file__).resolve().parents[1] / "prompts" / "recommendations.md"
+RECOMMENDATIONS_PATH = (
+    Path(__file__).resolve().parents[1] / "web" / "prompts" / "recommendations.md"
+)
 
 _BLOCK = re.compile(
     r"<!--\s*CAVEATS:BEGIN.*?-->\s*(.*?)\s*<!--\s*CAVEATS:END\s*-->",

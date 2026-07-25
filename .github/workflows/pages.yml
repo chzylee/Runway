@@ -44,9 +44,8 @@ jobs:
       - uses: actions/checkout@v4
 
       # Fail loudly here rather than shipping a site whose prompt template is
-      # missing: web/prompts/recommendations.md is written by scripts/run.py, and
-      # a stale or absent mirror breaks prompt generation in the browser with a
-      # fetch error the user cannot act on.
+      # missing: an absent web/prompts/recommendations.md breaks prompt generation
+      # in the browser with a fetch error the user cannot act on.
       - name: Check the site has what it needs
         run: |
           set -e
@@ -55,10 +54,10 @@ jobs:
           test -f web/report_template.html|| { echo "::error::web/report_template.html missing"; exit 1; }
           test -f web/faq.html            || { echo "::error::web/faq.html missing"; exit 1; }
           test -f web/prompts/recommendations.md \
-            || { echo "::error::web/prompts/recommendations.md missing - run scripts/run.py"; exit 1; }
+            || { echo "::error::web/prompts/recommendations.md missing"; exit 1; }
           for role in design uiux software_engineer consultant_management consultant_tech; do
-            test -f "web/data/$role.json" \
-              || { echo "::error::web/data/$role.json missing"; exit 1; }
+            test -f "web/data/$role/$role.json" \
+              || { echo "::error::web/data/$role/$role.json missing"; exit 1; }
           done
           echo "site payload OK"
 

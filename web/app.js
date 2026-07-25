@@ -103,9 +103,7 @@ const dataUrlFor = (role) => `data/${role}/${role}.json`;
 // public DOL filing and these do not. A role without one is normal: the prompt
 // then omits the section rather than inventing paths.
 const standoutUrlFor = (role) => `data/${role}/${role}.standout_paths.json`;
-// Build-written mirror of the repo's prompts/recommendations.md (single source,
-// D5): the server root is web/, so the repo-root original is unreachable from
-// here. scripts/run.py rewrites the mirror on every build (dec. #35).
+// Fetched relative to the serve root (web/), so the template lives inside it.
 const TEMPLATE_URL = "prompts/recommendations.md";
 
 // The official SOC title for what's colloquially called "UI/UX" (dec. #39) —

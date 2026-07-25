@@ -62,7 +62,7 @@ Every later push to `main` that touches `web/` redeploys on its own.
 `index.html` and that control goes quiet. Move it, restyle it, or wrap it in
 anything you like; just carry the `id` along.
 
-**The report has a shape.** `prompts/recommendations.md` asks the LLM for a
+**The report has a shape.** `web/prompts/recommendations.md` asks the LLM for a
 specific JSON object, and `report_template.html` renders that object. Both
 sides are yours. Change them together and everything holds.
 
@@ -93,7 +93,7 @@ It makes a real portfolio piece: a live site, real public data, real people usin
 - **Layer 3: the prompt.** The static site in `web/` is the only presentation
   surface. You pick a role, select target companies from the shortlist, add
   your portfolio link (and optionally paste your résumé), and the site fills
-  `prompts/recommendations.md` with those inputs and hands you a finished
+  `web/prompts/recommendations.md` with those inputs and hands you a finished
   prompt to copy. You run it in your own Claude/ChatGPT chat and read the
   result critically. No script in this repo calls an LLM, and the page itself
   sends nothing you enter anywhere.
@@ -101,14 +101,14 @@ It makes a real portfolio piece: a live site, real public data, real people usin
   The prompt asks for a **single JSON object** back, which you paste into the
   site to see rendered. That shape is the contract between the prompt and
   anything that displays the report, and its **single source of truth** is the
-  *Output contract* section of [`prompts/recommendations.md`](prompts/recommendations.md).
+  *Output contract* section of [`web/prompts/recommendations.md`](web/prompts/recommendations.md).
   It is deliberately not restated here, so the two can never drift apart. Read
   it there before building or changing anything that consumes the report.
 
 ## Run it locally
 
 The site's data (`web/data/<role>.{json,csv}` per registered role, plus the
-prompt mirror in `web/prompts/`) is committed, so a fresh clone already has
+prompt template in `web/prompts/`) is committed, so a fresh clone already has
 everything the UI needs. Working on the site takes no Python setup and no DOL
 download.
 
@@ -154,7 +154,7 @@ workflow.
    caveats above the table and the funnel line render verbatim from
    `<role>.json`, so the UI hardcodes nothing about what a filing means.
 4. **Generate the prompt.** Once you have picked at least one company and the
-   portfolio URL is valid, "Generate prompt" fills `prompts/recommendations.md`
+   portfolio URL is valid, "Generate prompt" fills `web/prompts/recommendations.md`
    with your selections and shows it in a copy box. Changing any input
    invalidates a prompt already on screen.
 5. **Run it yourself.** Copy the prompt into your own Claude/ChatGPT chat and
@@ -199,7 +199,7 @@ Every applicant-facing surface carries a short list of caveats about what an LCA
 filing does and does not mean. They are **not reproduced here on purpose.** They
 live in exactly one place, `scripts/_util.py`'s `CAVEATS`, and go verbatim into
 every role's `<role>.json`, get rendered by the site from that JSON, and are
-mirrored into `prompts/recommendations.md`, where
+mirrored into `web/prompts/recommendations.md`, where
 `scripts/check_caveats_parity.py` enforces byte-equality as a build gate.
 
 Read them there. A second copy in this file is how a caveat that was
@@ -211,11 +211,10 @@ deliberately removed from the engine survives anyway.
 web/                         the static site: index.html + app.js + styles.css
 web/app.test.js              narrow vitest suite: escaping, URL validation, PromptReady gate (dec. #42)
 web/data/                    committed, site-served shortlist artifacts, per role (design.*, uiux.*, software_engineer.*, consultant_management.*, consultant_tech.*)
-web/prompts/                 build-written mirror of prompts/recommendations.md (do not hand-edit)
 package.json                 dev-only Node tooling (Vite + vitest) for `npm run dev` / `npm test`, web/ only
 vitest.config.js             jsdom test environment, scoped to web/**/*.test.js
 
-prompts/recommendations.md   reviewer prompt template (single source; filled client-side, run by you)
+web/prompts/recommendations.md   reviewer prompt template (the one copy; filled client-side, run by you)
 
 engine/sponsors.py           deterministic engine: filter + aggregate (no LLM, no HTML); ROLE_SOC is the role registry
 engine/verify.py             in-pipeline checks; a failed check stops the run
@@ -223,7 +222,7 @@ scripts/discover_role.py     SOC codes for a title, read from real filings; the 
 scripts/fetch_quarters.py    checks DOL for new quarters + downloads them (HEAD-probe discovery, dec. #43)
 scripts/convert_quarters.py  raw DOL xlsx -> narrow parquet (streamed)
 scripts/build_shortlist.py   engine -> web/data/<role>.{json,csv} (+ provenance), one role at a time or build_all()
-scripts/check_caveats_parity.py  asserts prompts/recommendations.md's caveats match scripts/_util.CAVEATS
+scripts/check_caveats_parity.py  asserts web/prompts/recommendations.md's caveats match scripts/_util.CAVEATS
 scripts/run.py               fetch -> convert -> build: regenerates web/data/ (every role) + prompt mirror (occasional, not part of UI dev; --no-fetch to skip the DOL check)
 .github/workflows/data-pipeline.yml  weekly + on-demand CI: fetch new quarter -> rebuild -> commit web/data/
 .github/workflows/pages.yml  deploys web/ to GitHub Pages on any push to main that touches it

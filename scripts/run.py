@@ -17,30 +17,12 @@ actually landed - see .github/workflows/data-pipeline.yml.
 """
 import argparse
 
-from _util import REPO_ROOT, run_cli
+from _util import run_cli
 
 import build_shortlist
 import check_caveats_parity
 import convert_quarters
 import fetch_quarters
-
-PROMPT_TEMPLATE = REPO_ROOT / "prompts" / "recommendations.md"
-PROMPT_MIRROR = REPO_ROOT / "web" / "prompts" / "recommendations.md"
-
-
-def mirror_prompt_template():
-    """Mirror the prompt template into the served tree (dec. #35).
-
-    The site fetches `prompts/recommendations.md` relative to its own root, and
-    the serve root is web/ (Design Doc §13.3) — the repo-root original is
-    unreachable from there. The single source of truth stays
-    prompts/recommendations.md (D5); this byte-for-byte copy is a committed
-    build artifact like web/data/*, rewritten on every run. Never edit the
-    mirror by hand.
-    """
-    PROMPT_MIRROR.parent.mkdir(parents=True, exist_ok=True)
-    PROMPT_MIRROR.write_bytes(PROMPT_TEMPLATE.read_bytes())
-
 
 def main():
     parser = argparse.ArgumentParser(
@@ -65,10 +47,6 @@ def main():
     # engine's single source before doing any expensive data work. Data-independent,
     # so it fails fast and never leaves a half-built emit behind a late drift error.
     check_caveats_parity.check_caveats_parity()
-    # Mirror right after the parity check: the copy is always a template whose
-    # caveats were just verified against the engine, and it is data-independent,
-    # so it lands even if the convert step later stops the run.
-    mirror_prompt_template()
     # Check DOL for a new quarter and download it before converting (dec. #43).
     # Skipped with --no-fetch for offline work or when CI has already run the fetch
     # as its own gated step. A network/endpoint failure stops the run with a
@@ -80,7 +58,6 @@ def main():
     print("[run] done:")
     for role in built:
         print(f"[run]   web/data/{role}/{role}.json   site data (+ .provenance.json, .csv)")
-    print("[run]   web/prompts/recommendations.md   prompt-template mirror (do not edit)")
     print("[run]   serve locally: python -m http.server  (rooted at web/)")
 
 

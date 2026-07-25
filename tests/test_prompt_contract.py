@@ -29,8 +29,7 @@ from pathlib import Path
 import pytest
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-TEMPLATE = REPO_ROOT / "prompts" / "recommendations.md"
-MIRROR = REPO_ROOT / "web" / "prompts" / "recommendations.md"
+TEMPLATE = REPO_ROOT / "web" / "prompts" / "recommendations.md"
 APP_JS = REPO_ROOT / "web" / "app.js"
 REPORT_HTML = REPO_ROOT / "web" / "report_template.html"
 
@@ -40,9 +39,16 @@ def _read(path: Path) -> str:
     return path.read_text(encoding="utf-8")
 
 
+# Emphasis markers only where they wrap a word, so *vehicle* and _vehicle_ both
+# flatten to vehicle while an identifier like new_project keeps its underscore.
+_EMPHASIS = re.compile(r"(?<!\w)[*_]+(?=\w)|(?<=\w)[*_]+(?!\w)")
+
+
 def _flat(text: str) -> str:
-    """Collapse whitespace so a hard-wrapped phrase still matches."""
-    return re.sub(r"\s+", " ", text)
+    """Collapse whitespace so a hard-wrapped phrase still matches, and drop
+    emphasis markers so a formatter rewriting *word* as _word_ does not read as
+    the prompt losing an instruction."""
+    return _EMPHASIS.sub("", re.sub(r"\s+", " ", text))
 
 
 @pytest.fixture(scope="module")
@@ -240,17 +246,3 @@ def test_caveats_block_markers_are_intact(template: str) -> None:
     assert template.count("CAVEATS:BEGIN") == 1, "expected exactly one CAVEATS:BEGIN"
     assert template.count("CAVEATS:END") == 1, "expected exactly one CAVEATS:END"
     assert template.index("CAVEATS:BEGIN") < template.index("CAVEATS:END")
-
-
-# -------------------------------------------------------------------- mirror
-
-def test_mirror_matches_the_source(template: str) -> None:
-    """web/prompts/ is a build artifact of prompts/; the site serves the mirror.
-
-    If they drift, the site hands users a different prompt from the one in the
-    repo, and every other test here is checking a file nobody actually runs.
-    """
-    assert MIRROR.read_text(encoding="utf-8") == template, (
-        "web/prompts/recommendations.md is out of sync with prompts/recommendations.md "
-        "- run: python scripts/run.py --no-fetch"
-    )

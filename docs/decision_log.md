@@ -1201,3 +1201,32 @@ Automation** (§1 Principles) for the human-facing, load-bearing version of this
 **Checkable (once built):** every `ROLE_SOC` entry added by `expand_roles.py` has a corresponding
 audit-queue row before or at the moment `scripts/run.py` would serve it publicly; no title-tier
 distinction gates the `ROLE_SOC` write itself, only the audit-queue priority ordering.
+
+## 48. One prompt template, in the served tree — supersedes #35's mirror
+
+**Supersedes dec. #35.** That entry resolved a contradiction (the site fetches
+`prompts/recommendations.md` relative to its serve root `web/`, but the file lived at the
+repo root, unreachable from there) by having `scripts/run.py` copy the source into
+`web/prompts/recommendations.md` on every build.
+
+**The cost that showed up in practice:** two files, and the served one is the only one that
+matters. Editing the source and running the site shows the *old* prompt until a build is run
+— which is exactly what happened, silently, to the person editing it. A parity test caught
+drift in CI, but only after the confusing local behaviour.
+
+**Alternatives:** keep the mirror and add a dev-server alias so the source is served during
+`npm run dev` (fixes local staleness but still two files); symlink (poor Windows support,
+and the repo is developed on Windows); accept the build step.
+
+**Decision:** delete the repo-root `prompts/` directory. `web/prompts/recommendations.md` is
+now the one and only copy — the file that is served, the file you edit. Consequences:
+`mirror_prompt_template()` and its call are removed from `scripts/run.py`;
+`scripts/check_caveats_parity.py` and `tests/test_caveats_parity.py` point at the served
+file; `test_mirror_matches_the_source` is deleted (there is nothing left to drift).
+
+The design-doc D5 intent — one source of truth for the prompt — is better served by one file
+than by two files plus a test asserting they match.
+
+**Checkable:** `ls prompts/` does not exist; `git grep -l "prompts/recommendations.md"` returns
+only paths under `web/prompts/` or references to it; `python scripts/run.py --no-fetch` writes
+no prompt file; the caveats-parity gate still fails on injected drift.
