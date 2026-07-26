@@ -110,6 +110,25 @@ textarea { width: 100%; resize: vertical; }
 }
 .error-callout p:first-child { margin-top: 0; font-weight: 600; }
 
+/* Author's personal asides inside FAQ answers — distinct from the yellow callout. */
+p.tip {
+  border-left: 4px solid var(--accent);
+  background: var(--row-selected);
+  border-radius: 0 6px 6px 0;
+  padding: 0.7rem 1.1rem;
+  margin: 1rem 0 1.25rem;
+}
+p.tip::before {
+  content: "Personal tip";
+  display: block;
+  margin-bottom: 0.3rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
 /* ---- shortlist table ---- */
 
 .table-wrap {
@@ -220,15 +239,16 @@ footer {
   outline: 2px solid #2b5c8a;
   outline-offset: 2px;
 }
-#section-faq details p {
-  margin: .5rem 0;
-  max-width: 68ch;
-}
+#section-faq details p { margin: .5rem 0; }
+
+/* One reading measure for every paragraph on the page — the intro, the answers
+   inside each toggle, and the About section all wrap at the same width. */
+#section-faq p,
+#section-about p { max-width: 68ch; }
 
 /* About / connect — sits below the FAQ so a reader who got all the way through
    the reasoning has somewhere to reply to it. */
 #section-about { margin-top: 2.5rem; }
-#section-about p { max-width: 68ch; }
 
 .connect {
   list-style: none;
