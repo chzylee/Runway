@@ -1,6 +1,6 @@
 {
   "role": "budget_analyst",
-  "generated_at_utc": "2026-09-14 12:43 UTC",
+  "generated_at_utc": "2026-10-05 14:32 UTC",
   "source": "US DOL OFLC LCA Programs disclosure data (public record)",
   "filters": {
     "case_status": "Certified",
@@ -10,22 +10,21 @@
     "pw_wage_level": "I"
   },
   "quarters_used": [
-    "FY2025Q4",
     "FY2026Q1"
   ],
   "quarters_superseded": {},
   "funnel": {
-    "rows_total": 201700,
-    "rows_certified": 181277,
-    "rows_soc_matched": 84,
-    "rows_selected": 42
+    "rows_total": 83120,
+    "rows_certified": 74664,
+    "rows_soc_matched": 34,
+    "rows_selected": 16
   },
-  "employer_groups": 36,
+  "employer_groups": 14,
   "rows_wage_excluded_from_wage_stats": 0,
   "patterns": {
     "basis": {
-      "filings": 42,
-      "employers": 36,
+      "filings": 16,
+      "employers": 14,
       "measured_by": "employers",
       "min_support_employers": 3
     },
@@ -33,21 +32,16 @@
       "recurring_tokens": [
         {
           "token": "analyst",
-          "employers": 27,
-          "filings": 30
+          "employers": 9,
+          "filings": 10
         },
         {
           "token": "budget",
-          "employers": 21,
-          "filings": 25
+          "employers": 7,
+          "filings": 8
         },
         {
           "token": "financial",
-          "employers": 6,
-          "filings": 6
-        },
-        {
-          "token": "specialist",
           "employers": 3,
           "filings": 3
         }
@@ -55,37 +49,12 @@
       "distinct_titles": [
         {
           "title": "Budget Analyst",
-          "employers": 13,
-          "filings": 15
-        },
-        {
-          "title": "BUDGET ANALYST",
-          "employers": 3,
-          "filings": 3
-        },
-        {
-          "title": "Financial Analyst",
-          "employers": 3,
-          "filings": 3
+          "employers": 5,
+          "filings": 6
         },
         {
           "title": "Accounts Coordinator",
           "employers": 2,
-          "filings": 2
-        },
-        {
-          "title": "Cost Analyst",
-          "employers": 2,
-          "filings": 2
-        },
-        {
-          "title": "BUDGET AND FISCAL ANALYST",
-          "employers": 1,
-          "filings": 2
-        },
-        {
-          "title": "Budget Analysts",
-          "employers": 1,
           "filings": 2
         },
         {
@@ -94,27 +63,17 @@
           "filings": 2
         },
         {
-          "title": "Associate Research Administrator",
+          "title": "BUDGET ANALYST",
           "employers": 1,
           "filings": 1
         },
         {
-          "title": "Business Development Supervisor",
+          "title": "Budget Analysts",
           "employers": 1,
           "filings": 1
         },
         {
-          "title": "Capital Budget Analyst",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Finance and Grants Manager",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Financial Analyst (Accountant)",
+          "title": "Financial Analyst",
           "employers": 1,
           "filings": 1
         },
@@ -124,22 +83,7 @@
           "filings": 1
         },
         {
-          "title": "Junior Budget Analyst",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Operations Analyst",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Senior Finance and Operations Systems Specialist",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Specialist, Budget-University Libraries",
           "employers": 1,
           "filings": 1
         },
@@ -154,14 +98,14 @@
       {
         "soc_code": "13-2031.00",
         "title": "Budget Analysts",
-        "employers": 36,
-        "filings": 42
+        "employers": 14,
+        "filings": 16
       }
     ],
     "placement_model": {
       "in_house": {
-        "employers": 36,
-        "filings": 42
+        "employers": 14,
+        "filings": 16
       },
       "third_party_site": {
         "employers": 0,
@@ -172,32 +116,8 @@
       {
         "code": "61",
         "label": "Educational Services",
-        "employers": 8,
-        "filings": 10
-      },
-      {
-        "code": "42",
-        "label": "Wholesale Trade",
-        "employers": 4,
-        "filings": 4
-      },
-      {
-        "code": "62",
-        "label": "Health Care and Social Assistance",
         "employers": 3,
         "filings": 4
-      },
-      {
-        "code": "54",
-        "label": "Professional, Scientific, and Technical Services",
-        "employers": 3,
-        "filings": 3
-      },
-      {
-        "code": "72",
-        "label": "Accommodation and Food Services",
-        "employers": 3,
-        "filings": 3
       }
     ]
   },
@@ -208,36 +128,6 @@
     "Career/portfolio guidance, not immigration legal advice."
   ],
   "employers": [
-    {
-      "employer": "GEORGETOWN UNIVERSITY",
-      "employer_display": "Georgetown University",
-      "filing_count": 2,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "13-2031",
-      "soc_titles": "Budget Analysts",
-      "worksite_states": "DC; FL",
-      "worksite_cities": "Tamarac; Washington",
-      "wage_annual_min": 66227,
-      "wage_annual_median": 73114,
-      "wage_annual_max": 80000
-    },
-    {
-      "employer": "T MARKET",
-      "employer_display": "T Market LLC",
-      "filing_count": 2,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "13-2031",
-      "soc_titles": "Budget Analysts",
-      "worksite_states": "MA",
-      "worksite_cities": "Natick",
-      "wage_annual_min": 80000,
-      "wage_annual_median": 80000,
-      "wage_annual_max": 80000
-    },
     {
       "employer": "MICROSOFT CORPORATION",
       "employer_display": "Microsoft Corporation",
@@ -252,21 +142,6 @@
       "wage_annual_min": 91500,
       "wage_annual_median": 95970,
       "wage_annual_max": 100440
-    },
-    {
-      "employer": "SOUTH ARKANSAS CARDIOLOGY PLLC",
-      "employer_display": "SOUTH ARKANSAS CARDIOLOGY PLLC",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2031",
-      "soc_titles": "Budget Analysts",
-      "worksite_states": "AR",
-      "worksite_cities": "HENSLEY",
-      "wage_annual_min": 98200,
-      "wage_annual_median": 98200,
-      "wage_annual_max": 98200
     },
     {
       "employer": "WESTUDY EDUCATION",
@@ -284,21 +159,6 @@
       "wage_annual_max": 74526
     },
     {
-      "employer": "YT LIFE INVESTMENT",
-      "employer_display": "YT Life Investment LLC",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2031",
-      "soc_titles": "Budget Analysts",
-      "worksite_states": "CA",
-      "worksite_cities": "Ontario",
-      "wage_annual_min": 96000,
-      "wage_annual_median": 96000,
-      "wage_annual_max": 96000
-    },
-    {
       "employer": "13 SCENTS",
       "employer_display": "13 Scents Inc.",
       "filing_count": 1,
@@ -312,36 +172,6 @@
       "wage_annual_min": 100000,
       "wage_annual_median": 100000,
       "wage_annual_max": 100000
-    },
-    {
-      "employer": "71SCM",
-      "employer_display": "71SCM LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2031",
-      "soc_titles": "Budget Analysts",
-      "worksite_states": "NJ",
-      "worksite_cities": "Jersey City",
-      "wage_annual_min": 70200,
-      "wage_annual_median": 70200,
-      "wage_annual_max": 70200
-    },
-    {
-      "employer": "ACCORD POWER",
-      "employer_display": "Accord Power Inc",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2031",
-      "soc_titles": "Budget Analysts",
-      "worksite_states": "NJ",
-      "worksite_cities": "Someset",
-      "wage_annual_min": 75999,
-      "wage_annual_median": 75999,
-      "wage_annual_max": 75999
     },
     {
       "employer": "ADVANCED DENTAL SMILES PC",
@@ -404,21 +234,6 @@
       "wage_annual_max": 74526
     },
     {
-      "employer": "DKS STEEL DOOR AND FRAME SYSTEMS",
-      "employer_display": "DKS STEEL DOOR AND FRAME SYSTEMS INC.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2031",
-      "soc_titles": "Budget Analysts",
-      "worksite_states": "CA",
-      "worksite_cities": "COMMERCE",
-      "wage_annual_min": 74526,
-      "wage_annual_median": 74526,
-      "wage_annual_max": 74526
-    },
-    {
       "employer": "EKAM HOSPITALITY",
       "employer_display": "Ekam Hospitality, LLC",
       "filing_count": 1,
@@ -449,49 +264,19 @@
       "wage_annual_max": 50981
     },
     {
-      "employer": "FRIENDS OF CROWN HEIGHTS EDUCATIONAL CENTERS",
-      "employer_display": "Friends of Crown Heights Educational Centers INC",
+      "employer": "GEORGETOWN UNIVERSITY",
+      "employer_display": "Georgetown University",
       "filing_count": 1,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "13-2031",
       "soc_titles": "Budget Analysts",
-      "worksite_states": "NY",
-      "worksite_cities": "brooklyn",
-      "wage_annual_min": 70200,
-      "wage_annual_median": 70200,
-      "wage_annual_max": 70200
-    },
-    {
-      "employer": "FUELED DIGITAL MEDIA",
-      "employer_display": "Fueled Digital Media LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2031",
-      "soc_titles": "Budget Analysts",
-      "worksite_states": "NJ",
-      "worksite_cities": "Jersey City",
-      "wage_annual_min": 82500,
-      "wage_annual_median": 82500,
-      "wage_annual_max": 82500
-    },
-    {
-      "employer": "HANON SYSTEMS ALABAMA CORPORATION",
-      "employer_display": "Hanon Systems Alabama Corporation",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2031",
-      "soc_titles": "Budget Analysts",
-      "worksite_states": "GA",
-      "worksite_cities": "Statesboro",
-      "wage_annual_min": 70000,
-      "wage_annual_median": 70000,
-      "wage_annual_max": 70000
+      "worksite_states": "DC",
+      "worksite_cities": "Washington",
+      "wage_annual_min": 66227,
+      "wage_annual_median": 66227,
+      "wage_annual_max": 66227
     },
     {
       "employer": "IVY ELITE",
@@ -524,214 +309,19 @@
       "wage_annual_max": 86000
     },
     {
-      "employer": "MARTIN MARIETTA MATERIALS",
-      "employer_display": "Martin Marietta Materials, Inc.",
+      "employer": "T MARKET",
+      "employer_display": "T Market LLC",
       "filing_count": 1,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2031",
-      "soc_titles": "Budget Analysts",
-      "worksite_states": "NC",
-      "worksite_cities": "Raleigh",
-      "wage_annual_min": 80896,
-      "wage_annual_median": 80896,
-      "wage_annual_max": 80896
-    },
-    {
-      "employer": "NEW BEGINNINGS CREATOR NETWORK",
-      "employer_display": "New Beginnings Creator Network Corp.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2031",
-      "soc_titles": "Budget Analysts",
-      "worksite_states": "CA",
-      "worksite_cities": "GLENDALE",
-      "wage_annual_min": 81120,
-      "wage_annual_median": 81120,
-      "wage_annual_max": 81120
-    },
-    {
-      "employer": "NEWTON PUBLIC SCHOOLS",
-      "employer_display": "Newton Public Schools",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "13-2031",
       "soc_titles": "Budget Analysts",
       "worksite_states": "MA",
-      "worksite_cities": "Newton",
-      "wage_annual_min": 82000,
-      "wage_annual_median": 82000,
-      "wage_annual_max": 82000
-    },
-    {
-      "employer": "OEC FREIGHT NY",
-      "employer_display": "OEC FREIGHT (NY) INC.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2031",
-      "soc_titles": "Budget Analysts",
-      "worksite_states": "MO",
-      "worksite_cities": "KANSAS CITY",
-      "wage_annual_min": 67080,
-      "wage_annual_median": 67080,
-      "wage_annual_max": 67080
-    },
-    {
-      "employer": "ROOSEVELT UNIVERSITY",
-      "employer_display": "Roosevelt University",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2031",
-      "soc_titles": "Budget Analysts",
-      "worksite_states": "IL",
-      "worksite_cities": "Chicago",
-      "wage_annual_min": 69618,
-      "wage_annual_median": 69618,
-      "wage_annual_max": 69618
-    },
-    {
-      "employer": "SKYLINE CABINETRY",
-      "employer_display": "Skyline Cabinetry Inc",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2031",
-      "soc_titles": "Budget Analysts",
-      "worksite_states": "TX",
-      "worksite_cities": "Farmers Branch",
-      "wage_annual_min": 72779,
-      "wage_annual_median": 72779,
-      "wage_annual_max": 72779
-    },
-    {
-      "employer": "THE STATE HISTORICAL SOCIETY OF COLORADO",
-      "employer_display": "The State Historical Society of Colorado",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2031",
-      "soc_titles": "Budget Analysts",
-      "worksite_states": "CO",
-      "worksite_cities": "Denver",
-      "wage_annual_min": 69992,
-      "wage_annual_median": 69992,
-      "wage_annual_max": 69992
-    },
-    {
-      "employer": "TRUSTEES OF THE UNIVERSITY OF PENNSYLVANIA",
-      "employer_display": "TRUSTEES OF THE UNIVERSITY OF PENNSYLVANIA",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2031",
-      "soc_titles": "Budget Analysts",
-      "worksite_states": "PA",
-      "worksite_cities": "Philadelphia",
-      "wage_annual_min": 70500,
-      "wage_annual_median": 70500,
-      "wage_annual_max": 70500
-    },
-    {
-      "employer": "VENICE INVESTMENTS A CA GENERAL PARTNERSHIP",
-      "employer_display": "VENICE INVESTMENTS A CA GENERAL PARTNERSHIP",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2031",
-      "soc_titles": "Budget Analysts",
-      "worksite_states": "CA",
-      "worksite_cities": "LOS ANGELES",
-      "wage_annual_min": 74526,
-      "wage_annual_median": 74526,
-      "wage_annual_max": 74526
-    },
-    {
-      "employer": "VIRGINIA COMMONWEALTH UNIVERSITY",
-      "employer_display": "Virginia Commonwealth University",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2031",
-      "soc_titles": "Budget Analysts",
-      "worksite_states": "VA",
-      "worksite_cities": "Richmond",
-      "wage_annual_min": 62000,
-      "wage_annual_median": 62000,
-      "wage_annual_max": 62000
-    },
-    {
-      "employer": "VRG ONE",
-      "employer_display": "VRG ONE LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2031",
-      "soc_titles": "Budget Analysts",
-      "worksite_states": "NJ",
-      "worksite_cities": "East Rutherford",
-      "wage_annual_min": 85000,
-      "wage_annual_median": 85000,
-      "wage_annual_max": 85000
-    },
-    {
-      "employer": "WEEE",
-      "employer_display": "Weee! Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2031",
-      "soc_titles": "Budget Analysts",
-      "worksite_states": "CA",
-      "worksite_cities": "FREMONT",
-      "wage_annual_min": 84802,
-      "wage_annual_median": 84802,
-      "wage_annual_max": 84802
-    },
-    {
-      "employer": "WESTERN KENTUCKY UNIVERSITY",
-      "employer_display": "Western Kentucky University",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2031",
-      "soc_titles": "Budget Analysts",
-      "worksite_states": "KY",
-      "worksite_cities": "Bowling Green",
-      "wage_annual_min": 54060,
-      "wage_annual_median": 54060,
-      "wage_annual_max": 54060
-    },
-    {
-      "employer": "WESTNOVO FREIGHT",
-      "employer_display": "Westnovo Freight Inc",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2031",
-      "soc_titles": "Budget Analysts",
-      "worksite_states": "CA",
-      "worksite_cities": "SANTA ANA",
-      "wage_annual_min": 74526,
-      "wage_annual_median": 74526,
-      "wage_annual_max": 74526
+      "worksite_cities": "Natick",
+      "wage_annual_min": 80000,
+      "wage_annual_median": 80000,
+      "wage_annual_max": 80000
     },
     {
       "employer": "YZ ENTERPRISE",

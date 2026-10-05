@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-14 12:43 UTC",
+  "generated_at_utc": "2026-10-05 14:32 UTC",
   "source": "US DOL OFLC LCA Programs disclosure data (public record)",
   "filters": {
     "case_status": "Certified",
@@ -10,44 +10,41 @@
     "pw_wage_level": "I"
   },
   "quarters_used": [
-    "FY2025Q4",
     "FY2026Q1"
   ],
   "quarters_superseded": {},
   "rows_per_quarter": {
-    "FY2025Q4": 118580,
     "FY2026Q1": 83120
   },
   "funnel": {
-    "rows_total": 201700,
-    "rows_certified": 181277,
-    "rows_soc_matched": 204,
-    "rows_selected": 56
+    "rows_total": 83120,
+    "rows_certified": 74664,
+    "rows_soc_matched": 75,
+    "rows_selected": 20
   },
-  "employer_groups": 43,
-  "distinct_raw_employer_spellings": 44,
+  "employer_groups": 18,
+  "distinct_raw_employer_spellings": 18,
   "rows_wage_excluded_from_wage_stats": 0,
   "case_statuses_seen": {
-    "CERTIFIED": 181277,
-    "CERTIFIED - WITHDRAWN": 15748,
-    "WITHDRAWN": 3242,
-    "DENIED": 1433
+    "CERTIFIED": 74664,
+    "CERTIFIED - WITHDRAWN": 6666,
+    "WITHDRAWN": 1398,
+    "DENIED": 392
   },
   "wage_levels_seen": {
-    "II": 69,
-    "I": 56,
-    "III": 46,
-    "IV": 26,
-    "": 7
+    "II": 25,
+    "I": 20,
+    "III": 14,
+    "IV": 14,
+    "": 2
   },
   "wage_units_seen": {
-    "YEAR": 53,
-    "HOUR": 3
+    "YEAR": 20
   },
   "patterns": {
     "basis": {
-      "filings": 56,
-      "employers": 43,
+      "filings": 20,
+      "employers": 18,
       "measured_by": "employers",
       "min_support_employers": 3
     },
@@ -55,99 +52,34 @@
       "recurring_tokens": [
         {
           "token": "research",
-          "employers": 15,
-          "filings": 23
+          "employers": 9,
+          "filings": 9
         },
         {
           "token": "analyst",
-          "employers": 14,
-          "filings": 17
-        },
-        {
-          "token": "associate",
-          "employers": 10,
-          "filings": 11
-        },
-        {
-          "token": "senior",
-          "employers": 8,
-          "filings": 10
-        },
-        {
-          "token": "economic",
           "employers": 5,
-          "filings": 8
-        },
-        {
-          "token": "economist",
-          "employers": 5,
-          "filings": 7
-        },
-        {
-          "token": "postdoctoral",
-          "employers": 5,
-          "filings": 6
-        },
-        {
-          "token": "data",
-          "employers": 4,
           "filings": 5
         },
         {
-          "token": "specialist",
+          "token": "associate",
           "employers": 4,
           "filings": 4
         },
         {
-          "token": "fellow",
-          "employers": 3,
-          "filings": 5
+          "token": "senior",
+          "employers": 4,
+          "filings": 4
         },
         {
-          "token": "assistant",
-          "employers": 3,
-          "filings": 3
-        },
-        {
-          "token": "professor",
+          "token": "data",
           "employers": 3,
           "filings": 3
         }
       ],
       "distinct_titles": [
         {
-          "title": "Postdoctoral Associate",
-          "employers": 2,
-          "filings": 3
-        },
-        {
-          "title": "Analyst",
-          "employers": 2,
-          "filings": 2
-        },
-        {
-          "title": "Economic Development Specialist",
-          "employers": 2,
-          "filings": 2
-        },
-        {
           "title": "Research Associate",
           "employers": 2,
-          "filings": 2
-        },
-        {
-          "title": "Senior Analyst",
-          "employers": 2,
-          "filings": 2
-        },
-        {
-          "title": "Growth Lab Research Fellow",
-          "employers": 1,
-          "filings": 3
-        },
-        {
-          "title": "Economic Research Analyst",
-          "employers": 1,
           "filings": 2
         },
         {
@@ -156,52 +88,12 @@
           "filings": 2
         },
         {
-          "title": "Senior Economic Research Economist",
-          "employers": 1,
-          "filings": 2
-        },
-        {
-          "title": "Senior Research Analyst",
-          "employers": 1,
-          "filings": 2
-        },
-        {
-          "title": "Agricultural Economic Analyst",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Assistant Professor",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Assistant Professor of Environmental Studies & Economics",
           "employers": 1,
           "filings": 1
         },
         {
-          "title": "Associate",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Associate - Antitrust & Competition Economics (China)",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Consultant",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Data Analyst D",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Data Analyst Senior",
           "employers": 1,
           "filings": 1
         },
@@ -216,27 +108,7 @@
           "filings": 1
         },
         {
-          "title": "Economic Analyst",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Emerging Scholar",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Faculty Specialist",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Natural Resource Economist",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Post Doctoral Research Associate",
           "employers": 1,
           "filings": 1
         },
@@ -246,42 +118,7 @@
           "filings": 1
         },
         {
-          "title": "Postdoctoral Fellow",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Postdoctoral Research Associate",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Postdoctoral fellow",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Pricing & Revenue Optimization Analyst",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Program Manager",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "RESEARCH ASSISTANT PROFESSOR",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "RESEARCH SPECIALIST",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Renewable Energy Economist",
           "employers": 1,
           "filings": 1
         },
@@ -311,27 +148,22 @@
           "filings": 1
         },
         {
+          "title": "Senior Analyst",
+          "employers": 1,
+          "filings": 1
+        },
+        {
           "title": "Senior Policy Manager",
           "employers": 1,
           "filings": 1
         },
         {
-          "title": "Senior Research Associate",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Social Research Analyst",
+          "title": "Senior Research Analyst",
           "employers": 1,
           "filings": 1
         },
         {
           "title": "Trading Research Analyst",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Vice President",
           "employers": 1,
           "filings": 1
         }
@@ -341,38 +173,38 @@
       {
         "soc_code": "19-3011.00",
         "title": "Economists",
-        "employers": 35,
-        "filings": 47
+        "employers": 16,
+        "filings": 18
       },
       {
         "soc_code": "19-3011.01",
         "title": "Environmental Economists",
-        "employers": 8,
-        "filings": 9
+        "employers": 2,
+        "filings": 2
       }
     ],
     "placement_model": {
       "in_house": {
-        "employers": 42,
-        "filings": 55
+        "employers": 18,
+        "filings": 20
       },
       "third_party_site": {
-        "employers": 1,
-        "filings": 1
+        "employers": 0,
+        "filings": 0
       }
     },
     "industry_naics2": [
       {
         "code": "61",
         "label": "Educational Services",
-        "employers": 16,
-        "filings": 23
+        "employers": 7,
+        "filings": 7
       },
       {
         "code": "54",
         "label": "Professional, Scientific, and Technical Services",
-        "employers": 16,
-        "filings": 21
+        "employers": 6,
+        "filings": 7
       }
     ]
   },

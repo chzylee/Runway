@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-14 12:43 UTC",
+  "generated_at_utc": "2026-10-05 14:32 UTC",
   "source": "US DOL OFLC LCA Programs disclosure data (public record)",
   "filters": {
     "case_status": "Certified",
@@ -10,44 +10,42 @@
     "pw_wage_level": "I"
   },
   "quarters_used": [
-    "FY2025Q4",
     "FY2026Q1"
   ],
   "quarters_superseded": {},
   "rows_per_quarter": {
-    "FY2025Q4": 118580,
     "FY2026Q1": 83120
   },
   "funnel": {
-    "rows_total": 201700,
-    "rows_certified": 181277,
-    "rows_soc_matched": 1152,
-    "rows_selected": 107
+    "rows_total": 83120,
+    "rows_certified": 74664,
+    "rows_soc_matched": 538,
+    "rows_selected": 53
   },
-  "employer_groups": 89,
-  "distinct_raw_employer_spellings": 90,
+  "employer_groups": 43,
+  "distinct_raw_employer_spellings": 43,
   "rows_wage_excluded_from_wage_stats": 0,
   "case_statuses_seen": {
-    "CERTIFIED": 181277,
-    "CERTIFIED - WITHDRAWN": 15748,
-    "WITHDRAWN": 3242,
-    "DENIED": 1433
+    "CERTIFIED": 74664,
+    "CERTIFIED - WITHDRAWN": 6666,
+    "WITHDRAWN": 1398,
+    "DENIED": 392
   },
   "wage_levels_seen": {
-    "IV": 385,
-    "III": 335,
-    "II": 293,
-    "I": 107,
-    "": 32
+    "IV": 182,
+    "III": 156,
+    "II": 129,
+    "I": 53,
+    "": 18
   },
   "wage_units_seen": {
-    "YEAR": 90,
-    "HOUR": 17
+    "YEAR": 44,
+    "HOUR": 9
   },
   "patterns": {
     "basis": {
-      "filings": 107,
-      "employers": 89,
+      "filings": 53,
+      "employers": 43,
       "measured_by": "employers",
       "min_support_employers": 3
     },
@@ -55,76 +53,46 @@
       "recurring_tokens": [
         {
           "token": "project",
-          "employers": 58,
-          "filings": 69
+          "employers": 26,
+          "filings": 34
         },
         {
           "token": "manager",
-          "employers": 44,
-          "filings": 55
-        },
-        {
-          "token": "specialist",
-          "employers": 17,
-          "filings": 20
+          "employers": 21,
+          "filings": 25
         },
         {
           "token": "management",
-          "employers": 15,
-          "filings": 18
+          "employers": 9,
+          "filings": 11
+        },
+        {
+          "token": "specialist",
+          "employers": 9,
+          "filings": 11
         },
         {
           "token": "assistant",
-          "employers": 10,
-          "filings": 13
-        },
-        {
-          "token": "program",
-          "employers": 9,
-          "filings": 14
-        },
-        {
-          "token": "coordinator",
-          "employers": 8,
-          "filings": 8
+          "employers": 7,
+          "filings": 10
         },
         {
           "token": "engineer",
-          "employers": 8,
-          "filings": 8
+          "employers": 6,
+          "filings": 6
         },
         {
-          "token": "analyst",
+          "token": "program",
           "employers": 5,
           "filings": 5
         },
         {
           "token": "associate",
-          "employers": 5,
-          "filings": 5
-        },
-        {
-          "token": "product",
-          "employers": 5,
-          "filings": 5
-        },
-        {
-          "token": "controls",
-          "employers": 4,
-          "filings": 4
-        },
-        {
-          "token": "data",
           "employers": 3,
           "filings": 3
         },
         {
-          "token": "lead",
-          "employers": 3,
-          "filings": 3
-        },
-        {
-          "token": "operations",
+          "token": "coordinator",
           "employers": 3,
           "filings": 3
         },
@@ -134,7 +102,7 @@
           "filings": 3
         },
         {
-          "token": "production",
+          "token": "product",
           "employers": 3,
           "filings": 3
         },
@@ -152,38 +120,18 @@
       "distinct_titles": [
         {
           "title": "Project Management Specialist",
-          "employers": 13,
-          "filings": 16
-        },
-        {
-          "title": "Project Manager",
-          "employers": 11,
-          "filings": 12
+          "employers": 8,
+          "filings": 10
         },
         {
           "title": "Assistant Project Manager",
-          "employers": 5,
-          "filings": 8
+          "employers": 4,
+          "filings": 7
         },
         {
-          "title": "ASSISTANT PROJECT MANAGER",
+          "title": "Project Manager",
           "employers": 3,
           "filings": 3
-        },
-        {
-          "title": "Project Coordinator",
-          "employers": 3,
-          "filings": 3
-        },
-        {
-          "title": "Project Engineer",
-          "employers": 3,
-          "filings": 3
-        },
-        {
-          "title": "Program Manager I",
-          "employers": 2,
-          "filings": 6
         },
         {
           "title": "Manager, Premium Support",
@@ -201,17 +149,7 @@
           "filings": 2
         },
         {
-          "title": "Project Controls Specialist",
-          "employers": 2,
-          "filings": 2
-        },
-        {
-          "title": "PROJECT MANAGER",
-          "employers": 1,
-          "filings": 2
-        },
-        {
-          "title": "Account Manager",
+          "title": "ASSISTANT PROJECT MANAGER",
           "employers": 1,
           "filings": 1
         },
@@ -221,17 +159,7 @@
           "filings": 1
         },
         {
-          "title": "Architectural Design Associate",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Assistant Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Associate Director",
           "employers": 1,
           "filings": 1
         },
@@ -241,32 +169,7 @@
           "filings": 1
         },
         {
-          "title": "Claims Analyst",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Construction Project Coordinator",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Data Project Management Specialist",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Digital Lead",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Goose Works Project Manager I",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Junior Project Manager",
           "employers": 1,
           "filings": 1
         },
@@ -281,32 +184,12 @@
           "filings": 1
         },
         {
-          "title": "Marketing Manager II",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "OPERATIONS & PROJECT ENGINEER",
           "employers": 1,
           "filings": 1
         },
         {
-          "title": "Operational Project Manager",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "PROGRAM MANAGER II",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Product Analyst",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Product Manager",
+          "title": "PROJECT MANAGER",
           "employers": 1,
           "filings": 1
         },
@@ -316,22 +199,12 @@
           "filings": 1
         },
         {
-          "title": "Production Software Analyst (Systems & Data)",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Professional Services - Solution Consultant",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Program Associate",
           "employers": 1,
           "filings": 1
         },
         {
-          "title": "Program Manager (PM), Country Impact Team (CIT)",
+          "title": "Program Manager I",
           "employers": 1,
           "filings": 1
         },
@@ -341,17 +214,7 @@
           "filings": 1
         },
         {
-          "title": "Program Operations Coordinator",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Project Assistant",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Project Controls Analyst I",
           "employers": 1,
           "filings": 1
         },
@@ -361,7 +224,22 @@
           "filings": 1
         },
         {
+          "title": "Project Controls Specialist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Coordinator",
+          "employers": 1,
+          "filings": 1
+        },
+        {
           "title": "Project Coordinator, Construction Mgmt.",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Project Engineer",
           "employers": 1,
           "filings": 1
         },
@@ -381,37 +259,7 @@
           "filings": 1
         },
         {
-          "title": "Project Manager Aftermarket",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Project Manager Clinical Research",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Project Manager, Cost Control Lead",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Project Scheduler II",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Project and Data Coordinator",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Research Project Specialist",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Residency Coordinator",
           "employers": 1,
           "filings": 1
         },
@@ -434,11 +282,6 @@
           "title": "Senior Product Manager, Technical",
           "employers": 1,
           "filings": 1
-        },
-        {
-          "title": "Sr. NPI Program Manager",
-          "employers": 1,
-          "filings": 1
         }
       ]
     },
@@ -446,62 +289,44 @@
       {
         "soc_code": "13-1082.00",
         "title": "Project Management Specialists",
-        "employers": 89,
-        "filings": 107
+        "employers": 43,
+        "filings": 53
       }
     ],
     "placement_model": {
       "in_house": {
-        "employers": 85,
-        "filings": 103
+        "employers": 42,
+        "filings": 52
       },
       "third_party_site": {
-        "employers": 4,
-        "filings": 4
+        "employers": 1,
+        "filings": 1
       }
     },
     "industry_naics2": [
       {
         "code": "54",
         "label": "Professional, Scientific, and Technical Services",
-        "employers": 36,
-        "filings": 46
-      },
-      {
-        "code": "23",
-        "label": "Construction",
-        "employers": 14,
-        "filings": 15
+        "employers": 19,
+        "filings": 27
       },
       {
         "code": "33",
         "label": "Manufacturing",
-        "employers": 9,
-        "filings": 9
-      },
-      {
-        "code": "61",
-        "label": "Educational Services",
         "employers": 6,
         "filings": 6
       },
       {
-        "code": "62",
-        "label": "Health Care and Social Assistance",
-        "employers": 5,
+        "code": "23",
+        "label": "Construction",
+        "employers": 4,
         "filings": 5
       },
       {
-        "code": "81",
-        "label": "Other Services (except Public Administration)",
+        "code": "61",
+        "label": "Educational Services",
         "employers": 4,
         "filings": 4
-      },
-      {
-        "code": "56",
-        "label": "Administrative and Support and Waste Management and Remediation Services",
-        "employers": 3,
-        "filings": 3
       }
     ]
   },

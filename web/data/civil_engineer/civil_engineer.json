@@ -1,6 +1,6 @@
 {
   "role": "civil_engineer",
-  "generated_at_utc": "2026-09-14 12:43 UTC",
+  "generated_at_utc": "2026-10-05 14:31 UTC",
   "source": "US DOL OFLC LCA Programs disclosure data (public record)",
   "filters": {
     "case_status": "Certified",
@@ -10,22 +10,21 @@
     "pw_wage_level": "I"
   },
   "quarters_used": [
-    "FY2025Q4",
     "FY2026Q1"
   ],
   "quarters_superseded": {},
   "funnel": {
-    "rows_total": 201700,
-    "rows_certified": 181277,
-    "rows_soc_matched": 1572,
-    "rows_selected": 418
+    "rows_total": 83120,
+    "rows_certified": 74664,
+    "rows_soc_matched": 597,
+    "rows_selected": 154
   },
-  "employer_groups": 267,
+  "employer_groups": 112,
   "rows_wage_excluded_from_wage_stats": 0,
   "patterns": {
     "basis": {
-      "filings": 418,
-      "employers": 267,
+      "filings": 154,
+      "employers": 112,
       "measured_by": "employers",
       "min_support_employers": 3
     },
@@ -33,171 +32,91 @@
       "recurring_tokens": [
         {
           "token": "engineer",
-          "employers": 217,
-          "filings": 326
+          "employers": 93,
+          "filings": 118
         },
         {
           "token": "project",
-          "employers": 88,
-          "filings": 109
+          "employers": 41,
+          "filings": 49
         },
         {
           "token": "civil",
-          "employers": 68,
-          "filings": 129
-        },
-        {
-          "token": "structural",
-          "employers": 23,
-          "filings": 33
+          "employers": 32,
+          "filings": 48
         },
         {
           "token": "field",
-          "employers": 16,
-          "filings": 20
+          "employers": 9,
+          "filings": 11
         },
         {
           "token": "manager",
-          "employers": 15,
-          "filings": 16
-        },
-        {
-          "token": "assistant",
-          "employers": 14,
-          "filings": 15
-        },
-        {
-          "token": "associate",
-          "employers": 13,
-          "filings": 15
-        },
-        {
-          "token": "staff",
-          "employers": 12,
-          "filings": 14
-        },
-        {
-          "token": "engineering",
-          "employers": 11,
-          "filings": 24
-        },
-        {
-          "token": "transportation",
-          "employers": 10,
-          "filings": 11
-        },
-        {
-          "token": "geotechnical",
-          "employers": 8,
-          "filings": 15
-        },
-        {
-          "token": "bridge",
-          "employers": 8,
-          "filings": 9
-        },
-        {
-          "token": "senior",
-          "employers": 8,
-          "filings": 8
-        },
-        {
-          "token": "construction",
           "employers": 7,
-          "filings": 11
-        },
-        {
-          "token": "research",
-          "employers": 6,
           "filings": 7
         },
         {
-          "token": "postdoctoral",
+          "token": "structural",
+          "employers": 7,
+          "filings": 7
+        },
+        {
+          "token": "engineering",
+          "employers": 6,
+          "filings": 14
+        },
+        {
+          "token": "staff",
           "employers": 6,
           "filings": 6
         },
         {
-          "token": "specialist",
+          "token": "associate",
           "employers": 5,
-          "filings": 13
+          "filings": 5
+        },
+        {
+          "token": "transportation",
+          "employers": 5,
+          "filings": 5
+        },
+        {
+          "token": "assistant",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "specialist",
+          "employers": 3,
+          "filings": 9
         },
         {
           "token": "traffic",
-          "employers": 5,
-          "filings": 6
+          "employers": 3,
+          "filings": 4
         },
         {
           "token": "analyst",
-          "employers": 5,
-          "filings": 5
-        },
-        {
-          "token": "water",
-          "employers": 4,
-          "filings": 6
-        },
-        {
-          "token": "controls",
-          "employers": 4,
-          "filings": 5
-        },
-        {
-          "token": "estimator",
-          "employers": 4,
-          "filings": 4
-        },
-        {
-          "token": "junior",
-          "employers": 4,
-          "filings": 4
-        },
-        {
-          "token": "data",
-          "employers": 3,
-          "filings": 11
-        },
-        {
-          "token": "graduate",
-          "employers": 3,
-          "filings": 5
-        },
-        {
-          "token": "coordinator",
-          "employers": 3,
-          "filings": 4
-        },
-        {
-          "token": "entry",
-          "employers": 3,
-          "filings": 4
-        },
-        {
-          "token": "highway",
-          "employers": 3,
-          "filings": 4
-        },
-        {
-          "token": "office",
-          "employers": 3,
-          "filings": 4
-        },
-        {
-          "token": "quality",
-          "employers": 3,
-          "filings": 4
-        },
-        {
-          "token": "building",
           "employers": 3,
           "filings": 3
         },
         {
-          "token": "eit",
+          "token": "bridge",
           "employers": 3,
           "filings": 3
         },
         {
-          "token": "training",
+          "token": "geotechnical",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "postdoctoral",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "research",
           "employers": 3,
           "filings": 3
         }
@@ -205,121 +124,41 @@
       "distinct_titles": [
         {
           "title": "Project Engineer",
-          "employers": 44,
-          "filings": 53
+          "employers": 19,
+          "filings": 24
         },
         {
           "title": "Civil Engineer",
-          "employers": 34,
-          "filings": 49
-        },
-        {
-          "title": "Structural Engineer",
-          "employers": 12,
+          "employers": 13,
           "filings": 14
-        },
-        {
-          "title": "CIVIL ENGINEER",
-          "employers": 11,
-          "filings": 33
         },
         {
           "title": "Field Engineer",
-          "employers": 11,
-          "filings": 14
-        },
-        {
-          "title": "Assistant Project Manager",
-          "employers": 8,
+          "employers": 7,
           "filings": 9
         },
         {
-          "title": "PROJECT ENGINEER",
-          "employers": 8,
-          "filings": 8
+          "title": "CIVIL ENGINEER",
+          "employers": 6,
+          "filings": 9
         },
         {
-          "title": "Geotechnical Engineer",
-          "employers": 6,
-          "filings": 12
+          "title": "Assistant Project Manager",
+          "employers": 3,
+          "filings": 3
         },
         {
           "title": "Engineer I",
-          "employers": 6,
-          "filings": 6
+          "employers": 3,
+          "filings": 3
         },
         {
           "title": "Engineer II",
-          "employers": 5,
-          "filings": 5
-        },
-        {
-          "title": "Staff Engineer",
-          "employers": 4,
-          "filings": 4
-        },
-        {
-          "title": "Design Engineer",
-          "employers": 3,
-          "filings": 4
-        },
-        {
-          "title": "Project Engineer I",
-          "employers": 3,
-          "filings": 4
-        },
-        {
-          "title": "Project Manager",
-          "employers": 3,
-          "filings": 3
-        },
-        {
-          "title": "Senior Project Engineer",
-          "employers": 3,
-          "filings": 3
-        },
-        {
-          "title": "Transportation Engineer",
-          "employers": 3,
-          "filings": 3
-        },
-        {
-          "title": "Data Centre Infrastructure Engineer I",
-          "employers": 2,
-          "filings": 10
-        },
-        {
-          "title": "Graduate Engineer",
-          "employers": 2,
-          "filings": 4
-        },
-        {
-          "title": "Civil Designer",
-          "employers": 2,
-          "filings": 3
-        },
-        {
-          "title": "Designer, Highway",
-          "employers": 2,
-          "filings": 3
-        },
-        {
-          "title": "Field/Office Engineer",
-          "employers": 2,
-          "filings": 3
-        },
-        {
-          "title": "Bridge Engineer",
           "employers": 2,
           "filings": 2
         },
         {
-          "title": "Civil Design Engineer",
-          "employers": 2,
-          "filings": 2
-        },
-        {
-          "title": "Engineer",
+          "title": "Geotechnical Engineer",
           "employers": 2,
           "filings": 2
         },
@@ -329,24 +168,24 @@
           "filings": 2
         },
         {
-          "title": "Project Controls Analyst",
+          "title": "Project Manager",
           "employers": 2,
           "filings": 2
         },
         {
-          "title": "TRANSPORTATION ENGINEER",
+          "title": "Staff Engineer",
           "employers": 2,
           "filings": 2
         },
         {
-          "title": "Project Engineer (Civil/Construction)",
-          "employers": 1,
-          "filings": 5
+          "title": "Structural Engineer",
+          "employers": 2,
+          "filings": 2
         },
         {
-          "title": "Structural steel detailer",
+          "title": "Data Centre Infrastructure Engineer I",
           "employers": 1,
-          "filings": 4
+          "filings": 3
         },
         {
           "title": "Engineering Specialist, Civil Engineering",
@@ -354,9 +193,9 @@
           "filings": 3
         },
         {
-          "title": "Civil Engineer I",
+          "title": "Project Engineer (Civil/Construction)",
           "employers": 1,
-          "filings": 2
+          "filings": 3
         },
         {
           "title": "Civil Engineering II",
@@ -364,22 +203,12 @@
           "filings": 2
         },
         {
-          "title": "Designer 4",
+          "title": "Designer, Highway",
           "employers": 1,
           "filings": 2
         },
         {
-          "title": "Engineer/Civil",
-          "employers": 1,
-          "filings": 2
-        },
-        {
-          "title": "Project Controls Specialist 2",
-          "employers": 1,
-          "filings": 2
-        },
-        {
-          "title": "Project Engineer (Civil engineering)",
+          "title": "Graduate Engineer",
           "employers": 1,
           "filings": 2
         },
@@ -389,52 +218,7 @@
           "filings": 2
         },
         {
-          "title": "Quality Control Engineer I",
-          "employers": 1,
-          "filings": 2
-        },
-        {
-          "title": "STRUCTURAL ENGINEERING PROFESSIONAL ASSOCIATE",
-          "employers": 1,
-          "filings": 2
-        },
-        {
-          "title": "Water Engineer 2",
-          "employers": 1,
-          "filings": 2
-        },
-        {
-          "title": "ASSOCIATE TRAFFIC ENGINEER",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Assistant Construction Manager",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Assistant Construction Manager (Civil Engineer)",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Assistant MEP Coordinator",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Assistant Project Manager II",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Assistant Resident Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Associate",
           "employers": 1,
           "filings": 1
         },
@@ -444,32 +228,12 @@
           "filings": 1
         },
         {
-          "title": "Associate Design Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Associate Engineer - Structural",
           "employers": 1,
           "filings": 1
         },
         {
-          "title": "BIM/VDC Specialist",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Bridge Designer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Bridge Project Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Building Enclosure System Engineer",
           "employers": 1,
           "filings": 1
         },
@@ -484,22 +248,12 @@
           "filings": 1
         },
         {
-          "title": "CONSTRUCTION MANAGEMENT PROFESSIONAL - INTERMEDIATE",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Civil Engineer (Quality Engineer)",
+          "title": "Civil Design Engineer",
           "employers": 1,
           "filings": 1
         },
         {
           "title": "Civil Engineer (Structural)",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Civil Engineer - Mining Expertise",
           "employers": 1,
           "filings": 1
         },
@@ -514,37 +268,12 @@
           "filings": 1
         },
         {
-          "title": "Civil Engineer-EIT",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Civil Engineer/Staff Consultant",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Civil Engineering III",
           "employers": 1,
           "filings": 1
         },
         {
           "title": "Compliance Engineer II",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Construction / Civil Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Construction Design Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Construction Estimator",
           "employers": 1,
           "filings": 1
         },
@@ -559,32 +288,12 @@
           "filings": 1
         },
         {
-          "title": "DESIGN ARCHITECTURE PROFESSIONAL INTERMEDIATE",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Design Engineer 1",
+          "title": "Design Engineer",
           "employers": 1,
           "filings": 1
         },
         {
           "title": "Design Engineer 3, Traffic",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Design Specialist",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Designer, Bridge",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Detailer",
           "employers": 1,
           "filings": 1
         },
@@ -599,32 +308,7 @@
           "filings": 1
         },
         {
-          "title": "Energy Efficiency Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Engineer 2",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Engineer I (Civil)",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Engineer I, Transportation",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Engineer II (entry)",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Engineering Assistant II",
           "employers": 1,
           "filings": 1
         },
@@ -635,16 +319,6 @@
         },
         {
           "title": "Engineering Design Professional - Building Physics",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Engineering Designer II",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Engineering Designer II Civil",
           "employers": 1,
           "filings": 1
         },
@@ -699,52 +373,7 @@
           "filings": 1
         },
         {
-          "title": "Geotechnical Staff Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Greenhouse Structural Engineer I",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "HIGHWAY ENGINEERING PROFESSIONAL ASSOCIATE.",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "INSPECTOR",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Intermediate Structural Designer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Junior Civil Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Junior Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Junior Engineer, Bridge Design",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Junior Structural Designer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Lead Civil Estimator",
           "employers": 1,
           "filings": 1
         },
@@ -759,27 +388,7 @@
           "filings": 1
         },
         {
-          "title": "PROJECT ENGINEER II",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Post Doctoral Research Associate",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Postdoctoral Associate",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Postdoctoral Fellow",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Postdoctoral Research Scholar",
+          "title": "PROJECT ENGINEER",
           "employers": 1,
           "filings": 1
         },
@@ -790,11 +399,6 @@
         },
         {
           "title": "Preconstruction Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Process Designer",
           "employers": 1,
           "filings": 1
         },
@@ -814,6 +418,11 @@
           "filings": 1
         },
         {
+          "title": "Project Engineer I",
+          "employers": 1,
+          "filings": 1
+        },
+        {
           "title": "Project Engineer I, Traffic",
           "employers": 1,
           "filings": 1
@@ -829,37 +438,7 @@
           "filings": 1
         },
         {
-          "title": "Project Engineer/Estimator",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Project Geotechnical Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Projects and Lab Coordinator",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "QC/QA Civil Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Quality Assurance - Road Inspection Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Rail Bridge Coordinator",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Research Associate",
           "employers": 1,
           "filings": 1
         },
@@ -869,17 +448,7 @@
           "filings": 1
         },
         {
-          "title": "STAFF ENGINEER",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "STAFF ENGINEER I",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "STRUCTURAL ENGINEER",
           "employers": 1,
           "filings": 1
         },
@@ -889,22 +458,7 @@
           "filings": 1
         },
         {
-          "title": "STRUCTURAL/BRIDGE ENGINEER",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "SUPPORT ENGINEER III",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Scheduling Analyst",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Senior Designer",
           "employers": 1,
           "filings": 1
         },
@@ -914,27 +468,7 @@
           "filings": 1
         },
         {
-          "title": "Senior Field Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Senior Research Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Senior Staff Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Special Instructor/Structural Designer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Staff CMT/Civil Engineer",
+          "title": "Senior Project Engineer",
           "employers": 1,
           "filings": 1
         },
@@ -949,32 +483,7 @@
           "filings": 1
         },
         {
-          "title": "Structural Designer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Structural Staff Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Structures Engineer in Training (EIT)",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Tech Ops Engineer I",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Technical I, Engineering Design",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Traffic Engineer",
+          "title": "TRANSPORTATION ENGINEER",
           "employers": 1,
           "filings": 1
         },
@@ -989,17 +498,12 @@
           "filings": 1
         },
         {
-          "title": "Transportation Associate",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Transportation Data Analyst",
           "employers": 1,
           "filings": 1
         },
         {
-          "title": "Transportation Designer",
+          "title": "Transportation Engineer",
           "employers": 1,
           "filings": 1
         },
@@ -1014,12 +518,7 @@
           "filings": 1
         },
         {
-          "title": "Water Engineering Designer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Water Resources Engineer",
+          "title": "Water Engineer 2",
           "employers": 1,
           "filings": 1
         },
@@ -1032,11 +531,6 @@
           "title": "Water/Wastewater Coordinator",
           "employers": 1,
           "filings": 1
-        },
-        {
-          "title": "project engineer",
-          "employers": 1,
-          "filings": 1
         }
       ]
     },
@@ -1044,62 +538,50 @@
       {
         "soc_code": "17-2051.00",
         "title": "Civil Engineers",
-        "employers": 253,
-        "filings": 390
+        "employers": 106,
+        "filings": 143
       },
       {
         "soc_code": "17-2051.01",
         "title": "Transportation Engineers",
-        "employers": 15,
-        "filings": 18
+        "employers": 7,
+        "filings": 8
       },
       {
         "soc_code": "17-2051.02",
         "title": "Water/Wastewater Engineers",
-        "employers": 8,
-        "filings": 10
+        "employers": 2,
+        "filings": 3
       }
     ],
     "placement_model": {
       "in_house": {
-        "employers": 262,
-        "filings": 412
+        "employers": 108,
+        "filings": 150
       },
       "third_party_site": {
-        "employers": 6,
-        "filings": 6
+        "employers": 4,
+        "filings": 4
       }
     },
     "industry_naics2": [
       {
         "code": "54",
         "label": "Professional, Scientific, and Technical Services",
-        "employers": 150,
-        "filings": 211
+        "employers": 60,
+        "filings": 80
       },
       {
         "code": "23",
         "label": "Construction",
-        "employers": 92,
-        "filings": 167
+        "employers": 45,
+        "filings": 62
       },
       {
         "code": "61",
         "label": "Educational Services",
-        "employers": 9,
-        "filings": 12
-      },
-      {
-        "code": "51",
-        "label": "Information",
-        "employers": 3,
-        "filings": 13
-      },
-      {
-        "code": "56",
-        "label": "Administrative and Support and Waste Management and Remediation Services",
-        "employers": 3,
-        "filings": 3
+        "employers": 4,
+        "filings": 6
       }
     ]
   },
@@ -1110,411 +592,6 @@
     "Career/portfolio guidance, not immigration legal advice."
   ],
   "employers": [
-    {
-      "employer": "CORE TECH CONSTRUCTION CORPORATION",
-      "employer_display": "CORE TECH CONSTRUCTION CORPORATION",
-      "filing_count": 21,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "GU",
-      "worksite_cities": "TAMUNING",
-      "wage_annual_min": 48443,
-      "wage_annual_median": 57000,
-      "wage_annual_max": 124800000
-    },
-    {
-      "employer": "LANGAN ENGINEERING AND ENVIRONMENTAL SERVICES",
-      "employer_display": "Langan Engineering and Environmental Services, LLC",
-      "filing_count": 11,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "FL; NY; OH; PA; TN; TX; UT",
-      "worksite_cities": "Austin; Cannonsburg; Cleveland; Fort Lauderdale; Houston; Miami; Nashville; New York; Salt Lake City; Tampa",
-      "wage_annual_min": 68000,
-      "wage_annual_median": 71000,
-      "wage_annual_max": 79000
-    },
-    {
-      "employer": "AMAZON DATA SERVICES",
-      "employer_display": "Amazon Data Services, Inc",
-      "filing_count": 8,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "IN; NV; OR; VA; WA",
-      "worksite_cities": "Boardman; Herndon; Seattle; South Bend; Sparks",
-      "wage_annual_min": 85800,
-      "wage_annual_median": 135000,
-      "wage_annual_max": 140000
-    },
-    {
-      "employer": "JACOBS ENGINEERING GROUP",
-      "employer_display": "Jacobs Engineering Group, Inc.",
-      "filing_count": 8,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "AZ; DC; NC; NV; OH; TX; VA; WI",
-      "worksite_cities": "Austin; CHARLOTTE; CINCINNATI; MILWAUKEE; Manassas; Reno; Tempe; WASHINGTON, DC",
-      "wage_annual_min": 75000,
-      "wage_annual_median": 88947,
-      "wage_annual_max": 106971
-    },
-    {
-      "employer": "STANTEC CONSULTING SERVICES",
-      "employer_display": "Stantec Consulting Services Inc.",
-      "filing_count": 7,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers; Transportation Engineers; Water/Wastewater Engineers",
-      "worksite_states": "CA; NY; SC; TX; WA",
-      "worksite_cities": "Albany; Austin; Bellevue; North Charleston; Plano; San Francisco; Walnut Creek",
-      "wage_annual_min": 75317,
-      "wage_annual_median": 85010,
-      "wage_annual_max": 103189
-    },
-    {
-      "employer": "ARCADIS U S",
-      "employer_display": "Arcadis U.S., Inc.",
-      "filing_count": 6,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers; Transportation Engineers; Water/Wastewater Engineers",
-      "worksite_states": "CA; FL; NY; OH; PA",
-      "worksite_cities": "Atlanta; Jacksonville; New York; San Diego; Sewickley",
-      "wage_annual_min": 80018,
-      "wage_annual_median": 86143,
-      "wage_annual_max": 91270
-    },
-    {
-      "employer": "BLACK CONSTRUCTION CORPORATION",
-      "employer_display": "Black Construction Corporation",
-      "filing_count": 6,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "GU",
-      "worksite_cities": "Harmon",
-      "wage_annual_min": 53622,
-      "wage_annual_median": 53911,
-      "wage_annual_max": 60000
-    },
-    {
-      "employer": "DPR CONSTRUCTION A GENERAL PARTNERSHIP",
-      "employer_display": "DPR Construction, A General Partnership",
-      "filing_count": 5,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "CA; LA; NC; TX",
-      "worksite_cities": "Burlington; Durham; Monroe; Redwood City",
-      "wage_annual_min": 65728,
-      "wage_annual_median": 87568,
-      "wage_annual_max": 92934
-    },
-    {
-      "employer": "CLAYCO",
-      "employer_display": "Clayco, Inc.",
-      "filing_count": 4,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "AZ; TX",
-      "worksite_cities": "Afton; Phoenix",
-      "wage_annual_min": 73000,
-      "wage_annual_median": 84500,
-      "wage_annual_max": 87000
-    },
-    {
-      "employer": "MOSS ASSOCIATES",
-      "employer_display": "Moss & Associates, LLC",
-      "filing_count": 4,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "MS; TX",
-      "worksite_cities": "Avoca; Hollandale; Rosebud",
-      "wage_annual_min": 70000,
-      "wage_annual_median": 70500,
-      "wage_annual_max": 71000
-    },
-    {
-      "employer": "ARDURRA GROUP",
-      "employer_display": "Ardurra Group, Inc.",
-      "filing_count": 3,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers; Transportation Engineers",
-      "worksite_states": "AZ; FL; ID",
-      "worksite_cities": "Coral Springs; Meridian; Phoenix",
-      "wage_annual_min": 76000,
-      "wage_annual_median": 85995,
-      "wage_annual_max": 88200
-    },
-    {
-      "employer": "BOWMAN CONSULTING GROUP",
-      "employer_display": "Bowman Consulting Group, Ltd.",
-      "filing_count": 3,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers; Transportation Engineers",
-      "worksite_states": "AZ; NJ; PA",
-      "worksite_cities": "Hoboken; Mesa; Pittsburgh",
-      "wage_annual_min": 80725,
-      "wage_annual_median": 81576,
-      "wage_annual_max": 85825
-    },
-    {
-      "employer": "CIVIL ENVIRONMENTAL CONSULTANTS",
-      "employer_display": "Civil & Environmental Consultants, Inc.",
-      "filing_count": 3,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "CA; IN; PA",
-      "worksite_cities": "Fort Washington; Gold River; Indianapolis",
-      "wage_annual_min": 70000,
-      "wage_annual_median": 72000,
-      "wage_annual_max": 90000
-    },
-    {
-      "employer": "KIEWIT POWER CONSTRUCTORS CO",
-      "employer_display": "Kiewit Power Constructors Co.",
-      "filing_count": 3,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "IN; KS; NE",
-      "worksite_cities": "Cayuga; Lenexa; Plattsmouth",
-      "wage_annual_min": 89661,
-      "wage_annual_median": 96028,
-      "wage_annual_max": 125000
-    },
-    {
-      "employer": "KUNJ CONSTRUCTION CORPORATION",
-      "employer_display": "Kunj Construction Corporation",
-      "filing_count": 3,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "NJ",
-      "worksite_cities": "Northvale",
-      "wage_annual_min": 90000,
-      "wage_annual_median": 90000,
-      "wage_annual_max": 91500
-    },
-    {
-      "employer": "NAN",
-      "employer_display": "Nan Inc",
-      "filing_count": 3,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "GU",
-      "worksite_cities": "BARRIGADA",
-      "wage_annual_min": 55000,
-      "wage_annual_median": 60000,
-      "wage_annual_max": 63000
-    },
-    {
-      "employer": "RRC POWER AND ENERGY",
-      "employer_display": "RRC Power and Energy, LLC",
-      "filing_count": 3,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "Round Rock",
-      "wage_annual_min": 70000,
-      "wage_annual_median": 79181,
-      "wage_annual_max": 114000
-    },
-    {
-      "employer": "BAKER CONCRETE CONSTRUCTION",
-      "employer_display": "Baker Concrete Construction, Inc.",
-      "filing_count": 2,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "FL; NY",
-      "worksite_cities": "Albany; Fort Lauderdale",
-      "wage_annual_min": 73823,
-      "wage_annual_median": 76926,
-      "wage_annual_max": 80028
-    },
-    {
-      "employer": "BLACK MICRO CORPORATION",
-      "employer_display": "Black Micro Corporation",
-      "filing_count": 2,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "MP",
-      "worksite_cities": "Tinian",
-      "wage_annual_min": 54000,
-      "wage_annual_median": 57000,
-      "wage_annual_max": 60000
-    },
-    {
-      "employer": "GZA GEOENVIRONMENTAL",
-      "employer_display": "GZA GeoEnvironmental, Inc.",
-      "filing_count": 2,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "MA",
-      "worksite_cities": "Norwood",
-      "wage_annual_min": 92040,
-      "wage_annual_median": 94526,
-      "wage_annual_max": 97011
-    },
-    {
-      "employer": "JACOBS CIVIL CONSULTANTS",
-      "employer_display": "Jacobs Civil Consultants, Inc.",
-      "filing_count": 2,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "NY",
-      "worksite_cities": "NEW YORK CITY; New York",
-      "wage_annual_min": 88000,
-      "wage_annual_median": 89000,
-      "wage_annual_max": 90000
-    },
-    {
-      "employer": "KIEWIT INFRASTRUCTURE CO",
-      "employer_display": "Kiewit Infrastructure Co.",
-      "filing_count": 2,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "MD; NE",
-      "worksite_cities": "Baltimore; Omaha",
-      "wage_annual_min": 85020,
-      "wage_annual_median": 96330,
-      "wage_annual_max": 107640
-    },
-    {
-      "employer": "MAGNUSSON KLEMENCIC ASSOCIATES",
-      "employer_display": "Magnusson Klemencic Associates, Inc.",
-      "filing_count": 2,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "WA",
-      "worksite_cities": "Seattle",
-      "wage_annual_min": 90000,
-      "wage_annual_median": 91500,
-      "wage_annual_max": 93000
-    },
-    {
-      "employer": "MOTT MACDONALD GROUP",
-      "employer_display": "Mott MacDonald Group Inc.",
-      "filing_count": 2,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "CO; OR",
-      "worksite_cities": "Denver; Portland",
-      "wage_annual_min": 83554,
-      "wage_annual_median": 83814,
-      "wage_annual_max": 84074
-    },
-    {
-      "employer": "SUMITOMO MITSUI CONSTRUCTION CO",
-      "employer_display": "SUMITOMO MITSUI CONSTRUCTION CO., LTD.",
-      "filing_count": 2,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "GU",
-      "worksite_cities": "Harmon",
-      "wage_annual_min": 53622,
-      "wage_annual_median": 53622,
-      "wage_annual_max": 53622
-    },
-    {
-      "employer": "THE INDUSTRIAL COMPANY",
-      "employer_display": "The Industrial Company",
-      "filing_count": 2,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "Abilene; Westlake",
-      "wage_annual_min": 80000,
-      "wage_annual_median": 85603,
-      "wage_annual_max": 91205
-    },
-    {
-      "employer": "WEBBER WATERWORKS",
-      "employer_display": "Webber Waterworks, LLC",
-      "filing_count": 2,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "Austin; The Woodlands",
-      "wage_annual_min": 93000,
-      "wage_annual_median": 94500,
-      "wage_annual_max": 96000
-    },
     {
       "employer": "STV INCORPORATED",
       "employer_display": "STV Incorporated",
@@ -1531,34 +608,19 @@
       "wage_annual_max": 87500
     },
     {
-      "employer": "AMAZON WEB SERVICES",
-      "employer_display": "Amazon Web Services, Inc.",
+      "employer": "AMAZON DATA SERVICES",
+      "employer_display": "Amazon Data Services, Inc",
       "filing_count": 4,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "17-2051",
       "soc_titles": "Civil Engineers",
-      "worksite_states": "MS; OH; VA",
-      "worksite_cities": "Herndon; Plain City; RIDGELAND",
-      "wage_annual_min": 106240,
-      "wage_annual_median": 116220,
-      "wage_annual_max": 131000
-    },
-    {
-      "employer": "EAST COAST METAL STRUCTURES",
-      "employer_display": "East Coast Metal Structures Corp",
-      "filing_count": 4,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "FL",
-      "worksite_cities": "Lantana",
-      "wage_annual_min": 65000,
-      "wage_annual_median": 65000,
-      "wage_annual_max": 65000
+      "worksite_states": "NV; OR; VA",
+      "worksite_cities": "Boardman; Herndon; Sparks",
+      "wage_annual_min": 135000,
+      "wage_annual_median": 137500,
+      "wage_annual_max": 140000
     },
     {
       "employer": "AECOM TECHNICAL SERVICES",
@@ -1574,6 +636,51 @@
       "wage_annual_min": 75443,
       "wage_annual_median": 82014,
       "wage_annual_max": 90418
+    },
+    {
+      "employer": "ARCADIS U S",
+      "employer_display": "Arcadis U.S., Inc.",
+      "filing_count": 3,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2051",
+      "soc_titles": "Civil Engineers; Transportation Engineers; Water/Wastewater Engineers",
+      "worksite_states": "FL; NY; OH",
+      "worksite_cities": "Atlanta; Jacksonville; New York",
+      "wage_annual_min": 80018,
+      "wage_annual_median": 80080,
+      "wage_annual_max": 90002
+    },
+    {
+      "employer": "CLAYCO",
+      "employer_display": "Clayco, Inc.",
+      "filing_count": 3,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2051",
+      "soc_titles": "Civil Engineers",
+      "worksite_states": "AZ; TX",
+      "worksite_cities": "Afton; Phoenix",
+      "wage_annual_min": 73000,
+      "wage_annual_median": 82000,
+      "wage_annual_max": 87000
+    },
+    {
+      "employer": "DPR CONSTRUCTION A GENERAL PARTNERSHIP",
+      "employer_display": "DPR Construction, A General Partnership",
+      "filing_count": 3,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2051",
+      "soc_titles": "Civil Engineers",
+      "worksite_states": "LA; NC; TX",
+      "worksite_cities": "Burlington; Durham; Monroe",
+      "wage_annual_min": 65728,
+      "wage_annual_median": 87568,
+      "wage_annual_max": 92435
     },
     {
       "employer": "F H PASCHEN S N NIELSEN ASSOCIATES",
@@ -1606,64 +713,19 @@
       "wage_annual_max": 91270
     },
     {
-      "employer": "SAMSUNG E C AMERICA",
-      "employer_display": "Samsung E&C America, Inc.",
+      "employer": "JACOBS ENGINEERING GROUP",
+      "employer_display": "Jacobs Engineering Group, Inc.",
       "filing_count": 3,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "17-2051",
       "soc_titles": "Civil Engineers",
-      "worksite_states": "GU",
-      "worksite_cities": "Harmon",
-      "wage_annual_min": 53622,
-      "wage_annual_median": 53622,
-      "wage_annual_max": 53622
-    },
-    {
-      "employer": "TERRACON CONSULTANTS",
-      "employer_display": "Terracon Consultants, Inc.",
-      "filing_count": 3,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "PA; TX",
-      "worksite_cities": "Blue Bell; Conroe; Dallas",
-      "wage_annual_min": 80000,
-      "wage_annual_median": 86000,
-      "wage_annual_max": 90000
-    },
-    {
-      "employer": "WSP USA",
-      "employer_display": "WSP USA Inc.",
-      "filing_count": 3,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers; Water/Wastewater Engineers",
-      "worksite_states": "CA; MA",
-      "worksite_cities": "Boston; San Francisco",
-      "wage_annual_min": 86008,
-      "wage_annual_median": 92934,
-      "wage_annual_max": 92934
-    },
-    {
-      "employer": "AB CONSULTING ENGINEERS",
-      "employer_display": "AB Consulting Engineers, Inc.",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "FL",
-      "worksite_cities": "Orlando",
-      "wage_annual_min": 68786,
-      "wage_annual_median": 68786,
-      "wage_annual_max": 68786
+      "worksite_states": "AZ; DC; WI",
+      "worksite_cities": "MILWAUKEE; Tempe; WASHINGTON, DC",
+      "wage_annual_min": 75000,
+      "wage_annual_median": 86684,
+      "wage_annual_max": 87641
     },
     {
       "employer": "ANDREW M JORDAN",
@@ -1681,49 +743,19 @@
       "wage_annual_max": 99000
     },
     {
-      "employer": "ART CONSTRUCTORS",
-      "employer_display": "ART Constructors, LLC",
+      "employer": "ARDURRA GROUP",
+      "employer_display": "Ardurra Group, Inc.",
       "filing_count": 2,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "17-2051",
       "soc_titles": "Civil Engineers",
-      "worksite_states": "GU",
-      "worksite_cities": "Santa Rita",
-      "wage_annual_min": 53622,
-      "wage_annual_median": 55339,
-      "wage_annual_max": 57056
-    },
-    {
-      "employer": "BAKER INGRAM ASSOCIATES",
-      "employer_display": "Baker Ingram & Associates Inc",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "PA",
-      "worksite_cities": "Lancaster; Philadelphia",
+      "worksite_states": "AZ; ID",
+      "worksite_cities": "Meridian; Phoenix",
       "wage_annual_min": 76000,
-      "wage_annual_median": 77500,
-      "wage_annual_max": 79000
-    },
-    {
-      "employer": "BAY CITIES EXCAVATORS",
-      "employer_display": "Bay Cities Excavators, Inc.",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "Concord; Pleasanton",
-      "wage_annual_min": 86528,
-      "wage_annual_median": 86528,
-      "wage_annual_max": 86528
+      "wage_annual_median": 82100,
+      "wage_annual_max": 88200
     },
     {
       "employer": "CARNEGIE MELLON UNIVERSITY",
@@ -1741,19 +773,19 @@
       "wage_annual_max": 98000
     },
     {
-      "employer": "CLAYARCH",
-      "employer_display": "CLAYARCH, INC.",
+      "employer": "CIVIL ENVIRONMENTAL CONSULTANTS",
+      "employer_display": "Civil & Environmental Consultants, Inc.",
       "filing_count": 2,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "17-2051",
       "soc_titles": "Civil Engineers",
-      "worksite_states": "GU",
-      "worksite_cities": "Barrigada",
-      "wage_annual_min": 58800,
-      "wage_annual_median": 58800,
-      "wage_annual_max": 58800
+      "worksite_states": "CA; IN",
+      "worksite_cities": "Gold River; Indianapolis",
+      "wage_annual_min": 72000,
+      "wage_annual_median": 81000,
+      "wage_annual_max": 90000
     },
     {
       "employer": "COASTAL CONSTRUCTION OF MIAMI DADE COUNTY",
@@ -1771,19 +803,19 @@
       "wage_annual_max": 100000
     },
     {
-      "employer": "COMMONWEALTH UTILITIES CORPORATION",
-      "employer_display": "COMMONWEALTH UTILITIES CORPORATION",
+      "employer": "CORE TECH CONSTRUCTION CORPORATION",
+      "employer_display": "CORE TECH CONSTRUCTION CORPORATION",
       "filing_count": 2,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "17-2051",
       "soc_titles": "Civil Engineers",
-      "worksite_states": "MP",
-      "worksite_cities": "Saipan",
-      "wage_annual_min": 56171,
-      "wage_annual_median": 56171,
-      "wage_annual_max": 56171
+      "worksite_states": "GU",
+      "worksite_cities": "TAMUNING",
+      "wage_annual_min": 53622,
+      "wage_annual_median": 53622,
+      "wage_annual_max": 53622
     },
     {
       "employer": "CORE TECH INTERNATIONAL CORPORATION",
@@ -1801,81 +833,6 @@
       "wage_annual_max": 60000
     },
     {
-      "employer": "ENGINEERING SERVICES PRODUCTS COMPANY",
-      "employer_display": "Engineering Services & Products Company",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "IA",
-      "worksite_cities": "Dyersville",
-      "wage_annual_min": 75000,
-      "wage_annual_median": 75000,
-      "wage_annual_max": 75000
-    },
-    {
-      "employer": "FLATIRON DRAGADOS USA",
-      "employer_display": "Flatiron Dragados USA, Inc.",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "GA; VA",
-      "worksite_cities": "Atlanta; Norfolk",
-      "wage_annual_min": 90000,
-      "wage_annual_median": 90000,
-      "wage_annual_max": 90000
-    },
-    {
-      "employer": "FOCUS ENGINEERING AND SURVEYING",
-      "employer_display": "Focus Engineering and Surveying LLC",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "UT",
-      "worksite_cities": "Midvale",
-      "wage_annual_min": 75000,
-      "wage_annual_median": 79500,
-      "wage_annual_max": 84000
-    },
-    {
-      "employer": "FUTURE WORLD CORPORATION",
-      "employer_display": "Future World Corporation",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "GU",
-      "worksite_cities": "Barrigada",
-      "wage_annual_min": 53622,
-      "wage_annual_median": 53622,
-      "wage_annual_max": 53622
-    },
-    {
-      "employer": "GANNETT FLEMING ENGINEERS AND ARCHITECTS PC",
-      "employer_display": "Gannett Fleming Engineers and Architects, PC",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Transportation Engineers",
-      "worksite_states": "NY; OH",
-      "worksite_cities": "Columbus; New York",
-      "wage_annual_min": 69202,
-      "wage_annual_median": 74006,
-      "wage_annual_max": 78811
-    },
-    {
       "employer": "GFT INFRASTRUCTURE",
       "employer_display": "GFT Infrastructure, Inc.",
       "filing_count": 2,
@@ -1889,51 +846,6 @@
       "wage_annual_min": 69202,
       "wage_annual_median": 70429,
       "wage_annual_max": 71656
-    },
-    {
-      "employer": "INFRASTRUCTURE CONSULTING AND ENGINEERING",
-      "employer_display": "Infrastructure Consulting and Engineering, LLC",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers; Water/Wastewater Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "Houston",
-      "wage_annual_min": 73000,
-      "wage_annual_median": 75000,
-      "wage_annual_max": 77000
-    },
-    {
-      "employer": "JACOBS PROJECT MANAGEMENT COMPANY",
-      "employer_display": "Jacobs Project Management Company",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "LA; TX",
-      "worksite_cities": "BATON ROUGE; Missouri City",
-      "wage_annual_min": 89199,
-      "wage_annual_median": 95233,
-      "wage_annual_max": 101267
-    },
-    {
-      "employer": "JOHN LABIB STRUCTURAL ENGINEERS LLP",
-      "employer_display": "John Labib Structural Engineers, LLP.",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "El Segundo; South Pasadena",
-      "wage_annual_min": 85280,
-      "wage_annual_median": 88400,
-      "wage_annual_max": 91520
     },
     {
       "employer": "JOHNSON BROTHERS CORPORATION A SOUTHLAND COMPANY",
@@ -1951,6 +863,66 @@
       "wage_annual_max": 80325
     },
     {
+      "employer": "KIEWIT POWER CONSTRUCTORS CO",
+      "employer_display": "Kiewit Power Constructors Co.",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2051",
+      "soc_titles": "Civil Engineers",
+      "worksite_states": "IN; NE",
+      "worksite_cities": "Cayuga; Plattsmouth",
+      "wage_annual_min": 89661,
+      "wage_annual_median": 92844,
+      "wage_annual_max": 96028
+    },
+    {
+      "employer": "KUNJ CONSTRUCTION CORPORATION",
+      "employer_display": "Kunj Construction Corporation",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2051",
+      "soc_titles": "Civil Engineers",
+      "worksite_states": "NJ",
+      "worksite_cities": "Northvale",
+      "wage_annual_min": 90000,
+      "wage_annual_median": 90000,
+      "wage_annual_max": 90000
+    },
+    {
+      "employer": "MOSS ASSOCIATES",
+      "employer_display": "Moss & Associates, LLC",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2051",
+      "soc_titles": "Civil Engineers",
+      "worksite_states": "MS; TX",
+      "worksite_cities": "Hollandale; Rosebud",
+      "wage_annual_min": 70000,
+      "wage_annual_median": 70000,
+      "wage_annual_max": 70000
+    },
+    {
+      "employer": "NAN",
+      "employer_display": "NAN INC",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2051",
+      "soc_titles": "Civil Engineers",
+      "worksite_states": "GU",
+      "worksite_cities": "BARRIGADA",
+      "wage_annual_min": 55000,
+      "wage_annual_median": 57500,
+      "wage_annual_max": 60000
+    },
+    {
       "employer": "NGI",
       "employer_display": "NGI Inc.",
       "filing_count": 2,
@@ -1964,21 +936,6 @@
       "wage_annual_min": 80000,
       "wage_annual_median": 80000,
       "wage_annual_max": 80000
-    },
-    {
-      "employer": "NORTH CAROLINA STATE UNIVERSITY",
-      "employer_display": "North Carolina State University",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "NC",
-      "worksite_cities": "Raleigh",
-      "wage_annual_min": 66331,
-      "wage_annual_median": 68166,
-      "wage_annual_max": 70000
     },
     {
       "employer": "PAPE DAWSON CONSULTING ENGINEERS",
@@ -1996,49 +953,19 @@
       "wage_annual_max": 80000
     },
     {
-      "employer": "PARADIGM STRUCTURAL ENGINEERS",
-      "employer_display": "PARADIGM Structural Engineers, Inc.",
+      "employer": "RRC POWER AND ENERGY",
+      "employer_display": "RRC Power and Energy, LLC",
       "filing_count": 2,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "17-2051",
       "soc_titles": "Civil Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "San Francisco",
-      "wage_annual_min": 110000,
-      "wage_annual_median": 110000,
-      "wage_annual_max": 110000
-    },
-    {
-      "employer": "PLAN NORTH PLLC",
-      "employer_display": "Plan North PLLC",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "ID",
-      "worksite_cities": "Boise",
-      "wage_annual_min": 79000,
-      "wage_annual_median": 79500,
-      "wage_annual_max": 80000
-    },
-    {
-      "employer": "ROCKY MOUNTAIN PRECAST",
-      "employer_display": "Rocky Mountain Precast, LLC",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "GU",
-      "worksite_cities": "Yigo",
-      "wage_annual_min": 53622,
-      "wage_annual_median": 53622,
-      "wage_annual_max": 53622
+      "worksite_states": "TX",
+      "worksite_cities": "Round Rock",
+      "wage_annual_min": 79181,
+      "wage_annual_median": 96591,
+      "wage_annual_max": 114000
     },
     {
       "employer": "SANDIS CIVIL ENGINEERS SURVEYORS PLANNERS",
@@ -2056,21 +983,6 @@
       "wage_annual_max": 93000
     },
     {
-      "employer": "SKIDMORE OWINGS MERRILL LLP",
-      "employer_display": "Skidmore, Owings & Merrill LLP",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "CA; NY",
-      "worksite_cities": "Los Angeles; New York",
-      "wage_annual_min": 76869,
-      "wage_annual_median": 80201,
-      "wage_annual_max": 83533
-    },
-    {
       "employer": "TC PACIFIC CONSTRUCTION",
       "employer_display": "TC Pacific Construction, LLC",
       "filing_count": 2,
@@ -2084,36 +996,6 @@
       "wage_annual_min": 53700,
       "wage_annual_median": 53700,
       "wage_annual_max": 53700
-    },
-    {
-      "employer": "TG ENGINEERS P C",
-      "employer_display": "TG Engineers, P.C.",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "GU",
-      "worksite_cities": "Barrigada",
-      "wage_annual_min": 53622,
-      "wage_annual_median": 53622,
-      "wage_annual_max": 53622
-    },
-    {
-      "employer": "THE LANE CONSTRUCTION CORPORATION",
-      "employer_display": "The Lane Construction Corporation",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "WA",
-      "worksite_cities": "Renton",
-      "wage_annual_min": 95000,
-      "wage_annual_median": 95500,
-      "wage_annual_max": 96000
     },
     {
       "employer": "THE UNIVERSITY OF ALABAMA",
@@ -2131,111 +1013,6 @@
       "wage_annual_max": 66331
     },
     {
-      "employer": "TIC THE INDUSTRIAL COMPANY",
-      "employer_display": "TIC - The Industrial Company",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "KS",
-      "worksite_cities": "Lenexa",
-      "wage_annual_min": 91455,
-      "wage_annual_median": 91455,
-      "wage_annual_max": 91455
-    },
-    {
-      "employer": "2 SAAB CONSTRUCTION",
-      "employer_display": "2 SAAB CONSTRUCTION INC.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "NY",
-      "worksite_cities": "BROOKLYN",
-      "wage_annual_min": 78811,
-      "wage_annual_median": 78811,
-      "wage_annual_max": 78811
-    },
-    {
-      "employer": "A R CORPORATION",
-      "employer_display": "A&R Corporation",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "GU",
-      "worksite_cities": "Santa Rita",
-      "wage_annual_min": 53622,
-      "wage_annual_median": 53622,
-      "wage_annual_max": 53622
-    },
-    {
-      "employer": "ACCENTURE INFRASTRUCTURE AND CAPITAL PROJECTS",
-      "employer_display": "Accenture Infrastructure and Capital Projects, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "IL",
-      "worksite_cities": "Chicago",
-      "wage_annual_min": 84000,
-      "wage_annual_median": 84000,
-      "wage_annual_max": 84000
-    },
-    {
-      "employer": "AIROSMITH",
-      "employer_display": "Airosmith Inc",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "NC",
-      "worksite_cities": "Morrisville",
-      "wage_annual_min": 76000,
-      "wage_annual_median": 76000,
-      "wage_annual_max": 76000
-    },
-    {
-      "employer": "ALLIANCE STRUCTURAL ENGINEERS",
-      "employer_display": "ALLIANCE STRUCTURAL ENGINEERS, INC.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "VA",
-      "worksite_cities": "RESTON",
-      "wage_annual_min": 75000,
-      "wage_annual_median": 75000,
-      "wage_annual_max": 75000
-    },
-    {
-      "employer": "AMAZON COM SERVICES",
-      "employer_display": "AMAZON.COM SERVICES LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "AUSTIN",
-      "wage_annual_min": 92500,
-      "wage_annual_median": 92500,
-      "wage_annual_max": 92500
-    },
-    {
       "employer": "AMERICAN TECH VISION SOLUTIONS",
       "employer_display": "AMERICAN TECH VISION SOLUTIONS, LLC",
       "filing_count": 1,
@@ -2249,126 +1026,6 @@
       "wage_annual_min": 66000,
       "wage_annual_median": 66000,
       "wage_annual_max": 66000
-    },
-    {
-      "employer": "ANDERSON COLUMBIA CO",
-      "employer_display": "Anderson Columbia Co., Inc",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "FL",
-      "worksite_cities": "Holt",
-      "wage_annual_min": 83200,
-      "wage_annual_median": 83200,
-      "wage_annual_max": 83200
-    },
-    {
-      "employer": "ANSU CONSTRUCTION",
-      "employer_display": "Ansu Construction, Inc",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "NY",
-      "worksite_cities": "Mineola",
-      "wage_annual_min": 110000,
-      "wage_annual_median": 110000,
-      "wage_annual_max": 110000
-    },
-    {
-      "employer": "APPLIED WATER MANAGEMENT",
-      "employer_display": "APPLIED WATER MANAGEMENT, INC.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Water/Wastewater Engineers",
-      "worksite_states": "NJ",
-      "worksite_cities": "HILLSBOROUGH",
-      "wage_annual_min": 82388,
-      "wage_annual_median": 82388,
-      "wage_annual_max": 82388
-    },
-    {
-      "employer": "AQX ENGINEERING",
-      "employer_display": "AQX Engineering, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "Santa Ana",
-      "wage_annual_min": 76960,
-      "wage_annual_median": 76960,
-      "wage_annual_max": 76960
-    },
-    {
-      "employer": "ASG EXCAVATION",
-      "employer_display": "ASG EXCAVATION, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "ALVARADO",
-      "wage_annual_min": 78000,
-      "wage_annual_median": 78000,
-      "wage_annual_max": 78000
-    },
-    {
-      "employer": "ASSET BUILDERS",
-      "employer_display": "Asset Builders LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "FL",
-      "worksite_cities": "Miramar",
-      "wage_annual_min": 60000,
-      "wage_annual_median": 60000,
-      "wage_annual_max": 60000
-    },
-    {
-      "employer": "ASSOCIATION FOR ENERGY AFFORDABILITY",
-      "employer_display": "Association For Energy Affordability Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "NY",
-      "worksite_cities": "Bronx",
-      "wage_annual_min": 115000,
-      "wage_annual_median": 115000,
-      "wage_annual_max": 115000
-    },
-    {
-      "employer": "ATKINSREALIS USA",
-      "employer_display": "AtkinsRealis USA Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "NJ",
-      "worksite_cities": "Ewing",
-      "wage_annual_min": 84864,
-      "wage_annual_median": 84864,
-      "wage_annual_max": 84864
     },
     {
       "employer": "AVILES ENGINEERING CORPORATION",
@@ -2386,34 +1043,19 @@
       "wage_annual_max": 78500
     },
     {
-      "employer": "AWL INDUSTRIES",
-      "employer_display": "AWL INDUSTRIES INC",
+      "employer": "BAKER CONCRETE CONSTRUCTION",
+      "employer_display": "Baker Concrete Construction, Inc.",
       "filing_count": 1,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "17-2051",
       "soc_titles": "Civil Engineers",
       "worksite_states": "NY",
-      "worksite_cities": "Brooklyn",
-      "wage_annual_min": 92000,
-      "wage_annual_median": 92000,
-      "wage_annual_max": 92000
-    },
-    {
-      "employer": "BASE MICRONESIA",
-      "employer_display": "BASE Micronesia, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "GU",
-      "worksite_cities": "Dededo",
-      "wage_annual_min": 78600,
-      "wage_annual_median": 78600,
-      "wage_annual_max": 78600
+      "worksite_cities": "Albany",
+      "wage_annual_min": 80028,
+      "wage_annual_median": 80028,
+      "wage_annual_max": 80028
     },
     {
       "employer": "BC ARCHITECTS ENGINEERS PLC",
@@ -2431,21 +1073,6 @@
       "wage_annual_max": 73507
     },
     {
-      "employer": "BCC ENGINEERING",
-      "employer_display": "BCC Engineering, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "GA",
-      "worksite_cities": "Atlanta",
-      "wage_annual_min": 78853,
-      "wage_annual_median": 78853,
-      "wage_annual_max": 78853
-    },
-    {
       "employer": "BEAMABLE ENGINEERING",
       "employer_display": "Beamable Engineering Inc.",
       "filing_count": 1,
@@ -2459,36 +1086,6 @@
       "wage_annual_min": 105000,
       "wage_annual_median": 105000,
       "wage_annual_max": 105000
-    },
-    {
-      "employer": "BENNETT PLESS",
-      "employer_display": "Bennett & Pless, Inc",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "TN",
-      "worksite_cities": "Nashville",
-      "wage_annual_min": 81640,
-      "wage_annual_median": 81640,
-      "wage_annual_max": 81640
-    },
-    {
-      "employer": "BEYOND ENGINEERING AND TESTING",
-      "employer_display": "Beyond Engineering and Testing, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "Round Rock",
-      "wage_annual_min": 74984,
-      "wage_annual_median": 74984,
-      "wage_annual_max": 74984
     },
     {
       "employer": "BILLER REINHART ENGINEERING GROUP",
@@ -2506,6 +1103,36 @@
       "wage_annual_max": 81196
     },
     {
+      "employer": "BLACK CONSTRUCTION CORPORATION",
+      "employer_display": "Black Construction Corporation",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2051",
+      "soc_titles": "Civil Engineers",
+      "worksite_states": "GU",
+      "worksite_cities": "Harmon",
+      "wage_annual_min": 54200,
+      "wage_annual_median": 54200,
+      "wage_annual_max": 54200
+    },
+    {
+      "employer": "BLACK MICRO CORPORATION",
+      "employer_display": "Black Micro Corporation",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2051",
+      "soc_titles": "Civil Engineers",
+      "worksite_states": "MP",
+      "worksite_cities": "Tinian",
+      "wage_annual_min": 54000,
+      "wage_annual_median": 54000,
+      "wage_annual_max": 54000
+    },
+    {
       "employer": "BLACK VEATCH CORPORATION",
       "employer_display": "Black & Veatch Corporation",
       "filing_count": 1,
@@ -2519,21 +1146,6 @@
       "wage_annual_min": 73507,
       "wage_annual_median": 73507,
       "wage_annual_max": 73507
-    },
-    {
-      "employer": "BLOOM COMPANIES",
-      "employer_display": "Bloom Companies, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "WI",
-      "worksite_cities": "Milwaukee",
-      "wage_annual_min": 83944,
-      "wage_annual_median": 83944,
-      "wage_annual_max": 83944
     },
     {
       "employer": "BOARD OF REGENTS OF THE UNIVERSITY OF NEBRASKA",
@@ -2551,19 +1163,19 @@
       "wage_annual_max": 66331
     },
     {
-      "employer": "BOLTON MENK",
-      "employer_display": "Bolton & Menk, Inc.",
+      "employer": "BOWMAN CONSULTING GROUP",
+      "employer_display": "Bowman Consulting Group, Ltd.",
       "filing_count": 1,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "17-2051",
-      "soc_titles": "Transportation Engineers",
-      "worksite_states": "IA",
-      "worksite_cities": "Des Moines",
-      "wage_annual_min": 69534,
-      "wage_annual_median": 69534,
-      "wage_annual_max": 69534
+      "soc_titles": "Civil Engineers",
+      "worksite_states": "AZ",
+      "worksite_cities": "Mesa",
+      "wage_annual_min": 81576,
+      "wage_annual_median": 81576,
+      "wage_annual_max": 81576
     },
     {
       "employer": "BRAND SHARED SERVICES",
@@ -2596,66 +1208,6 @@
       "wage_annual_max": 70000
     },
     {
-      "employer": "BREAKTIME CORNER MARKET",
-      "employer_display": "BREAKTIME CORNER MARKET LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "HOUSTON",
-      "wage_annual_min": 69722,
-      "wage_annual_median": 69722,
-      "wage_annual_max": 69722
-    },
-    {
-      "employer": "BROWNSTONE CONSTRUCTION",
-      "employer_display": "Brownstone Construction, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "GU",
-      "worksite_cities": "Dededo",
-      "wage_annual_min": 53622,
-      "wage_annual_median": 53622,
-      "wage_annual_max": 53622
-    },
-    {
-      "employer": "BURDICK PAINTING",
-      "employer_display": "Burdick Painting Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "Santa Clara",
-      "wage_annual_min": 110000,
-      "wage_annual_median": 110000,
-      "wage_annual_max": 110000
-    },
-    {
-      "employer": "BURKE STRUCTURAL ENGINEERS P C",
-      "employer_display": "BURKE STRUCTURAL ENGINEERS P.C.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "CIVIL ENGINEERS",
-      "worksite_states": "CA",
-      "worksite_cities": "COSTA MESA",
-      "wage_annual_min": 84000,
-      "wage_annual_median": 84000,
-      "wage_annual_max": 84000
-    },
-    {
       "employer": "CAMBRIDGE SYSTEMATICS",
       "employer_display": "Cambridge Systematics, Inc.",
       "filing_count": 1,
@@ -2669,21 +1221,6 @@
       "wage_annual_min": 108000,
       "wage_annual_median": 108000,
       "wage_annual_max": 108000
-    },
-    {
-      "employer": "CHA CONSULTING",
-      "employer_display": "CHA Consulting, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Water/Wastewater Engineers",
-      "worksite_states": "NY",
-      "worksite_cities": "Albany",
-      "wage_annual_min": 76222,
-      "wage_annual_median": 76222,
-      "wage_annual_max": 76222
     },
     {
       "employer": "CHARLES TAYLOR ENGINEERING TECHNICAL SERVICES LLC F K A SBSA",
@@ -2701,126 +1238,6 @@
       "wage_annual_max": 68370
     },
     {
-      "employer": "CHASTAIN ASSOCIATES",
-      "employer_display": "CHASTAIN & ASSOCIATES, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "IL",
-      "worksite_cities": "Schaumburg",
-      "wage_annual_min": 81000,
-      "wage_annual_median": 81000,
-      "wage_annual_max": 81000
-    },
-    {
-      "employer": "CHEF CREATIVE OFFICE",
-      "employer_display": "CHEF CREATIVE OFFICE INC.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "NY",
-      "worksite_cities": "New York",
-      "wage_annual_min": 78000,
-      "wage_annual_median": 78000,
-      "wage_annual_max": 78000
-    },
-    {
-      "employer": "CHI CONSULTING ENGINEERS",
-      "employer_display": "CHI Consulting Engineers, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "NJ",
-      "worksite_cities": "Summit",
-      "wage_annual_min": 98800,
-      "wage_annual_median": 98800,
-      "wage_annual_max": 98800
-    },
-    {
-      "employer": "CIMPLESPACES",
-      "employer_display": "CimpleSpaces LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "WA",
-      "worksite_cities": "Seattle",
-      "wage_annual_min": 85800,
-      "wage_annual_median": 85800,
-      "wage_annual_max": 85800
-    },
-    {
-      "employer": "CLUNE CONSTRUCTION COMPANY LP",
-      "employer_display": "Clune Construction Company, LP",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "San Francisco",
-      "wage_annual_min": 92934,
-      "wage_annual_median": 92934,
-      "wage_annual_max": 92934
-    },
-    {
-      "employer": "COLLIERS ENGINEERING DESIGN ARCHITECTURE LANDSCAPE ARCHITECTURE SURVEYING CTP C",
-      "employer_display": "Colliers Engineering & Design, Architecture, Landscape Architecture, Surveying, CTP.C.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "MI",
-      "worksite_cities": "Lansing",
-      "wage_annual_min": 75088,
-      "wage_annual_median": 75088,
-      "wage_annual_max": 75088
-    },
-    {
-      "employer": "CONSOR NORTH AMERICA",
-      "employer_display": "CONSOR North America, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Water/Wastewater Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "Austin",
-      "wage_annual_min": 85000,
-      "wage_annual_median": 85000,
-      "wage_annual_max": 85000
-    },
-    {
-      "employer": "CORDOBA",
-      "employer_display": "CORDOBA CORP.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "Los Angeles",
-      "wage_annual_min": 92000,
-      "wage_annual_median": 92000,
-      "wage_annual_max": 92000
-    },
-    {
       "employer": "CSI ELECTRICAL CONTRACTORS",
       "employer_display": "CSI Electrical Contractors Inc.",
       "filing_count": 1,
@@ -2836,21 +1253,6 @@
       "wage_annual_max": 90002
     },
     {
-      "employer": "CTL ENGINEERING",
-      "employer_display": "CTL Engineering, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "VA",
-      "worksite_cities": "Chantilly",
-      "wage_annual_min": 85000,
-      "wage_annual_median": 85000,
-      "wage_annual_max": 85000
-    },
-    {
       "employer": "CTL THOMPSON",
       "employer_display": "CTL Thompson, Inc.",
       "filing_count": 1,
@@ -2864,21 +1266,6 @@
       "wage_annual_min": 70117,
       "wage_annual_median": 70117,
       "wage_annual_max": 70117
-    },
-    {
-      "employer": "CYIENT",
-      "employer_display": "Cyient, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "Allen",
-      "wage_annual_min": 69160,
-      "wage_annual_median": 69160,
-      "wage_annual_max": 69160
     },
     {
       "employer": "D O CONTRACTORS",
@@ -2926,36 +1313,6 @@
       "wage_annual_max": 76500
     },
     {
-      "employer": "DLR GROUP",
-      "employer_display": "DLR Group, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "OR",
-      "worksite_cities": "Portland",
-      "wage_annual_min": 105000,
-      "wage_annual_median": 105000,
-      "wage_annual_max": 105000
-    },
-    {
-      "employer": "E C C O III ENTERPRISES",
-      "employer_display": "E.C.C.O III Enterprises Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "NY",
-      "worksite_cities": "Yonkers",
-      "wage_annual_min": 78811,
-      "wage_annual_median": 78811,
-      "wage_annual_max": 78811
-    },
-    {
       "employer": "EFIN MANAGEMENT",
       "employer_display": "EFIN Management Corp.",
       "filing_count": 1,
@@ -2971,51 +1328,6 @@
       "wage_annual_max": 78811
     },
     {
-      "employer": "EGIS BLN USA",
-      "employer_display": "Egis BLN USA Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "IN",
-      "worksite_cities": "Indianapolis",
-      "wage_annual_min": 105456,
-      "wage_annual_median": 105456,
-      "wage_annual_max": 105456
-    },
-    {
-      "employer": "EM STRUCTURAL",
-      "employer_display": "EM Structural, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "VA",
-      "worksite_cities": "Arlington",
-      "wage_annual_min": 80000,
-      "wage_annual_median": 80000,
-      "wage_annual_max": 80000
-    },
-    {
-      "employer": "ENERGY PROJECT SOLUTIONS",
-      "employer_display": "Energy Project Solutions, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "Tivoli",
-      "wage_annual_min": 70000,
-      "wage_annual_median": 70000,
-      "wage_annual_max": 70000
-    },
-    {
       "employer": "ENERVIA",
       "employer_display": "Enervia LLC",
       "filing_count": 1,
@@ -3029,81 +1341,6 @@
       "wage_annual_min": 90000,
       "wage_annual_median": 90000,
       "wage_annual_max": 90000
-    },
-    {
-      "employer": "ENGINEERED CONSULTANTS INCORPORATED",
-      "employer_display": "Engineered Consultants Incorporated",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "CT",
-      "worksite_cities": "North Stonington",
-      "wage_annual_min": 72821,
-      "wage_annual_median": 72821,
-      "wage_annual_max": 72821
-    },
-    {
-      "employer": "ENGINEERING MATERIALS TECHNOLOGIES",
-      "employer_display": "Engineering & Materials Technologies, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "VA",
-      "worksite_cities": "Manassas",
-      "wage_annual_min": 80080,
-      "wage_annual_median": 80080,
-      "wage_annual_max": 80080
-    },
-    {
-      "employer": "EXBON DEVELOPMENT",
-      "employer_display": "EXBON DEVELOPMENT, INC.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "GARDEN GROVE",
-      "wage_annual_min": 96000,
-      "wage_annual_median": 96000,
-      "wage_annual_max": 96000
-    },
-    {
-      "employer": "EXP U S SERVICES",
-      "employer_display": "exp U.S. Services Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "Riverside",
-      "wage_annual_min": 92934,
-      "wage_annual_median": 92934,
-      "wage_annual_max": 92934
-    },
-    {
-      "employer": "EXPONENT",
-      "employer_display": "Exponent, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "Oakland",
-      "wage_annual_min": 100000,
-      "wage_annual_median": 100000,
-      "wage_annual_max": 100000
     },
     {
       "employer": "EZZI SIGNS",
@@ -3136,21 +1373,6 @@
       "wage_annual_max": 76500
     },
     {
-      "employer": "FERROVIAL CONSTRUCTION US",
-      "employer_display": "Ferrovial Construction US Corp.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "GA",
-      "worksite_cities": "Atlanta",
-      "wage_annual_min": 80000,
-      "wage_annual_median": 80000,
-      "wage_annual_max": 80000
-    },
-    {
       "employer": "FORGEN",
       "employer_display": "Forgen, LLC",
       "filing_count": 1,
@@ -3164,21 +1386,6 @@
       "wage_annual_min": 74200,
       "wage_annual_median": 74200,
       "wage_annual_max": 74200
-    },
-    {
-      "employer": "FRANK LILL SON",
-      "employer_display": "Frank Lill & Son, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "NY",
-      "worksite_cities": "Victor",
-      "wage_annual_min": 72259,
-      "wage_annual_median": 72259,
-      "wage_annual_max": 72259
     },
     {
       "employer": "GARNEY COMPANIES",
@@ -3211,81 +1418,6 @@
       "wage_annual_max": 80000
     },
     {
-      "employer": "GEORGETOWN UNIVERSITY",
-      "employer_display": "Georgetown University",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "MD",
-      "worksite_cities": "Gaithersburg",
-      "wage_annual_min": 90000,
-      "wage_annual_median": 90000,
-      "wage_annual_max": 90000
-    },
-    {
-      "employer": "GEORGIA INSTITUTE OF TECHNOLOGY",
-      "employer_display": "Georgia Institute of Technology",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Transportation Engineers",
-      "worksite_states": "GA",
-      "worksite_cities": "Atlanta",
-      "wage_annual_min": 66331,
-      "wage_annual_median": 66331,
-      "wage_annual_max": 66331
-    },
-    {
-      "employer": "GEOTEST ENGINEERING",
-      "employer_display": "Geotest Engineering, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "Houston",
-      "wage_annual_min": 85280,
-      "wage_annual_median": 85280,
-      "wage_annual_max": 85280
-    },
-    {
-      "employer": "GLOBAL GEOTECHNICAL CONSULTANTS",
-      "employer_display": "Global Geotechnical Consultants LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "VA",
-      "worksite_cities": "Woodbridge",
-      "wage_annual_min": 73507,
-      "wage_annual_median": 73507,
-      "wage_annual_max": 73507
-    },
-    {
-      "employer": "GMA ENGINEERING PLLC FORMERLY GM STRUCTURAL ENGINEERING PLLC",
-      "employer_display": "GMA Engineering PLLC (formerly GM Structural Engineering, PLLC)",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "NY",
-      "worksite_cities": "Long Island City",
-      "wage_annual_min": 100006,
-      "wage_annual_median": 100006,
-      "wage_annual_max": 100006
-    },
-    {
       "employer": "GOTION ILLINOIS NEW ENERGY",
       "employer_display": "Gotion Illinois New Energy Inc.",
       "filing_count": 1,
@@ -3316,49 +1448,19 @@
       "wage_annual_max": 75000
     },
     {
-      "employer": "GRIFFIN GLASS METAL WERKS",
-      "employer_display": "Griffin Glass & Metal Werks, Inc.",
+      "employer": "GZA GEOENVIRONMENTAL",
+      "employer_display": "GZA GeoEnvironmental, Inc.",
       "filing_count": 1,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "17-2051",
       "soc_titles": "Civil Engineers",
-      "worksite_states": "IL",
-      "worksite_cities": "Elmhurst",
-      "wage_annual_min": 74256,
-      "wage_annual_median": 74256,
-      "wage_annual_max": 74256
-    },
-    {
-      "employer": "GSG CONSULTANTS",
-      "employer_display": "GSG CONSULTANTS, INC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "IL",
-      "worksite_cities": "Schaumburg",
-      "wage_annual_min": 75000,
-      "wage_annual_median": 75000,
-      "wage_annual_max": 75000
-    },
-    {
-      "employer": "H L ORNAMENTAL IRONWORKS",
-      "employer_display": "H&L Ornamental Ironworks Corp",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "NY",
-      "worksite_cities": "New York",
-      "wage_annual_min": 90000,
-      "wage_annual_median": 90000,
-      "wage_annual_max": 90000
+      "worksite_states": "MA",
+      "worksite_cities": "Norwood",
+      "wage_annual_min": 92040,
+      "wage_annual_median": 92040,
+      "wage_annual_max": 92040
     },
     {
       "employer": "H MADRIGAL CONSTRUCTION",
@@ -3374,51 +1476,6 @@
       "wage_annual_min": 74256,
       "wage_annual_median": 74256,
       "wage_annual_max": 74256
-    },
-    {
-      "employer": "HALEY ALDRICH",
-      "employer_display": "Haley & Aldrich, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "MA",
-      "worksite_cities": "Boston",
-      "wage_annual_min": 82000,
-      "wage_annual_median": 82000,
-      "wage_annual_max": 82000
-    },
-    {
-      "employer": "HARDER MECHANICAL CONTRACTORS",
-      "employer_display": "Harder Mechanical Contractors, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "ID",
-      "worksite_cities": "Boise",
-      "wage_annual_min": 115000,
-      "wage_annual_median": 115000,
-      "wage_annual_max": 115000
-    },
-    {
-      "employer": "HATHAWAY DINWIDDIE CONSTRUCTION COMPANY",
-      "employer_display": "HATHAWAY DINWIDDIE CONSTRUCTION COMPANY",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "San Francisco",
-      "wage_annual_min": 100000,
-      "wage_annual_median": 100000,
-      "wage_annual_max": 100000
     },
     {
       "employer": "HBSS CONNECT",
@@ -3451,51 +1508,6 @@
       "wage_annual_max": 92934
     },
     {
-      "employer": "HOWARD UNIVERSITY",
-      "employer_display": "Howard University",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "DC",
-      "worksite_cities": "Washington",
-      "wage_annual_min": 80000,
-      "wage_annual_median": 80000,
-      "wage_annual_max": 80000
-    },
-    {
-      "employer": "HUDSON ENGINEERING CONSULTING P C",
-      "employer_display": "Hudson Engineering & Consulting, P.C.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "NY",
-      "worksite_cities": "Elmsford",
-      "wage_annual_min": 78811,
-      "wage_annual_median": 78811,
-      "wage_annual_max": 78811
-    },
-    {
-      "employer": "HW ENGINEERING",
-      "employer_display": "HW Engineering",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "NV",
-      "worksite_cities": "Las Vegas",
-      "wage_annual_min": 73570,
-      "wage_annual_median": 73570,
-      "wage_annual_max": 73570
-    },
-    {
       "employer": "HZS ENGINEERING",
       "employer_display": "HZS Engineering, Inc.",
       "filing_count": 1,
@@ -3509,36 +1521,6 @@
       "wage_annual_min": 76211,
       "wage_annual_median": 76211,
       "wage_annual_max": 76211
-    },
-    {
-      "employer": "IDESIGN ENGINEERING",
-      "employer_display": "IDESIGN ENGINEERING INC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "MD",
-      "worksite_cities": "Calverton",
-      "wage_annual_min": 71906,
-      "wage_annual_median": 71906,
-      "wage_annual_max": 71906
-    },
-    {
-      "employer": "IDOM",
-      "employer_display": "IDOM, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "GA",
-      "worksite_cities": "Atlanta",
-      "wage_annual_min": 90004,
-      "wage_annual_median": 90004,
-      "wage_annual_max": 90004
     },
     {
       "employer": "INNOVA CONSULTING",
@@ -3556,79 +1538,19 @@
       "wage_annual_max": 74257
     },
     {
-      "employer": "INTEGRATED GLAZTECH",
-      "employer_display": "INTEGRATED GLAZTECH INC",
+      "employer": "JACOBS CIVIL CONSULTANTS",
+      "employer_display": "Jacobs Civil Consultants, Inc.",
       "filing_count": 1,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "NY",
-      "worksite_cities": "Manhattan",
-      "wage_annual_min": 78811,
-      "wage_annual_median": 78811,
-      "wage_annual_max": 78811
-    },
-    {
-      "employer": "IRON FABRICATION SERVICES",
-      "employer_display": "Iron Fabrication Services Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "MD",
-      "worksite_cities": "Annapolis Junction",
-      "wage_annual_min": 75109,
-      "wage_annual_median": 75109,
-      "wage_annual_max": 75109
-    },
-    {
-      "employer": "ISTORMWATER",
-      "employer_display": "Istormwater LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "MD",
-      "worksite_cities": "Glen Burnie",
-      "wage_annual_min": 85233,
-      "wage_annual_median": 85233,
-      "wage_annual_max": 85233
-    },
-    {
-      "employer": "J H FINDORFF SON",
-      "employer_display": "J.H. Findorff & Son Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "WI",
-      "worksite_cities": "Madison",
-      "wage_annual_min": 83000,
-      "wage_annual_median": 83000,
-      "wage_annual_max": 83000
-    },
-    {
-      "employer": "JACOBS ASSOCIATES",
-      "employer_display": "Jacobs Associates, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "17-2051",
       "soc_titles": "Civil Engineers",
       "worksite_states": "NY",
       "worksite_cities": "New York",
-      "wage_annual_min": 80000,
-      "wage_annual_median": 80000,
-      "wage_annual_max": 80000
+      "wage_annual_min": 88000,
+      "wage_annual_median": 88000,
+      "wage_annual_max": 88000
     },
     {
       "employer": "JPC LOGISTICS",
@@ -3646,21 +1568,6 @@
       "wage_annual_max": 78811
     },
     {
-      "employer": "JWG CONSTRUCTION",
-      "employer_display": "JWG CONSTRUCTION, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "GU",
-      "worksite_cities": "HARMON",
-      "wage_annual_min": 53622,
-      "wage_annual_median": 53622,
-      "wage_annual_max": 53622
-    },
-    {
       "employer": "KC ENGINEERING AND LAND SURVEYING P C",
       "employer_display": "KC ENGINEERING AND LAND SURVEYING, P.C.",
       "filing_count": 1,
@@ -3676,49 +1583,19 @@
       "wage_annual_max": 78811
     },
     {
-      "employer": "KENALL",
-      "employer_display": "KENALL, INC.",
+      "employer": "KIEWIT INFRASTRUCTURE CO",
+      "employer_display": "Kiewit Infrastructure Co.",
       "filing_count": 1,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "17-2051",
       "soc_titles": "Civil Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "HOUSTON",
-      "wage_annual_min": 88843,
-      "wage_annual_median": 88843,
-      "wage_annual_max": 88843
-    },
-    {
-      "employer": "KID A",
-      "employer_display": "Kid A LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "NY",
-      "worksite_cities": "NEW YORK",
-      "wage_annual_min": 78811,
-      "wage_annual_median": 78811,
-      "wage_annual_max": 78811
-    },
-    {
-      "employer": "KIEWIT ENERGY GROUP",
-      "employer_display": "Kiewit Energy Group, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "Abilene",
-      "wage_annual_min": 98539,
-      "wage_annual_median": 98539,
-      "wage_annual_max": 98539
+      "worksite_states": "MD",
+      "worksite_cities": "Baltimore",
+      "wage_annual_min": 85020,
+      "wage_annual_median": 85020,
+      "wage_annual_max": 85020
     },
     {
       "employer": "KITTELSON ASSOCIATES",
@@ -3736,21 +1613,6 @@
       "wage_annual_max": 117933
     },
     {
-      "employer": "KPFF",
-      "employer_display": "KPFF, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "ID",
-      "worksite_cities": "Boise",
-      "wage_annual_min": 105000,
-      "wage_annual_median": 105000,
-      "wage_annual_max": 105000
-    },
-    {
       "employer": "KUO ASSOCIATES",
       "employer_display": "Kuo & Associates, LLC",
       "filing_count": 1,
@@ -3766,19 +1628,19 @@
       "wage_annual_max": 75000
     },
     {
-      "employer": "LAKESHORE ENGINEERING",
-      "employer_display": "Lakeshore Engineering, LLC",
+      "employer": "LANGAN ENGINEERING AND ENVIRONMENTAL SERVICES",
+      "employer_display": "Langan Engineering and Environmental Services, LLC",
       "filing_count": 1,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "17-2051",
       "soc_titles": "Civil Engineers",
-      "worksite_states": "IL",
-      "worksite_cities": "Chicago",
-      "wage_annual_min": 85696,
-      "wage_annual_median": 85696,
-      "wage_annual_max": 85696
+      "worksite_states": "TX",
+      "worksite_cities": "Houston",
+      "wage_annual_min": 69722,
+      "wage_annual_median": 69722,
+      "wage_annual_max": 69722
     },
     {
       "employer": "LELAND SAYLOR ASSOCIATES",
@@ -3794,21 +1656,6 @@
       "wage_annual_min": 105000,
       "wage_annual_median": 105000,
       "wage_annual_max": 105000
-    },
-    {
-      "employer": "LETS AMERICA",
-      "employer_display": "LETS AMERICA, INC.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "AZ",
-      "worksite_cities": "CHANDLER",
-      "wage_annual_min": 68723,
-      "wage_annual_median": 68723,
-      "wage_annual_max": 68723
     },
     {
       "employer": "LEVEL CONSTRUCTION",
@@ -3841,21 +1688,6 @@
       "wage_annual_max": 87000
     },
     {
-      "employer": "LINCOLN CONSTRUCTORS",
-      "employer_display": "Lincoln Constructors Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "AZ",
-      "worksite_cities": "Phoenix",
-      "wage_annual_min": 70000,
-      "wage_annual_median": 70000,
-      "wage_annual_max": 70000
-    },
-    {
       "employer": "LOENBRO",
       "employer_display": "Loenbro, LLC",
       "filing_count": 1,
@@ -3886,21 +1718,6 @@
       "wage_annual_max": 78811
     },
     {
-      "employer": "LSA ASSOCIATES",
-      "employer_display": "LSA Associates, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Transportation Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "Irvine",
-      "wage_annual_min": 91895,
-      "wage_annual_median": 91895,
-      "wage_annual_max": 91895
-    },
-    {
       "employer": "LUMEN IT SERVICES",
       "employer_display": "LUMEN IT SERVICES LLC",
       "filing_count": 1,
@@ -3916,61 +1733,16 @@
       "wage_annual_max": 75000
     },
     {
-      "employer": "MARLIN ENGINEERING",
-      "employer_display": "Marlin Engineering, Inc.",
+      "employer": "MAGNUSSON KLEMENCIC ASSOCIATES",
+      "employer_display": "Magnusson Klemencic Associates, Inc.",
       "filing_count": 1,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "17-2051",
       "soc_titles": "Civil Engineers",
-      "worksite_states": "FL",
-      "worksite_cities": "Fort Lauderdale",
-      "wage_annual_min": 86320,
-      "wage_annual_median": 86320,
-      "wage_annual_max": 86320
-    },
-    {
-      "employer": "MASTEC SERVICES COMPANY",
-      "employer_display": "MASTEC  SERVICES COMPANY, INC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "NC",
-      "worksite_cities": "CARY",
-      "wage_annual_min": 81367,
-      "wage_annual_median": 81367,
-      "wage_annual_max": 81367
-    },
-    {
-      "employer": "MCFARLAND BUILDING GROUP",
-      "employer_display": "McFarland Building Group, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "NC",
-      "worksite_cities": "Charlotte",
-      "wage_annual_min": 85000,
-      "wage_annual_median": 85000,
-      "wage_annual_max": 85000
-    },
-    {
-      "employer": "MCNAMARA SALVIA",
-      "employer_display": "McNamara-Salvia, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "FL",
-      "worksite_cities": "Miami",
+      "worksite_states": "WA",
+      "worksite_cities": "Seattle",
       "wage_annual_min": 90000,
       "wage_annual_median": 90000,
       "wage_annual_max": 90000
@@ -3991,21 +1763,6 @@
       "wage_annual_max": 53622
     },
     {
-      "employer": "MILHOUSE ENGINEERING CONSTRUCTION",
-      "employer_display": "Milhouse Engineering & Construction, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "IL",
-      "worksite_cities": "Chicago",
-      "wage_annual_min": 88452,
-      "wage_annual_median": 88452,
-      "wage_annual_max": 88452
-    },
-    {
       "employer": "MIYAMOTO INTERNATIONAL",
       "employer_display": "Miyamoto International, Inc.",
       "filing_count": 1,
@@ -4019,21 +1776,6 @@
       "wage_annual_min": 80163,
       "wage_annual_median": 80163,
       "wage_annual_max": 80163
-    },
-    {
-      "employer": "MNS ENGINEERS",
-      "employer_display": "MNS Engineers, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Transportation Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "ONTARIO",
-      "wage_annual_min": 90000,
-      "wage_annual_median": 90000,
-      "wage_annual_max": 90000
     },
     {
       "employer": "MOBBIL",
@@ -4051,169 +1793,19 @@
       "wage_annual_max": 90000
     },
     {
-      "employer": "MODERN INTERNATIONAL",
-      "employer_display": "Modern International, Inc.",
+      "employer": "MOTT MACDONALD GROUP",
+      "employer_display": "Mott MacDonald Group Inc.",
       "filing_count": 1,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "17-2051",
       "soc_titles": "Civil Engineers",
-      "worksite_states": "GU",
-      "worksite_cities": "Barrigada",
-      "wage_annual_min": 53622,
-      "wage_annual_median": 53622,
-      "wage_annual_max": 53622
-    },
-    {
-      "employer": "MONOCEROS CORPORATION",
-      "employer_display": "Monoceros Corporation",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "IL",
-      "worksite_cities": "Chicago",
-      "wage_annual_min": 70824,
-      "wage_annual_median": 70824,
-      "wage_annual_max": 70824
-    },
-    {
-      "employer": "MORPHIC",
-      "employer_display": "MORPHIC CORP",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "NJ",
-      "worksite_cities": "NORTH BRUNSWICK",
-      "wage_annual_min": 96000,
-      "wage_annual_median": 96000,
-      "wage_annual_max": 96000
-    },
-    {
-      "employer": "MOUNTAIN ARTISAN COMPANY LIMITED",
-      "employer_display": "Mountain Artisan Company Limited",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "CO",
-      "worksite_cities": "Steamboat Springs",
-      "wage_annual_min": 70512,
-      "wage_annual_median": 70512,
-      "wage_annual_max": 70512
-    },
-    {
-      "employer": "MOUR GROUP ENGINEERING DESIGN",
-      "employer_display": "Mour Group Engineering Design Inc",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "San Diego",
-      "wage_annual_min": 80163,
-      "wage_annual_median": 80163,
-      "wage_annual_max": 80163
-    },
-    {
-      "employer": "MP ENGINEERS P C",
-      "employer_display": "MP ENGINEERS P.C.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "NJ",
-      "worksite_cities": "PRINCETON",
-      "wage_annual_min": 82160,
-      "wage_annual_median": 82160,
-      "wage_annual_max": 82160
-    },
-    {
-      "employer": "MUNICIPAL TESTING LABORATORY",
-      "employer_display": "MUNICIPAL TESTING LABORATORY, INC.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "NY",
-      "worksite_cities": "HAUPPAUGE",
-      "wage_annual_min": 86757,
-      "wage_annual_median": 86757,
-      "wage_annual_max": 86757
-    },
-    {
-      "employer": "NABIH YOUSSEF ASSOCIATES",
-      "employer_display": "Nabih Youssef & Associates",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "San Francisco",
-      "wage_annual_min": 97760,
-      "wage_annual_median": 97760,
-      "wage_annual_max": 97760
-    },
-    {
-      "employer": "NEW YORK UNIVERSITY",
-      "employer_display": "New York University",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "NY",
-      "worksite_cities": "Brooklyn",
-      "wage_annual_min": 75000,
-      "wage_annual_median": 75000,
-      "wage_annual_max": 75000
-    },
-    {
-      "employer": "NOZZLE TECH USA",
-      "employer_display": "NOZZLE TECH USA, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "UT",
-      "worksite_cities": "Springville",
-      "wage_annual_min": 58843,
-      "wage_annual_median": 58843,
-      "wage_annual_max": 58843
-    },
-    {
-      "employer": "NR GROUP INCORPORATED",
-      "employer_display": "NR Group Incorporated",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "FL",
-      "worksite_cities": "West Palm Beach",
-      "wage_annual_min": 53914,
-      "wage_annual_median": 53914,
-      "wage_annual_max": 53914
+      "worksite_states": "OR",
+      "worksite_cities": "Portland",
+      "wage_annual_min": 83554,
+      "wage_annual_median": 83554,
+      "wage_annual_max": 83554
     },
     {
       "employer": "OAK CREST ACADEMY",
@@ -4276,36 +1868,6 @@
       "wage_annual_max": 74000
     },
     {
-      "employer": "PACIFIC DATA SYSTEMS",
-      "employer_display": "Pacific Data Systems",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "GU",
-      "worksite_cities": "Maite",
-      "wage_annual_min": 52400,
-      "wage_annual_median": 52400,
-      "wage_annual_max": 52400
-    },
-    {
-      "employer": "PACIFIC RIM CONSTRUCTORS",
-      "employer_display": "Pacific Rim Constructors, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "GU",
-      "worksite_cities": "Tamuning",
-      "wage_annual_min": 63000,
-      "wage_annual_median": 63000,
-      "wage_annual_max": 63000
-    },
-    {
       "employer": "PARAGON CORPORATION",
       "employer_display": "Paragon Corporation",
       "filing_count": 1,
@@ -4336,66 +1898,6 @@
       "wage_annual_max": 89400
     },
     {
-      "employer": "PENN ENVIRONMENTAL REMEDIATION",
-      "employer_display": "Penn Environmental & Remediation",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "PA",
-      "worksite_cities": "Doylestown",
-      "wage_annual_min": 74000,
-      "wage_annual_median": 74000,
-      "wage_annual_max": 74000
-    },
-    {
-      "employer": "PENNONI ASSOCIATES",
-      "employer_display": "Pennoni Associates, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "FL",
-      "worksite_cities": "Tampa",
-      "wage_annual_min": 72000,
-      "wage_annual_median": 72000,
-      "wage_annual_max": 72000
-    },
-    {
-      "employer": "PIMA COUNTY GOVERNMENT",
-      "employer_display": "Pima County Government",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "AZ",
-      "worksite_cities": "Tucson",
-      "wage_annual_min": 65326,
-      "wage_annual_median": 65326,
-      "wage_annual_max": 65326
-    },
-    {
-      "employer": "PINPOINT PRECISION PLLC",
-      "employer_display": "Pinpoint Precision PLLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "IL",
-      "worksite_cities": "Chicago",
-      "wage_annual_min": 75000,
-      "wage_annual_median": 75000,
-      "wage_annual_max": 75000
-    },
-    {
       "employer": "PLANATE MANAGEMENT GROUP",
       "employer_display": "PLANATE MANAGEMENT GROUP LLC",
       "filing_count": 1,
@@ -4409,21 +1911,6 @@
       "wage_annual_min": 58240,
       "wage_annual_median": 58240,
       "wage_annual_max": 58240
-    },
-    {
-      "employer": "PLUMP ENGINEERING",
-      "employer_display": "Plump Engineering, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "Anaheim",
-      "wage_annual_min": 80000,
-      "wage_annual_median": 80000,
-      "wage_annual_max": 80000
     },
     {
       "employer": "PMA CONSULTANTS",
@@ -4441,51 +1928,6 @@
       "wage_annual_max": 138320
     },
     {
-      "employer": "POPLI ARCHITECTURE ENGINEERING LS DPC",
-      "employer_display": "Popli Architecture & Engineering & LS, DPC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "NY",
-      "worksite_cities": "Penfield",
-      "wage_annual_min": 88000,
-      "wage_annual_median": 88000,
-      "wage_annual_max": 88000
-    },
-    {
-      "employer": "POWERS SONS CONSTRUCTION",
-      "employer_display": "Powers & Sons Construction, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "IN",
-      "worksite_cities": "Gary",
-      "wage_annual_min": 70824,
-      "wage_annual_median": 70824,
-      "wage_annual_max": 70824
-    },
-    {
-      "employer": "PRINCETON TECHNICAL SERVICES",
-      "employer_display": "Princeton Technical Services",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "IL",
-      "worksite_cities": "Chicago",
-      "wage_annual_min": 74256,
-      "wage_annual_median": 74256,
-      "wage_annual_max": 74256
-    },
-    {
       "employer": "PULICE CONSTRUCTION",
       "employer_display": "Pulice Construction Inc.",
       "filing_count": 1,
@@ -4499,21 +1941,6 @@
       "wage_annual_min": 72800,
       "wage_annual_median": 72800,
       "wage_annual_max": 72800
-    },
-    {
-      "employer": "QLM",
-      "employer_display": "QLM, INC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "SAN JOSE",
-      "wage_annual_min": 100000,
-      "wage_annual_median": 100000,
-      "wage_annual_max": 100000
     },
     {
       "employer": "R H CHEN ENGINEERING",
@@ -4546,21 +1973,6 @@
       "wage_annual_max": 80000
     },
     {
-      "employer": "ROYAL AMERICAN CONSTRUCTION COMPANY",
-      "employer_display": "Royal American Construction Company, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "FL",
-      "worksite_cities": "Panama City",
-      "wage_annual_min": 94125,
-      "wage_annual_median": 94125,
-      "wage_annual_max": 94125
-    },
-    {
       "employer": "RUMMEL KLEPPER KAHL LLP",
       "employer_display": "Rummel, Klepper & Kahl, LLP",
       "filing_count": 1,
@@ -4574,66 +1986,6 @@
       "wage_annual_min": 97011,
       "wage_annual_median": 97011,
       "wage_annual_max": 97011
-    },
-    {
-      "employer": "SAIFUL BOUQUET CONSULTING STRUCTURAL ENGINEERS",
-      "employer_display": "Saiful Bouquet Consulting Structural Engineers, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "San Diego",
-      "wage_annual_min": 86300,
-      "wage_annual_median": 86300,
-      "wage_annual_max": 86300
-    },
-    {
-      "employer": "SALAS O BRIEN",
-      "employer_display": "Salas O'Brien, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "IN",
-      "worksite_cities": "Hammond",
-      "wage_annual_min": 71300,
-      "wage_annual_median": 71300,
-      "wage_annual_max": 71300
-    },
-    {
-      "employer": "SAMOO ENGINEERING",
-      "employer_display": "Samoo Engineering , LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "Houston",
-      "wage_annual_min": 78000,
-      "wage_annual_median": 78000,
-      "wage_annual_max": 78000
-    },
-    {
-      "employer": "SFA DESIGN GROUP",
-      "employer_display": "SFA Design Group, LLC.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "OR",
-      "worksite_cities": "Tigard",
-      "wage_annual_min": 78000,
-      "wage_annual_median": 78000,
-      "wage_annual_max": 78000
     },
     {
       "employer": "SHANGRILA VENTURES",
@@ -4664,36 +2016,6 @@
       "wage_annual_min": 95000,
       "wage_annual_median": 95000,
       "wage_annual_max": 95000
-    },
-    {
-      "employer": "SK DESIGN GROUP",
-      "employer_display": "SK Design Group, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "CO",
-      "worksite_cities": "Castle Rock",
-      "wage_annual_min": 70117,
-      "wage_annual_median": 70117,
-      "wage_annual_max": 70117
-    },
-    {
-      "employer": "SKENDER GROUP",
-      "employer_display": "Skender Group LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "IL",
-      "worksite_cities": "Chicago",
-      "wage_annual_min": 120500,
-      "wage_annual_median": 120500,
-      "wage_annual_max": 120500
     },
     {
       "employer": "SKYLINE CONSULTANTS",
@@ -4741,49 +2063,19 @@
       "wage_annual_max": 78057
     },
     {
-      "employer": "STRUCTURAL ENGINEERING TECHNOLOGIES PC",
-      "employer_display": "STRUCTURAL ENGINEERING TECHNOLOGIES, PC",
+      "employer": "STANTEC CONSULTING SERVICES",
+      "employer_display": "Stantec Consulting Services Inc.",
       "filing_count": 1,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "NY",
-      "worksite_cities": "Long Island City",
-      "wage_annual_min": 85000,
-      "wage_annual_median": 85000,
-      "wage_annual_max": 85000
-    },
-    {
-      "employer": "STRUCTURAL TECHNOLOGIES STRONGPOINT",
-      "employer_display": "Structural Technologies Strongpoint, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "IL",
-      "worksite_cities": "Schiller Park",
-      "wage_annual_min": 90000,
-      "wage_annual_median": 90000,
-      "wage_annual_max": 90000
-    },
-    {
-      "employer": "STRUCTUROLOGY OF ARIZONA",
-      "employer_display": "Structurology of Arizona, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "WA",
-      "worksite_cities": "BOTHELL",
-      "wage_annual_min": 92400,
-      "wage_annual_median": 92400,
-      "wage_annual_max": 92400
+      "soc_titles": "Transportation Engineers",
+      "worksite_states": "TX",
+      "worksite_cities": "Plano",
+      "wage_annual_min": 75317,
+      "wage_annual_median": 75317,
+      "wage_annual_max": 75317
     },
     {
       "employer": "STV CONSTRUCTION",
@@ -4801,34 +2093,19 @@
       "wage_annual_max": 78811
     },
     {
-      "employer": "SYMMETRA DESIGN",
-      "employer_display": "Symmetra Design LLC",
+      "employer": "SUMITOMO MITSUI CONSTRUCTION CO",
+      "employer_display": "SUMITOMO MITSUI CONSTRUCTION CO., LTD.",
       "filing_count": 1,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Transportation Engineers",
-      "worksite_states": "DC",
-      "worksite_cities": "Washington",
-      "wage_annual_min": 81000,
-      "wage_annual_median": 81000,
-      "wage_annual_max": 81000
-    },
-    {
-      "employer": "T Y LIN INTERNATIONAL",
-      "employer_display": "T.Y. Lin International",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "17-2051",
       "soc_titles": "Civil Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "Sacramento",
-      "wage_annual_min": 87568,
-      "wage_annual_median": 87568,
-      "wage_annual_max": 87568
+      "worksite_states": "GU",
+      "worksite_cities": "Harmon",
+      "wage_annual_min": 53622,
+      "wage_annual_median": 53622,
+      "wage_annual_max": 53622
     },
     {
       "employer": "TAMARACK GROVE ENGINEERING PLLC",
@@ -4846,19 +2123,19 @@
       "wage_annual_max": 69971
     },
     {
-      "employer": "TASACOM TECHNOLOGIES",
-      "employer_display": "Tasacom Technologies Inc",
+      "employer": "THE INDUSTRIAL COMPANY",
+      "employer_display": "The Industrial Company",
       "filing_count": 1,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "17-2051",
       "soc_titles": "Civil Engineers",
       "worksite_states": "TX",
-      "worksite_cities": "Dallas",
-      "wage_annual_min": 66000,
-      "wage_annual_median": 66000,
-      "wage_annual_max": 66000
+      "worksite_cities": "Abilene",
+      "wage_annual_min": 80000,
+      "wage_annual_median": 80000,
+      "wage_annual_max": 80000
     },
     {
       "employer": "THOMPSON ENGINEERING",
@@ -4874,21 +2151,6 @@
       "wage_annual_min": 78000,
       "wage_annual_median": 78000,
       "wage_annual_max": 78000
-    },
-    {
-      "employer": "TOOLE DESIGN GROUP",
-      "employer_display": "Toole Design Group LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "MD",
-      "worksite_cities": "Silver Spring",
-      "wage_annual_min": 102539,
-      "wage_annual_median": 102539,
-      "wage_annual_max": 102539
     },
     {
       "employer": "TRANSCEND ENGINEERS PLANNERS",
@@ -4921,36 +2183,6 @@
       "wage_annual_max": 74000
     },
     {
-      "employer": "TRIANGLE ENGINEERING",
-      "employer_display": "Triangle Engineering LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "AZ",
-      "worksite_cities": "Peoria",
-      "wage_annual_min": 77500,
-      "wage_annual_median": 77500,
-      "wage_annual_max": 77500
-    },
-    {
-      "employer": "TSA GROUP",
-      "employer_display": "TSA Group, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "Dallas",
-      "wage_annual_min": 96000,
-      "wage_annual_median": 96000,
-      "wage_annual_max": 96000
-    },
-    {
       "employer": "VALCON GUAM",
       "employer_display": "Valcon Guam LLC",
       "filing_count": 1,
@@ -4964,36 +2196,6 @@
       "wage_annual_min": 60000,
       "wage_annual_median": 60000,
       "wage_annual_max": 60000
-    },
-    {
-      "employer": "VSCE",
-      "employer_display": "VSCE, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "Oakland",
-      "wage_annual_min": 86528,
-      "wage_annual_median": 86528,
-      "wage_annual_max": 86528
-    },
-    {
-      "employer": "W A RASIC CONSTRUCTION COMPANY",
-      "employer_display": "W.A. RASIC CONSTRUCTION COMPANY, INC.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "LONG BEACH",
-      "wage_annual_min": 94994,
-      "wage_annual_median": 94994,
-      "wage_annual_max": 94994
     },
     {
       "employer": "WEAVER CONSULTANTS GROUP NORTH AMERICA",
@@ -5011,19 +2213,19 @@
       "wage_annual_max": 83200
     },
     {
-      "employer": "WEBBER",
-      "employer_display": "Webber, LLC",
+      "employer": "WEBBER WATERWORKS",
+      "employer_display": "Webber Waterworks, LLC",
       "filing_count": 1,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "17-2051",
       "soc_titles": "Civil Engineers",
       "worksite_states": "TX",
-      "worksite_cities": "McKinney",
-      "wage_annual_min": 85000,
-      "wage_annual_median": 85000,
-      "wage_annual_max": 85000
+      "worksite_cities": "Austin",
+      "wage_annual_min": 96000,
+      "wage_annual_median": 96000,
+      "wage_annual_max": 96000
     },
     {
       "employer": "WEBCOR CONSTRUCTION LP",
@@ -5056,36 +2258,6 @@
       "wage_annual_max": 92518
     },
     {
-      "employer": "WILLMENG CONSTRUCTION",
-      "employer_display": "Willmeng Construction, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "AZ",
-      "worksite_cities": "Phoenix",
-      "wage_annual_min": 68723,
-      "wage_annual_median": 68723,
-      "wage_annual_max": 68723
-    },
-    {
-      "employer": "WJ CONSTRUCTION GUAM",
-      "employer_display": "WJ Construction Guam, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "GU",
-      "worksite_cities": "Mangilao",
-      "wage_annual_min": 71280,
-      "wage_annual_median": 71280,
-      "wage_annual_max": 71280
-    },
-    {
       "employer": "WSP USA BUILDINGS",
       "employer_display": "WSP USA BUILDINGS INC.",
       "filing_count": 1,
@@ -5099,21 +2271,6 @@
       "wage_annual_min": 85072,
       "wage_annual_median": 85072,
       "wage_annual_max": 85072
-    },
-    {
-      "employer": "YOGI KWONG ENGINEERS",
-      "employer_display": "Yogi Kwong Engineers, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2051",
-      "soc_titles": "Civil Engineers",
-      "worksite_states": "HI",
-      "worksite_cities": "Honolulu",
-      "wage_annual_min": 69742,
-      "wage_annual_median": 69742,
-      "wage_annual_max": 69742
     }
   ]
 }

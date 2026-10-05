@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-14 12:43 UTC",
+  "generated_at_utc": "2026-10-05 14:31 UTC",
   "source": "US DOL OFLC LCA Programs disclosure data (public record)",
   "filters": {
     "case_status": "Certified",
@@ -10,44 +10,42 @@
     "pw_wage_level": "I"
   },
   "quarters_used": [
-    "FY2025Q4",
     "FY2026Q1"
   ],
   "quarters_superseded": {},
   "rows_per_quarter": {
-    "FY2025Q4": 118580,
     "FY2026Q1": 83120
   },
   "funnel": {
-    "rows_total": 201700,
-    "rows_certified": 181277,
-    "rows_soc_matched": 831,
-    "rows_selected": 67
+    "rows_total": 83120,
+    "rows_certified": 74664,
+    "rows_soc_matched": 347,
+    "rows_selected": 20
   },
-  "employer_groups": 51,
-  "distinct_raw_employer_spellings": 52,
+  "employer_groups": 16,
+  "distinct_raw_employer_spellings": 16,
   "rows_wage_excluded_from_wage_stats": 0,
   "case_statuses_seen": {
-    "CERTIFIED": 181277,
-    "CERTIFIED - WITHDRAWN": 15748,
-    "WITHDRAWN": 3242,
-    "DENIED": 1433
+    "CERTIFIED": 74664,
+    "CERTIFIED - WITHDRAWN": 6666,
+    "WITHDRAWN": 1398,
+    "DENIED": 392
   },
   "wage_levels_seen": {
-    "II": 290,
-    "III": 197,
-    "IV": 187,
-    "": 90,
-    "I": 67
+    "II": 126,
+    "IV": 87,
+    "III": 77,
+    "": 37,
+    "I": 20
   },
   "wage_units_seen": {
-    "YEAR": 57,
-    "HOUR": 10
+    "YEAR": 17,
+    "HOUR": 3
   },
   "patterns": {
     "basis": {
-      "filings": 67,
-      "employers": 51,
+      "filings": 20,
+      "employers": 16,
       "measured_by": "employers",
       "min_support_employers": 3
     },
@@ -55,56 +53,21 @@
       "recurring_tokens": [
         {
           "token": "engineer",
-          "employers": 36,
-          "filings": 51
+          "employers": 10,
+          "filings": 13
         },
         {
           "token": "network",
-          "employers": 28,
-          "filings": 34
+          "employers": 7,
+          "filings": 8
         },
         {
           "token": "architect",
-          "employers": 12,
-          "filings": 12
-        },
-        {
-          "token": "senior",
           "employers": 5,
-          "filings": 6
-        },
-        {
-          "token": "technical",
-          "employers": 4,
-          "filings": 7
-        },
-        {
-          "token": "data",
-          "employers": 3,
-          "filings": 6
+          "filings": 5
         },
         {
           "token": "development",
-          "employers": 3,
-          "filings": 4
-        },
-        {
-          "token": "cloud",
-          "employers": 3,
-          "filings": 3
-        },
-        {
-          "token": "computer",
-          "employers": 3,
-          "filings": 3
-        },
-        {
-          "token": "solution",
-          "employers": 3,
-          "filings": 3
-        },
-        {
-          "token": "solutions",
           "employers": 3,
           "filings": 3
         }
@@ -112,26 +75,6 @@
       "distinct_titles": [
         {
           "title": "Network Engineer",
-          "employers": 7,
-          "filings": 7
-        },
-        {
-          "title": "NETWORK ENGINEER",
-          "employers": 3,
-          "filings": 4
-        },
-        {
-          "title": "Technical Support Engineer",
-          "employers": 2,
-          "filings": 5
-        },
-        {
-          "title": "COMPUTER NETWORK ARCHITECT",
-          "employers": 2,
-          "filings": 2
-        },
-        {
-          "title": "Network Architect",
           "employers": 2,
           "filings": 2
         },
@@ -141,32 +84,17 @@
           "filings": 2
         },
         {
-          "title": "IP Network Engineer III",
-          "employers": 1,
-          "filings": 2
-        },
-        {
-          "title": "Network Development Engineer I",
-          "employers": 1,
-          "filings": 2
-        },
-        {
-          "title": "Network Security Engineer",
-          "employers": 1,
-          "filings": 2
-        },
-        {
           "title": "Senior Software Engineer",
           "employers": 1,
           "filings": 2
         },
         {
-          "title": "Azure Cloud Architect",
+          "title": "Business Development Leader",
           "employers": 1,
           "filings": 1
         },
         {
-          "title": "Business Development Leader",
+          "title": "COMPUTER NETWORK ARCHITECT",
           "employers": 1,
           "filings": 1
         },
@@ -191,47 +119,12 @@
           "filings": 1
         },
         {
-          "title": "DATA ENGINEER ADMINISTRATOR",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Data Engineer Administrator",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Engineer 3, Engineering Operations",
           "employers": 1,
           "filings": 1
         },
         {
-          "title": "Engineer 3, Network Engineering - Architecture & Design",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Enterprise Act Engineer II",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Infrastructure Engineer I",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "NETWORK ARCHITECT",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "NETWORK ENGINEER - WIRELESS & RF TESTING",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "NETWORK L3 ENGINEER",
+          "title": "Network Architect",
           "employers": 1,
           "filings": 1
         },
@@ -241,72 +134,12 @@
           "filings": 1
         },
         {
-          "title": "Network Operations Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Network Optimization Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Network and Security Analyst",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Networking Systems Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Principal Engineer I",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Principal Engineer I - Customer Networks",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Professional Services Network Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "RAN Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "RF Engineer",
+          "title": "Network Development Engineer I",
           "employers": 1,
           "filings": 1
         },
         {
           "title": "SENIOR SOLUTION ARCHITECT",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "SOLUTION ARCHITECT",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Senior Data Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Senior Network Engineer, Information Technology",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Senior Technical Solutions Engineer",
           "employers": 1,
           "filings": 1
         },
@@ -321,26 +154,6 @@
           "filings": 1
         },
         {
-          "title": "Solution Architect",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Solutions Engineer 2",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Technical Architect",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Telecom Network Specialist",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Telecommunications Engineer",
           "employers": 1,
           "filings": 1
@@ -351,44 +164,38 @@
       {
         "soc_code": "15-1241.00",
         "title": "Computer Network Architects",
-        "employers": 49,
-        "filings": 65
+        "employers": 15,
+        "filings": 19
       },
       {
         "soc_code": "15-1241.01",
         "title": "Telecommunications Engineering Specialists",
-        "employers": 2,
-        "filings": 2
+        "employers": 1,
+        "filings": 1
       }
     ],
     "placement_model": {
       "in_house": {
-        "employers": 39,
-        "filings": 52
+        "employers": 13,
+        "filings": 16
       },
       "third_party_site": {
-        "employers": 14,
-        "filings": 15
+        "employers": 4,
+        "filings": 4
       }
     },
     "industry_naics2": [
       {
         "code": "54",
         "label": "Professional, Scientific, and Technical Services",
-        "employers": 29,
-        "filings": 35
+        "employers": 6,
+        "filings": 8
       },
       {
         "code": "51",
         "label": "Information",
-        "employers": 12,
-        "filings": 17
-      },
-      {
-        "code": "33",
-        "label": "Manufacturing",
-        "employers": 3,
-        "filings": 7
+        "employers": 6,
+        "filings": 6
       }
     ]
   },

@@ -1,6 +1,6 @@
 {
   "role": "environmental_engineer",
-  "generated_at_utc": "2026-09-14 12:43 UTC",
+  "generated_at_utc": "2026-10-05 14:31 UTC",
   "source": "US DOL OFLC LCA Programs disclosure data (public record)",
   "filters": {
     "case_status": "Certified",
@@ -10,51 +10,35 @@
     "pw_wage_level": "I"
   },
   "quarters_used": [
-    "FY2025Q4",
     "FY2026Q1"
   ],
   "quarters_superseded": {},
   "funnel": {
-    "rows_total": 201700,
-    "rows_certified": 181277,
-    "rows_soc_matched": 126,
-    "rows_selected": 34
+    "rows_total": 83120,
+    "rows_certified": 74664,
+    "rows_soc_matched": 60,
+    "rows_selected": 19
   },
-  "employer_groups": 30,
+  "employer_groups": 17,
   "rows_wage_excluded_from_wage_stats": 0,
   "patterns": {
     "basis": {
-      "filings": 34,
-      "employers": 30,
+      "filings": 19,
+      "employers": 17,
       "measured_by": "employers",
       "min_support_employers": 3
     },
     "job_titles": {
       "recurring_tokens": [
         {
-          "token": "engineer",
-          "employers": 13,
-          "filings": 16
-        },
-        {
           "token": "environmental",
-          "employers": 12,
-          "filings": 13
-        },
-        {
-          "token": "research",
-          "employers": 9,
-          "filings": 9
-        },
-        {
-          "token": "associate",
-          "employers": 8,
+          "employers": 7,
           "filings": 8
         },
         {
-          "token": "postdoctoral",
+          "token": "engineer",
           "employers": 6,
-          "filings": 6
+          "filings": 8
         },
         {
           "token": "civil",
@@ -62,34 +46,24 @@
           "filings": 3
         },
         {
+          "token": "postdoctoral",
+          "employers": 3,
+          "filings": 3
+        },
+        {
           "token": "project",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "research",
           "employers": 3,
           "filings": 3
         }
       ],
       "distinct_titles": [
         {
-          "title": "Environmental Engineer",
-          "employers": 3,
-          "filings": 3
-        },
-        {
-          "title": "Postdoctoral Research Associate",
-          "employers": 2,
-          "filings": 2
-        },
-        {
-          "title": "Research Associate",
-          "employers": 2,
-          "filings": 2
-        },
-        {
           "title": "Energy and Climate Life Cycle Analyst (Junior Engineer)",
-          "employers": 1,
-          "filings": 2
-        },
-        {
-          "title": "Junior Engineer",
           "employers": 1,
           "filings": 2
         },
@@ -119,11 +93,6 @@
           "filings": 1
         },
         {
-          "title": "ENVIRONMENTAL ENGINEER",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Environmental Engineer 2",
           "employers": 1,
           "filings": 1
@@ -149,27 +118,12 @@
           "filings": 1
         },
         {
-          "title": "Post Doctoral Research Associate",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Post Doctorate Research Associate (Environmental Engineer)",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Postdoctoral Appointee",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Postdoctoral Associate",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Postdoctoral Fellow",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Postdoctoral Research Associate",
           "employers": 1,
           "filings": 1
         },
@@ -189,22 +143,12 @@
           "filings": 1
         },
         {
-          "title": "Research Scholar",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Senior Environmental Management Specialist",
           "employers": 1,
           "filings": 1
         },
         {
           "title": "Sr Coordinator, Technical Services (Env & Industrial Safety)",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Water Engineer 2",
           "employers": 1,
           "filings": 1
         }
@@ -214,14 +158,14 @@
       {
         "soc_code": "17-2081.00",
         "title": "Environmental Engineers",
-        "employers": 30,
-        "filings": 34
+        "employers": 17,
+        "filings": 19
       }
     ],
     "placement_model": {
       "in_house": {
-        "employers": 28,
-        "filings": 31
+        "employers": 15,
+        "filings": 16
       },
       "third_party_site": {
         "employers": 2,
@@ -230,16 +174,16 @@
     },
     "industry_naics2": [
       {
-        "code": "54",
-        "label": "Professional, Scientific, and Technical Services",
-        "employers": 13,
-        "filings": 14
-      },
-      {
         "code": "61",
         "label": "Educational Services",
-        "employers": 12,
-        "filings": 14
+        "employers": 7,
+        "filings": 7
+      },
+      {
+        "code": "54",
+        "label": "Professional, Scientific, and Technical Services",
+        "employers": 6,
+        "filings": 7
       },
       {
         "code": "92",
@@ -256,21 +200,6 @@
     "Career/portfolio guidance, not immigration legal advice."
   ],
   "employers": [
-    {
-      "employer": "RESEARCH FOUNDATION OF CUNY",
-      "employer_display": "Research Foundation of CUNY",
-      "filing_count": 3,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2081",
-      "soc_titles": "Environmental Engineers",
-      "worksite_states": "NY",
-      "worksite_cities": "New York",
-      "wage_annual_min": 59301,
-      "wage_annual_median": 68942,
-      "wage_annual_max": 76695
-    },
     {
       "employer": "GEORGIA DEPT OF NATURAL RESOURCES ENVIRONMENTAL PROTECTION DIV",
       "employer_display": "Georgia Dept. of Natural Resources - Environmental Protection Div.",
@@ -302,21 +231,6 @@
       "wage_annual_max": 89990
     },
     {
-      "employer": "ARCADIS U S",
-      "employer_display": "Arcadis U.S., Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2081",
-      "soc_titles": "Environmental Engineers",
-      "worksite_states": "MI",
-      "worksite_cities": "Novi",
-      "wage_annual_min": 83678,
-      "wage_annual_median": 83678,
-      "wage_annual_max": 83678
-    },
-    {
       "employer": "ARIZONA STATE UNIVERSITY",
       "employer_display": "Arizona State University",
       "filing_count": 1,
@@ -332,21 +246,6 @@
       "wage_annual_max": 62421
     },
     {
-      "employer": "BATTELLE MEMORIAL INSTITUTE",
-      "employer_display": "Battelle Memorial Institute",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2081",
-      "soc_titles": "Environmental Engineers",
-      "worksite_states": "WA",
-      "worksite_cities": "Richland",
-      "wage_annual_min": 101524,
-      "wage_annual_median": 101524,
-      "wage_annual_max": 101524
-    },
-    {
       "employer": "CAL LAND ENGINEERING AND ASSOCIATES",
       "employer_display": "Cal Land Engineering and Associates, Inc.",
       "filing_count": 1,
@@ -360,21 +259,6 @@
       "wage_annual_min": 90000,
       "wage_annual_median": 90000,
       "wage_annual_max": 90000
-    },
-    {
-      "employer": "DISTINCT ENGINEERING SOLUTIONS",
-      "employer_display": "Distinct Engineering Solutions Inc",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2081",
-      "soc_titles": "Environmental Engineers",
-      "worksite_states": "NJ",
-      "worksite_cities": "North Brunswick",
-      "wage_annual_min": 72800,
-      "wage_annual_median": 72800,
-      "wage_annual_max": 72800
     },
     {
       "employer": "FIBRE BOX ASSOCIATION",
@@ -407,21 +291,6 @@
       "wage_annual_max": 64064
     },
     {
-      "employer": "HALEY ALDRICH",
-      "employer_display": "Haley & Aldrich, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2081",
-      "soc_titles": "Environmental Engineers",
-      "worksite_states": "NY",
-      "worksite_cities": "New York City",
-      "wage_annual_min": 75000,
-      "wage_annual_median": 75000,
-      "wage_annual_max": 75000
-    },
-    {
       "employer": "JOHNS HOPKINS UNIVERSITY",
       "employer_display": "Johns Hopkins University",
       "filing_count": 1,
@@ -435,21 +304,6 @@
       "wage_annual_min": 80000,
       "wage_annual_median": 80000,
       "wage_annual_max": 80000
-    },
-    {
-      "employer": "MICHIGAN STATE UNIVERSITY",
-      "employer_display": "Michigan State University",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2081",
-      "soc_titles": "Environmental Engineers",
-      "worksite_states": "MI",
-      "worksite_cities": "East Lansing",
-      "wage_annual_min": 62421,
-      "wage_annual_median": 62421,
-      "wage_annual_max": 62421
     },
     {
       "employer": "MORGAN STATE UNIVERSITY",
@@ -467,36 +321,6 @@
       "wage_annual_max": 75000
     },
     {
-      "employer": "MS K",
-      "employer_display": "MS&K, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2081",
-      "soc_titles": "Environmental Engineers",
-      "worksite_states": "VT",
-      "worksite_cities": "Barre",
-      "wage_annual_min": 69000,
-      "wage_annual_median": 69000,
-      "wage_annual_max": 69000
-    },
-    {
-      "employer": "NORTH CAROLINA AGRICULTURAL TECHNICAL STATE UNIVERSITY",
-      "employer_display": "North Carolina Agricultural & Technical State University",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2081",
-      "soc_titles": "Environmental Engineers",
-      "worksite_states": "NC",
-      "worksite_cities": "Greensboro",
-      "wage_annual_min": 62421,
-      "wage_annual_median": 62421,
-      "wage_annual_max": 62421
-    },
-    {
       "employer": "NOVA GROUP GBC",
       "employer_display": "Nova Group, GBC",
       "filing_count": 1,
@@ -510,21 +334,6 @@
       "wage_annual_min": 72000,
       "wage_annual_median": 72000,
       "wage_annual_max": 72000
-    },
-    {
-      "employer": "OISHII FARM CORPORATION",
-      "employer_display": "Oishii Farm Corporation",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2081",
-      "soc_titles": "Environmental Engineers",
-      "worksite_states": "NJ",
-      "worksite_cities": "Jersey City",
-      "wage_annual_min": 92978,
-      "wage_annual_median": 92978,
-      "wage_annual_max": 92978
     },
     {
       "employer": "PORT OF SEATTLE",
@@ -572,36 +381,6 @@
       "wage_annual_max": 93018
     },
     {
-      "employer": "TRIAD NATIONAL SECURITY",
-      "employer_display": "Triad National Security, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2081",
-      "soc_titles": "Environmental Engineers",
-      "worksite_states": "NM",
-      "worksite_cities": "Los Alamos",
-      "wage_annual_min": 101405,
-      "wage_annual_median": 101405,
-      "wage_annual_max": 101405
-    },
-    {
-      "employer": "UCHICAGO ARGONNE",
-      "employer_display": "UChicago Argonne, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2081",
-      "soc_titles": "Environmental Engineers",
-      "worksite_states": "IL",
-      "worksite_cities": "Lemont",
-      "wage_annual_min": 70758,
-      "wage_annual_median": 70758,
-      "wage_annual_max": 70758
-    },
-    {
       "employer": "UNIVERSITY OF CALIFORNIA BERKELEY",
       "employer_display": "University of California, Berkeley",
       "filing_count": 1,
@@ -632,21 +411,6 @@
       "wage_annual_max": 112000
     },
     {
-      "employer": "UNIVERSITY OF CINCINNATI",
-      "employer_display": "UNIVERSITY OF CINCINNATI",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2081",
-      "soc_titles": "Environmental Engineers",
-      "worksite_states": "OH",
-      "worksite_cities": "Cincinnati",
-      "wage_annual_min": 72120,
-      "wage_annual_median": 72120,
-      "wage_annual_max": 72120
-    },
-    {
       "employer": "UNIVERSITY OF ILLINOIS",
       "employer_display": "University of Illinois",
       "filing_count": 1,
@@ -657,21 +421,6 @@
       "soc_titles": "Environmental Engineers",
       "worksite_states": "IL",
       "worksite_cities": "Urbana",
-      "wage_annual_min": 62421,
-      "wage_annual_median": 62421,
-      "wage_annual_max": 62421
-    },
-    {
-      "employer": "W M RICE UNIVERSITY",
-      "employer_display": "W.M. Rice University",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2081",
-      "soc_titles": "Environmental Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "Houston",
       "wage_annual_min": 62421,
       "wage_annual_median": 62421,
       "wage_annual_max": 62421

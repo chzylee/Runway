@@ -1,6 +1,6 @@
 {
   "role": "electrical_engineer",
-  "generated_at_utc": "2026-09-14 12:43 UTC",
+  "generated_at_utc": "2026-10-05 14:31 UTC",
   "source": "US DOL OFLC LCA Programs disclosure data (public record)",
   "filters": {
     "case_status": "Certified",
@@ -10,22 +10,21 @@
     "pw_wage_level": "I"
   },
   "quarters_used": [
-    "FY2025Q4",
     "FY2026Q1"
   ],
   "quarters_superseded": {},
   "funnel": {
-    "rows_total": 201700,
-    "rows_certified": 181277,
-    "rows_soc_matched": 2205,
-    "rows_selected": 232
+    "rows_total": 83120,
+    "rows_certified": 74664,
+    "rows_soc_matched": 925,
+    "rows_selected": 71
   },
-  "employer_groups": 177,
+  "employer_groups": 63,
   "rows_wage_excluded_from_wage_stats": 1,
   "patterns": {
     "basis": {
-      "filings": 232,
-      "employers": 177,
+      "filings": 71,
+      "employers": 63,
       "measured_by": "employers",
       "min_support_employers": 3
     },
@@ -33,146 +32,66 @@
       "recurring_tokens": [
         {
           "token": "engineer",
-          "employers": 156,
-          "filings": 200
+          "employers": 51,
+          "filings": 57
         },
         {
           "token": "electrical",
-          "employers": 61,
-          "filings": 79
-        },
-        {
-          "token": "research",
-          "employers": 12,
-          "filings": 14
+          "employers": 20,
+          "filings": 22
         },
         {
           "token": "associate",
-          "employers": 11,
-          "filings": 14
-        },
-        {
-          "token": "controls",
-          "employers": 11,
-          "filings": 11
-        },
-        {
-          "token": "field",
-          "employers": 10,
-          "filings": 15
-        },
-        {
-          "token": "project",
-          "employers": 10,
-          "filings": 11
-        },
-        {
-          "token": "rf",
-          "employers": 10,
-          "filings": 11
-        },
-        {
-          "token": "systems",
-          "employers": 10,
-          "filings": 10
-        },
-        {
-          "token": "postdoctoral",
-          "employers": 9,
-          "filings": 9
-        },
-        {
-          "token": "validation",
-          "employers": 7,
-          "filings": 8
-        },
-        {
-          "token": "test",
-          "employers": 7,
+          "employers": 6,
           "filings": 7
         },
         {
-          "token": "service",
-          "employers": 5,
-          "filings": 8
+          "token": "research",
+          "employers": 6,
+          "filings": 7
         },
         {
-          "token": "software",
+          "token": "field",
           "employers": 5,
           "filings": 6
         },
         {
-          "token": "staff",
+          "token": "project",
           "employers": 5,
           "filings": 6
+        },
+        {
+          "token": "rf",
+          "employers": 5,
+          "filings": 5
         },
         {
           "token": "automation",
-          "employers": 5,
-          "filings": 5
+          "employers": 4,
+          "filings": 4
         },
         {
-          "token": "embedded",
+          "token": "test",
           "employers": 4,
-          "filings": 6
+          "filings": 4
+        },
+        {
+          "token": "service",
+          "employers": 3,
+          "filings": 4
+        },
+        {
+          "token": "staff",
+          "employers": 3,
+          "filings": 4
+        },
+        {
+          "token": "postdoctoral",
+          "employers": 3,
+          "filings": 3
         },
         {
           "token": "specialist",
-          "employers": 4,
-          "filings": 5
-        },
-        {
-          "token": "sr",
-          "employers": 4,
-          "filings": 5
-        },
-        {
-          "token": "system",
-          "employers": 4,
-          "filings": 5
-        },
-        {
-          "token": "control",
-          "employers": 4,
-          "filings": 4
-        },
-        {
-          "token": "commissioning",
-          "employers": 3,
-          "filings": 4
-        },
-        {
-          "token": "lead",
-          "employers": 3,
-          "filings": 4
-        },
-        {
-          "token": "product",
-          "employers": 3,
-          "filings": 4
-        },
-        {
-          "token": "wireless",
-          "employers": 3,
-          "filings": 4
-        },
-        {
-          "token": "calibration",
-          "employers": 3,
-          "filings": 3
-        },
-        {
-          "token": "electronics",
-          "employers": 3,
-          "filings": 3
-        },
-        {
-          "token": "engineering",
-          "employers": 3,
-          "filings": 3
-        },
-        {
-          "token": "power",
           "employers": 3,
           "filings": 3
         },
@@ -185,101 +104,36 @@
       "distinct_titles": [
         {
           "title": "Electrical Engineer",
-          "employers": 35,
-          "filings": 45
-        },
-        {
-          "title": "ELECTRICAL ENGINEER",
-          "employers": 6,
-          "filings": 8
-        },
-        {
-          "title": "Postdoctoral Research Associate",
-          "employers": 4,
-          "filings": 4
+          "employers": 8,
+          "filings": 9
         },
         {
           "title": "Field Service Engineer",
           "employers": 3,
-          "filings": 5
-        },
-        {
-          "title": "Engineer",
-          "employers": 3,
-          "filings": 4
-        },
-        {
-          "title": "RF ENGINEER",
-          "employers": 3,
-          "filings": 4
-        },
-        {
-          "title": "Calibration Engineer",
-          "employers": 3,
           "filings": 3
+        },
+        {
+          "title": "ELECTRICAL ENGINEER",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Postdoctoral Research Associate",
+          "employers": 2,
+          "filings": 2
         },
         {
           "title": "Project Engineer",
-          "employers": 3,
-          "filings": 3
+          "employers": 2,
+          "filings": 2
         },
         {
           "title": "RF Engineer",
-          "employers": 3,
-          "filings": 3
-        },
-        {
-          "title": "Validation Engineer",
-          "employers": 3,
-          "filings": 3
-        },
-        {
-          "title": "Embedded Software Engineer",
           "employers": 2,
-          "filings": 3
-        },
-        {
-          "title": "Controls Engineer",
-          "employers": 2,
-          "filings": 2
-        },
-        {
-          "title": "Electrical Engineer II",
-          "employers": 2,
-          "filings": 2
-        },
-        {
-          "title": "Test Engineer",
-          "employers": 2,
-          "filings": 2
-        },
-        {
-          "title": "Associate Engineer - Electrical",
-          "employers": 1,
-          "filings": 3
-        },
-        {
-          "title": "Commissioning Coordinator",
-          "employers": 1,
-          "filings": 2
-        },
-        {
-          "title": "Manufacturing Engineer",
-          "employers": 1,
           "filings": 2
         },
         {
           "title": "Post Doctorate Research Associate(Electrical Engineer)",
-          "employers": 1,
-          "filings": 2
-        },
-        {
-          "title": "Product Engineer General",
-          "employers": 1,
-          "filings": 2
-        },
-        {
-          "title": "Senior System Validation Engineer",
           "employers": 1,
           "filings": 2
         },
@@ -289,32 +143,12 @@
           "filings": 2
         },
         {
-          "title": "Wireless Field Engineer",
-          "employers": 1,
-          "filings": 2
-        },
-        {
-          "title": "Application Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Application Engineer [00092220]",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Assistant Research Professor",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Associate Electrical Engineer",
           "employers": 1,
           "filings": 1
         },
         {
-          "title": "Associate RF Design Engineer",
+          "title": "Associate Engineer - Electrical",
           "employers": 1,
           "filings": 1
         },
@@ -334,82 +168,12 @@
           "filings": 1
         },
         {
-          "title": "CONTROLS AND COMMISSIONING ENGINEER",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Commissioning Engineer I",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Construction Technology Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Control Room Operator",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Controls Design Engineer (Associate Level)",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Controls Engineer II",
+          "title": "Calibration Engineer",
           "employers": 1,
           "filings": 1
         },
         {
           "title": "Controls System Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Customer Service Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Datacom Transceiver R&D Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Deployed Flight Test Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Design Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Distribution Engineer in Training (EIT)",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "ELECTRICAL ENGINEER III",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "ELECTRICAL ENGINEERING PROFESSIONAL INTERMEDIATE",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "ENGINEER III, AUTOMATION",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Electric Engineer",
           "employers": 1,
           "filings": 1
         },
@@ -424,36 +188,6 @@
           "filings": 1
         },
         {
-          "title": "Electrical Engineer - Research",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Electrical Engineer -NDT Specialist",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Electrical Engineer 1",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Electrical Engineer 2",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Electrical Engineer I",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Electrical Engineer/Project Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Electrical Lead (Topsides)",
           "employers": 1,
           "filings": 1
@@ -464,47 +198,7 @@
           "filings": 1
         },
         {
-          "title": "Electronic Design Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Electronic Security Systems Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Electronics Design Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Electronics Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Embedded Controls Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Embedded Software Engineer II",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Embedded Systems Validation Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Energy Delivery Engineer I",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Energy Delivery Engineer III",
+          "title": "Embedded Software Engineer",
           "employers": 1,
           "filings": 1
         },
@@ -524,11 +218,6 @@
           "filings": 1
         },
         {
-          "title": "Engineer- Generation and Transmission Planning",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Engineering Specialist,  Electrical",
           "employers": 1,
           "filings": 1
@@ -539,37 +228,7 @@
           "filings": 1
         },
         {
-          "title": "FIELD SERVICE ENGINEER",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Field Electrical Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Field Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Field Engineer I",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Field Service Engineer III",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Field Technician",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Hardware Design Engineer",
           "employers": 1,
           "filings": 1
         },
@@ -579,22 +238,7 @@
           "filings": 1
         },
         {
-          "title": "High Voltage Project Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Integration Engineer II",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Labview Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Lead Electrical and Electronics Engineer",
           "employers": 1,
           "filings": 1
         },
@@ -604,77 +248,12 @@
           "filings": 1
         },
         {
-          "title": "Mixed-Signal IC Design Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Model Based Developer",
           "employers": 1,
           "filings": 1
         },
         {
-          "title": "NETWORKING SYSTEMS ENGINEER",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Network Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "OSP Project Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Participant SLS Development Program ReSurge",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Post-Doctoral Research Associate",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Postdoctoral Fellow",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Postdoctoral Reseacher",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Postdoctoral Research Fellow",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Postdoctoral Research Scholar",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Postdoctoral Scholar",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Power System Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Power Systems Engineer II",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Product Design Engineer",
           "employers": 1,
           "filings": 1
         },
@@ -694,17 +273,7 @@
           "filings": 1
         },
         {
-          "title": "Project Engineer II",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Project Engineer, Field Electrical",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Protection & Control Specialist II",
           "employers": 1,
           "filings": 1
         },
@@ -714,7 +283,7 @@
           "filings": 1
         },
         {
-          "title": "RF & Tool Engineer",
+          "title": "RF ENGINEER",
           "employers": 1,
           "filings": 1
         },
@@ -729,16 +298,6 @@
           "filings": 1
         },
         {
-          "title": "Radio Frequency Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Reliability Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Research Associate",
           "employers": 1,
           "filings": 1
@@ -749,32 +308,12 @@
           "filings": 1
         },
         {
-          "title": "Research Scientist",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Robotics Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "SR. CONTROLS SYSTEMS ENGINEER",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "STAFF ELECTRCIAL ENGINEER I",
           "employers": 1,
           "filings": 1
         },
         {
           "title": "STAFF ELECTRICAL ENGINEER I",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "SYSTEM DEVELOPMENT ENGINEER I",
           "employers": 1,
           "filings": 1
         },
@@ -794,37 +333,12 @@
           "filings": 1
         },
         {
-          "title": "Solution Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Sr. Engineer Plant (Sr. OSP Designer)",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Sr. Production Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Staff Engineer",
           "employers": 1,
           "filings": 1
         },
         {
           "title": "Staff Power Field Applications Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Staff Software Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Staff Technical Program Manager",
           "employers": 1,
           "filings": 1
         },
@@ -844,32 +358,7 @@
           "filings": 1
         },
         {
-          "title": "Support Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Switchgear Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Systems & Controls Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Systems Controls Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Systems Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Systems Studies Engineer I",
           "employers": 1,
           "filings": 1
         },
@@ -879,37 +368,12 @@
           "filings": 1
         },
         {
+          "title": "Test Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
           "title": "Test Engineer Controls",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Topside Electrical Lead",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "V80 Core Quality Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Validation Integration Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Wireless Test Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Wireless Validation Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "XIL Modelling Engineer",
           "employers": 1,
           "filings": 1
         }
@@ -919,74 +383,50 @@
       {
         "soc_code": "17-2071.00",
         "title": "Electrical Engineers",
-        "employers": 177,
-        "filings": 232
+        "employers": 63,
+        "filings": 71
       }
     ],
     "placement_model": {
       "in_house": {
-        "employers": 156,
-        "filings": 195
+        "employers": 51,
+        "filings": 56
       },
       "third_party_site": {
-        "employers": 23,
-        "filings": 37
+        "employers": 12,
+        "filings": 15
       }
     },
     "industry_naics2": [
       {
         "code": "54",
         "label": "Professional, Scientific, and Technical Services",
-        "employers": 67,
-        "filings": 99
+        "employers": 31,
+        "filings": 37
       },
       {
         "code": "33",
         "label": "Manufacturing",
-        "employers": 49,
-        "filings": 65
+        "employers": 14,
+        "filings": 16
       },
       {
         "code": "23",
         "label": "Construction",
-        "employers": 17,
-        "filings": 20
+        "employers": 5,
+        "filings": 5
       },
       {
         "code": "61",
         "label": "Educational Services",
-        "employers": 13,
-        "filings": 14
-      },
-      {
-        "code": "42",
-        "label": "Wholesale Trade",
-        "employers": 6,
-        "filings": 6
-      },
-      {
-        "code": "51",
-        "label": "Information",
-        "employers": 5,
-        "filings": 6
-      },
-      {
-        "code": "22",
-        "label": "Utilities",
-        "employers": 5,
-        "filings": 5
-      },
-      {
-        "code": "32",
-        "label": "Manufacturing",
         "employers": 4,
-        "filings": 5
+        "filings": 4
       },
       {
         "code": "48",
         "label": "Transportation and Warehousing",
-        "employers": 4,
-        "filings": 4
+        "employers": 3,
+        "filings": 3
       }
     ]
   },
@@ -997,246 +437,6 @@
     "Career/portfolio guidance, not immigration legal advice."
   ],
   "employers": [
-    {
-      "employer": "BLACK VEATCH CORPORATION",
-      "employer_display": "Black & Veatch Corporation",
-      "filing_count": 5,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "IL; KS; MA",
-      "worksite_cities": "Burlington; Chicago; Overland Park",
-      "wage_annual_min": 77938,
-      "wage_annual_median": 85592,
-      "wage_annual_max": 89939
-    },
-    {
-      "employer": "APPLIED OPTOELECTRONICS",
-      "employer_display": "Applied Optoelectronics, Inc.",
-      "filing_count": 4,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "Sugar Land",
-      "wage_annual_min": 72987,
-      "wage_annual_median": 79997,
-      "wage_annual_max": 84989
-    },
-    {
-      "employer": "STANTEC CONSULTING SERVICES",
-      "employer_display": "Stantec Consulting Services Inc.",
-      "filing_count": 4,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "CA; FL; NC",
-      "worksite_cities": "Lake Mary; Los Angeles; Raleigh",
-      "wage_annual_min": 81307,
-      "wage_annual_median": 89960,
-      "wage_annual_max": 92123
-    },
-    {
-      "employer": "ALTEN TECHNOLOGY USA",
-      "employer_display": "Alten Technology USA, Inc.",
-      "filing_count": 3,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "CA; MI",
-      "worksite_cities": "Auburn Hills; Foster City",
-      "wage_annual_min": 80205,
-      "wage_annual_median": 80205,
-      "wage_annual_max": 107182
-    },
-    {
-      "employer": "CORE TECH CONSTRUCTION CORPORATION",
-      "employer_display": "CORE TECH CONSTRUCTION CORPORATION",
-      "filing_count": 3,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "GU",
-      "worksite_cities": "TAMUNING",
-      "wage_annual_min": 49899,
-      "wage_annual_median": 55000,
-      "wage_annual_max": 60000
-    },
-    {
-      "employer": "DC GROUP",
-      "employer_display": "DC Group, Inc.",
-      "filing_count": 3,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "KS; NY; UT",
-      "worksite_cities": "Dix Hills; Herriman; Wichita",
-      "wage_annual_min": 80000,
-      "wage_annual_median": 90000,
-      "wage_annual_max": 104000
-    },
-    {
-      "employer": "NEXTGEN GLOBAL RESOURCES",
-      "employer_display": "NextGen Global Resources, LLC",
-      "filing_count": 3,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineer; Electrical Engineers",
-      "worksite_states": "PA; TX",
-      "worksite_cities": "Blue Bell; McKinney; Plano",
-      "wage_annual_min": 85000,
-      "wage_annual_median": 95000,
-      "wage_annual_max": 120000
-    },
-    {
-      "employer": "RIVIAN AND VOLKSWAGEN GROUP TECHNOLOGIES",
-      "employer_display": "Rivian and Volkswagen Group Technologies, LLC",
-      "filing_count": 3,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "Palo Alto",
-      "wage_annual_min": 145000,
-      "wage_annual_median": 145000,
-      "wage_annual_max": 145000
-    },
-    {
-      "employer": "TECHNOSOFT ENGINEERING",
-      "employer_display": "Technosoft Engineering, Inc.",
-      "filing_count": 3,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "MI; TX",
-      "worksite_cities": "Austin; Dallas; Middleville",
-      "wage_annual_min": 72000,
-      "wage_annual_median": 75000,
-      "wage_annual_max": 85000
-    },
-    {
-      "employer": "TELEWORLD SOLUTIONS",
-      "employer_display": "Teleworld Solutions, Inc.",
-      "filing_count": 3,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "CO; NY; TX",
-      "worksite_cities": "Fort Morgan; Liverpool; Plano",
-      "wage_annual_min": 77896,
-      "wage_annual_median": 89000,
-      "wage_annual_max": 95000
-    },
-    {
-      "employer": "HDR ENGINEERING",
-      "employer_display": "HDR Engineering, Inc.",
-      "filing_count": 2,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "CA; MO",
-      "worksite_cities": "Kansas City; San Diego",
-      "wage_annual_min": 84000,
-      "wage_annual_median": 97006,
-      "wage_annual_max": 110011
-    },
-    {
-      "employer": "SEATRIUM LETOURNEAU USA",
-      "employer_display": "Seatrium LeTourneau USA, Inc.",
-      "filing_count": 2,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "LA; TX",
-      "worksite_cities": "Houston; Metairie",
-      "wage_annual_min": 70782,
-      "wage_annual_median": 73788,
-      "wage_annual_max": 76794
-    },
-    {
-      "employer": "EATON CORPORATION",
-      "employer_display": "Eaton Corporation",
-      "filing_count": 4,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "MN; NC; SC",
-      "worksite_cities": "Plymouth; Raleigh; Sumter",
-      "wage_annual_min": 78000,
-      "wage_annual_median": 79000,
-      "wage_annual_max": 91000
-    },
-    {
-      "employer": "EPITEC",
-      "employer_display": "Epitec, Inc.",
-      "filing_count": 4,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "MI; NC",
-      "worksite_cities": "Dearborn; High Point",
-      "wage_annual_min": 84240,
-      "wage_annual_median": 84240,
-      "wage_annual_max": 84240
-    },
-    {
-      "employer": "LER TECHFORCE",
-      "employer_display": "LER TechForce, LLC",
-      "filing_count": 3,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "IN; MI; WA",
-      "worksite_cities": "Columbus; Mount Vernon; Novi",
-      "wage_annual_min": 83200,
-      "wage_annual_median": 96000,
-      "wage_annual_max": 128000
-    },
-    {
-      "employer": "ROSCO",
-      "employer_display": "Rosco, Inc",
-      "filing_count": 3,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "NY",
-      "worksite_cities": "Jamaica",
-      "wage_annual_min": 84552,
-      "wage_annual_median": 89024,
-      "wage_annual_max": 89024
-    },
     {
       "employer": "ALTAIR PRODUCTDESIGN",
       "employer_display": "Altair ProductDesign, Inc.",
@@ -1253,19 +453,19 @@
       "wage_annual_max": 80205
     },
     {
-      "employer": "ASTERA LABS",
-      "employer_display": "Astera Labs INC",
+      "employer": "ALTEN TECHNOLOGY USA",
+      "employer_display": "Alten Technology USA, Inc.",
       "filing_count": 2,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "17-2071",
       "soc_titles": "Electrical Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "San Jose",
-      "wage_annual_min": 131019,
-      "wage_annual_median": 131019,
-      "wage_annual_max": 131019
+      "worksite_states": "CA; MI",
+      "worksite_cities": "Auburn Hills; Foster City",
+      "wage_annual_min": 80205,
+      "wage_annual_median": 93694,
+      "wage_annual_max": 107182
     },
     {
       "employer": "BATTELLE MEMORIAL INSTITUTE",
@@ -1283,36 +483,6 @@
       "wage_annual_max": 93995
     },
     {
-      "employer": "CITY OF GAINESVILLE",
-      "employer_display": "City of Gainesville",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "FL",
-      "worksite_cities": "Gainesville",
-      "wage_annual_min": 74314,
-      "wage_annual_median": 74314,
-      "wage_annual_max": 74314
-    },
-    {
-      "employer": "DELART TECHNOLOGY SERVICES",
-      "employer_display": "Delart Technology Services LLC",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "Sunnyvale",
-      "wage_annual_min": 131019,
-      "wage_annual_median": 131019,
-      "wage_annual_max": 131019
-    },
-    {
       "employer": "EPC POWER",
       "employer_display": "EPC Power Corp.",
       "filing_count": 2,
@@ -1326,66 +496,6 @@
       "wage_annual_min": 93995,
       "wage_annual_median": 99904,
       "wage_annual_max": 105814
-    },
-    {
-      "employer": "ERVIN CABLE CONSTRUCTION",
-      "employer_display": "Ervin Cable Construction LLC",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "MO",
-      "worksite_cities": "Kansas City",
-      "wage_annual_min": 74194,
-      "wage_annual_median": 74194,
-      "wage_annual_max": 74194
-    },
-    {
-      "employer": "FAKOURI ELECTRICAL ENGINEERING",
-      "employer_display": "Fakouri Electrical Engineering, Inc",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "Rancho Santa Margarita",
-      "wage_annual_min": 85620,
-      "wage_annual_median": 90310,
-      "wage_annual_max": 95000
-    },
-    {
-      "employer": "FORD MOTOR COMPANY",
-      "employer_display": "FORD MOTOR COMPANY",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "MI",
-      "worksite_cities": "Allen Park; Dearborn",
-      "wage_annual_min": 84480,
-      "wage_annual_median": 107040,
-      "wage_annual_max": 129600
-    },
-    {
-      "employer": "GLOBAL CONNECT TECHNOLOGIES",
-      "employer_display": "Global Connect Technologies Inc.",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "MD; MI",
-      "worksite_cities": "Auburn Hills; Hagerstown",
-      "wage_annual_min": 80000,
-      "wage_annual_median": 80560,
-      "wage_annual_max": 81120
     },
     {
       "employer": "JEFFERSON SCIENCE ASSOCIATES",
@@ -1403,51 +513,6 @@
       "wage_annual_max": 103854
     },
     {
-      "employer": "LSW ENGINEERS ARIZONA",
-      "employer_display": "LSW ENGINEERS ARIZONA, INC.",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "AZ",
-      "worksite_cities": "Phoenix",
-      "wage_annual_min": 90480,
-      "wage_annual_median": 90480,
-      "wage_annual_max": 90480
-    },
-    {
-      "employer": "NORTH CAROLINA STATE UNIVERSITY",
-      "employer_display": "North Carolina State University",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "NC",
-      "worksite_cities": "Raleigh",
-      "wage_annual_min": 60000,
-      "wage_annual_median": 70000,
-      "wage_annual_max": 80000
-    },
-    {
-      "employer": "PENTANGLE TECH SERVICES",
-      "employer_display": "Pentangle Tech Services LLC",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "MI",
-      "worksite_cities": "Auburn Hills; Dearborn",
-      "wage_annual_min": 80205,
-      "wage_annual_median": 81702,
-      "wage_annual_max": 83200
-    },
-    {
       "employer": "QORVO US",
       "employer_display": "Qorvo US, INC.",
       "filing_count": 2,
@@ -1463,79 +528,34 @@
       "wage_annual_max": 107000
     },
     {
-      "employer": "ST PAPER",
-      "employer_display": "ST Paper LLC",
+      "employer": "RIVIAN AND VOLKSWAGEN GROUP TECHNOLOGIES",
+      "employer_display": "Rivian and Volkswagen Group Technologies, LLC",
       "filing_count": 2,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "17-2071",
       "soc_titles": "Electrical Engineers",
-      "worksite_states": "WI",
-      "worksite_cities": "Oconto Falls",
-      "wage_annual_min": 112350,
-      "wage_annual_median": 112350,
-      "wage_annual_max": 112350
+      "worksite_states": "CA",
+      "worksite_cities": "Palo Alto",
+      "wage_annual_min": 145000,
+      "wage_annual_median": 145000,
+      "wage_annual_max": 145000
     },
     {
-      "employer": "SVTRONICS",
-      "employer_display": "SVTronics, Inc.",
+      "employer": "TECHNOSOFT ENGINEERING",
+      "employer_display": "Technosoft Engineering, Inc.",
       "filing_count": 2,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "Plano",
-      "wage_annual_min": 70117,
-      "wage_annual_median": 72353,
-      "wage_annual_max": 74589
-    },
-    {
-      "employer": "UNIFIED BUSINESS TECHNOLOGIES",
-      "employer_display": "UNIFIED BUSINESS TECHNOLOGIES, INC",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "17-2071",
       "soc_titles": "Electrical Engineers",
       "worksite_states": "MI; TX",
-      "worksite_cities": "PLANO; TROY",
-      "wage_annual_min": 75000,
-      "wage_annual_median": 78000,
-      "wage_annual_max": 81000
-    },
-    {
-      "employer": "ZEVA TECHNOLOGY",
-      "employer_display": "Zeva Technology, LLC",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "Plano",
-      "wage_annual_min": 75000,
-      "wage_annual_median": 75000,
-      "wage_annual_max": 75000
-    },
-    {
-      "employer": "A123 SYSTEMS",
-      "employer_display": "A123 Systems LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "MI",
-      "worksite_cities": "Novi",
-      "wage_annual_min": 100000,
-      "wage_annual_median": 100000,
-      "wage_annual_max": 100000
+      "worksite_cities": "Austin; Middleville",
+      "wage_annual_min": 72000,
+      "wage_annual_median": 78500,
+      "wage_annual_max": 85000
     },
     {
       "employer": "ABACUS POWER",
@@ -1553,259 +573,34 @@
       "wage_annual_max": 150000
     },
     {
-      "employer": "ACCENTURE INFRASTRUCTURE AND CAPITAL PROJECTS",
-      "employer_display": "Accenture Infrastructure and Capital Projects, LLC",
+      "employer": "APPLIED OPTOELECTRONICS",
+      "employer_display": "Applied Optoelectronics, Inc.",
       "filing_count": 1,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "Tustin",
-      "wage_annual_min": 95000,
-      "wage_annual_median": 95000,
-      "wage_annual_max": 95000
-    },
-    {
-      "employer": "ACCUVER AMERICAS",
-      "employer_display": "ACCUVER AMERICAS, INC.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "17-2071",
       "soc_titles": "Electrical Engineers",
       "worksite_states": "TX",
-      "worksite_cities": "Plano",
-      "wage_annual_min": 92000,
-      "wage_annual_median": 92000,
-      "wage_annual_max": 92000
+      "worksite_cities": "Sugar Land",
+      "wage_annual_min": 72987,
+      "wage_annual_median": 72987,
+      "wage_annual_max": 72987
     },
     {
-      "employer": "ADUKEMETA",
-      "employer_display": "Adukemeta LLC",
+      "employer": "BLACK VEATCH CORPORATION",
+      "employer_display": "Black & Veatch Corporation",
       "filing_count": 1,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "GA",
-      "worksite_cities": "Douglasville",
-      "wage_annual_min": 78000,
-      "wage_annual_median": 78000,
-      "wage_annual_max": 78000
-    },
-    {
-      "employer": "AFFILIATED ENGINEERS",
-      "employer_display": "Affiliated Engineers, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "17-2071",
       "soc_titles": "Electrical Engineers",
       "worksite_states": "IL",
       "worksite_cities": "Chicago",
-      "wage_annual_min": 105000,
-      "wage_annual_median": 105000,
-      "wage_annual_max": 105000
-    },
-    {
-      "employer": "AIRCOM PACIFIC",
-      "employer_display": "AIRCOM PACIFIC, INC.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "Fremont",
-      "wage_annual_min": 108000,
-      "wage_annual_median": 108000,
-      "wage_annual_max": 108000
-    },
-    {
-      "employer": "ALBIREO ENERGY",
-      "employer_display": "Albireo Energy LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "NJ",
-      "worksite_cities": "Edison",
-      "wage_annual_min": 115003,
-      "wage_annual_median": 115003,
-      "wage_annual_max": 115003
-    },
-    {
-      "employer": "ALLIANCE SPORTS GROUP L P",
-      "employer_display": "Alliance Sports Group, L.P.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "CT",
-      "worksite_cities": "Hartford",
-      "wage_annual_min": 87378,
-      "wage_annual_median": 87378,
-      "wage_annual_max": 87378
-    },
-    {
-      "employer": "ALSTOM TRANSPORTATION",
-      "employer_display": "Alstom Transportation Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "Los Angeles",
-      "wage_annual_min": 85613,
-      "wage_annual_median": 85613,
-      "wage_annual_max": 85613
-    },
-    {
-      "employer": "AMAZON COM SERVICES",
-      "employer_display": "AMAZON.COM SERVICES LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "MA",
-      "worksite_cities": "WESTBOROUGH",
-      "wage_annual_min": 130000,
-      "wage_annual_median": 130000,
-      "wage_annual_max": 130000
-    },
-    {
-      "employer": "AMNEAL PHARMACEUTICALS",
-      "employer_display": "Amneal Pharmaceuticals, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "NJ",
-      "worksite_cities": "Branchburg",
-      "wage_annual_min": 85000,
-      "wage_annual_median": 85000,
-      "wage_annual_max": 85000
-    },
-    {
-      "employer": "AMPURE CHARGING SYSTEMS",
-      "employer_display": "AMPURE Charging Systems, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "Monrovia",
-      "wage_annual_min": 110000,
-      "wage_annual_median": 110000,
-      "wage_annual_max": 110000
-    },
-    {
-      "employer": "ATC DRIVETRAIN",
-      "employer_display": "ATC Drivetrain, LLC.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "OK",
-      "worksite_cities": "Oklahoma City",
-      "wage_annual_min": 76565,
-      "wage_annual_median": 76565,
-      "wage_annual_max": 76565
-    },
-    {
-      "employer": "ATOM POWER",
-      "employer_display": "Atom Power, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "NC",
-      "worksite_cities": "Huntersville",
-      "wage_annual_min": 118000,
-      "wage_annual_median": 118000,
-      "wage_annual_max": 118000
-    },
-    {
-      "employer": "BAUER COMPRESSORS",
-      "employer_display": "Bauer Compressors Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "VA",
-      "worksite_cities": "Norfolk",
-      "wage_annual_min": 82347,
-      "wage_annual_median": 82347,
-      "wage_annual_max": 82347
-    },
-    {
-      "employer": "BIZLINK TECHNOLOGY",
-      "employer_display": "Bizlink Technology, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "Fremont",
-      "wage_annual_min": 107182,
-      "wage_annual_median": 107182,
-      "wage_annual_max": 107182
-    },
-    {
-      "employer": "BLACK CONSTRUCTION CORPORATION",
-      "employer_display": "Black Construction Corporation",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "GU",
-      "worksite_cities": "Harmon",
-      "wage_annual_min": 54200,
-      "wage_annual_median": 54200,
-      "wage_annual_max": 54200
-    },
-    {
-      "employer": "BRUKER SCIENTIFIC",
-      "employer_display": "BRUKER SCIENTIFIC LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "MA",
-      "worksite_cities": "QUINCY",
-      "wage_annual_min": 93177,
-      "wage_annual_median": 93177,
-      "wage_annual_max": 93177
+      "wage_annual_min": 85592,
+      "wage_annual_median": 85592,
+      "wage_annual_max": 85592
     },
     {
       "employer": "BWI CHASSIS DYNAMICS NA",
@@ -1838,139 +633,19 @@
       "wage_annual_max": 52000
     },
     {
-      "employer": "CALIFORNIA INSTITUTE OF TECHNOLOGY JET PROPULSION LABORATORY",
-      "employer_display": "California Institute of Technology/Jet Propulsion Laboratory",
+      "employer": "CORE TECH CONSTRUCTION CORPORATION",
+      "employer_display": "CORE TECH CONSTRUCTION CORPORATION",
       "filing_count": 1,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "NV",
-      "worksite_cities": "Las Vegas",
-      "wage_annual_min": 86880,
-      "wage_annual_median": 86880,
-      "wage_annual_max": 86880
-    },
-    {
-      "employer": "CALIFORNIA PACIFIC TECHNICAL SERVICES",
-      "employer_display": "California Pacific Technical Services, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "17-2071",
       "soc_titles": "Electrical Engineers",
       "worksite_states": "GU",
-      "worksite_cities": "Tamuning",
-      "wage_annual_min": 49899,
-      "wage_annual_median": 49899,
-      "wage_annual_max": 49899
-    },
-    {
-      "employer": "CARNEGIE MELLON UNIVERSITY",
-      "employer_display": "Carnegie Mellon University",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "PA",
-      "worksite_cities": "Pittsburgh",
-      "wage_annual_min": 109866,
-      "wage_annual_median": 109866,
-      "wage_annual_max": 109866
-    },
-    {
-      "employer": "CIRCUIT ENGINEERING",
-      "employer_display": "CIRCUIT ENGINEERING LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "IL",
-      "worksite_cities": "Elk Grove Village",
-      "wage_annual_min": 78750,
-      "wage_annual_median": 78750,
-      "wage_annual_max": 78750
-    },
-    {
-      "employer": "CMOS SENSOR",
-      "employer_display": "CMOS Sensor Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "San Jose",
-      "wage_annual_min": 131019,
-      "wage_annual_median": 131019,
-      "wage_annual_max": 131019
-    },
-    {
-      "employer": "COHERENT",
-      "employer_display": "Coherent Corp.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "Fremont",
-      "wage_annual_min": 107182,
-      "wage_annual_median": 107182,
-      "wage_annual_max": 107182
-    },
-    {
-      "employer": "CONNECTIVITY SOLUTIONS",
-      "employer_display": "Connectivity Solutions, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "VA",
-      "worksite_cities": "Sterling",
-      "wage_annual_min": 110000,
-      "wage_annual_median": 110000,
-      "wage_annual_max": 110000
-    },
-    {
-      "employer": "CONVERGIX WEST MICHIGAN",
-      "employer_display": "Convergix West Michigan, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "MI",
-      "worksite_cities": "Bridgman",
-      "wage_annual_min": 90000,
-      "wage_annual_median": 90000,
-      "wage_annual_max": 90000
-    },
-    {
-      "employer": "CRYSTAL SONIC",
-      "employer_display": "Crystal Sonic Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "AZ",
-      "worksite_cities": "Phoenix",
-      "wage_annual_min": 95000,
-      "wage_annual_median": 95000,
-      "wage_annual_max": 95000
+      "worksite_cities": "TAMUNING",
+      "wage_annual_min": 60000,
+      "wage_annual_median": 60000,
+      "wage_annual_max": 60000
     },
     {
       "employer": "DANA AUTOMOTIVE SYSTEMS GROUP",
@@ -1988,94 +663,19 @@
       "wage_annual_max": 74018
     },
     {
-      "employer": "DEMATIC",
-      "employer_display": "Dematic Corp.",
+      "employer": "DC GROUP",
+      "employer_display": "DC Group, Inc.",
       "filing_count": 1,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "17-2071",
       "soc_titles": "Electrical Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "Plano",
-      "wage_annual_min": 88100,
-      "wage_annual_median": 88100,
-      "wage_annual_max": 88100
-    },
-    {
-      "employer": "DHILLON ENGINEERING",
-      "employer_display": "Dhillon Engineering, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "MD",
-      "worksite_cities": "Owings Mills",
-      "wage_annual_min": 83200,
-      "wage_annual_median": 83200,
-      "wage_annual_max": 83200
-    },
-    {
-      "employer": "DIVERSIFIED AUTOMATION",
-      "employer_display": "DIVERSIFIED AUTOMATION, INC.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "AZ",
-      "worksite_cities": "Casa Grande",
+      "worksite_states": "NY",
+      "worksite_cities": "Dix Hills",
       "wage_annual_min": 90000,
       "wage_annual_median": 90000,
       "wage_annual_max": 90000
-    },
-    {
-      "employer": "DRACO ELECTRONICS",
-      "employer_display": "Draco Electronics, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "Fremont",
-      "wage_annual_min": 110000,
-      "wage_annual_median": 110000,
-      "wage_annual_max": 110000
-    },
-    {
-      "employer": "EEPLUS",
-      "employer_display": "Eeplus, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "Georgetown",
-      "wage_annual_min": 96390,
-      "wage_annual_median": 96390,
-      "wage_annual_max": 96390
-    },
-    {
-      "employer": "EMC2 ELECTRICAL",
-      "employer_display": "EMC2 ELECTRICAL, INC.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "GU",
-      "worksite_cities": "TAMUNING",
-      "wage_annual_min": 49899,
-      "wage_annual_median": 49899,
-      "wage_annual_max": 49899
     },
     {
       "employer": "EMPOWER SEMICONDUCTOR",
@@ -2093,51 +693,6 @@
       "wage_annual_max": 157500
     },
     {
-      "employer": "ENGIE NORTH AMERICA",
-      "employer_display": "ENGIE North America Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "Fremont",
-      "wage_annual_min": 132000,
-      "wage_annual_median": 132000,
-      "wage_annual_max": 132000
-    },
-    {
-      "employer": "EZM",
-      "employer_display": "EZM LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "MI",
-      "worksite_cities": "Commerce Township",
-      "wage_annual_min": 80205,
-      "wage_annual_median": 80205,
-      "wage_annual_max": 80205
-    },
-    {
-      "employer": "FIVES DYAG CORPORATION",
-      "employer_display": "Fives DyAG Corporation",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "TN",
-      "worksite_cities": "Spring Hill",
-      "wage_annual_min": 78104,
-      "wage_annual_median": 78104,
-      "wage_annual_max": 78104
-    },
-    {
       "employer": "FLOWSERVE US COMPANY",
       "employer_display": "Flowserve US Company",
       "filing_count": 1,
@@ -2153,109 +708,19 @@
       "wage_annual_max": 82368
     },
     {
-      "employer": "FORTUNE BRANDS INNOVATIONS GROUP",
-      "employer_display": "Fortune Brands Innovations Group, Inc.",
+      "employer": "HDR ENGINEERING",
+      "employer_display": "HDR Engineering, Inc.",
       "filing_count": 1,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "17-2071",
       "soc_titles": "Electrical Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "San Francisco",
-      "wage_annual_min": 146031,
-      "wage_annual_median": 146031,
-      "wage_annual_max": 146031
-    },
-    {
-      "employer": "FUJITEC PACIFIC",
-      "employer_display": "FUJITEC PACIFIC, INC.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "GU",
-      "worksite_cities": "Tamuning",
-      "wage_annual_min": 56160,
-      "wage_annual_median": 56160,
-      "wage_annual_max": 56160
-    },
-    {
-      "employer": "GCORP INTERNATIONAL",
-      "employer_display": "GCorp International, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "FL",
-      "worksite_cities": "Heathrow",
-      "wage_annual_min": 85000,
-      "wage_annual_median": 85000,
-      "wage_annual_max": 85000
-    },
-    {
-      "employer": "GENERAC POWER SYSTEMS",
-      "employer_display": "Generac Power Systems",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "WI",
-      "worksite_cities": "Waukesha",
-      "wage_annual_min": 80000,
-      "wage_annual_median": 80000,
-      "wage_annual_max": 80000
-    },
-    {
-      "employer": "GRIDIRON FIBER",
-      "employer_display": "Gridiron Fiber LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "VA",
-      "worksite_cities": "Waynesboro",
-      "wage_annual_min": 79560,
-      "wage_annual_median": 79560,
-      "wage_annual_max": 79560
-    },
-    {
-      "employer": "HANA FACTORY AUTOMATION CORPORATION",
-      "employer_display": "Hana Factory Automation Corporation",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "GA",
-      "worksite_cities": "LaGrange",
-      "wage_annual_min": 78000,
-      "wage_annual_median": 78000,
-      "wage_annual_max": 78000
-    },
-    {
-      "employer": "HITACHI RAIL HONOLULU JV",
-      "employer_display": "Hitachi Rail Honolulu JV",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "HI",
-      "worksite_cities": "Pearl City",
-      "wage_annual_min": 90168,
-      "wage_annual_median": 90168,
-      "wage_annual_max": 90168
+      "worksite_states": "MO",
+      "worksite_cities": "Kansas City",
+      "wage_annual_min": 84000,
+      "wage_annual_median": 84000,
+      "wage_annual_max": 84000
     },
     {
       "employer": "HITACHI RAIL STS USA",
@@ -2271,66 +736,6 @@
       "wage_annual_min": 94063,
       "wage_annual_median": 94063,
       "wage_annual_max": 94063
-    },
-    {
-      "employer": "INPHENIX",
-      "employer_display": "InPhenix, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "Livermore",
-      "wage_annual_min": 107182,
-      "wage_annual_median": 107182,
-      "wage_annual_max": 107182
-    },
-    {
-      "employer": "INTELLECTT",
-      "employer_display": "INTELLECTT, INC.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "NJ",
-      "worksite_cities": "PRINCETON",
-      "wage_annual_min": 104000,
-      "wage_annual_median": 104000,
-      "wage_annual_max": 104000
-    },
-    {
-      "employer": "ISO NEW ENGLAND",
-      "employer_display": "ISO New England, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "MA",
-      "worksite_cities": "Holyoke",
-      "wage_annual_min": 133620,
-      "wage_annual_median": 133620,
-      "wage_annual_max": 133620
-    },
-    {
-      "employer": "JACOBS ENGINEERING GROUP",
-      "employer_display": "Jacobs Engineering Group, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "San Francisco",
-      "wage_annual_min": 121818,
-      "wage_annual_median": 121818,
-      "wage_annual_max": 121818
     },
     {
       "employer": "JP AUTOMATION",
@@ -2408,36 +813,6 @@
       "wage_annual_max": 80205
     },
     {
-      "employer": "KINDEN CORPORATION",
-      "employer_display": "Kinden Corporation",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "GU",
-      "worksite_cities": "Tamuning",
-      "wage_annual_min": 49899,
-      "wage_annual_median": 49899,
-      "wage_annual_max": 49899
-    },
-    {
-      "employer": "KINGDOM AG CONCEPTS",
-      "employer_display": "Kingdom Ag Concepts, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "IN",
-      "worksite_cities": "Bremen",
-      "wage_annual_min": 57762,
-      "wage_annual_median": 57762,
-      "wage_annual_max": 57762
-    },
-    {
       "employer": "LAM RESEARCH CORPORATION",
       "employer_display": "Lam Research Corporation",
       "filing_count": 1,
@@ -2453,96 +828,6 @@
       "wage_annual_max": 85592
     },
     {
-      "employer": "LATECH",
-      "employer_display": "LaTech, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "LA",
-      "worksite_cities": "Baton Rouge",
-      "wage_annual_min": 78624,
-      "wage_annual_median": 78624,
-      "wage_annual_max": 78624
-    },
-    {
-      "employer": "M C DEAN",
-      "employer_display": "M.C. Dean, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "VA",
-      "worksite_cities": "Tysons",
-      "wage_annual_min": 109408,
-      "wage_annual_median": 109408,
-      "wage_annual_max": 109408
-    },
-    {
-      "employer": "MACKAY COMMUNICATIONS",
-      "employer_display": "Mackay Communications, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "San Pedro",
-      "wage_annual_min": 90002,
-      "wage_annual_median": 90002,
-      "wage_annual_max": 90002
-    },
-    {
-      "employer": "MARIANAS ENERGY COMPANY",
-      "employer_display": "MARIANAS ENERGY COMPANY LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "GU",
-      "worksite_cities": "PITI",
-      "wage_annual_min": 58498,
-      "wage_annual_median": 58498,
-      "wage_annual_max": 58498
-    },
-    {
-      "employer": "MASTEC SERVICES COMPANY",
-      "employer_display": "MASTEC  SERVICES COMPANY, INC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "AZ",
-      "worksite_cities": "Phoenix",
-      "wage_annual_min": 91726,
-      "wage_annual_median": 91726,
-      "wage_annual_max": 91726
-    },
-    {
-      "employer": "MESO SCALE DIAGNOSTICS",
-      "employer_display": "MESO SCALE DIAGNOSTICS, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "MD",
-      "worksite_cities": "GAITHERSBURG",
-      "wage_annual_min": 137860,
-      "wage_annual_median": 137860,
-      "wage_annual_max": 137860
-    },
-    {
       "employer": "MICROSOFT CORPORATION",
       "employer_display": "Microsoft Corporation",
       "filing_count": 1,
@@ -2556,51 +841,6 @@
       "wage_annual_min": 141831,
       "wage_annual_median": 141831,
       "wage_annual_max": 141831
-    },
-    {
-      "employer": "MITSUBISHI ELECTRIC POWER PRODUCTS",
-      "employer_display": "Mitsubishi Electric Power Products, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "Fort Worth",
-      "wage_annual_min": 89668,
-      "wage_annual_median": 89668,
-      "wage_annual_max": 89668
-    },
-    {
-      "employer": "MMR CONSTRUCTORS",
-      "employer_display": "MMR Constructors, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "Midland",
-      "wage_annual_min": 80000,
-      "wage_annual_median": 80000,
-      "wage_annual_max": 80000
-    },
-    {
-      "employer": "MODERN INTERNATIONAL",
-      "employer_display": "Modern International, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "GU",
-      "worksite_cities": "Barrigada",
-      "wage_annual_min": 49899,
-      "wage_annual_median": 49899,
-      "wage_annual_max": 49899
     },
     {
       "employer": "MOSS ASSOCIATES",
@@ -2633,79 +873,19 @@
       "wage_annual_max": 85238
     },
     {
-      "employer": "NEW CIBO VITA",
-      "employer_display": "New Cibo Vita LLC",
+      "employer": "NEXTGEN GLOBAL RESOURCES",
+      "employer_display": "NextGen Global Resources, LLC",
       "filing_count": 1,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "17-2071",
       "soc_titles": "Electrical Engineers",
-      "worksite_states": "NJ",
-      "worksite_cities": "Totowa",
-      "wage_annual_min": 85000,
-      "wage_annual_median": 85000,
-      "wage_annual_max": 85000
-    },
-    {
-      "employer": "NIAGARA NETWORKS",
-      "employer_display": "NIAGARA NETWORKS, INC.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "Fremont",
-      "wage_annual_min": 107182,
-      "wage_annual_median": 107182,
-      "wage_annual_max": 107182
-    },
-    {
-      "employer": "OAK LEAF ENGINEERING",
-      "employer_display": "OAK LEAF ENGINEERING CORP.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "GU",
-      "worksite_cities": "Tamuning",
-      "wage_annual_min": 49920,
-      "wage_annual_median": 49920,
-      "wage_annual_max": 49920
-    },
-    {
-      "employer": "OMMO TECHNOLOGIES",
-      "employer_display": "Ommo Technologies, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "Carrollton",
-      "wage_annual_min": 74589,
-      "wage_annual_median": 74589,
-      "wage_annual_max": 74589
-    },
-    {
-      "employer": "OPEN SYSTEMS INTERNATIONAL",
-      "employer_display": "Open Systems International, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "NJ",
-      "worksite_cities": "West New York",
-      "wage_annual_min": 84490,
-      "wage_annual_median": 84490,
-      "wage_annual_max": 84490
+      "worksite_states": "PA",
+      "worksite_cities": "Blue Bell",
+      "wage_annual_min": 120000,
+      "wage_annual_median": 120000,
+      "wage_annual_max": 120000
     },
     {
       "employer": "OPERATION TECHNOLOGY",
@@ -2738,21 +918,6 @@
       "wage_annual_max": 87200
     },
     {
-      "employer": "PIROGON",
-      "employer_display": "PIROGON, INC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "CT",
-      "worksite_cities": "New Haven",
-      "wage_annual_min": 73882,
-      "wage_annual_median": 73882,
-      "wage_annual_max": 73882
-    },
-    {
       "employer": "PJM INTERCONNECTION",
       "employer_display": "PJM Interconnection, LLC.",
       "filing_count": 1,
@@ -2768,21 +933,6 @@
       "wage_annual_max": 105000
     },
     {
-      "employer": "POINT APOGEE",
-      "employer_display": "POINT APOGEE, INC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "WA",
-      "worksite_cities": "BOTHELL",
-      "wage_annual_min": 98000,
-      "wage_annual_median": 98000,
-      "wage_annual_max": 98000
-    },
-    {
       "employer": "PRO VISION SOLUTIONS",
       "employer_display": "Pro-Vision Solutions, LLC",
       "filing_count": 1,
@@ -2796,51 +946,6 @@
       "wage_annual_min": 87000,
       "wage_annual_median": 87000,
       "wage_annual_max": 87000
-    },
-    {
-      "employer": "PURDUE UNIVERSITY",
-      "employer_display": "Purdue University",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "IN",
-      "worksite_cities": "West Lafayette",
-      "wage_annual_min": 56759,
-      "wage_annual_median": 56759,
-      "wage_annual_max": 56759
-    },
-    {
-      "employer": "PYKA",
-      "employer_display": "Pyka Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "Alameda",
-      "wage_annual_min": 113400,
-      "wage_annual_median": 113400,
-      "wage_annual_max": 113400
-    },
-    {
-      "employer": "QUALITY DESIGN SERVICES",
-      "employer_display": "Quality Design Services, Inc",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "MI",
-      "worksite_cities": "OKEMOS",
-      "wage_annual_min": 65000,
-      "wage_annual_median": 65000,
-      "wage_annual_max": 65000
     },
     {
       "employer": "QUEST GLOBAL SERVICES N A",
@@ -2888,36 +993,6 @@
       "wage_annual_max": 85000
     },
     {
-      "employer": "RENSSELAER POLYTECHNIC INSTITUTE",
-      "employer_display": "Rensselaer Polytechnic Institute",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "NY",
-      "worksite_cities": "Troy",
-      "wage_annual_min": 60000,
-      "wage_annual_median": 60000,
-      "wage_annual_max": 60000
-    },
-    {
-      "employer": "RLC ENGINEERING PLLC",
-      "employer_display": "RLC Engineering, PLLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "ME",
-      "worksite_cities": "South Portland",
-      "wage_annual_min": 105000,
-      "wage_annual_median": 105000,
-      "wage_annual_max": 105000
-    },
-    {
       "employer": "S E T PACIFIC",
       "employer_display": "S.E.T. Pacific, Inc.",
       "filing_count": 1,
@@ -2948,49 +1023,19 @@
       "wage_annual_max": 80600
     },
     {
-      "employer": "SCHINDLER ELEVATOR CORPORATION",
-      "employer_display": "Schindler Elevator Corporation",
+      "employer": "SEATRIUM LETOURNEAU USA",
+      "employer_display": "Seatrium LeTourneau USA, Inc.",
       "filing_count": 1,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "NJ",
-      "worksite_cities": "Morristown",
-      "wage_annual_min": 84490,
-      "wage_annual_median": 84490,
-      "wage_annual_max": 84490
-    },
-    {
-      "employer": "SEAH STEEL USA",
-      "employer_display": "SEAH STEEL USA, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "17-2071",
       "soc_titles": "Electrical Engineers",
       "worksite_states": "TX",
-      "worksite_cities": "HOUSTON",
-      "wage_annual_min": 125000,
-      "wage_annual_median": 125000,
-      "wage_annual_max": 125000
-    },
-    {
-      "employer": "SEATRIUM AMFELS",
-      "employer_display": "Seatrium AmFELS, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "Brownsville",
-      "wage_annual_min": 63648,
-      "wage_annual_median": 63648,
-      "wage_annual_max": 63648
+      "worksite_cities": "Houston",
+      "wage_annual_min": 70782,
+      "wage_annual_median": 70782,
+      "wage_annual_max": 70782
     },
     {
       "employer": "SEGULA TECHNOLOGIES USA",
@@ -3008,51 +1053,6 @@
       "wage_annual_max": 76960
     },
     {
-      "employer": "SEWON AMERICA",
-      "employer_display": "Sewon America, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "GA",
-      "worksite_cities": "Rincon",
-      "wage_annual_min": 77000,
-      "wage_annual_median": 77000,
-      "wage_annual_max": 77000
-    },
-    {
-      "employer": "SGS NORTH AMERICA",
-      "employer_display": "SGS NORTH AMERICA, INC.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "San Diego",
-      "wage_annual_min": 84573,
-      "wage_annual_median": 84573,
-      "wage_annual_max": 84573
-    },
-    {
-      "employer": "SHAH ASSOCIATES",
-      "employer_display": "Shah & Associates, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "MD",
-      "worksite_cities": "Gaithersburg",
-      "wage_annual_min": 125000,
-      "wage_annual_median": 125000,
-      "wage_annual_max": 125000
-    },
-    {
       "employer": "SHIMMICK CONSTRUCTION COMPANY",
       "employer_display": "Shimmick Construction Company, Inc.",
       "filing_count": 1,
@@ -3068,96 +1068,6 @@
       "wage_annual_max": 146000
     },
     {
-      "employer": "SIEMENS INDUSTRY",
-      "employer_display": "Siemens Industry, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "NY",
-      "worksite_cities": "Syracuse",
-      "wage_annual_min": 84739,
-      "wage_annual_median": 84739,
-      "wage_annual_max": 84739
-    },
-    {
-      "employer": "SKC",
-      "employer_display": "SKC, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "PA",
-      "worksite_cities": "Eighty Four",
-      "wage_annual_min": 76357,
-      "wage_annual_median": 76357,
-      "wage_annual_max": 76357
-    },
-    {
-      "employer": "SKT AMERICA",
-      "employer_display": "SKT America, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "GA",
-      "worksite_cities": "Commerce",
-      "wage_annual_min": 90000,
-      "wage_annual_median": 90000,
-      "wage_annual_max": 90000
-    },
-    {
-      "employer": "SKYLAND GROUP",
-      "employer_display": "SKYLAND GROUP INC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "MISSOURI CITY",
-      "wage_annual_min": 83200,
-      "wage_annual_median": 83200,
-      "wage_annual_max": 83200
-    },
-    {
-      "employer": "SONNEN",
-      "employer_display": "Sonnen, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "GA",
-      "worksite_cities": "Stone Mountain",
-      "wage_annual_min": 90000,
-      "wage_annual_median": 90000,
-      "wage_annual_max": 90000
-    },
-    {
-      "employer": "SOUTHERN METHODIST UNIVERSITY",
-      "employer_display": "SOUTHERN METHODIST UNIVERSITY",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "Dallas",
-      "wage_annual_min": 65000,
-      "wage_annual_median": 65000,
-      "wage_annual_max": 65000
-    },
-    {
       "employer": "SPACEPALM INCORPORATED",
       "employer_display": "SpacePalm Incorporated",
       "filing_count": 1,
@@ -3171,6 +1081,21 @@
       "wage_annual_min": 86320,
       "wage_annual_median": 86320,
       "wage_annual_max": 86320
+    },
+    {
+      "employer": "STANTEC CONSULTING SERVICES",
+      "employer_display": "Stantec Consulting Services Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2071",
+      "soc_titles": "Electrical Engineers",
+      "worksite_states": "NC",
+      "worksite_cities": "Raleigh",
+      "wage_annual_min": 87797,
+      "wage_annual_median": 87797,
+      "wage_annual_max": 87797
     },
     {
       "employer": "STEWART STEVENSON",
@@ -3203,51 +1128,6 @@
       "wage_annual_max": 84490
     },
     {
-      "employer": "TAAL TECHNOLOGIES",
-      "employer_display": "TAAL TECHNOLOGIES INC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "IN",
-      "worksite_cities": "Clayton",
-      "wage_annual_min": 84312,
-      "wage_annual_median": 84312,
-      "wage_annual_max": 84312
-    },
-    {
-      "employer": "TAIHAN ELECTRIC USA",
-      "employer_display": "Taihan Electric USA, Ltd.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "Santa Fe Springs",
-      "wage_annual_min": 85613,
-      "wage_annual_median": 85613,
-      "wage_annual_max": 85613
-    },
-    {
-      "employer": "TEC GROUP",
-      "employer_display": "TEC Group, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "MI",
-      "worksite_cities": "Auburn Hills",
-      "wage_annual_min": 104416,
-      "wage_annual_median": 104416,
-      "wage_annual_max": 104416
-    },
-    {
       "employer": "TEK LABS",
       "employer_display": "Tek Labs, Inc.",
       "filing_count": 1,
@@ -3276,6 +1156,21 @@
       "wage_annual_min": 99466,
       "wage_annual_median": 99466,
       "wage_annual_max": 99466
+    },
+    {
+      "employer": "TELEWORLD SOLUTIONS",
+      "employer_display": "TELEWORLD SOLUTIONS, INC.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2071",
+      "soc_titles": "Electrical Engineers",
+      "worksite_states": "NY",
+      "worksite_cities": "Liverpool",
+      "wage_annual_min": 95000,
+      "wage_annual_median": 95000,
+      "wage_annual_max": 95000
     },
     {
       "employer": "THE FEINSTEIN INSTITUTES FOR MEDICAL RESEARCH",
@@ -3308,36 +1203,6 @@
       "wage_annual_max": 80000
     },
     {
-      "employer": "THE UNIVERSITY OF TEXAS AT AUSTIN",
-      "employer_display": "The University of Texas at Austin",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "Austin",
-      "wage_annual_min": 61008,
-      "wage_annual_median": 61008,
-      "wage_annual_max": 61008
-    },
-    {
-      "employer": "TRANE TECHNOLOGIES COMPANY",
-      "employer_display": "Trane Technologies Company LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "WI",
-      "worksite_cities": "Onalaska",
-      "wage_annual_min": 80475,
-      "wage_annual_median": 80475,
-      "wage_annual_max": 80475
-    },
-    {
       "employer": "TRC SOLUTIONS",
       "employer_display": "TRC Solutions, Inc.",
       "filing_count": 1,
@@ -3351,21 +1216,6 @@
       "wage_annual_min": 85000,
       "wage_annual_median": 85000,
       "wage_annual_max": 85000
-    },
-    {
-      "employer": "TREW",
-      "employer_display": "Trew, LLC.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "Richardson",
-      "wage_annual_min": 105000,
-      "wage_annual_median": 105000,
-      "wage_annual_max": 105000
     },
     {
       "employer": "TRIAD NATIONAL SECURITY",
@@ -3398,36 +1248,6 @@
       "wage_annual_max": 104325
     },
     {
-      "employer": "TRUSTEES OF THE UNIVERSITY OF PENNSYLVANIA",
-      "employer_display": "TRUSTEES OF THE UNIVERSITY OF PENNSYLVANIA",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "PA",
-      "worksite_cities": "Philadelphia",
-      "wage_annual_min": 67830,
-      "wage_annual_median": 67830,
-      "wage_annual_max": 67830
-    },
-    {
-      "employer": "TSECOND",
-      "employer_display": "Tsecond, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "San Jose",
-      "wage_annual_min": 131019,
-      "wage_annual_median": 131019,
-      "wage_annual_max": 131019
-    },
-    {
       "employer": "TUV RHEINLAND OF NORTH AMERICA",
       "employer_display": "TUV Rheinland of North America, Inc.",
       "filing_count": 1,
@@ -3441,21 +1261,6 @@
       "wage_annual_min": 110000,
       "wage_annual_median": 110000,
       "wage_annual_max": 110000
-    },
-    {
-      "employer": "UNITEMP MECHANICAL DEGREES",
-      "employer_display": "UNITEMP MECHANICAL DEGREES LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "NJ",
-      "worksite_cities": "SOMERSET",
-      "wage_annual_min": 102960,
-      "wage_annual_median": 102960,
-      "wage_annual_max": 102960
     },
     {
       "employer": "UNIVERSAL TECHNOLOGY SYSTEMS AND ASSOCIATES",
@@ -3488,21 +1293,6 @@
       "wage_annual_max": 63000
     },
     {
-      "employer": "UNIVERSITY OF PITTSBURGH",
-      "employer_display": "University of Pittsburgh",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "PA",
-      "worksite_cities": "Pittsburgh",
-      "wage_annual_min": 106432,
-      "wage_annual_median": 106432,
-      "wage_annual_max": 106432
-    },
-    {
       "employer": "UNIVERSITY OF WISCONSIN MILWAUKEE",
       "employer_display": "University of Wisconsin-Milwaukee",
       "filing_count": 1,
@@ -3516,21 +1306,6 @@
       "wage_annual_min": 65000,
       "wage_annual_median": 65000,
       "wage_annual_max": 65000
-    },
-    {
-      "employer": "VANGUARD ELECTRONICS",
-      "employer_display": "Vanguard Electronics",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "Huntington Beach",
-      "wage_annual_min": 88566,
-      "wage_annual_median": 88566,
-      "wage_annual_max": 88566
     },
     {
       "employer": "VERDE NUTRA CORPORATION",
@@ -3563,36 +1338,6 @@
       "wage_annual_max": 63120
     },
     {
-      "employer": "WELLS PLUMBING AND HEATING SUPPLIES",
-      "employer_display": "WELLS PLUMBING AND HEATING SUPPLIES, INC.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "MONROVIA",
-      "wage_annual_min": 85613,
-      "wage_annual_median": 85613,
-      "wage_annual_max": 85613
-    },
-    {
-      "employer": "WHITE RIVER TECHNOLOGIES",
-      "employer_display": "White River Technologies, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "NH",
-      "worksite_cities": "Lebanon",
-      "wage_annual_min": 102500,
-      "wage_annual_median": 102500,
-      "wage_annual_max": 102500
-    },
-    {
       "employer": "WSP USA BUILDINGS",
       "employer_display": "WSP USA BUILDINGS INC.",
       "filing_count": 1,
@@ -3606,21 +1351,6 @@
       "wage_annual_min": 82638,
       "wage_annual_median": 82638,
       "wage_annual_max": 82638
-    },
-    {
-      "employer": "YADAVIAN ENGINEERING PLLC",
-      "employer_display": "Yadavian Engineering PLLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2071",
-      "soc_titles": "Electrical Engineers",
-      "worksite_states": "FL",
-      "worksite_cities": "Largo",
-      "wage_annual_min": 74318,
-      "wage_annual_median": 74318,
-      "wage_annual_max": 74318
     },
     {
       "employer": "YASKAWA AMERICA",

@@ -1,6 +1,6 @@
 {
   "role": "industrial_engineer",
-  "generated_at_utc": "2026-09-14 12:43 UTC",
+  "generated_at_utc": "2026-10-05 14:31 UTC",
   "source": "US DOL OFLC LCA Programs disclosure data (public record)",
   "filters": {
     "case_status": "Certified",
@@ -10,22 +10,21 @@
     "pw_wage_level": "I"
   },
   "quarters_used": [
-    "FY2025Q4",
     "FY2026Q1"
   ],
   "quarters_superseded": {},
   "funnel": {
-    "rows_total": 201700,
-    "rows_certified": 181277,
-    "rows_soc_matched": 3063,
-    "rows_selected": 375
+    "rows_total": 83120,
+    "rows_certified": 74664,
+    "rows_soc_matched": 1278,
+    "rows_selected": 148
   },
-  "employer_groups": 248,
+  "employer_groups": 109,
   "rows_wage_excluded_from_wage_stats": 0,
   "patterns": {
     "basis": {
-      "filings": 375,
-      "employers": 248,
+      "filings": 148,
+      "employers": 109,
       "measured_by": "employers",
       "min_support_employers": 3
     },
@@ -33,320 +32,115 @@
       "recurring_tokens": [
         {
           "token": "engineer",
-          "employers": 210,
-          "filings": 311
+          "employers": 94,
+          "filings": 123
         },
         {
           "token": "quality",
-          "employers": 52,
-          "filings": 67
+          "employers": 21,
+          "filings": 26
         },
         {
           "token": "manufacturing",
-          "employers": 43,
-          "filings": 58
+          "employers": 21,
+          "filings": 24
         },
         {
           "token": "validation",
-          "employers": 31,
-          "filings": 47
-        },
-        {
-          "token": "industrial",
-          "employers": 29,
-          "filings": 38
-        },
-        {
-          "token": "process",
-          "employers": 27,
-          "filings": 31
-        },
-        {
-          "token": "specialist",
           "employers": 17,
           "filings": 22
         },
         {
-          "token": "supplier",
-          "employers": 11,
+          "token": "process",
+          "employers": 12,
+          "filings": 12
+        },
+        {
+          "token": "industrial",
+          "employers": 9,
+          "filings": 9
+        },
+        {
+          "token": "specialist",
+          "employers": 7,
+          "filings": 9
+        },
+        {
+          "token": "operations",
+          "employers": 6,
           "filings": 15
         },
         {
           "token": "development",
-          "employers": 11,
-          "filings": 14
-        },
-        {
-          "token": "operations",
-          "employers": 9,
-          "filings": 29
+          "employers": 4,
+          "filings": 6
         },
         {
           "token": "associate",
-          "employers": 8,
-          "filings": 10
-        },
-        {
-          "token": "systems",
-          "employers": 7,
-          "filings": 8
-        },
-        {
-          "token": "senior",
-          "employers": 6,
-          "filings": 10
-        },
-        {
-          "token": "automation",
-          "employers": 6,
-          "filings": 6
-        },
-        {
-          "token": "manager",
-          "employers": 6,
-          "filings": 6
-        },
-        {
-          "token": "product",
-          "employers": 6,
-          "filings": 6
-        },
-        {
-          "token": "project",
-          "employers": 6,
-          "filings": 6
-        },
-        {
-          "token": "test",
-          "employers": 6,
-          "filings": 6
-        },
-        {
-          "token": "compliance",
-          "employers": 5,
-          "filings": 6
+          "employers": 4,
+          "filings": 5
         },
         {
           "token": "planning",
           "employers": 4,
-          "filings": 8
+          "filings": 4
         },
         {
-          "token": "analyst",
-          "employers": 4,
+          "token": "supplier",
+          "employers": 3,
           "filings": 5
         },
         {
-          "token": "sr",
-          "employers": 4,
-          "filings": 5
-        },
-        {
-          "token": "assurance",
-          "employers": 4,
-          "filings": 4
-        },
-        {
-          "token": "control",
-          "employers": 4,
-          "filings": 4
-        },
-        {
-          "token": "controls",
-          "employers": 4,
-          "filings": 4
-        },
-        {
-          "token": "packaging",
-          "employers": 4,
-          "filings": 4
-        },
-        {
-          "token": "research",
-          "employers": 4,
-          "filings": 4
-        },
-        {
-          "token": "technical",
-          "employers": 3,
-          "filings": 23
-        },
-        {
-          "token": "engineering",
-          "employers": 3,
-          "filings": 6
-        },
-        {
-          "token": "consultant",
-          "employers": 3,
-          "filings": 4
-        },
-        {
-          "token": "assistant",
+          "token": "systems",
           "employers": 3,
           "filings": 3
         },
         {
-          "token": "continuous",
-          "employers": 3,
-          "filings": 3
-        },
-        {
-          "token": "cqv",
-          "employers": 3,
-          "filings": 3
-        },
-        {
-          "token": "improvement",
-          "employers": 3,
-          "filings": 3
-        },
-        {
-          "token": "mechanical",
+          "token": "test",
           "employers": 3,
           "filings": 3
         }
       ],
       "distinct_titles": [
         {
-          "title": "Manufacturing Engineer",
-          "employers": 24,
-          "filings": 28
-        },
-        {
-          "title": "Quality Engineer",
-          "employers": 20,
-          "filings": 22
-        },
-        {
-          "title": "Industrial Engineer",
-          "employers": 19,
-          "filings": 23
-        },
-        {
           "title": "Validation Engineer",
-          "employers": 17,
-          "filings": 24
-        },
-        {
-          "title": "Process Engineer",
-          "employers": 13,
+          "employers": 12,
           "filings": 15
         },
         {
-          "title": "Supplier Quality Engineer",
-          "employers": 6,
-          "filings": 6
+          "title": "Manufacturing Engineer",
+          "employers": 11,
+          "filings": 11
         },
         {
-          "title": "Validation Specialist",
-          "employers": 4,
+          "title": "Quality Engineer",
+          "employers": 8,
+          "filings": 10
+        },
+        {
+          "title": "Process Engineer",
+          "employers": 8,
+          "filings": 8
+        },
+        {
+          "title": "Industrial Engineer",
+          "employers": 5,
           "filings": 5
-        },
-        {
-          "title": "Manufacturing Quality Engineer",
-          "employers": 3,
-          "filings": 5
-        },
-        {
-          "title": "Engineer",
-          "employers": 3,
-          "filings": 4
-        },
-        {
-          "title": "MANUFACTURING ENGINEER",
-          "employers": 3,
-          "filings": 4
-        },
-        {
-          "title": "Project Engineer",
-          "employers": 3,
-          "filings": 3
         },
         {
           "title": "Planning Engineer",
           "employers": 2,
-          "filings": 4
-        },
-        {
-          "title": "Associate Consultant",
-          "employers": 2,
-          "filings": 3
-        },
-        {
-          "title": "Quality Analyst",
-          "employers": 2,
-          "filings": 3
-        },
-        {
-          "title": "VALIDATION ENGINEER",
-          "employers": 2,
-          "filings": 3
-        },
-        {
-          "title": "Mechanical Engineer",
-          "employers": 2,
           "filings": 2
         },
         {
-          "title": "Product Development Engineer",
-          "employers": 2,
-          "filings": 2
-        },
-        {
-          "title": "Project Manager",
-          "employers": 2,
-          "filings": 2
-        },
-        {
-          "title": "QUALITY ENGINEER",
-          "employers": 2,
-          "filings": 2
-        },
-        {
-          "title": "Quality Control Engineer",
-          "employers": 2,
-          "filings": 2
-        },
-        {
-          "title": "SUPPLIER QUALITY ENGINEER",
-          "employers": 2,
-          "filings": 2
-        },
-        {
-          "title": "Systems Engineer",
-          "employers": 2,
-          "filings": 2
-        },
-        {
-          "title": "Test Engineer",
-          "employers": 2,
-          "filings": 2
-        },
-        {
-          "title": "Tooling Engineer",
+          "title": "Supplier Quality Engineer",
           "employers": 2,
           "filings": 2
         },
         {
           "title": "Technical Operations Engineer I",
           "employers": 1,
-          "filings": 20
-        },
-        {
-          "title": "Senior Engineer, Industrial Engineering",
-          "employers": 1,
-          "filings": 4
-        },
-        {
-          "title": "Industrial Designer I",
-          "employers": 1,
-          "filings": 3
-        },
-        {
-          "title": "Validation Engineer 2",
-          "employers": 1,
-          "filings": 3
+          "filings": 9
         },
         {
           "title": "Complaint Specialist",
@@ -359,62 +153,12 @@
           "filings": 2
         },
         {
-          "title": "Lean Manufacturing Engineer",
-          "employers": 1,
-          "filings": 2
-        },
-        {
-          "title": "Manufacturing Batch Record Reviewer",
-          "employers": 1,
-          "filings": 2
-        },
-        {
-          "title": "Manufacturing Engineer II",
-          "employers": 1,
-          "filings": 2
-        },
-        {
-          "title": "QA Shop Floor Compliance Specialist",
-          "employers": 1,
-          "filings": 2
-        },
-        {
-          "title": "Quality Systems Expert",
-          "employers": 1,
-          "filings": 2
-        },
-        {
-          "title": "RFID Engineer",
-          "employers": 1,
-          "filings": 2
-        },
-        {
-          "title": "Senior Planning Engineer",
-          "employers": 1,
-          "filings": 2
-        },
-        {
           "title": "Supplier Development Quality Engineer II",
           "employers": 1,
           "filings": 2
         },
         {
-          "title": "Account Manager",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Advanced Engineer, Chemical Process Technology",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Advanced Purchasing Specialist",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Applications Engineer",
           "employers": 1,
           "filings": 1
         },
@@ -424,12 +168,12 @@
           "filings": 1
         },
         {
-          "title": "Assistant Development Engineer",
+          "title": "Assistant Quality Manager",
           "employers": 1,
           "filings": 1
         },
         {
-          "title": "Assistant Quality Manager",
+          "title": "Associate Consultant",
           "employers": 1,
           "filings": 1
         },
@@ -439,17 +183,7 @@
           "filings": 1
         },
         {
-          "title": "Associate Director",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Associate Quality Engineer - Site Call Management",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Automation & Controls Engineer",
           "employers": 1,
           "filings": 1
         },
@@ -459,27 +193,7 @@
           "filings": 1
         },
         {
-          "title": "Automation Process Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Automation Specialist 1",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Autonomous Systems Verification & Validation Engineer II",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Business Excellence Leader",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "CONTINUOUS IMPROVEMENT ENGINEER",
           "employers": 1,
           "filings": 1
         },
@@ -494,37 +208,12 @@
           "filings": 1
         },
         {
-          "title": "CQV and GMP Quality Compliance Associate",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Color Development Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Commissioning Specialist",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Commissioning and Qualification Engineer I",
           "employers": 1,
           "filings": 1
         },
         {
           "title": "Computer System Validation Specialist Level 3",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Consultant",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Continuous Improvement Engineer",
           "employers": 1,
           "filings": 1
         },
@@ -549,21 +238,6 @@
           "filings": 1
         },
         {
-          "title": "DESIGN ENGINEER",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "DEVELOPMENT QUALITY ENGINEER",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Design Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Design Quality Engineer",
           "employers": 1,
           "filings": 1
@@ -574,7 +248,7 @@
           "filings": 1
         },
         {
-          "title": "Electrical Development Quality Engineer",
+          "title": "Engineer",
           "employers": 1,
           "filings": 1
         },
@@ -584,62 +258,12 @@
           "filings": 1
         },
         {
-          "title": "Engineer - Mfg",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Engineer I, Fenestration/Manufacturing Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Engineer Process",
           "employers": 1,
           "filings": 1
         },
         {
-          "title": "Engineer Product II",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Engineer, RAM Hardware ID1",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Engineer, RNA Drug Substance Manufacturing",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "FAB Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Facilities Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Fleet Engineer II",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Global Operational Procurement Specialist",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "HEALTH SYSTEMS ENGINEER",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Hardware Development Engineer",
           "employers": 1,
           "filings": 1
         },
@@ -654,27 +278,7 @@
           "filings": 1
         },
         {
-          "title": "Industrial Engineer (Brand Coordinator)",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Industrial Engineer (Processing)",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Industrial Engineer II",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Industrial Engineer Specialist II",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Industrial Engineer “ Controls Integration",
           "employers": 1,
           "filings": 1
         },
@@ -689,12 +293,7 @@
           "filings": 1
         },
         {
-          "title": "Low Voltage Test Engineer, Semi",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "MANUFACTURING PROCESS ENGINEER",
+          "title": "MANUFACTURING ENGINEER",
           "employers": 1,
           "filings": 1
         },
@@ -704,17 +303,7 @@
           "filings": 1
         },
         {
-          "title": "MRP Buyer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Maintenance Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Manager, Enterprise Shared Services",
           "employers": 1,
           "filings": 1
         },
@@ -724,12 +313,17 @@
           "filings": 1
         },
         {
+          "title": "Manufacturing Batch Record Reviewer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
           "title": "Manufacturing Engineer / PD Engineer",
           "employers": 1,
           "filings": 1
         },
         {
-          "title": "Manufacturing Engineer, Assembly",
+          "title": "Manufacturing Engineer II",
           "employers": 1,
           "filings": 1
         },
@@ -754,6 +348,11 @@
           "filings": 1
         },
         {
+          "title": "Manufacturing Quality Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
           "title": "Manufacturing Supervisor",
           "employers": 1,
           "filings": 1
@@ -764,12 +363,7 @@
           "filings": 1
         },
         {
-          "title": "Master Scheduler",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Mechanical Design Engineer",
+          "title": "Mechanical Engineer",
           "employers": 1,
           "filings": 1
         },
@@ -780,11 +374,6 @@
         },
         {
           "title": "NPI/Manufacturing Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "OPERATIONS AND AUTOMATION MANAGER",
           "employers": 1,
           "filings": 1
         },
@@ -804,21 +393,6 @@
           "filings": 1
         },
         {
-          "title": "Operations Monitoring Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "PACKAGING SPECIALIST",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "PCB Process Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "PE Systems Engineer",
           "employers": 1,
           "filings": 1
@@ -829,47 +403,7 @@
           "filings": 1
         },
         {
-          "title": "PRODUCT QUALITY ENGINEER",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Packaging Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Packaging Mechanic",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Physical Automation Development Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Plant Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Postdoctoral Research Assistant",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Process Control Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Process Engineer (Manufacturing Sciences)",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Process Engineer - Special Projects",
           "employers": 1,
           "filings": 1
         },
@@ -879,22 +413,17 @@
           "filings": 1
         },
         {
-          "title": "Process Engineer I",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Process Engineer II",
           "employers": 1,
           "filings": 1
         },
         {
-          "title": "Process Sr. Engineer",
+          "title": "Product Development Engineer",
           "employers": 1,
           "filings": 1
         },
         {
-          "title": "Product Performance Engineer",
+          "title": "Project Engineer",
           "employers": 1,
           "filings": 1
         },
@@ -914,7 +443,7 @@
           "filings": 1
         },
         {
-          "title": "QUALITY ASSURANCE ENGINEER",
+          "title": "QUALITY ENGINEER",
           "employers": 1,
           "filings": 1
         },
@@ -924,27 +453,12 @@
           "filings": 1
         },
         {
-          "title": "Quality Assurance Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Quality Assurance Engineer, Level 1",
           "employers": 1,
           "filings": 1
         },
         {
-          "title": "Quality Control Engineer I",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Quality Engineer I",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Quality Engineer II",
+          "title": "Quality Control Engineer",
           "employers": 1,
           "filings": 1
         },
@@ -954,22 +468,7 @@
           "filings": 1
         },
         {
-          "title": "Quality Process Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Quality and Compliance Engineer Specialist",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Quality/Test Engineer II",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "R & D Engineer",
           "employers": 1,
           "filings": 1
         },
@@ -980,11 +479,6 @@
         },
         {
           "title": "Reliability Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Research Scientist",
           "employers": 1,
           "filings": 1
         },
@@ -1009,82 +503,12 @@
           "filings": 1
         },
         {
-          "title": "Senior Engineer, R&D Packaging",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Senior Process Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Senior Validation Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Smart Factory Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Software Development Engineer in Test (SDET)",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Specialist-BP & Analytics",
           "employers": 1,
           "filings": 1
         },
         {
-          "title": "Sr Engineer Field Application Engineering",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Sr Engineer Quality",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Sr. Associate SCADA & Operations",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Sr. Engineer - Data",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Staff Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Supervisor Production Line Maintenance",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Supplier Development Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Supplier Industrialization Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Supplier Manufacturing Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Supplier Relations Engineer II",
           "employers": 1,
           "filings": 1
         },
@@ -1099,22 +523,12 @@
           "filings": 1
         },
         {
-          "title": "System Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "TECHNICAL OPERATIONS ENGINEER I",
           "employers": 1,
           "filings": 1
         },
         {
-          "title": "Technical Preparation Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "UX Designer",
+          "title": "Test Engineer",
           "employers": 1,
           "filings": 1
         },
@@ -1134,42 +548,12 @@
           "filings": 1
         },
         {
-          "title": "Validation Engineer (TMV)",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Validation Engineer I",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Validation Engineer II",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Validation Engineer/ CSV Engineer",
+          "title": "Validation Specialist",
           "employers": 1,
           "filings": 1
         },
         {
           "title": "Validation Specialist II",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Validation and Compliance Specialist",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Wafer Process Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Warehouse Products Engineer",
           "employers": 1,
           "filings": 1
         }
@@ -1179,102 +563,60 @@
       {
         "soc_code": "17-2112.00",
         "title": "Industrial Engineers",
-        "employers": 130,
-        "filings": 189
+        "employers": 52,
+        "filings": 66
       },
       {
         "soc_code": "17-2112.02",
         "title": "Validation Engineers",
-        "employers": 63,
-        "filings": 102
+        "employers": 33,
+        "filings": 51
       },
       {
         "soc_code": "17-2112.03",
         "title": "Manufacturing Engineers",
-        "employers": 64,
-        "filings": 80
+        "employers": 27,
+        "filings": 29
       },
       {
         "soc_code": "17-2112.01",
         "title": "Human Factors Engineers and Ergonomists",
-        "employers": 3,
-        "filings": 4
+        "employers": 1,
+        "filings": 2
       }
     ],
     "placement_model": {
       "in_house": {
-        "employers": 206,
-        "filings": 283
+        "employers": 86,
+        "filings": 108
       },
       "third_party_site": {
-        "employers": 46,
-        "filings": 92
+        "employers": 25,
+        "filings": 40
       }
     },
     "industry_naics2": [
       {
-        "code": "33",
-        "label": "Manufacturing",
-        "employers": 88,
-        "filings": 110
-      },
-      {
         "code": "54",
         "label": "Professional, Scientific, and Technical Services",
-        "employers": 78,
-        "filings": 137
+        "employers": 42,
+        "filings": 62
+      },
+      {
+        "code": "33",
+        "label": "Manufacturing",
+        "employers": 35,
+        "filings": 37
       },
       {
         "code": "32",
         "label": "Manufacturing",
-        "employers": 31,
-        "filings": 46
-      },
-      {
-        "code": "42",
-        "label": "Wholesale Trade",
-        "employers": 9,
-        "filings": 9
-      },
-      {
-        "code": "23",
-        "label": "Construction",
-        "employers": 7,
-        "filings": 8
-      },
-      {
-        "code": "56",
-        "label": "Administrative and Support and Waste Management and Remediation Services",
-        "employers": 6,
-        "filings": 6
+        "employers": 14,
+        "filings": 21
       },
       {
         "code": "31",
         "label": "Manufacturing",
-        "employers": 5,
-        "filings": 7
-      },
-      {
-        "code": "45",
-        "label": "Retail Trade",
-        "employers": 4,
-        "filings": 8
-      },
-      {
-        "code": "61",
-        "label": "Educational Services",
-        "employers": 4,
-        "filings": 4
-      },
-      {
-        "code": "51",
-        "label": "Information",
-        "employers": 3,
-        "filings": 22
-      },
-      {
-        "code": "44",
-        "label": "Retail Trade",
         "employers": 3,
         "filings": 3
       }
@@ -1290,392 +632,32 @@
     {
       "employer": "VASTEK",
       "employer_display": "Vastek Inc",
-      "filing_count": 24,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
+      "filing_count": 13,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
       "soc_codes": "17-2112",
       "soc_titles": "Manufacturing Engineers; Validation Engineers",
-      "worksite_states": "CA; FL; IN; MA; NC; NJ; NY; OH; PA; UT",
-      "worksite_cities": "Boston; Danvers; Greendale; Holly springs; Irvine; Lancaster; Lebanon; New Albany; Palm Beach Gardens; Pleasanton; Rensselaer; Salt Lake City; San Diego; San Jose; Summit; Swiftwater; Whippany",
+      "worksite_states": "CA; FL; IN; MA; NC; NJ; OH; PA; UT",
+      "worksite_cities": "Danvers; Greendale; Holly springs; Lebanon; New Albany; Palm Beach Gardens; Pleasanton; Salt Lake City; Summit; Swiftwater; Whippany",
       "wage_annual_min": 70720,
-      "wage_annual_median": 81037,
-      "wage_annual_max": 95139
+      "wage_annual_median": 80142,
+      "wage_annual_max": 94682
     },
     {
       "employer": "AMAZON DATA SERVICES",
       "employer_display": "Amazon Data Services, Inc",
-      "filing_count": 21,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
+      "filing_count": 10,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
       "soc_codes": "17-2112",
       "soc_titles": "Industrial Engineers",
-      "worksite_states": "AZ; GA; IN; MS; NC; OH; OR; PA; TX; VA",
-      "worksite_cities": "Atlanta; Canton; Charlotte; Columbus; Dallas; Fredericksburg; Herndon; Mesa; New Albany; Philadelphia; South Bend; Stafford; UMATILLA",
-      "wage_annual_min": 71053,
+      "worksite_states": "MS; OR; PA; TX; VA",
+      "worksite_cities": "Canton; Dallas; Fredericksburg; Herndon; Philadelphia; Stafford; UMATILLA",
+      "wage_annual_min": 76939,
       "wage_annual_median": 130000,
-      "wage_annual_max": 140000
-    },
-    {
-      "employer": "TESLA",
-      "employer_display": "Tesla, Inc.",
-      "filing_count": 7,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers; Manufacturing Engineers; Validation Engineers",
-      "worksite_states": "CA; NV",
-      "worksite_cities": "Fremont; Palo Alto; Sparks",
-      "wage_annual_min": 90000,
-      "wage_annual_median": 115841,
-      "wage_annual_max": 120000
-    },
-    {
-      "employer": "QUANTA MANUFACTURING NASHVILLE",
-      "employer_display": "Quanta Manufacturing Nashville, LLC",
-      "filing_count": 6,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "TN",
-      "worksite_cities": "La Vergne",
-      "wage_annual_min": 76544,
-      "wage_annual_median": 90500,
-      "wage_annual_max": 108000
-    },
-    {
-      "employer": "AMAZON COM SERVICES",
-      "employer_display": "Amazon.com Services LLC",
-      "filing_count": 5,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "MA; TX; VA; WA",
-      "worksite_cities": "Arlington; Austin; Bellevue; Boston; Seattle",
-      "wage_annual_min": 99000,
-      "wage_annual_median": 115000,
-      "wage_annual_max": 140000
-    },
-    {
-      "employer": "ELIQUENT LIFE SCIENCES",
-      "employer_display": "Eliquent Life Sciences",
-      "filing_count": 5,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2112",
-      "soc_titles": "Validation Engineers",
-      "worksite_states": "DC; MA",
-      "worksite_cities": "Framingham; Washington",
-      "wage_annual_min": 78146,
-      "wage_annual_median": 82451,
-      "wage_annual_max": 90126
-    },
-    {
-      "employer": "KARTECH SOLUTIONS",
-      "employer_display": "Kartech Solutions, Inc.",
-      "filing_count": 5,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2112",
-      "soc_titles": "Manufacturing Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "Austin",
-      "wage_annual_min": 69389,
-      "wage_annual_median": 72000,
-      "wage_annual_max": 72000
-    },
-    {
-      "employer": "ST JUDE MEDICAL CARDIOLOGY DIVISION",
-      "employer_display": "St. Jude Medical, Cardiology Division, Inc.",
-      "filing_count": 5,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers; Validation Engineers",
-      "worksite_states": "CA; MN",
-      "worksite_cities": "PLEASANTON; Pleasanton; Plymouth; Saint Paul; Sunnyvale",
-      "wage_annual_min": 78000,
-      "wage_annual_median": 95000,
-      "wage_annual_max": 99000
-    },
-    {
-      "employer": "KATALYST HEALTHCARES LIFE SCIENCES",
-      "employer_display": "KATALYST HEALTHCARES & LIFE SCIENCES INC.",
-      "filing_count": 4,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2112",
-      "soc_titles": "Manufacturing Engineers; Validation Engineers",
-      "worksite_states": "CT; MA; NJ; NY",
-      "worksite_cities": "EAST HANOVER; MANSFIELD; NORTH HAVEN; TROY",
-      "wage_annual_min": 79685,
-      "wage_annual_median": 81546,
-      "wage_annual_max": 85904
-    },
-    {
-      "employer": "VALIDATION ASSOCIATES",
-      "employer_display": "Validation Associates LLC",
-      "filing_count": 4,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2112",
-      "soc_titles": "Validation Engineers",
-      "worksite_states": "CA; NJ; NY",
-      "worksite_cities": "Clifton Park; Cranbury; East Greenbush; Foster City",
-      "wage_annual_min": 81037,
-      "wage_annual_median": 90293,
-      "wage_annual_max": 97760
-    },
-    {
-      "employer": "FEDERAL EXPRESS CORPORATION",
-      "employer_display": "Federal Express Corporation",
-      "filing_count": 3,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "CO; TN",
-      "worksite_cities": "Collierville; Denver; Memphis",
-      "wage_annual_min": 76370,
-      "wage_annual_median": 77311,
-      "wage_annual_max": 79600
-    },
-    {
-      "employer": "FUYAO GLASS AMERICA",
-      "employer_display": "Fuyao Glass America Inc.",
-      "filing_count": 3,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "MI; OH",
-      "worksite_cities": "Montgomery; Plymouth",
-      "wage_annual_min": 76648,
-      "wage_annual_median": 79455,
-      "wage_annual_max": 83000
-    },
-    {
-      "employer": "LG ENERGY SOLUTION ARIZONA",
-      "employer_display": "LG Energy Solution Arizona, Inc.",
-      "filing_count": 3,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "AZ",
-      "worksite_cities": "Queen Creek",
-      "wage_annual_min": 106000,
-      "wage_annual_median": 119703,
-      "wage_annual_max": 137000
-    },
-    {
-      "employer": "NOVOZEN HEALTHCARE",
-      "employer_display": "NOVOZEN HEALTHCARE LLC.",
-      "filing_count": 3,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2112",
-      "soc_titles": "Validation Engineers",
-      "worksite_states": "IA; MA",
-      "worksite_cities": "ANDOVER; CHARLES CITY; Wakefield",
-      "wage_annual_min": 72800,
-      "wage_annual_median": 87360,
-      "wage_annual_max": 99840
-    },
-    {
-      "employer": "STARK PHARMA SOLUTIONS",
-      "employer_display": "STARK PHARMA SOLUTIONS INC.",
-      "filing_count": 3,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2112",
-      "soc_titles": "Manufacturing Engineers; Validation Engineers",
-      "worksite_states": "CA; MA",
-      "worksite_cities": "Lake Elsinore; Westborough",
-      "wage_annual_min": 81037,
-      "wage_annual_median": 81120,
-      "wage_annual_max": 81120
-    },
-    {
-      "employer": "ACUITY BRANDS LIGHTING",
-      "employer_display": "Acuity Brands Lighting, Inc.",
-      "filing_count": 2,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2112",
-      "soc_titles": "Manufacturing Engineers",
-      "worksite_states": "IN",
-      "worksite_cities": "Crawfordsville",
-      "wage_annual_min": 68827,
-      "wage_annual_median": 70658,
-      "wage_annual_max": 72488
-    },
-    {
-      "employer": "BCVS",
-      "employer_display": "BCVS",
-      "filing_count": 2,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2112",
-      "soc_titles": "Validation Engineers",
-      "worksite_states": "IN; NJ",
-      "worksite_cities": "Batesville; Wayne",
-      "wage_annual_min": 72800,
-      "wage_annual_median": 76918,
-      "wage_annual_max": 81037
-    },
-    {
-      "employer": "BIOMET MANUFACTURING",
-      "employer_display": "Biomet Manufacturing, LLC",
-      "filing_count": 2,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2112",
-      "soc_titles": "Manufacturing Engineers",
-      "worksite_states": "IN",
-      "worksite_cities": "Warsaw",
-      "wage_annual_min": 80730,
-      "wage_annual_median": 90648972,
-      "wage_annual_max": 181217213
-    },
-    {
-      "employer": "INVAGEN PHARMACEUTICALS",
-      "employer_display": "InvaGen Pharmaceuticals, Inc.",
-      "filing_count": 2,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2112",
-      "soc_titles": "Manufacturing Engineers; Validation Engineers",
-      "worksite_states": "MA; NY",
-      "worksite_cities": "Central Islip; Fall River",
-      "wage_annual_min": 80000,
-      "wage_annual_median": 85000,
-      "wage_annual_max": 90000
-    },
-    {
-      "employer": "MAXGRIP AMERICAS",
-      "employer_display": "Maxgrip Americas Inc",
-      "filing_count": 2,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "Houston",
-      "wage_annual_min": 81000,
-      "wage_annual_median": 84550,
-      "wage_annual_max": 88100
-    },
-    {
-      "employer": "NIAGARA BOTTLING",
-      "employer_display": "Niagara Bottling, LLC",
-      "filing_count": 2,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "Diamond Bar",
-      "wage_annual_min": 96000,
-      "wage_annual_median": 103000,
-      "wage_annual_max": 110000
-    },
-    {
-      "employer": "YANFENG INTERNATIONAL AUTOMOTIVE TECHNOLOGY US I",
-      "employer_display": "Yanfeng International Automotive Technology US I LLC",
-      "filing_count": 2,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers; Validation Engineers",
-      "worksite_states": "MI; TN",
-      "worksite_cities": "Chattanooga; Novi",
-      "wage_annual_min": 76648,
-      "wage_annual_median": 80824,
-      "wage_annual_max": 85000
-    },
-    {
-      "employer": "INTELLECTT",
-      "employer_display": "INTELLECTT, INC.",
-      "filing_count": 9,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers; Manufacturing Engineers; Validation Engineers",
-      "worksite_states": "CA; ME; NJ; TX",
-      "worksite_cities": "IRVING; MENLO PARK; PLANO; PLEASANTON; Plainfield; SANTA CLARA; SCARBOROUGH; SYLMAR",
-      "wage_annual_min": 83200,
-      "wage_annual_median": 93600,
-      "wage_annual_max": 114400
-    },
-    {
-      "employer": "WESTERN DIGITAL TECHNOLOGIES",
-      "employer_display": "Western Digital Technologies, Inc.",
-      "filing_count": 4,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "Fremont; Milpitas; San Jose",
-      "wage_annual_min": 90251,
-      "wage_annual_median": 91614,
-      "wage_annual_max": 92976
-    },
-    {
-      "employer": "ALTEN TECHNOLOGY USA",
-      "employer_display": "Alten Technology USA, Inc.",
-      "filing_count": 3,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "AL; MI; OH",
-      "worksite_cities": "Auburn Hills; Mobile; Raymond",
-      "wage_annual_min": 73736,
-      "wage_annual_median": 76648,
-      "wage_annual_max": 80496
-    },
-    {
-      "employer": "COMMEX",
-      "employer_display": "Commex Corp.",
-      "filing_count": 3,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers; Manufacturing Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "Hayward",
-      "wage_annual_min": 102000,
-      "wage_annual_median": 102000,
-      "wage_annual_max": 1136184
+      "wage_annual_max": 135850
     },
     {
       "employer": "SPARK LIFE SOLUTIONS",
@@ -1693,6 +675,21 @@
       "wage_annual_max": 95680
     },
     {
+      "employer": "ST JUDE MEDICAL CARDIOLOGY DIVISION",
+      "employer_display": "St. Jude Medical, Cardiology Division, Inc.",
+      "filing_count": 3,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2112",
+      "soc_titles": "Industrial Engineers; Validation Engineers",
+      "worksite_states": "CA; MN",
+      "worksite_cities": "PLEASANTON; Pleasanton; Saint Paul",
+      "wage_annual_min": 80000,
+      "wage_annual_median": 95000,
+      "wage_annual_max": 99000
+    },
+    {
       "employer": "TAILSTORM HEALTH",
       "employer_display": "Tailstorm Health, Inc",
       "filing_count": 3,
@@ -1708,34 +705,19 @@
       "wage_annual_max": 81370
     },
     {
-      "employer": "ACOUSTICAL SOLUTIONS",
-      "employer_display": "Acoustical Solutions",
-      "filing_count": 2,
+      "employer": "TESLA",
+      "employer_display": "Tesla, Inc.",
+      "filing_count": 3,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "VA",
-      "worksite_cities": "Henrico",
-      "wage_annual_min": 90279,
-      "wage_annual_median": 90279,
-      "wage_annual_max": 90279
-    },
-    {
-      "employer": "CORNERSTONE BUILDING BRANDS SERVICES",
-      "employer_display": "Cornerstone Building Brands Services, Inc.",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Manufacturing Engineers",
-      "worksite_states": "NH",
-      "worksite_cities": "Londonderry",
-      "wage_annual_min": 86902,
-      "wage_annual_median": 2302903,
-      "wage_annual_max": 4518904
+      "soc_titles": "Industrial Engineers; Manufacturing Engineers",
+      "worksite_states": "CA; NV",
+      "worksite_cities": "Fremont; Sparks",
+      "wage_annual_min": 90000,
+      "wage_annual_median": 110745,
+      "wage_annual_max": 117000
     },
     {
       "employer": "CURIA NEW MEXICO",
@@ -1768,34 +750,19 @@
       "wage_annual_max": 141000
     },
     {
-      "employer": "EMPWR USA",
-      "employer_display": "EMPWR USA Inc.",
+      "employer": "ELIQUENT LIFE SCIENCES",
+      "employer_display": "Eliquent Life Sciences",
       "filing_count": 2,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "OR",
-      "worksite_cities": "McMinnville",
-      "wage_annual_min": 88816,
-      "wage_annual_median": 88816,
-      "wage_annual_max": 88816
-    },
-    {
-      "employer": "FINDICA",
-      "employer_display": "Findica, Inc.",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "17-2112",
       "soc_titles": "Validation Engineers",
-      "worksite_states": "NJ",
-      "worksite_cities": "Dayton",
-      "wage_annual_min": 81037,
-      "wage_annual_median": 81037,
-      "wage_annual_max": 81037
+      "worksite_states": "DC; MA",
+      "worksite_cities": "Framingham; Washington",
+      "wage_annual_min": 86902,
+      "wage_annual_median": 88514,
+      "wage_annual_max": 90126
     },
     {
       "employer": "FUYAO GLASS SOUTH CAROLINA",
@@ -1813,66 +780,6 @@
       "wage_annual_max": 81687
     },
     {
-      "employer": "GANNECT ELECTRONICS LIMITED COMPANY",
-      "employer_display": "Gannect Electronics Limited Company",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "FORT WORTH; Frot Worth",
-      "wage_annual_min": 76960,
-      "wage_annual_median": 76960,
-      "wage_annual_max": 76960
-    },
-    {
-      "employer": "GEORGE SCHMITT CO",
-      "employer_display": "George Schmitt & Co., Inc.",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Manufacturing Engineers",
-      "worksite_states": "CT",
-      "worksite_cities": "Guilford",
-      "wage_annual_min": 82056,
-      "wage_annual_median": 82056,
-      "wage_annual_max": 82056
-    },
-    {
-      "employer": "GLOBALFOUNDRIES U S",
-      "employer_display": "GlobalFoundries U.S., Inc.",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "NY; TX",
-      "worksite_cities": "Malta; The Colony",
-      "wage_annual_min": 76939,
-      "wage_annual_median": 81422,
-      "wage_annual_max": 85904
-    },
-    {
-      "employer": "JINDAL PIPE USA",
-      "employer_display": "Jindal Pipe USA INC",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "Baytown",
-      "wage_annual_min": 71594,
-      "wage_annual_median": 75844,
-      "wage_annual_max": 80094
-    },
-    {
       "employer": "LANCESOFT",
       "employer_display": "LanceSoft Inc.",
       "filing_count": 2,
@@ -1886,6 +793,36 @@
       "wage_annual_min": 71677,
       "wage_annual_median": 83408,
       "wage_annual_max": 95139
+    },
+    {
+      "employer": "NOVOZEN HEALTHCARE",
+      "employer_display": "NOVOZEN HEALTHCARE LLC.",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2112",
+      "soc_titles": "Validation Engineers",
+      "worksite_states": "IA; MA",
+      "worksite_cities": "CHARLES CITY; Wakefield",
+      "wage_annual_min": 72800,
+      "wage_annual_median": 86320,
+      "wage_annual_max": 99840
+    },
+    {
+      "employer": "STARK PHARMA SOLUTIONS",
+      "employer_display": "STARK PHARMA SOLUTIONS INC.",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2112",
+      "soc_titles": "Manufacturing Engineers",
+      "worksite_states": "MA",
+      "worksite_cities": "Westborough",
+      "wage_annual_min": 81120,
+      "wage_annual_median": 81120,
+      "wage_annual_max": 81120
     },
     {
       "employer": "SYNOPSYS",
@@ -1963,34 +900,19 @@
       "wage_annual_max": 73278
     },
     {
-      "employer": "A V REFRIGERATION",
-      "employer_display": "A & V Refrigeration Corp.",
+      "employer": "ACUITY BRANDS LIGHTING",
+      "employer_display": "Acuity Brands Lighting, Inc.",
       "filing_count": 1,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "FL",
-      "worksite_cities": "Hialeah",
-      "wage_annual_min": 75000,
-      "wage_annual_median": 75000,
-      "wage_annual_max": 75000
-    },
-    {
-      "employer": "ADH HEALTH PRODUCTS",
-      "employer_display": "ADH HEALTH PRODUCTS INC.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "17-2112",
       "soc_titles": "Manufacturing Engineers",
-      "worksite_states": "NY",
-      "worksite_cities": "CONGERS",
-      "wage_annual_min": 115000,
-      "wage_annual_median": 115000,
-      "wage_annual_max": 115000
+      "worksite_states": "IN",
+      "worksite_cities": "Crawfordsville",
+      "wage_annual_min": 72488,
+      "wage_annual_median": 72488,
+      "wage_annual_max": 72488
     },
     {
       "employer": "AKKODIS",
@@ -2008,21 +930,6 @@
       "wage_annual_max": 74880
     },
     {
-      "employer": "ALKERMES",
-      "employer_display": "Alkermes, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Validation Engineers",
-      "worksite_states": "OH",
-      "worksite_cities": "Wilmington",
-      "wage_annual_min": 89300,
-      "wage_annual_median": 89300,
-      "wage_annual_max": 89300
-    },
-    {
       "employer": "ALPS ALPINE NORTH AMERICA",
       "employer_display": "Alps Alpine North America, Inc.",
       "filing_count": 1,
@@ -2038,94 +945,19 @@
       "wage_annual_max": 100100
     },
     {
-      "employer": "AMAX ENGINEERING CORPORATION",
-      "employer_display": "Amax Engineering Corporation",
+      "employer": "AMAZON COM SERVICES",
+      "employer_display": "Amazon.com Services LLC",
       "filing_count": 1,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Manufacturing Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "Fremont",
-      "wage_annual_min": 116600,
-      "wage_annual_median": 116600,
-      "wage_annual_max": 116600
-    },
-    {
-      "employer": "AMPHENOL THERMOMETRICS",
-      "employer_display": "Amphenol Thermometrics, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Manufacturing Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "Fremont",
-      "wage_annual_min": 115000,
-      "wage_annual_median": 115000,
-      "wage_annual_max": 115000
-    },
-    {
-      "employer": "ANCHOR GLASS CONTAINER CORPORATION",
-      "employer_display": "Anchor Glass Container Corporation",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "17-2112",
       "soc_titles": "Industrial Engineers",
-      "worksite_states": "FL",
-      "worksite_cities": "Tampa",
-      "wage_annual_min": 95000,
-      "wage_annual_median": 95000,
-      "wage_annual_max": 95000
-    },
-    {
-      "employer": "ANDERSEN CORPORATION",
-      "employer_display": "Andersen Corporation",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Manufacturing Engineers",
-      "worksite_states": "AZ",
-      "worksite_cities": "Goodyear",
-      "wage_annual_min": 91847,
-      "wage_annual_median": 91847,
-      "wage_annual_max": 91847
-    },
-    {
-      "employer": "ANSYS",
-      "employer_display": "ANSYS, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Human Factors Engineers and Ergonomists",
-      "worksite_states": "CA",
-      "worksite_cities": "Woodland Hills",
-      "wage_annual_min": 79955,
-      "wage_annual_median": 79955,
-      "wage_annual_max": 79955
-    },
-    {
-      "employer": "ARCH GROUP",
-      "employer_display": "Arch Group LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Validation Engineers",
-      "worksite_states": "MN",
-      "worksite_cities": "Lake Elmo",
-      "wage_annual_min": 78000,
-      "wage_annual_median": 78000,
-      "wage_annual_max": 78000
+      "worksite_states": "MA",
+      "worksite_cities": "Boston",
+      "wage_annual_min": 99000,
+      "wage_annual_median": 99000,
+      "wage_annual_max": 99000
     },
     {
       "employer": "ARCHITECTURAL BUILDERS HARDWARE MANUFACTURING",
@@ -2141,51 +973,6 @@
       "wage_annual_min": 71240,
       "wage_annual_median": 71240,
       "wage_annual_max": 71240
-    },
-    {
-      "employer": "AREVON ENERGY",
-      "employer_display": "Arevon Energy, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "San Jose",
-      "wage_annual_min": 99000,
-      "wage_annual_median": 99000,
-      "wage_annual_max": 99000
-    },
-    {
-      "employer": "ARTIEL SYSTEMS INTEGRATION",
-      "employer_display": "ARTIEL SYSTEMS INTEGRATION, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "NJ",
-      "worksite_cities": "Whitehouse Station",
-      "wage_annual_min": 81037,
-      "wage_annual_median": 81037,
-      "wage_annual_max": 81037
-    },
-    {
-      "employer": "ASM SOLUTIONS",
-      "employer_display": "ASM Solutions LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Validation Engineers",
-      "worksite_states": "IL",
-      "worksite_cities": "Crystal Lake",
-      "wage_annual_min": 72800,
-      "wage_annual_median": 72800,
-      "wage_annual_max": 72800
     },
     {
       "employer": "AURIS HEALTH",
@@ -2248,34 +1035,19 @@
       "wage_annual_max": 85000
     },
     {
-      "employer": "AXITEM SOFTWARE SOLUTION",
-      "employer_display": "AXITEM SOFTWARE SOLUTION INC",
+      "employer": "BCVS",
+      "employer_display": "BCVS",
       "filing_count": 1,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "17-2112",
       "soc_titles": "Validation Engineers",
-      "worksite_states": "MI",
-      "worksite_cities": "Northville",
-      "wage_annual_min": 77000,
-      "wage_annual_median": 77000,
-      "wage_annual_max": 77000
-    },
-    {
-      "employer": "AXON ENTERPRISE",
-      "employer_display": "Axon Enterprise, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "AZ",
-      "worksite_cities": "Scottsdale",
-      "wage_annual_min": 100000,
-      "wage_annual_median": 100000,
-      "wage_annual_max": 100000
+      "worksite_states": "IN",
+      "worksite_cities": "Batesville",
+      "wage_annual_min": 72800,
+      "wage_annual_median": 72800,
+      "wage_annual_max": 72800
     },
     {
       "employer": "BECTON DICKINSON AND COMPANY",
@@ -2291,6 +1063,21 @@
       "wage_annual_min": 80000,
       "wage_annual_median": 80000,
       "wage_annual_max": 80000
+    },
+    {
+      "employer": "BIOMET MANUFACTURING",
+      "employer_display": "Biomet Manufacturing, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2112",
+      "soc_titles": "Manufacturing Engineers",
+      "worksite_states": "IN",
+      "worksite_cities": "Warsaw",
+      "wage_annual_min": 80730,
+      "wage_annual_median": 80730,
+      "wage_annual_max": 80730
     },
     {
       "employer": "BIOPHARMA CONSULTING JAD GROUP",
@@ -2323,66 +1110,6 @@
       "wage_annual_max": 67288
     },
     {
-      "employer": "BSI AMERICA PROFESSIONAL SERVICES",
-      "employer_display": "BSI America Professional Services Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "San Jose",
-      "wage_annual_min": 95139,
-      "wage_annual_median": 95139,
-      "wage_annual_max": 95139
-    },
-    {
-      "employer": "BUNGE NORTH AMERICA EAST",
-      "employer_display": "Bunge North America (East) LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "IN",
-      "worksite_cities": "Morristown",
-      "wage_annual_min": 79849,
-      "wage_annual_median": 79849,
-      "wage_annual_max": 79849
-    },
-    {
-      "employer": "BYD COACH AND BUS",
-      "employer_display": "BYD Coach and Bus LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "Lancaster",
-      "wage_annual_min": 79955,
-      "wage_annual_median": 79955,
-      "wage_annual_max": 79955
-    },
-    {
-      "employer": "CANADIAN SOLAR U S MODULE MANUFACTURING CORPORATION",
-      "employer_display": "Canadian Solar U.S. Module Manufacturing Corporation",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "Mesquite",
-      "wage_annual_min": 79000,
-      "wage_annual_median": 79000,
-      "wage_annual_max": 79000
-    },
-    {
       "employer": "CANDYCO",
       "employer_display": "CandyCo, LLC",
       "filing_count": 1,
@@ -2396,21 +1123,6 @@
       "wage_annual_min": 76565,
       "wage_annual_median": 76565,
       "wage_annual_max": 76565
-    },
-    {
-      "employer": "CELANESE CORPORATION",
-      "employer_display": "Celanese Corporation",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "Bishop",
-      "wage_annual_min": 116189,
-      "wage_annual_median": 116189,
-      "wage_annual_max": 116189
     },
     {
       "employer": "CENOVUS U S SERVICES",
@@ -2443,21 +1155,6 @@
       "wage_annual_max": 77000
     },
     {
-      "employer": "CONSOLIDATED METCO",
-      "employer_display": "Consolidated Metco, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "NC",
-      "worksite_cities": "Monroe",
-      "wage_annual_min": 93120,
-      "wage_annual_median": 93120,
-      "wage_annual_max": 93120
-    },
-    {
       "employer": "CONSTELLIUM AUTOMOTIVE USA",
       "employer_display": "Constellium Automotive USA, LLC",
       "filing_count": 1,
@@ -2471,96 +1168,6 @@
       "wage_annual_min": 81500,
       "wage_annual_median": 81500,
       "wage_annual_max": 81500
-    },
-    {
-      "employer": "CORDIALSA USA",
-      "employer_display": "Cordialsa USA, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "Corona",
-      "wage_annual_min": 74090,
-      "wage_annual_median": 74090,
-      "wage_annual_max": 74090
-    },
-    {
-      "employer": "CRENLO CAB PRODUCTS",
-      "employer_display": "Crenlo Cab Products, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "MN",
-      "worksite_cities": "Rochester",
-      "wage_annual_min": 84000,
-      "wage_annual_median": 84000,
-      "wage_annual_max": 84000
-    },
-    {
-      "employer": "CURIA GLOBAL",
-      "employer_display": "Curia Global, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "NY",
-      "worksite_cities": "Albany",
-      "wage_annual_min": 100100,
-      "wage_annual_median": 100100,
-      "wage_annual_max": 100100
-    },
-    {
-      "employer": "DAEYOUNG ELECTRONICS USA",
-      "employer_display": "Daeyoung Electronics USA LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "SC",
-      "worksite_cities": "Prosperity",
-      "wage_annual_min": 71344,
-      "wage_annual_median": 71344,
-      "wage_annual_max": 71344
-    },
-    {
-      "employer": "DAIMAY NORTH AMERICA AUTOMOTIVE",
-      "employer_display": "Daimay North America Automotive, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Manufacturing Engineers",
-      "worksite_states": "MI",
-      "worksite_cities": "Redford",
-      "wage_annual_min": 76648,
-      "wage_annual_median": 76648,
-      "wage_annual_max": 76648
-    },
-    {
-      "employer": "DEERE COMPANY",
-      "employer_display": "Deere & Company",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "LA",
-      "worksite_cities": "Thibodaux",
-      "wage_annual_min": 109000,
-      "wage_annual_median": 109000,
-      "wage_annual_max": 109000
     },
     {
       "employer": "DEKRA CERTIFICATION",
@@ -2578,66 +1185,6 @@
       "wage_annual_max": 76648
     },
     {
-      "employer": "DELTA ELECTRONICS USA",
-      "employer_display": "DELTA ELECTRONICS (USA) INC.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "Plano",
-      "wage_annual_min": 76939,
-      "wage_annual_median": 76939,
-      "wage_annual_max": 76939
-    },
-    {
-      "employer": "DELTA MATERIALS HANDLING",
-      "employer_display": "Delta Materials Handling, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "TN",
-      "worksite_cities": "Memphis",
-      "wage_annual_min": 72862,
-      "wage_annual_median": 72862,
-      "wage_annual_max": 72862
-    },
-    {
-      "employer": "DETROIT MANUFACTURING SYSTEMS",
-      "employer_display": "Detroit Manufacturing Systems, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "MI",
-      "worksite_cities": "Detroit",
-      "wage_annual_min": 85590,
-      "wage_annual_median": 85590,
-      "wage_annual_max": 85590
-    },
-    {
-      "employer": "DEXIAN",
-      "employer_display": "Dexian LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Manufacturing Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "Houston",
-      "wage_annual_min": 94720,
-      "wage_annual_median": 94720,
-      "wage_annual_max": 94720
-    },
-    {
       "employer": "DIGITAL TERRAIN",
       "employer_display": "DIGITAL TERRAIN, INC.",
       "filing_count": 1,
@@ -2651,51 +1198,6 @@
       "wage_annual_min": 76939,
       "wage_annual_median": 76939,
       "wage_annual_max": 76939
-    },
-    {
-      "employer": "DISCOVERY ENERGY",
-      "employer_display": "Discovery Energy, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Manufacturing Engineers",
-      "worksite_states": "WI",
-      "worksite_cities": "Sheboygan",
-      "wage_annual_min": 76050,
-      "wage_annual_median": 76050,
-      "wage_annual_max": 76050
-    },
-    {
-      "employer": "DON WOOD",
-      "employer_display": "Don Wood Inc",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "FL",
-      "worksite_cities": "ORLANDO",
-      "wage_annual_min": 75000,
-      "wage_annual_median": 75000,
-      "wage_annual_max": 75000
-    },
-    {
-      "employer": "DUCON ENVIRONMENTAL SYSTEMS",
-      "employer_display": "Ducon Environmental Systems",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "Houston",
-      "wage_annual_min": 90000,
-      "wage_annual_median": 90000,
-      "wage_annual_max": 90000
     },
     {
       "employer": "DYNAMIXE",
@@ -2713,66 +1215,6 @@
       "wage_annual_max": 86000
     },
     {
-      "employer": "EAST WEST INDUSTRIAL ENGINEERING",
-      "employer_display": "East West Industrial Engineering LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Manufacturing Engineers",
-      "worksite_states": "IN",
-      "worksite_cities": "Columbus",
-      "wage_annual_min": 84094,
-      "wage_annual_median": 84094,
-      "wage_annual_max": 84094
-    },
-    {
-      "employer": "ECLIPSE MOLD",
-      "employer_display": "Eclipse Mold, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "MI",
-      "worksite_cities": "Chesterfield",
-      "wage_annual_min": 85000,
-      "wage_annual_median": 85000,
-      "wage_annual_max": 85000
-    },
-    {
-      "employer": "ELI LILLY AND COMPANY",
-      "employer_display": "Eli Lilly and Company",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "IN",
-      "worksite_cities": "Indianapolis",
-      "wage_annual_min": 84625,
-      "wage_annual_median": 84625,
-      "wage_annual_max": 84625
-    },
-    {
-      "employer": "ELITE DIGITAL LOGISTICS",
-      "employer_display": "Elite Digital Logistics Inc",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "Houston",
-      "wage_annual_min": 73278,
-      "wage_annual_median": 73278,
-      "wage_annual_max": 73278
-    },
-    {
       "employer": "EMBRAER EXECUTIVE AIRCRAFT",
       "employer_display": "Embraer Executive Aircraft, Inc.",
       "filing_count": 1,
@@ -2786,81 +1228,6 @@
       "wage_annual_min": 90000,
       "wage_annual_median": 90000,
       "wage_annual_max": 90000
-    },
-    {
-      "employer": "EMPOWER CLINIC SERVICES L L C",
-      "employer_display": "Empower Clinic Services, L.L.C.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Validation Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "Houston",
-      "wage_annual_min": 92000,
-      "wage_annual_median": 92000,
-      "wage_annual_max": 92000
-    },
-    {
-      "employer": "ENDOLOGIX",
-      "employer_display": "Endologix LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Validation Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "Los Angeles",
-      "wage_annual_min": 79955,
-      "wage_annual_median": 79955,
-      "wage_annual_max": 79955
-    },
-    {
-      "employer": "ENFOTECH CONSULTING",
-      "employer_display": "Enfotech & Consulting, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "NJ",
-      "worksite_cities": "North Brunswick",
-      "wage_annual_min": 91000,
-      "wage_annual_median": 91000,
-      "wage_annual_max": 91000
-    },
-    {
-      "employer": "ENIN SYSTEMS",
-      "employer_display": "ENIN SYSTEMS INC.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Validation Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "SYLMAR",
-      "wage_annual_min": 79955,
-      "wage_annual_median": 79955,
-      "wage_annual_max": 79955
-    },
-    {
-      "employer": "ENVISTA",
-      "employer_display": "enVista LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "IN",
-      "worksite_cities": "Carmel",
-      "wage_annual_min": 90126,
-      "wage_annual_median": 90126,
-      "wage_annual_max": 90126
     },
     {
       "employer": "ETERAFLEXCONNECTS",
@@ -2878,21 +1245,6 @@
       "wage_annual_max": 86902
     },
     {
-      "employer": "EVEREST GLOBAL SOLUTIONS",
-      "employer_display": "Everest Global Solutions, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Validation Engineers",
-      "worksite_states": "NJ",
-      "worksite_cities": "Dayton",
-      "wage_annual_min": 81037,
-      "wage_annual_median": 81037,
-      "wage_annual_max": 81037
-    },
-    {
       "employer": "EXENTEC U S",
       "employer_display": "Exentec U.S., Inc.",
       "filing_count": 1,
@@ -2908,34 +1260,19 @@
       "wage_annual_max": 90000
     },
     {
-      "employer": "FAMILIA CARE",
-      "employer_display": "Familia Care, Inc.",
+      "employer": "FEDERAL EXPRESS CORPORATION",
+      "employer_display": "Federal Express Corporation",
       "filing_count": 1,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "17-2112",
       "soc_titles": "Industrial Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "Dallas",
-      "wage_annual_min": 86851,
-      "wage_annual_median": 86851,
-      "wage_annual_max": 86851
-    },
-    {
-      "employer": "FGS GLOBAL",
-      "employer_display": "FGS Global",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Human Factors Engineers and Ergonomists",
-      "worksite_states": "NY",
-      "worksite_cities": "New York",
-      "wage_annual_min": 80000,
-      "wage_annual_median": 80000,
-      "wage_annual_max": 80000
+      "worksite_states": "TN",
+      "worksite_cities": "Collierville",
+      "wage_annual_min": 77311,
+      "wage_annual_median": 77311,
+      "wage_annual_max": 77311
     },
     {
       "employer": "FILTRONA FILTERS",
@@ -2953,64 +1290,19 @@
       "wage_annual_max": 80000
     },
     {
-      "employer": "FLEXTRONICS AMERICA",
-      "employer_display": "Flextronics America, LLC",
+      "employer": "FUYAO GLASS AMERICA",
+      "employer_display": "Fuyao Glass America Inc.",
       "filing_count": 1,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "17-2112",
-      "soc_titles": "Manufacturing Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "Austin",
-      "wage_annual_min": 85000,
-      "wage_annual_median": 85000,
-      "wage_annual_max": 85000
-    },
-    {
-      "employer": "FORD MOTOR COMPANY",
-      "employer_display": "FORD MOTOR COMPANY",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Manufacturing Engineers",
+      "soc_titles": "Industrial Engineers",
       "worksite_states": "MI",
-      "worksite_cities": "Dearborn",
-      "wage_annual_min": 96720,
-      "wage_annual_median": 96720,
-      "wage_annual_max": 96720
-    },
-    {
-      "employer": "FREUDENBERG MEDICAL",
-      "employer_display": "Freudenberg Medical, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "Baldwin Park",
-      "wage_annual_min": 95774,
-      "wage_annual_median": 95774,
-      "wage_annual_max": 95774
-    },
-    {
-      "employer": "FSC",
-      "employer_display": "FSC Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "KS",
-      "worksite_cities": "Overland Park",
-      "wage_annual_min": 75000,
-      "wage_annual_median": 75000,
-      "wage_annual_max": 75000
+      "worksite_cities": "Plymouth",
+      "wage_annual_min": 76648,
+      "wage_annual_median": 76648,
+      "wage_annual_max": 76648
     },
     {
       "employer": "GEON PERFORMANCE SOLUTIONS",
@@ -3028,51 +1320,6 @@
       "wage_annual_max": 76024
     },
     {
-      "employer": "GLOBAL STEERING SYSTEMS",
-      "employer_display": "Global Steering Systems, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Manufacturing Engineers",
-      "worksite_states": "CT",
-      "worksite_cities": "Watertown",
-      "wage_annual_min": 75000,
-      "wage_annual_median": 75000,
-      "wage_annual_max": 75000
-    },
-    {
-      "employer": "GRAY ARCHITECTS AND ENGINEERS",
-      "employer_display": "Gray Architects and Engineers, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Manufacturing Engineers",
-      "worksite_states": "GA",
-      "worksite_cities": "Atlanta",
-      "wage_annual_min": 74048,
-      "wage_annual_median": 74048,
-      "wage_annual_max": 74048
-    },
-    {
-      "employer": "GUARDIAN DRUG COMPANY",
-      "employer_display": "Guardian Drug Company, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "NJ",
-      "worksite_cities": "Dayton",
-      "wage_annual_min": 89440,
-      "wage_annual_median": 89440,
-      "wage_annual_max": 89440
-    },
-    {
       "employer": "H E B LP",
       "employer_display": "H-E-B, LP",
       "filing_count": 1,
@@ -3086,111 +1333,6 @@
       "wage_annual_min": 73278,
       "wage_annual_median": 73278,
       "wage_annual_max": 73278
-    },
-    {
-      "employer": "HA AUTOMOTIVE SYSTEMS",
-      "employer_display": "HA Automotive Systems, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "MI",
-      "worksite_cities": "Troy",
-      "wage_annual_min": 76648,
-      "wage_annual_median": 76648,
-      "wage_annual_max": 76648
-    },
-    {
-      "employer": "HARVARD APPARATUS REGENERATIVE TECHNOLOGY",
-      "employer_display": "Harvard Apparatus Regenerative Technology, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Validation Engineers",
-      "worksite_states": "MN",
-      "worksite_cities": "St. Paul",
-      "wage_annual_min": 78000,
-      "wage_annual_median": 78000,
-      "wage_annual_max": 78000
-    },
-    {
-      "employer": "HARVARD BIOSCIENCE",
-      "employer_display": "Harvard Bioscience Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Validation Engineers",
-      "worksite_states": "MN",
-      "worksite_cities": "St. Paul",
-      "wage_annual_min": 78000,
-      "wage_annual_median": 78000,
-      "wage_annual_max": 78000
-    },
-    {
-      "employer": "HIRE IT PEOPLE",
-      "employer_display": "Hire IT People, Inc",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Validation Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "Mountain View",
-      "wage_annual_min": 95680,
-      "wage_annual_median": 95680,
-      "wage_annual_max": 95680
-    },
-    {
-      "employer": "HL MANDO AMERICA CORPORATION",
-      "employer_display": "HL Mando America Corporation",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Validation Engineers",
-      "worksite_states": "GA",
-      "worksite_cities": "Hogansville",
-      "wage_annual_min": 71115,
-      "wage_annual_median": 71115,
-      "wage_annual_max": 71115
-    },
-    {
-      "employer": "HUF NORTH AMERICA AUTOMOTIVE PARTS MANUFACTURING",
-      "employer_display": "Huf North America Automotive Parts Manufacturing, Corp.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "TN",
-      "worksite_cities": "Greeneville",
-      "wage_annual_min": 87793,
-      "wage_annual_median": 87793,
-      "wage_annual_max": 87793
-    },
-    {
-      "employer": "IFA ROTORION NORTH AMERICA",
-      "employer_display": "IFA ROTORION- North America LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "SC",
-      "worksite_cities": "Summerville",
-      "wage_annual_min": 86000,
-      "wage_annual_median": 86000,
-      "wage_annual_max": 86000
     },
     {
       "employer": "IFAB",
@@ -3223,109 +1365,64 @@
       "wage_annual_max": 77300
     },
     {
-      "employer": "INTERTECH PLASTICS",
-      "employer_display": "Intertech Plastics, LLC",
+      "employer": "INVAGEN PHARMACEUTICALS",
+      "employer_display": "InvaGen Pharmaceuticals, Inc.",
       "filing_count": 1,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "17-2112",
       "soc_titles": "Validation Engineers",
-      "worksite_states": "CO",
-      "worksite_cities": "Denver",
-      "wage_annual_min": 82160,
-      "wage_annual_median": 82160,
-      "wage_annual_max": 82160
+      "worksite_states": "NY",
+      "worksite_cities": "Central Islip",
+      "wage_annual_min": 90000,
+      "wage_annual_median": 90000,
+      "wage_annual_max": 90000
     },
     {
-      "employer": "JCS SYSTEMS",
-      "employer_display": "JCS SYSTEMS INC",
+      "employer": "KARTECH SOLUTIONS",
+      "employer_display": "Kartech Solutions, Inc.",
       "filing_count": 1,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Validation Engineers",
-      "worksite_states": "GA",
-      "worksite_cities": "CARTERSVILLE",
-      "wage_annual_min": 79000,
-      "wage_annual_median": 79000,
-      "wage_annual_max": 79000
-    },
-    {
-      "employer": "JSW STEEL USA",
-      "employer_display": "JSW Steel USA Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "Baytown",
-      "wage_annual_min": 95319,
-      "wage_annual_median": 95319,
-      "wage_annual_max": 95319
-    },
-    {
-      "employer": "KENNEDY INTERNATIONAL SOFTWARE",
-      "employer_display": "Kennedy International Software Inc",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Validation Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "Santa Clara",
-      "wage_annual_min": 108160,
-      "wage_annual_median": 108160,
-      "wage_annual_max": 108160
-    },
-    {
-      "employer": "LABRADOR FUNDORA CORPORATION",
-      "employer_display": "Labrador & Fundora Corporation",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "FL",
-      "worksite_cities": "Opa-Locka",
-      "wage_annual_min": 74235,
-      "wage_annual_median": 74235,
-      "wage_annual_max": 74235
-    },
-    {
-      "employer": "LANDSCAPE FORMS",
-      "employer_display": "Landscape Forms, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "17-2112",
       "soc_titles": "Manufacturing Engineers",
-      "worksite_states": "MI",
-      "worksite_cities": "Kalamazoo",
-      "wage_annual_min": 72000,
-      "wage_annual_median": 72000,
-      "wage_annual_max": 72000
+      "worksite_states": "TX",
+      "worksite_cities": "Austin",
+      "wage_annual_min": 69389,
+      "wage_annual_median": 69389,
+      "wage_annual_max": 69389
     },
     {
-      "employer": "LEAR CORPORATION",
-      "employer_display": "LEAR CORPORATION",
+      "employer": "KATALYST HEALTHCARES LIFE SCIENCES",
+      "employer_display": "KATALYST HEALTHCARES & LIFE SCIENCES INC.",
       "filing_count": 1,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2112",
+      "soc_titles": "Manufacturing Engineers",
+      "worksite_states": "MA",
+      "worksite_cities": "MANSFIELD",
+      "wage_annual_min": 79685,
+      "wage_annual_median": 79685,
+      "wage_annual_max": 79685
+    },
+    {
+      "employer": "LG ENERGY SOLUTION ARIZONA",
+      "employer_display": "LG Energy Solution Arizona, Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "17-2112",
       "soc_titles": "Industrial Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "Grand Prairie",
-      "wage_annual_min": 100000,
-      "wage_annual_median": 100000,
-      "wage_annual_max": 100000
+      "worksite_states": "AZ",
+      "worksite_cities": "Queen Creek",
+      "wage_annual_min": 119703,
+      "wage_annual_median": 119703,
+      "wage_annual_max": 119703
     },
     {
       "employer": "LONZA BIOLOGICS",
@@ -3388,79 +1485,19 @@
       "wage_annual_max": 86214
     },
     {
-      "employer": "MALACH USA LLP",
-      "employer_display": "Malach USA LLP",
+      "employer": "MAXGRIP AMERICAS",
+      "employer_display": "Maxgrip Americas Inc",
       "filing_count": 1,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Manufacturing Engineers",
-      "worksite_states": "ND",
-      "worksite_cities": "Valley City",
-      "wage_annual_min": 70000,
-      "wage_annual_median": 70000,
-      "wage_annual_max": 70000
-    },
-    {
-      "employer": "MASTER COMPLIANCE",
-      "employer_display": "Master Compliance, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Validation Engineers",
-      "worksite_states": "NJ",
-      "worksite_cities": "Summit",
-      "wage_annual_min": 76000,
-      "wage_annual_median": 76000,
-      "wage_annual_max": 76000
-    },
-    {
-      "employer": "MAVEN COMPANIES",
-      "employer_display": "MAVEN COMPANIES, INC.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "17-2112",
       "soc_titles": "Industrial Engineers",
-      "worksite_states": "CT",
-      "worksite_cities": "Bloomfield",
-      "wage_annual_min": 79477,
-      "wage_annual_median": 79477,
-      "wage_annual_max": 79477
-    },
-    {
-      "employer": "MEDEFIL",
-      "employer_display": "Medefil, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "IL",
-      "worksite_cities": "Glendale Heights",
-      "wage_annual_min": 90000,
-      "wage_annual_median": 90000,
-      "wage_annual_max": 90000
-    },
-    {
-      "employer": "MESTEK",
-      "employer_display": "Mestek Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Manufacturing Engineers",
       "worksite_states": "TX",
-      "worksite_cities": "Dallas",
-      "wage_annual_min": 88140,
-      "wage_annual_median": 88140,
-      "wage_annual_max": 88140
+      "worksite_cities": "Houston",
+      "wage_annual_min": 81000,
+      "wage_annual_median": 81000,
+      "wage_annual_max": 81000
     },
     {
       "employer": "MI WINDOWS AND DOORS",
@@ -3478,51 +1515,6 @@
       "wage_annual_max": 90000
     },
     {
-      "employer": "MICRO SYSTEMS ENGINEERING",
-      "employer_display": "Micro Systems Engineering, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "OR",
-      "worksite_cities": "Lake Oswego",
-      "wage_annual_min": 88816,
-      "wage_annual_median": 88816,
-      "wage_annual_max": 88816
-    },
-    {
-      "employer": "MICRON IDAHO SEMICONDUCTOR MANUFACTURING TRITON",
-      "employer_display": "Micron Idaho Semiconductor Manufacturing (Triton) LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Manufacturing Engineers",
-      "worksite_states": "ID",
-      "worksite_cities": "Boise",
-      "wage_annual_min": 98000,
-      "wage_annual_median": 98000,
-      "wage_annual_max": 98000
-    },
-    {
-      "employer": "MICRON TECHNOLOGY",
-      "employer_display": "Micron Technology, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Manufacturing Engineers",
-      "worksite_states": "VA",
-      "worksite_cities": "Manassas",
-      "wage_annual_min": 95080,
-      "wage_annual_median": 95080,
-      "wage_annual_max": 95080
-    },
-    {
       "employer": "MILLENNIUM SOFTWARE",
       "employer_display": "Millennium Software, Inc.",
       "filing_count": 1,
@@ -3536,21 +1528,6 @@
       "wage_annual_min": 76939,
       "wage_annual_median": 76939,
       "wage_annual_max": 76939
-    },
-    {
-      "employer": "MITAC INFORMATION SYSTEMS",
-      "employer_display": "Mitac Information Systems Corp.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "Newark",
-      "wage_annual_min": 100000,
-      "wage_annual_median": 100000,
-      "wage_annual_max": 100000
     },
     {
       "employer": "MONTANA SPECIALTY MILLS",
@@ -3598,36 +1575,6 @@
       "wage_annual_max": 74568
     },
     {
-      "employer": "MSR TECHNOLOGY GROUP",
-      "employer_display": "MSR TECHNOLOGY GROUP LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Manufacturing Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "CONROE",
-      "wage_annual_min": 73500,
-      "wage_annual_median": 73500,
-      "wage_annual_max": 73500
-    },
-    {
-      "employer": "MULTILINK",
-      "employer_display": "Multilink Inc",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Manufacturing Engineers",
-      "worksite_states": "OH",
-      "worksite_cities": "Elyria",
-      "wage_annual_min": 85000,
-      "wage_annual_median": 85000,
-      "wage_annual_max": 85000
-    },
-    {
       "employer": "N A PROJECT MANAGEMENT USA",
       "employer_display": "N&A Project Management USA, Inc",
       "filing_count": 1,
@@ -3641,21 +1588,6 @@
       "wage_annual_min": 84386,
       "wage_annual_median": 84386,
       "wage_annual_max": 84386
-    },
-    {
-      "employer": "ND GLOBAL CONSULTING SERVICES",
-      "employer_display": "ND Global Consulting Services Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Validation Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "Santa Rosa",
-      "wage_annual_min": 86528,
-      "wage_annual_median": 86528,
-      "wage_annual_max": 86528
     },
     {
       "employer": "NEURALINK",
@@ -3688,6 +1620,21 @@
       "wage_annual_max": 86902
     },
     {
+      "employer": "NIAGARA BOTTLING",
+      "employer_display": "Niagara Bottling, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2112",
+      "soc_titles": "Industrial Engineers",
+      "worksite_states": "CA",
+      "worksite_cities": "Diamond Bar",
+      "wage_annual_min": 110000,
+      "wage_annual_median": 110000,
+      "wage_annual_max": 110000
+    },
+    {
       "employer": "NIDEC MOBILITY AMERICA CORPORATION",
       "employer_display": "Nidec Mobility America Corporation",
       "filing_count": 1,
@@ -3701,66 +1648,6 @@
       "wage_annual_min": 85000,
       "wage_annual_median": 85000,
       "wage_annual_max": 85000
-    },
-    {
-      "employer": "NORTH ALABAMA FABRICATING COMPANY",
-      "employer_display": "North Alabama Fabricating Company, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "IL",
-      "worksite_cities": "Chicago",
-      "wage_annual_min": 78208,
-      "wage_annual_median": 78208,
-      "wage_annual_max": 78208
-    },
-    {
-      "employer": "NORWOOD MEDICAL",
-      "employer_display": "Norwood Medical LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "OH",
-      "worksite_cities": "Dayton",
-      "wage_annual_min": 74000,
-      "wage_annual_median": 74000,
-      "wage_annual_max": 74000
-    },
-    {
-      "employer": "OMNIMETRIX",
-      "employer_display": "Omnimetrix  LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "GA",
-      "worksite_cities": "Buford",
-      "wage_annual_min": 80500,
-      "wage_annual_median": 80500,
-      "wage_annual_max": 80500
-    },
-    {
-      "employer": "ONEH2",
-      "employer_display": "OneH2, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "NC",
-      "worksite_cities": "Longview",
-      "wage_annual_min": 70000,
-      "wage_annual_median": 70000,
-      "wage_annual_max": 70000
     },
     {
       "employer": "ONESOURCE SERVICES US",
@@ -3823,21 +1710,6 @@
       "wage_annual_max": 83200
     },
     {
-      "employer": "PERKINELMER US",
-      "employer_display": "PERKINELMER US LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Validation Engineers",
-      "worksite_states": "CT",
-      "worksite_cities": "Shelton",
-      "wage_annual_min": 90000,
-      "wage_annual_median": 90000,
-      "wage_annual_max": 90000
-    },
-    {
       "employer": "PFIZER",
       "employer_display": "PFIZER INC.",
       "filing_count": 1,
@@ -3853,51 +1725,6 @@
       "wage_annual_max": 96300
     },
     {
-      "employer": "PQE US INCORPORATED",
-      "employer_display": "PQE US Incorporated",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Validation Engineers",
-      "worksite_states": "NJ",
-      "worksite_cities": "Pennington",
-      "wage_annual_min": 90000,
-      "wage_annual_median": 90000,
-      "wage_annual_max": 90000
-    },
-    {
-      "employer": "PRECISION GLASS INDUSTRIES",
-      "employer_display": "Precision Glass Industries",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "Houston",
-      "wage_annual_min": 73278,
-      "wage_annual_median": 73278,
-      "wage_annual_max": 73278
-    },
-    {
-      "employer": "PREMIUM FAMILY PHARMACY",
-      "employer_display": "Premium Family Pharmacy LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "Denton",
-      "wage_annual_min": 77000,
-      "wage_annual_median": 77000,
-      "wage_annual_max": 77000
-    },
-    {
       "employer": "PRICE INDUSTRIES",
       "employer_display": "Price Industries, Inc",
       "filing_count": 1,
@@ -3911,51 +1738,6 @@
       "wage_annual_min": 75000,
       "wage_annual_median": 75000,
       "wage_annual_max": 75000
-    },
-    {
-      "employer": "PRIME CONTROLS L P",
-      "employer_display": "Prime Controls L.P.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Manufacturing Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "Sugar Land",
-      "wage_annual_min": 76939,
-      "wage_annual_median": 76939,
-      "wage_annual_max": 76939
-    },
-    {
-      "employer": "PROCESS DISPLAYS",
-      "employer_display": "Process Displays LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "MN",
-      "worksite_cities": "Golden Valley",
-      "wage_annual_min": 78000,
-      "wage_annual_median": 78000,
-      "wage_annual_max": 78000
-    },
-    {
-      "employer": "PRODUCTION SERVICES MANAGEMENT",
-      "employer_display": "Production Services Management LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "IA",
-      "worksite_cities": "Waterloo",
-      "wage_annual_min": 83948,
-      "wage_annual_median": 83948,
-      "wage_annual_max": 83948
     },
     {
       "employer": "PRODUCTIVE RESOURCES",
@@ -3988,36 +1770,6 @@
       "wage_annual_max": 76000
     },
     {
-      "employer": "PURDUE UNIVERSITY",
-      "employer_display": "Purdue University",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "IN",
-      "worksite_cities": "West Lafayette",
-      "wage_annual_min": 66300,
-      "wage_annual_median": 66300,
-      "wage_annual_max": 66300
-    },
-    {
-      "employer": "PURE AUTOMATION CORPORATION",
-      "employer_display": "Pure Automation Corporation",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "Chino",
-      "wage_annual_min": 71718,
-      "wage_annual_median": 71718,
-      "wage_annual_max": 71718
-    },
-    {
       "employer": "QCWORLDFRUIT LIMITED LIABILITY COMPANY",
       "employer_display": "QCWORLDFRUIT LIMITED LIABILITY COMPANY",
       "filing_count": 1,
@@ -4031,6 +1783,21 @@
       "wage_annual_min": 76336,
       "wage_annual_median": 76336,
       "wage_annual_max": 76336
+    },
+    {
+      "employer": "QUANTA MANUFACTURING NASHVILLE",
+      "employer_display": "Quanta Manufacturing Nashville, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "17-2112",
+      "soc_titles": "Industrial Engineers",
+      "worksite_states": "TN",
+      "worksite_cities": "La Vergne",
+      "wage_annual_min": 93000,
+      "wage_annual_median": 93000,
+      "wage_annual_max": 93000
     },
     {
       "employer": "QVALFOCUS",
@@ -4048,21 +1815,6 @@
       "wage_annual_max": 82000
     },
     {
-      "employer": "R D CIRCUITS",
-      "employer_display": "R&D Circuits, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Manufacturing Engineers",
-      "worksite_states": "NJ",
-      "worksite_cities": "South Plainfield",
-      "wage_annual_min": 81037,
-      "wage_annual_median": 81037,
-      "wage_annual_max": 81037
-    },
-    {
       "employer": "RAGAN CONSULTING SOLUTIONS",
       "employer_display": "RAGAN CONSULTING SOLUTIONS, LLC",
       "filing_count": 1,
@@ -4076,21 +1828,6 @@
       "wage_annual_min": 89357,
       "wage_annual_median": 89357,
       "wage_annual_max": 89357
-    },
-    {
-      "employer": "RELIANCE ELECTRONICS",
-      "employer_display": "Reliance Electronics, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Manufacturing Engineers",
-      "worksite_states": "NJ",
-      "worksite_cities": "Totowa",
-      "wage_annual_min": 81162,
-      "wage_annual_median": 81162,
-      "wage_annual_max": 81162
     },
     {
       "employer": "RENEWAL BY ANDERSEN",
@@ -4123,21 +1860,6 @@
       "wage_annual_max": 95139
     },
     {
-      "employer": "ROLENE",
-      "employer_display": "ROLENE LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "MA",
-      "worksite_cities": "Somerville",
-      "wage_annual_min": 86902,
-      "wage_annual_median": 86902,
-      "wage_annual_max": 86902
-    },
-    {
       "employer": "ROLLS ROYCE SOLUTIONS AMERICA",
       "employer_display": "Rolls-Royce Solutions America Inc.",
       "filing_count": 1,
@@ -4151,21 +1873,6 @@
       "wage_annual_min": 68000,
       "wage_annual_median": 68000,
       "wage_annual_max": 68000
-    },
-    {
-      "employer": "ROOTS MULTI CLEAN",
-      "employer_display": "Roots Multi Clean, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "AL",
-      "worksite_cities": "Lacey's Spring",
-      "wage_annual_min": 82576,
-      "wage_annual_median": 82576,
-      "wage_annual_max": 82576
     },
     {
       "employer": "RUNERGY ALABAMA",
@@ -4198,21 +1905,6 @@
       "wage_annual_max": 104000
     },
     {
-      "employer": "SAF HOLLAND",
-      "employer_display": "SAF-HOLLAND, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "AR",
-      "worksite_cities": "Dumas",
-      "wage_annual_min": 75000,
-      "wage_annual_median": 75000,
-      "wage_annual_max": 75000
-    },
-    {
       "employer": "SAMSUNG AUSTIN SEMICONDUCTOR",
       "employer_display": "Samsung Austin Semiconductor, LLC.",
       "filing_count": 1,
@@ -4226,21 +1918,6 @@
       "wage_annual_min": 75000,
       "wage_annual_median": 75000,
       "wage_annual_max": 75000
-    },
-    {
-      "employer": "SAREPTA THERAPEUTICS",
-      "employer_display": "Sarepta Therapeutics, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Manufacturing Engineers",
-      "worksite_states": "MA",
-      "worksite_cities": "Andover",
-      "wage_annual_min": 85000,
-      "wage_annual_median": 85000,
-      "wage_annual_max": 85000
     },
     {
       "employer": "SEATRIUM LETOURNEAU USA",
@@ -4288,111 +1965,6 @@
       "wage_annual_max": 74880
     },
     {
-      "employer": "SHANDS TEACHING HOSPITAL AND CLINICS",
-      "employer_display": "SHANDS TEACHING HOSPITAL AND CLINICS, INC.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "FL",
-      "worksite_cities": "Gainesville",
-      "wage_annual_min": 73154,
-      "wage_annual_median": 73154,
-      "wage_annual_max": 73154
-    },
-    {
-      "employer": "SHL MEDICAL ASSEMBLY SERVICES",
-      "employer_display": "SHL Medical Assembly & Services LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Manufacturing Engineers",
-      "worksite_states": "FL",
-      "worksite_cities": "Deerfield Beach",
-      "wage_annual_min": 80038,
-      "wage_annual_median": 80038,
-      "wage_annual_max": 80038
-    },
-    {
-      "employer": "SHOOLIN",
-      "employer_display": "Shoolin Inc",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "MA",
-      "worksite_cities": "North Andover",
-      "wage_annual_min": 86902,
-      "wage_annual_median": 86902,
-      "wage_annual_max": 86902
-    },
-    {
-      "employer": "SIRIUS CONTROLS",
-      "employer_display": "Sirius Controls Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "Midland",
-      "wage_annual_min": 90438,
-      "wage_annual_median": 90438,
-      "wage_annual_max": 90438
-    },
-    {
-      "employer": "SMART KARTON NORTH AMERICA",
-      "employer_display": "Smart Karton North America LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "MO",
-      "worksite_cities": "Maryland Heights",
-      "wage_annual_min": 70574,
-      "wage_annual_median": 70574,
-      "wage_annual_max": 70574
-    },
-    {
-      "employer": "SOFIDEL AMERICA CORPORATION",
-      "employer_display": "Sofidel America Corporation",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "AZ",
-      "worksite_cities": "Phoenix",
-      "wage_annual_min": 93000,
-      "wage_annual_median": 93000,
-      "wage_annual_max": 93000
-    },
-    {
-      "employer": "SPECIALTY BOLT AND SCREW",
-      "employer_display": "Specialty Bolt and Screw, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "MA",
-      "worksite_cities": "Agawam",
-      "wage_annual_min": 75816,
-      "wage_annual_median": 75816,
-      "wage_annual_max": 75816
-    },
-    {
       "employer": "SPIRIT AIRLINES",
       "employer_display": "Spirit Airlines, LLC",
       "filing_count": 1,
@@ -4408,51 +1980,6 @@
       "wage_annual_max": 90000
     },
     {
-      "employer": "STARK ASSOCIATES",
-      "employer_display": "STARK ASSOCIATES, LLC.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Validation Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "AUSTIN",
-      "wage_annual_min": 69389,
-      "wage_annual_median": 69389,
-      "wage_annual_max": 69389
-    },
-    {
-      "employer": "STRONG TOWER CONSTRUCTION",
-      "employer_display": "Strong Tower Construction, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "KY",
-      "worksite_cities": "Louisville",
-      "wage_annual_min": 85000,
-      "wage_annual_median": 85000,
-      "wage_annual_max": 85000
-    },
-    {
-      "employer": "STRYKER CORPORATION",
-      "employer_display": "Stryker Corporation",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "Fremont",
-      "wage_annual_min": 100400,
-      "wage_annual_median": 100400,
-      "wage_annual_max": 100400
-    },
-    {
       "employer": "SUPERIOR COMPOSITES CO",
       "employer_display": "Superior Composites Co., LLC",
       "filing_count": 1,
@@ -4466,21 +1993,6 @@
       "wage_annual_min": 71053,
       "wage_annual_median": 71053,
       "wage_annual_max": 71053
-    },
-    {
-      "employer": "SYNQOR",
-      "employer_display": "SynQor, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Manufacturing Engineers",
-      "worksite_states": "MA",
-      "worksite_cities": "Boxborough",
-      "wage_annual_min": 92500,
-      "wage_annual_median": 92500,
-      "wage_annual_max": 92500
     },
     {
       "employer": "SYSTEMS TECHNOLOGY GROUP",
@@ -4528,36 +2040,6 @@
       "wage_annual_max": 68390
     },
     {
-      "employer": "TECNOCAP",
-      "employer_display": "Tecnocap LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Manufacturing Engineers",
-      "worksite_states": "WV",
-      "worksite_cities": "Glen Dale",
-      "wage_annual_min": 79040,
-      "wage_annual_median": 79040,
-      "wage_annual_max": 79040
-    },
-    {
-      "employer": "TEK LABS",
-      "employer_display": "Tek Labs, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Manufacturing Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "Weatherford",
-      "wage_annual_min": 76939,
-      "wage_annual_median": 76939,
-      "wage_annual_max": 76939
-    },
-    {
       "employer": "TEMPUR PRODUCTION USA",
       "employer_display": "Tempur Production USA, LLC",
       "filing_count": 1,
@@ -4571,21 +2053,6 @@
       "wage_annual_min": 91339,
       "wage_annual_median": 91339,
       "wage_annual_max": 91339
-    },
-    {
-      "employer": "TERMINAL INVESTMENT CORPORATION TICO MANUFACTURING DIVISION",
-      "employer_display": "Terminal Investment Corporation (TICO) - Manufacturing Division",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Manufacturing Engineers",
-      "worksite_states": "SC",
-      "worksite_cities": "Ridgeland",
-      "wage_annual_min": 84341,
-      "wage_annual_median": 84341,
-      "wage_annual_max": 84341
     },
     {
       "employer": "TETRA COMPUTING",
@@ -4648,21 +2115,6 @@
       "wage_annual_max": 105336
     },
     {
-      "employer": "TITAN INDUSTRIAL SERVICES",
-      "employer_display": "Titan Industrial Services, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "MD",
-      "worksite_cities": "Baltimore",
-      "wage_annual_min": 85000,
-      "wage_annual_median": 85000,
-      "wage_annual_max": 85000
-    },
-    {
       "employer": "TOTEX MANUFACTURING",
       "employer_display": "Totex Manufacturing Inc.",
       "filing_count": 1,
@@ -4676,81 +2128,6 @@
       "wage_annual_min": 79999,
       "wage_annual_median": 79999,
       "wage_annual_max": 79999
-    },
-    {
-      "employer": "TRADEMARK PLASTICS",
-      "employer_display": "Trademark Plastics, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Manufacturing Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "Riverside",
-      "wage_annual_min": 85000,
-      "wage_annual_median": 85000,
-      "wage_annual_max": 85000
-    },
-    {
-      "employer": "TUV RHEINLAND OF NORTH AMERICA",
-      "employer_display": "TUV Rheinland of North America, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Validation Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "Pleasanton",
-      "wage_annual_min": 100878,
-      "wage_annual_median": 100878,
-      "wage_annual_max": 100878
-    },
-    {
-      "employer": "UIPATHTEK",
-      "employer_display": "UIPATHTEK LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Validation Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "Oceanside",
-      "wage_annual_min": 81245,
-      "wage_annual_median": 81245,
-      "wage_annual_max": 81245
-    },
-    {
-      "employer": "ULTIUM CELLS",
-      "employer_display": "Ultium Cells LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "OH",
-      "worksite_cities": "Warren",
-      "wage_annual_min": 82000,
-      "wage_annual_median": 82000,
-      "wage_annual_max": 82000
-    },
-    {
-      "employer": "UNITED PARCEL SERVICE",
-      "employer_display": "United Parcel Service, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "Fremont",
-      "wage_annual_min": 99683,
-      "wage_annual_median": 99683,
-      "wage_annual_max": 99683
     },
     {
       "employer": "UNIVERSITY OF FLORIDA HEALTH CORPORATION",
@@ -4783,34 +2160,19 @@
       "wage_annual_max": 75000
     },
     {
-      "employer": "UNIVERSITY OF LOUISVILLE",
-      "employer_display": "University of Louisville",
+      "employer": "VALIDATION ASSOCIATES",
+      "employer_display": "Validation Associates LLC",
       "filing_count": 1,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "KY",
-      "worksite_cities": "Louisville",
-      "wage_annual_min": 62213,
-      "wage_annual_median": 62213,
-      "wage_annual_max": 62213
-    },
-    {
-      "employer": "VALENT AEROSTRUCTURES",
-      "employer_display": "Valent Aerostructures, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "MO",
-      "worksite_cities": "Washington",
-      "wage_annual_min": 70902,
-      "wage_annual_median": 70902,
-      "wage_annual_max": 70902
+      "soc_titles": "Validation Engineers",
+      "worksite_states": "NY",
+      "worksite_cities": "East Greenbush",
+      "wage_annual_min": 85904,
+      "wage_annual_median": 85904,
+      "wage_annual_max": 85904
     },
     {
       "employer": "VALIDYNE ENGINEERING CORPORATION",
@@ -4828,51 +2190,6 @@
       "wage_annual_max": 83000
     },
     {
-      "employer": "VENTI AIR PRODUCTS",
-      "employer_display": "VENTI AIR PRODUCTS LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "ROSENBERG",
-      "wage_annual_min": 74000,
-      "wage_annual_median": 74000,
-      "wage_annual_max": 74000
-    },
-    {
-      "employer": "VENUS CONCEPT USA",
-      "employer_display": "Venus Concept USA Inc",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Validation Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "San Jose",
-      "wage_annual_min": 107000,
-      "wage_annual_median": 107000,
-      "wage_annual_max": 107000
-    },
-    {
-      "employer": "VIAVI SOLUTIONS",
-      "employer_display": "Viavi Solutions Inc",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Manufacturing Engineers",
-      "worksite_states": "VA",
-      "worksite_cities": "Paeonian Springs",
-      "wage_annual_min": 110000,
-      "wage_annual_median": 110000,
-      "wage_annual_max": 110000
-    },
-    {
       "employer": "VISUAL COMFORT",
       "employer_display": "Visual Comfort LLC",
       "filing_count": 1,
@@ -4886,66 +2203,6 @@
       "wage_annual_min": 86775,
       "wage_annual_median": 86775,
       "wage_annual_max": 86775
-    },
-    {
-      "employer": "VOLVO GROUP NORTH AMERICA",
-      "employer_display": "VOLVO GROUP NORTH AMERICA, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Manufacturing Engineers",
-      "worksite_states": "NC",
-      "worksite_cities": "Greensboro",
-      "wage_annual_min": 89000,
-      "wage_annual_median": 89000,
-      "wage_annual_max": 89000
-    },
-    {
-      "employer": "WABTEC US RAIL",
-      "employer_display": "Wabtec US Rail, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Validation Engineers",
-      "worksite_states": "FL",
-      "worksite_cities": "West Melbourne",
-      "wage_annual_min": 121021,
-      "wage_annual_median": 121021,
-      "wage_annual_max": 121021
-    },
-    {
-      "employer": "WAHL CLIPPER CORPORATION",
-      "employer_display": "Wahl Clipper Corporation",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Industrial Engineers",
-      "worksite_states": "IL",
-      "worksite_cities": "Sterling",
-      "wage_annual_min": 80000,
-      "wage_annual_median": 80000,
-      "wage_annual_max": 80000
-    },
-    {
-      "employer": "WELK KO FABRICATORS",
-      "employer_display": "WELK-KO FABRICATORS, INC.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "17-2112",
-      "soc_titles": "Manufacturing Engineers",
-      "worksite_states": "MI",
-      "worksite_cities": "Livonia",
-      "wage_annual_min": 80000,
-      "wage_annual_median": 80000,
-      "wage_annual_max": 80000
     },
     {
       "employer": "WESTERN EXTRUSIONS CORPORATION",
@@ -4993,19 +2250,19 @@
       "wage_annual_max": 81037
     },
     {
-      "employer": "XLC SERVICES",
-      "employer_display": "XLC Services, LLC",
+      "employer": "YANFENG INTERNATIONAL AUTOMOTIVE TECHNOLOGY US I",
+      "employer_display": "Yanfeng International Automotive Technology US I LLC",
       "filing_count": 1,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "17-2112",
       "soc_titles": "Industrial Engineers",
-      "worksite_states": "OH",
-      "worksite_cities": "Cincinnati",
-      "wage_annual_min": 82000,
-      "wage_annual_median": 82000,
-      "wage_annual_max": 82000
+      "worksite_states": "TN",
+      "worksite_cities": "Chattanooga",
+      "wage_annual_min": 85000,
+      "wage_annual_median": 85000,
+      "wage_annual_max": 85000
     }
   ]
 }

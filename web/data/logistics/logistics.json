@@ -1,6 +1,6 @@
 {
   "role": "logistics",
-  "generated_at_utc": "2026-09-14 12:43 UTC",
+  "generated_at_utc": "2026-10-05 14:32 UTC",
   "source": "US DOL OFLC LCA Programs disclosure data (public record)",
   "filters": {
     "case_status": "Certified",
@@ -10,132 +10,66 @@
     "pw_wage_level": "I"
   },
   "quarters_used": [
-    "FY2025Q4",
     "FY2026Q1"
   ],
   "quarters_superseded": {},
   "funnel": {
-    "rows_total": 201700,
-    "rows_certified": 181277,
-    "rows_soc_matched": 687,
-    "rows_selected": 85
+    "rows_total": 83120,
+    "rows_certified": 74664,
+    "rows_soc_matched": 289,
+    "rows_selected": 31
   },
-  "employer_groups": 68,
-  "rows_wage_excluded_from_wage_stats": 2,
+  "employer_groups": 25,
+  "rows_wage_excluded_from_wage_stats": 0,
   "patterns": {
     "basis": {
-      "filings": 85,
-      "employers": 68,
+      "filings": 31,
+      "employers": 25,
       "measured_by": "employers",
       "min_support_employers": 3
     },
     "job_titles": {
       "recurring_tokens": [
         {
-          "token": "logistics",
-          "employers": 34,
-          "filings": 35
-        },
-        {
           "token": "analyst",
-          "employers": 28,
-          "filings": 29
+          "employers": 10,
+          "filings": 11
         },
         {
           "token": "specialist",
-          "employers": 14,
-          "filings": 21
+          "employers": 7,
+          "filings": 9
         },
         {
-          "token": "supply",
-          "employers": 13,
-          "filings": 14
-        },
-        {
-          "token": "engineer",
-          "employers": 11,
-          "filings": 15
-        },
-        {
-          "token": "chain",
-          "employers": 11,
-          "filings": 12
-        },
-        {
-          "token": "coordinator",
+          "token": "logistics",
           "employers": 7,
           "filings": 7
         },
         {
-          "token": "operations",
+          "token": "chain",
           "employers": 6,
-          "filings": 9
-        },
-        {
-          "token": "manager",
-          "employers": 5,
           "filings": 6
         },
         {
-          "token": "operation",
+          "token": "supply",
+          "employers": 6,
+          "filings": 6
+        },
+        {
+          "token": "operations",
           "employers": 4,
           "filings": 5
         },
         {
-          "token": "logistic",
-          "employers": 4,
+          "token": "operation",
+          "employers": 3,
           "filings": 4
-        },
-        {
-          "token": "business",
-          "employers": 3,
-          "filings": 3
-        },
-        {
-          "token": "management",
-          "employers": 3,
-          "filings": 3
-        },
-        {
-          "token": "planner",
-          "employers": 3,
-          "filings": 3
-        },
-        {
-          "token": "production",
-          "employers": 3,
-          "filings": 3
-        },
-        {
-          "token": "project",
-          "employers": 3,
-          "filings": 3
-        },
-        {
-          "token": "warehouse",
-          "employers": 3,
-          "filings": 3
         }
       ],
       "distinct_titles": [
         {
           "title": "Logistics Analyst",
-          "employers": 12,
-          "filings": 12
-        },
-        {
-          "title": "Logistics Engineer",
           "employers": 3,
-          "filings": 4
-        },
-        {
-          "title": "Supply Chain Analyst",
-          "employers": 3,
-          "filings": 3
-        },
-        {
-          "title": "Supply Chain Manager I",
-          "employers": 2,
           "filings": 3
         },
         {
@@ -144,19 +78,19 @@
           "filings": 3
         },
         {
-          "title": "Logistics Specialist",
+          "title": "Supply Chain Analyst",
           "employers": 2,
           "filings": 2
         },
         {
-          "title": "Hardware Commodity Specialist II",
-          "employers": 1,
-          "filings": 4
+          "title": "Supply Chain Manager I",
+          "employers": 2,
+          "filings": 2
         },
         {
           "title": "Operations Engineer I",
           "employers": 1,
-          "filings": 4
+          "filings": 2
         },
         {
           "title": "Assistant Engineer",
@@ -169,32 +103,7 @@
           "filings": 1
         },
         {
-          "title": "Business Analyst I",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Business Logistics Analyst",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Business Operations Specialists",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "CBR ANALYST/MATERIALS PLANNER",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Delivery & Logistics Coordinator",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Fulfilment Coordinator",
           "employers": 1,
           "filings": 1
         },
@@ -214,7 +123,7 @@
           "filings": 1
         },
         {
-          "title": "International Logistics Analyst",
+          "title": "Hardware Commodity Specialist II",
           "employers": 1,
           "filings": 1
         },
@@ -224,62 +133,12 @@
           "filings": 1
         },
         {
-          "title": "LOGISTICS ANALYST",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Logistic & WH Specialist",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Logistic Analyst",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Logistic Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Logistic, Supply Chain and Operation Specialist",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Logistician Analyst, Operations Planning & Control",
           "employers": 1,
           "filings": 1
         },
         {
-          "title": "Logistics Analysts",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Logistics Engineering Specialist",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Logistics and Stock Manager",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Logistics and Supply Chain Coordinator",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Logistics and Technology Analyst",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Material Analyst",
           "employers": 1,
           "filings": 1
         },
@@ -299,16 +158,6 @@
           "filings": 1
         },
         {
-          "title": "Operations Logistics Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Production Engineer and Lean Coordinator",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Production Management Specialist",
           "employers": 1,
           "filings": 1
@@ -319,37 +168,7 @@
           "filings": 1
         },
         {
-          "title": "Project Coordinator",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Project Manager",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Project Manager Supply Chain Continuous Improvement",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Resource Management Specialist",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "SUPPLY CHAIN ANALYST",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Senior Logistics Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Sourcing & Logistics Lead Specialist",
           "employers": 1,
           "filings": 1
         },
@@ -367,46 +186,6 @@
           "title": "Supply Chain and Logistics Analyst",
           "employers": 1,
           "filings": 1
-        },
-        {
-          "title": "Supply Chain and Logistics Specialist",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Supply Chains Systems Coordinator",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Supply Management Specialist",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Trade Specialist",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Treefruit Category Administrator",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Warehouse & Logistics Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Warehouse Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Warehouse Operations Managemen",
-          "employers": 1,
-          "filings": 1
         }
       ]
     },
@@ -414,84 +193,60 @@
       {
         "soc_code": "13-1081.00",
         "title": "Logisticians",
-        "employers": 28,
-        "filings": 37
+        "employers": 16,
+        "filings": 19
       },
       {
         "soc_code": "13-1081.02",
         "title": "Logistics Analysts",
-        "employers": 28,
-        "filings": 29
+        "employers": 7,
+        "filings": 8
       },
       {
         "soc_code": "13-1081.01",
         "title": "Logistics Engineers",
-        "employers": 15,
-        "filings": 19
+        "employers": 3,
+        "filings": 4
       }
     ],
     "placement_model": {
       "in_house": {
-        "employers": 66,
-        "filings": 83
+        "employers": 24,
+        "filings": 30
       },
       "third_party_site": {
-        "employers": 2,
-        "filings": 2
+        "employers": 1,
+        "filings": 1
       }
     },
     "industry_naics2": [
       {
-        "code": "33",
-        "label": "Manufacturing",
-        "employers": 12,
-        "filings": 13
-      },
-      {
-        "code": "42",
-        "label": "Wholesale Trade",
-        "employers": 12,
-        "filings": 12
-      },
-      {
         "code": "54",
         "label": "Professional, Scientific, and Technical Services",
-        "employers": 11,
-        "filings": 13
-      },
-      {
-        "code": "48",
-        "label": "Transportation and Warehousing",
-        "employers": 6,
-        "filings": 7
-      },
-      {
-        "code": "45",
-        "label": "Retail Trade",
         "employers": 5,
-        "filings": 11
+        "filings": 6
       },
       {
-        "code": "31",
+        "code": "33",
         "label": "Manufacturing",
         "employers": 4,
         "filings": 4
       },
       {
-        "code": "49",
-        "label": "Transportation and Warehousing",
+        "code": "45",
+        "label": "Retail Trade",
         "employers": 3,
-        "filings": 4
+        "filings": 5
       },
       {
-        "code": "23",
-        "label": "Construction",
+        "code": "42",
+        "label": "Wholesale Trade",
         "employers": 3,
         "filings": 3
       },
       {
-        "code": "32",
-        "label": "Manufacturing",
+        "code": "48",
+        "label": "Transportation and Warehousing",
         "employers": 3,
         "filings": 3
       }
@@ -505,79 +260,34 @@
   ],
   "employers": [
     {
-      "employer": "AMAZON COM SERVICES",
-      "employer_display": "Amazon.com Services LLC",
-      "filing_count": 7,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "13-1081",
-      "soc_titles": "Logisticians; Logistics Engineers",
-      "worksite_states": "TN; TX; WA",
-      "worksite_cities": "Austin; Bellevue; Irving; Nashville; Seattle",
-      "wage_annual_min": 69100,
-      "wage_annual_median": 75000,
-      "wage_annual_max": 89000
-    },
-    {
       "employer": "AMAZON DATA SERVICES",
       "employer_display": "Amazon Data Services, Inc",
-      "filing_count": 7,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "13-1081",
-      "soc_titles": "Logisticians",
-      "worksite_states": "CA; KY; TX; VA; WA",
-      "worksite_cities": "AUSTIN; Arlington; Bellevue; Florence; Seattle; Sunnyvale",
-      "wage_annual_min": 67300,
-      "wage_annual_median": 108000,
-      "wage_annual_max": 124719
-    },
-    {
-      "employer": "GOFO",
-      "employer_display": "GOFO Inc.",
-      "filing_count": 2,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "13-1081",
-      "soc_titles": "Logistics Analysts; Logistics Engineers",
-      "worksite_states": "PR; TX",
-      "worksite_cities": "Catano; Houston",
-      "wage_annual_min": 46946,
-      "wage_annual_median": 53633,
-      "wage_annual_max": 60320
-    },
-    {
-      "employer": "KUEHNE NAGEL",
-      "employer_display": "Kuehne & Nagel Inc.",
-      "filing_count": 2,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "13-1081",
-      "soc_titles": "Logisticians; Logistics Analysts",
-      "worksite_states": "NJ",
-      "worksite_cities": "Jersey City",
-      "wage_annual_min": 70000,
-      "wage_annual_median": 70500,
-      "wage_annual_max": 71000
-    },
-    {
-      "employer": "EME TECHNOLOGIES",
-      "employer_display": "EME Technologies Inc.",
-      "filing_count": 2,
+      "filing_count": 4,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "13-1081",
-      "soc_titles": "Logistics Engineers",
-      "worksite_states": "CA",
-      "worksite_cities": "Santa Clara",
-      "wage_annual_min": 78437,
-      "wage_annual_median": 78437,
-      "wage_annual_max": 78437
+      "soc_titles": "Logisticians",
+      "worksite_states": "KY; TX; VA; WA",
+      "worksite_cities": "AUSTIN; Arlington; Florence; Seattle",
+      "wage_annual_min": 67300,
+      "wage_annual_median": 88270,
+      "wage_annual_max": 120000
+    },
+    {
+      "employer": "AMAZON COM SERVICES",
+      "employer_display": "Amazon.com Services LLC",
+      "filing_count": 3,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1081",
+      "soc_titles": "Logisticians; Logistics Engineers",
+      "worksite_states": "TN; WA",
+      "worksite_cities": "Nashville; Seattle",
+      "wage_annual_min": 70000,
+      "wage_annual_median": 70000,
+      "wage_annual_max": 81432
     },
     {
       "employer": "GOFO EXPRESS",
@@ -595,66 +305,6 @@
       "wage_annual_max": 46946
     },
     {
-      "employer": "MINISO DEPOT CA",
-      "employer_display": "Miniso Depot CA Inc",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-1081",
-      "soc_titles": "Logisticians",
-      "worksite_states": "CA",
-      "worksite_cities": "Ontario",
-      "wage_annual_min": 56160,
-      "wage_annual_median": 56160,
-      "wage_annual_max": 56160
-    },
-    {
-      "employer": "A FLYING CAMEL",
-      "employer_display": "A Flying Camel Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-1081",
-      "soc_titles": "Logistics Analysts",
-      "worksite_states": "CA",
-      "worksite_cities": "Eastvale",
-      "wage_annual_min": 51210,
-      "wage_annual_median": 51210,
-      "wage_annual_max": 51210
-    },
-    {
-      "employer": "ACME TRADING CORPORATION",
-      "employer_display": "ACME Trading Corporation",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-1081",
-      "soc_titles": "Logistics Analysts",
-      "worksite_states": "CA",
-      "worksite_cities": "City of Industry",
-      "wage_annual_min": 59280,
-      "wage_annual_median": 59280,
-      "wage_annual_max": 59280
-    },
-    {
-      "employer": "APOZEAL PHARMACEUTICALS",
-      "employer_display": "Apozeal Pharmaceuticals Inc",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-1081",
-      "soc_titles": "Logistics Engineers",
-      "worksite_states": "PA",
-      "worksite_cities": "Levittown",
-      "wage_annual_min": 68640,
-      "wage_annual_median": 68640,
-      "wage_annual_max": 68640
-    },
-    {
       "employer": "ARTIFICIAL INTELLIGENCE",
       "employer_display": "ARTIFICIAL INTELLIGENCE LLC",
       "filing_count": 1,
@@ -668,36 +318,6 @@
       "wage_annual_min": 83637,
       "wage_annual_median": 83637,
       "wage_annual_max": 83637
-    },
-    {
-      "employer": "BEST LOGISTICS TECHNOLOGY CO",
-      "employer_display": "BEST LOGISTICS TECHNOLOGY CO., LTD",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-1081",
-      "soc_titles": "Logistics Analysts",
-      "worksite_states": "CA",
-      "worksite_cities": "Chino",
-      "wage_annual_min": 64480,
-      "wage_annual_median": 64480,
-      "wage_annual_max": 64480
-    },
-    {
-      "employer": "BUILD HEALTH INTERNATIONAL",
-      "employer_display": "Build Health International, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-1081",
-      "soc_titles": "Logistics Engineers",
-      "worksite_states": "MA",
-      "worksite_cities": "Beverly",
-      "wage_annual_min": 67784,
-      "wage_annual_median": 67784,
-      "wage_annual_max": 67784
     },
     {
       "employer": "BYD ELECTRONIC AMERICA",
@@ -715,96 +335,6 @@
       "wage_annual_max": 81598
     },
     {
-      "employer": "CAINIAO SUPPLY CHAIN U S",
-      "employer_display": "Cainiao Supply Chain U.S. Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-1081",
-      "soc_titles": "Logisticians",
-      "worksite_states": "NJ",
-      "worksite_cities": "Florence",
-      "wage_annual_min": 59842,
-      "wage_annual_median": 59842,
-      "wage_annual_max": 59842
-    },
-    {
-      "employer": "CARNEGIE PHARMACEUTICALS",
-      "employer_display": "Carnegie Pharmaceuticals LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-1081",
-      "soc_titles": "Logisticians",
-      "worksite_states": "NJ",
-      "worksite_cities": "Delran",
-      "wage_annual_min": 60000,
-      "wage_annual_median": 60000,
-      "wage_annual_max": 60000
-    },
-    {
-      "employer": "CHASEN USA",
-      "employer_display": "Chasen USA Inc",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-1081",
-      "soc_titles": "Logistics Engineers",
-      "worksite_states": "OH",
-      "worksite_cities": "Jeffersonville",
-      "wage_annual_min": 56400,
-      "wage_annual_median": 56400,
-      "wage_annual_max": 56400
-    },
-    {
-      "employer": "COBB TUNING PRODUCTS",
-      "employer_display": "COBB TUNING PRODUCTS LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-1081",
-      "soc_titles": "Logistics Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "Austin",
-      "wage_annual_min": 61272,
-      "wage_annual_median": 61272,
-      "wage_annual_max": 61272
-    },
-    {
-      "employer": "COMPONENT SOURCING INTERNATIONAL",
-      "employer_display": "Component Sourcing International, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-1081",
-      "soc_titles": "Logistics Analysts",
-      "worksite_states": "IL",
-      "worksite_cities": "Buffalo Grove",
-      "wage_annual_min": 58860,
-      "wage_annual_median": 58860,
-      "wage_annual_max": 58860
-    },
-    {
-      "employer": "CONTINENT SOLUTION SYSTEM",
-      "employer_display": "Continent Solution System Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-1081",
-      "soc_titles": "Logistics Analysts",
-      "worksite_states": "CA",
-      "worksite_cities": "City of Industry",
-      "wage_annual_min": 59988,
-      "wage_annual_median": 59988,
-      "wage_annual_max": 59988
-    },
-    {
       "employer": "CYH TECHNOLOGY USA",
       "employer_display": "CYH Technology USA LLC",
       "filing_count": 1,
@@ -818,21 +348,6 @@
       "wage_annual_min": 60320,
       "wage_annual_median": 60320,
       "wage_annual_max": 60320
-    },
-    {
-      "employer": "D M IMPORTS",
-      "employer_display": "D & M Imports LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-1081",
-      "soc_titles": "Logistics Analysts",
-      "worksite_states": "NJ",
-      "worksite_cities": "Carlstadt",
-      "wage_annual_min": 72000,
-      "wage_annual_median": 72000,
-      "wage_annual_max": 72000
     },
     {
       "employer": "EFULFILL",
@@ -850,21 +365,6 @@
       "wage_annual_max": 54000
     },
     {
-      "employer": "FIRST CHOICE SEAFOOD",
-      "employer_display": "FIRST CHOICE SEAFOOD, INC.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-1081",
-      "soc_titles": "Logistics Analysts",
-      "worksite_states": "IN",
-      "worksite_cities": "INDIANAPOLIS",
-      "wage_annual_min": 51085,
-      "wage_annual_median": 51085,
-      "wage_annual_max": 51085
-    },
-    {
       "employer": "FLEXISPOT",
       "employer_display": "FlexiSpot, Inc.",
       "filing_count": 1,
@@ -878,51 +378,6 @@
       "wage_annual_min": 59280,
       "wage_annual_median": 59280,
       "wage_annual_max": 59280
-    },
-    {
-      "employer": "FNS",
-      "employer_display": "FNS, INC.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-1081",
-      "soc_titles": "Logistics Engineers",
-      "worksite_states": "TX",
-      "worksite_cities": "La Porte",
-      "wage_annual_min": 55000,
-      "wage_annual_median": 55000,
-      "wage_annual_max": 55000
-    },
-    {
-      "employer": "FOTILE AMERICA",
-      "employer_display": "Fotile America LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-1081",
-      "soc_titles": "Logistics Analysts",
-      "worksite_states": "NJ",
-      "worksite_cities": "Parsippany",
-      "wage_annual_min": 78000,
-      "wage_annual_median": 78000,
-      "wage_annual_max": 78000
-    },
-    {
-      "employer": "FURNI",
-      "employer_display": "FURNI LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-1081",
-      "soc_titles": "Logistics Engineers",
-      "worksite_states": "FL",
-      "worksite_cities": "OAKLAND PARK",
-      "wage_annual_min": 47000,
-      "wage_annual_median": 47000,
-      "wage_annual_max": 47000
     },
     {
       "employer": "GATE GOURMET",
@@ -940,49 +395,19 @@
       "wage_annual_max": 78981
     },
     {
-      "employer": "GOCOOL",
-      "employer_display": "GOCOOL INC.",
+      "employer": "GOFO",
+      "employer_display": "GOFO Inc.",
       "filing_count": 1,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "13-1081",
       "soc_titles": "Logistics Analysts",
-      "worksite_states": "WA",
-      "worksite_cities": "Redmond",
-      "wage_annual_min": 81432,
-      "wage_annual_median": 81432,
-      "wage_annual_max": 81432
-    },
-    {
-      "employer": "INSTANT SYSTEMS",
-      "employer_display": "Instant Systems, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-1081",
-      "soc_titles": "Logistics Analysts",
-      "worksite_states": "VA",
-      "worksite_cities": "Norfolk",
-      "wage_annual_min": 66000,
-      "wage_annual_median": 66000,
-      "wage_annual_max": 66000
-    },
-    {
-      "employer": "IOTTIE",
-      "employer_display": "iOttie, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-1081",
-      "soc_titles": "Logistics Analysts",
-      "worksite_states": "NY",
-      "worksite_cities": "New York",
-      "wage_annual_min": 66664,
-      "wage_annual_median": 66664,
-      "wage_annual_max": 66664
+      "worksite_states": "PR",
+      "worksite_cities": "Catano",
+      "wage_annual_min": 46946,
+      "wage_annual_median": 46946,
+      "wage_annual_max": 46946
     },
     {
       "employer": "IRON EAGLE AVIATION",
@@ -998,36 +423,6 @@
       "wage_annual_min": 51200,
       "wage_annual_median": 51200,
       "wage_annual_max": 51200
-    },
-    {
-      "employer": "IWIN GROUP",
-      "employer_display": "iWin Group Corp",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-1081",
-      "soc_titles": "Logistics Analysts",
-      "worksite_states": "CA",
-      "worksite_cities": "Cerritos",
-      "wage_annual_min": 65000,
-      "wage_annual_median": 65000,
-      "wage_annual_max": 65000
-    },
-    {
-      "employer": "JANICO",
-      "employer_display": "Janico Inc",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-1081",
-      "soc_titles": "Logisticians",
-      "worksite_states": "NJ",
-      "worksite_cities": "Freehold",
-      "wage_annual_min": 68000,
-      "wage_annual_median": 68000,
-      "wage_annual_max": 68000
     },
     {
       "employer": "JUSDA SUPPLY CHAIN MANAGEMENT",
@@ -1060,6 +455,21 @@
       "wage_annual_max": 53165
     },
     {
+      "employer": "KUEHNE NAGEL",
+      "employer_display": "Kuehne & Nagel Inc.",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-1081",
+      "soc_titles": "Logistics Analysts",
+      "worksite_states": "NJ",
+      "worksite_cities": "Jersey City",
+      "wage_annual_min": 70000,
+      "wage_annual_median": 70000,
+      "wage_annual_max": 70000
+    },
+    {
       "employer": "L H BATTERY COMPANY",
       "employer_display": "L-H Battery Company, Inc.",
       "filing_count": 1,
@@ -1070,51 +480,6 @@
       "soc_titles": "Logisticians",
       "worksite_states": "OH",
       "worksite_cities": "Jeffersonville",
-      "wage_annual_min": 65000,
-      "wage_annual_median": 65000,
-      "wage_annual_max": 65000
-    },
-    {
-      "employer": "LACTALIS AMERICAN GROUP",
-      "employer_display": "LACTALIS AMERICAN GROUP, INC.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-1081",
-      "soc_titles": "Logistics Engineers",
-      "worksite_states": "NY",
-      "worksite_cities": "New York",
-      "wage_annual_min": 78000,
-      "wage_annual_median": 78000,
-      "wage_annual_max": 78000
-    },
-    {
-      "employer": "LANGSTON UNIVERSITY",
-      "employer_display": "Langston University",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-1081",
-      "soc_titles": "Logistics Analysts",
-      "worksite_states": "OK",
-      "worksite_cities": "Langston,",
-      "wage_annual_min": 50024,
-      "wage_annual_median": 50024,
-      "wage_annual_max": 50024
-    },
-    {
-      "employer": "LEAR CORPORATION",
-      "employer_display": "LEAR CORPORATION",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-1081",
-      "soc_titles": "Logistics Analysts",
-      "worksite_states": "MI",
-      "worksite_cities": "Detroit",
       "wage_annual_min": 65000,
       "wage_annual_median": 65000,
       "wage_annual_max": 65000
@@ -1150,21 +515,6 @@
       "wage_annual_max": 55453
     },
     {
-      "employer": "MANAGE YOUR BUSINESS",
-      "employer_display": "Manage Your Business, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-1081",
-      "soc_titles": "Logistics Analysts",
-      "worksite_states": "NY",
-      "worksite_cities": "Williamsville",
-      "wage_annual_min": 60320,
-      "wage_annual_median": 60320,
-      "wage_annual_max": 60320
-    },
-    {
       "employer": "MARKETECH INTERNATIONAL CORPORATION USA",
       "employer_display": "Marketech International Corporation USA",
       "filing_count": 1,
@@ -1195,36 +545,6 @@
       "wage_annual_max": 75000
     },
     {
-      "employer": "MILLWORK HOLDINGS CO",
-      "employer_display": "Millwork Holdings Co., Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-1081",
-      "soc_titles": "Logistics Analysts",
-      "worksite_states": "NY",
-      "worksite_cities": "New York",
-      "wage_annual_min": 79934,
-      "wage_annual_median": 79934,
-      "wage_annual_max": 79934
-    },
-    {
-      "employer": "MOH S PERFORMANCE MOTORSPORT",
-      "employer_display": "Moh's Performance Motorsport",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-1081",
-      "soc_titles": "Logistics Engineers",
-      "worksite_states": "MN",
-      "worksite_cities": "Blaine",
-      "wage_annual_min": 61568,
-      "wage_annual_median": 61568,
-      "wage_annual_max": 61568
-    },
-    {
       "employer": "MONTANA WEST",
       "employer_display": "Montana West Inc.",
       "filing_count": 1,
@@ -1238,141 +558,6 @@
       "wage_annual_min": 56160,
       "wage_annual_median": 56160,
       "wage_annual_max": 56160
-    },
-    {
-      "employer": "NORTHWEST FROZEN LLC DBA BANZAI SUSHI",
-      "employer_display": "Northwest Frozen LLC, dba Banzai Sushi",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-1081",
-      "soc_titles": "Logisticians",
-      "worksite_states": "WA",
-      "worksite_cities": "Des Moines",
-      "wage_annual_min": 81432,
-      "wage_annual_median": 81432,
-      "wage_annual_max": 81432
-    },
-    {
-      "employer": "O E C SHIPPING LOS ANGELES",
-      "employer_display": "O.E.C. Shipping Los Angeles, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-1081",
-      "soc_titles": "Logisticians",
-      "worksite_states": "CA",
-      "worksite_cities": "Cerritos",
-      "wage_annual_min": 61000,
-      "wage_annual_median": 61000,
-      "wage_annual_max": 61000
-    },
-    {
-      "employer": "OLIGHTSTORE USA",
-      "employer_display": "Olightstore USA Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-1081",
-      "soc_titles": "Logistics Engineers",
-      "worksite_states": "VA",
-      "worksite_cities": "Lorton",
-      "wage_annual_min": 75950,
-      "wage_annual_median": 75950,
-      "wage_annual_max": 75950
-    },
-    {
-      "employer": "PACIFIC TRELLIS FRUIT",
-      "employer_display": "Pacific Trellis Fruit LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-1081",
-      "soc_titles": "Logisticians",
-      "worksite_states": "NJ",
-      "worksite_cities": "Glassboro",
-      "wage_annual_min": null,
-      "wage_annual_median": null,
-      "wage_annual_max": null
-    },
-    {
-      "employer": "SAMSUNG SDI AMERICA",
-      "employer_display": "Samsung SDI America, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-1081",
-      "soc_titles": "Logisticians",
-      "worksite_states": "MI",
-      "worksite_cities": "Auburn Hills",
-      "wage_annual_min": 57803,
-      "wage_annual_median": 57803,
-      "wage_annual_max": 57803
-    },
-    {
-      "employer": "SMS INFOCOMM CORPORATION",
-      "employer_display": "SMS InfoComm Corporation",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-1081",
-      "soc_titles": "Logistics Analysts",
-      "worksite_states": "TX",
-      "worksite_cities": "Grapevine",
-      "wage_annual_min": 60200,
-      "wage_annual_median": 60200,
-      "wage_annual_max": 60200
-    },
-    {
-      "employer": "STAR EV CORPORATION",
-      "employer_display": "Star EV Corporation",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-1081",
-      "soc_titles": "Logistics Analysts",
-      "worksite_states": "SC",
-      "worksite_cities": "Simpsonville",
-      "wage_annual_min": 50419,
-      "wage_annual_median": 50419,
-      "wage_annual_max": 50419
-    },
-    {
-      "employer": "STOCKTON DRUG",
-      "employer_display": "STOCKTON DRUG INC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-1081",
-      "soc_titles": "Logisticians",
-      "worksite_states": "CA",
-      "worksite_cities": "Galt",
-      "wage_annual_min": 61000,
-      "wage_annual_median": 61000,
-      "wage_annual_max": 61000
-    },
-    {
-      "employer": "SUSTAINABLE PLASTIC TECHNOLOGY",
-      "employer_display": "Sustainable Plastic Technology Corp.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-1081",
-      "soc_titles": "Logisticians",
-      "worksite_states": "NC",
-      "worksite_cities": "Apex",
-      "wage_annual_min": 60000,
-      "wage_annual_median": 60000,
-      "wage_annual_max": 60000
     },
     {
       "employer": "SWEET APPAREL",
@@ -1405,21 +590,6 @@
       "wage_annual_max": 564000
     },
     {
-      "employer": "TEMPLE UNIVERSITY HOSPITAL",
-      "employer_display": "TEMPLE UNIVERSITY HOSPITAL INC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-1081",
-      "soc_titles": "Logisticians",
-      "worksite_states": "PA",
-      "worksite_cities": "Philadelphia",
-      "wage_annual_min": 100402,
-      "wage_annual_median": 100402,
-      "wage_annual_max": 100402
-    },
-    {
       "employer": "TESLA",
       "employer_display": "Tesla, Inc.",
       "filing_count": 1,
@@ -1450,36 +620,6 @@
       "wage_annual_max": 57699
     },
     {
-      "employer": "VALLEY FAB",
-      "employer_display": "Valley Fab Corp",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-1081",
-      "soc_titles": "Logistics Engineers",
-      "worksite_states": "OR",
-      "worksite_cities": "Brooks",
-      "wage_annual_min": null,
-      "wage_annual_median": null,
-      "wage_annual_max": null
-    },
-    {
-      "employer": "WANHUA CHEMICAL AMERICA",
-      "employer_display": "Wanhua Chemical (America)",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-1081",
-      "soc_titles": "Logistics Analysts",
-      "worksite_states": "MA",
-      "worksite_cities": "Boston",
-      "wage_annual_min": 69628,
-      "wage_annual_median": 69628,
-      "wage_annual_max": 69628
-    },
-    {
       "employer": "YQN TRANSPORT SERVICE",
       "employer_display": "YQN TRANSPORT SERVICE LLC",
       "filing_count": 1,
@@ -1493,36 +633,6 @@
       "wage_annual_min": 53955,
       "wage_annual_median": 53955,
       "wage_annual_max": 53955
-    },
-    {
-      "employer": "ZERO GROUP CLUB",
-      "employer_display": "Zero Group Club LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-1081",
-      "soc_titles": "Logistics Analysts",
-      "worksite_states": "NY",
-      "worksite_cities": "Long Island City",
-      "wage_annual_min": 66560,
-      "wage_annual_median": 66560,
-      "wage_annual_max": 66560
-    },
-    {
-      "employer": "ZPMC NORTH AMERICA",
-      "employer_display": "ZPMC North America, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-1081",
-      "soc_titles": "Logistics Analysts",
-      "worksite_states": "WA",
-      "worksite_cities": "Federal Way",
-      "wage_annual_min": 81432,
-      "wage_annual_median": 81432,
-      "wage_annual_max": 81432
     }
   ]
 }

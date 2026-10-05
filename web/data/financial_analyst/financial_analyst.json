@@ -1,6 +1,6 @@
 {
   "role": "financial_analyst",
-  "generated_at_utc": "2026-09-14 12:43 UTC",
+  "generated_at_utc": "2026-10-05 14:31 UTC",
   "source": "US DOL OFLC LCA Programs disclosure data (public record)",
   "filters": {
     "case_status": "Certified",
@@ -10,22 +10,21 @@
     "pw_wage_level": "I"
   },
   "quarters_used": [
-    "FY2025Q4",
     "FY2026Q1"
   ],
   "quarters_superseded": {},
   "funnel": {
-    "rows_total": 201700,
-    "rows_certified": 181277,
-    "rows_soc_matched": 2331,
-    "rows_selected": 310
+    "rows_total": 83120,
+    "rows_certified": 74664,
+    "rows_soc_matched": 1026,
+    "rows_selected": 126
   },
-  "employer_groups": 247,
+  "employer_groups": 105,
   "rows_wage_excluded_from_wage_stats": 0,
   "patterns": {
     "basis": {
-      "filings": 310,
-      "employers": 247,
+      "filings": 126,
+      "employers": 105,
       "measured_by": "employers",
       "min_support_employers": 3
     },
@@ -33,73 +32,43 @@
       "recurring_tokens": [
         {
           "token": "analyst",
-          "employers": 176,
-          "filings": 201
+          "employers": 70,
+          "filings": 77
         },
         {
           "token": "financial",
-          "employers": 116,
-          "filings": 140
-        },
-        {
-          "token": "associate",
-          "employers": 41,
-          "filings": 51
-        },
-        {
-          "token": "investment",
-          "employers": 30,
+          "employers": 43,
           "filings": 50
         },
         {
+          "token": "associate",
+          "employers": 18,
+          "filings": 22
+        },
+        {
+          "token": "investment",
+          "employers": 17,
+          "filings": 23
+        },
+        {
           "token": "senior",
-          "employers": 20,
-          "filings": 24
+          "employers": 8,
+          "filings": 10
         },
         {
           "token": "finance",
-          "employers": 11,
-          "filings": 14
-        },
-        {
-          "token": "manager",
-          "employers": 10,
-          "filings": 11
-        },
-        {
-          "token": "business",
-          "employers": 9,
-          "filings": 9
-        },
-        {
-          "token": "sales",
-          "employers": 5,
-          "filings": 9
-        },
-        {
-          "token": "credit",
-          "employers": 5,
+          "employers": 6,
           "filings": 7
         },
         {
-          "token": "operations",
+          "token": "business",
+          "employers": 6,
+          "filings": 6
+        },
+        {
+          "token": "manager",
           "employers": 5,
           "filings": 5
-        },
-        {
-          "token": "analysts",
-          "employers": 4,
-          "filings": 19
-        },
-        {
-          "token": "treasury",
-          "employers": 4,
-          "filings": 5
-        },
-        {
-          "token": "consultant",
-          "employers": 4,
-          "filings": 4
         },
         {
           "token": "data",
@@ -112,72 +81,12 @@
           "filings": 4
         },
         {
+          "token": "analysts",
+          "employers": 3,
+          "filings": 7
+        },
+        {
           "token": "junior",
-          "employers": 4,
-          "filings": 4
-        },
-        {
-          "token": "partner",
-          "employers": 4,
-          "filings": 4
-        },
-        {
-          "token": "portfolio",
-          "employers": 4,
-          "filings": 4
-        },
-        {
-          "token": "strategy",
-          "employers": 4,
-          "filings": 4
-        },
-        {
-          "token": "fellow",
-          "employers": 3,
-          "filings": 6
-        },
-        {
-          "token": "risk",
-          "employers": 3,
-          "filings": 4
-        },
-        {
-          "token": "specialist",
-          "employers": 3,
-          "filings": 4
-        },
-        {
-          "token": "advisor",
-          "employers": 3,
-          "filings": 3
-        },
-        {
-          "token": "asset",
-          "employers": 3,
-          "filings": 3
-        },
-        {
-          "token": "banking",
-          "employers": 3,
-          "filings": 3
-        },
-        {
-          "token": "corporate",
-          "employers": 3,
-          "filings": 3
-        },
-        {
-          "token": "development",
-          "employers": 3,
-          "filings": 3
-        },
-        {
-          "token": "lead",
-          "employers": 3,
-          "filings": 3
-        },
-        {
-          "token": "planning",
           "employers": 3,
           "filings": 3
         },
@@ -185,83 +94,43 @@
           "token": "relations",
           "employers": 3,
           "filings": 3
-        },
-        {
-          "token": "research",
-          "employers": 3,
-          "filings": 3
         }
       ],
       "distinct_titles": [
         {
           "title": "Financial Analyst",
-          "employers": 76,
-          "filings": 78
+          "employers": 24,
+          "filings": 25
         },
         {
           "title": "Analyst",
-          "employers": 11,
-          "filings": 12
-        },
-        {
-          "title": "Associate",
-          "employers": 11,
-          "filings": 12
+          "employers": 6,
+          "filings": 6
         },
         {
           "title": "Investment Analyst",
-          "employers": 11,
-          "filings": 12
+          "employers": 5,
+          "filings": 6
         },
         {
           "title": "FINANCIAL ANALYST",
-          "employers": 9,
-          "filings": 10
+          "employers": 4,
+          "filings": 4
         },
         {
           "title": "Investment Associate",
-          "employers": 5,
-          "filings": 8
+          "employers": 2,
+          "filings": 3
         },
         {
-          "title": "Senior Financial Analyst",
-          "employers": 3,
-          "filings": 4
+          "title": "Associate",
+          "employers": 2,
+          "filings": 2
         },
         {
           "title": "Business Analyst",
-          "employers": 3,
-          "filings": 3
-        },
-        {
-          "title": "Financial Analyst I",
-          "employers": 3,
-          "filings": 3
-        },
-        {
-          "title": "Financial and Investment Analyst",
-          "employers": 3,
-          "filings": 3
-        },
-        {
-          "title": "INVESTMENT ANALYST",
-          "employers": 3,
-          "filings": 3
-        },
-        {
-          "title": "Senior Analyst",
-          "employers": 3,
-          "filings": 3
-        },
-        {
-          "title": "Senior Associate",
-          "employers": 3,
-          "filings": 3
-        },
-        {
-          "title": "Analyst, Sales",
           "employers": 2,
-          "filings": 4
+          "filings": 2
         },
         {
           "title": "CRR/FTR Analyst in ERCOT and PJM",
@@ -269,29 +138,9 @@
           "filings": 2
         },
         {
-          "title": "Finance Analyst",
+          "title": "INVESTMENT ANALYST",
           "employers": 2,
           "filings": 2
-        },
-        {
-          "title": "Financial Analysts",
-          "employers": 2,
-          "filings": 2
-        },
-        {
-          "title": "Real Estate Analyst",
-          "employers": 2,
-          "filings": 2
-        },
-        {
-          "title": "Finance Fellow",
-          "employers": 1,
-          "filings": 4
-        },
-        {
-          "title": "Financial and Investment Analysts - KBGFJG220327-3",
-          "employers": 1,
-          "filings": 3
         },
         {
           "title": "Financial and Investment Analysts - KBGFJG331818-2",
@@ -299,37 +148,12 @@
           "filings": 3
         },
         {
-          "title": "Financial and Investment analysts - KBGFJG271438-8",
-          "employers": 1,
-          "filings": 3
-        },
-        {
-          "title": "Analyst, Sales Support",
-          "employers": 1,
-          "filings": 2
-        },
-        {
-          "title": "Analyst, Securities Valuation",
-          "employers": 1,
-          "filings": 2
-        },
-        {
           "title": "Associate - GIB",
           "employers": 1,
           "filings": 2
         },
         {
-          "title": "Associate, Investment Team",
-          "employers": 1,
-          "filings": 2
-        },
-        {
-          "title": "Financial  Analysts",
-          "employers": 1,
-          "filings": 2
-        },
-        {
-          "title": "Financial and Investment Analysts - KBGFJG217975-6",
+          "title": "Finance Fellow",
           "employers": 1,
           "filings": 2
         },
@@ -339,17 +163,7 @@
           "filings": 2
         },
         {
-          "title": "Financial and Investment analysts - Kbgfjg220631-4",
-          "employers": 1,
-          "filings": 2
-        },
-        {
           "title": "Grants and Contracts Specialist",
-          "employers": 1,
-          "filings": 2
-        },
-        {
-          "title": "Principal Aviation Analyst",
           "employers": 1,
           "filings": 2
         },
@@ -359,7 +173,7 @@
           "filings": 2
         },
         {
-          "title": "Senior Associate, Credit Risk Reporting",
+          "title": "Senior Financial Analyst",
           "employers": 1,
           "filings": 2
         },
@@ -374,16 +188,6 @@
           "filings": 2
         },
         {
-          "title": "Alpha Researcher",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Analyst - Finance & Portfolio Valuations",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Analyst - GIB",
           "employers": 1,
           "filings": 1
@@ -394,37 +198,7 @@
           "filings": 1
         },
         {
-          "title": "Analyst Business Valuation",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Analyst, Banker - CSG",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Analyst, Capital Planning - KBGFJG368258-1",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Analyst, Investing",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Analyst, Investment Banking",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Analyst, Trading",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Analytics & Modeling Analyst",
           "employers": 1,
           "filings": 1
         },
@@ -434,27 +208,7 @@
           "filings": 1
         },
         {
-          "title": "Asset Manager/Development Analyst",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Associate 2",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Associate Manager Research Analyst",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Associate Portfolio Analyst",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Associate Portfolio Manager",
           "employers": 1,
           "filings": 1
         },
@@ -469,12 +223,7 @@
           "filings": 1
         },
         {
-          "title": "Associate, CUSO Treasury Operations",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Associate, Finance & Strategy",
+          "title": "Associate, Investment Team",
           "employers": 1,
           "filings": 1
         },
@@ -484,17 +233,7 @@
           "filings": 1
         },
         {
-          "title": "Associate, Originations",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Associate, Product Specialist",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Associate- Strategic Capital",
           "employers": 1,
           "filings": 1
         },
@@ -514,26 +253,6 @@
           "filings": 1
         },
         {
-          "title": "CORPORATE FINANCIAL ANALYST",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "City Business Manager",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Credit Trader",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Credit Underwriter",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Data Analyst",
           "employers": 1,
           "filings": 1
@@ -544,17 +263,7 @@
           "filings": 1
         },
         {
-          "title": "Derivatives Operations Analyst",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Development Coordinator",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Director of Customer Experience",
           "employers": 1,
           "filings": 1
         },
@@ -564,12 +273,12 @@
           "filings": 1
         },
         {
-          "title": "Equity Research Analyst",
+          "title": "Field Financial Analyst",
           "employers": 1,
           "filings": 1
         },
         {
-          "title": "Field Financial Analyst",
+          "title": "Finance Analyst",
           "employers": 1,
           "filings": 1
         },
@@ -584,12 +293,12 @@
           "filings": 1
         },
         {
-          "title": "Financial  Data Analyst",
+          "title": "Financial  Analysts",
           "employers": 1,
           "filings": 1
         },
         {
-          "title": "Financial & Market Strategy Analyst",
+          "title": "Financial  Data Analyst",
           "employers": 1,
           "filings": 1
         },
@@ -599,27 +308,12 @@
           "filings": 1
         },
         {
-          "title": "Financial Analyst (System)",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Financial Analyst 2",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Financial Analyst II",
+          "title": "Financial Analysts",
           "employers": 1,
           "filings": 1
         },
         {
           "title": "Financial Business Partner Analyst",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Financial Consultant",
           "employers": 1,
           "filings": 1
         },
@@ -634,32 +328,12 @@
           "filings": 1
         },
         {
-          "title": "Front Office Consultant",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Fund Operations Analyst",
           "employers": 1,
           "filings": 1
         },
         {
-          "title": "GCIB GMC Associate",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Genesis Management Holdings LLC",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Global Account Manager",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Great Wall Securities LLC",
           "employers": 1,
           "filings": 1
         },
@@ -670,11 +344,6 @@
         },
         {
           "title": "Investment Banking Analyst",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Investment Banking Senior Analyst",
           "employers": 1,
           "filings": 1
         },
@@ -714,27 +383,12 @@
           "filings": 1
         },
         {
-          "title": "Junior Trader",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Lead Financial Analyst",
           "employers": 1,
           "filings": 1
         },
         {
           "title": "Lead Investment Sales Analyst",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "MG - Finance Analyst",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Manager",
           "employers": 1,
           "filings": 1
         },
@@ -749,27 +403,12 @@
           "filings": 1
         },
         {
-          "title": "Partner",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Policy and Investment Fellow",
           "employers": 1,
           "filings": 1
         },
         {
-          "title": "Pricing Analyst",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Private Infrastructure Investment Manager",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Program Associate",
           "employers": 1,
           "filings": 1
         },
@@ -784,17 +423,12 @@
           "filings": 1
         },
         {
-          "title": "Regional Financial Planning Analyst Lead, Marketing",
+          "title": "Real Estate Analyst",
           "employers": 1,
           "filings": 1
         },
         {
-          "title": "Reporting Analyst Finance",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Risk Analyst",
+          "title": "Senior Associate",
           "employers": 1,
           "filings": 1
         },
@@ -814,72 +448,12 @@
           "filings": 1
         },
         {
-          "title": "Senior Financial Analyst, Sales and Marketing Fina",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Senior Financial Risk Analyst",
           "employers": 1,
           "filings": 1
         },
         {
-          "title": "Senior Manager",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Senior Operations Specialist",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Senior Product Analyst",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Sr. Financial Analyst",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Strategy and Financial Analyst",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Technical Financial Analyst",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "ToBlue Aviation Digital Inc",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Treasury Consultant",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "VC Fellow",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Venture Partner Analyst",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Warranty Administrator",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Wealth Advisor",
           "employers": 1,
           "filings": 1
         },
@@ -894,91 +468,73 @@
       {
         "soc_code": "13-2051.00",
         "title": "Financial and Investment Analysts",
-        "employers": 247,
-        "filings": 310
+        "employers": 105,
+        "filings": 126
       }
     ],
     "placement_model": {
       "in_house": {
-        "employers": 243,
-        "filings": 305
+        "employers": 103,
+        "filings": 123
       },
       "third_party_site": {
-        "employers": 4,
-        "filings": 5
+        "employers": 2,
+        "filings": 3
       }
     },
     "industry_naics2": [
       {
         "code": "52",
         "label": "Finance and Insurance",
-        "employers": 103,
-        "filings": 126
+        "employers": 41,
+        "filings": 50
       },
       {
         "code": "54",
         "label": "Professional, Scientific, and Technical Services",
-        "employers": 42,
-        "filings": 62
-      },
-      {
-        "code": "61",
-        "label": "Educational Services",
-        "employers": 13,
-        "filings": 16
+        "employers": 19,
+        "filings": 25
       },
       {
         "code": "42",
         "label": "Wholesale Trade",
-        "employers": 11,
-        "filings": 12
+        "employers": 6,
+        "filings": 7
       },
       {
-        "code": "53",
-        "label": "Real Estate and Rental and Leasing",
-        "employers": 11,
-        "filings": 12
-      },
-      {
-        "code": "62",
-        "label": "Health Care and Social Assistance",
-        "employers": 11,
-        "filings": 12
-      },
-      {
-        "code": "55",
-        "label": "Management of Companies and Enterprises",
-        "employers": 10,
-        "filings": 15
+        "code": "61",
+        "label": "Educational Services",
+        "employers": 5,
+        "filings": 6
       },
       {
         "code": "51",
         "label": "Information",
-        "employers": 8,
-        "filings": 10
+        "employers": 4,
+        "filings": 4
+      },
+      {
+        "code": "62",
+        "label": "Health Care and Social Assistance",
+        "employers": 4,
+        "filings": 4
       },
       {
         "code": "45",
         "label": "Retail Trade",
-        "employers": 7,
-        "filings": 9
+        "employers": 3,
+        "filings": 4
+      },
+      {
+        "code": "55",
+        "label": "Management of Companies and Enterprises",
+        "employers": 3,
+        "filings": 4
       },
       {
         "code": "81",
         "label": "Other Services (except Public Administration)",
-        "employers": 6,
-        "filings": 9
-      },
-      {
-        "code": "33",
-        "label": "Manufacturing",
-        "employers": 4,
-        "filings": 5
-      },
-      {
-        "code": "49",
-        "label": "Transportation and Warehousing",
-        "employers": 4,
+        "employers": 3,
         "filings": 4
       },
       {
@@ -988,14 +544,8 @@
         "filings": 3
       },
       {
-        "code": "44",
-        "label": "Retail Trade",
-        "employers": 3,
-        "filings": 3
-      },
-      {
-        "code": "72",
-        "label": "Accommodation and Food Services",
+        "code": "53",
+        "label": "Real Estate and Rental and Leasing",
         "employers": 3,
         "filings": 3
       }
@@ -1008,171 +558,6 @@
     "Career/portfolio guidance, not immigration legal advice."
   ],
   "employers": [
-    {
-      "employer": "ERNST YOUNG U S LLP",
-      "employer_display": "Ernst & Young U.S. LLP",
-      "filing_count": 15,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "CA; IL; MA; NY; PA",
-      "worksite_cities": "Boston; Cambridge; Chicago; Long Island City; New York; Philadelphia; San Francisco; South Boston",
-      "wage_annual_min": 100000,
-      "wage_annual_median": 110000,
-      "wage_annual_max": 132600
-    },
-    {
-      "employer": "OPEN AVENUES FOUNDATION",
-      "employer_display": "Open Avenues Foundation",
-      "filing_count": 4,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "IL; NY",
-      "worksite_cities": "Brooklyn; New York; Oaklawn",
-      "wage_annual_min": 72779,
-      "wage_annual_median": 87838,
-      "wage_annual_max": 87838
-    },
-    {
-      "employer": "MACQUARIE HOLDINGS USA",
-      "employer_display": "Macquarie Holdings (USA) Inc.",
-      "filing_count": 3,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "NY",
-      "worksite_cities": "New York",
-      "wage_annual_min": 110000,
-      "wage_annual_median": 110000,
-      "wage_annual_max": 115000
-    },
-    {
-      "employer": "ADVENTIST HEALTH SYSTEM SUNBELT",
-      "employer_display": "Adventist Health System/Sunbelt, Inc.",
-      "filing_count": 2,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "FL",
-      "worksite_cities": "Maitland; Orlando",
-      "wage_annual_min": 58489,
-      "wage_annual_median": 68192,
-      "wage_annual_max": 77896
-    },
-    {
-      "employer": "BANK OF AMERICA N A",
-      "employer_display": "BANK OF AMERICA N.A.",
-      "filing_count": 2,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "NY",
-      "worksite_cities": "New York",
-      "wage_annual_min": 110000,
-      "wage_annual_median": 117500,
-      "wage_annual_max": 125000
-    },
-    {
-      "employer": "BOLTBOLT",
-      "employer_display": "BOLTBOLT LLC",
-      "filing_count": 2,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "CA",
-      "worksite_cities": "LOS ANGELES; Los Angeles",
-      "wage_annual_min": 72218,
-      "wage_annual_median": 72218,
-      "wage_annual_max": 72218
-    },
-    {
-      "employer": "KOALA HEALTH",
-      "employer_display": "KOALA HEALTH INC.",
-      "filing_count": 2,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "MA; NY",
-      "worksite_cities": "Boston; NEW YORK",
-      "wage_annual_min": 90000,
-      "wage_annual_median": 115000,
-      "wage_annual_max": 140000
-    },
-    {
-      "employer": "MAXIM GROUP",
-      "employer_display": "Maxim Group LLC",
-      "filing_count": 2,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "NY",
-      "worksite_cities": "New York",
-      "wage_annual_min": 88000,
-      "wage_annual_median": 88000,
-      "wage_annual_max": 88000
-    },
-    {
-      "employer": "MOELIS COMPANY GROUP LP",
-      "employer_display": "Moelis & Company Group LP",
-      "filing_count": 2,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "CA; NY",
-      "worksite_cities": "Los Angeles; New York",
-      "wage_annual_min": 110000,
-      "wage_annual_median": 117500,
-      "wage_annual_max": 125000
-    },
-    {
-      "employer": "SUMMIT PARTNERS LP",
-      "employer_display": "Summit Partners LP",
-      "filing_count": 2,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "CA; MA",
-      "worksite_cities": "Boston; Menlo Park",
-      "wage_annual_min": 150000,
-      "wage_annual_median": 155000,
-      "wage_annual_max": 160000
-    },
-    {
-      "employer": "GOLDMAN SACHS CO",
-      "employer_display": "GOLDMAN SACHS & CO. LLC",
-      "filing_count": 7,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "FL; IL; NY; TX",
-      "worksite_cities": "Chicago; Dallas; Miami; New York",
-      "wage_annual_min": 72000,
-      "wage_annual_median": 102000,
-      "wage_annual_max": 125000
-    },
     {
       "employer": "BOFA SECURITIES",
       "employer_display": "BOFA SECURITIES, INC.",
@@ -1189,19 +574,19 @@
       "wage_annual_max": 200000
     },
     {
-      "employer": "BHATIA CO INC CPAS",
-      "employer_display": "BHATIA & CO, INC, CPAS",
-      "filing_count": 3,
+      "employer": "ERNST YOUNG U S LLP",
+      "employer_display": "Ernst & Young U.S. LLP",
+      "filing_count": 5,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "13-2051",
       "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "CA",
-      "worksite_cities": "SANTA CLARA",
-      "wage_annual_min": 92456,
-      "wage_annual_median": 92456,
-      "wage_annual_max": 92456
+      "worksite_states": "CA; NY",
+      "worksite_cities": "Long Island City; New York; San Francisco",
+      "wage_annual_min": 100000,
+      "wage_annual_median": 100000,
+      "wage_annual_max": 121612
     },
     {
       "employer": "LNR PROPERTY PAYROLL",
@@ -1219,51 +604,6 @@
       "wage_annual_max": 85000
     },
     {
-      "employer": "TOBLUE AVIATION DIGITAL",
-      "employer_display": "ToBlue Aviation Digital Inc",
-      "filing_count": 3,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "NJ",
-      "worksite_cities": "Jersey City",
-      "wage_annual_min": 100000,
-      "wage_annual_median": 100000,
-      "wage_annual_max": 100000
-    },
-    {
-      "employer": "TRUSTEES OF THE UNIVERSITY OF PENNSYLVANIA",
-      "employer_display": "TRUSTEES OF THE UNIVERSITY OF PENNSYLVANIA",
-      "filing_count": 3,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "PA",
-      "worksite_cities": "Philadelphia",
-      "wage_annual_min": 118000,
-      "wage_annual_median": 122425,
-      "wage_annual_max": 143222
-    },
-    {
-      "employer": "AMAZON COM SERVICES",
-      "employer_display": "Amazon.com Services LLC",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "NY; WA",
-      "worksite_cities": "New York; Seattle",
-      "wage_annual_min": 103000,
-      "wage_annual_median": 104000,
-      "wage_annual_max": 105000
-    },
-    {
       "employer": "AXON US",
       "employer_display": "AXON US, CORP.",
       "filing_count": 2,
@@ -1279,21 +619,6 @@
       "wage_annual_max": 87838
     },
     {
-      "employer": "CADENZA VENTURES MANAGEMENT COMPANY",
-      "employer_display": "CADENZA VENTURES MANAGEMENT COMPANY LLC",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "NY",
-      "worksite_cities": "NEW YORK; New York",
-      "wage_annual_min": 100000,
-      "wage_annual_median": 100000,
-      "wage_annual_max": 100000
-    },
-    {
       "employer": "CASE WESTERN RESERVE UNIVERSITY",
       "employer_display": "Case Western Reserve University",
       "filing_count": 2,
@@ -1307,21 +632,6 @@
       "wage_annual_min": 53988,
       "wage_annual_median": 53988,
       "wage_annual_max": 53988
-    },
-    {
-      "employer": "CLOCKTOWER GROUP L P",
-      "employer_display": "CLOCKTOWER GROUP, L.P.",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "CA",
-      "worksite_cities": "Los Angeles; Santa Monica",
-      "wage_annual_min": 90000,
-      "wage_annual_median": 90000,
-      "wage_annual_max": 90000
     },
     {
       "employer": "DATADIRECT NETWORKS",
@@ -1354,36 +664,6 @@
       "wage_annual_max": 87838
     },
     {
-      "employer": "GENESIS MANAGEMENT HOLDINGS",
-      "employer_display": "Genesis Management Holdings LLC",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "NY",
-      "worksite_cities": "New York",
-      "wage_annual_min": 90000,
-      "wage_annual_median": 90000,
-      "wage_annual_max": 90000
-    },
-    {
-      "employer": "HEALTHCARE REALTY TRUST",
-      "employer_display": "Healthcare Realty Trust, Inc.",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "TN",
-      "worksite_cities": "Nashville",
-      "wage_annual_min": 68000,
-      "wage_annual_median": 76500,
-      "wage_annual_max": 85000
-    },
-    {
       "employer": "HENNESSY CAPITAL GROUP",
       "employer_display": "Hennessy Capital Group  LLC",
       "filing_count": 2,
@@ -1397,36 +677,6 @@
       "wage_annual_min": 100000,
       "wage_annual_median": 100000,
       "wage_annual_max": 100000
-    },
-    {
-      "employer": "JOBLOGIC X CORPORATION",
-      "employer_display": "Joblogic-X Corporation",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "TX",
-      "worksite_cities": "Plano",
-      "wage_annual_min": 66000,
-      "wage_annual_median": 80500,
-      "wage_annual_max": 95000
-    },
-    {
-      "employer": "JPMORGAN CHASE CO",
-      "employer_display": "JPMorgan Chase & Co.",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "NY",
-      "worksite_cities": "New York",
-      "wage_annual_min": 110000,
-      "wage_annual_median": 110000,
-      "wage_annual_max": 110000
     },
     {
       "employer": "MACHINE INTELLIGENCE",
@@ -1444,6 +694,21 @@
       "wage_annual_max": 70886
     },
     {
+      "employer": "OPEN AVENUES FOUNDATION",
+      "employer_display": "Open Avenues Foundation",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-2051",
+      "soc_titles": "Financial and Investment Analysts",
+      "worksite_states": "NY",
+      "worksite_cities": "Brooklyn; New York",
+      "wage_annual_min": 87838,
+      "wage_annual_median": 87838,
+      "wage_annual_max": 87838
+    },
+    {
       "employer": "PACIFIC INVESTMENT MANAGEMENT COMPANY",
       "employer_display": "Pacific Investment Management Company LLC",
       "filing_count": 2,
@@ -1457,36 +722,6 @@
       "wage_annual_min": 125000,
       "wage_annual_median": 125000,
       "wage_annual_max": 125000
-    },
-    {
-      "employer": "PASACA CAPITAL",
-      "employer_display": "Pasaca Capital Inc.",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "CA",
-      "worksite_cities": "Pasadena",
-      "wage_annual_min": 80000,
-      "wage_annual_median": 80000,
-      "wage_annual_max": 80000
-    },
-    {
-      "employer": "SMB SHARED SERVICES",
-      "employer_display": "SMB Shared Services Inc.",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "DE",
-      "worksite_cities": "Newark",
-      "wage_annual_min": 86000,
-      "wage_annual_median": 86000,
-      "wage_annual_max": 86000
     },
     {
       "employer": "SPLITIT USA",
@@ -1534,21 +769,6 @@
       "wage_annual_max": 94500
     },
     {
-      "employer": "1200 MGMT",
-      "employer_display": "1200 Mgmt LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "CA",
-      "worksite_cities": "La Jolla",
-      "wage_annual_min": 127982,
-      "wage_annual_median": 127982,
-      "wage_annual_max": 127982
-    },
-    {
       "employer": "A MAX INSURANCE SERVICES",
       "employer_display": "A-Max Insurance Services Inc",
       "filing_count": 1,
@@ -1577,21 +797,6 @@
       "wage_annual_min": 76066,
       "wage_annual_median": 76066,
       "wage_annual_max": 76066
-    },
-    {
-      "employer": "ABACUS PLANNING GROUP",
-      "employer_display": "Abacus Planning Group, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "SC",
-      "worksite_cities": "Greenville",
-      "wage_annual_min": 80417,
-      "wage_annual_median": 80417,
-      "wage_annual_max": 80417
     },
     {
       "employer": "ABIO X HOLDINGS",
@@ -1624,94 +829,19 @@
       "wage_annual_max": 72218
     },
     {
-      "employer": "ADAPT DIGITAL",
-      "employer_display": "Adapt Digital, LLC",
+      "employer": "ADVENTIST HEALTH SYSTEM SUNBELT",
+      "employer_display": "Adventist Health System/Sunbelt, Inc.",
       "filing_count": 1,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "13-2051",
       "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "DC",
-      "worksite_cities": "Washington",
-      "wage_annual_min": 76066,
-      "wage_annual_median": 76066,
-      "wage_annual_max": 76066
-    },
-    {
-      "employer": "ADVENTIST HEALTH SYSTEM WEST",
-      "employer_display": "Adventist Health System/West",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "CA",
-      "worksite_cities": "Bakersfield",
-      "wage_annual_min": 79000,
-      "wage_annual_median": 79000,
-      "wage_annual_max": 79000
-    },
-    {
-      "employer": "AFFINITY INVESTMENT ADVISORS",
-      "employer_display": "Affinity Investment Advisors, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "CA",
-      "worksite_cities": "Newport Beach",
-      "wage_annual_min": 85000,
-      "wage_annual_median": 85000,
-      "wage_annual_max": 85000
-    },
-    {
-      "employer": "AFYA GROUP",
-      "employer_display": "Afya Group LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "NC",
-      "worksite_cities": "Charlotte",
-      "wage_annual_min": 70700,
-      "wage_annual_median": 70700,
-      "wage_annual_max": 70700
-    },
-    {
-      "employer": "AHRC NYC",
-      "employer_display": "AHRC NYC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "NY",
-      "worksite_cities": "New York",
-      "wage_annual_min": 87838,
-      "wage_annual_median": 87838,
-      "wage_annual_max": 87838
-    },
-    {
-      "employer": "AKUNA CAPITAL",
-      "employer_display": "Akuna Capital, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "IL",
-      "worksite_cities": "Chicago",
-      "wage_annual_min": 140000,
-      "wage_annual_median": 140000,
-      "wage_annual_max": 140000
+      "worksite_states": "FL",
+      "worksite_cities": "Orlando",
+      "wage_annual_min": 77896,
+      "wage_annual_median": 77896,
+      "wage_annual_max": 77896
     },
     {
       "employer": "ALCHATEK",
@@ -1729,111 +859,6 @@
       "wage_annual_max": 68000
     },
     {
-      "employer": "ALKALI PARTNERS",
-      "employer_display": "Alkali Partners LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "NJ",
-      "worksite_cities": "Hoboken",
-      "wage_annual_min": 110000,
-      "wage_annual_median": 110000,
-      "wage_annual_max": 110000
-    },
-    {
-      "employer": "ALPHA SQUARE GROUP S",
-      "employer_display": "Alpha Square Group S LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "NY",
-      "worksite_cities": "New York",
-      "wage_annual_min": 87838,
-      "wage_annual_median": 87838,
-      "wage_annual_max": 87838
-    },
-    {
-      "employer": "ALPINE CAPITAL ADVISORS",
-      "employer_display": "Alpine Capital Advisors",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "NY",
-      "worksite_cities": "New York",
-      "wage_annual_min": 110000,
-      "wage_annual_median": 110000,
-      "wage_annual_max": 110000
-    },
-    {
-      "employer": "ALPINE MANAGEMENT SERVICES III",
-      "employer_display": "ALPINE MANAGEMENT SERVICES III, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "CA",
-      "worksite_cities": "San Francisco",
-      "wage_annual_min": 120000,
-      "wage_annual_median": 120000,
-      "wage_annual_max": 120000
-    },
-    {
-      "employer": "ALPINE OPERATIONS GROUP",
-      "employer_display": "Alpine Operations Group LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "TX",
-      "worksite_cities": "Austin",
-      "wage_annual_min": 100000,
-      "wage_annual_median": 100000,
-      "wage_annual_max": 100000
-    },
-    {
-      "employer": "ALTARIS",
-      "employer_display": "Altaris, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "NY",
-      "worksite_cities": "New York",
-      "wage_annual_min": 125000,
-      "wage_annual_median": 125000,
-      "wage_annual_max": 125000
-    },
-    {
-      "employer": "AMAR COMPANIES",
-      "employer_display": "AMAR Companies, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "TX",
-      "worksite_cities": "Dallas",
-      "wage_annual_min": 64397,
-      "wage_annual_median": 64397,
-      "wage_annual_max": 64397
-    },
-    {
       "employer": "AMERICHINA",
       "employer_display": "AmeriChina LLC",
       "filing_count": 1,
@@ -1847,66 +872,6 @@
       "wage_annual_min": 76794,
       "wage_annual_median": 76794,
       "wage_annual_max": 76794
-    },
-    {
-      "employer": "APAX PARTNERS US",
-      "employer_display": "Apax Partners US, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "NY",
-      "worksite_cities": "New York",
-      "wage_annual_min": 87838,
-      "wage_annual_median": 87838,
-      "wage_annual_max": 87838
-    },
-    {
-      "employer": "APEX TOOL GROUP",
-      "employer_display": "Apex Tool Group, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "MD",
-      "worksite_cities": "Sparks",
-      "wage_annual_min": 77300,
-      "wage_annual_median": 77300,
-      "wage_annual_max": 77300
-    },
-    {
-      "employer": "AQR CAPITAL MANAGEMENT",
-      "employer_display": "AQR Capital Management, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "CT",
-      "worksite_cities": "Greenwich",
-      "wage_annual_min": 140000,
-      "wage_annual_median": 140000,
-      "wage_annual_max": 140000
-    },
-    {
-      "employer": "ARCADIA MEDICAL ASSOCIATES PA",
-      "employer_display": "Arcadia Medical Associates, PA",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "FL",
-      "worksite_cities": "Arcadia",
-      "wage_annual_min": 75000,
-      "wage_annual_median": 75000,
-      "wage_annual_max": 75000
     },
     {
       "employer": "AUGMENTED REALITY TECHNOLOGIES",
@@ -1924,34 +889,19 @@
       "wage_annual_max": 70886
     },
     {
-      "employer": "BALANCE CAPITAL MANAGEMENT",
-      "employer_display": "Balance Capital Management LLC",
+      "employer": "BANK OF AMERICA N A",
+      "employer_display": "BANK OF AMERICA N.A.",
       "filing_count": 1,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "13-2051",
       "soc_titles": "Financial and Investment Analysts",
       "worksite_states": "NY",
       "worksite_cities": "New York",
-      "wage_annual_min": 87838,
-      "wage_annual_median": 87838,
-      "wage_annual_max": 87838
-    },
-    {
-      "employer": "BALLAD HEALTH",
-      "employer_display": "Ballad Health",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "TN",
-      "worksite_cities": "Kingsport",
-      "wage_annual_min": 63000,
-      "wage_annual_median": 63000,
-      "wage_annual_max": 63000
+      "wage_annual_min": 125000,
+      "wage_annual_median": 125000,
+      "wage_annual_max": 125000
     },
     {
       "employer": "BERKLEY INSURANCE COMPANY",
@@ -1967,21 +917,6 @@
       "wage_annual_min": 89482,
       "wage_annual_median": 89482,
       "wage_annual_max": 89482
-    },
-    {
-      "employer": "BEST CHEER STONE AND CABINETS",
-      "employer_display": "Best Cheer Stone and Cabinets Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "GA",
-      "worksite_cities": "Norcross",
-      "wage_annual_min": 67830,
-      "wage_annual_median": 67830,
-      "wage_annual_max": 67830
     },
     {
       "employer": "BISONTE INDUSTRIAL USA",
@@ -2029,6 +964,21 @@
       "wage_annual_max": 90000
     },
     {
+      "employer": "BOLTBOLT",
+      "employer_display": "BOLTBOLT LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-2051",
+      "soc_titles": "Financial and Investment Analysts",
+      "worksite_states": "CA",
+      "worksite_cities": "Los Angeles",
+      "wage_annual_min": 72218,
+      "wage_annual_median": 72218,
+      "wage_annual_max": 72218
+    },
+    {
       "employer": "BOSTON UJIMA PROJECT",
       "employer_display": "Boston Ujima Project, Inc.",
       "filing_count": 1,
@@ -2044,21 +994,6 @@
       "wage_annual_max": 79997
     },
     {
-      "employer": "CALIFORNIA INSTITUTE OF TECHNOLOGY",
-      "employer_display": "California Institute of Technology",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "CA",
-      "worksite_cities": "Pasadena",
-      "wage_annual_min": 93000,
-      "wage_annual_median": 93000,
-      "wage_annual_max": 93000
-    },
-    {
       "employer": "CEDAR PARK CAPITAL MANAGEMENT L P",
       "employer_display": "Cedar Park Capital Management, L.P.",
       "filing_count": 1,
@@ -2069,111 +1004,6 @@
       "soc_titles": "Financial and Investment Analysts",
       "worksite_states": "NY",
       "worksite_cities": "New York",
-      "wage_annual_min": 125000,
-      "wage_annual_median": 125000,
-      "wage_annual_max": 125000
-    },
-    {
-      "employer": "CENTENNIAL TECHNOLOGIES",
-      "employer_display": "Centennial Technologies Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "VA",
-      "worksite_cities": "Vienna",
-      "wage_annual_min": 84800,
-      "wage_annual_median": 84800,
-      "wage_annual_max": 84800
-    },
-    {
-      "employer": "CENTRAL OHIO TAX COMPANY",
-      "employer_display": "Central Ohio Tax Company",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "OH",
-      "worksite_cities": "Columbus",
-      "wage_annual_min": 70720,
-      "wage_annual_median": 70720,
-      "wage_annual_max": 70720
-    },
-    {
-      "employer": "CHEN KUANG USA",
-      "employer_display": "Chen Kuang USA Inc",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "NY",
-      "worksite_cities": "Ozone Park",
-      "wage_annual_min": 87838,
-      "wage_annual_median": 87838,
-      "wage_annual_max": 87838
-    },
-    {
-      "employer": "CHERVON NORTH AMERICA",
-      "employer_display": "Chervon North America, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "IL",
-      "worksite_cities": "Naperville",
-      "wage_annual_min": 84290,
-      "wage_annual_median": 84290,
-      "wage_annual_max": 84290
-    },
-    {
-      "employer": "CHOWBUS",
-      "employer_display": "Chowbus, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "NY",
-      "worksite_cities": "Long Island City",
-      "wage_annual_min": 95000,
-      "wage_annual_median": 95000,
-      "wage_annual_max": 95000
-    },
-    {
-      "employer": "CICC US SECURITIES",
-      "employer_display": "CICC US Securities Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "NY",
-      "worksite_cities": "New York",
-      "wage_annual_min": 110000,
-      "wage_annual_median": 110000,
-      "wage_annual_max": 110000
-    },
-    {
-      "employer": "CITIGROUP GLOBAL MARKETS",
-      "employer_display": "Citigroup Global Markets Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "IL",
-      "worksite_cities": "Chicago",
       "wage_annual_min": 125000,
       "wage_annual_median": 125000,
       "wage_annual_max": 125000
@@ -2224,21 +1054,6 @@
       "wage_annual_max": 120000
     },
     {
-      "employer": "COLUMBIA PARTNERS NEW YORK",
-      "employer_display": "Columbia Partners New York, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "NY",
-      "worksite_cities": "New York",
-      "wage_annual_min": 87838,
-      "wage_annual_median": 87838,
-      "wage_annual_max": 87838
-    },
-    {
       "employer": "COSTAR IMPORTS",
       "employer_display": "Costar Imports Inc.",
       "filing_count": 1,
@@ -2252,36 +1067,6 @@
       "wage_annual_min": 100180,
       "wage_annual_median": 100180,
       "wage_annual_max": 100180
-    },
-    {
-      "employer": "CREST BEAUTY WORLD",
-      "employer_display": "Crest Beauty World Inc",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "CA",
-      "worksite_cities": "Chino",
-      "wage_annual_min": 72218,
-      "wage_annual_median": 72218,
-      "wage_annual_max": 72218
-    },
-    {
-      "employer": "CRESTVIEW ADVISORS",
-      "employer_display": "Crestview Advisors, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "NY",
-      "worksite_cities": "New York",
-      "wage_annual_min": 120000,
-      "wage_annual_median": 120000,
-      "wage_annual_max": 120000
     },
     {
       "employer": "CYPRUS POINT INVESTMENT MANAGEMENT",
@@ -2314,21 +1099,6 @@
       "wage_annual_max": 350000
     },
     {
-      "employer": "DAYLIGHT BRIDGE WHOLESALE",
-      "employer_display": "Daylight Bridge Wholesale Inc",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "CA",
-      "worksite_cities": "West Covina",
-      "wage_annual_min": 75000,
-      "wage_annual_median": 75000,
-      "wage_annual_max": 75000
-    },
-    {
       "employer": "DEUTSCHE BANK SECURITIES",
       "employer_display": "Deutsche Bank Securities, Inc.",
       "filing_count": 1,
@@ -2344,81 +1114,6 @@
       "wage_annual_max": 125000
     },
     {
-      "employer": "DIGITALBRIDGE GROUP ADVISORS",
-      "employer_display": "DigitalBridge Group Advisors, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "FL",
-      "worksite_cities": "Boca Raton",
-      "wage_annual_min": 124000,
-      "wage_annual_median": 124000,
-      "wage_annual_max": 124000
-    },
-    {
-      "employer": "DIMENSIONAL FUND ADVISORS LP",
-      "employer_display": "DIMENSIONAL FUND ADVISORS LP",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "TX",
-      "worksite_cities": "Austin",
-      "wage_annual_min": 94000,
-      "wage_annual_median": 94000,
-      "wage_annual_max": 94000
-    },
-    {
-      "employer": "DOORDASH",
-      "employer_display": "DoorDash, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "CA",
-      "worksite_cities": "San Francisco",
-      "wage_annual_min": 90272,
-      "wage_annual_median": 90272,
-      "wage_annual_max": 90272
-    },
-    {
-      "employer": "DSFEDERAL",
-      "employer_display": "DSFederal Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "MD",
-      "worksite_cities": "Germantown",
-      "wage_annual_min": 76066,
-      "wage_annual_median": 76066,
-      "wage_annual_max": 76066
-    },
-    {
-      "employer": "DUXFORD PRIOR",
-      "employer_display": "Duxford Prior, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "CA",
-      "worksite_cities": "San Francisco",
-      "wage_annual_min": 100000,
-      "wage_annual_median": 100000,
-      "wage_annual_max": 100000
-    },
-    {
       "employer": "EDITION MOTORS",
       "employer_display": "Edition Motors LLC",
       "filing_count": 1,
@@ -2432,36 +1127,6 @@
       "wage_annual_min": 72218,
       "wage_annual_median": 72218,
       "wage_annual_max": 72218
-    },
-    {
-      "employer": "EDUTECH LAB",
-      "employer_display": "EduTech Lab Inc",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "MA",
-      "worksite_cities": "Cambridge",
-      "wage_annual_min": 80000,
-      "wage_annual_median": 80000,
-      "wage_annual_max": 80000
-    },
-    {
-      "employer": "EGHA GROUP",
-      "employer_display": "EGHA Group Corp",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "NY",
-      "worksite_cities": "New York",
-      "wage_annual_min": 90000,
-      "wage_annual_median": 90000,
-      "wage_annual_max": 90000
     },
     {
       "employer": "ELDRIDGE CAPITAL MANAGEMENT SERVICES",
@@ -2494,36 +1159,6 @@
       "wage_annual_max": 90000
     },
     {
-      "employer": "EVERGROW FINANCIALS",
-      "employer_display": "Evergrow Financials LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "MO",
-      "worksite_cities": "St. Louis",
-      "wage_annual_min": 59322,
-      "wage_annual_median": 59322,
-      "wage_annual_max": 59322
-    },
-    {
-      "employer": "EXVOR CAPITAL II",
-      "employer_display": "Exvor Capital II LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "NY",
-      "worksite_cities": "New York",
-      "wage_annual_min": 87838,
-      "wage_annual_median": 87838,
-      "wage_annual_max": 87838
-    },
-    {
       "employer": "FALCONS BURGER",
       "employer_display": "FALCONS BURGER LLC",
       "filing_count": 1,
@@ -2537,21 +1172,6 @@
       "wage_annual_min": 67829,
       "wage_annual_median": 67829,
       "wage_annual_max": 67829
-    },
-    {
-      "employer": "FIRST CITIZENS BANK AND TRUST CO",
-      "employer_display": "First Citizens Bank and Trust Co.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "CA",
-      "worksite_cities": "Pasadena",
-      "wage_annual_min": 71635,
-      "wage_annual_median": 71635,
-      "wage_annual_max": 71635
     },
     {
       "employer": "FIRSTWAVE CAPITAL MANAGEMENT",
@@ -2569,81 +1189,6 @@
       "wage_annual_max": 115000
     },
     {
-      "employer": "FISCAL SPONSOR CORPORATION",
-      "employer_display": "Fiscal Sponsor Corporation",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "NY",
-      "worksite_cities": "New York City",
-      "wage_annual_min": 104000,
-      "wage_annual_median": 104000,
-      "wage_annual_max": 104000
-    },
-    {
-      "employer": "FLORIDA HOSPITAL MEDICAL GROUP",
-      "employer_display": "Florida Hospital Medical Group, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "FL",
-      "worksite_cities": "Maitland",
-      "wage_annual_min": 59987,
-      "wage_annual_median": 59987,
-      "wage_annual_max": 59987
-    },
-    {
-      "employer": "FMR LLC D B A FIDELITY INVESTMENTS",
-      "employer_display": "FMR LLC d/b/a Fidelity Investments",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "MA",
-      "worksite_cities": "Boston",
-      "wage_annual_min": 72176,
-      "wage_annual_median": 72176,
-      "wage_annual_max": 72176
-    },
-    {
-      "employer": "FRUITIST HOLDINGS",
-      "employer_display": "FRUITIST HOLDINGS INC.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "CA",
-      "worksite_cities": "LOS ANGELES",
-      "wage_annual_min": 90000,
-      "wage_annual_median": 90000,
-      "wage_annual_max": 90000
-    },
-    {
-      "employer": "FTAI AIRCRAFT LEASING",
-      "employer_display": "FTAI Aircraft Leasing LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "NY",
-      "worksite_cities": "New York",
-      "wage_annual_min": 160000,
-      "wage_annual_median": 160000,
-      "wage_annual_max": 160000
-    },
-    {
       "employer": "GENERAL CATALYST ENTERPRISES",
       "employer_display": "General Catalyst Enterprises, Inc.",
       "filing_count": 1,
@@ -2659,51 +1204,6 @@
       "wage_annual_max": 400000
     },
     {
-      "employer": "GENESIS CAPITAL",
-      "employer_display": "Genesis Capital, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "CA",
-      "worksite_cities": "Sherman Oaks",
-      "wage_annual_min": 90000,
-      "wage_annual_median": 90000,
-      "wage_annual_max": 90000
-    },
-    {
-      "employer": "GLASSRATNER ADVISORY CAPITAL GROUP",
-      "employer_display": "GlassRatner Advisory & Capital Group, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "CA",
-      "worksite_cities": "Irvine",
-      "wage_annual_min": 100000,
-      "wage_annual_median": 100000,
-      "wage_annual_max": 100000
-    },
-    {
-      "employer": "GLEN COVE MANSION HOSPITALITY",
-      "employer_display": "Glen Cove Mansion Hospitality LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "NY",
-      "worksite_cities": "Glen Cove",
-      "wage_annual_min": 102232,
-      "wage_annual_median": 102232,
-      "wage_annual_max": 102232
-    },
-    {
       "employer": "GLOBAL PACIFIC SECURITIES US",
       "employer_display": "Global Pacific Securities US Inc",
       "filing_count": 1,
@@ -2717,36 +1217,6 @@
       "wage_annual_min": 87838,
       "wage_annual_median": 87838,
       "wage_annual_max": 87838
-    },
-    {
-      "employer": "GOFO",
-      "employer_display": "GOFO Inc",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "CA",
-      "worksite_cities": "Vernon",
-      "wage_annual_min": 72218,
-      "wage_annual_median": 72218,
-      "wage_annual_max": 72218
-    },
-    {
-      "employer": "GOLDMAN SACHS WEALTH SERVICES L P",
-      "employer_display": "GOLDMAN SACHS WEALTH SERVICES, L.P.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "NY",
-      "worksite_cities": "Cohoes",
-      "wage_annual_min": 67900,
-      "wage_annual_median": 67900,
-      "wage_annual_max": 67900
     },
     {
       "employer": "GOLUB CAPITAL",
@@ -2794,51 +1264,6 @@
       "wage_annual_max": 87870
     },
     {
-      "employer": "GREAT WALL SECURITIES",
-      "employer_display": "Great Wall Securities LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "NY",
-      "worksite_cities": "New York",
-      "wage_annual_min": 88000,
-      "wage_annual_median": 88000,
-      "wage_annual_max": 88000
-    },
-    {
-      "employer": "HARMONIA CAPITAL USA",
-      "employer_display": "Harmonia Capital USA, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "CA",
-      "worksite_cities": "Irvine",
-      "wage_annual_min": 72384,
-      "wage_annual_median": 72384,
-      "wage_annual_max": 72384
-    },
-    {
-      "employer": "HAWTHORNE LANE CAPITAL GROUP",
-      "employer_display": "Hawthorne Lane Capital Group, LLC.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "NY",
-      "worksite_cities": "New York",
-      "wage_annual_min": 100000,
-      "wage_annual_median": 100000,
-      "wage_annual_max": 100000
-    },
-    {
       "employer": "HD BIOSCIENCES",
       "employer_display": "HD Biosciences, Inc.",
       "filing_count": 1,
@@ -2852,21 +1277,6 @@
       "wage_annual_min": 75000,
       "wage_annual_median": 75000,
       "wage_annual_max": 75000
-    },
-    {
-      "employer": "HENESSY CAPITAL INVESTMENT CORP VII",
-      "employer_display": "Henessy Capital Investment Corp. VII",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "NY",
-      "worksite_cities": "New York",
-      "wage_annual_min": 100000,
-      "wage_annual_median": 100000,
-      "wage_annual_max": 100000
     },
     {
       "employer": "HICO MANAGEMENT",
@@ -2914,36 +1324,6 @@
       "wage_annual_max": 90000
     },
     {
-      "employer": "HOOLI HOMES BOSTON",
-      "employer_display": "Hooli Homes Boston, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "MA",
-      "worksite_cities": "Boston",
-      "wage_annual_min": 79040,
-      "wage_annual_median": 79040,
-      "wage_annual_max": 79040
-    },
-    {
-      "employer": "HOULIHAN LOKEY FINANCIAL ADVISORS",
-      "employer_display": "Houlihan Lokey Financial Advisors, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "NY",
-      "worksite_cities": "New York",
-      "wage_annual_min": 100000,
-      "wage_annual_median": 100000,
-      "wage_annual_max": 100000
-    },
-    {
       "employer": "IMOBILE",
       "employer_display": "iMobile LLC",
       "filing_count": 1,
@@ -2957,21 +1337,6 @@
       "wage_annual_min": 90000,
       "wage_annual_median": 90000,
       "wage_annual_max": 90000
-    },
-    {
-      "employer": "INALFA ROOF SYSTEMS",
-      "employer_display": "Inalfa Roof Systems, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "MI",
-      "worksite_cities": "Auburn Hills",
-      "wage_annual_min": 72000,
-      "wage_annual_median": 72000,
-      "wage_annual_max": 72000
     },
     {
       "employer": "INSAF MANAGEMENT",
@@ -3064,49 +1429,19 @@
       "wage_annual_max": 72218
     },
     {
-      "employer": "KALEIDA HEALTH",
-      "employer_display": "Kaleida Health",
+      "employer": "KOALA HEALTH",
+      "employer_display": "Koala Health Inc.",
       "filing_count": 1,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "13-2051",
       "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "NY",
-      "worksite_cities": "Buffalo",
-      "wage_annual_min": 67395,
-      "wage_annual_median": 67395,
-      "wage_annual_max": 67395
-    },
-    {
-      "employer": "KCA TAX SERVICES",
-      "employer_display": "KCA Tax Services LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "PA",
-      "worksite_cities": "Harrisburg",
-      "wage_annual_min": 66560,
-      "wage_annual_median": 66560,
-      "wage_annual_max": 66560
-    },
-    {
-      "employer": "KENTZY INTERNATIONAL",
-      "employer_display": "Kentzy International, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "TX",
-      "worksite_cities": "Allen",
-      "wage_annual_min": 70000,
-      "wage_annual_median": 70000,
-      "wage_annual_max": 70000
+      "worksite_states": "MA",
+      "worksite_cities": "Boston",
+      "wage_annual_min": 140000,
+      "wage_annual_median": 140000,
+      "wage_annual_max": 140000
     },
     {
       "employer": "KOREA INVESTMENT CORPORATION",
@@ -3122,21 +1457,6 @@
       "wage_annual_min": 150000,
       "wage_annual_median": 150000,
       "wage_annual_max": 150000
-    },
-    {
-      "employer": "KOREA INVESTMENT PARTNERS US",
-      "employer_display": "Korea Investment Partners US, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "CA",
-      "worksite_cities": "Los Altos",
-      "wage_annual_min": 94926,
-      "wage_annual_median": 94926,
-      "wage_annual_max": 94926
     },
     {
       "employer": "LA RAZA COMMUNITY RESOURCE CENTER",
@@ -3169,81 +1489,6 @@
       "wage_annual_max": 69336
     },
     {
-      "employer": "LEYTON USA",
-      "employer_display": "Leyton USA, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "MA",
-      "worksite_cities": "Boston",
-      "wage_annual_min": 80000,
-      "wage_annual_median": 80000,
-      "wage_annual_max": 80000
-    },
-    {
-      "employer": "LIBERTY BANKERS LIFE INSURANCE COMPANY",
-      "employer_display": "Liberty Bankers Life Insurance Company",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "TX",
-      "worksite_cities": "Dallas",
-      "wage_annual_min": 75000,
-      "wage_annual_median": 75000,
-      "wage_annual_max": 75000
-    },
-    {
-      "employer": "LIGHTEN GROUP LONG ISLAND",
-      "employer_display": "Lighten Group Long Island, Inc",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "NY",
-      "worksite_cities": "Syosset",
-      "wage_annual_min": 89400,
-      "wage_annual_median": 89400,
-      "wage_annual_max": 89400
-    },
-    {
-      "employer": "LUMINOUS MONEY",
-      "employer_display": "Luminous Money LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "MN",
-      "worksite_cities": "Minneapolis",
-      "wage_annual_min": 73403,
-      "wage_annual_median": 73403,
-      "wage_annual_max": 73403
-    },
-    {
-      "employer": "LUSTRELIFE",
-      "employer_display": "LustreLife LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "CA",
-      "worksite_cities": "Palo Alto",
-      "wage_annual_min": 98030,
-      "wage_annual_median": 98030,
-      "wage_annual_max": 98030
-    },
-    {
       "employer": "MACQUARIE ASSET MANAGEMENT US",
       "employer_display": "Macquarie Asset Management US Inc.",
       "filing_count": 1,
@@ -3259,79 +1504,34 @@
       "wage_annual_max": 110000
     },
     {
-      "employer": "MAGICBYTE AI",
-      "employer_display": "MagicByte AI, Inc.",
+      "employer": "MACQUARIE HOLDINGS USA",
+      "employer_display": "Macquarie Holdings (USA) Inc.",
       "filing_count": 1,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "CA",
-      "worksite_cities": "Palo Alto",
-      "wage_annual_min": 98030,
-      "wage_annual_median": 98030,
-      "wage_annual_max": 98030
-    },
-    {
-      "employer": "MARION STREET CAPITAL PARTNERS LP",
-      "employer_display": "Marion Street Capital Partners, LP",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "PA",
-      "worksite_cities": "Philadelphia",
-      "wage_annual_min": 72500,
-      "wage_annual_median": 72500,
-      "wage_annual_max": 72500
-    },
-    {
-      "employer": "MATRIX RACQUET CLUB",
-      "employer_display": "Matrix Racquet Club, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "AR",
-      "worksite_cities": "Lowell",
-      "wage_annual_min": 65645,
-      "wage_annual_median": 65645,
-      "wage_annual_max": 65645
-    },
-    {
-      "employer": "MEDSTAR GEORGETOWN MEDICAL CENTER",
-      "employer_display": "MedStar Georgetown Medical Center, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "VA",
-      "worksite_cities": "McLean",
-      "wage_annual_min": 97860,
-      "wage_annual_median": 97860,
-      "wage_annual_max": 97860
-    },
-    {
-      "employer": "METANOVAS BIOTECH",
-      "employer_display": "Metanovas Biotech, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "13-2051",
       "soc_titles": "Financial and Investment Analysts",
       "worksite_states": "NY",
-      "worksite_cities": "Long Island City",
-      "wage_annual_min": 93600,
-      "wage_annual_median": 93600,
-      "wage_annual_max": 93600
+      "worksite_cities": "New York",
+      "wage_annual_min": 110000,
+      "wage_annual_median": 110000,
+      "wage_annual_max": 110000
+    },
+    {
+      "employer": "MAXIM GROUP",
+      "employer_display": "Maxim Group LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "13-2051",
+      "soc_titles": "Financial and Investment Analysts",
+      "worksite_states": "NY",
+      "worksite_cities": "New York",
+      "wage_annual_min": 88000,
+      "wage_annual_median": 88000,
+      "wage_annual_max": 88000
     },
     {
       "employer": "MOBILE CLIMATE CONTROL",
@@ -3349,64 +1549,19 @@
       "wage_annual_max": 74896
     },
     {
-      "employer": "MONASHEES US",
-      "employer_display": "MONASHEES US CORP",
+      "employer": "MOELIS COMPANY GROUP LP",
+      "employer_display": "Moelis & Company Group LP",
       "filing_count": 1,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "13-2051",
       "soc_titles": "Financial and Investment Analysts",
       "worksite_states": "CA",
-      "worksite_cities": "San Francisco",
-      "wage_annual_min": 110000,
-      "wage_annual_median": 110000,
-      "wage_annual_max": 110000
-    },
-    {
-      "employer": "MONROE CAPITAL",
-      "employer_display": "Monroe Capital LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "IL",
-      "worksite_cities": "Chicago",
-      "wage_annual_min": 85000,
-      "wage_annual_median": 85000,
-      "wage_annual_max": 85000
-    },
-    {
-      "employer": "MOODY S INVESTORS SERVICE",
-      "employer_display": "Moody's Investors Service, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "NY",
-      "worksite_cities": "New York",
-      "wage_annual_min": 113000,
-      "wage_annual_median": 113000,
-      "wage_annual_max": 113000
-    },
-    {
-      "employer": "MORNINGSTAR RESEARCH SERVICES",
-      "employer_display": "Morningstar Research Services LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "IL",
-      "worksite_cities": "Chicago",
-      "wage_annual_min": 80000,
-      "wage_annual_median": 80000,
-      "wage_annual_max": 80000
+      "worksite_cities": "Los Angeles",
+      "wage_annual_min": 125000,
+      "wage_annual_median": 125000,
+      "wage_annual_max": 125000
     },
     {
       "employer": "MOSAIC WEALTH PARTNERS",
@@ -3424,81 +1579,6 @@
       "wage_annual_max": 70000
     },
     {
-      "employer": "MS 56 CORPORATION",
-      "employer_display": "MS 56 Corporation",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "FL",
-      "worksite_cities": "Doral",
-      "wage_annual_min": 65000,
-      "wage_annual_median": 65000,
-      "wage_annual_max": 65000
-    },
-    {
-      "employer": "MUREX NORTH AMERICA",
-      "employer_display": "Murex North America, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "NY",
-      "worksite_cities": "New York",
-      "wage_annual_min": 110000,
-      "wage_annual_median": 110000,
-      "wage_annual_max": 110000
-    },
-    {
-      "employer": "NATIONAL AIR CHARTERS",
-      "employer_display": "NATIONAL AIR CHARTERS",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "FL",
-      "worksite_cities": "MIAMI",
-      "wage_annual_min": 65000,
-      "wage_annual_median": 65000,
-      "wage_annual_max": 65000
-    },
-    {
-      "employer": "NEUBERGER BERMAN GROUP",
-      "employer_display": "Neuberger Berman Group LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "NY",
-      "worksite_cities": "New York",
-      "wage_annual_min": 160000,
-      "wage_annual_median": 160000,
-      "wage_annual_max": 160000
-    },
-    {
-      "employer": "NEW MOUNTAIN CAPITAL",
-      "employer_display": "New Mountain Capital, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "NY",
-      "worksite_cities": "New York",
-      "wage_annual_min": 100000,
-      "wage_annual_median": 100000,
-      "wage_annual_max": 100000
-    },
-    {
       "employer": "NEW YORK PREPARATORY SCHOOL INC DBA DWIGHT SCHOOL",
       "employer_display": "New York Preparatory School Inc, dba Dwight School",
       "filing_count": 1,
@@ -3512,36 +1592,6 @@
       "wage_annual_min": 87838,
       "wage_annual_median": 87838,
       "wage_annual_max": 87838
-    },
-    {
-      "employer": "NEWMARK COMPANY REAL ESTATE",
-      "employer_display": "Newmark & Company Real Estate, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "NY",
-      "worksite_cities": "New York",
-      "wage_annual_min": 100000,
-      "wage_annual_median": 100000,
-      "wage_annual_max": 100000
-    },
-    {
-      "employer": "NISHKAMA CAPITAL",
-      "employer_display": "Nishkama Capital LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "NY",
-      "worksite_cities": "New York",
-      "wage_annual_min": 237400,
-      "wage_annual_median": 237400,
-      "wage_annual_max": 237400
     },
     {
       "employer": "NORTHMARQ MULTIFAMILY",
@@ -3589,66 +1639,6 @@
       "wage_annual_max": 72218
     },
     {
-      "employer": "OAK FOREST REALTY",
-      "employer_display": "Oak Forest Realty, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "MA",
-      "worksite_cities": "Boston",
-      "wage_annual_min": 79040,
-      "wage_annual_median": 79040,
-      "wage_annual_max": 79040
-    },
-    {
-      "employer": "OBENTECH CONSULTING US",
-      "employer_display": "Obentech Consulting US Inc",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "CA",
-      "worksite_cities": "Irvine",
-      "wage_annual_min": 72218,
-      "wage_annual_median": 72218,
-      "wage_annual_max": 72218
-    },
-    {
-      "employer": "OHIO FARMERS INSURANCE COMPANY",
-      "employer_display": "Ohio Farmers Insurance Company",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "OH",
-      "worksite_cities": "Westfield Center",
-      "wage_annual_min": 75000,
-      "wage_annual_median": 75000,
-      "wage_annual_max": 75000
-    },
-    {
-      "employer": "OLIVE ASSET MANAGEMENT",
-      "employer_display": "Olive Asset Management, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "CA",
-      "worksite_cities": "Palo Alto",
-      "wage_annual_min": 124740,
-      "wage_annual_median": 124740,
-      "wage_annual_max": 124740
-    },
-    {
       "employer": "OSCAR AX",
       "employer_display": "OSCAR AX INC",
       "filing_count": 1,
@@ -3664,51 +1654,6 @@
       "wage_annual_max": 91520
     },
     {
-      "employer": "PARI PASSU VENTURES",
-      "employer_display": "Pari Passu Ventures LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "CT",
-      "worksite_cities": "Greenwich",
-      "wage_annual_min": 125000,
-      "wage_annual_median": 125000,
-      "wage_annual_max": 125000
-    },
-    {
-      "employer": "PARKING ADVISORS",
-      "employer_display": "Parking Advisors Inc",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "IL",
-      "worksite_cities": "Chicago",
-      "wage_annual_min": 77500,
-      "wage_annual_median": 77500,
-      "wage_annual_max": 77500
-    },
-    {
-      "employer": "PAYDEN RYGEL",
-      "employer_display": "Payden & Rygel",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "CA",
-      "worksite_cities": "Los Angeles",
-      "wage_annual_min": 82400,
-      "wage_annual_median": 82400,
-      "wage_annual_max": 82400
-    },
-    {
       "employer": "PAYROC WORLDACCESS",
       "employer_display": "Payroc WorldAccess, LLC",
       "filing_count": 1,
@@ -3722,21 +1667,6 @@
       "wage_annual_min": 70886,
       "wage_annual_median": 70886,
       "wage_annual_max": 70886
-    },
-    {
-      "employer": "PENNYPACK",
-      "employer_display": "Pennypack LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "NY",
-      "worksite_cities": "New York",
-      "wage_annual_min": 112500,
-      "wage_annual_median": 112500,
-      "wage_annual_max": 112500
     },
     {
       "employer": "PI LABS",
@@ -3829,66 +1759,6 @@
       "wage_annual_max": 85000
     },
     {
-      "employer": "QORDATA",
-      "employer_display": "QORDATA, INC.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "NJ",
-      "worksite_cities": "PRINCETON",
-      "wage_annual_min": 90200,
-      "wage_annual_median": 90200,
-      "wage_annual_max": 90200
-    },
-    {
-      "employer": "QUORUM PRIVATE WEALTH",
-      "employer_display": "Quorum Private Wealth, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "CA",
-      "worksite_cities": "Danville",
-      "wage_annual_min": 100000,
-      "wage_annual_median": 100000,
-      "wage_annual_max": 100000
-    },
-    {
-      "employer": "RED IRON GROUP MANAGEMENT",
-      "employer_display": "Red Iron Group Management LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "CA",
-      "worksite_cities": "MENLO PARK",
-      "wage_annual_min": 100000,
-      "wage_annual_median": 100000,
-      "wage_annual_max": 100000
-    },
-    {
-      "employer": "RIGEL INTERNATIONAL",
-      "employer_display": "Rigel International Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "CA",
-      "worksite_cities": "La Mirada",
-      "wage_annual_min": 72800,
-      "wage_annual_median": 72800,
-      "wage_annual_max": 72800
-    },
-    {
       "employer": "RIO CAPITAL INVESTMENTS",
       "employer_display": "Rio Capital Investments, LLC",
       "filing_count": 1,
@@ -3902,21 +1772,6 @@
       "wage_annual_min": 92000,
       "wage_annual_median": 92000,
       "wage_annual_max": 92000
-    },
-    {
-      "employer": "RIP CITY TENNIS",
-      "employer_display": "RIP City Tennis LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "OR",
-      "worksite_cities": "Portland",
-      "wage_annual_min": 72000,
-      "wage_annual_median": 72000,
-      "wage_annual_max": 72000
     },
     {
       "employer": "RIVERBEND OIL GAS",
@@ -3947,21 +1802,6 @@
       "wage_annual_min": 89000,
       "wage_annual_median": 89000,
       "wage_annual_max": 89000
-    },
-    {
-      "employer": "ROYAL BANK OF CANADA US",
-      "employer_display": "Royal Bank of Canada US",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "NY",
-      "worksite_cities": "New York",
-      "wage_annual_min": 100000,
-      "wage_annual_median": 100000,
-      "wage_annual_max": 100000
     },
     {
       "employer": "S S TRUCK PARTS",
@@ -4009,21 +1849,6 @@
       "wage_annual_max": 117488
     },
     {
-      "employer": "SELENE FINANCE LP",
-      "employer_display": "SELENE FINANCE LP",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "TX",
-      "worksite_cities": "Carrollton",
-      "wage_annual_min": 91000,
-      "wage_annual_median": 91000,
-      "wage_annual_max": 91000
-    },
-    {
       "employer": "SG AMERICAS SECURITIES",
       "employer_display": "SG Americas Securities, LLC",
       "filing_count": 1,
@@ -4069,36 +1894,6 @@
       "wage_annual_max": 76066
     },
     {
-      "employer": "SK COMMISSARY",
-      "employer_display": "SK Commissary Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "NY",
-      "worksite_cities": "Long Island City",
-      "wage_annual_min": 93600,
-      "wage_annual_median": 93600,
-      "wage_annual_max": 93600
-    },
-    {
-      "employer": "ST JUDE MEDICAL BUSINESS SERVICES",
-      "employer_display": "ST. JUDE MEDICAL BUSINESS SERVICES, INC.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "MN",
-      "worksite_cities": "PLYMOUTH",
-      "wage_annual_min": 85000,
-      "wage_annual_median": 85000,
-      "wage_annual_max": 85000
-    },
-    {
       "employer": "STELLE ATHLETICA",
       "employer_display": "Stelle Athletica Inc",
       "filing_count": 1,
@@ -4129,79 +1924,19 @@
       "wage_annual_max": 64397
     },
     {
-      "employer": "STOUT RISIUS ROSS",
-      "employer_display": "Stout Risius Ross, LLC",
+      "employer": "SUMMIT PARTNERS LP",
+      "employer_display": "Summit Partners LP",
       "filing_count": 1,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "PA",
-      "worksite_cities": "Philadelphia",
-      "wage_annual_min": 87500,
-      "wage_annual_median": 87500,
-      "wage_annual_max": 87500
-    },
-    {
-      "employer": "SUMITOMO MITSUI BANKING CORPORATION",
-      "employer_display": "SUMITOMO MITSUI BANKING CORPORATION",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "NY",
-      "worksite_cities": "New York",
-      "wage_annual_min": 87838,
-      "wage_annual_median": 87838,
-      "wage_annual_max": 87838
-    },
-    {
-      "employer": "SUMMIT MORTGAGE BANKERS",
-      "employer_display": "Summit Mortgage Bankers Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "NY",
-      "worksite_cities": "Flushing",
-      "wage_annual_min": 88400,
-      "wage_annual_median": 88400,
-      "wage_annual_max": 88400
-    },
-    {
-      "employer": "SUNSOFT SERVICES",
-      "employer_display": "Sunsoft Services Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "NY",
-      "worksite_cities": "New York",
-      "wage_annual_min": 87838,
-      "wage_annual_median": 87838,
-      "wage_annual_max": 87838
-    },
-    {
-      "employer": "SVIG INSURANCE CENTER",
-      "employer_display": "SVIG Insurance Center",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "13-2051",
       "soc_titles": "Financial and Investment Analysts",
       "worksite_states": "CA",
-      "worksite_cities": "San Marino",
-      "wage_annual_min": 72218,
-      "wage_annual_median": 72218,
-      "wage_annual_max": 72218
+      "worksite_cities": "Menlo Park",
+      "wage_annual_min": 150000,
+      "wage_annual_median": 150000,
+      "wage_annual_max": 150000
     },
     {
       "employer": "SWISS RE AMERICA HOLDING CORPORATION",
@@ -4217,51 +1952,6 @@
       "wage_annual_min": 87838,
       "wage_annual_median": 87838,
       "wage_annual_max": 87838
-    },
-    {
-      "employer": "TAG FINANCIAL INSTITUTIONS GROUP",
-      "employer_display": "TAG Financial Institutions Group, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "NY",
-      "worksite_cities": "New York",
-      "wage_annual_min": 95000,
-      "wage_annual_median": 95000,
-      "wage_annual_max": 95000
-    },
-    {
-      "employer": "TAKENAKA PARTNERS",
-      "employer_display": "Takenaka Partners LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "CA",
-      "worksite_cities": "El Segundo",
-      "wage_annual_min": 77250,
-      "wage_annual_median": 77250,
-      "wage_annual_max": 77250
-    },
-    {
-      "employer": "TALIPOT PROSERVICES",
-      "employer_display": "Talipot Proservices, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "CA",
-      "worksite_cities": "La Jolla",
-      "wage_annual_min": 110688,
-      "wage_annual_median": 110688,
-      "wage_annual_max": 110688
     },
     {
       "employer": "TARPON SPRINGS HOSPITAL FOUNDATION",
@@ -4294,141 +1984,6 @@
       "wage_annual_max": 72218
     },
     {
-      "employer": "TECHWITHU",
-      "employer_display": "TechWithU, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "NY",
-      "worksite_cities": "New York",
-      "wage_annual_min": 87838,
-      "wage_annual_median": 87838,
-      "wage_annual_max": 87838
-    },
-    {
-      "employer": "THE AVON COMPANY",
-      "employer_display": "The Avon Company",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "NY",
-      "worksite_cities": "New York",
-      "wage_annual_min": 110000,
-      "wage_annual_median": 110000,
-      "wage_annual_max": 110000
-    },
-    {
-      "employer": "THE REINGOLD COMPANY INC PC",
-      "employer_display": "The Reingold Company Inc PC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "IL",
-      "worksite_cities": "Northbrook",
-      "wage_annual_min": 72500,
-      "wage_annual_median": 72500,
-      "wage_annual_max": 72500
-    },
-    {
-      "employer": "THE UNIVERSITY OF SOUTHERN CALIFORNIA",
-      "employer_display": "The University of Southern California",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "CA",
-      "worksite_cities": "Los Angeles",
-      "wage_annual_min": 69763,
-      "wage_annual_median": 69763,
-      "wage_annual_max": 69763
-    },
-    {
-      "employer": "THE UNIVERSITY OF TEXAS AT DALLAS",
-      "employer_display": "The University of Texas at Dallas",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "TX",
-      "worksite_cities": "Richardson",
-      "wage_annual_min": 77625,
-      "wage_annual_median": 77625,
-      "wage_annual_max": 77625
-    },
-    {
-      "employer": "TRANSGLOBAL INSURANCE AGENCY",
-      "employer_display": "TransGlobal Insurance Agency, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "MA",
-      "worksite_cities": "Newton",
-      "wage_annual_min": 84000,
-      "wage_annual_median": 84000,
-      "wage_annual_max": 84000
-    },
-    {
-      "employer": "TREXQUANT INVESTMENT LP",
-      "employer_display": "Trexquant Investment LP",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "CT",
-      "worksite_cities": "Stamford",
-      "wage_annual_min": 110000,
-      "wage_annual_median": 110000,
-      "wage_annual_max": 110000
-    },
-    {
-      "employer": "TRIPALINK",
-      "employer_display": "Tripalink, Corp.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "CA",
-      "worksite_cities": "Los Angeles",
-      "wage_annual_min": 90000,
-      "wage_annual_median": 90000,
-      "wage_annual_max": 90000
-    },
-    {
-      "employer": "TRUSTWORTHY MORTGAGE",
-      "employer_display": "Trustworthy Mortgage Corp.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "VA",
-      "worksite_cities": "Vienna",
-      "wage_annual_min": 89520,
-      "wage_annual_median": 89520,
-      "wage_annual_max": 89520
-    },
-    {
       "employer": "TX ACTIVE POWER INVESTMENTS",
       "employer_display": "TX ACTIVE POWER INVESTMENTS LLC",
       "filing_count": 1,
@@ -4457,66 +2012,6 @@
       "wage_annual_min": 84000,
       "wage_annual_median": 84000,
       "wage_annual_max": 84000
-    },
-    {
-      "employer": "UNIFIED BUSINESS TECHNOLOGIES",
-      "employer_display": "UNIFIED BUSINESS TECHNOLOGIES, INC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "TX",
-      "worksite_cities": "PLANO",
-      "wage_annual_min": 65000,
-      "wage_annual_median": 65000,
-      "wage_annual_max": 65000
-    },
-    {
-      "employer": "UNITED AMS",
-      "employer_display": "United AMS , LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "NY",
-      "worksite_cities": "New York",
-      "wage_annual_min": 119995,
-      "wage_annual_median": 119995,
-      "wage_annual_max": 119995
-    },
-    {
-      "employer": "UNIVERSITY OF CALIFORNIA LOS ANGELES",
-      "employer_display": "University of California, Los Angeles",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "CA",
-      "worksite_cities": "Los Angeles",
-      "wage_annual_min": 99493,
-      "wage_annual_median": 99493,
-      "wage_annual_max": 99493
-    },
-    {
-      "employer": "UNIVERSITY OF KENTUCKY",
-      "employer_display": "University of Kentucky",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "KY",
-      "worksite_cities": "Lexington",
-      "wage_annual_min": 55973,
-      "wage_annual_median": 55973,
-      "wage_annual_max": 55973
     },
     {
       "employer": "US ELOGISITCS SERVICE",
@@ -4549,21 +2044,6 @@
       "wage_annual_max": 87838
     },
     {
-      "employer": "VERITION GROUP",
-      "employer_display": "Verition Group LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "CT",
-      "worksite_cities": "Greenwich",
-      "wage_annual_min": 102500,
-      "wage_annual_median": 102500,
-      "wage_annual_max": 102500
-    },
-    {
       "employer": "VERRUS",
       "employer_display": "Verrus, LLC",
       "filing_count": 1,
@@ -4579,21 +2059,6 @@
       "wage_annual_max": 170000
     },
     {
-      "employer": "WA FAN TUAN",
-      "employer_display": "WA FAN TUAN INC.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "WA",
-      "worksite_cities": "Seattle",
-      "wage_annual_min": 74090,
-      "wage_annual_median": 74090,
-      "wage_annual_max": 74090
-    },
-    {
       "employer": "WEAVER AND TIDWELL L L P",
       "employer_display": "Weaver and Tidwell, L.L.P.",
       "filing_count": 1,
@@ -4607,21 +2072,6 @@
       "wage_annual_min": 77625,
       "wage_annual_median": 77625,
       "wage_annual_max": 77625
-    },
-    {
-      "employer": "WILCO INVESTMENTS",
-      "employer_display": "Wilco Investments LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "UT",
-      "worksite_cities": "Cedar City",
-      "wage_annual_min": 72550,
-      "wage_annual_median": 72550,
-      "wage_annual_max": 72550
     },
     {
       "employer": "WILLIAM PATERSON UNIVERSITY OF NEW JERSEY",
@@ -4654,21 +2104,6 @@
       "wage_annual_max": 90000
     },
     {
-      "employer": "WW ASSOCIATES CONSULTING",
-      "employer_display": "WW & Associates Consulting Inc",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "TX",
-      "worksite_cities": "Addison",
-      "wage_annual_min": 64397,
-      "wage_annual_median": 64397,
-      "wage_annual_max": 64397
-    },
-    {
       "employer": "XING LONG INVESTMENT",
       "employer_display": "Xing Long Investment LLC",
       "filing_count": 1,
@@ -4697,21 +2132,6 @@
       "wage_annual_min": 82000,
       "wage_annual_median": 82000,
       "wage_annual_max": 82000
-    },
-    {
-      "employer": "ZETA CHARTER SCHOOLS",
-      "employer_display": "Zeta Charter Schools, Inc.",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "13-2051",
-      "soc_titles": "Financial and Investment Analysts",
-      "worksite_states": "NY",
-      "worksite_cities": "New York",
-      "wage_annual_min": 88000,
-      "wage_annual_median": 88000,
-      "wage_annual_max": 88000
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-14 12:43 UTC",
+  "generated_at_utc": "2026-10-05 14:31 UTC",
   "source": "US DOL OFLC LCA Programs disclosure data (public record)",
   "filters": {
     "case_status": "Certified",
@@ -10,44 +10,42 @@
     "pw_wage_level": "I"
   },
   "quarters_used": [
-    "FY2025Q4",
     "FY2026Q1"
   ],
   "quarters_superseded": {},
   "rows_per_quarter": {
-    "FY2025Q4": 118580,
     "FY2026Q1": 83120
   },
   "funnel": {
-    "rows_total": 201700,
-    "rows_certified": 181277,
-    "rows_soc_matched": 272,
-    "rows_selected": 59
+    "rows_total": 83120,
+    "rows_certified": 74664,
+    "rows_soc_matched": 112,
+    "rows_selected": 17
   },
-  "employer_groups": 43,
-  "distinct_raw_employer_spellings": 43,
+  "employer_groups": 14,
+  "distinct_raw_employer_spellings": 14,
   "rows_wage_excluded_from_wage_stats": 0,
   "case_statuses_seen": {
-    "CERTIFIED": 181277,
-    "CERTIFIED - WITHDRAWN": 15748,
-    "WITHDRAWN": 3242,
-    "DENIED": 1433
+    "CERTIFIED": 74664,
+    "CERTIFIED - WITHDRAWN": 6666,
+    "WITHDRAWN": 1398,
+    "DENIED": 392
   },
   "wage_levels_seen": {
-    "II": 83,
-    "IV": 60,
-    "I": 59,
-    "III": 43,
-    "": 27
+    "II": 38,
+    "IV": 30,
+    "III": 21,
+    "I": 17,
+    "": 6
   },
   "wage_units_seen": {
-    "YEAR": 52,
-    "HOUR": 7
+    "YEAR": 15,
+    "HOUR": 2
   },
   "patterns": {
     "basis": {
-      "filings": 59,
-      "employers": 43,
+      "filings": 17,
+      "employers": 14,
       "measured_by": "employers",
       "min_support_employers": 3
     },
@@ -55,103 +53,53 @@
       "recurring_tokens": [
         {
           "token": "engineer",
-          "employers": 18,
-          "filings": 23
-        },
-        {
-          "token": "associate",
-          "employers": 16,
-          "filings": 22
-        },
-        {
-          "token": "postdoctoral",
-          "employers": 15,
-          "filings": 25
-        },
-        {
-          "token": "research",
-          "employers": 13,
-          "filings": 23
-        },
-        {
-          "token": "process",
-          "employers": 10,
-          "filings": 11
-        },
-        {
-          "token": "chemical",
-          "employers": 6,
-          "filings": 10
-        },
-        {
-          "token": "fellow",
-          "employers": 4,
+          "employers": 7,
           "filings": 7
         },
         {
-          "token": "post",
-          "employers": 3,
-          "filings": 4
+          "token": "associate",
+          "employers": 6,
+          "filings": 8
         },
         {
-          "token": "engineering",
-          "employers": 3,
-          "filings": 3
+          "token": "postdoctoral",
+          "employers": 5,
+          "filings": 7
+        },
+        {
+          "token": "research",
+          "employers": 5,
+          "filings": 7
+        },
+        {
+          "token": "process",
+          "employers": 4,
+          "filings": 4
         }
       ],
       "distinct_titles": [
         {
           "title": "Postdoctoral Research Associate",
-          "employers": 6,
-          "filings": 7
-        },
-        {
-          "title": "Chemical Engineer",
-          "employers": 4,
-          "filings": 4
+          "employers": 2,
+          "filings": 2
         },
         {
           "title": "Process Engineer",
-          "employers": 4,
-          "filings": 4
+          "employers": 2,
+          "filings": 2
         },
         {
           "title": "Research Associate",
-          "employers": 3,
-          "filings": 3
+          "employers": 2,
+          "filings": 2
         },
         {
           "title": "Postdoctoral Associate",
-          "employers": 2,
-          "filings": 4
-        },
-        {
-          "title": "Postdoctoral Fellow",
-          "employers": 2,
-          "filings": 2
-        },
-        {
-          "title": "Postdoctoral Research Fellow",
           "employers": 1,
-          "filings": 4
+          "filings": 2
         },
         {
           "title": "Postdoctoral Research Scholar",
-          "employers": 1,
-          "filings": 4
-        },
-        {
-          "title": "CHEMICAL ENGINEER",
-          "employers": 1,
-          "filings": 2
-        },
-        {
-          "title": "Post Doctorate Research Associate (Chemical Engineer)",
-          "employers": 1,
-          "filings": 2
-        },
-        {
-          "title": "Process Safety Engineer",
           "employers": 1,
           "filings": 2
         },
@@ -161,17 +109,7 @@
           "filings": 1
         },
         {
-          "title": "Engineer II, Manufacturing Science and Technology (MS & T)",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Engineering Supervisor, Chemicals & Applications",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Investigator, Modeling and Simulation",
+          "title": "Chemical Engineer",
           "employers": 1,
           "filings": 1
         },
@@ -181,77 +119,17 @@
           "filings": 1
         },
         {
-          "title": "Mechanical Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "POSTDOCTORAL RESEARCH ASSOCIATE",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "PhD Intern (Chemical Engineer)",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Post Doctoral Researcher",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Post-Doctoral Associate",
           "employers": 1,
           "filings": 1
         },
         {
-          "title": "Postdoctoral Fellow Research Associate (Chem Engr)",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Postdoctoral Research Associate in Engineering",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Postdoctoral Scholar",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Process Design Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Process Designer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Process Dev Engineering Scientific Associate",
+          "title": "Postdoctoral Research Fellow",
           "employers": 1,
           "filings": 1
         },
         {
           "title": "Process Engineer I",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Project Manager - Chemical Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Senior Scientist",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Technologist",
           "employers": 1,
           "filings": 1
         },
@@ -266,44 +144,26 @@
       {
         "soc_code": "17-2041.00",
         "title": "Chemical Engineers",
-        "employers": 43,
-        "filings": 59
+        "employers": 14,
+        "filings": 17
       }
     ],
     "placement_model": {
       "in_house": {
-        "employers": 42,
-        "filings": 58
+        "employers": 14,
+        "filings": 17
       },
       "third_party_site": {
-        "employers": 1,
-        "filings": 1
+        "employers": 0,
+        "filings": 0
       }
     },
     "industry_naics2": [
       {
         "code": "61",
         "label": "Educational Services",
-        "employers": 17,
-        "filings": 28
-      },
-      {
-        "code": "54",
-        "label": "Professional, Scientific, and Technical Services",
-        "employers": 13,
-        "filings": 17
-      },
-      {
-        "code": "33",
-        "label": "Manufacturing",
-        "employers": 5,
-        "filings": 6
-      },
-      {
-        "code": "32",
-        "label": "Manufacturing",
-        "employers": 4,
-        "filings": 4
+        "employers": 6,
+        "filings": 9
       }
     ]
   },

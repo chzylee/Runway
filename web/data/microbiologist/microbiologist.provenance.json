@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-14 12:43 UTC",
+  "generated_at_utc": "2026-10-05 14:32 UTC",
   "source": "US DOL OFLC LCA Programs disclosure data (public record)",
   "filters": {
     "case_status": "Certified",
@@ -10,44 +10,41 @@
     "pw_wage_level": "I"
   },
   "quarters_used": [
-    "FY2025Q4",
     "FY2026Q1"
   ],
   "quarters_superseded": {},
   "rows_per_quarter": {
-    "FY2025Q4": 118580,
     "FY2026Q1": 83120
   },
   "funnel": {
-    "rows_total": 201700,
-    "rows_certified": 181277,
-    "rows_soc_matched": 123,
-    "rows_selected": 36
+    "rows_total": 83120,
+    "rows_certified": 74664,
+    "rows_soc_matched": 60,
+    "rows_selected": 18
   },
-  "employer_groups": 31,
-  "distinct_raw_employer_spellings": 31,
+  "employer_groups": 17,
+  "distinct_raw_employer_spellings": 17,
   "rows_wage_excluded_from_wage_stats": 0,
   "case_statuses_seen": {
-    "CERTIFIED": 181277,
-    "CERTIFIED - WITHDRAWN": 15748,
-    "WITHDRAWN": 3242,
-    "DENIED": 1433
+    "CERTIFIED": 74664,
+    "CERTIFIED - WITHDRAWN": 6666,
+    "WITHDRAWN": 1398,
+    "DENIED": 392
   },
   "wage_levels_seen": {
-    "I": 36,
-    "II": 28,
-    "III": 26,
-    "": 18,
-    "IV": 15
+    "I": 18,
+    "III": 12,
+    "II": 11,
+    "": 10,
+    "IV": 9
   },
   "wage_units_seen": {
-    "YEAR": 34,
-    "HOUR": 2
+    "YEAR": 18
   },
   "patterns": {
     "basis": {
-      "filings": 36,
-      "employers": 31,
+      "filings": 18,
+      "employers": 17,
       "measured_by": "employers",
       "min_support_employers": 3
     },
@@ -55,60 +52,45 @@
       "recurring_tokens": [
         {
           "token": "postdoctoral",
-          "employers": 17,
-          "filings": 18
+          "employers": 10,
+          "filings": 10
         },
         {
           "token": "research",
-          "employers": 15,
-          "filings": 16
-        },
-        {
-          "token": "fellow",
-          "employers": 8,
-          "filings": 8
+          "employers": 9,
+          "filings": 10
         },
         {
           "token": "scientist",
-          "employers": 7,
-          "filings": 8
+          "employers": 5,
+          "filings": 6
         },
         {
           "token": "associate",
-          "employers": 5,
-          "filings": 7
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "token": "fellow",
+          "employers": 3,
+          "filings": 3
         },
         {
           "token": "scholar",
-          "employers": 4,
-          "filings": 5
-        },
-        {
-          "token": "assistant",
           "employers": 3,
           "filings": 3
         }
       ],
       "distinct_titles": [
         {
-          "title": "Postdoctoral Fellow",
-          "employers": 6,
-          "filings": 6
-        },
-        {
-          "title": "Postdoctoral Scholar",
-          "employers": 3,
-          "filings": 4
-        },
-        {
           "title": "Research Scientist",
           "employers": 3,
           "filings": 3
         },
         {
-          "title": "Post-Doctoral Associate",
+          "title": "Postdoctoral Fellow",
           "employers": 2,
-          "filings": 3
+          "filings": 2
         },
         {
           "title": "Postdoctoral Research Associate",
@@ -121,7 +103,7 @@
           "filings": 2
         },
         {
-          "title": "Research Assistant Professor",
+          "title": "Postdoctoral Scholar",
           "employers": 2,
           "filings": 2
         },
@@ -131,32 +113,7 @@
           "filings": 2
         },
         {
-          "title": "Assistant Research Scientist",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Bioanalyst",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Laboratory Scientist",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Microbiologist II",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Postdoctoral Associate",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Postdoctoral Research Associate in MMI",
+          "title": "Post-Doctoral Associate",
           "employers": 1,
           "filings": 1
         },
@@ -171,17 +128,7 @@
           "filings": 1
         },
         {
-          "title": "RESEARCH INTERN",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Research Fellow in Microbiology",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Research Lab Supervisor",
+          "title": "Research Assistant Professor",
           "employers": 1,
           "filings": 1
         },
@@ -196,14 +143,14 @@
       {
         "soc_code": "19-1022.00",
         "title": "Microbiologists",
-        "employers": 31,
-        "filings": 36
+        "employers": 17,
+        "filings": 18
       }
     ],
     "placement_model": {
       "in_house": {
-        "employers": 31,
-        "filings": 36
+        "employers": 17,
+        "filings": 18
       },
       "third_party_site": {
         "employers": 0,
@@ -214,8 +161,8 @@
       {
         "code": "61",
         "label": "Educational Services",
-        "employers": 28,
-        "filings": 33
+        "employers": 17,
+        "filings": 18
       }
     ]
   },

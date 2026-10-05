@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-14 12:43 UTC",
+  "generated_at_utc": "2026-10-05 14:31 UTC",
   "source": "US DOL OFLC LCA Programs disclosure data (public record)",
   "filters": {
     "case_status": "Certified",
@@ -10,45 +10,43 @@
     "pw_wage_level": "I"
   },
   "quarters_used": [
-    "FY2025Q4",
     "FY2026Q1"
   ],
   "quarters_superseded": {},
   "rows_per_quarter": {
-    "FY2025Q4": 118580,
     "FY2026Q1": 83120
   },
   "funnel": {
-    "rows_total": 201700,
-    "rows_certified": 181277,
-    "rows_soc_matched": 1129,
-    "rows_selected": 145
+    "rows_total": 83120,
+    "rows_certified": 74664,
+    "rows_soc_matched": 541,
+    "rows_selected": 54
   },
-  "employer_groups": 89,
-  "distinct_raw_employer_spellings": 91,
+  "employer_groups": 38,
+  "distinct_raw_employer_spellings": 39,
   "rows_wage_excluded_from_wage_stats": 0,
   "case_statuses_seen": {
-    "CERTIFIED": 181277,
-    "CERTIFIED - WITHDRAWN": 15748,
-    "WITHDRAWN": 3242,
-    "DENIED": 1433
+    "CERTIFIED": 74664,
+    "CERTIFIED - WITHDRAWN": 6666,
+    "WITHDRAWN": 1398,
+    "DENIED": 392
   },
   "wage_levels_seen": {
-    "II": 381,
-    "III": 260,
-    "IV": 195,
-    "": 148,
-    "I": 145
+    "II": 187,
+    "III": 121,
+    "IV": 104,
+    "": 75,
+    "I": 54
   },
   "wage_units_seen": {
-    "YEAR": 128,
-    "HOUR": 16,
+    "YEAR": 45,
+    "HOUR": 8,
     "MONTH": 1
   },
   "patterns": {
     "basis": {
-      "filings": 145,
-      "employers": 89,
+      "filings": 54,
+      "employers": 38,
       "measured_by": "employers",
       "min_support_employers": 3
     },
@@ -56,121 +54,51 @@
       "recurring_tokens": [
         {
           "token": "research",
-          "employers": 44,
-          "filings": 68
-        },
-        {
-          "token": "scientist",
-          "employers": 33,
-          "filings": 67
-        },
-        {
-          "token": "postdoctoral",
-          "employers": 20,
-          "filings": 26
-        },
-        {
-          "token": "engineer",
-          "employers": 19,
-          "filings": 21
-        },
-        {
-          "token": "associate",
-          "employers": 15,
-          "filings": 20
-        },
-        {
-          "token": "learning",
-          "employers": 9,
-          "filings": 9
-        },
-        {
-          "token": "machine",
-          "employers": 9,
-          "filings": 9
-        },
-        {
-          "token": "fellow",
-          "employers": 8,
-          "filings": 9
-        },
-        {
-          "token": "data",
-          "employers": 7,
-          "filings": 8
-        },
-        {
-          "token": "researcher",
-          "employers": 6,
-          "filings": 8
-        },
-        {
-          "token": "senior",
-          "employers": 6,
-          "filings": 6
-        },
-        {
-          "token": "applied",
-          "employers": 5,
+          "employers": 21,
           "filings": 28
         },
         {
+          "token": "scientist",
+          "employers": 15,
+          "filings": 24
+        },
+        {
+          "token": "engineer",
+          "employers": 11,
+          "filings": 13
+        },
+        {
+          "token": "associate",
+          "employers": 5,
+          "filings": 5
+        },
+        {
+          "token": "learning",
+          "employers": 5,
+          "filings": 5
+        },
+        {
+          "token": "machine",
+          "employers": 5,
+          "filings": 5
+        },
+        {
+          "token": "postdoctoral",
+          "employers": 5,
+          "filings": 5
+        },
+        {
+          "token": "applied",
+          "employers": 3,
+          "filings": 10
+        },
+        {
           "token": "computer",
-          "employers": 4,
-          "filings": 6
-        },
-        {
-          "token": "science",
-          "employers": 4,
-          "filings": 6
-        },
-        {
-          "token": "scholar",
-          "employers": 4,
-          "filings": 5
-        },
-        {
-          "token": "ai",
-          "employers": 4,
-          "filings": 4
-        },
-        {
-          "token": "systems",
-          "employers": 4,
-          "filings": 4
-        },
-        {
-          "token": "computational",
-          "employers": 3,
-          "filings": 7
-        },
-        {
-          "token": "staff",
-          "employers": 3,
-          "filings": 6
-        },
-        {
-          "token": "post",
-          "employers": 3,
-          "filings": 5
-        },
-        {
-          "token": "information",
           "employers": 3,
           "filings": 3
         },
         {
-          "token": "it",
-          "employers": 3,
-          "filings": 3
-        },
-        {
-          "token": "manager",
-          "employers": 3,
-          "filings": 3
-        },
-        {
-          "token": "software",
+          "token": "data",
           "employers": 3,
           "filings": 3
         }
@@ -178,53 +106,18 @@
       "distinct_titles": [
         {
           "title": "Research Scientist",
-          "employers": 7,
-          "filings": 9
+          "employers": 3,
+          "filings": 3
         },
         {
-          "title": "Postdoctoral Research Associate",
-          "employers": 5,
+          "title": "Applied Scientist I",
+          "employers": 2,
           "filings": 7
         },
         {
           "title": "Applied Scientist II",
-          "employers": 4,
-          "filings": 4
-        },
-        {
-          "title": "Postdoctoral Fellow",
-          "employers": 4,
-          "filings": 4
-        },
-        {
-          "title": "Applied Scientist I",
-          "employers": 3,
-          "filings": 22
-        },
-        {
-          "title": "Postdoctoral Research Scholar",
-          "employers": 3,
-          "filings": 3
-        },
-        {
-          "title": "Research Engineer",
-          "employers": 3,
-          "filings": 3
-        },
-        {
-          "title": "Research Scientist I",
           "employers": 2,
-          "filings": 4
-        },
-        {
-          "title": "Data Scientist",
-          "employers": 2,
-          "filings": 3
-        },
-        {
-          "title": "Postdoctoral Research Fellow",
-          "employers": 2,
-          "filings": 3
+          "filings": 2
         },
         {
           "title": "Machine Learning Engineer",
@@ -232,28 +125,18 @@
           "filings": 2
         },
         {
-          "title": "Research Associate",
+          "title": "Postdoctoral Research Associate",
           "employers": 2,
           "filings": 2
         },
         {
-          "title": "Research Scientist II",
+          "title": "Postdoctoral Research Scholar",
           "employers": 2,
           "filings": 2
         },
         {
-          "title": "Senior Machine Learning Scientist",
+          "title": "Research Engineer",
           "employers": 2,
-          "filings": 2
-        },
-        {
-          "title": "Post Doc Researcher",
-          "employers": 1,
-          "filings": 3
-        },
-        {
-          "title": "Computer Scientist III",
-          "employers": 1,
           "filings": 2
         },
         {
@@ -262,7 +145,7 @@
           "filings": 2
         },
         {
-          "title": "RESEARCH SCIENTIST",
+          "title": "Research Scientist I",
           "employers": 1,
           "filings": 2
         },
@@ -272,27 +155,7 @@
           "filings": 2
         },
         {
-          "title": "AI / ML Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "APPLIED SCIENTIST I",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Advisor",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Algorithm Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Applied Scientist",
           "employers": 1,
           "filings": 1
         },
@@ -303,21 +166,6 @@
         },
         {
           "title": "Bioinformatics & Data Science Specialist",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "CTO & AI Research Scientist",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Computational and Data Science Research P4",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Computer Scientist",
           "employers": 1,
           "filings": 1
         },
@@ -342,36 +190,6 @@
           "filings": 1
         },
         {
-          "title": "GLOBAL ENTREPRENEUR IN RESIDENCE - Comp & Info Res Science",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "HPC RESEARCH FACILITATOR III",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "HPC User Support Specialist 3",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Health Information Data Scientist I",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Information Systems Research Scientist",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "MTS Researcher",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Machine Learning Scientist",
           "employers": 1,
           "filings": 1
@@ -382,22 +200,12 @@
           "filings": 1
         },
         {
-          "title": "Machine Learning Software Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Member of Technical Staff",
           "employers": 1,
           "filings": 1
         },
         {
-          "title": "PDC JUNIOR AI ENGINEER",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Post Doctoral Research Associate",
+          "title": "Post Doc Researcher",
           "employers": 1,
           "filings": 1
         },
@@ -407,52 +215,7 @@
           "filings": 1
         },
         {
-          "title": "Postdoc Research Associate -Computational Systems Biology",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Postdoctoral Associate",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Postdoctoral Fellow - TEIL",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Postdoctoral Research Associate I",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Postdoctoral Research Associate III",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Postdoctoral Research Scientist",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Postdoctoral Research Staff",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Postdoctoral Researcher",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Postdoctoral Scholar - Research Associate",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Postdoctoral Scholar “ Research Associate",
+          "title": "Postdoctoral Research Fellow",
           "employers": 1,
           "filings": 1
         },
@@ -467,22 +230,12 @@
           "filings": 1
         },
         {
-          "title": "Product Manager",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Product Manager, IT",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "RESEARCH ANALYST II",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Research Assistant Professor",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Research Associate",
           "employers": 1,
           "filings": 1
         },
@@ -492,27 +245,12 @@
           "filings": 1
         },
         {
-          "title": "Research Associate, Energy & IT",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Research Fellow",
           "employers": 1,
           "filings": 1
         },
         {
-          "title": "Research Programmer I",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Research Project Manager II",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Research Scientist - Speech",
           "employers": 1,
           "filings": 1
         },
@@ -527,17 +265,7 @@
           "filings": 1
         },
         {
-          "title": "Research Software Engineer III",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Research Staff 1 Computational",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Research Staff 1 Computational Science",
           "employers": 1,
           "filings": 1
         },
@@ -562,32 +290,7 @@
           "filings": 1
         },
         {
-          "title": "Senior Associate Researcher",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Senior Machine Learning Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Systems Administrator - IT Analyst",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Technical Support Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "UX Researcher",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "UX Researcher II",
           "employers": 1,
           "filings": 1
         }
@@ -597,56 +300,38 @@
       {
         "soc_code": "15-1221.00",
         "title": "Computer and Information Research Scientists",
-        "employers": 89,
-        "filings": 145
+        "employers": 38,
+        "filings": 54
       }
     ],
     "placement_model": {
       "in_house": {
-        "employers": 86,
-        "filings": 142
+        "employers": 36,
+        "filings": 52
       },
       "third_party_site": {
-        "employers": 3,
-        "filings": 3
+        "employers": 2,
+        "filings": 2
       }
     },
     "industry_naics2": [
       {
-        "code": "61",
-        "label": "Educational Services",
-        "employers": 35,
-        "filings": 49
-      },
-      {
         "code": "54",
         "label": "Professional, Scientific, and Technical Services",
-        "employers": 32,
-        "filings": 39
+        "employers": 16,
+        "filings": 20
+      },
+      {
+        "code": "61",
+        "label": "Educational Services",
+        "employers": 13,
+        "filings": 14
       },
       {
         "code": "51",
         "label": "Information",
-        "employers": 7,
-        "filings": 15
-      },
-      {
-        "code": "33",
-        "label": "Manufacturing",
-        "employers": 5,
-        "filings": 10
-      },
-      {
-        "code": "52",
-        "label": "Finance and Insurance",
-        "employers": 4,
-        "filings": 5
-      },
-      {
-        "code": "45",
-        "label": "Retail Trade",
         "employers": 3,
-        "filings": 22
+        "filings": 7
       }
     ]
   },

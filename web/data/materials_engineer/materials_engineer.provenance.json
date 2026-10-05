@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-14 12:43 UTC",
+  "generated_at_utc": "2026-10-05 14:31 UTC",
   "source": "US DOL OFLC LCA Programs disclosure data (public record)",
   "filters": {
     "case_status": "Certified",
@@ -10,44 +10,41 @@
     "pw_wage_level": "I"
   },
   "quarters_used": [
-    "FY2025Q4",
     "FY2026Q1"
   ],
   "quarters_superseded": {},
   "rows_per_quarter": {
-    "FY2025Q4": 118580,
     "FY2026Q1": 83120
   },
   "funnel": {
-    "rows_total": 201700,
-    "rows_certified": 181277,
-    "rows_soc_matched": 360,
-    "rows_selected": 35
+    "rows_total": 83120,
+    "rows_certified": 74664,
+    "rows_soc_matched": 159,
+    "rows_selected": 16
   },
-  "employer_groups": 29,
-  "distinct_raw_employer_spellings": 29,
+  "employer_groups": 13,
+  "distinct_raw_employer_spellings": 13,
   "rows_wage_excluded_from_wage_stats": 0,
   "case_statuses_seen": {
-    "CERTIFIED": 181277,
-    "CERTIFIED - WITHDRAWN": 15748,
-    "WITHDRAWN": 3242,
-    "DENIED": 1433
+    "CERTIFIED": 74664,
+    "CERTIFIED - WITHDRAWN": 6666,
+    "WITHDRAWN": 1398,
+    "DENIED": 392
   },
   "wage_levels_seen": {
-    "III": 154,
-    "IV": 75,
-    "II": 73,
-    "I": 35,
-    "": 23
+    "III": 66,
+    "IV": 34,
+    "II": 27,
+    "I": 16,
+    "": 16
   },
   "wage_units_seen": {
-    "YEAR": 33,
-    "HOUR": 2
+    "YEAR": 16
   },
   "patterns": {
     "basis": {
-      "filings": 35,
-      "employers": 29,
+      "filings": 16,
+      "employers": 13,
       "measured_by": "employers",
       "min_support_employers": 3
     },
@@ -55,60 +52,25 @@
       "recurring_tokens": [
         {
           "token": "engineer",
-          "employers": 15,
-          "filings": 16
+          "employers": 6,
+          "filings": 7
         },
         {
           "token": "postdoctoral",
-          "employers": 7,
-          "filings": 11
-        },
-        {
-          "token": "process",
-          "employers": 7,
-          "filings": 8
+          "employers": 4,
+          "filings": 6
         },
         {
           "token": "research",
-          "employers": 6,
-          "filings": 10
-        },
-        {
-          "token": "materials",
-          "employers": 6,
-          "filings": 6
-        },
-        {
-          "token": "associate",
-          "employers": 3,
-          "filings": 6
+          "employers": 4,
+          "filings": 5
         }
       ],
       "distinct_titles": [
         {
-          "title": "Materials Engineer",
-          "employers": 4,
-          "filings": 4
-        },
-        {
-          "title": "Process Engineer",
-          "employers": 3,
-          "filings": 3
-        },
-        {
-          "title": "Postdoctoral Research Associate",
-          "employers": 2,
-          "filings": 4
-        },
-        {
           "title": "Postdoctoral Scholar",
           "employers": 2,
           "filings": 3
-        },
-        {
-          "title": "Research Scientist",
-          "employers": 2,
-          "filings": 2
         },
         {
           "title": "Postdoctoral Research Fellow",
@@ -126,47 +88,17 @@
           "filings": 1
         },
         {
-          "title": "Material Process Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Metallurgist",
           "employers": 1,
           "filings": 1
         },
         {
-          "title": "Metrology Application Specialist",
+          "title": "Postdoctoral Research Associate",
           "employers": 1,
           "filings": 1
         },
         {
-          "title": "Postdoctoral Associate",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Postdoctoral Fellow/Department of Mechanical Engineering",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Process Metallurgist",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Process and Reliability Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Product Development Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Production Superintendent",
+          "title": "Process Engineer",
           "employers": 1,
           "filings": 1
         },
@@ -201,42 +133,30 @@
       {
         "soc_code": "17-2131.00",
         "title": "Materials Engineers",
-        "employers": 29,
-        "filings": 35
+        "employers": 13,
+        "filings": 16
       }
     ],
     "placement_model": {
       "in_house": {
-        "employers": 28,
-        "filings": 34
+        "employers": 13,
+        "filings": 16
       },
       "third_party_site": {
-        "employers": 1,
-        "filings": 1
+        "employers": 0,
+        "filings": 0
       }
     },
     "industry_naics2": [
       {
         "code": "61",
         "label": "Educational Services",
-        "employers": 10,
-        "filings": 15
-      },
-      {
-        "code": "33",
-        "label": "Manufacturing",
-        "employers": 9,
-        "filings": 10
+        "employers": 6,
+        "filings": 8
       },
       {
         "code": "54",
         "label": "Professional, Scientific, and Technical Services",
-        "employers": 4,
-        "filings": 4
-      },
-      {
-        "code": "32",
-        "label": "Manufacturing",
         "employers": 3,
         "filings": 3
       }

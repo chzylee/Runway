@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-14 12:43 UTC",
+  "generated_at_utc": "2026-10-05 14:31 UTC",
   "source": "US DOL OFLC LCA Programs disclosure data (public record)",
   "filters": {
     "case_status": "Certified",
@@ -10,46 +10,44 @@
     "pw_wage_level": "I"
   },
   "quarters_used": [
-    "FY2025Q4",
     "FY2026Q1"
   ],
   "quarters_superseded": {},
   "rows_per_quarter": {
-    "FY2025Q4": 118580,
     "FY2026Q1": 83120
   },
   "funnel": {
-    "rows_total": 201700,
-    "rows_certified": 181277,
-    "rows_soc_matched": 6733,
-    "rows_selected": 459
+    "rows_total": 83120,
+    "rows_certified": 74664,
+    "rows_soc_matched": 2796,
+    "rows_selected": 189
   },
-  "employer_groups": 260,
-  "distinct_raw_employer_spellings": 264,
+  "employer_groups": 113,
+  "distinct_raw_employer_spellings": 115,
   "rows_wage_excluded_from_wage_stats": 0,
   "case_statuses_seen": {
-    "CERTIFIED": 181277,
-    "CERTIFIED - WITHDRAWN": 15748,
-    "WITHDRAWN": 3242,
-    "DENIED": 1433
+    "CERTIFIED": 74664,
+    "CERTIFIED - WITHDRAWN": 6666,
+    "WITHDRAWN": 1398,
+    "DENIED": 392
   },
   "wage_levels_seen": {
-    "II": 3011,
-    "III": 1778,
-    "IV": 1296,
-    "I": 459,
-    "": 189
+    "II": 1243,
+    "III": 732,
+    "IV": 562,
+    "I": 189,
+    "": 70
   },
   "wage_units_seen": {
-    "YEAR": 392,
-    "HOUR": 65,
+    "YEAR": 167,
+    "HOUR": 20,
     "WEEK": 1,
     "MONTH": 1
   },
   "patterns": {
     "basis": {
-      "filings": 459,
-      "employers": 260,
+      "filings": 189,
+      "employers": 113,
       "measured_by": "employers",
       "min_support_employers": 3
     },
@@ -57,268 +55,138 @@
       "recurring_tokens": [
         {
           "token": "engineer",
-          "employers": 173,
-          "filings": 293
+          "employers": 71,
+          "filings": 119
         },
         {
           "token": "software",
-          "employers": 99,
-          "filings": 133
+          "employers": 42,
+          "filings": 61
         },
         {
           "token": "quality",
-          "employers": 72,
-          "filings": 116
-        },
-        {
-          "token": "test",
-          "employers": 70,
-          "filings": 110
-        },
-        {
-          "token": "qa",
-          "employers": 63,
-          "filings": 92
+          "employers": 33,
+          "filings": 53
         },
         {
           "token": "analyst",
-          "employers": 59,
-          "filings": 94
+          "employers": 27,
+          "filings": 48
+        },
+        {
+          "token": "test",
+          "employers": 27,
+          "filings": 42
+        },
+        {
+          "token": "qa",
+          "employers": 27,
+          "filings": 39
         },
         {
           "token": "assurance",
-          "employers": 48,
-          "filings": 85
+          "employers": 25,
+          "filings": 42
         },
         {
           "token": "automation",
-          "employers": 26,
-          "filings": 36
+          "employers": 9,
+          "filings": 16
         },
         {
           "token": "tester",
-          "employers": 18,
-          "filings": 29
-        },
-        {
-          "token": "senior",
-          "employers": 16,
-          "filings": 33
-        },
-        {
-          "token": "development",
-          "employers": 14,
-          "filings": 20
-        },
-        {
-          "token": "developer",
-          "employers": 10,
-          "filings": 10
-        },
-        {
-          "token": "lead",
           "employers": 9,
-          "filings": 11
-        },
-        {
-          "token": "validation",
-          "employers": 9,
-          "filings": 11
-        },
-        {
-          "token": "sdet",
-          "employers": 8,
-          "filings": 10
-        },
-        {
-          "token": "consultant",
-          "employers": 7,
-          "filings": 15
-        },
-        {
-          "token": "it",
-          "employers": 7,
-          "filings": 9
-        },
-        {
-          "token": "support",
-          "employers": 6,
-          "filings": 10
-        },
-        {
-          "token": "systems",
-          "employers": 6,
-          "filings": 7
-        },
-        {
-          "token": "specialist",
-          "employers": 5,
           "filings": 14
         },
         {
-          "token": "technical",
+          "token": "senior",
+          "employers": 7,
+          "filings": 14
+        },
+        {
+          "token": "development",
+          "employers": 7,
+          "filings": 10
+        },
+        {
+          "token": "it",
           "employers": 5,
           "filings": 7
         },
         {
-          "token": "testing",
+          "token": "sdet",
           "employers": 5,
+          "filings": 6
+        },
+        {
+          "token": "validation",
+          "employers": 5,
+          "filings": 6
+        },
+        {
+          "token": "developer",
+          "employers": 4,
+          "filings": 4
+        },
+        {
+          "token": "consultant",
+          "employers": 3,
           "filings": 5
         },
         {
           "token": "engineering",
-          "employers": 4,
-          "filings": 7
+          "employers": 3,
+          "filings": 5
         },
         {
-          "token": "testers",
-          "employers": 4,
-          "filings": 6
+          "token": "specialist",
+          "employers": 3,
+          "filings": 5
         },
         {
-          "token": "associate",
-          "employers": 4,
+          "token": "systems",
+          "employers": 3,
           "filings": 4
-        },
-        {
-          "token": "devops",
-          "employers": 4,
-          "filings": 4
-        },
-        {
-          "token": "sr",
-          "employers": 4,
-          "filings": 4
-        },
-        {
-          "token": "analysts",
-          "employers": 3,
-          "filings": 3
-        },
-        {
-          "token": "application",
-          "employers": 3,
-          "filings": 3
-        },
-        {
-          "token": "performance",
-          "employers": 3,
-          "filings": 3
-        },
-        {
-          "token": "system",
-          "employers": 3,
-          "filings": 3
         }
       ],
       "distinct_titles": [
         {
-          "title": "Software Test Engineer",
-          "employers": 15,
-          "filings": 18
-        },
-        {
           "title": "Test Engineer",
-          "employers": 12,
-          "filings": 20
+          "employers": 5,
+          "filings": 7
         },
         {
           "title": "QA Engineer",
-          "employers": 12,
-          "filings": 17
-        },
-        {
-          "title": "Quality Assurance Engineer",
-          "employers": 7,
-          "filings": 13
-        },
-        {
-          "title": "QA Analyst",
-          "employers": 7,
-          "filings": 9
-        },
-        {
-          "title": "QA ENGINEER",
-          "employers": 7,
-          "filings": 7
-        },
-        {
-          "title": "Software Quality Assurance Engineer",
-          "employers": 7,
-          "filings": 7
-        },
-        {
-          "title": "SOFTWARE ENGINEER",
-          "employers": 6,
-          "filings": 9
-        },
-        {
-          "title": "Software Development Engineer in Test",
-          "employers": 6,
-          "filings": 9
+          "employers": 5,
+          "filings": 5
         },
         {
           "title": "Software Engineer",
-          "employers": 5,
-          "filings": 6
-        },
-        {
-          "title": "SOFTWARE QA ENGINEER",
-          "employers": 5,
-          "filings": 5
-        },
-        {
-          "title": "Software Quality Engineer",
-          "employers": 5,
-          "filings": 5
-        },
-        {
-          "title": "QA Automation Engineer",
-          "employers": 4,
-          "filings": 6
-        },
-        {
-          "title": "Quality Assurance Analyst",
-          "employers": 4,
-          "filings": 5
-        },
-        {
-          "title": "Software Quality Assurance Analyst",
-          "employers": 4,
-          "filings": 5
-        },
-        {
-          "title": "QA ANALYST",
           "employers": 4,
           "filings": 4
         },
         {
           "title": "Quality Assurance Test Engineer",
           "employers": 3,
-          "filings": 9
+          "filings": 6
         },
         {
-          "title": "SOFTWARE TEST ENGINEER",
+          "title": "Software Development Engineer in Test",
           "employers": 3,
           "filings": 5
         },
         {
-          "title": "Test Automation Engineer",
+          "title": "Software Test Engineer",
           "employers": 3,
           "filings": 4
         },
         {
-          "title": "Tester",
-          "employers": 3,
-          "filings": 4
-        },
-        {
-          "title": "Automation Engineer",
+          "title": "QA ANALYST",
           "employers": 3,
           "filings": 3
         },
         {
-          "title": "Software Quality Assurance Tester",
+          "title": "QA ENGINEER",
           "employers": 3,
           "filings": 3
         },
@@ -330,30 +198,20 @@
         {
           "title": "Software QA Analyst and Tester",
           "employers": 2,
-          "filings": 6
-        },
-        {
-          "title": "Senior Tester",
-          "employers": 2,
           "filings": 5
         },
         {
-          "title": "S D E T",
+          "title": "SOFTWARE ENGINEER",
+          "employers": 2,
+          "filings": 4
+        },
+        {
+          "title": "QA Analyst",
           "employers": 2,
           "filings": 3
         },
         {
-          "title": "Software QA Automation Engineer",
-          "employers": 2,
-          "filings": 3
-        },
-        {
-          "title": "Software QA Engineer",
-          "employers": 2,
-          "filings": 3
-        },
-        {
-          "title": "Software Quality Assurance Analyst and Tester",
+          "title": "Software Quality Assurance Analyst",
           "employers": 2,
           "filings": 3
         },
@@ -363,47 +221,17 @@
           "filings": 3
         },
         {
-          "title": "Validation Engineer",
-          "employers": 2,
-          "filings": 3
-        },
-        {
-          "title": "Automation Test Engineer",
-          "employers": 2,
-          "filings": 2
-        },
-        {
-          "title": "ETL Tester",
-          "employers": 2,
-          "filings": 2
-        },
-        {
           "title": "Network Engineer",
           "employers": 2,
           "filings": 2
         },
         {
-          "title": "QA AUTOMATION ENGINEER",
+          "title": "Quality Assurance Analyst",
           "employers": 2,
           "filings": 2
         },
         {
-          "title": "QUALITY ANALYST",
-          "employers": 2,
-          "filings": 2
-        },
-        {
-          "title": "Quality Analyst",
-          "employers": 2,
-          "filings": 2
-        },
-        {
-          "title": "Quality Engineer",
-          "employers": 2,
-          "filings": 2
-        },
-        {
-          "title": "SENIOR QUALITY ASSURANCE ANALYST - TESTING",
+          "title": "Quality Assurance Engineer",
           "employers": 2,
           "filings": 2
         },
@@ -413,57 +241,37 @@
           "filings": 2
         },
         {
-          "title": "Software Quality Assurance Analyst II",
+          "title": "SOFTWARE QA ENGINEER",
           "employers": 2,
           "filings": 2
         },
         {
-          "title": "Software Quality Assurance Analysts and Testers",
+          "title": "Software QA Engineer",
           "employers": 2,
           "filings": 2
         },
         {
-          "title": "Sr. QA Engineer",
+          "title": "Software Quality Assurance Engineer",
           "employers": 2,
           "filings": 2
         },
         {
-          "title": "Product Engineer",
-          "employers": 1,
-          "filings": 15
+          "title": "Software Quality Assurance Tester",
+          "employers": 2,
+          "filings": 2
         },
         {
           "title": "Project Delivery Senior Analyst",
           "employers": 1,
-          "filings": 12
+          "filings": 6
         },
         {
           "title": "Quality Assurance Engineer I",
-          "employers": 1,
-          "filings": 10
-        },
-        {
-          "title": "Solution Specialist",
-          "employers": 1,
-          "filings": 9
-        },
-        {
-          "title": "Consultant",
           "employers": 1,
           "filings": 5
         },
         {
           "title": "Innovation Automation Test Engineer",
-          "employers": 1,
-          "filings": 4
-        },
-        {
-          "title": "QA Test Engineer I",
-          "employers": 1,
-          "filings": 4
-        },
-        {
-          "title": "QUALITY ASSURANCE ENGINEER I",
           "employers": 1,
           "filings": 4
         },
@@ -478,47 +286,22 @@
           "filings": 3
         },
         {
-          "title": "Support Analyst",
-          "employers": 1,
-          "filings": 3
-        },
-        {
-          "title": "TEST LEAD",
-          "employers": 1,
-          "filings": 3
-        },
-        {
-          "title": "Technical Support Engineer",
-          "employers": 1,
-          "filings": 3
-        },
-        {
           "title": "EMBEDDED TEST ENGINEER",
           "employers": 1,
           "filings": 2
         },
         {
-          "title": "ETL Test Engineer",
+          "title": "Product Engineer",
           "employers": 1,
           "filings": 2
         },
         {
-          "title": "Expert Quality Engineer",
+          "title": "QA Automation Engineer",
           "employers": 1,
           "filings": 2
         },
         {
-          "title": "MES Test Engineer",
-          "employers": 1,
-          "filings": 2
-        },
-        {
-          "title": "Principal Services Consultant",
-          "employers": 1,
-          "filings": 2
-        },
-        {
-          "title": "QA TEST ENGINEER I",
+          "title": "QA Test Engineer I",
           "employers": 1,
           "filings": 2
         },
@@ -528,32 +311,37 @@
           "filings": 2
         },
         {
+          "title": "QUALITY ASSURANCE ENGINEER I",
+          "employers": 1,
+          "filings": 2
+        },
+        {
           "title": "QUALITY ASSURANCE SPECIALIST",
           "employers": 1,
           "filings": 2
         },
         {
-          "title": "SOFTWARE QA ANALYST",
+          "title": "Software QA Automation Engineer",
           "employers": 1,
           "filings": 2
         },
         {
-          "title": "SOFTWARE SUSTAINING/TEST ENGINEER",
+          "title": "Software Quality Assurance Analyst and Tester",
           "employers": 1,
           "filings": 2
         },
         {
-          "title": "Senior Quality Analyst",
+          "title": "Solution Specialist",
           "employers": 1,
           "filings": 2
         },
         {
-          "title": "Software Development Engineer I-TEST",
+          "title": "Technical Support Engineer",
           "employers": 1,
           "filings": 2
         },
         {
-          "title": "Software Quality Analyst",
+          "title": "Test Automation Engineer",
           "employers": 1,
           "filings": 2
         },
@@ -578,22 +366,7 @@
           "filings": 1
         },
         {
-          "title": "AWS DEVOPS ENGINEER",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Application Specialist",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Associate CS Tester",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Associate Embedded Software Engineer",
           "employers": 1,
           "filings": 1
         },
@@ -603,17 +376,7 @@
           "filings": 1
         },
         {
-          "title": "Associate Engineering Business Analyst",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Azure Test Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "COMPUTER SYSTEMS ENGINEER",
+          "title": "Automation Engineer",
           "employers": 1,
           "filings": 1
         },
@@ -623,17 +386,7 @@
           "filings": 1
         },
         {
-          "title": "Customer Technical Services Analyst",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "DEVOPS AND CLOUD ENGINEER",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "DEVOPS ENGINEER",
           "employers": 1,
           "filings": 1
         },
@@ -643,17 +396,7 @@
           "filings": 1
         },
         {
-          "title": "DevOps Adoption Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Development  Quality Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Electrical Validation Engineer",
+          "title": "ETL Tester",
           "employers": 1,
           "filings": 1
         },
@@ -663,17 +406,12 @@
           "filings": 1
         },
         {
-          "title": "Engineer 3, Software Development & Engineering - SDET",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Engineer 3, Software Development & Engineering “ SDET",
           "employers": 1,
           "filings": 1
         },
         {
-          "title": "Engineer III, Software",
+          "title": "Expert Quality Engineer",
           "employers": 1,
           "filings": 1
         },
@@ -684,16 +422,6 @@
         },
         {
           "title": "Firmware Validation Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Full Stack Developer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "I.T. Auditor",
           "employers": 1,
           "filings": 1
         },
@@ -718,16 +446,6 @@
           "filings": 1
         },
         {
-          "title": "IT Systems Automation Developer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Integrated Solutions Engineer (Systems Engineer)",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Java SDET (Software Development Engineer in Test)",
           "employers": 1,
           "filings": 1
@@ -738,42 +456,7 @@
           "filings": 1
         },
         {
-          "title": "Lead IT QA Analyst",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Lead QA Automation Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Lead Quality Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "MACHINE LEARNING ENGINEER",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Management Consultant 3",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Manual QA Specialist",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Member of Technical Staff, Field Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Mid Level Performance Engineer",
           "employers": 1,
           "filings": 1
         },
@@ -783,22 +466,22 @@
           "filings": 1
         },
         {
+          "title": "Principal Services Consultant",
+          "employers": 1,
+          "filings": 1
+        },
+        {
           "title": "Product Developer",
           "employers": 1,
           "filings": 1
         },
         {
-          "title": "Production Engineer",
+          "title": "QA AUTOMATION ENGINEER",
           "employers": 1,
           "filings": 1
         },
         {
           "title": "QA Automation",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "QA Automation Lead",
           "employers": 1,
           "filings": 1
         },
@@ -813,16 +496,6 @@
           "filings": 1
         },
         {
-          "title": "QA Test Engineer Lead",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "QA Tester",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "QA Tester I (Entry-Level / Manual & Accessibility Focus)",
           "employers": 1,
           "filings": 1
@@ -833,7 +506,7 @@
           "filings": 1
         },
         {
-          "title": "QE SDET",
+          "title": "QUALITY ANALYST",
           "employers": 1,
           "filings": 1
         },
@@ -848,42 +521,7 @@
           "filings": 1
         },
         {
-          "title": "QUALITY ENGINEER",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Quality Analyst & Tester",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Quality Analyst( Testing )",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Quality Assurance (QA) Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Quality Assurance Analyst II",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Quality Assurance Engineer II",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Quality Assurance Engineer/Analyst",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Quality Assurance Lead",
           "employers": 1,
           "filings": 1
         },
@@ -893,12 +531,7 @@
           "filings": 1
         },
         {
-          "title": "Quality Automation Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Quality Engineer/ QA Engineer",
+          "title": "Quality Engineer",
           "employers": 1,
           "filings": 1
         },
@@ -908,22 +541,7 @@
           "filings": 1
         },
         {
-          "title": "SAP SOFTWARE CONSULTANT",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "SDET (Software Development Engineer in Test)",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "SDET Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "SENIOR QA ANALYST",
+          "title": "SENIOR QUALITY ASSURANCE ANALYST - TESTING",
           "employers": 1,
           "filings": 1
         },
@@ -938,22 +556,17 @@
           "filings": 1
         },
         {
-          "title": "SOFTWARE AUTOMATION ENGINEER",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "SOFTWARE DEVELOPER / QA ENGINEER",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "SOFTWARE PROGRAMMING AND QUALITY ASSURANCE",
           "employers": 1,
           "filings": 1
         },
         {
-          "title": "SOFTWARE QUALITY ASSURANCE ANALYST",
+          "title": "SOFTWARE SUSTAINING/TEST ENGINEER",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "SOFTWARE TEST ENGINEER",
           "employers": 1,
           "filings": 1
         },
@@ -963,42 +576,12 @@
           "filings": 1
         },
         {
-          "title": "SR. AUTOMATION QA ENGINEER",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "SW Test Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "SYSTEM ENGINEER",
           "employers": 1,
           "filings": 1
         },
         {
-          "title": "SYSTEM TEST ENGINEER",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Senior Automation Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Senior Engineer, Innovation",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Senior Production Support Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Senior QA Analyst",
           "employers": 1,
           "filings": 1
         },
@@ -1009,11 +592,6 @@
         },
         {
           "title": "Senior SDET",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Senior Software Test Engineer",
           "employers": 1,
           "filings": 1
         },
@@ -1033,22 +611,7 @@
           "filings": 1
         },
         {
-          "title": "Software Developer - TEST",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Software Development Test Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Software Development Tester",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Software Performance Test Lead",
+          "title": "Software Development Engineer I-TEST",
           "employers": 1,
           "filings": 1
         },
@@ -1063,17 +626,17 @@
           "filings": 1
         },
         {
-          "title": "Software Quality Engineer II",
+          "title": "Software Quality Assurance Analyst II",
           "employers": 1,
           "filings": 1
         },
         {
-          "title": "Software Test Automation Engineer",
+          "title": "Software Quality Assurance Analysts and Testers",
           "employers": 1,
           "filings": 1
         },
         {
-          "title": "Software Test Developer",
+          "title": "Software Quality Engineer",
           "employers": 1,
           "filings": 1
         },
@@ -1088,42 +651,7 @@
           "filings": 1
         },
         {
-          "title": "Soware Quality Assurance Analysts and Testers",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Sr. Quality Assurance Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Support Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Support Engineer I-Ext",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "TABLEAU CONSULTANT",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "TABLEAU CONTRACTOR",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "TEST ENGINEER",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Technical Analyst",
+          "title": "Sr. QA Engineer",
           "employers": 1,
           "filings": 1
         },
@@ -1133,32 +661,12 @@
           "filings": 1
         },
         {
-          "title": "Testing Data Analyst",
+          "title": "Tester",
           "employers": 1,
           "filings": 1
         },
         {
-          "title": "UI Designer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "VALIDATION ENGINEER CONSULTANT",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Validation Test Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Web Developer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Workday Technical Analyst",
+          "title": "Validation Engineer",
           "employers": 1,
           "filings": 1
         }
@@ -1168,54 +676,42 @@
       {
         "soc_code": "15-1253.00",
         "title": "Software Quality Assurance Analysts and Testers",
-        "employers": 260,
-        "filings": 459
+        "employers": 113,
+        "filings": 189
       }
     ],
     "placement_model": {
       "in_house": {
-        "employers": 128,
-        "filings": 238
+        "employers": 59,
+        "filings": 93
       },
       "third_party_site": {
-        "employers": 142,
-        "filings": 221
+        "employers": 57,
+        "filings": 96
       }
     },
     "industry_naics2": [
       {
         "code": "54",
         "label": "Professional, Scientific, and Technical Services",
-        "employers": 216,
-        "filings": 370
+        "employers": 91,
+        "filings": 154
       },
       {
         "code": "51",
         "label": "Information",
-        "employers": 13,
-        "filings": 35
+        "employers": 8,
+        "filings": 11
       },
       {
         "code": "33",
         "label": "Manufacturing",
-        "employers": 11,
-        "filings": 13
-      },
-      {
-        "code": "56",
-        "label": "Administrative and Support and Waste Management and Remediation Services",
-        "employers": 4,
-        "filings": 5
+        "employers": 7,
+        "filings": 7
       },
       {
         "code": "52",
         "label": "Finance and Insurance",
-        "employers": 4,
-        "filings": 4
-      },
-      {
-        "code": "62",
-        "label": "Health Care and Social Assistance",
         "employers": 3,
         "filings": 3
       }

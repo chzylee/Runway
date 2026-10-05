@@ -1,6 +1,6 @@
 {
   "role": "physicist",
-  "generated_at_utc": "2026-09-14 12:43 UTC",
+  "generated_at_utc": "2026-10-05 14:32 UTC",
   "source": "US DOL OFLC LCA Programs disclosure data (public record)",
   "filters": {
     "case_status": "Certified",
@@ -10,22 +10,21 @@
     "pw_wage_level": "I"
   },
   "quarters_used": [
-    "FY2025Q4",
     "FY2026Q1"
   ],
   "quarters_superseded": {},
   "funnel": {
-    "rows_total": 201700,
-    "rows_certified": 181277,
-    "rows_soc_matched": 421,
-    "rows_selected": 203
+    "rows_total": 83120,
+    "rows_certified": 74664,
+    "rows_soc_matched": 203,
+    "rows_selected": 88
   },
-  "employer_groups": 97,
+  "employer_groups": 54,
   "rows_wage_excluded_from_wage_stats": 0,
   "patterns": {
     "basis": {
-      "filings": 203,
-      "employers": 97,
+      "filings": 88,
+      "employers": 54,
       "measured_by": "employers",
       "min_support_employers": 3
     },
@@ -33,86 +32,66 @@
       "recurring_tokens": [
         {
           "token": "research",
-          "employers": 53,
-          "filings": 114
-        },
-        {
-          "token": "postdoctoral",
-          "employers": 39,
-          "filings": 57
+          "employers": 26,
+          "filings": 47
         },
         {
           "token": "associate",
-          "employers": 36,
-          "filings": 81
+          "employers": 22,
+          "filings": 42
+        },
+        {
+          "token": "postdoctoral",
+          "employers": 20,
+          "filings": 21
         },
         {
           "token": "scientist",
-          "employers": 23,
-          "filings": 37
+          "employers": 12,
+          "filings": 14
         },
         {
           "token": "assistant",
-          "employers": 16,
-          "filings": 23
-        },
-        {
-          "token": "fellow",
-          "employers": 15,
-          "filings": 23
-        },
-        {
-          "token": "physicist",
-          "employers": 10,
-          "filings": 12
-        },
-        {
-          "token": "scholar",
-          "employers": 10,
-          "filings": 11
-        },
-        {
-          "token": "professor",
           "employers": 8,
           "filings": 9
         },
         {
-          "token": "physics",
+          "token": "scholar",
           "employers": 6,
-          "filings": 21
-        },
-        {
-          "token": "doctoral",
-          "employers": 6,
-          "filings": 15
-        },
-        {
-          "token": "post",
-          "employers": 6,
-          "filings": 15
-        },
-        {
-          "token": "medical",
-          "employers": 5,
           "filings": 7
         },
         {
-          "token": "researcher",
+          "token": "physics",
+          "employers": 5,
+          "filings": 17
+        },
+        {
+          "token": "doctoral",
+          "employers": 5,
+          "filings": 8
+        },
+        {
+          "token": "post",
+          "employers": 5,
+          "filings": 8
+        },
+        {
+          "token": "physicist",
+          "employers": 5,
+          "filings": 6
+        },
+        {
+          "token": "fellow",
           "employers": 5,
           "filings": 5
         },
         {
-          "token": "engineer",
-          "employers": 4,
-          "filings": 7
-        },
-        {
-          "token": "staff",
+          "token": "medical",
           "employers": 3,
           "filings": 4
         },
         {
-          "token": "senior",
+          "token": "professor",
           "employers": 3,
           "filings": 3
         }
@@ -120,52 +99,27 @@
       "distinct_titles": [
         {
           "title": "Research Associate",
-          "employers": 12,
-          "filings": 21
-        },
-        {
-          "title": "Postdoctoral Research Associate",
-          "employers": 9,
-          "filings": 15
-        },
-        {
-          "title": "Postdoctoral Associate",
-          "employers": 9,
+          "employers": 7,
           "filings": 11
         },
         {
-          "title": "Research Scientist",
-          "employers": 8,
-          "filings": 10
+          "title": "Postdoctoral Research Associate",
+          "employers": 6,
+          "filings": 6
         },
         {
-          "title": "Postdoctoral Fellow",
-          "employers": 8,
-          "filings": 9
-        },
-        {
-          "title": "Assistant Research Scientist",
-          "employers": 5,
-          "filings": 8
-        },
-        {
-          "title": "Postdoctoral Scholar",
-          "employers": 4,
-          "filings": 4
-        },
-        {
-          "title": "Assistant Research Professor",
+          "title": "Postdoctoral Associate",
           "employers": 3,
-          "filings": 4
-        },
-        {
-          "title": "Assistant Scientist",
-          "employers": 2,
           "filings": 3
         },
         {
-          "title": "Post-Doctoral Research Associate",
-          "employers": 2,
+          "title": "Postdoctoral Fellow",
+          "employers": 3,
+          "filings": 3
+        },
+        {
+          "title": "Research Scientist",
+          "employers": 3,
           "filings": 3
         },
         {
@@ -174,17 +128,17 @@
           "filings": 3
         },
         {
-          "title": "Research Fellow",
+          "title": "Assistant Research Professor",
           "employers": 2,
           "filings": 2
         },
         {
-          "title": "Research Scholar",
+          "title": "Assistant Research Scientist",
           "employers": 2,
           "filings": 2
         },
         {
-          "title": "medical physicist",
+          "title": "Postdoctoral Scholar",
           "employers": 2,
           "filings": 2
         },
@@ -194,34 +148,9 @@
           "filings": 10
         },
         {
-          "title": "Flatiron Research Fellow",
-          "employers": 1,
-          "filings": 6
-        },
-        {
           "title": "Post-Doctoral Associate",
           "employers": 1,
-          "filings": 5
-        },
-        {
-          "title": "Postdoctoral Research Affiliate",
-          "employers": 1,
-          "filings": 5
-        },
-        {
-          "title": "Postdoctoral Appointee",
-          "employers": 1,
           "filings": 4
-        },
-        {
-          "title": "Physical Science Research Scientist",
-          "employers": 1,
-          "filings": 3
-        },
-        {
-          "title": "Research Faculty I",
-          "employers": 1,
-          "filings": 3
         },
         {
           "title": "Detector Engineer",
@@ -234,42 +163,7 @@
           "filings": 2
         },
         {
-          "title": "Physics Associate IV",
-          "employers": 1,
-          "filings": 2
-        },
-        {
-          "title": "Post Doctoral Research Associate",
-          "employers": 1,
-          "filings": 2
-        },
-        {
-          "title": "Post-doctoral Associate",
-          "employers": 1,
-          "filings": 2
-        },
-        {
-          "title": "Postgraduate Trainee 1",
-          "employers": 1,
-          "filings": 2
-        },
-        {
-          "title": "Research Scientist I",
-          "employers": 1,
-          "filings": 2
-        },
-        {
-          "title": "Scientist 2",
-          "employers": 1,
-          "filings": 2
-        },
-        {
-          "title": "Scientist 3",
-          "employers": 1,
-          "filings": 2
-        },
-        {
-          "title": "Staff Engineer, Hardware Development Engineering",
+          "title": "Research Faculty I",
           "employers": 1,
           "filings": 2
         },
@@ -279,22 +173,12 @@
           "filings": 1
         },
         {
-          "title": "Assistant Professor",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Assistant Professor of Clinical",
           "employers": 1,
           "filings": 1
         },
         {
-          "title": "Assistant Professor of Physics",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Associate Research Physicist",
+          "title": "Assistant Scientist",
           "employers": 1,
           "filings": 1
         },
@@ -324,42 +208,12 @@
           "filings": 1
         },
         {
-          "title": "Detector Specialist",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "ELECTRONIC STRUCTURE OF TOPOLOG. MATERIALS POSTDOC. RESEARCH",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "GAPS JUNIOR RESEARCHER",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Instructor",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "LIGO Laser Physicist/Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Medical Physicist",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Medical Physicist Assistant Professor",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Physics Associate III",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Physics Associate IV",
           "employers": 1,
           "filings": 1
         },
@@ -369,22 +223,17 @@
           "filings": 1
         },
         {
+          "title": "Post Doctoral Research Associate",
+          "employers": 1,
+          "filings": 1
+        },
+        {
           "title": "Post Doctoral Researcher",
           "employers": 1,
           "filings": 1
         },
         {
-          "title": "Post-Doctoral Fellow",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Postdoc Res Assoc-Neutron Scattering & Quantum Materials",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Postdoc Res Assoc/Polarized Neutron Scattering Study",
+          "title": "Post-Doctoral Research Associate",
           "employers": 1,
           "filings": 1
         },
@@ -394,22 +243,12 @@
           "filings": 1
         },
         {
-          "title": "Postdoctoral Fellow Research Associate",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Postdoctoral Fellow in the Department of Physics",
+          "title": "Postdoctoral Appointee",
           "employers": 1,
           "filings": 1
         },
         {
           "title": "Postdoctoral Research Associate of Physics",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Postdoctoral Research Fellow",
           "employers": 1,
           "filings": 1
         },
@@ -429,37 +268,12 @@
           "filings": 1
         },
         {
-          "title": "RESEARCH ENGINEER-3",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "RadOnc Physics Resident",
           "employers": 1,
           "filings": 1
         },
         {
-          "title": "Radiation Physicist 2",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Research Assistant Professor",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Research Associate physics",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Research Associate-LUX - ZEPLIN Dark Matter Search",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Research Professional",
+          "title": "Research Scientist I",
           "employers": 1,
           "filings": 1
         },
@@ -469,32 +283,22 @@
           "filings": 1
         },
         {
-          "title": "Researcher 1",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Researcher/Scientist III",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Resident",
           "employers": 1,
           "filings": 1
         },
         {
+          "title": "Scientist 2",
+          "employers": 1,
+          "filings": 1
+        },
+        {
+          "title": "Scientist 3",
+          "employers": 1,
+          "filings": 1
+        },
+        {
           "title": "Scientist III",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Senior Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Senior Research Associate/Beamline Scientist",
           "employers": 1,
           "filings": 1
         },
@@ -519,6 +323,11 @@
           "filings": 1
         },
         {
+          "title": "medical physicist",
+          "employers": 1,
+          "filings": 1
+        },
+        {
           "title": "physicist",
           "employers": 1,
           "filings": 1
@@ -529,38 +338,32 @@
       {
         "soc_code": "19-2012.00",
         "title": "Physicists",
-        "employers": 97,
-        "filings": 203
+        "employers": 54,
+        "filings": 88
       }
     ],
     "placement_model": {
       "in_house": {
-        "employers": 91,
-        "filings": 191
+        "employers": 50,
+        "filings": 82
       },
       "third_party_site": {
-        "employers": 9,
-        "filings": 12
+        "employers": 5,
+        "filings": 6
       }
     },
     "industry_naics2": [
       {
         "code": "61",
         "label": "Educational Services",
-        "employers": 74,
-        "filings": 144
+        "employers": 41,
+        "filings": 59
       },
       {
         "code": "54",
         "label": "Professional, Scientific, and Technical Services",
-        "employers": 16,
-        "filings": 51
-      },
-      {
-        "code": "62",
-        "label": "Health Care and Social Assistance",
-        "employers": 3,
-        "filings": 3
+        "employers": 9,
+        "filings": 25
       }
     ]
   },
@@ -574,422 +377,47 @@
     {
       "employer": "BROOKHAVEN NATIONAL LABORATORY",
       "employer_display": "Brookhaven National Laboratory",
-      "filing_count": 18,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
+      "filing_count": 16,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
       "soc_codes": "19-2012",
       "soc_titles": "Physicists",
       "worksite_states": "NY",
       "worksite_cities": "UPTON; Upton",
       "wage_annual_min": 77605,
-      "wage_annual_median": 83593,
+      "wage_annual_median": 83796,
       "wage_annual_max": 91166
-    },
-    {
-      "employer": "UNIVERSITY OF MARYLAND COLLEGE PARK",
-      "employer_display": "University of Maryland College Park",
-      "filing_count": 9,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "MD",
-      "worksite_cities": "College Park; Gaithersburg",
-      "wage_annual_min": 67018,
-      "wage_annual_median": 75750,
-      "wage_annual_max": 123712
     },
     {
       "employer": "LELAND STANFORD JR UNIV SLAC NATIONAL ACCELERATOR LAB",
       "employer_display": "Leland Stanford Jr. Univ/SLAC National Accelerator Lab",
-      "filing_count": 7,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
+      "filing_count": 5,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
       "soc_codes": "19-2012",
       "soc_titles": "Physicists",
       "worksite_states": "CA",
       "worksite_cities": "Menlo Park",
       "wage_annual_min": 79914,
-      "wage_annual_median": 81994,
+      "wage_annual_median": 80000,
       "wage_annual_max": 134000
     },
     {
-      "employer": "FERMI FORWARD DISCOVERY GROUP",
-      "employer_display": "Fermi Forward Discovery Group, LLC",
-      "filing_count": 5,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "IL",
-      "worksite_cities": "Batavia",
-      "wage_annual_min": 77126,
-      "wage_annual_median": 77126,
-      "wage_annual_max": 77126
-    },
-    {
-      "employer": "CALIFORNIA INSTITUTE OF TECHNOLOGY",
-      "employer_display": "California Institute of Technology",
-      "filing_count": 4,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "CA; LA; WA",
-      "worksite_cities": "Livingston; Pasadena; Richland",
-      "wage_annual_min": 81201,
-      "wage_annual_median": 106340,
-      "wage_annual_max": 135725
-    },
-    {
-      "employer": "KENT STATE UNIVERSITY",
-      "employer_display": "Kent State University",
-      "filing_count": 4,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "CA; NY; OH",
-      "worksite_cities": "Berkeley; Kent; Upton",
-      "wage_annual_min": 56484,
-      "wage_annual_median": 69368,
-      "wage_annual_max": 79914
-    },
-    {
-      "employer": "TRIAD NATIONAL SECURITY",
-      "employer_display": "Triad National Security, LLC",
-      "filing_count": 4,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "NM",
-      "worksite_cities": "Los Alamos",
-      "wage_annual_min": 153088,
-      "wage_annual_median": 160888,
-      "wage_annual_max": 168788
-    },
-    {
-      "employer": "UCHICAGO ARGONNE",
-      "employer_display": "UChicago Argonne, LLC",
-      "filing_count": 4,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "IL",
-      "worksite_cities": "Lemont",
-      "wage_annual_min": 77126,
-      "wage_annual_median": 77126,
-      "wage_annual_max": 77126
-    },
-    {
-      "employer": "W M RICE UNIVERSITY",
-      "employer_display": "W.M. RICE UNIVERSITY",
-      "filing_count": 4,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "CA; TX",
-      "worksite_cities": "Houston; Los Angeles",
-      "wage_annual_min": 60000,
-      "wage_annual_median": 61000,
-      "wage_annual_max": 78125
-    },
-    {
-      "employer": "DUKE UNIVERSITY",
-      "employer_display": "Duke University",
-      "filing_count": 3,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "NC",
-      "worksite_cities": "Durham",
-      "wage_annual_min": 67018,
-      "wage_annual_median": 75500,
-      "wage_annual_max": 86000
-    },
-    {
-      "employer": "PURDUE UNIVERSITY",
-      "employer_display": "Purdue University",
-      "filing_count": 3,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "IN",
-      "worksite_cities": "West Lafayette",
-      "wage_annual_min": 58594,
-      "wage_annual_median": 60000,
-      "wage_annual_max": 61616
-    },
-    {
-      "employer": "THE FLORIDA STATE UNIVERSITY",
-      "employer_display": "The Florida State University",
-      "filing_count": 3,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "FL",
-      "worksite_cities": "Tallahassee",
-      "wage_annual_min": 80000,
-      "wage_annual_median": 85000,
-      "wage_annual_max": 90470
-    },
-    {
-      "employer": "THE PENNSYLVANIA STATE UNIVERSITY",
-      "employer_display": "The Pennsylvania State University",
-      "filing_count": 3,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "PA",
-      "worksite_cities": "University Park",
-      "wage_annual_min": 67018,
-      "wage_annual_median": 67020,
-      "wage_annual_max": 92568
-    },
-    {
-      "employer": "THE TRUSTEES OF PRINCETON UNIVERSITY",
-      "employer_display": "The Trustees of Princeton University",
-      "filing_count": 3,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "NJ",
-      "worksite_cities": "Princeton",
-      "wage_annual_min": 71261,
-      "wage_annual_median": 82000,
-      "wage_annual_max": 108368
-    },
-    {
-      "employer": "THE UNIVERSITY OF TEXAS AT ARLINGTON",
-      "employer_display": "The University of Texas at Arlington",
-      "filing_count": 3,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "IL; TX",
-      "worksite_cities": "Arlington; Batavia",
-      "wage_annual_min": 61556,
-      "wage_annual_median": 77126,
-      "wage_annual_max": 77126
-    },
-    {
-      "employer": "THE UNIVERSITY OF TEXAS AT AUSTIN",
-      "employer_display": "The University of Texas at Austin",
-      "filing_count": 3,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "TX",
-      "worksite_cities": "Austin",
-      "wage_annual_min": 58743,
-      "wage_annual_median": 62975,
-      "wage_annual_max": 66571
-    },
-    {
-      "employer": "UNIVERSITY OF CINCINNATI",
-      "employer_display": "UNIVERSITY OF CINCINNATI",
-      "filing_count": 3,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "IL; OH",
-      "worksite_cities": "Batavia; Cincinnati",
-      "wage_annual_min": 62000,
-      "wage_annual_median": 67375,
-      "wage_annual_max": 77126
-    },
-    {
-      "employer": "UNIVERSITY OF WISCONSIN SYSTEM",
-      "employer_display": "University of Wisconsin System",
-      "filing_count": 3,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "WI",
-      "worksite_cities": "MADISON; Madison",
-      "wage_annual_min": 66246,
-      "wage_annual_median": 69126,
-      "wage_annual_max": 126023
-    },
-    {
-      "employer": "UT BATTELLE LLC OAK RIDGE NATIONAL LABORATORY",
-      "employer_display": "UT-BATTELLE, LLC (OAK RIDGE NATIONAL LABORATORY)",
-      "filing_count": 3,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "TN",
-      "worksite_cities": "Oak Ridge",
-      "wage_annual_min": 86691,
-      "wage_annual_median": 87951,
-      "wage_annual_max": 87984
-    },
-    {
-      "employer": "IN PHYSICS",
-      "employer_display": "In Physics, LLC",
-      "filing_count": 2,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "MN; WV",
-      "worksite_cities": "Morgantown; Staples",
-      "wage_annual_min": 133500,
-      "wage_annual_median": 141750,
-      "wage_annual_max": 150000
-    },
-    {
-      "employer": "SOUTHERN METHODIST UNIVERSITY",
-      "employer_display": "SOUTHERN METHODIST UNIVERSITY",
-      "filing_count": 2,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "TX",
-      "worksite_cities": "Dallas",
-      "wage_annual_min": 58656,
-      "wage_annual_median": 59328,
-      "wage_annual_max": 60000
-    },
-    {
-      "employer": "THE UNIVERSITY OF ALABAMA IN HUNTSVILLE",
-      "employer_display": "The University of Alabama in Huntsville",
-      "filing_count": 2,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "AL",
-      "worksite_cities": "Huntsville",
-      "wage_annual_min": 71060,
-      "wage_annual_median": 69735290,
-      "wage_annual_max": 139399520
-    },
-    {
-      "employer": "THE UNIVERSITY OF TENNESSEE",
-      "employer_display": "THE UNIVERSITY OF TENNESSEE",
-      "filing_count": 2,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "IL; TN",
-      "worksite_cities": "Batavia; Knoxville",
-      "wage_annual_min": 62878,
-      "wage_annual_median": 70002,
-      "wage_annual_max": 77126
-    },
-    {
-      "employer": "UNIVERSITY OF FLORIDA",
-      "employer_display": "UNIVERSITY OF FLORIDA",
-      "filing_count": 2,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "FL",
-      "worksite_cities": "Gainesville",
-      "wage_annual_min": 67018,
-      "wage_annual_median": 68009,
-      "wage_annual_max": 69000
-    },
-    {
-      "employer": "UNIVERSITY OF ILLINOIS",
-      "employer_display": "University of Illinois",
-      "filing_count": 2,
-      "quarters_present": 2,
-      "quarters": "FY2025Q4; FY2026Q1",
-      "repeat_sponsor": "yes",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "IL",
-      "worksite_cities": "Urbana",
-      "wage_annual_min": 66269,
-      "wage_annual_median": 66269,
-      "wage_annual_max": 66269
-    },
-    {
-      "employer": "THE LELAND STANFORD JR UNIVERSITY",
-      "employer_display": "The Leland Stanford, Jr University",
-      "filing_count": 8,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "CA",
-      "worksite_cities": "Menlo Park; Palo Alto; Stanford",
-      "wage_annual_min": 79914,
-      "wage_annual_median": 81000,
-      "wage_annual_max": 90000
-    },
-    {
-      "employer": "THE SIMONS FOUNDATION",
-      "employer_display": "The Simons Foundation Inc.",
-      "filing_count": 6,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "NY",
-      "worksite_cities": "New York",
-      "wage_annual_min": 90000,
-      "wage_annual_median": 91000,
-      "wage_annual_max": 91000
-    },
-    {
-      "employer": "JOHNS HOPKINS UNIVERSITY",
-      "employer_display": "Johns Hopkins University",
+      "employer": "UNIVERSITY OF MARYLAND COLLEGE PARK",
+      "employer_display": "University of Maryland College Park",
       "filing_count": 5,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "19-2012",
       "soc_titles": "Physicists",
       "worksite_states": "MD",
-      "worksite_cities": "Baltimore",
-      "wage_annual_min": 77000,
-      "wage_annual_median": 81370,
-      "wage_annual_max": 118450
+      "worksite_cities": "College Park; Gaithersburg",
+      "wage_annual_min": 75750,
+      "wage_annual_median": 80000,
+      "wage_annual_max": 100000
     },
     {
       "employer": "ARIZONA STATE UNIVERSITY",
@@ -1007,6 +435,36 @@
       "wage_annual_max": 86507
     },
     {
+      "employer": "KENT STATE UNIVERSITY",
+      "employer_display": "Kent State University",
+      "filing_count": 3,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2012",
+      "soc_titles": "Physicists",
+      "worksite_states": "NY; OH",
+      "worksite_cities": "Kent; Upton",
+      "wage_annual_min": 56484,
+      "wage_annual_median": 67475,
+      "wage_annual_max": 71261
+    },
+    {
+      "employer": "CALIFORNIA INSTITUTE OF TECHNOLOGY",
+      "employer_display": "California Institute of Technology",
+      "filing_count": 2,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2012",
+      "soc_titles": "Physicists",
+      "worksite_states": "LA; WA",
+      "worksite_cities": "Livingston; Richland",
+      "wage_annual_min": 101985,
+      "wage_annual_median": 106340,
+      "wage_annual_max": 110696
+    },
+    {
       "employer": "MEDICAL COLLEGE OF WISCONSIN",
       "employer_display": "Medical College of Wisconsin, Inc.",
       "filing_count": 2,
@@ -1022,109 +480,49 @@
       "wage_annual_max": 67018
     },
     {
-      "employer": "TEXAS A M UNIVERSITY",
-      "employer_display": "Texas A&M University",
+      "employer": "THE FLORIDA STATE UNIVERSITY",
+      "employer_display": "The Florida State University",
       "filing_count": 2,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "19-2012",
       "soc_titles": "Physicists",
-      "worksite_states": "TX",
-      "worksite_cities": "College Station",
-      "wage_annual_min": 54000,
-      "wage_annual_median": 54685,
-      "wage_annual_max": 55370
+      "worksite_states": "FL",
+      "worksite_cities": "Tallahassee",
+      "wage_annual_min": 80000,
+      "wage_annual_median": 85235,
+      "wage_annual_max": 90470
     },
     {
-      "employer": "THE GEORGE WASHINGTON UNIVERSITY",
-      "employer_display": "The George Washington University",
+      "employer": "THE PENNSYLVANIA STATE UNIVERSITY",
+      "employer_display": "The Pennsylvania State University",
       "filing_count": 2,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "DC; NC",
-      "worksite_cities": "Durham; Washington",
-      "wage_annual_min": 67018,
-      "wage_annual_median": 75517,
-      "wage_annual_max": 84016
-    },
-    {
-      "employer": "THE OHIO STATE UNIVERSITY",
-      "employer_display": "The Ohio State University",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "OH",
-      "worksite_cities": "Columbus",
-      "wage_annual_min": 58488,
-      "wage_annual_median": 124139,
-      "wage_annual_max": 189789
-    },
-    {
-      "employer": "TRUSTEES OF BOSTON UNIVERSITY",
-      "employer_display": "TRUSTEES OF BOSTON UNIVERSITY",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "MA",
-      "worksite_cities": "Boston",
-      "wage_annual_min": 89100,
-      "wage_annual_median": 89550,
-      "wage_annual_max": 90000
-    },
-    {
-      "employer": "TRUSTEES OF THE UNIVERSITY OF PENNSYLVANIA",
-      "employer_display": "TRUSTEES OF THE UNIVERSITY OF PENNSYLVANIA",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "19-2012",
       "soc_titles": "Physicists",
       "worksite_states": "PA",
-      "worksite_cities": "Philadelphia",
-      "wage_annual_min": 71000,
-      "wage_annual_median": 94000,
-      "wage_annual_max": 117000
+      "worksite_cities": "University Park",
+      "wage_annual_min": 67020,
+      "wage_annual_median": 79794,
+      "wage_annual_max": 92568
     },
     {
-      "employer": "UNIVERSITY OF CHICAGO",
-      "employer_display": "University of Chicago",
+      "employer": "TRIAD NATIONAL SECURITY",
+      "employer_display": "TRIAD NATIONAL SECURITY, LLC",
       "filing_count": 2,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "19-2012",
       "soc_titles": "Physicists",
-      "worksite_states": "IL",
-      "worksite_cities": "Chicago",
-      "wage_annual_min": 77126,
-      "wage_annual_median": 77126,
-      "wage_annual_max": 77126
-    },
-    {
-      "employer": "UNIVERSITY OF MICHIGAN",
-      "employer_display": "University of Michigan",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "MI",
-      "worksite_cities": "Ann Arbor",
-      "wage_annual_min": 63750,
-      "wage_annual_median": 76437,
-      "wage_annual_max": 89124
+      "worksite_states": "NM",
+      "worksite_cities": "Los Alamos",
+      "wage_annual_min": 154462,
+      "wage_annual_median": 161625,
+      "wage_annual_max": 168788
     },
     {
       "employer": "UNIVERSITY OF OKLAHOMA",
@@ -1142,21 +540,6 @@
       "wage_annual_max": 87362
     },
     {
-      "employer": "UNIVERSITY OF ROCHESTER",
-      "employer_display": "University of Rochester",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "NY",
-      "worksite_cities": "Rochester",
-      "wage_annual_min": 70000,
-      "wage_annual_median": 77500,
-      "wage_annual_max": 85000
-    },
-    {
       "employer": "WASHINGTON UNIVERSITY",
       "employer_display": "Washington University",
       "filing_count": 2,
@@ -1172,36 +555,6 @@
       "wage_annual_max": 67018
     },
     {
-      "employer": "WESTERN DIGITAL TECHNOLOGIES",
-      "employer_display": "Western Digital Technologies, Inc.",
-      "filing_count": 2,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "CA",
-      "worksite_cities": "San Jose",
-      "wage_annual_min": 128565,
-      "wage_annual_median": 128565,
-      "wage_annual_max": 128565
-    },
-    {
-      "employer": "BATTELLE ENERGY ALLIANCE",
-      "employer_display": "BATTELLE ENERGY ALLIANCE, LLC",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "ID",
-      "worksite_cities": "IDAHO FALLS",
-      "wage_annual_min": 101196,
-      "wage_annual_median": 101196,
-      "wage_annual_max": 101196
-    },
-    {
       "employer": "BAY AREA ENVIRONMENTAL RESEARCH INSTITUTE",
       "employer_display": "Bay Area Environmental Research Institute",
       "filing_count": 1,
@@ -1215,81 +568,6 @@
       "wage_annual_min": 91520,
       "wage_annual_median": 91520,
       "wage_annual_max": 91520
-    },
-    {
-      "employer": "BOARD OF REGENTS OF THE UNIVERSITY OF NEBRASKA",
-      "employer_display": "Board of Regents of the University of Nebraska",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "IL",
-      "worksite_cities": "Batavia",
-      "wage_annual_min": 90000,
-      "wage_annual_median": 90000,
-      "wage_annual_max": 90000
-    },
-    {
-      "employer": "BOISE STATE UNIVERSITY",
-      "employer_display": "BOISE STATE UNIVERSITY",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "ID",
-      "worksite_cities": "Boise",
-      "wage_annual_min": 81224,
-      "wage_annual_median": 81224,
-      "wage_annual_max": 81224
-    },
-    {
-      "employer": "BRANDEIS UNIVERSITY",
-      "employer_display": "Brandeis University",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "MA",
-      "worksite_cities": "Waltham",
-      "wage_annual_min": 75564,
-      "wage_annual_median": 75564,
-      "wage_annual_max": 75564
-    },
-    {
-      "employer": "BROWN UNIVERSITY",
-      "employer_display": "Brown University",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "RI",
-      "worksite_cities": "Providence",
-      "wage_annual_min": 82200,
-      "wage_annual_median": 82200,
-      "wage_annual_max": 82200
-    },
-    {
-      "employer": "CALIFORNIA INSTITUTE OF TECHNOLOGY JET PROPULSION LABORATORY",
-      "employer_display": "California Institute of Technology/Jet Propulsion Laboratory",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "CA",
-      "worksite_cities": "Pasadena",
-      "wage_annual_min": 86880,
-      "wage_annual_median": 86880,
-      "wage_annual_max": 86880
     },
     {
       "employer": "CEDARS SINAI MEDICAL CENTER",
@@ -1322,16 +600,16 @@
       "wage_annual_max": 78125
     },
     {
-      "employer": "EMORY UNIVERSITY",
-      "employer_display": "Emory University",
+      "employer": "DUKE UNIVERSITY",
+      "employer_display": "Duke University",
       "filing_count": 1,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "19-2012",
       "soc_titles": "Physicists",
-      "worksite_states": "GA",
-      "worksite_cities": "Atlanta",
+      "worksite_states": "NC",
+      "worksite_cities": "Durham",
       "wage_annual_min": 67018,
       "wage_annual_median": 67018,
       "wage_annual_max": 67018
@@ -1352,19 +630,19 @@
       "wage_annual_max": 118560
     },
     {
-      "employer": "GENERAL HOSPITAL CORPORATION",
-      "employer_display": "General Hospital Corporation",
+      "employer": "FERMI FORWARD DISCOVERY GROUP",
+      "employer_display": "Fermi Forward Discovery Group, LLC",
       "filing_count": 1,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "19-2012",
       "soc_titles": "Physicists",
-      "worksite_states": "MA",
-      "worksite_cities": "Charlestown",
-      "wage_annual_min": 71750,
-      "wage_annual_median": 71750,
-      "wage_annual_max": 71750
+      "worksite_states": "IL",
+      "worksite_cities": "Batavia",
+      "wage_annual_min": 77126,
+      "wage_annual_median": 77126,
+      "wage_annual_max": 77126
     },
     {
       "employer": "GEORGETOWN UNIVERSITY",
@@ -1397,49 +675,19 @@
       "wage_annual_max": 72500
     },
     {
-      "employer": "ILLINOIS INSTITUTE OF TECHNOLOGY",
-      "employer_display": "Illinois Institute of Technology",
+      "employer": "IN PHYSICS",
+      "employer_display": "In Physics, LLC",
       "filing_count": 1,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "19-2012",
       "soc_titles": "Physicists",
-      "worksite_states": "IL",
-      "worksite_cities": "Lemont",
-      "wage_annual_min": 80000,
-      "wage_annual_median": 80000,
-      "wage_annual_max": 80000
-    },
-    {
-      "employer": "INDIANA UNIVERSITY",
-      "employer_display": "Indiana University",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "TN",
-      "worksite_cities": "Knoxville",
-      "wage_annual_min": 67018,
-      "wage_annual_median": 67018,
-      "wage_annual_max": 67018
-    },
-    {
-      "employer": "INDIANA UNIVERSITY INDIANAPOLIS",
-      "employer_display": "Indiana University Indianapolis",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "IN",
-      "worksite_cities": "Indianapolis",
-      "wage_annual_min": 58000,
-      "wage_annual_median": 58000,
-      "wage_annual_max": 58000
+      "worksite_states": "WV",
+      "worksite_cities": "Morgantown",
+      "wage_annual_min": 150000,
+      "wage_annual_median": 150000,
+      "wage_annual_max": 150000
     },
     {
       "employer": "IOWA STATE UNIVERSITY OF SCIENCE AND TECHNOLOGY",
@@ -1487,21 +735,6 @@
       "wage_annual_max": 67018
     },
     {
-      "employer": "MASSACHUSETTS INSTITUTE OF TECHNOLOGY",
-      "employer_display": "Massachusetts Institute of Technology",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "MA",
-      "worksite_cities": "Cambridge",
-      "wage_annual_min": 72000,
-      "wage_annual_median": 72000,
-      "wage_annual_max": 72000
-    },
-    {
       "employer": "MEMORIAL SLOAN KETTERING CANCER CENTER",
       "employer_display": "Memorial Sloan Kettering Cancer Center",
       "filing_count": 1,
@@ -1517,21 +750,6 @@
       "wage_annual_max": 75000
     },
     {
-      "employer": "MICHIGAN STATE UNIVERSITY",
-      "employer_display": "MICHIGAN STATE UNIVERSITY",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "MI",
-      "worksite_cities": "East Lansing",
-      "wage_annual_min": 65582,
-      "wage_annual_median": 65582,
-      "wage_annual_max": 65582
-    },
-    {
       "employer": "MISSISSIPPI STATE UNIVERSITY",
       "employer_display": "Mississippi State University",
       "filing_count": 1,
@@ -1545,21 +763,6 @@
       "wage_annual_min": 67018,
       "wage_annual_median": 67018,
       "wage_annual_max": 67018
-    },
-    {
-      "employer": "NORTH CAROLINA STATE UNIVERSITY",
-      "employer_display": "North Carolina State University",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "NC",
-      "worksite_cities": "Raleigh",
-      "wage_annual_min": 70000,
-      "wage_annual_median": 70000,
-      "wage_annual_max": 70000
     },
     {
       "employer": "NORTHERN ARIZONA UNIVERSITY",
@@ -1592,19 +795,19 @@
       "wage_annual_max": 108160
     },
     {
-      "employer": "PRECESS MEDICAL DRIVATIVESS",
-      "employer_display": "precess medical drivativess",
+      "employer": "PURDUE UNIVERSITY",
+      "employer_display": "Purdue University",
       "filing_count": 1,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "19-2012",
       "soc_titles": "Physicists",
-      "worksite_states": "PA",
-      "worksite_cities": "Warren",
-      "wage_annual_min": 108160,
-      "wage_annual_median": 108160,
-      "wage_annual_max": 108160
+      "worksite_states": "IN",
+      "worksite_cities": "West Lafayette",
+      "wage_annual_min": 61616,
+      "wage_annual_median": 61616,
+      "wage_annual_max": 61616
     },
     {
       "employer": "QUAISE ENERGY",
@@ -1622,36 +825,6 @@
       "wage_annual_max": 95000
     },
     {
-      "employer": "RESEARCH CORPORATION OF THE UNIVERSITY OF HAWAII",
-      "employer_display": "Research Corporation of the University of Hawaii",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "HI",
-      "worksite_cities": "Honolulu",
-      "wage_annual_min": 77542,
-      "wage_annual_median": 77542,
-      "wage_annual_max": 77542
-    },
-    {
-      "employer": "RESEARCH FOUNDATION FOR THE STATE UNIVERSITY OF NEW YORK",
-      "employer_display": "Research Foundation for the State University of New York",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "NY",
-      "worksite_cities": "Stony Brook",
-      "wage_annual_min": 72000,
-      "wage_annual_median": 72000,
-      "wage_annual_max": 72000
-    },
-    {
       "employer": "ROCHESTER INSTITUTE OF TECHNOLOGY",
       "employer_display": "Rochester Institute of Technology",
       "filing_count": 1,
@@ -1667,49 +840,19 @@
       "wage_annual_max": 66664
     },
     {
-      "employer": "SOIL AND LAND USE TECHNOLOGY",
-      "employer_display": "SOIL AND LAND USE TECHNOLOGY, INC.",
+      "employer": "SOUTHERN METHODIST UNIVERSITY",
+      "employer_display": "Southern Methodist University",
       "filing_count": 1,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "19-2012",
       "soc_titles": "Physicists",
-      "worksite_states": "VA",
-      "worksite_cities": "MCLEAN",
-      "wage_annual_min": 110864,
-      "wage_annual_median": 110864,
-      "wage_annual_max": 110864
-    },
-    {
-      "employer": "SPACE SCIENCE INSTITUTE",
-      "employer_display": "Space Science Institute",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "CA",
-      "worksite_cities": "Los Angeles",
-      "wage_annual_min": 78058,
-      "wage_annual_median": 78058,
-      "wage_annual_max": 78058
-    },
-    {
-      "employer": "TEMPLE UNIVERSITY A COMMONWEALTH UNIVERSITY",
-      "employer_display": "Temple University--A Commonwealth University",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "PA",
-      "worksite_cities": "Philadelphia",
-      "wage_annual_min": 78000,
-      "wage_annual_median": 78000,
-      "wage_annual_max": 78000
+      "worksite_states": "TX",
+      "worksite_cities": "Dallas",
+      "wage_annual_min": 58656,
+      "wage_annual_median": 58656,
+      "wage_annual_max": 58656
     },
     {
       "employer": "THE COLLEGE OF WILLIAM AND MARY",
@@ -1742,49 +885,34 @@
       "wage_annual_max": 70000
     },
     {
-      "employer": "THE CURATORS OF THE UNIVERSITY OF MISSOURI UNIVERSITY OF MISSOURI KANSAS CITY",
-      "employer_display": "The Curators of the University of Missouri/University of Missouri-Kansas City",
+      "employer": "THE TRUSTEES OF PRINCETON UNIVERSITY",
+      "employer_display": "The Trustees of Princeton University",
       "filing_count": 1,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "19-2012",
       "soc_titles": "Physicists",
-      "worksite_states": "MO",
-      "worksite_cities": "Kansas City",
-      "wage_annual_min": 85000,
-      "wage_annual_median": 85000,
-      "wage_annual_max": 85000
+      "worksite_states": "NJ",
+      "worksite_cities": "Princeton",
+      "wage_annual_min": 82000,
+      "wage_annual_median": 82000,
+      "wage_annual_max": 82000
     },
     {
-      "employer": "THE RESEARCH FOUNDATION FOR SUNY OLD WESTBURY",
-      "employer_display": "The Research Foundation for SUNY Old Westbury",
+      "employer": "THE UNIVERSITY OF ALABAMA IN HUNTSVILLE",
+      "employer_display": "The University of Alabama in Huntsville",
       "filing_count": 1,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "19-2012",
       "soc_titles": "Physicists",
-      "worksite_states": "NY",
-      "worksite_cities": "Old Westbury",
-      "wage_annual_min": 68058,
-      "wage_annual_median": 68058,
-      "wage_annual_max": 68058
-    },
-    {
-      "employer": "THE UNIVERSITY OF ARIZONA",
-      "employer_display": "The University of Arizona",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "AZ",
-      "worksite_cities": "Tucson",
-      "wage_annual_min": 69326,
-      "wage_annual_median": 69326,
-      "wage_annual_max": 69326
+      "worksite_states": "AL",
+      "worksite_cities": "Huntsville",
+      "wage_annual_min": 139399520,
+      "wage_annual_median": 139399520,
+      "wage_annual_max": 139399520
     },
     {
       "employer": "THE UNIVERSITY OF CHICAGO",
@@ -1802,6 +930,51 @@
       "wage_annual_max": 80000
     },
     {
+      "employer": "THE UNIVERSITY OF TENNESSEE",
+      "employer_display": "THE UNIVERSITY OF TENNESSEE",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2012",
+      "soc_titles": "Physicists",
+      "worksite_states": "IL",
+      "worksite_cities": "Batavia",
+      "wage_annual_min": 77126,
+      "wage_annual_median": 77126,
+      "wage_annual_max": 77126
+    },
+    {
+      "employer": "THE UNIVERSITY OF TEXAS AT ARLINGTON",
+      "employer_display": "The University of Texas at Arlington",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2012",
+      "soc_titles": "Physicists",
+      "worksite_states": "IL",
+      "worksite_cities": "Batavia",
+      "wage_annual_min": 77126,
+      "wage_annual_median": 77126,
+      "wage_annual_max": 77126
+    },
+    {
+      "employer": "THE UNIVERSITY OF TEXAS AT AUSTIN",
+      "employer_display": "The University of Texas at Austin",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2012",
+      "soc_titles": "Physicists",
+      "worksite_states": "TX",
+      "worksite_cities": "Austin",
+      "wage_annual_min": 66571,
+      "wage_annual_median": 66571,
+      "wage_annual_max": 66571
+    },
+    {
       "employer": "THE UNIVERSITY OF TEXAS AT DALLAS",
       "employer_display": "The University of Texas at Dallas",
       "filing_count": 1,
@@ -1815,21 +988,6 @@
       "wage_annual_min": 70000,
       "wage_annual_median": 70000,
       "wage_annual_max": 70000
-    },
-    {
-      "employer": "THE UNIVERSITY OF TEXAS AT EL PASO",
-      "employer_display": "The University of Texas at El Paso",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "TX",
-      "worksite_cities": "El Paso",
-      "wage_annual_min": 55370,
-      "wage_annual_median": 55370,
-      "wage_annual_max": 55370
     },
     {
       "employer": "THE UNIVERSITY OF TEXAS EL PASO",
@@ -1862,6 +1020,66 @@
       "wage_annual_max": 85000
     },
     {
+      "employer": "UCHICAGO ARGONNE",
+      "employer_display": "UChicago Argonne, LLC",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2012",
+      "soc_titles": "Physicists",
+      "worksite_states": "IL",
+      "worksite_cities": "Lemont",
+      "wage_annual_min": 77126,
+      "wage_annual_median": 77126,
+      "wage_annual_max": 77126
+    },
+    {
+      "employer": "UNIVERSITY OF CINCINNATI",
+      "employer_display": "UNIVERSITY OF CINCINNATI",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2012",
+      "soc_titles": "Physicists",
+      "worksite_states": "IL",
+      "worksite_cities": "Batavia",
+      "wage_annual_min": 77126,
+      "wage_annual_median": 77126,
+      "wage_annual_max": 77126
+    },
+    {
+      "employer": "UNIVERSITY OF FLORIDA",
+      "employer_display": "UNIVERSITY OF FLORIDA",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2012",
+      "soc_titles": "Physicists",
+      "worksite_states": "FL",
+      "worksite_cities": "Gainesville",
+      "wage_annual_min": 69000,
+      "wage_annual_median": 69000,
+      "wage_annual_max": 69000
+    },
+    {
+      "employer": "UNIVERSITY OF ILLINOIS",
+      "employer_display": "University of Illinois",
+      "filing_count": 1,
+      "quarters_present": 1,
+      "quarters": "FY2026Q1",
+      "repeat_sponsor": "no",
+      "soc_codes": "19-2012",
+      "soc_titles": "Physicists",
+      "worksite_states": "IL",
+      "worksite_cities": "Urbana",
+      "wage_annual_min": 66269,
+      "wage_annual_median": 66269,
+      "wage_annual_max": 66269
+    },
+    {
       "employer": "UNIVERSITY OF KENTUCKY",
       "employer_display": "UNIVERSITY OF KENTUCKY",
       "filing_count": 1,
@@ -1875,36 +1093,6 @@
       "wage_annual_min": 68500,
       "wage_annual_median": 68500,
       "wage_annual_max": 68500
-    },
-    {
-      "employer": "UNIVERSITY OF MARYLAND BALTIMORE",
-      "employer_display": "University of Maryland Baltimore",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "MD",
-      "worksite_cities": "Baltimore",
-      "wage_annual_min": 75564,
-      "wage_annual_median": 75564,
-      "wage_annual_max": 75564
-    },
-    {
-      "employer": "UNIVERSITY OF MARYLAND BALTIMORE COUNTY",
-      "employer_display": "University of Maryland, Baltimore County",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "MD",
-      "worksite_cities": "Baltimore",
-      "wage_annual_min": 101858,
-      "wage_annual_median": 101858,
-      "wage_annual_max": 101858
     },
     {
       "employer": "UNIVERSITY OF MIAMI",
@@ -1922,21 +1110,6 @@
       "wage_annual_max": 210000
     },
     {
-      "employer": "UNIVERSITY OF MINNESOTA",
-      "employer_display": "University of Minnesota",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "MN",
-      "worksite_cities": "Minneapolis",
-      "wage_annual_min": 67018,
-      "wage_annual_median": 67018,
-      "wage_annual_max": 67018
-    },
-    {
       "employer": "UNIVERSITY OF NOTRE DAME DU LAC",
       "employer_display": "University of Notre Dame du Lac",
       "filing_count": 1,
@@ -1952,34 +1125,34 @@
       "wage_annual_max": 51875
     },
     {
-      "employer": "UNIVERSITY OF RHODE ISLAND",
-      "employer_display": "University of Rhode Island",
+      "employer": "UNIVERSITY OF WISCONSIN SYSTEM",
+      "employer_display": "University of Wisconsin System",
       "filing_count": 1,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "19-2012",
       "soc_titles": "Physicists",
-      "worksite_states": "RI",
-      "worksite_cities": "Kingston",
-      "wage_annual_min": 69805,
-      "wage_annual_median": 69805,
-      "wage_annual_max": 69805
+      "worksite_states": "WI",
+      "worksite_cities": "Madison",
+      "wage_annual_min": 126023,
+      "wage_annual_median": 126023,
+      "wage_annual_max": 126023
     },
     {
-      "employer": "UNIVERSITY OF UTAH",
-      "employer_display": "University of Utah",
+      "employer": "UT BATTELLE LLC OAK RIDGE NATIONAL LABORATORY",
+      "employer_display": "UT-BATTELLE, LLC (OAK RIDGE NATIONAL LABORATORY)",
       "filing_count": 1,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "19-2012",
       "soc_titles": "Physicists",
-      "worksite_states": "UT",
-      "worksite_cities": "Salt Lake City",
-      "wage_annual_min": 240725,
-      "wage_annual_median": 240725,
-      "wage_annual_max": 240725
+      "worksite_states": "TN",
+      "worksite_cities": "Oak Ridge",
+      "wage_annual_min": 86691,
+      "wage_annual_median": 86691,
+      "wage_annual_max": 86691
     },
     {
       "employer": "VIRGINIA POLYTECHNIC INSTITUTE STATE UNIVERSITY",
@@ -1997,34 +1170,19 @@
       "wage_annual_max": 67018
     },
     {
-      "employer": "WEST VIRGINIA UNIVERSITY",
-      "employer_display": "West Virginia University",
+      "employer": "W M RICE UNIVERSITY",
+      "employer_display": "W.M. RICE UNIVERSITY",
       "filing_count": 1,
       "quarters_present": 1,
-      "quarters": "FY2025Q4",
+      "quarters": "FY2026Q1",
       "repeat_sponsor": "no",
       "soc_codes": "19-2012",
       "soc_titles": "Physicists",
-      "worksite_states": "WV",
-      "worksite_cities": "Morgantown",
-      "wage_annual_min": 75000,
-      "wage_annual_median": 75000,
-      "wage_annual_max": 75000
-    },
-    {
-      "employer": "YALE UNIVERSITY",
-      "employer_display": "Yale University",
-      "filing_count": 1,
-      "quarters_present": 1,
-      "quarters": "FY2025Q4",
-      "repeat_sponsor": "no",
-      "soc_codes": "19-2012",
-      "soc_titles": "Physicists",
-      "worksite_states": "CT",
-      "worksite_cities": "New Haven",
-      "wage_annual_min": 72000,
-      "wage_annual_median": 72000,
-      "wage_annual_max": 72000
+      "worksite_states": "TX",
+      "worksite_cities": "Houston",
+      "wage_annual_min": 62000,
+      "wage_annual_median": 62000,
+      "wage_annual_max": 62000
     }
   ]
 }

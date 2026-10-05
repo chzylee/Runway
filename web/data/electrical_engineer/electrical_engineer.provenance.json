@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-14 12:43 UTC",
+  "generated_at_utc": "2026-10-05 14:31 UTC",
   "source": "US DOL OFLC LCA Programs disclosure data (public record)",
   "filters": {
     "case_status": "Certified",
@@ -10,46 +10,43 @@
     "pw_wage_level": "I"
   },
   "quarters_used": [
-    "FY2025Q4",
     "FY2026Q1"
   ],
   "quarters_superseded": {},
   "rows_per_quarter": {
-    "FY2025Q4": 118580,
     "FY2026Q1": 83120
   },
   "funnel": {
-    "rows_total": 201700,
-    "rows_certified": 181277,
-    "rows_soc_matched": 2205,
-    "rows_selected": 232
+    "rows_total": 83120,
+    "rows_certified": 74664,
+    "rows_soc_matched": 925,
+    "rows_selected": 71
   },
-  "employer_groups": 177,
-  "distinct_raw_employer_spellings": 181,
+  "employer_groups": 63,
+  "distinct_raw_employer_spellings": 64,
   "rows_wage_excluded_from_wage_stats": 1,
   "case_statuses_seen": {
-    "CERTIFIED": 181277,
-    "CERTIFIED - WITHDRAWN": 15748,
-    "WITHDRAWN": 3242,
-    "DENIED": 1433
+    "CERTIFIED": 74664,
+    "CERTIFIED - WITHDRAWN": 6666,
+    "WITHDRAWN": 1398,
+    "DENIED": 392
   },
   "wage_levels_seen": {
-    "II": 630,
-    "III": 563,
-    "IV": 513,
-    "": 267,
-    "I": 232
+    "IV": 251,
+    "II": 247,
+    "III": 232,
+    "": 124,
+    "I": 71
   },
   "wage_units_seen": {
-    "YEAR": 199,
-    "HOUR": 31,
-    "MONTH": 1,
+    "YEAR": 60,
+    "HOUR": 10,
     "BI-WEEKLY": 1
   },
   "patterns": {
     "basis": {
-      "filings": 232,
-      "employers": 177,
+      "filings": 71,
+      "employers": 63,
       "measured_by": "employers",
       "min_support_employers": 3
     },
@@ -57,146 +54,66 @@
       "recurring_tokens": [
         {
           "token": "engineer",
-          "employers": 156,
-          "filings": 200
+          "employers": 51,
+          "filings": 57
         },
         {
           "token": "electrical",
-          "employers": 61,
-          "filings": 79
-        },
-        {
-          "token": "research",
-          "employers": 12,
-          "filings": 14
+          "employers": 20,
+          "filings": 22
         },
         {
           "token": "associate",
-          "employers": 11,
-          "filings": 14
-        },
-        {
-          "token": "controls",
-          "employers": 11,
-          "filings": 11
-        },
-        {
-          "token": "field",
-          "employers": 10,
-          "filings": 15
-        },
-        {
-          "token": "project",
-          "employers": 10,
-          "filings": 11
-        },
-        {
-          "token": "rf",
-          "employers": 10,
-          "filings": 11
-        },
-        {
-          "token": "systems",
-          "employers": 10,
-          "filings": 10
-        },
-        {
-          "token": "postdoctoral",
-          "employers": 9,
-          "filings": 9
-        },
-        {
-          "token": "validation",
-          "employers": 7,
-          "filings": 8
-        },
-        {
-          "token": "test",
-          "employers": 7,
+          "employers": 6,
           "filings": 7
         },
         {
-          "token": "service",
-          "employers": 5,
-          "filings": 8
+          "token": "research",
+          "employers": 6,
+          "filings": 7
         },
         {
-          "token": "software",
+          "token": "field",
           "employers": 5,
           "filings": 6
         },
         {
-          "token": "staff",
+          "token": "project",
           "employers": 5,
           "filings": 6
+        },
+        {
+          "token": "rf",
+          "employers": 5,
+          "filings": 5
         },
         {
           "token": "automation",
-          "employers": 5,
-          "filings": 5
+          "employers": 4,
+          "filings": 4
         },
         {
-          "token": "embedded",
+          "token": "test",
           "employers": 4,
-          "filings": 6
+          "filings": 4
+        },
+        {
+          "token": "service",
+          "employers": 3,
+          "filings": 4
+        },
+        {
+          "token": "staff",
+          "employers": 3,
+          "filings": 4
+        },
+        {
+          "token": "postdoctoral",
+          "employers": 3,
+          "filings": 3
         },
         {
           "token": "specialist",
-          "employers": 4,
-          "filings": 5
-        },
-        {
-          "token": "sr",
-          "employers": 4,
-          "filings": 5
-        },
-        {
-          "token": "system",
-          "employers": 4,
-          "filings": 5
-        },
-        {
-          "token": "control",
-          "employers": 4,
-          "filings": 4
-        },
-        {
-          "token": "commissioning",
-          "employers": 3,
-          "filings": 4
-        },
-        {
-          "token": "lead",
-          "employers": 3,
-          "filings": 4
-        },
-        {
-          "token": "product",
-          "employers": 3,
-          "filings": 4
-        },
-        {
-          "token": "wireless",
-          "employers": 3,
-          "filings": 4
-        },
-        {
-          "token": "calibration",
-          "employers": 3,
-          "filings": 3
-        },
-        {
-          "token": "electronics",
-          "employers": 3,
-          "filings": 3
-        },
-        {
-          "token": "engineering",
-          "employers": 3,
-          "filings": 3
-        },
-        {
-          "token": "power",
           "employers": 3,
           "filings": 3
         },
@@ -209,101 +126,36 @@
       "distinct_titles": [
         {
           "title": "Electrical Engineer",
-          "employers": 35,
-          "filings": 45
-        },
-        {
-          "title": "ELECTRICAL ENGINEER",
-          "employers": 6,
-          "filings": 8
-        },
-        {
-          "title": "Postdoctoral Research Associate",
-          "employers": 4,
-          "filings": 4
+          "employers": 8,
+          "filings": 9
         },
         {
           "title": "Field Service Engineer",
           "employers": 3,
-          "filings": 5
-        },
-        {
-          "title": "Engineer",
-          "employers": 3,
-          "filings": 4
-        },
-        {
-          "title": "RF ENGINEER",
-          "employers": 3,
-          "filings": 4
-        },
-        {
-          "title": "Calibration Engineer",
-          "employers": 3,
           "filings": 3
+        },
+        {
+          "title": "ELECTRICAL ENGINEER",
+          "employers": 2,
+          "filings": 2
+        },
+        {
+          "title": "Postdoctoral Research Associate",
+          "employers": 2,
+          "filings": 2
         },
         {
           "title": "Project Engineer",
-          "employers": 3,
-          "filings": 3
+          "employers": 2,
+          "filings": 2
         },
         {
           "title": "RF Engineer",
-          "employers": 3,
-          "filings": 3
-        },
-        {
-          "title": "Validation Engineer",
-          "employers": 3,
-          "filings": 3
-        },
-        {
-          "title": "Embedded Software Engineer",
           "employers": 2,
-          "filings": 3
-        },
-        {
-          "title": "Controls Engineer",
-          "employers": 2,
-          "filings": 2
-        },
-        {
-          "title": "Electrical Engineer II",
-          "employers": 2,
-          "filings": 2
-        },
-        {
-          "title": "Test Engineer",
-          "employers": 2,
-          "filings": 2
-        },
-        {
-          "title": "Associate Engineer - Electrical",
-          "employers": 1,
-          "filings": 3
-        },
-        {
-          "title": "Commissioning Coordinator",
-          "employers": 1,
-          "filings": 2
-        },
-        {
-          "title": "Manufacturing Engineer",
-          "employers": 1,
           "filings": 2
         },
         {
           "title": "Post Doctorate Research Associate(Electrical Engineer)",
-          "employers": 1,
-          "filings": 2
-        },
-        {
-          "title": "Product Engineer General",
-          "employers": 1,
-          "filings": 2
-        },
-        {
-          "title": "Senior System Validation Engineer",
           "employers": 1,
           "filings": 2
         },
@@ -313,32 +165,12 @@
           "filings": 2
         },
         {
-          "title": "Wireless Field Engineer",
-          "employers": 1,
-          "filings": 2
-        },
-        {
-          "title": "Application Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Application Engineer [00092220]",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Assistant Research Professor",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Associate Electrical Engineer",
           "employers": 1,
           "filings": 1
         },
         {
-          "title": "Associate RF Design Engineer",
+          "title": "Associate Engineer - Electrical",
           "employers": 1,
           "filings": 1
         },
@@ -358,82 +190,12 @@
           "filings": 1
         },
         {
-          "title": "CONTROLS AND COMMISSIONING ENGINEER",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Commissioning Engineer I",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Construction Technology Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Control Room Operator",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Controls Design Engineer (Associate Level)",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Controls Engineer II",
+          "title": "Calibration Engineer",
           "employers": 1,
           "filings": 1
         },
         {
           "title": "Controls System Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Customer Service Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Datacom Transceiver R&D Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Deployed Flight Test Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Design Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Distribution Engineer in Training (EIT)",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "ELECTRICAL ENGINEER III",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "ELECTRICAL ENGINEERING PROFESSIONAL INTERMEDIATE",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "ENGINEER III, AUTOMATION",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Electric Engineer",
           "employers": 1,
           "filings": 1
         },
@@ -448,36 +210,6 @@
           "filings": 1
         },
         {
-          "title": "Electrical Engineer - Research",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Electrical Engineer -NDT Specialist",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Electrical Engineer 1",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Electrical Engineer 2",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Electrical Engineer I",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Electrical Engineer/Project Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Electrical Lead (Topsides)",
           "employers": 1,
           "filings": 1
@@ -488,47 +220,7 @@
           "filings": 1
         },
         {
-          "title": "Electronic Design Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Electronic Security Systems Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Electronics Design Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Electronics Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Embedded Controls Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Embedded Software Engineer II",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Embedded Systems Validation Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Energy Delivery Engineer I",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Energy Delivery Engineer III",
+          "title": "Embedded Software Engineer",
           "employers": 1,
           "filings": 1
         },
@@ -548,11 +240,6 @@
           "filings": 1
         },
         {
-          "title": "Engineer- Generation and Transmission Planning",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Engineering Specialist,  Electrical",
           "employers": 1,
           "filings": 1
@@ -563,37 +250,7 @@
           "filings": 1
         },
         {
-          "title": "FIELD SERVICE ENGINEER",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Field Electrical Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Field Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Field Engineer I",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Field Service Engineer III",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Field Technician",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Hardware Design Engineer",
           "employers": 1,
           "filings": 1
         },
@@ -603,22 +260,7 @@
           "filings": 1
         },
         {
-          "title": "High Voltage Project Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Integration Engineer II",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Labview Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Lead Electrical and Electronics Engineer",
           "employers": 1,
           "filings": 1
         },
@@ -628,77 +270,12 @@
           "filings": 1
         },
         {
-          "title": "Mixed-Signal IC Design Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Model Based Developer",
           "employers": 1,
           "filings": 1
         },
         {
-          "title": "NETWORKING SYSTEMS ENGINEER",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Network Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "OSP Project Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Participant SLS Development Program ReSurge",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Post-Doctoral Research Associate",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Postdoctoral Fellow",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Postdoctoral Reseacher",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Postdoctoral Research Fellow",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Postdoctoral Research Scholar",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Postdoctoral Scholar",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Power System Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Power Systems Engineer II",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Product Design Engineer",
           "employers": 1,
           "filings": 1
         },
@@ -718,17 +295,7 @@
           "filings": 1
         },
         {
-          "title": "Project Engineer II",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Project Engineer, Field Electrical",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Protection & Control Specialist II",
           "employers": 1,
           "filings": 1
         },
@@ -738,7 +305,7 @@
           "filings": 1
         },
         {
-          "title": "RF & Tool Engineer",
+          "title": "RF ENGINEER",
           "employers": 1,
           "filings": 1
         },
@@ -753,16 +320,6 @@
           "filings": 1
         },
         {
-          "title": "Radio Frequency Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Reliability Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Research Associate",
           "employers": 1,
           "filings": 1
@@ -773,32 +330,12 @@
           "filings": 1
         },
         {
-          "title": "Research Scientist",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Robotics Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "SR. CONTROLS SYSTEMS ENGINEER",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "STAFF ELECTRCIAL ENGINEER I",
           "employers": 1,
           "filings": 1
         },
         {
           "title": "STAFF ELECTRICAL ENGINEER I",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "SYSTEM DEVELOPMENT ENGINEER I",
           "employers": 1,
           "filings": 1
         },
@@ -818,37 +355,12 @@
           "filings": 1
         },
         {
-          "title": "Solution Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Sr. Engineer Plant (Sr. OSP Designer)",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Sr. Production Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Staff Engineer",
           "employers": 1,
           "filings": 1
         },
         {
           "title": "Staff Power Field Applications Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Staff Software Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Staff Technical Program Manager",
           "employers": 1,
           "filings": 1
         },
@@ -868,32 +380,7 @@
           "filings": 1
         },
         {
-          "title": "Support Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Switchgear Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Systems & Controls Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Systems Controls Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Systems Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Systems Studies Engineer I",
           "employers": 1,
           "filings": 1
         },
@@ -903,37 +390,12 @@
           "filings": 1
         },
         {
+          "title": "Test Engineer",
+          "employers": 1,
+          "filings": 1
+        },
+        {
           "title": "Test Engineer Controls",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Topside Electrical Lead",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "V80 Core Quality Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Validation Integration Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Wireless Test Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Wireless Validation Engineer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "XIL Modelling Engineer",
           "employers": 1,
           "filings": 1
         }
@@ -943,74 +405,50 @@
       {
         "soc_code": "17-2071.00",
         "title": "Electrical Engineers",
-        "employers": 177,
-        "filings": 232
+        "employers": 63,
+        "filings": 71
       }
     ],
     "placement_model": {
       "in_house": {
-        "employers": 156,
-        "filings": 195
+        "employers": 51,
+        "filings": 56
       },
       "third_party_site": {
-        "employers": 23,
-        "filings": 37
+        "employers": 12,
+        "filings": 15
       }
     },
     "industry_naics2": [
       {
         "code": "54",
         "label": "Professional, Scientific, and Technical Services",
-        "employers": 67,
-        "filings": 99
+        "employers": 31,
+        "filings": 37
       },
       {
         "code": "33",
         "label": "Manufacturing",
-        "employers": 49,
-        "filings": 65
+        "employers": 14,
+        "filings": 16
       },
       {
         "code": "23",
         "label": "Construction",
-        "employers": 17,
-        "filings": 20
+        "employers": 5,
+        "filings": 5
       },
       {
         "code": "61",
         "label": "Educational Services",
-        "employers": 13,
-        "filings": 14
-      },
-      {
-        "code": "42",
-        "label": "Wholesale Trade",
-        "employers": 6,
-        "filings": 6
-      },
-      {
-        "code": "51",
-        "label": "Information",
-        "employers": 5,
-        "filings": 6
-      },
-      {
-        "code": "22",
-        "label": "Utilities",
-        "employers": 5,
-        "filings": 5
-      },
-      {
-        "code": "32",
-        "label": "Manufacturing",
         "employers": 4,
-        "filings": 5
+        "filings": 4
       },
       {
         "code": "48",
         "label": "Transportation and Warehousing",
-        "employers": 4,
-        "filings": 4
+        "employers": 3,
+        "filings": 3
       }
     ]
   },

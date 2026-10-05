@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-14 12:43 UTC",
+  "generated_at_utc": "2026-10-05 14:31 UTC",
   "source": "US DOL OFLC LCA Programs disclosure data (public record)",
   "filters": {
     "case_status": "Certified",
@@ -10,44 +10,41 @@
     "pw_wage_level": "I"
   },
   "quarters_used": [
-    "FY2025Q4",
     "FY2026Q1"
   ],
   "quarters_superseded": {},
   "rows_per_quarter": {
-    "FY2025Q4": 118580,
     "FY2026Q1": 83120
   },
   "funnel": {
-    "rows_total": 201700,
-    "rows_certified": 181277,
-    "rows_soc_matched": 202,
-    "rows_selected": 30
+    "rows_total": 83120,
+    "rows_certified": 74664,
+    "rows_soc_matched": 97,
+    "rows_selected": 14
   },
-  "employer_groups": 19,
-  "distinct_raw_employer_spellings": 19,
+  "employer_groups": 9,
+  "distinct_raw_employer_spellings": 9,
   "rows_wage_excluded_from_wage_stats": 0,
   "case_statuses_seen": {
-    "CERTIFIED": 181277,
-    "CERTIFIED - WITHDRAWN": 15748,
-    "WITHDRAWN": 3242,
-    "DENIED": 1433
+    "CERTIFIED": 74664,
+    "CERTIFIED - WITHDRAWN": 6666,
+    "WITHDRAWN": 1398,
+    "DENIED": 392
   },
   "wage_levels_seen": {
-    "II": 143,
-    "I": 30,
-    "III": 14,
-    "IV": 13,
-    "": 2
+    "II": 70,
+    "I": 14,
+    "III": 7,
+    "IV": 6
   },
   "wage_units_seen": {
-    "YEAR": 28,
-    "HOUR": 2
+    "YEAR": 13,
+    "HOUR": 1
   },
   "patterns": {
     "basis": {
-      "filings": 30,
-      "employers": 19,
+      "filings": 14,
+      "employers": 9,
       "measured_by": "employers",
       "min_support_employers": 3
     },
@@ -55,24 +52,19 @@
       "recurring_tokens": [
         {
           "token": "developer",
-          "employers": 17,
-          "filings": 27
+          "employers": 7,
+          "filings": 12
         },
         {
           "token": "web",
-          "employers": 14,
-          "filings": 21
+          "employers": 6,
+          "filings": 11
         }
       ],
       "distinct_titles": [
         {
           "title": "Web Developer",
-          "employers": 6,
-          "filings": 7
-        },
-        {
-          "title": "WEB DEVELOPER",
-          "employers": 2,
+          "employers": 3,
           "filings": 3
         },
         {
@@ -81,22 +73,12 @@
           "filings": 6
         },
         {
-          "title": "Frontend Developer",
-          "employers": 1,
-          "filings": 2
-        },
-        {
-          "title": "Full-Stack Developer",
-          "employers": 1,
-          "filings": 2
-        },
-        {
           "title": "CRM & Web Support Specialist",
           "employers": 1,
           "filings": 1
         },
         {
-          "title": "Full Stack Web Developer",
+          "title": "Full-Stack Developer",
           "employers": 1,
           "filings": 1
         },
@@ -106,37 +88,12 @@
           "filings": 1
         },
         {
-          "title": "Jr. Software Developer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Software Engineer",
           "employers": 1,
           "filings": 1
         },
         {
-          "title": "UI DEVELOPER",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Web Developer (Part-Time)",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "Web Specialist",
-          "employers": 1,
-          "filings": 1
-        },
-        {
           "title": "Web developer",
-          "employers": 1,
-          "filings": 1
-        },
-        {
-          "title": "WordPress Developer",
           "employers": 1,
           "filings": 1
         }
@@ -146,32 +103,32 @@
       {
         "soc_code": "15-1254.00",
         "title": "Web Developers",
-        "employers": 19,
-        "filings": 30
+        "employers": 9,
+        "filings": 14
       }
     ],
     "placement_model": {
       "in_house": {
-        "employers": 14,
-        "filings": 16
+        "employers": 5,
+        "filings": 5
       },
       "third_party_site": {
-        "employers": 6,
-        "filings": 14
+        "employers": 4,
+        "filings": 9
       }
     },
     "industry_naics2": [
       {
         "code": "54",
         "label": "Professional, Scientific, and Technical Services",
-        "employers": 10,
-        "filings": 20
+        "employers": 5,
+        "filings": 10
       },
       {
         "code": "61",
         "label": "Educational Services",
-        "employers": 5,
-        "filings": 6
+        "employers": 3,
+        "filings": 3
       }
     ]
   },
